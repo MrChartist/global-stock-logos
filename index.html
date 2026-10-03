@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Stock Logos Catalog — India & US</title>
+  <title>Global Stock Logos Catalog — Worldwide Stock Markets</title>
   <link rel="icon" type="image/svg+xml" href="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/AAPL.svg">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -39,9 +39,9 @@
         <div>
           <h1 class="text-xl font-bold tracking-tight flex items-center gap-2">
             Global Stock Logos
-            <span class="text-xs px-2 py-0.5 rounded-full bg-brand/20 text-brand border border-brand/30 font-mono">v2.0</span>
+            <span class="text-xs px-2 py-0.5 rounded-full bg-brand/20 text-brand border border-brand/30 font-mono">v2.1</span>
           </h1>
-          <p class="text-xs text-gray-400">Open-Source Stock Logo Catalog for India (NSE/BSE) & US (NASDAQ/NYSE)</p>
+          <p class="text-xs text-gray-400">Open-Source Stock Logo Catalog for India, US & World Stock Markets</p>
         </div>
       </div>
 
@@ -51,7 +51,7 @@
           <input
             id="searchInput"
             type="text"
-            placeholder="Search symbol, company, or sector..."
+            placeholder="Search ticker, company, or sector..."
             class="w-full bg-darkBg border border-borderColor rounded-xl px-4 py-2 text-sm focus:outline-none focus:border-brand transition-colors text-white placeholder-gray-500"
           />
         </div>
@@ -60,8 +60,15 @@
           class="bg-darkBg border border-borderColor rounded-xl px-3 py-2 text-sm text-gray-300 focus:outline-none focus:border-brand"
         >
           <option value="ALL">All Markets</option>
-          <option value="IN">🇮🇳 India (1,070+)</option>
-          <option value="US">🇺🇸 United States (1,030+)</option>
+          <option value="IN">🇮🇳 India</option>
+          <option value="US">🇺🇸 United States</option>
+          <option value="UK">🇬🇧 United Kingdom</option>
+          <option value="GERMANY">🇩🇪 Germany</option>
+          <option value="FRANCE">🇫🇷 France</option>
+          <option value="JAPAN">🇯🇵 Japan</option>
+          <option value="CANADA">🇨🇦 Canada</option>
+          <option value="AUSTRALIA">🇦🇺 Australia</option>
+          <option value="HONGKONG">🇭🇰 Hong Kong</option>
         </select>
       </div>
     </div>
@@ -72,18 +79,18 @@
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
       <div class="bg-cardBg border border-borderColor rounded-2xl p-4">
         <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Total Equities</div>
-        <div id="statTotal" class="text-2xl font-black text-white mt-1">2,108+</div>
+        <div id="statTotal" class="text-2xl font-black text-white mt-1">2,200+</div>
         <div class="text-[11px] text-emerald-400 mt-1">✓ 100% Zero broken images</div>
       </div>
       <div class="bg-cardBg border border-borderColor rounded-2xl p-4">
-        <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">🇮🇳 Indian Stocks</div>
-        <div id="statIndia" class="text-2xl font-black text-white mt-1">1,073</div>
-        <div class="text-[11px] text-gray-400 mt-1">NSE & BSE Equities</div>
+        <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Active Markets</div>
+        <div id="statMarkets" class="text-2xl font-black text-brand mt-1">9 Exchanges</div>
+        <div class="text-[11px] text-gray-400 mt-1">Global Stock Universe</div>
       </div>
       <div class="bg-cardBg border border-borderColor rounded-2xl p-4">
-        <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">🇺🇸 US Equities</div>
-        <div id="statUS" class="text-2xl font-black text-white mt-1">1,035</div>
-        <div class="text-[11px] text-gray-400 mt-1">NASDAQ, NYSE & S&P 500</div>
+        <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Vector Assets</div>
+        <div id="statFormats" class="text-2xl font-black text-white mt-1">1,480+ SVGs</div>
+        <div class="text-[11px] text-emerald-400 mt-1">Scalable Brandmarks</div>
       </div>
       <div class="bg-cardBg border border-borderColor rounded-2xl p-4">
         <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Global CDN</div>
@@ -131,11 +138,21 @@
     let catalog = [];
     const CDN_BASE = 'https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos';
 
-    function getYahooUrl(symbol, market) {
-      const sym = symbol.toUpperCase().trim();
-      return market === 'IN' 
-        ? `https://finance.yahoo.com/quote/${encodeURIComponent(sym)}.NS` 
-        : `https://finance.yahoo.com/quote/${encodeURIComponent(sym)}`;
+    const MARKET_BADGES = {
+      IN: { flag: '🇮🇳', label: 'NSE/BSE', bg: 'bg-amber-500/20 text-amber-400 border-amber-500/30' },
+      US: { flag: '🇺🇸', label: 'US', bg: 'bg-blue-500/20 text-blue-400 border-blue-500/30' },
+      UK: { flag: '🇬🇧', label: 'LSE', bg: 'bg-indigo-500/20 text-indigo-400 border-indigo-500/30' },
+      GERMANY: { flag: '🇩🇪', label: 'XETRA', bg: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30' },
+      FRANCE: { flag: '🇫🇷', label: 'PARIS', bg: 'bg-sky-500/20 text-sky-400 border-sky-500/30' },
+      JAPAN: { flag: '🇯🇵', label: 'TSE', bg: 'bg-rose-500/20 text-rose-400 border-rose-500/30' },
+      CANADA: { flag: '🇨🇦', label: 'TSX', bg: 'bg-red-500/20 text-red-400 border-red-500/30' },
+      AUSTRALIA: { flag: '🇦🇺', label: 'ASX', bg: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30' },
+      HONGKONG: { flag: '🇭🇰', label: 'HKEX', bg: 'bg-teal-500/20 text-teal-400 border-teal-500/30' }
+    };
+
+    function getMarketBadge(mkt) {
+      const info = MARKET_BADGES[mkt] || { flag: '🌐', label: mkt, bg: 'bg-gray-500/20 text-gray-300 border-gray-500/30' };
+      return `<span class="text-[10px] font-bold px-1.5 py-0.5 rounded border ${info.bg}">${info.flag} ${info.label}</span>`;
     }
 
     async function loadCatalog() {
@@ -143,13 +160,24 @@
         const res = await fetch('logos-manifest.json');
         const data = await res.json();
         const logosMap = data.logos || {};
+
+        if (data.totalEquities) {
+          document.getElementById('statTotal').innerText = data.totalEquities.toLocaleString() + '+';
+        }
+        if (data.stats && data.stats.markets) {
+          const numMkts = Object.keys(data.stats.markets).length;
+          document.getElementById('statMarkets').innerText = `${numMkts} Exchanges`;
+        }
+        if (data.stats && data.stats.formats) {
+          document.getElementById('statFormats').innerText = `${(data.stats.formats.svg || 0).toLocaleString()} SVGs`;
+        }
         
         // Filter unique by symbol + market
         const seen = new Set();
         catalog = [];
 
         for (const [key, item] of Object.entries(logosMap)) {
-          if (!key.includes(':')) continue; // only use namespaced keys IN:SYM, US:SYM
+          if (!key.includes(':')) continue; // only use namespaced keys MARKET:SYM
           const uniqueKey = `${item.market}:${item.symbol}`;
           if (!seen.has(uniqueKey)) {
             seen.add(uniqueKey);
@@ -179,16 +207,13 @@
 
       const fragment = document.createDocumentFragment();
 
-      items.slice(0, 180).forEach(item => {
+      items.slice(0, 240).forEach(item => {
         const card = document.createElement('div');
         card.className = 'group relative flex flex-col justify-between bg-cardBg border border-borderColor rounded-2xl p-4 transition-all hover:border-brand/50 hover:shadow-lg hover:shadow-brand/5';
 
-        const mktBadge = item.market === 'IN' 
-          ? '<span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">🇮🇳 NSE</span>'
-          : '<span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-blue-500/20 text-blue-400 border border-blue-500/30">🇺🇸 US</span>';
-
+        const mktBadge = getMarketBadge(item.market);
         const logoUrl = item.cdnMarketUrl || `${CDN_BASE}/${item.market.toLowerCase()}/${item.symbol}.${item.format}`;
-        const yahooUrl = item.yahooUrl || getYahooUrl(item.symbol, item.market);
+        const yahooUrl = item.yahooUrl || `https://finance.yahoo.com/quote/${item.symbol}`;
 
         card.innerHTML = `
           <div>
@@ -221,7 +246,7 @@
               href="${yahooUrl}" 
               target="_blank" 
               rel="noopener noreferrer"
-              class="flex-1 text-center py-1.5 px-2 rounded-lg bg-secondary/80 hover:bg-brand/20 hover:text-brand border border-borderColor hover:border-brand/40 text-[11px] font-semibold text-gray-300 transition-colors"
+              class="flex-1 text-center py-1.5 px-2 rounded-lg bg-gray-800/80 hover:bg-brand/20 hover:text-brand border border-borderColor hover:border-brand/40 text-[11px] font-semibold text-gray-300 transition-colors"
             >
               Yahoo Finance ↗
             </a>

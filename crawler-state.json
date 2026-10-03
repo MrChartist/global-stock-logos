@@ -3,6 +3,44 @@
   "inCursor": 1220,
   "usTotal": 13352,
   "inTotal": 7928,
-  "batchesCompleted": 2,
-  "lastCrawledAt": "2026-10-03T16:49:24.943Z"
+  "batchesCompleted": 4,
+  "lastCrawledAt": "2026-10-03T17:02:34.989Z",
+  "markets": {
+    "uk": {
+      "cursor": 25,
+      "total": 3838
+    },
+    "germany": {
+      "cursor": 25,
+      "total": 33221
+    },
+    "japan": {
+      "cursor": 25,
+      "total": 3910
+    },
+    "in": {
+      "cursor": 15,
+      "total": 7928
+    },
+    "us": {
+      "cursor": 15,
+      "total": 13352
+    },
+    "france": {
+      "cursor": 15,
+      "total": 613
+    },
+    "canada": {
+      "cursor": 15,
+      "total": 4961
+    },
+    "australia": {
+      "cursor": 15,
+      "total": 1685
+    },
+    "hongkong": {
+      "cursor": 15,
+      "total": 2676
+    }
+  }
 }

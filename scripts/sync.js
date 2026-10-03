@@ -1,9 +1,15 @@
 /**
- * sync.js — Global Stock Logos Manifest Indexer
- * Indexes logos across all international markets:
- * - India (NSE / BSE): logos/in/
- * - United States (NASDAQ / NYSE / S&P 500): logos/us/
- * - Unified flat root: logos/
+ * sync.js — Universal Multi-Market Stock Logos Manifest Indexer
+ * Dynamically indexes all international markets:
+ * - 🇮🇳 India (NSE / BSE): logos/in/
+ * - 🇺🇸 United States (NASDAQ / NYSE / S&P 500): logos/us/
+ * - 🇬🇧 United Kingdom (LSE): logos/uk/
+ * - 🇩🇪 Germany & Europe (XETRA): logos/germany/
+ * - 🇯🇵 Japan (TSE): logos/japan/
+ * - 🇨🇦 Canada (TSX): logos/canada/
+ * - 🇦🇺 Australia (ASX): logos/australia/
+ * - 🇭🇰 Hong Kong (HKEX): logos/hongkong/
+ * - 🌐 Unified Flat CDN: logos/
  */
 
 import fs from 'fs';
@@ -16,9 +22,19 @@ const __dirname = path.dirname(__filename);
 
 const REPO_ROOT = path.resolve(__dirname, '..');
 const LOGOS_DIR = path.join(REPO_ROOT, 'logos');
-const IN_DIR = path.join(LOGOS_DIR, 'in');
-const US_DIR = path.join(LOGOS_DIR, 'us');
 const MANIFEST_PATH = path.join(REPO_ROOT, 'logos-manifest.json');
+
+export const MARKET_METADATA = {
+    in: { market: 'IN', country: 'India', exchanges: ['NSE', 'BSE'], yahooSuffix: '.NS' },
+    us: { market: 'US', country: 'United States', exchanges: ['NASDAQ', 'NYSE'], yahooSuffix: '' },
+    uk: { market: 'UK', country: 'United Kingdom', exchanges: ['LSE'], yahooSuffix: '.L' },
+    germany: { market: 'GERMANY', country: 'Germany', exchanges: ['XETRA'], yahooSuffix: '.DE' },
+    france: { market: 'FRANCE', country: 'France', exchanges: ['Euronext Paris'], yahooSuffix: '.PA' },
+    japan: { market: 'JAPAN', country: 'Japan', exchanges: ['TSE'], yahooSuffix: '.T' },
+    canada: { market: 'CANADA', country: 'Canada', exchanges: ['TSX'], yahooSuffix: '.TO' },
+    australia: { market: 'AUSTRALIA', country: 'Australia', exchanges: ['ASX'], yahooSuffix: '.AX' },
+    hongkong: { market: 'HONGKONG', country: 'Hong Kong', exchanges: ['HKEX'], yahooSuffix: '.HK' },
+};
 
 export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
     console.log('[sync] 🌐 Scanning Global Logo Assets...');
@@ -38,98 +54,78 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
     }
 
     const logos = {};
-    let inCount = 0;
-    let usCount = 0;
+    const marketCounts = {};
+    let totalEquities = 0;
     let svgs = 0;
     let pngs = 0;
 
-    // 1. Index India (logos/in/)
-    if (fs.existsSync(IN_DIR)) {
-        const inFiles = fs.readdirSync(IN_DIR).filter(f => f.endsWith('.svg') || f.endsWith('.png'));
-        for (const file of inFiles) {
+    // Detect all market subdirectories in logos/
+    const subDirs = fs.readdirSync(LOGOS_DIR).filter(d => {
+        try { return fs.statSync(path.join(LOGOS_DIR, d)).isDirectory(); } catch(e) { return false; }
+    });
+
+    for (const mktKey of subDirs) {
+        const mktLower = mktKey.toLowerCase();
+        const mktConfig = MARKET_METADATA[mktLower] || {
+            market: mktKey.toUpperCase(),
+            country: mktKey.toUpperCase(),
+            exchanges: [mktKey.toUpperCase()],
+            yahooSuffix: '',
+        };
+
+        const dirPath = path.join(LOGOS_DIR, mktKey);
+        const files = fs.readdirSync(dirPath).filter(f => f.endsWith('.svg') || f.endsWith('.png'));
+        let count = 0;
+
+        for (const file of files) {
             const ext = path.extname(file).replace('.', '').toLowerCase();
             const sym = path.basename(file, '.' + ext).toUpperCase();
-            const stats = fs.statSync(path.join(IN_DIR, file));
+            const stats = fs.statSync(path.join(dirPath, file));
             if (ext === 'svg') svgs++; else pngs++;
-            inCount++;
+            count++;
+            totalEquities++;
 
-            const prev = existing.logos[sym] || existing.logos[`IN:${sym}`] || {};
-            const meta = companyMeta[`IN:${sym}`] || companyMeta[sym] || {};
-            const item = {
-                symbol: sym,
-                company: meta.company || prev.company || sym,
-                market: 'IN',
-                country: 'India',
-                exchanges: ['NSE', 'BSE'],
-                format: ext,
-                sector: meta.sector || prev.sector || null,
-                industry: meta.industry || prev.industry || null,
-                marketCap: meta.marketCap || prev.marketCap || null,
-                logoid: meta.logoid || prev.logoid || null,
-                yahooTicker: `${sym}.NS`,
-                yahooUrl: `https://finance.yahoo.com/quote/${sym}.NS`,
-                yahooApiUrl: `https://query1.finance.yahoo.com/v8/finance/chart/${sym}.NS`,
-                path: `logos/in/${file}`,
-                cdnMarketUrl: `https://cdn.jsdelivr.net/gh/${repoName}@main/logos/in/${file}`,
-                cdnDirectUrl: `https://cdn.jsdelivr.net/gh/${repoName}@main/logos/${file}`,
-                sizeBytes: stats.size,
-                isProcedural: prev.isProcedural ?? (ext === 'svg' && stats.size < 2500),
-                updatedAt: prev.updatedAt || new Date().toISOString()
-            };
-            logos[`IN:${sym}`] = item;
-            if (!logos[sym]) logos[sym] = item; // default alias
-        }
-    }
+            const usMeta = mktLower === 'us' ? (US_KNOWN_DOMAINS[sym] || {}) : {};
+            const prev = existing.logos[sym] || existing.logos[`${mktConfig.market}:${sym}`] || {};
+            const meta = companyMeta[`${mktConfig.market}:${sym}`] || companyMeta[sym] || {};
 
-    // 2. Index US (logos/us/)
-    if (fs.existsSync(US_DIR)) {
-        const usFiles = fs.readdirSync(US_DIR).filter(f => f.endsWith('.svg') || f.endsWith('.png'));
-        for (const file of usFiles) {
-            const ext = path.extname(file).replace('.', '').toLowerCase();
-            const sym = path.basename(file, '.' + ext).toUpperCase();
-            const stats = fs.statSync(path.join(US_DIR, file));
-            if (ext === 'svg') svgs++; else pngs++;
-            usCount++;
-
-            const usMeta = US_KNOWN_DOMAINS[sym] || {};
-            const prev = existing.logos[sym] || existing.logos[`US:${sym}`] || {};
-            const meta = companyMeta[`US:${sym}`] || companyMeta[sym] || {};
+            const yahooTicker = `${sym}${mktConfig.yahooSuffix}`;
             const item = {
                 symbol: sym,
                 company: meta.company || usMeta.name || prev.company || sym,
-                market: 'US',
-                country: 'United States',
-                exchanges: ['NASDAQ', 'NYSE'],
+                market: mktConfig.market,
+                country: mktConfig.country,
+                exchanges: mktConfig.exchanges,
                 format: ext,
                 sector: meta.sector || prev.sector || null,
                 industry: meta.industry || prev.industry || null,
                 marketCap: meta.marketCap || prev.marketCap || null,
                 logoid: meta.logoid || prev.logoid || null,
-                yahooTicker: sym,
-                yahooUrl: `https://finance.yahoo.com/quote/${sym}`,
-                yahooApiUrl: `https://query1.finance.yahoo.com/v8/finance/chart/${sym}`,
-                path: `logos/us/${file}`,
-                cdnMarketUrl: `https://cdn.jsdelivr.net/gh/${repoName}@main/logos/us/${file}`,
+                yahooTicker,
+                yahooUrl: `https://finance.yahoo.com/quote/${yahooTicker}`,
+                yahooApiUrl: `https://query1.finance.yahoo.com/v8/finance/chart/${yahooTicker}`,
+                path: `logos/${mktLower}/${file}`,
+                cdnMarketUrl: `https://cdn.jsdelivr.net/gh/${repoName}@main/logos/${mktLower}/${file}`,
                 cdnDirectUrl: `https://cdn.jsdelivr.net/gh/${repoName}@main/logos/${file}`,
                 sizeBytes: stats.size,
                 isProcedural: prev.isProcedural ?? (ext === 'svg' && stats.size < 2500),
                 updatedAt: prev.updatedAt || new Date().toISOString()
             };
-            logos[`US:${sym}`] = item;
+
+            logos[`${mktConfig.market}:${sym}`] = item;
             if (!logos[sym]) logos[sym] = item; // alias if no collision
         }
+
+        marketCounts[mktConfig.market] = count;
     }
 
     const manifest = {
         name: "Global Stock Logos Catalog (India, US & World)",
-        version: "2.0.0",
+        version: "2.1.0",
         updatedAt: new Date().toISOString(),
-        totalEquities: inCount + usCount,
+        totalEquities,
         stats: {
-            markets: {
-                IN: inCount,
-                US: usCount
-            },
+            markets: marketCounts,
             formats: {
                 svg: svgs,
                 png: pngs
@@ -140,12 +136,18 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
     };
 
     fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2), 'utf-8');
-    fs.writeFileSync(path.join(LOGOS_DIR, 'logos-manifest.json'), JSON.stringify(manifest, null, 2), 'utf-8');
 
-    console.log(`[sync] ✅ Successfully indexed ${manifest.totalEquities} Global Equities:`);
-    console.log(`  🇮🇳 India (NSE/BSE) : ${inCount}`);
-    console.log(`  🇺🇸 United States   : ${usCount}`);
-    console.log(`  🎨 Formats         : ${svgs} SVGs, ${pngs} PNGs`);
+    // Also mirror to logos/logos-manifest.json for convenience
+    try {
+        fs.writeFileSync(path.join(LOGOS_DIR, 'logos-manifest.json'), JSON.stringify(manifest, null, 2), 'utf-8');
+    } catch(e) {}
+
+    console.log(`[sync] ✅ Successfully indexed ${totalEquities} Global Equities across ${Object.keys(marketCounts).length} markets:`);
+    for (const [m, c] of Object.entries(marketCounts)) {
+        console.log(`  🌐 ${m} : ${c}`);
+    }
+    console.log(`  🎨 Formats : ${svgs} SVGs, ${pngs} PNGs`);
+
     return manifest;
 }
 

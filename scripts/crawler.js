@@ -1,7 +1,17 @@
 /**
- * crawler.js — Continuous Multi-Market Stock Logo & Metadata Ingestion Crawler
- * Systematically crawls all remaining equities across US (20,000+) and India (8,700+)
- * in polite background batches with cursor persistence, adaptive pacing, and auto-resume.
+ * crawler.js — Autonomous Global Multi-Market Stock Logo & Metadata Ingestion Agent
+ * Systematically crawls all stock markets worldwide:
+ * - 🇮🇳 India (NSE & BSE)
+ * - 🇺🇸 United States (NASDAQ & NYSE)
+ * - 🇬🇧 United Kingdom (LSE)
+ * - 🇩🇪 Germany (XETRA)
+ * - 🇫🇷 France (Euronext Paris)
+ * - 🇯🇵 Japan (TSE)
+ * - 🇨🇦 Canada (TSX)
+ * - 🇦🇺 Australia (ASX)
+ * - 🇭🇰 Hong Kong (HKEX)
+ *
+ * Persists cursor state per-market in crawler-state.json and links every company to Yahoo Finance.
  */
 
 import fs from 'fs';
@@ -16,24 +26,32 @@ const __dirname = path.dirname(__filename);
 
 const REPO_ROOT = path.resolve(__dirname, '..');
 const LOGOS_DIR = path.join(REPO_ROOT, 'logos');
-const IN_DIR = path.join(LOGOS_DIR, 'in');
-const US_DIR = path.join(LOGOS_DIR, 'us');
 const STATE_FILE = path.join(REPO_ROOT, 'crawler-state.json');
 const METADATA_FILE = path.join(REPO_ROOT, 'companies-metadata.json');
 
 fs.mkdirSync(LOGOS_DIR, { recursive: true });
-fs.mkdirSync(IN_DIR, { recursive: true });
-fs.mkdirSync(US_DIR, { recursive: true });
+
+export const WORLD_MARKETS = {
+    us: { name: 'United States', endpoint: 'https://scanner.tradingview.com/america/scan', yahooSuffix: '', exchanges: ['NASDAQ', 'NYSE'] },
+    in: { name: 'India', endpoint: 'https://scanner.tradingview.com/india/scan', yahooSuffix: '.NS', exchanges: ['NSE', 'BSE'] },
+    uk: { name: 'United Kingdom', endpoint: 'https://scanner.tradingview.com/uk/scan', yahooSuffix: '.L', exchanges: ['LSE'] },
+    germany: { name: 'Germany', endpoint: 'https://scanner.tradingview.com/germany/scan', yahooSuffix: '.DE', exchanges: ['XETRA'] },
+    france: { name: 'France', endpoint: 'https://scanner.tradingview.com/france/scan', yahooSuffix: '.PA', exchanges: ['Euronext Paris'] },
+    japan: { name: 'Japan', endpoint: 'https://scanner.tradingview.com/japan/scan', yahooSuffix: '.T', exchanges: ['TSE'] },
+    canada: { name: 'Canada', endpoint: 'https://scanner.tradingview.com/canada/scan', yahooSuffix: '.TO', exchanges: ['TSX'] },
+    australia: { name: 'Australia', endpoint: 'https://scanner.tradingview.com/australia/scan', yahooSuffix: '.AX', exchanges: ['ASX'] },
+    hongkong: { name: 'Hong Kong', endpoint: 'https://scanner.tradingview.com/hongkong/scan', yahooSuffix: '.HK', exchanges: ['HKEX'] },
+};
+
+// Ensure market directories exist
+for (const m of Object.keys(WORLD_MARKETS)) {
+    fs.mkdirSync(path.join(LOGOS_DIR, m), { recursive: true });
+}
 
 const BROWSER_HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
     'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
     'Accept-Language': 'en-US,en;q=0.9',
-};
-
-const TV_ENDPOINTS = {
-    us: 'https://scanner.tradingview.com/america/scan',
-    in: 'https://scanner.tradingview.com/india/scan',
 };
 
 export function loadCrawlerState() {
@@ -44,14 +62,15 @@ export function loadCrawlerState() {
             console.warn('[crawler] Could not parse crawler-state.json, creating new state');
         }
     }
-    return {
-        usCursor: 1000,
-        inCursor: 1200,
-        usTotal: 20069,
-        inTotal: 8717,
+    const state = {
         batchesCompleted: 0,
         lastCrawledAt: null,
+        markets: {}
     };
+    for (const m of Object.keys(WORLD_MARKETS)) {
+        state.markets[m] = { cursor: 0, total: 0 };
+    }
+    return state;
 }
 
 export function saveCrawlerState(state) {
@@ -72,15 +91,14 @@ export function saveMetadata(meta) {
     fs.writeFileSync(METADATA_FILE, JSON.stringify(meta, null, 2), 'utf-8');
 }
 
-async function fetchTradingViewBatch(market, start, count) {
-    const url = TV_ENDPOINTS[market];
+async function fetchMarketScannerBatch(endpoint, start, count, market) {
     const filter = [{ left: 'type', operation: 'in_range', right: ['stock', 'dr'] }];
     if (market === 'in') {
         filter.push({ left: 'exchange', operation: 'in_range', right: ['NSE', 'BSE'] });
     }
 
     try {
-        const res = await fetch(url, {
+        const res = await fetch(endpoint, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -124,23 +142,26 @@ async function fetchSvg(logoid) {
 }
 
 /**
- * Ingest a single batch for a market
+ * Ingest a single batch for a specified world market
  */
 export async function crawlMarketBatch(market = 'us', batchSize = 50, state, metadata) {
     const mkt = market.toLowerCase();
-    const destDir = mkt === 'us' ? US_DIR : IN_DIR;
-    const cursorKey = mkt === 'us' ? 'usCursor' : 'inCursor';
-    const totalKey = mkt === 'us' ? 'usTotal' : 'inTotal';
+    const config = WORLD_MARKETS[mkt] || WORLD_MARKETS.us;
+    const destDir = path.join(LOGOS_DIR, mkt);
+    fs.mkdirSync(destDir, { recursive: true });
 
-    const currentOffset = state[cursorKey] || 0;
-    console.log(`[crawler] 📦 Crawling ${mkt.toUpperCase()} [${currentOffset} .. ${currentOffset + batchSize}]...`);
+    if (!state.markets) state.markets = {};
+    if (!state.markets[mkt]) state.markets[mkt] = { cursor: 0, total: 0 };
 
-    const result = await fetchTradingViewBatch(mkt, currentOffset, batchSize);
-    if (result.totalCount) state[totalKey] = result.totalCount;
+    const currentOffset = state.markets[mkt].cursor || 0;
+    console.log(`[crawler] 📦 [${config.name.toUpperCase()}] Fetching batch [${currentOffset} .. ${currentOffset + batchSize}]...`);
+
+    const result = await fetchMarketScannerBatch(config.endpoint, currentOffset, batchSize, mkt);
+    if (result.totalCount) state.markets[mkt].total = result.totalCount;
 
     const rows = result.data || [];
     if (rows.length === 0) {
-        console.log(`[crawler] Reached end of market ${mkt.toUpperCase()}`);
+        console.log(`[crawler] Reached end of market: ${config.name}`);
         return { count: 0, newLogos: 0 };
     }
 
@@ -154,22 +175,27 @@ export async function crawlMarketBatch(market = 'us', batchSize = 50, state, met
         const targetSvg = path.join(destDir, `${sym}.svg`);
         const targetPng = path.join(destDir, `${sym}.png`);
 
+        const yahooTicker = `${sym}${config.yahooSuffix}`;
+
         // Index metadata
         metadata[`${mkt.toUpperCase()}:${sym}`] = {
             symbol: sym,
             company: desc || sym,
-            logoid: logoid || null,
+            country: config.name,
+            market: mkt.toUpperCase(),
             sector: sector || null,
             industry: industry || null,
             marketCap: mcap || null,
-            market: mkt.toUpperCase(),
+            logoid: logoid || null,
+            yahooTicker,
+            yahooUrl: `https://finance.yahoo.com/quote/${yahooTicker}`
         };
 
         if (fs.existsSync(targetSvg) || fs.existsSync(targetPng)) {
             continue;
         }
 
-        // Try TradingView SVG
+        // Try Vector SVG
         let saved = false;
         if (logoid) {
             const svgContent = await fetchSvg(logoid);
@@ -197,28 +223,26 @@ export async function crawlMarketBatch(market = 'us', batchSize = 50, state, met
             console.log(`  [${mkt.toUpperCase()}] 🎨 ${sym}: Generated procedural badge`);
         }
 
-        // Polite delay
-        await new Promise((r) => setTimeout(r, 50));
+        await new Promise((r) => setTimeout(r, 40));
     }
 
-    // Advance cursor
-    state[cursorKey] = currentOffset + rows.length;
+    state.markets[mkt].cursor = currentOffset + rows.length;
     return { count: rows.length, newLogos };
 }
 
 /**
- * Execute continuous or single-step crawler run
+ * Execute continuous or multi-market crawler run
  */
 export async function runCrawler({
     continuous = false,
-    batchSize = 50,
-    delaySec = 10,
-    market = 'both',
-    maxBatches = Infinity,
+    batchSize = 25,
+    delaySec = 8,
+    markets = ['us', 'in', 'uk', 'germany', 'japan', 'canada', 'australia', 'hongkong'],
+    maxBatches = 1,
 } = {}) {
     console.log(`\n======================================================`);
-    console.log(`  🚀 Global Stock Logo Continuous Crawler Engine`);
-    console.log(`  Mode: ${continuous ? 'Continuous Loop' : 'Single Batch'}`);
+    console.log(`  🌍 Universal Global Stock Market Crawler Agent`);
+    console.log(`  Markets: ${markets.map(m => m.toUpperCase()).join(', ')}`);
     console.log(`  Batch Size: ${batchSize} stocks | Delay: ${delaySec}s`);
     console.log(`======================================================\n`);
 
@@ -237,19 +261,16 @@ export async function runCrawler({
         batchesRun++;
         state.batchesCompleted = (state.batchesCompleted || 0) + 1;
 
-        if (market === 'both' || market === 'us') {
-            await crawlMarketBatch('us', batchSize, state, metadata);
-        }
-
-        if (market === 'both' || market === 'in') {
-            await crawlMarketBatch('in', batchSize, state, metadata);
+        for (const mkt of markets) {
+            if (!keepRunning) break;
+            await crawlMarketBatch(mkt, batchSize, state, metadata);
         }
 
         saveCrawlerState(state);
         saveMetadata(metadata);
         syncGlobalCatalog();
 
-        console.log(`[crawler] 💾 Checkpoint saved. State: US Cursor=${state.usCursor}/${state.usTotal}, IN Cursor=${state.inCursor}/${state.inTotal}`);
+        console.log(`[crawler] 💾 Checkpoint saved for cycle ${batchesRun}`);
 
         if (!continuous) break;
 
@@ -266,9 +287,9 @@ export async function runCrawler({
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
     const args = process.argv.slice(2);
     let continuous = false;
-    let batchSize = 50;
-    let delaySec = 10;
-    let market = 'both';
+    let batchSize = 25;
+    let delaySec = 8;
+    let markets = ['us', 'in', 'uk', 'germany', 'japan', 'canada', 'australia', 'hongkong'];
     let maxBatches = 1;
 
     for (let i = 0; i < args.length; i++) {
@@ -282,17 +303,16 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.a
             delaySec = parseInt(args[i + 1], 10);
             i++;
         } else if (args[i] === '--market' && args[i + 1]) {
-            market = args[i + 1].toLowerCase();
+            markets = [args[i + 1].toLowerCase()];
+            i++;
+        } else if (args[i] === '--markets' && args[i + 1]) {
+            markets = args[i + 1].toLowerCase().split(',');
             i++;
         } else if (args[i] === '--max-batches' && args[i + 1]) {
             maxBatches = parseInt(args[i + 1], 10);
             i++;
-        } else if (args[i] === '--reset') {
-            const emptyState = { usCursor: 0, inCursor: 0, usTotal: 20069, inTotal: 8717, batchesCompleted: 0 };
-            saveCrawlerState(emptyState);
-            console.log('[crawler] Reset crawler-state.json to cursor 0');
         }
     }
 
-    runCrawler({ continuous, batchSize, delaySec, market, maxBatches }).catch(console.error);
+    runCrawler({ continuous, batchSize, delaySec, markets, maxBatches }).catch(console.error);
 }

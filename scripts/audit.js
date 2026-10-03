@@ -13,11 +13,10 @@ const LOGOS_DIR = path.resolve(__dirname, '..', 'logos');
 
 export function auditLogos() {
     console.log('[audit] 🔍 Auditing all assets across root and market subdirectories...');
-    const searchDirs = [
-        LOGOS_DIR,
-        path.join(LOGOS_DIR, 'in'),
-        path.join(LOGOS_DIR, 'us')
-    ].filter(d => fs.existsSync(d));
+    const subDirs = fs.readdirSync(LOGOS_DIR).filter(d => {
+        try { return fs.statSync(path.join(LOGOS_DIR, d)).isDirectory(); } catch(e) { return false; }
+    });
+    const searchDirs = [LOGOS_DIR, ...subDirs.map(d => path.join(LOGOS_DIR, d))];
 
     let errors = 0;
     let warnings = 0;
