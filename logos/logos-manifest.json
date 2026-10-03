@@ -1,14 +1,14 @@
 {
   "name": "Global Stock Logos Catalog (India, US & World)",
   "version": "2.1.0",
-  "updatedAt": "2026-10-03T17:03:37.664Z",
-  "totalEquities": 2216,
+  "updatedAt": "2026-10-03T17:06:47.140Z",
+  "totalEquities": 2222,
   "stats": {
     "markets": {
       "AUSTRALIA": 15,
       "CANADA": 10,
-      "FRANCE": 15,
-      "GERMANY": 6,
+      "FRANCE": 20,
+      "GERMANY": 7,
       "HONGKONG": 15,
       "IN": 1073,
       "JAPAN": 22,
@@ -16,7 +16,7 @@
       "US": 1035
     },
     "formats": {
-      "svg": 1487,
+      "svg": 1493,
       "png": 729
     }
   },
@@ -2046,6 +2046,52 @@
       "isProcedural": true,
       "updatedAt": "2026-10-03T17:02:35.035Z"
     },
+    "FRANCE:ACA": {
+      "symbol": "ACA",
+      "company": "Credit Agricole SA",
+      "market": "FRANCE",
+      "country": "France",
+      "exchanges": [
+        "Euronext Paris"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Regional Banks",
+      "marketCap": 51613628436,
+      "logoid": "credit-agricole",
+      "yahooTicker": "ACA.PA",
+      "yahooUrl": "https://finance.yahoo.com/quote/ACA.PA",
+      "yahooApiUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ACA.PA",
+      "path": "logos/france/ACA.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/france/ACA.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/ACA.svg",
+      "sizeBytes": 812,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T17:06:47.114Z"
+    },
+    "ACA": {
+      "symbol": "ACA",
+      "company": "Credit Agricole SA",
+      "market": "FRANCE",
+      "country": "France",
+      "exchanges": [
+        "Euronext Paris"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Regional Banks",
+      "marketCap": 51613628436,
+      "logoid": "credit-agricole",
+      "yahooTicker": "ACA.PA",
+      "yahooUrl": "https://finance.yahoo.com/quote/ACA.PA",
+      "yahooApiUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ACA.PA",
+      "path": "logos/france/ACA.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/france/ACA.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/ACA.svg",
+      "sizeBytes": 812,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T17:06:47.114Z"
+    },
     "FRANCE:AI": {
       "symbol": "AI",
       "company": "Air Liquide SA",
@@ -2137,6 +2183,52 @@
       "sizeBytes": 1053,
       "isProcedural": true,
       "updatedAt": "2026-10-03T17:02:35.035Z"
+    },
+    "FRANCE:BN": {
+      "symbol": "BN",
+      "company": "Danone SA",
+      "market": "FRANCE",
+      "country": "France",
+      "exchanges": [
+        "Euronext Paris"
+      ],
+      "format": "svg",
+      "sector": "Consumer Non-Durables",
+      "industry": "Food: Meat/Fish/Dairy",
+      "marketCap": 37961870012,
+      "logoid": "danone",
+      "yahooTicker": "BN.PA",
+      "yahooUrl": "https://finance.yahoo.com/quote/BN.PA",
+      "yahooApiUrl": "https://query1.finance.yahoo.com/v8/finance/chart/BN.PA",
+      "path": "logos/france/BN.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/france/BN.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/BN.svg",
+      "sizeBytes": 1259,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:36:02.023Z"
+    },
+    "BN": {
+      "symbol": "BN",
+      "company": "Danone SA",
+      "market": "FRANCE",
+      "country": "France",
+      "exchanges": [
+        "Euronext Paris"
+      ],
+      "format": "svg",
+      "sector": "Consumer Non-Durables",
+      "industry": "Food: Meat/Fish/Dairy",
+      "marketCap": 37961870012,
+      "logoid": "danone",
+      "yahooTicker": "BN.PA",
+      "yahooUrl": "https://finance.yahoo.com/quote/BN.PA",
+      "yahooApiUrl": "https://query1.finance.yahoo.com/v8/finance/chart/BN.PA",
+      "path": "logos/france/BN.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/france/BN.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/BN.svg",
+      "sizeBytes": 1259,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:36:02.023Z"
     },
     "FRANCE:BNP": {
       "symbol": "BNP",
@@ -2414,6 +2506,98 @@
       "isProcedural": true,
       "updatedAt": "2026-10-03T17:02:35.035Z"
     },
+    "FRANCE:GLE": {
+      "symbol": "GLE",
+      "company": "Societe Generale SA Class A",
+      "market": "FRANCE",
+      "country": "France",
+      "exchanges": [
+        "Euronext Paris"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Major Banks",
+      "marketCap": 47711783110,
+      "logoid": "societe-generale",
+      "yahooTicker": "GLE.PA",
+      "yahooUrl": "https://finance.yahoo.com/quote/GLE.PA",
+      "yahooApiUrl": "https://query1.finance.yahoo.com/v8/finance/chart/GLE.PA",
+      "path": "logos/france/GLE.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/france/GLE.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/GLE.svg",
+      "sizeBytes": 271,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T17:06:47.114Z"
+    },
+    "GLE": {
+      "symbol": "GLE",
+      "company": "Societe Generale SA Class A",
+      "market": "FRANCE",
+      "country": "France",
+      "exchanges": [
+        "Euronext Paris"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Major Banks",
+      "marketCap": 47711783110,
+      "logoid": "societe-generale",
+      "yahooTicker": "GLE.PA",
+      "yahooUrl": "https://finance.yahoo.com/quote/GLE.PA",
+      "yahooApiUrl": "https://query1.finance.yahoo.com/v8/finance/chart/GLE.PA",
+      "path": "logos/france/GLE.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/france/GLE.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/GLE.svg",
+      "sizeBytes": 271,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T17:06:47.114Z"
+    },
+    "FRANCE:HO": {
+      "symbol": "HO",
+      "company": "Thales SA",
+      "market": "FRANCE",
+      "country": "France",
+      "exchanges": [
+        "Euronext Paris"
+      ],
+      "format": "svg",
+      "sector": "Electronic Technology",
+      "industry": "Aerospace & Defense",
+      "marketCap": 45769073251,
+      "logoid": "thales",
+      "yahooTicker": "HO.PA",
+      "yahooUrl": "https://finance.yahoo.com/quote/HO.PA",
+      "yahooApiUrl": "https://query1.finance.yahoo.com/v8/finance/chart/HO.PA",
+      "path": "logos/france/HO.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/france/HO.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/HO.svg",
+      "sizeBytes": 945,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T17:06:47.114Z"
+    },
+    "HO": {
+      "symbol": "HO",
+      "company": "Thales SA",
+      "market": "FRANCE",
+      "country": "France",
+      "exchanges": [
+        "Euronext Paris"
+      ],
+      "format": "svg",
+      "sector": "Electronic Technology",
+      "industry": "Aerospace & Defense",
+      "marketCap": 45769073251,
+      "logoid": "thales",
+      "yahooTicker": "HO.PA",
+      "yahooUrl": "https://finance.yahoo.com/quote/HO.PA",
+      "yahooApiUrl": "https://query1.finance.yahoo.com/v8/finance/chart/HO.PA",
+      "path": "logos/france/HO.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/france/HO.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/HO.svg",
+      "sizeBytes": 945,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T17:06:47.114Z"
+    },
     "FRANCE:MC": {
       "symbol": "MC",
       "company": "LVMH Moet Hennessy Louis Vuitton SE",
@@ -2644,6 +2828,52 @@
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:26:50.122Z"
     },
+    "FRANCE:STMPA": {
+      "symbol": "STMPA",
+      "company": "STMicroelectronics NV",
+      "market": "FRANCE",
+      "country": "France",
+      "exchanges": [
+        "Euronext Paris"
+      ],
+      "format": "svg",
+      "sector": "Electronic Technology",
+      "industry": "Semiconductors",
+      "marketCap": 44928728952,
+      "logoid": "stmicroelectronics",
+      "yahooTicker": "STMPA.PA",
+      "yahooUrl": "https://finance.yahoo.com/quote/STMPA.PA",
+      "yahooApiUrl": "https://query1.finance.yahoo.com/v8/finance/chart/STMPA.PA",
+      "path": "logos/france/STMPA.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/france/STMPA.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/STMPA.svg",
+      "sizeBytes": 579,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T17:06:47.114Z"
+    },
+    "STMPA": {
+      "symbol": "STMPA",
+      "company": "STMicroelectronics NV",
+      "market": "FRANCE",
+      "country": "France",
+      "exchanges": [
+        "Euronext Paris"
+      ],
+      "format": "svg",
+      "sector": "Electronic Technology",
+      "industry": "Semiconductors",
+      "marketCap": 44928728952,
+      "logoid": "stmicroelectronics",
+      "yahooTicker": "STMPA.PA",
+      "yahooUrl": "https://finance.yahoo.com/quote/STMPA.PA",
+      "yahooApiUrl": "https://query1.finance.yahoo.com/v8/finance/chart/STMPA.PA",
+      "path": "logos/france/STMPA.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/france/STMPA.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/STMPA.svg",
+      "sizeBytes": 579,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T17:06:47.114Z"
+    },
     "FRANCE:SU": {
       "symbol": "SU",
       "company": "Schneider Electric SE",
@@ -2781,6 +3011,52 @@
       "sizeBytes": 1173,
       "isProcedural": true,
       "updatedAt": "2026-10-03T17:02:15.497Z"
+    },
+    "GERMANY:A14Y6F": {
+      "symbol": "A14Y6F",
+      "company": "Alphabet Inc. Class A",
+      "market": "GERMANY",
+      "country": "Germany",
+      "exchanges": [
+        "XETRA"
+      ],
+      "format": "svg",
+      "sector": "Technology Services",
+      "industry": "Internet Software/Services",
+      "marketCap": 3722523253549.374,
+      "logoid": "alphabet",
+      "yahooTicker": "A14Y6F.DE",
+      "yahooUrl": "https://finance.yahoo.com/quote/A14Y6F.DE",
+      "yahooApiUrl": "https://query1.finance.yahoo.com/v8/finance/chart/A14Y6F.DE",
+      "path": "logos/germany/A14Y6F.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/germany/A14Y6F.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/A14Y6F.svg",
+      "sizeBytes": 2489,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T17:06:47.114Z"
+    },
+    "A14Y6F": {
+      "symbol": "A14Y6F",
+      "company": "Alphabet Inc. Class A",
+      "market": "GERMANY",
+      "country": "Germany",
+      "exchanges": [
+        "XETRA"
+      ],
+      "format": "svg",
+      "sector": "Technology Services",
+      "industry": "Internet Software/Services",
+      "marketCap": 3722523253549.374,
+      "logoid": "alphabet",
+      "yahooTicker": "A14Y6F.DE",
+      "yahooUrl": "https://finance.yahoo.com/quote/A14Y6F.DE",
+      "yahooApiUrl": "https://query1.finance.yahoo.com/v8/finance/chart/A14Y6F.DE",
+      "path": "logos/germany/A14Y6F.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/germany/A14Y6F.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/A14Y6F.svg",
+      "sizeBytes": 2489,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T17:06:47.114Z"
     },
     "GERMANY:ABEA": {
       "symbol": "ABEA",
@@ -63431,30 +63707,6 @@
       "updatedAt": "2026-10-03T16:19:41.088Z"
     },
     "US:BN": {
-      "symbol": "BN",
-      "company": "Brookfield Corporation",
-      "market": "US",
-      "country": "United States",
-      "exchanges": [
-        "NASDAQ",
-        "NYSE"
-      ],
-      "format": "svg",
-      "sector": "Finance",
-      "industry": "Investment Managers",
-      "marketCap": 90531385098.07478,
-      "logoid": "brookfield",
-      "yahooTicker": "BN",
-      "yahooUrl": "https://finance.yahoo.com/quote/BN",
-      "yahooApiUrl": "https://query1.finance.yahoo.com/v8/finance/chart/BN",
-      "path": "logos/us/BN.svg",
-      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/BN.svg",
-      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/BN.svg",
-      "sizeBytes": 2226,
-      "isProcedural": true,
-      "updatedAt": "2026-10-03T16:36:02.023Z"
-    },
-    "BN": {
       "symbol": "BN",
       "company": "Brookfield Corporation",
       "market": "US",

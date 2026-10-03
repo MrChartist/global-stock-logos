@@ -16240,5 +16240,77 @@
     "logoid": "china-merchants-bank",
     "yahooTicker": "3968.HK",
     "yahooUrl": "https://finance.yahoo.com/quote/3968.HK"
+  },
+  "FRANCE:ACA": {
+    "symbol": "ACA",
+    "company": "Credit Agricole SA",
+    "country": "France",
+    "market": "FRANCE",
+    "sector": "Finance",
+    "industry": "Regional Banks",
+    "marketCap": 51613628436,
+    "logoid": "credit-agricole",
+    "yahooTicker": "ACA.PA",
+    "yahooUrl": "https://finance.yahoo.com/quote/ACA.PA"
+  },
+  "FRANCE:GLE": {
+    "symbol": "GLE",
+    "company": "Societe Generale SA Class A",
+    "country": "France",
+    "market": "FRANCE",
+    "sector": "Finance",
+    "industry": "Major Banks",
+    "marketCap": 47711783110,
+    "logoid": "societe-generale",
+    "yahooTicker": "GLE.PA",
+    "yahooUrl": "https://finance.yahoo.com/quote/GLE.PA"
+  },
+  "FRANCE:HO": {
+    "symbol": "HO",
+    "company": "Thales SA",
+    "country": "France",
+    "market": "FRANCE",
+    "sector": "Electronic Technology",
+    "industry": "Aerospace & Defense",
+    "marketCap": 45769073251,
+    "logoid": "thales",
+    "yahooTicker": "HO.PA",
+    "yahooUrl": "https://finance.yahoo.com/quote/HO.PA"
+  },
+  "FRANCE:STMPA": {
+    "symbol": "STMPA",
+    "company": "STMicroelectronics NV",
+    "country": "France",
+    "market": "FRANCE",
+    "sector": "Electronic Technology",
+    "industry": "Semiconductors",
+    "marketCap": 44928728952,
+    "logoid": "stmicroelectronics",
+    "yahooTicker": "STMPA.PA",
+    "yahooUrl": "https://finance.yahoo.com/quote/STMPA.PA"
+  },
+  "FRANCE:BN": {
+    "symbol": "BN",
+    "company": "Danone SA",
+    "country": "France",
+    "market": "FRANCE",
+    "sector": "Consumer Non-Durables",
+    "industry": "Food: Meat/Fish/Dairy",
+    "marketCap": 37961870012,
+    "logoid": "danone",
+    "yahooTicker": "BN.PA",
+    "yahooUrl": "https://finance.yahoo.com/quote/BN.PA"
+  },
+  "GERMANY:A14Y6F": {
+    "symbol": "A14Y6F",
+    "company": "Alphabet Inc. Class A",
+    "country": "Germany",
+    "market": "GERMANY",
+    "sector": "Technology Services",
+    "industry": "Internet Software/Services",
+    "marketCap": 3722523253549.374,
+    "logoid": "alphabet",
+    "yahooTicker": "A14Y6F.DE",
+    "yahooUrl": "https://finance.yahoo.com/quote/A14Y6F.DE"
   }
 }
