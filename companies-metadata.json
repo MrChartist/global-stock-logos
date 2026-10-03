@@ -14515,5 +14515,275 @@
     "industry": "Trucks/Construction/Farm Machinery",
     "marketCap": 95624118347,
     "market": "IN"
+  },
+  "US:RPRX": {
+    "symbol": "RPRX",
+    "company": "Royalty Pharma Plc Class A",
+    "logoid": "royalty-pharma",
+    "sector": "Health Technology",
+    "industry": "Pharmaceuticals: Major",
+    "marketCap": 32869934721.000004,
+    "market": "US"
+  },
+  "US:VG": {
+    "symbol": "VG",
+    "company": "Venture Global, Inc. Class A",
+    "logoid": "venture-global",
+    "sector": "Industrial Services",
+    "industry": "Oil & Gas Pipelines",
+    "marketCap": 32826219555.000004,
+    "market": "US"
+  },
+  "US:CKHUY": {
+    "symbol": "CKHUY",
+    "company": "CK Hutchison Holdings Ltd Unsponsored ADR",
+    "logoid": "ck-hutchison-holding",
+    "sector": "Retail Trade",
+    "industry": "Specialty Stores",
+    "marketCap": 32817055896.338192,
+    "market": "US"
+  },
+  "US:SAABY": {
+    "symbol": "SAABY",
+    "company": "Saab AB Unsponsored ADR",
+    "logoid": "saab-ab-ser-b",
+    "sector": "Electronic Technology",
+    "industry": "Aerospace & Defense",
+    "marketCap": 32809745127.919197,
+    "market": "US"
+  },
+  "US:ESLT": {
+    "symbol": "ESLT",
+    "company": "Elbit Systems Ltd",
+    "logoid": "elbit-systems",
+    "sector": "Electronic Technology",
+    "industry": "Aerospace & Defense",
+    "marketCap": 32627144241.35612,
+    "market": "US"
+  },
+  "US:WEICF": {
+    "symbol": "WEICF",
+    "company": "Weichai Power Co., Ltd. Class H",
+    "logoid": "weichai-power-company-ltd",
+    "sector": "Producer Manufacturing",
+    "industry": "Auto Parts: OEM",
+    "marketCap": 32574983430.056496,
+    "market": "US"
+  },
+  "US:BIIB": {
+    "symbol": "BIIB",
+    "company": "Biogen Inc.",
+    "logoid": "biogen",
+    "sector": "Health Technology",
+    "industry": "Pharmaceuticals: Major",
+    "marketCap": 32488149758.000004,
+    "market": "US"
+  },
+  "US:TTNDF": {
+    "symbol": "TTNDF",
+    "company": "Techtronic Industries Co., Ltd.",
+    "logoid": "techtronic-ind",
+    "sector": "Consumer Durables",
+    "industry": "Tools & Hardware",
+    "marketCap": 32452273913.03808,
+    "market": "US"
+  },
+  "US:DXCM": {
+    "symbol": "DXCM",
+    "company": "DexCom, Inc.",
+    "logoid": "dexcom",
+    "sector": "Health Technology",
+    "industry": "Medical Specialties",
+    "marketCap": 32211513703.999996,
+    "market": "US"
+  },
+  "US:HSY": {
+    "symbol": "HSY",
+    "company": "Hershey Company",
+    "logoid": "hershey",
+    "sector": "Consumer Non-Durables",
+    "industry": "Food: Specialty/Candy",
+    "marketCap": 32186322140,
+    "market": "US"
+  },
+  "US:DASTF": {
+    "symbol": "DASTF",
+    "company": "Dassault Systemes SE",
+    "logoid": "dassault-systemes",
+    "sector": "Technology Services",
+    "industry": "Packaged Software",
+    "marketCap": 32132521154.04751,
+    "market": "US"
+  },
+  "US:KHNGY": {
+    "symbol": "KHNGY",
+    "company": "Kuehne & Nagel International AG Unsponsored ADR",
+    "logoid": "kuehne-nagel",
+    "sector": "Transportation",
+    "industry": "Marine Shipping",
+    "marketCap": 32065949490.9165,
+    "market": "US"
+  },
+  "US:ZS": {
+    "symbol": "ZS",
+    "company": "Zscaler, Inc.",
+    "logoid": "zscaler",
+    "sector": "Technology Services",
+    "industry": "Packaged Software",
+    "marketCap": 32056555557.999996,
+    "market": "US"
+  },
+  "US:MLYNF": {
+    "symbol": "MLYNF",
+    "company": "Malayan Banking Bhd.",
+    "logoid": "malayan-banking",
+    "sector": "Finance",
+    "industry": "Regional Banks",
+    "marketCap": 32053309374.51597,
+    "market": "US"
+  },
+  "US:KHNGF": {
+    "symbol": "KHNGF",
+    "company": "Kuehne & Nagel International AG",
+    "logoid": "kuehne-nagel",
+    "sector": "Transportation",
+    "industry": "Marine Shipping",
+    "marketCap": 32031372496.30256,
+    "market": "US"
+  },
+  "US:DSKYF": {
+    "symbol": "DSKYF",
+    "company": "Daiichi Sankyo Company, Limited",
+    "logoid": "daiichi-sankyo",
+    "sector": "Health Technology",
+    "industry": "Pharmaceuticals: Major",
+    "marketCap": 32025896289.061943,
+    "market": "US"
+  },
+  "US:SHLRF": {
+    "symbol": "SHLRF",
+    "company": "Schindler Holding Ltd.",
+    "logoid": "schindler-n",
+    "sector": "Producer Manufacturing",
+    "industry": "Industrial Machinery",
+    "marketCap": 31940143030.261963,
+    "market": "US"
+  },
+  "US:ACGLN": {
+    "symbol": "ACGLN",
+    "company": "Arch Capital Group Ltd. Depositary Shs Repr 1/1000th 4.55 % Non-Cum Red Perp Pfd Shs Series G",
+    "logoid": "arch-capital",
+    "sector": "Finance",
+    "industry": "Multi-Line Insurance",
+    "marketCap": 31939045671,
+    "market": "US"
+  },
+  "US:ACGLO": {
+    "symbol": "ACGLO",
+    "company": "Arch Capital Group Ltd. Deposit Shs Repr 1/1000th 5.45 % Non-Cum Pfd Shs Series F",
+    "logoid": "arch-capital",
+    "sector": "Finance",
+    "industry": "Multi-Line Insurance",
+    "marketCap": 31939045671,
+    "market": "US"
+  },
+  "US:ACGL": {
+    "symbol": "ACGL",
+    "company": "Arch Capital Group Ltd.",
+    "logoid": "arch-capital",
+    "sector": "Finance",
+    "industry": "Multi-Line Insurance",
+    "marketCap": 31939045671,
+    "market": "US"
+  },
+  "IN:SAREGAMA": {
+    "symbol": "SAREGAMA",
+    "company": "Saregama India Limited",
+    "logoid": "saregama",
+    "sector": "Consumer Services",
+    "industry": "Movies/Entertainment",
+    "marketCap": 95140676536,
+    "market": "IN"
+  },
+  "IN:MONEYVIEW": {
+    "symbol": "MONEYVIEW",
+    "company": "Moneyview Limited",
+    "logoid": null,
+    "sector": "Technology Services",
+    "industry": "Packaged Software",
+    "marketCap": 95105289651,
+    "market": "IN"
+  },
+  "IN:IEX": {
+    "symbol": "IEX",
+    "company": "Indian Energy Exchange Ltd.",
+    "logoid": "indian-energy-exchange",
+    "sector": "Finance",
+    "industry": "Investment Banks/Brokers",
+    "marketCap": 94564018755,
+    "market": "IN"
+  },
+  "IN:AAVAS": {
+    "symbol": "AAVAS",
+    "company": "Aavas Financiers Ltd.",
+    "logoid": "aavas-financiers",
+    "sector": "Finance",
+    "industry": "Finance/Rental/Leasing",
+    "marketCap": 94558484688,
+    "market": "IN"
+  },
+  "IN:CANFINHOME": {
+    "symbol": "CANFINHOME",
+    "company": "Can Fin Homes Ltd.",
+    "logoid": "can-fin-homes",
+    "sector": "Finance",
+    "industry": "Finance/Rental/Leasing",
+    "marketCap": 94446546786,
+    "market": "IN"
+  },
+  "IN:KENNAMET": {
+    "symbol": "KENNAMET",
+    "company": "Kennametal India Limited",
+    "logoid": "kennametal-india-l",
+    "sector": "Producer Manufacturing",
+    "industry": "Metal Fabrication",
+    "marketCap": 94072365898,
+    "market": "IN"
+  },
+  "IN:DYNAMATECH": {
+    "symbol": "DYNAMATECH",
+    "company": "Dynamatic Technologies Limited",
+    "logoid": "dynamatic-technolo",
+    "sector": "Producer Manufacturing",
+    "industry": "Industrial Machinery",
+    "marketCap": 93622076084,
+    "market": "IN"
+  },
+  "IN:MAHSEAMLES": {
+    "symbol": "MAHSEAMLES",
+    "company": "Maharashtra Seamless Limited",
+    "logoid": "maharashtra-seamless",
+    "sector": "Non-Energy Minerals",
+    "industry": "Steel",
+    "marketCap": 93586471982,
+    "market": "IN"
+  },
+  "IN:SGMART": {
+    "symbol": "SGMART",
+    "company": "SG Mart Ltd",
+    "logoid": "sg-mart-limited",
+    "sector": "Utilities",
+    "industry": "Electric Utilities",
+    "marketCap": 93578724777,
+    "market": "IN"
+  },
+  "IN:FINPIPE": {
+    "symbol": "FINPIPE",
+    "company": "Finolex Industries Limited",
+    "logoid": "finolex-industries",
+    "sector": "Producer Manufacturing",
+    "industry": "Miscellaneous Manufacturing",
+    "marketCap": 93381777771,
+    "market": "IN"
   }
 }

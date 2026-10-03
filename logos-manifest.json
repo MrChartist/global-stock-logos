@@ -1,15 +1,15 @@
 {
   "name": "Global Stock Logos Catalog (India, US & World)",
   "version": "2.0.0",
-  "updatedAt": "2026-10-03T16:36:02.035Z",
-  "totalEquities": 2078,
+  "updatedAt": "2026-10-03T16:46:19.070Z",
+  "totalEquities": 2098,
   "stats": {
     "markets": {
-      "IN": 1072,
-      "US": 1006
+      "IN": 1073,
+      "US": 1025
     },
     "formats": {
-      "svg": 1349,
+      "svg": 1369,
       "png": 729
     }
   },
@@ -361,10 +361,10 @@
         "BSE"
       ],
       "format": "png",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Finance",
+      "industry": "Finance/Rental/Leasing",
+      "marketCap": 94558484688,
+      "logoid": "aavas-financiers",
       "path": "logos/in/AAVAS.png",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/AAVAS.png",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/AAVAS.png",
@@ -382,10 +382,10 @@
         "BSE"
       ],
       "format": "png",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Finance",
+      "industry": "Finance/Rental/Leasing",
+      "marketCap": 94558484688,
+      "logoid": "aavas-financiers",
       "path": "logos/in/AAVAS.png",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/AAVAS.png",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/AAVAS.png",
@@ -6913,10 +6913,10 @@
         "BSE"
       ],
       "format": "png",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Finance",
+      "industry": "Finance/Rental/Leasing",
+      "marketCap": 94446546786,
+      "logoid": "can-fin-homes",
       "path": "logos/in/CANFINHOME.png",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/CANFINHOME.png",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/CANFINHOME.png",
@@ -6934,10 +6934,10 @@
         "BSE"
       ],
       "format": "png",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Finance",
+      "industry": "Finance/Rental/Leasing",
+      "marketCap": 94446546786,
+      "logoid": "can-fin-homes",
       "path": "logos/in/CANFINHOME.png",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/CANFINHOME.png",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/CANFINHOME.png",
@@ -10693,10 +10693,10 @@
         "BSE"
       ],
       "format": "svg",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Producer Manufacturing",
+      "industry": "Industrial Machinery",
+      "marketCap": 93622076084,
+      "logoid": "dynamatic-technolo",
       "path": "logos/in/DYNAMATECH.svg",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/DYNAMATECH.svg",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/DYNAMATECH.svg",
@@ -10714,10 +10714,10 @@
         "BSE"
       ],
       "format": "svg",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Producer Manufacturing",
+      "industry": "Industrial Machinery",
+      "marketCap": 93622076084,
+      "logoid": "dynamatic-technolo",
       "path": "logos/in/DYNAMATECH.svg",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/DYNAMATECH.svg",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/DYNAMATECH.svg",
@@ -12877,10 +12877,10 @@
         "BSE"
       ],
       "format": "png",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Producer Manufacturing",
+      "industry": "Miscellaneous Manufacturing",
+      "marketCap": 93381777771,
+      "logoid": "finolex-industries",
       "path": "logos/in/FINPIPE.png",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/FINPIPE.png",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/FINPIPE.png",
@@ -12898,10 +12898,10 @@
         "BSE"
       ],
       "format": "png",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Producer Manufacturing",
+      "industry": "Miscellaneous Manufacturing",
+      "marketCap": 93381777771,
+      "logoid": "finolex-industries",
       "path": "logos/in/FINPIPE.png",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/FINPIPE.png",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/FINPIPE.png",
@@ -17833,10 +17833,10 @@
         "BSE"
       ],
       "format": "svg",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Finance",
+      "industry": "Investment Banks/Brokers",
+      "marketCap": 94564018755,
+      "logoid": "indian-energy-exchange",
       "path": "logos/in/IEX.svg",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/IEX.svg",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/IEX.svg",
@@ -17854,10 +17854,10 @@
         "BSE"
       ],
       "format": "svg",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Finance",
+      "industry": "Investment Banks/Brokers",
+      "marketCap": 94564018755,
+      "logoid": "indian-energy-exchange",
       "path": "logos/in/IEX.svg",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/IEX.svg",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/IEX.svg",
@@ -22075,10 +22075,10 @@
         "BSE"
       ],
       "format": "png",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Producer Manufacturing",
+      "industry": "Metal Fabrication",
+      "marketCap": 94072365898,
+      "logoid": "kennametal-india-l",
       "path": "logos/in/KENNAMET.png",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/KENNAMET.png",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/KENNAMET.png",
@@ -22096,10 +22096,10 @@
         "BSE"
       ],
       "format": "png",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Producer Manufacturing",
+      "industry": "Metal Fabrication",
+      "marketCap": 94072365898,
+      "logoid": "kennametal-india-l",
       "path": "logos/in/KENNAMET.png",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/KENNAMET.png",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/KENNAMET.png",
@@ -25141,10 +25141,10 @@
         "BSE"
       ],
       "format": "svg",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Non-Energy Minerals",
+      "industry": "Steel",
+      "marketCap": 93586471982,
+      "logoid": "maharashtra-seamless",
       "path": "logos/in/MAHSEAMLES.svg",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/MAHSEAMLES.svg",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/MAHSEAMLES.svg",
@@ -25162,10 +25162,10 @@
         "BSE"
       ],
       "format": "svg",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Non-Energy Minerals",
+      "industry": "Steel",
+      "marketCap": 93586471982,
+      "logoid": "maharashtra-seamless",
       "path": "logos/in/MAHSEAMLES.svg",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/MAHSEAMLES.svg",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/MAHSEAMLES.svg",
@@ -26810,6 +26810,48 @@
       "sizeBytes": 1953,
       "isProcedural": false,
       "updatedAt": "2026-10-03T10:50:16.319Z"
+    },
+    "IN:MONEYVIEW": {
+      "symbol": "MONEYVIEW",
+      "company": "Moneyview Limited",
+      "market": "IN",
+      "country": "India",
+      "exchanges": [
+        "NSE",
+        "BSE"
+      ],
+      "format": "svg",
+      "sector": "Technology Services",
+      "industry": "Packaged Software",
+      "marketCap": 95105289651,
+      "logoid": null,
+      "path": "logos/in/MONEYVIEW.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/MONEYVIEW.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/MONEYVIEW.svg",
+      "sizeBytes": 1413,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.029Z"
+    },
+    "MONEYVIEW": {
+      "symbol": "MONEYVIEW",
+      "company": "Moneyview Limited",
+      "market": "IN",
+      "country": "India",
+      "exchanges": [
+        "NSE",
+        "BSE"
+      ],
+      "format": "svg",
+      "sector": "Technology Services",
+      "industry": "Packaged Software",
+      "marketCap": 95105289651,
+      "logoid": null,
+      "path": "logos/in/MONEYVIEW.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/MONEYVIEW.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/MONEYVIEW.svg",
+      "sizeBytes": 1413,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.029Z"
     },
     "IN:MOREPENLAB": {
       "symbol": "MOREPENLAB",
@@ -35053,10 +35095,10 @@
         "BSE"
       ],
       "format": "png",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Consumer Services",
+      "industry": "Movies/Entertainment",
+      "marketCap": 95140676536,
+      "logoid": "saregama",
       "path": "logos/in/SAREGAMA.png",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/SAREGAMA.png",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/SAREGAMA.png",
@@ -35074,10 +35116,10 @@
         "BSE"
       ],
       "format": "png",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Consumer Services",
+      "industry": "Movies/Entertainment",
+      "marketCap": 95140676536,
+      "logoid": "saregama",
       "path": "logos/in/SAREGAMA.png",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/SAREGAMA.png",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/SAREGAMA.png",
@@ -35809,10 +35851,10 @@
         "BSE"
       ],
       "format": "png",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Utilities",
+      "industry": "Electric Utilities",
+      "marketCap": 93578724777,
+      "logoid": "sg-mart-limited",
       "path": "logos/in/SGMART.png",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/SGMART.png",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/SGMART.png",
@@ -35830,10 +35872,10 @@
         "BSE"
       ],
       "format": "png",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Utilities",
+      "industry": "Electric Utilities",
+      "marketCap": 93578724777,
+      "logoid": "sg-mart-limited",
       "path": "logos/in/SGMART.png",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/SGMART.png",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/SGMART.png",
@@ -45627,6 +45669,132 @@
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:26:50.114Z"
     },
+    "US:ACGL": {
+      "symbol": "ACGL",
+      "company": "Arch Capital Group Ltd.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Multi-Line Insurance",
+      "marketCap": 31939045671,
+      "logoid": "arch-capital",
+      "path": "logos/us/ACGL.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/ACGL.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/ACGL.svg",
+      "sizeBytes": 574,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.043Z"
+    },
+    "ACGL": {
+      "symbol": "ACGL",
+      "company": "Arch Capital Group Ltd.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Multi-Line Insurance",
+      "marketCap": 31939045671,
+      "logoid": "arch-capital",
+      "path": "logos/us/ACGL.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/ACGL.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/ACGL.svg",
+      "sizeBytes": 574,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.043Z"
+    },
+    "US:ACGLN": {
+      "symbol": "ACGLN",
+      "company": "Arch Capital Group Ltd. Depositary Shs Repr 1/1000th 4.55 % Non-Cum Red Perp Pfd Shs Series G",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Multi-Line Insurance",
+      "marketCap": 31939045671,
+      "logoid": "arch-capital",
+      "path": "logos/us/ACGLN.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/ACGLN.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/ACGLN.svg",
+      "sizeBytes": 574,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.043Z"
+    },
+    "ACGLN": {
+      "symbol": "ACGLN",
+      "company": "Arch Capital Group Ltd. Depositary Shs Repr 1/1000th 4.55 % Non-Cum Red Perp Pfd Shs Series G",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Multi-Line Insurance",
+      "marketCap": 31939045671,
+      "logoid": "arch-capital",
+      "path": "logos/us/ACGLN.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/ACGLN.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/ACGLN.svg",
+      "sizeBytes": 574,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.043Z"
+    },
+    "US:ACGLO": {
+      "symbol": "ACGLO",
+      "company": "Arch Capital Group Ltd. Deposit Shs Repr 1/1000th 5.45 % Non-Cum Pfd Shs Series F",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Multi-Line Insurance",
+      "marketCap": 31939045671,
+      "logoid": "arch-capital",
+      "path": "logos/us/ACGLO.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/ACGLO.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/ACGLO.svg",
+      "sizeBytes": 574,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.043Z"
+    },
+    "ACGLO": {
+      "symbol": "ACGLO",
+      "company": "Arch Capital Group Ltd. Deposit Shs Repr 1/1000th 5.45 % Non-Cum Pfd Shs Series F",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Multi-Line Insurance",
+      "marketCap": 31939045671,
+      "logoid": "arch-capital",
+      "path": "logos/us/ACGLO.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/ACGLO.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/ACGLO.svg",
+      "sizeBytes": 574,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.043Z"
+    },
     "US:ACN": {
       "symbol": "ACN",
       "company": "Accenture Plc Class A",
@@ -50373,6 +50541,48 @@
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:26:50.115Z"
     },
+    "US:BIIB": {
+      "symbol": "BIIB",
+      "company": "Biogen Inc.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Health Technology",
+      "industry": "Pharmaceuticals: Major",
+      "marketCap": 32488149758.000004,
+      "logoid": "biogen",
+      "path": "logos/us/BIIB.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/BIIB.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/BIIB.svg",
+      "sizeBytes": 2806,
+      "isProcedural": false,
+      "updatedAt": "2026-10-03T16:46:19.046Z"
+    },
+    "BIIB": {
+      "symbol": "BIIB",
+      "company": "Biogen Inc.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Health Technology",
+      "industry": "Pharmaceuticals: Major",
+      "marketCap": 32488149758.000004,
+      "logoid": "biogen",
+      "path": "logos/us/BIIB.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/BIIB.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/BIIB.svg",
+      "sizeBytes": 2806,
+      "isProcedural": false,
+      "updatedAt": "2026-10-03T16:46:19.046Z"
+    },
     "US:BKFCF": {
       "symbol": "BKFCF",
       "company": "Bank of Communications Co., Ltd. Class H",
@@ -53166,6 +53376,48 @@
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:36:02.024Z"
     },
+    "US:CKHUY": {
+      "symbol": "CKHUY",
+      "company": "CK Hutchison Holdings Ltd Unsponsored ADR",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Retail Trade",
+      "industry": "Specialty Stores",
+      "marketCap": 32817055896.338192,
+      "logoid": "ck-hutchison-holding",
+      "path": "logos/us/CKHUY.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/CKHUY.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/CKHUY.svg",
+      "sizeBytes": 751,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.048Z"
+    },
+    "CKHUY": {
+      "symbol": "CKHUY",
+      "company": "CK Hutchison Holdings Ltd Unsponsored ADR",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Retail Trade",
+      "industry": "Specialty Stores",
+      "marketCap": 32817055896.338192,
+      "logoid": "ck-hutchison-holding",
+      "path": "logos/us/CKHUY.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/CKHUY.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/CKHUY.svg",
+      "sizeBytes": 751,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.048Z"
+    },
     "US:CL": {
       "symbol": "CL",
       "company": "Colgate-Palmolive Company",
@@ -55602,6 +55854,48 @@
       "isProcedural": false,
       "updatedAt": "2026-10-03T16:19:41.089Z"
     },
+    "US:DASTF": {
+      "symbol": "DASTF",
+      "company": "Dassault Systemes SE",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Technology Services",
+      "industry": "Packaged Software",
+      "marketCap": 32132521154.04751,
+      "logoid": "dassault-systemes",
+      "path": "logos/us/DASTF.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/DASTF.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/DASTF.svg",
+      "sizeBytes": 1164,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.049Z"
+    },
+    "DASTF": {
+      "symbol": "DASTF",
+      "company": "Dassault Systemes SE",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Technology Services",
+      "industry": "Packaged Software",
+      "marketCap": 32132521154.04751,
+      "logoid": "dassault-systemes",
+      "path": "logos/us/DASTF.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/DASTF.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/DASTF.svg",
+      "sizeBytes": 1164,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.049Z"
+    },
     "US:DB": {
       "symbol": "DB",
       "company": "Deutsche Bank Aktiengesellschaft",
@@ -57072,6 +57366,48 @@
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:36:02.025Z"
     },
+    "US:DSKYF": {
+      "symbol": "DSKYF",
+      "company": "Daiichi Sankyo Company, Limited",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Health Technology",
+      "industry": "Pharmaceuticals: Major",
+      "marketCap": 32025896289.061943,
+      "logoid": "daiichi-sankyo",
+      "path": "logos/us/DSKYF.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/DSKYF.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/DSKYF.svg",
+      "sizeBytes": 788,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.052Z"
+    },
+    "DSKYF": {
+      "symbol": "DSKYF",
+      "company": "Daiichi Sankyo Company, Limited",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Health Technology",
+      "industry": "Pharmaceuticals: Major",
+      "marketCap": 32025896289.061943,
+      "logoid": "daiichi-sankyo",
+      "path": "logos/us/DSKYF.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/DSKYF.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/DSKYF.svg",
+      "sizeBytes": 788,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.052Z"
+    },
     "US:DTEGF": {
       "symbol": "DTEGF",
       "company": "Deutsche Telekom AG",
@@ -57365,6 +57701,48 @@
       "sizeBytes": 1400,
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:36:02.025Z"
+    },
+    "US:DXCM": {
+      "symbol": "DXCM",
+      "company": "DexCom, Inc.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Health Technology",
+      "industry": "Medical Specialties",
+      "marketCap": 32211513703.999996,
+      "logoid": "dexcom",
+      "path": "logos/us/DXCM.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/DXCM.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/DXCM.svg",
+      "sizeBytes": 2155,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.052Z"
+    },
+    "DXCM": {
+      "symbol": "DXCM",
+      "company": "DexCom, Inc.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Health Technology",
+      "industry": "Medical Specialties",
+      "marketCap": 32211513703.999996,
+      "logoid": "dexcom",
+      "path": "logos/us/DXCM.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/DXCM.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/DXCM.svg",
+      "sizeBytes": 2155,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.052Z"
     },
     "US:E": {
       "symbol": "E",
@@ -58919,6 +59297,48 @@
       "sizeBytes": 4463,
       "isProcedural": false,
       "updatedAt": "2026-10-03T16:36:02.026Z"
+    },
+    "US:ESLT": {
+      "symbol": "ESLT",
+      "company": "Elbit Systems Ltd",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Electronic Technology",
+      "industry": "Aerospace & Defense",
+      "marketCap": 32627144241.35612,
+      "logoid": "elbit-systems",
+      "path": "logos/us/ESLT.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/ESLT.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/ESLT.svg",
+      "sizeBytes": 2864,
+      "isProcedural": false,
+      "updatedAt": "2026-10-03T16:46:19.053Z"
+    },
+    "ESLT": {
+      "symbol": "ESLT",
+      "company": "Elbit Systems Ltd",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Electronic Technology",
+      "industry": "Aerospace & Defense",
+      "marketCap": 32627144241.35612,
+      "logoid": "elbit-systems",
+      "path": "logos/us/ESLT.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/ESLT.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/ESLT.svg",
+      "sizeBytes": 2864,
+      "isProcedural": false,
+      "updatedAt": "2026-10-03T16:46:19.053Z"
     },
     "US:ESOCF": {
       "symbol": "ESOCF",
@@ -63078,6 +63498,48 @@
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:26:50.118Z"
     },
+    "US:HSY": {
+      "symbol": "HSY",
+      "company": "Hershey Company",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Consumer Non-Durables",
+      "industry": "Food: Specialty/Candy",
+      "marketCap": 32186322140,
+      "logoid": "hershey",
+      "path": "logos/us/HSY.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/HSY.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/HSY.svg",
+      "sizeBytes": 512,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.055Z"
+    },
+    "HSY": {
+      "symbol": "HSY",
+      "company": "Hershey Company",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Consumer Non-Durables",
+      "industry": "Food: Specialty/Candy",
+      "marketCap": 32186322140,
+      "logoid": "hershey",
+      "path": "logos/us/HSY.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/HSY.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/HSY.svg",
+      "sizeBytes": 512,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.055Z"
+    },
     "US:HTHIF": {
       "symbol": "HTHIF",
       "company": "Hitachi, Ltd.",
@@ -65618,6 +66080,90 @@
       "sizeBytes": 913,
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:36:02.029Z"
+    },
+    "US:KHNGF": {
+      "symbol": "KHNGF",
+      "company": "Kuehne & Nagel International AG",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Transportation",
+      "industry": "Marine Shipping",
+      "marketCap": 32031372496.30256,
+      "logoid": "kuehne-nagel",
+      "path": "logos/us/KHNGF.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/KHNGF.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/KHNGF.svg",
+      "sizeBytes": 469,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.057Z"
+    },
+    "KHNGF": {
+      "symbol": "KHNGF",
+      "company": "Kuehne & Nagel International AG",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Transportation",
+      "industry": "Marine Shipping",
+      "marketCap": 32031372496.30256,
+      "logoid": "kuehne-nagel",
+      "path": "logos/us/KHNGF.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/KHNGF.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/KHNGF.svg",
+      "sizeBytes": 469,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.057Z"
+    },
+    "US:KHNGY": {
+      "symbol": "KHNGY",
+      "company": "Kuehne & Nagel International AG Unsponsored ADR",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Transportation",
+      "industry": "Marine Shipping",
+      "marketCap": 32065949490.9165,
+      "logoid": "kuehne-nagel",
+      "path": "logos/us/KHNGY.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/KHNGY.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/KHNGY.svg",
+      "sizeBytes": 469,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.057Z"
+    },
+    "KHNGY": {
+      "symbol": "KHNGY",
+      "company": "Kuehne & Nagel International AG Unsponsored ADR",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Transportation",
+      "industry": "Marine Shipping",
+      "marketCap": 32065949490.9165,
+      "logoid": "kuehne-nagel",
+      "path": "logos/us/KHNGY.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/KHNGY.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/KHNGY.svg",
+      "sizeBytes": 469,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.057Z"
     },
     "US:KKR": {
       "symbol": "KKR",
@@ -68810,6 +69356,48 @@
       "sizeBytes": 416,
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:36:02.030Z"
+    },
+    "US:MLYNF": {
+      "symbol": "MLYNF",
+      "company": "Malayan Banking Bhd.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Regional Banks",
+      "marketCap": 32053309374.51597,
+      "logoid": "malayan-banking",
+      "path": "logos/us/MLYNF.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/MLYNF.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/MLYNF.svg",
+      "sizeBytes": 4134,
+      "isProcedural": false,
+      "updatedAt": "2026-10-03T16:46:19.059Z"
+    },
+    "MLYNF": {
+      "symbol": "MLYNF",
+      "company": "Malayan Banking Bhd.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Regional Banks",
+      "marketCap": 32053309374.51597,
+      "logoid": "malayan-banking",
+      "path": "logos/us/MLYNF.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/MLYNF.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/MLYNF.svg",
+      "sizeBytes": 4134,
+      "isProcedural": false,
+      "updatedAt": "2026-10-03T16:46:19.059Z"
     },
     "US:MMC": {
       "symbol": "MMC",
@@ -76707,6 +77295,48 @@
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:36:02.032Z"
     },
+    "US:RPRX": {
+      "symbol": "RPRX",
+      "company": "Royalty Pharma Plc Class A",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Health Technology",
+      "industry": "Pharmaceuticals: Major",
+      "marketCap": 32869934721.000004,
+      "logoid": "royalty-pharma",
+      "path": "logos/us/RPRX.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/RPRX.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/RPRX.svg",
+      "sizeBytes": 1231,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.064Z"
+    },
+    "RPRX": {
+      "symbol": "RPRX",
+      "company": "Royalty Pharma Plc Class A",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Health Technology",
+      "industry": "Pharmaceuticals: Major",
+      "marketCap": 32869934721.000004,
+      "logoid": "royalty-pharma",
+      "path": "logos/us/RPRX.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/RPRX.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/RPRX.svg",
+      "sizeBytes": 1231,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.064Z"
+    },
     "US:RSG": {
       "symbol": "RSG",
       "company": "Republic Services, Inc.",
@@ -77294,6 +77924,48 @@
       "sizeBytes": 8286,
       "isProcedural": false,
       "updatedAt": "2026-10-03T16:36:02.032Z"
+    },
+    "US:SAABY": {
+      "symbol": "SAABY",
+      "company": "Saab AB Unsponsored ADR",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Electronic Technology",
+      "industry": "Aerospace & Defense",
+      "marketCap": 32809745127.919197,
+      "logoid": "saab-ab-ser-b",
+      "path": "logos/us/SAABY.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/SAABY.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/SAABY.svg",
+      "sizeBytes": 8286,
+      "isProcedural": false,
+      "updatedAt": "2026-10-03T16:46:19.064Z"
+    },
+    "SAABY": {
+      "symbol": "SAABY",
+      "company": "Saab AB Unsponsored ADR",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Electronic Technology",
+      "industry": "Aerospace & Defense",
+      "marketCap": 32809745127.919197,
+      "logoid": "saab-ab-ser-b",
+      "path": "logos/us/SAABY.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/SAABY.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/SAABY.svg",
+      "sizeBytes": 8286,
+      "isProcedural": false,
+      "updatedAt": "2026-10-03T16:46:19.064Z"
     },
     "US:SAFRF": {
       "symbol": "SAFRF",
@@ -78638,6 +79310,48 @@
       "sizeBytes": 2161,
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:36:02.033Z"
+    },
+    "US:SHLRF": {
+      "symbol": "SHLRF",
+      "company": "Schindler Holding Ltd.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Producer Manufacturing",
+      "industry": "Industrial Machinery",
+      "marketCap": 31940143030.261963,
+      "logoid": "schindler-n",
+      "path": "logos/us/SHLRF.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/SHLRF.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/SHLRF.svg",
+      "sizeBytes": 2161,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.065Z"
+    },
+    "SHLRF": {
+      "symbol": "SHLRF",
+      "company": "Schindler Holding Ltd.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Producer Manufacturing",
+      "industry": "Industrial Machinery",
+      "marketCap": 31940143030.261963,
+      "logoid": "schindler-n",
+      "path": "logos/us/SHLRF.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/SHLRF.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/SHLRF.svg",
+      "sizeBytes": 2161,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.065Z"
     },
     "US:SHNDY": {
       "symbol": "SHNDY",
@@ -83385,6 +84099,48 @@
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:26:50.124Z"
     },
+    "US:TTNDF": {
+      "symbol": "TTNDF",
+      "company": "Techtronic Industries Co., Ltd.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Consumer Durables",
+      "industry": "Tools & Hardware",
+      "marketCap": 32452273913.03808,
+      "logoid": "techtronic-ind",
+      "path": "logos/us/TTNDF.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/TTNDF.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/TTNDF.svg",
+      "sizeBytes": 884,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.068Z"
+    },
+    "TTNDF": {
+      "symbol": "TTNDF",
+      "company": "Techtronic Industries Co., Ltd.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Consumer Durables",
+      "industry": "Tools & Hardware",
+      "marketCap": 32452273913.03808,
+      "logoid": "techtronic-ind",
+      "path": "logos/us/TTNDF.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/TTNDF.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/TTNDF.svg",
+      "sizeBytes": 884,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.068Z"
+    },
     "US:TTWO": {
       "symbol": "TTWO",
       "company": "Take-Two Interactive Software, Inc.",
@@ -84687,6 +85443,48 @@
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:36:02.034Z"
     },
+    "US:VG": {
+      "symbol": "VG",
+      "company": "Venture Global, Inc. Class A",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Industrial Services",
+      "industry": "Oil & Gas Pipelines",
+      "marketCap": 32826219555.000004,
+      "logoid": "venture-global",
+      "path": "logos/us/VG.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/VG.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/VG.svg",
+      "sizeBytes": 490,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.069Z"
+    },
+    "VG": {
+      "symbol": "VG",
+      "company": "Venture Global, Inc. Class A",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Industrial Services",
+      "industry": "Oil & Gas Pipelines",
+      "marketCap": 32826219555.000004,
+      "logoid": "venture-global",
+      "path": "logos/us/VG.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/VG.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/VG.svg",
+      "sizeBytes": 490,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.069Z"
+    },
     "US:VIK": {
       "symbol": "VIK",
       "company": "Viking Holdings Ltd",
@@ -85820,6 +86618,48 @@
       "sizeBytes": 305,
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:36:02.035Z"
+    },
+    "US:WEICF": {
+      "symbol": "WEICF",
+      "company": "Weichai Power Co., Ltd. Class H",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Producer Manufacturing",
+      "industry": "Auto Parts: OEM",
+      "marketCap": 32574983430.056496,
+      "logoid": "weichai-power-company-ltd",
+      "path": "logos/us/WEICF.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/WEICF.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/WEICF.svg",
+      "sizeBytes": 703,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.069Z"
+    },
+    "WEICF": {
+      "symbol": "WEICF",
+      "company": "Weichai Power Co., Ltd. Class H",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Producer Manufacturing",
+      "industry": "Auto Parts: OEM",
+      "marketCap": 32574983430.056496,
+      "logoid": "weichai-power-company-ltd",
+      "path": "logos/us/WEICF.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/WEICF.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/WEICF.svg",
+      "sizeBytes": 703,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:46:19.069Z"
     },
     "US:WELL": {
       "symbol": "WELL",
@@ -87167,7 +88007,7 @@
     },
     "US:ZS": {
       "symbol": "ZS",
-      "company": "Zscaler Inc.",
+      "company": "Zscaler, Inc.",
       "market": "US",
       "country": "United States",
       "exchanges": [
@@ -87175,10 +88015,10 @@
         "NYSE"
       ],
       "format": "png",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Technology Services",
+      "industry": "Packaged Software",
+      "marketCap": 32056555557.999996,
+      "logoid": "zscaler",
       "path": "logos/us/ZS.png",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/ZS.png",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/ZS.png",
@@ -87188,7 +88028,7 @@
     },
     "ZS": {
       "symbol": "ZS",
-      "company": "Zscaler Inc.",
+      "company": "Zscaler, Inc.",
       "market": "US",
       "country": "United States",
       "exchanges": [
@@ -87196,10 +88036,10 @@
         "NYSE"
       ],
       "format": "png",
-      "sector": null,
-      "industry": null,
-      "marketCap": null,
-      "logoid": null,
+      "sector": "Technology Services",
+      "industry": "Packaged Software",
+      "marketCap": 32056555557.999996,
+      "logoid": "zscaler",
       "path": "logos/us/ZS.png",
       "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/ZS.png",
       "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/ZS.png",
