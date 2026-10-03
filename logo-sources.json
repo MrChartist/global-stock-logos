@@ -1,0 +1,17 @@
+{
+  "GERMANY:FRE": {
+    "wikidata": "http://www.wikidata.org/entity/Q705361",
+    "commonsFile": "https://commons.wikimedia.org/wiki/File:Fresenius%20Logo.svg",
+    "matchedName": "Fresenius SE & Co. KGaA"
+  },
+  "SWITZERLAND:FRE": {
+    "wikidata": "http://www.wikidata.org/entity/Q705361",
+    "commonsFile": "https://commons.wikimedia.org/wiki/File:Fresenius%20Logo.svg",
+    "matchedName": "Fresenius SE & Co. KGaA"
+  },
+  "THAILAND:BANPU": {
+    "wikidata": "http://www.wikidata.org/entity/Q4857049",
+    "commonsFile": "https://commons.wikimedia.org/wiki/File:Banpu%20logo.svg",
+    "matchedName": "Banpu"
+  }
+}

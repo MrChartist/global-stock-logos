@@ -33,6 +33,8 @@
 | [`manifests/<market>.json`](./manifests/) | Full company details per market (name, sector, Yahoo link) |
 | [`search-index.json`](./search-index.json) | Compact index of every logo for search UIs |
 
+Companies TradingView has no logo for are filled from Wikidata/Commons where a strict ticker + name match exists (`node scripts/wikidata-logos.js`); sources are recorded in `logo-sources.json`.
+
 Refresh or extend coverage with `node scripts/bulk-crawl.js [--markets korea,china]` (market list in `scripts/markets.js`), then `node scripts/sync.js`. Yahoo Finance suffixes for some smaller markets are blank in `markets.js`: Needs verification.
 
 --- | :---: | :--- | :--- |
