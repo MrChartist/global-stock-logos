@@ -12,16 +12,24 @@ const __dirname = path.dirname(__filename);
 const LOGOS_DIR = path.resolve(__dirname, '..', 'logos');
 
 export function auditLogos() {
-    console.log('[audit] 🔍 Auditing all assets in:', LOGOS_DIR);
-    const files = fs.readdirSync(LOGOS_DIR).filter(f => f.endsWith('.svg') || f.endsWith('.png'));
+    console.log('[audit] 🔍 Auditing all assets across root and market subdirectories...');
+    const searchDirs = [
+        LOGOS_DIR,
+        path.join(LOGOS_DIR, 'in'),
+        path.join(LOGOS_DIR, 'us')
+    ].filter(d => fs.existsSync(d));
 
     let errors = 0;
     let warnings = 0;
     let valid = 0;
 
-    for (const file of files) {
-        const filePath = path.join(LOGOS_DIR, file);
-        const stats = fs.statSync(filePath);
+    for (const dir of searchDirs) {
+        const relDir = path.relative(path.resolve(LOGOS_DIR, '..'), dir);
+        const files = fs.readdirSync(dir).filter(f => f.endsWith('.svg') || f.endsWith('.png'));
+
+        for (const file of files) {
+            const filePath = path.join(dir, file);
+            const stats = fs.statSync(filePath);
 
         if (stats.size === 0) {
             console.error(`[audit] ❌ Empty file: ${file}`);
@@ -61,6 +69,7 @@ export function auditLogos() {
         }
 
         valid++;
+        }
     }
 
     console.log();

@@ -123,6 +123,12 @@ export async function scrapeMarketLogos({ market = 'us', limit = 300 } = {}) {
     let proceduralCreated = 0;
     let alreadyExisted = 0;
 
+    const METADATA_PATH = path.join(REPO_ROOT, 'companies-metadata.json');
+    let metadata = {};
+    if (fs.existsSync(METADATA_PATH)) {
+        try { metadata = JSON.parse(fs.readFileSync(METADATA_PATH, 'utf-8')); } catch (e) {}
+    }
+
     for (let start = 0; start < limit; start += batchSize) {
         const curBatchSize = Math.min(batchSize, limit - start);
         console.log(`[scraper] Fetching ${mkt.toUpperCase()} batch [${start} .. ${start + curBatchSize}]...`);
@@ -135,12 +141,23 @@ export async function scrapeMarketLogos({ market = 'us', limit = 300 } = {}) {
         }
 
         for (const row of rows) {
-            const [symRaw, desc, logoid] = row.d || [];
+            const [symRaw, desc, logoid, sector, industry, mcap] = row.d || [];
             if (!symRaw) continue;
 
             const sym = symRaw.toUpperCase().trim().replace(/[^A-Za-z0-9_.-]/g, '');
             const targetSvg = path.join(destDir, `${sym}.svg`);
             const targetPng = path.join(destDir, `${sym}.png`);
+
+            // Always store company metadata
+            metadata[`${mkt.toUpperCase()}:${sym}`] = {
+                symbol: sym,
+                company: desc || sym,
+                logoid: logoid || null,
+                sector: sector || null,
+                industry: industry || null,
+                marketCap: mcap || null,
+                market: mkt.toUpperCase()
+            };
 
             // If already present, skip re-download
             if (fs.existsSync(targetSvg) || fs.existsSync(targetPng)) {
@@ -184,6 +201,12 @@ export async function scrapeMarketLogos({ market = 'us', limit = 300 } = {}) {
         }
     }
 
+    try {
+        fs.writeFileSync(METADATA_PATH, JSON.stringify(metadata, null, 2), 'utf-8');
+    } catch (e) {
+        console.warn('[scraper] Could not write companies-metadata.json:', e.message);
+    }
+
     console.log(`\n------------------------------------------------------`);
     console.log(`  ${mkt.toUpperCase()} Scrape Completed:`);
     console.log(`  ✅ Vector SVGs Downloaded : ${svgsDownloaded}`);
@@ -216,12 +239,20 @@ export async function scrapeAllGlobal({ usLimit = 500, inLimit = 500 } = {}) {
 // CLI Execution support
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
     const args = process.argv.slice(2);
-    let usLimit = 300;
-    let inLimit = 300;
+    let usLimit = 500;
+    let inLimit = 500;
 
-    if (args.includes('--all')) {
-        usLimit = 1000;
-        inLimit = 1000;
+    for (let i = 0; i < args.length; i++) {
+        if (args[i] === '--us' && args[i + 1]) {
+            usLimit = parseInt(args[i + 1], 10);
+            i++;
+        } else if (args[i] === '--in' && args[i + 1]) {
+            inLimit = parseInt(args[i + 1], 10);
+            i++;
+        } else if (args[i] === '--all') {
+            usLimit = 1200;
+            inLimit = 1500;
+        }
     }
 
     scrapeAllGlobal({ usLimit, inLimit }).catch(console.error);

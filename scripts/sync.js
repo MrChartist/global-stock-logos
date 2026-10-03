@@ -31,6 +31,12 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
         } catch (e) {}
     }
 
+    const METADATA_PATH = path.join(REPO_ROOT, 'companies-metadata.json');
+    let companyMeta = {};
+    if (fs.existsSync(METADATA_PATH)) {
+        try { companyMeta = JSON.parse(fs.readFileSync(METADATA_PATH, 'utf-8')); } catch (e) {}
+    }
+
     const logos = {};
     let inCount = 0;
     let usCount = 0;
@@ -48,13 +54,18 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
             inCount++;
 
             const prev = existing.logos[sym] || existing.logos[`IN:${sym}`] || {};
+            const meta = companyMeta[`IN:${sym}`] || companyMeta[sym] || {};
             const item = {
                 symbol: sym,
-                company: prev.company || sym,
+                company: meta.company || prev.company || sym,
                 market: 'IN',
                 country: 'India',
                 exchanges: ['NSE', 'BSE'],
                 format: ext,
+                sector: meta.sector || prev.sector || null,
+                industry: meta.industry || prev.industry || null,
+                marketCap: meta.marketCap || prev.marketCap || null,
+                logoid: meta.logoid || prev.logoid || null,
                 path: `logos/in/${file}`,
                 cdnMarketUrl: `https://cdn.jsdelivr.net/gh/${repoName}@main/logos/in/${file}`,
                 cdnDirectUrl: `https://cdn.jsdelivr.net/gh/${repoName}@main/logos/${file}`,
@@ -79,13 +90,18 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
 
             const usMeta = US_KNOWN_DOMAINS[sym] || {};
             const prev = existing.logos[sym] || existing.logos[`US:${sym}`] || {};
+            const meta = companyMeta[`US:${sym}`] || companyMeta[sym] || {};
             const item = {
                 symbol: sym,
-                company: usMeta.name || prev.company || sym,
+                company: meta.company || usMeta.name || prev.company || sym,
                 market: 'US',
                 country: 'United States',
                 exchanges: ['NASDAQ', 'NYSE'],
                 format: ext,
+                sector: meta.sector || prev.sector || null,
+                industry: meta.industry || prev.industry || null,
+                marketCap: meta.marketCap || prev.marketCap || null,
+                logoid: meta.logoid || prev.logoid || null,
                 path: `logos/us/${file}`,
                 cdnMarketUrl: `https://cdn.jsdelivr.net/gh/${repoName}@main/logos/us/${file}`,
                 cdnDirectUrl: `https://cdn.jsdelivr.net/gh/${repoName}@main/logos/${file}`,

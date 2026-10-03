@@ -35,37 +35,37 @@ All logos are distributed worldwide through **jsDelivr Global Edge CDN** (backed
 #### 🇺🇸 US Equities (NASDAQ / NYSE / S&P 500)
 ```html
 <!-- Apple (NASDAQ: AAPL) -->
-<img src="https://cdn.jsdelivr.net/gh/<USERNAME>/<REPO>@main/logos/us/AAPL.svg" width="32" height="32" alt="Apple" />
+<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/AAPL.svg" width="32" height="32" alt="Apple" />
 
 <!-- NVIDIA (NASDAQ: NVDA) -->
-<img src="https://cdn.jsdelivr.net/gh/<USERNAME>/<REPO>@main/logos/us/NVDA.png" width="32" height="32" alt="NVIDIA" />
+<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/NVDA.png" width="32" height="32" alt="NVIDIA" />
 
 <!-- Microsoft (NASDAQ: MSFT) -->
-<img src="https://cdn.jsdelivr.net/gh/<USERNAME>/<REPO>@main/logos/us/MSFT.png" width="32" height="32" alt="Microsoft" />
+<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/MSFT.png" width="32" height="32" alt="Microsoft" />
 ```
 
 #### 🇮🇳 Indian Equities (NSE / BSE)
 ```html
 <!-- Reliance Industries (NSE: RELIANCE) -->
-<img src="https://cdn.jsdelivr.net/gh/<USERNAME>/<REPO>@main/logos/in/RELIANCE.svg" width="32" height="32" alt="Reliance" />
+<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/RELIANCE.svg" width="32" height="32" alt="Reliance" />
 
 <!-- Tata Consultancy Services (NSE: TCS) -->
-<img src="https://cdn.jsdelivr.net/gh/<USERNAME>/<REPO>@main/logos/in/TCS.png" width="32" height="32" alt="TCS" />
+<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/TCS.png" width="32" height="32" alt="TCS" />
 
 <!-- HDFC Bank (NSE: HDFCBANK) -->
-<img src="https://cdn.jsdelivr.net/gh/<USERNAME>/<REPO>@main/logos/in/HDFCBANK.svg" width="32" height="32" alt="HDFC Bank" />
+<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/HDFCBANK.svg" width="32" height="32" alt="HDFC Bank" />
 ```
 
 ### 2. Direct Flat Root URLs (Fastest for Unambiguous Symbols)
 ```html
-<img src="https://cdn.jsdelivr.net/gh/<USERNAME>/<REPO>@main/logos/AAPL.svg" width="32" height="32" alt="Apple" />
-<img src="https://cdn.jsdelivr.net/gh/<USERNAME>/<REPO>@main/logos/TCS.png" width="32" height="32" alt="TCS" />
+<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/AAPL.svg" width="32" height="32" alt="Apple" />
+<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/TCS.png" width="32" height="32" alt="TCS" />
 ```
 
 ### 3. Global Master Catalog Manifest
 Access the complete searchable index with company names, sectors, formats, and CDN links:
 ```
-https://cdn.jsdelivr.net/gh/<USERNAME>/<REPO>@main/logos-manifest.json
+https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos-manifest.json
 ```
 
 ---
