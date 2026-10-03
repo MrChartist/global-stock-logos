@@ -48,8 +48,44 @@ Always use the market folder. Flat URLs such as `logos/AAPL.svg` exist only for 
 | [`manifests/<market>.json`](./manifests/) | Company name, sector, industry, Yahoo Finance link and file path for each ticker |
 | [`search-index.json`](./search-index.json) | Compact list of every logo, for search boxes |
 | [`logo-sources.json`](./logo-sources.json) | Source and match record for logos not taken from TradingView |
+| [`png/<size>/<market>/`](./png/) | PNG versions (64, 128, 256, 512 px) for the 3,000 largest companies |
+| [`enrichment/<market>.json`](./enrichment/) | Raw profile data with retrieval dates |
 
 Each Yahoo Finance link is built from the ticker and the market suffix in `scripts/markets.js`. Suffixes for some smaller markets are blank there: Needs verification.
+
+## Company profile data
+
+Besides the logo, each company in `manifests/<market>.json` carries a profile. Any value can be `null`: when a fact is not found we leave it empty (Needs verification) instead of guessing.
+
+| Field | Source | Notes |
+| :--- | :--- | :--- |
+| `company`, `sector`, `industry`, `marketCap`, `exchange`, `currency`, `isin`, `employees` | TradingView scanner | Refreshed every month |
+| `country`, `countryCode`, `flag` | TradingView scanner | Country of the company, not of the listing (an ADR in the US can show Taiwan) |
+| `website`, `founded`, `headquarters`, `ceo`, `aliases`, `wikidata` | Wikidata | Matched by ISIN first; otherwise by ticker and a close name match. Community-maintained, so verify before relying on it |
+| `headquarters`, `website` (gaps only) | GLEIF, SEC EDGAR | Fills only empty values. GLEIF uses the ISIN; SEC EDGAR covers US filers |
+| `brandColor`, `brandColorSource` | Computed from the logo | An approximation taken from the logo file, not an official brand colour. `neutral-tile` means a black, white or grey logo: low confidence |
+| `pngPaths` | Generated | PNG sizes 64, 128, 256 and 512 px for the 3,000 largest companies. Any other company can be rendered on demand: `node scripts/render-png.js <market> <ticker> <size>` |
+| `slogan` | Hand-curated only | Not available from open data. Add yours in [`curated/overrides.json`](./curated/) with a source |
+| `freshness` | Generated | Dates when market data and the profile were last refreshed |
+
+**Coverage today** (75,417 companies, refreshed 2026-10-03; it changes every month):
+
+| Field | Filled |
+| :--- | ---: |
+| currency, country, flag, ISIN, brand colour | 99.5% or more |
+| sector, industry | 99.2% |
+| market cap | 96.6% |
+| employees | 71.3% |
+| headquarters | 38.4% |
+| website | 25.5% |
+| founding year | 24.1% |
+| aliases | 18.0% |
+| CEO | 5.2% |
+| PNG sizes | 3,000 largest companies |
+
+Website, founding year and CEO depend on Wikidata, which covers large and well-known companies far better than small ones. Headquarters also comes from GLEIF and SEC EDGAR, which fill mostly US and European companies. India, Korea, China and Taiwan have the weakest coverage, because their ISINs are not in GLEIF. Gaps stay `null`. You can fill any of them in [`curated/overrides.json`](./curated/).
+
+**Monthly refresh.** A GitHub Action ([`monthly-refresh.yml`](./.github/workflows/monthly-refresh.yml)) runs on the 1st of every month: new listings, market data, profiles older than 30 days, brand colours, PNG sizes, manifests. Run it yourself with `npm run monthly`. Hand-curated values in `curated/overrides.json` are never overwritten.
 
 ## Logo quality
 
@@ -217,6 +253,11 @@ src/                           React component and helpers
 npm run bulk                 # download logos for all markets (resumable)
 node scripts/bulk-crawl.js --markets korea,china
 node scripts/wikidata-logos.js   # fill missing logos from Wikidata / Commons
+npm run refresh              # market data (market cap, sector, currency, ISIN)
+npm run enrich               # company profiles from Wikidata
+npm run registries           # fill gaps from GLEIF and SEC EDGAR
+npm run colors && npm run png  # brand colours and PNG sizes
+npm run monthly              # everything above, in order
 npm run quality              # audit; use quality:fix to repair
 npm test                     # offline check used by CI (invalid XML, active content, unique ids)
 npm run sync                 # rebuild manifests and search index

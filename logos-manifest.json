@@ -1,7 +1,7 @@
 {
   "name": "Global Stock Logos Catalog (World)",
   "version": "3.0.0",
-  "updatedAt": "2026-10-03T19:27:47.803Z",
+  "updatedAt": "2026-10-03T21:18:32.837Z",
   "totalEquities": 75417,
   "stats": {
     "markets": {
@@ -81,6 +81,13 @@
   },
   "cdnBase": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos",
   "searchIndex": "search-index.json",
+  "dataRefreshedAt": "2026-10-03",
+  "pngSizes": [
+    64,
+    128,
+    256,
+    512
+  ],
   "marketManifests": {
     "ARGENTINA": "manifests/argentina.json",
     "AUSTRALIA": "manifests/australia.json",

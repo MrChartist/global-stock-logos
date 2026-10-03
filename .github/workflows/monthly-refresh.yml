@@ -1,0 +1,50 @@
+name: Monthly Data Refresh
+
+# Keeps market cap, sector, industry, currency, ISIN, employees and company profile
+# (website, founding year, headquarters, CEO, aliases) fresh. Runs on the 1st of each month.
+on:
+  schedule:
+    - cron: '30 3 1 * *'
+  workflow_dispatch:
+
+concurrency:
+  group: monthly-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Refresh market data and company profiles
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+      - run: npm ci
+      - name: Add new listings and logos
+        run: node scripts/bulk-crawl.js
+      - name: Repair logo quality
+        run: node scripts/quality.js --fix
+      - name: Refresh market data (market cap, sector, currency, ISIN, employees)
+        run: node scripts/refresh-metadata.js
+      - name: Refresh company profiles from Wikidata (records older than 30 days)
+        run: node scripts/enrich-wikidata.js --max-age-days 30 --max-minutes 240
+      - name: Fill headquarters and website gaps from GLEIF and SEC EDGAR
+        run: node scripts/enrich-registries.js --max-age-days 30 --max-minutes 90
+      - name: Brand colours
+        run: node scripts/brand-color.js
+      - name: PNG sizes for the top companies
+        run: node scripts/render-png.js --top 3000
+      - name: Rebuild manifests and search index
+        run: node scripts/sync.js
+      - name: Final quality gate
+        run: node scripts/quality.js --check
+      - name: Commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(data): monthly refresh of market data and company profiles [skip ci]"
+          file_pattern: "logos png enrichment manifests logos-manifest.json search-index.json companies-metadata.json logo-sources.json quality-report.json"
