@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Stock Logos Catalog — India & US</title>
+  <link rel="icon" type="image/svg+xml" href="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/AAPL.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: '#6366f1',
+            darkBg: '#090d16',
+            cardBg: '#111827',
+            borderColor: '#1f2937'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #090d16; color: #f3f4f6; }
+    .custom-scroll::-webkit-scrollbar { width: 6px; }
+    .custom-scroll::-webkit-scrollbar-thumb { background: #374151; border-radius: 4px; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans selection:bg-brand selection:text-white">
+
+  <!-- Header -->
+  <header class="border-b border-borderColor bg-cardBg/80 backdrop-blur sticky top-0 z-50 px-6 py-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-brand to-purple-500 flex items-center justify-center font-bold text-white shadow-lg shadow-brand/20">
+          🌐
+        </div>
+        <div>
+          <h1 class="text-xl font-bold tracking-tight flex items-center gap-2">
+            Global Stock Logos
+            <span class="text-xs px-2 py-0.5 rounded-full bg-brand/20 text-brand border border-brand/30 font-mono">v2.0</span>
+          </h1>
+          <p class="text-xs text-gray-400">Open-Source Stock Logo Catalog for India (NSE/BSE) & US (NASDAQ/NYSE)</p>
+        </div>
+      </div>
+
+      <!-- Live Search & Market Filter -->
+      <div class="flex items-center gap-3 w-full md:w-auto">
+        <div class="relative flex-1 md:w-80">
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Search symbol, company, or sector..."
+            class="w-full bg-darkBg border border-borderColor rounded-xl px-4 py-2 text-sm focus:outline-none focus:border-brand transition-colors text-white placeholder-gray-500"
+          />
+        </div>
+        <select
+          id="marketFilter"
+          class="bg-darkBg border border-borderColor rounded-xl px-3 py-2 text-sm text-gray-300 focus:outline-none focus:border-brand"
+        >
+          <option value="ALL">All Markets</option>
+          <option value="IN">🇮🇳 India (1,070+)</option>
+          <option value="US">🇺🇸 United States (1,030+)</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Stats Banner -->
+  <div class="max-w-7xl mx-auto px-6 py-6 w-full">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="bg-cardBg border border-borderColor rounded-2xl p-4">
+        <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Total Equities</div>
+        <div id="statTotal" class="text-2xl font-black text-white mt-1">2,108+</div>
+        <div class="text-[11px] text-emerald-400 mt-1">✓ 100% Zero broken images</div>
+      </div>
+      <div class="bg-cardBg border border-borderColor rounded-2xl p-4">
+        <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">🇮🇳 Indian Stocks</div>
+        <div id="statIndia" class="text-2xl font-black text-white mt-1">1,073</div>
+        <div class="text-[11px] text-gray-400 mt-1">NSE & BSE Equities</div>
+      </div>
+      <div class="bg-cardBg border border-borderColor rounded-2xl p-4">
+        <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">🇺🇸 US Equities</div>
+        <div id="statUS" class="text-2xl font-black text-white mt-1">1,035</div>
+        <div class="text-[11px] text-gray-400 mt-1">NASDAQ, NYSE & S&P 500</div>
+      </div>
+      <div class="bg-cardBg border border-borderColor rounded-2xl p-4">
+        <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Global CDN</div>
+        <div class="text-2xl font-black text-purple-400 mt-1">jsDelivr</div>
+        <div class="text-[11px] text-gray-400 mt-1">Edge Cached via Cloudflare</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Grid Section -->
+  <main class="max-w-7xl mx-auto px-6 pb-16 flex-1 w-full">
+    <div class="flex items-center justify-between mb-4">
+      <div id="resultsCount" class="text-xs font-semibold text-gray-400">Loading catalog...</div>
+      <div class="text-xs text-gray-500">Click any card to open Yahoo Finance quote</div>
+    </div>
+
+    <!-- Logos Grid -->
+    <div id="logosGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      <!-- Cards rendered via JS -->
+    </div>
+
+    <div id="emptyState" class="hidden text-center py-16">
+      <div class="text-4xl mb-2">🔍</div>
+      <h3 class="text-lg font-bold text-gray-200">No matching stocks found</h3>
+      <p class="text-sm text-gray-500 mt-1">Try searching by ticker (e.g. AAPL, RELIANCE) or company name.</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-borderColor bg-cardBg py-6 px-6 text-center text-xs text-gray-500">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div>
+        Built with ❤️ for global fintech projects. Linked with <strong class="text-gray-300">Yahoo Finance</strong> across Indian & US equities.
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/MrChartist/global-stock-logos" target="_blank" class="hover:text-gray-300 transition-colors">GitHub Repository</a>
+        <span>•</span>
+        <a href="logos-manifest.json" target="_blank" class="hover:text-gray-300 transition-colors">Master Manifest</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script>
+    let catalog = [];
+    const CDN_BASE = 'https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos';
+
+    function getYahooUrl(symbol, market) {
+      const sym = symbol.toUpperCase().trim();
+      return market === 'IN' 
+        ? `https://finance.yahoo.com/quote/${encodeURIComponent(sym)}.NS` 
+        : `https://finance.yahoo.com/quote/${encodeURIComponent(sym)}`;
+    }
+
+    async function loadCatalog() {
+      try {
+        const res = await fetch('logos-manifest.json');
+        const data = await res.json();
+        const logosMap = data.logos || {};
+        
+        // Filter unique by symbol + market
+        const seen = new Set();
+        catalog = [];
+
+        for (const [key, item] of Object.entries(logosMap)) {
+          if (!key.includes(':')) continue; // only use namespaced keys IN:SYM, US:SYM
+          const uniqueKey = `${item.market}:${item.symbol}`;
+          if (!seen.has(uniqueKey)) {
+            seen.add(uniqueKey);
+            catalog.push(item);
+          }
+        }
+
+        renderGrid(catalog);
+      } catch (e) {
+        document.getElementById('resultsCount').innerText = 'Failed to load catalog manifest.';
+      }
+    }
+
+    function renderGrid(items) {
+      const grid = document.getElementById('logosGrid');
+      const countEl = document.getElementById('resultsCount');
+      const emptyEl = document.getElementById('emptyState');
+
+      grid.innerHTML = '';
+      countEl.innerText = `Showing ${items.length} stocks`;
+
+      if (items.length === 0) {
+        emptyEl.classList.remove('hidden');
+        return;
+      }
+      emptyEl.classList.add('hidden');
+
+      const fragment = document.createDocumentFragment();
+
+      items.slice(0, 180).forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'group relative flex flex-col justify-between bg-cardBg border border-borderColor rounded-2xl p-4 transition-all hover:border-brand/50 hover:shadow-lg hover:shadow-brand/5';
+
+        const mktBadge = item.market === 'IN' 
+          ? '<span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">🇮🇳 NSE</span>'
+          : '<span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-blue-500/20 text-blue-400 border border-blue-500/30">🇺🇸 US</span>';
+
+        const logoUrl = item.cdnMarketUrl || `${CDN_BASE}/${item.market.toLowerCase()}/${item.symbol}.${item.format}`;
+        const yahooUrl = item.yahooUrl || getYahooUrl(item.symbol, item.market);
+
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              ${mktBadge}
+              <span class="text-[10px] font-mono text-gray-500 uppercase">${item.format}</span>
+            </div>
+
+            <!-- Logo Image -->
+            <div class="h-16 w-16 mx-auto mb-3 rounded-xl bg-darkBg border border-borderColor p-2 flex items-center justify-center overflow-hidden">
+              <img 
+                src="${logoUrl}" 
+                alt="${item.symbol}" 
+                class="max-h-full max-w-full object-contain"
+                loading="lazy"
+                onerror="this.onerror=null; this.src='${CDN_BASE}/${item.symbol}.${item.format}';"
+              />
+            </div>
+
+            <!-- Ticker & Company -->
+            <div class="text-center">
+              <div class="font-mono font-bold text-sm text-white group-hover:text-brand transition-colors">${item.symbol}</div>
+              <div class="text-xs text-gray-400 truncate mt-0.5" title="${item.company || item.symbol}">${item.company || item.symbol}</div>
+            </div>
+          </div>
+
+          <!-- Yahoo Finance Button -->
+          <div class="mt-4 pt-3 border-t border-borderColor/60 flex items-center justify-between gap-1">
+            <a 
+              href="${yahooUrl}" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="flex-1 text-center py-1.5 px-2 rounded-lg bg-secondary/80 hover:bg-brand/20 hover:text-brand border border-borderColor hover:border-brand/40 text-[11px] font-semibold text-gray-300 transition-colors"
+            >
+              Yahoo Finance ↗
+            </a>
+          </div>
+        `;
+
+        fragment.appendChild(card);
+      });
+
+      grid.appendChild(fragment);
+    }
+
+    function filterData() {
+      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      const mkt = document.getElementById('marketFilter').value;
+
+      const filtered = catalog.filter(item => {
+        const matchesMkt = mkt === 'ALL' || item.market === mkt;
+        const matchesQuery = !q || 
+          item.symbol.toLowerCase().includes(q) || 
+          (item.company && item.company.toLowerCase().includes(q)) ||
+          (item.sector && item.sector.toLowerCase().includes(q));
+        return matchesMkt && matchesQuery;
+      });
+
+      renderGrid(filtered);
+    }
+
+    document.getElementById('searchInput').addEventListener('input', filterData);
+    document.getElementById('marketFilter').addEventListener('change', filterData);
+
+    loadCatalog();
+  </script>
+</body>
+</html>

@@ -63,10 +63,15 @@ All logos are distributed worldwide through **jsDelivr Global Edge CDN** (backed
 ```
 
 ### 3. Global Master Catalog Manifest
-Access the complete searchable index with company names, sectors, formats, and CDN links:
+Access the complete searchable index with company names, sectors, formats, Yahoo Finance links, and CDN endpoints:
 ```
 https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos-manifest.json
 ```
+
+### 4. Yahoo Finance Reference Links & API
+Every indexed equity contains direct links to **Yahoo Finance** for live quotes, historical charts, and financial data:
+- 🇮🇳 **Indian Stocks**: `https://finance.yahoo.com/quote/{SYMBOL}.NS` (API: `https://query1.finance.yahoo.com/v8/finance/chart/{SYMBOL}.NS`)
+- 🇺🇸 **US Stocks**: `https://finance.yahoo.com/quote/{SYMBOL}` (API: `https://query1.finance.yahoo.com/v8/finance/chart/{SYMBOL}`)
 
 ---
 
