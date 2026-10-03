@@ -2,13 +2,13 @@
 
 <div align="center">
 
-![Total Logos](https://img.shields.io/badge/logos-1180%2B-blue.svg?style=for-the-badge&logo=appveyor)
+![Total Logos](https://img.shields.io/badge/logos-2070%2B-blue.svg?style=for-the-badge&logo=appveyor)
 ![Markets Covered](https://img.shields.io/badge/markets-India%20%7C%20US%20%7C%20World-blueviolet.svg?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge)
 ![Global CDN](https://img.shields.io/badge/CDN-jsDelivr-orange.svg?style=for-the-badge&logo=jsdelivr)
 ![Zero Broken Images](https://img.shields.io/badge/uptime-100%25-brightgreen.svg?style=for-the-badge)
 
-**A high-performance, open-source repository containing 1,180+ verified vector and raster brand logos for Indian equities (NSE & BSE) and US equities (NASDAQ, NYSE & S&P 500), built for global fintech applications.**
+**A high-performance, open-source repository containing 2,078+ verified vector and raster brand logos (4,154+ total assets) for Indian equities (NSE & BSE) and US equities (NASDAQ, NYSE & S&P 500), built for global fintech applications.**
 
 [Explore Catalog](./logos-manifest.json) • [jsDelivr CDN](#-instant-global-cdn-delivery) • [React Component](#-react--nextjs-integration) • [Contributing](#-adding-more-companies)
 
@@ -20,9 +20,9 @@
 
 | Market / Exchange | Coverage | Top Equities Included | Directory |
 | :--- | :---: | :--- | :--- |
-| 🇮🇳 **India (NSE & BSE)** | **1,051+ Stocks** | Reliance, TCS, HDFC Bank, Infosys, Tata Motors, ICICI, SBI, Airtel, ITC, Zomato | [`logos/in/`](./logos/in/) |
-| 🇺🇸 **United States (NASDAQ, NYSE)** | **131+ Stocks** | Apple, Microsoft, NVIDIA, Google, Amazon, Meta, Tesla, Berkshire, JPMorgan, Visa, Walmart | [`logos/us/`](./logos/us/) |
-| 🌐 **Unified Global Access** | **1,182+ Assets** | All tickers directly addressable at the root | [`logos/`](./logos/) |
+| 🇮🇳 **India (NSE & BSE)** | **1,072+ Stocks** | Reliance, TCS, HDFC Bank, Infosys, Tata Motors, ICICI, SBI, Airtel, ITC, Zomato | [`logos/in/`](./logos/in/) |
+| 🇺🇸 **United States (NASDAQ, NYSE)** | **1,006+ Stocks** | Apple, Microsoft, NVIDIA, Google, Amazon, Meta, Tesla, Berkshire, JPMorgan, Visa, Walmart, ASML, Alibaba, Roche | [`logos/us/`](./logos/us/) |
+| 🌐 **Unified Global Access** | **2,078+ Equities** | All tickers directly addressable at the root | [`logos/`](./logos/) |
 
 ---
 
