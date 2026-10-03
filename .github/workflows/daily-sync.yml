@@ -1,0 +1,41 @@
+name: Daily Global Stock Logos Sync & Audit
+
+on:
+  schedule:
+    # Run daily at 02:00 UTC (before Asian and European market opens)
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  audit-and-sync:
+    name: Audit & Sync Global Logos Catalog
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22 LTS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Ingest Newly Tracked US Equities
+        run: |
+          node scripts/populate-us.js || true
+
+      - name: Audit All 1,180+ Assets Integrity
+        run: |
+          node scripts/audit.js
+
+      - name: Re-index Global Manifest Catalog
+        run: |
+          node scripts/sync.js
+
+      - name: Commit and Push Updates
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(catalog): automated daily audit and global manifest sync [skip ci]"
+          file_pattern: "logos-manifest.json logos/logos-manifest.json logos/*"
