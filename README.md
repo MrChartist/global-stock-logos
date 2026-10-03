@@ -1,101 +1,69 @@
-# 🌐 Global Stock Logos Catalog (India, US & World)
+# Global Stock Logos
 
 <div align="center">
 
-![Total Logos](https://img.shields.io/badge/logos-75000%2B-blue.svg?style=for-the-badge&logo=appveyor)
-![Markets Covered](https://img.shields.io/badge/markets-India%20%7C%20US%20%7C%20World-blueviolet.svg?style=for-the-badge)
-![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge)
-![Global CDN](https://img.shields.io/badge/CDN-jsDelivr-orange.svg?style=for-the-badge&logo=jsdelivr)
-![Zero Broken Images](https://img.shields.io/badge/uptime-100%25-brightgreen.svg?style=for-the-badge)
+**Free, open-source company logos for 75,000+ listed stocks across 68 markets.**
 
-**A high-performance, open-source repository containing 2,078+ verified vector and raster brand logos (4,154+ total assets) for Indian equities (NSE & BSE) and US equities (NASDAQ, NYSE & S&P 500), built for global fintech applications.**
+A project by **[@MrChartist](https://mrchartist.com)** · [mrchartist.com](https://mrchartist.com)
 
-[Explore Catalog](./logos-manifest.json) • [jsDelivr CDN](#-instant-global-cdn-delivery) • [React Component](#-react--nextjs-integration) • [Contributing](#-adding-more-companies)
+![Logos](https://img.shields.io/badge/logos-75%2C000%2B-blue.svg?style=for-the-badge)
+![Markets](https://img.shields.io/badge/markets-68-blueviolet.svg?style=for-the-badge)
+![Format](https://img.shields.io/badge/format-SVG-orange.svg?style=for-the-badge)
+![License](https://img.shields.io/badge/code-MIT-green.svg?style=for-the-badge)
+
+[Browse catalogue](./index.html) • [Use via CDN](#use-via-cdn) • [Quality](#logo-quality) • [Contribute](#contributing) • [Licence and trademarks](#licence-and-trademarks)
 
 </div>
 
 ---
 
-## 🌍 Markets Covered
+## About
 
-**74,000+ real company logos across 60+ countries** (every listed stock TradingView publishes a logo for; no generated placeholders in the bulk set). Logos live in `logos/<market>/<TICKER>.svg`, for example `logos/us/`, `logos/in/`, `logos/korea/`, `logos/china/`, `logos/brazil/`.
+Global Stock Logos is an open-source logo library for traders, analysts, educators and fintech developers. Every logo is a vector SVG named by stock ticker and served free through the jsDelivr CDN, so you can show a company logo next to a quote, chart or watchlist with one `<img>` tag.
 
-| Where | What |
-| :### Logo quality
+Coverage is strongest for India (NSE/BSE) and the US (NASDAQ/NYSE), and includes the UK, Germany, Japan, China, Korea, Canada, Australia, Brazil and many more. Companies that have no published logo are not included; the list is in [`quality-report.json`](./quality-report.json).
 
-- Every logo is a real vector SVG (resolution-independent). Old low-resolution PNGs were superseded by real SVGs; the PNG files are kept so existing URLs keep working.
-- Gradient/clip ids inside each SVG are unique, so many logos can be inlined on one page without clashes.
-- A few real companies have no logo on TradingView. They keep a generated initials badge, flagged `"isProcedural": true` in `manifests/<market>.json`; the list is in `quality-report.json`.
-- Audit with `npm run quality`, repair with `npm run quality:fix`, then `node scripts/sync.js`.
+## Use via CDN
 
---- | :--- |
-| [`logos-manifest.json`](./logos-manifest.json) | Summary: totals, per-market counts, shard locations |
-| [`manifests/<market>.json`](./manifests/) | Full company details per market (name, sector, Yahoo link) |
-| [`search-index.json`](./search-index.json) | Compact index of every logo for search UIs |
+Every logo lives at `logos/<market>/<TICKER>.svg`. Market folder names are lowercase (`us`, `in`, `uk`, `japan`, `china`, `korea`, `brazil`, ...). The full list is in [`logos-manifest.json`](./logos-manifest.json).
 
-Companies TradingView has no logo for are filled from Wikidata/Commons where a strict ticker + name match exists (`node scripts/wikidata-logos.js`); sources are recorded in `logo-sources.json`.
-
-Refresh or extend coverage with `node scripts/bulk-crawl.js [--markets korea,china]` (market list in `scripts/markets.js`), then `node scripts/sync.js`. Yahoo Finance suffixes for some smaller markets are blank in `markets.js`: Needs verification.
-
---- | :---: | :--- | :--- |
-| 🇮🇳 **India (NSE & BSE)** | **1,072+ Stocks** | Reliance, TCS, HDFC Bank, Infosys, Tata Motors, ICICI, SBI, Airtel, ITC, Zomato | [`logos/in/`](./logos/in/) |
-| 🇺🇸 **United States (NASDAQ, NYSE)** | **1,006+ Stocks** | Apple, Microsoft, NVIDIA, Google, Amazon, Meta, Tesla, Berkshire, JPMorgan, Visa, Walmart, ASML, Alibaba, Roche | [`logos/us/`](./logos/us/) |
-| 🌐 **Unified Global Access** | **2,078+ Equities** | All tickers directly addressable at the root | [`logos/`](./logos/) |
-
----
-
-## ⚡ Instant Global CDN Delivery
-
-All logos are distributed worldwide through **jsDelivr Global Edge CDN** (backed by Cloudflare and Fastly multi-CDN) with 0ms cold starts, automatic Brotli compression, and zero bandwidth limits:
-
-### 1. By Market Partition (Zero Symbol Collisions)
-
-#### 🇺🇸 US Equities (NASDAQ / NYSE / S&P 500)
 ```html
-<!-- Apple (NASDAQ: AAPL) -->
+<!-- Apple (US) -->
 <img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/AAPL.svg" width="32" height="32" alt="Apple" />
 
-<!-- NVIDIA (NASDAQ: NVDA) -->
-<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/NVDA.png" width="32" height="32" alt="NVIDIA" />
-
-<!-- Microsoft (NASDAQ: MSFT) -->
-<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/MSFT.png" width="32" height="32" alt="Microsoft" />
-```
-
-#### 🇮🇳 Indian Equities (NSE / BSE)
-```html
-<!-- Reliance Industries (NSE: RELIANCE) -->
+<!-- Reliance Industries (India, NSE) -->
 <img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/RELIANCE.svg" width="32" height="32" alt="Reliance" />
 
-<!-- Tata Consultancy Services (NSE: TCS) -->
-<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/TCS.png" width="32" height="32" alt="TCS" />
-
-<!-- HDFC Bank (NSE: HDFCBANK) -->
-<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/HDFCBANK.svg" width="32" height="32" alt="HDFC Bank" />
+<!-- Samsung Electronics (South Korea) -->
+<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/korea/005930.svg" width="32" height="32" alt="Samsung" />
 ```
 
-### 2. Direct Flat Root URLs (Fastest for Unambiguous Symbols)
-```html
-<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/AAPL.svg" width="32" height="32" alt="Apple" />
-<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/TCS.png" width="32" height="32" alt="TCS" />
-```
+Always use the market folder. Flat URLs such as `logos/AAPL.svg` exist only for about 2,800 older symbols and may be removed.
 
-### 3. Global Master Catalog Manifest
-Access the complete searchable index with company names, sectors, formats, Yahoo Finance links, and CDN endpoints:
-```
-https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos-manifest.json
-```
+### Catalogue data
 
-### 4. Yahoo Finance Reference Links & API
-Every indexed equity contains direct links to **Yahoo Finance** for live quotes, historical charts, and financial data:
-- 🇮🇳 **Indian Stocks**: `https://finance.yahoo.com/quote/{SYMBOL}.NS` (API: `https://query1.finance.yahoo.com/v8/finance/chart/{SYMBOL}.NS`)
-- 🇺🇸 **US Stocks**: `https://finance.yahoo.com/quote/{SYMBOL}` (API: `https://query1.finance.yahoo.com/v8/finance/chart/{SYMBOL}`)
+| File | Contents |
+| :--- | :--- |
+| [`logos-manifest.json`](./logos-manifest.json) | Totals, per-market counts and the location of each market file |
+| [`manifests/<market>.json`](./manifests/) | Company name, sector, industry, Yahoo Finance link and file path for each ticker |
+| [`search-index.json`](./search-index.json) | Compact list of every logo, for search boxes |
+| [`logo-sources.json`](./logo-sources.json) | Source and match record for logos not taken from TradingView |
 
----
+Each Yahoo Finance link is built from the ticker and the market suffix in `scripts/markets.js`. Suffixes for some smaller markets are blank there: Needs verification.
+
+## Logo quality
+
+- Every logo is a vector SVG, so it stays sharp at any size.
+- Gradient and clip ids inside each SVG are unique, so many logos can be inlined on one page without clashes.
+- All SVGs pass `xmllint`. Empty and test entries are removed.
+- 25 real companies have no logo available. They keep a generated initials badge, marked `"isProcedural": true` in `manifests/<market>.json`.
+- 107 older PNG files remain so that existing links keep working. 37 of them are under 256 px.
+
+Check quality with `npm run quality`, repair with `npm run quality:fix`, then run `npm run sync`.
 
 ## 🚀 React / Next.js Integration
 
-Our universal `<StockLogo />` component gracefully handles both Indian and US equities, with an automatic 5-tier fallback waterfall ensuring **zero broken images**:
+Our universal `<StockLogo />` component gracefully handles both Indian and US equities, with an automatic 5-tier fallback waterfall with a fallback to a generated badge when no image loads:
 
 ```tsx
 import React, { useState } from 'react';
@@ -220,63 +188,64 @@ def get_stock_logo_url(symbol: str, market: str = "us", repo: str = "<USERNAME>/
 
 ---
 
-## 📂 Repository Anatomy
-
-```
-├── logos/                         # Master asset library (1,180+ files)
-│   ├── in/                        # 1,051 Indian stocks (RELIANCE.svg, TCS.png...)
-│   ├── us/                        # 131 US stocks (AAPL.svg, NVDA.png, MSFT.png...)
-│   └── ...                        # Unified direct-access mirror files
-├── logos-manifest.json            # Master JSON index (SSOT with market breakdowns)
-├── scripts/
-│   ├── domains.js                 # Indian enterprise domain map
-│   ├── domains-us.js              # US S&P 500 / NASDAQ domain map
-│   ├── populate-us.js             # US logo crawler and ingestion engine
-│   ├── extractor.js               # Multi-stage crawler
-│   ├── generator.js               # Procedural 256x256 vector SVG monogram generator
-│   ├── sync.js                    # Re-indexes manifest & catalog stats
-│   └── audit.js                   # Validates image binary headers & XML structure (0 errors)
-├── src/                           # TypeScript / React distribution
-│   ├── StockLogo.tsx              # Multi-market React component
-│   └── index.ts
-├── .github/workflows/
-│   └── daily-sync.yml             # Automated daily audit & manifest sync
-├── package.json
-└── README.md
-```
-
 ---
 
-## 🛠️ CLI Automation Commands
+## Repository layout
+
+```
+logos/<market>/<TICKER>.svg    Logo files, one folder per market
+manifests/<market>.json        Company details per market
+logos-manifest.json            Summary and index of market files
+search-index.json              Compact search index
+logo-sources.json              Sources for Wikidata/Commons logos
+quality-report.json            Placeholders, small PNGs, invalid files
+companies-metadata.json        Raw company metadata used to build manifests
+index.html                     Browsable catalogue
+scripts/
+  markets.js                   Market list (single source of truth)
+  bulk-crawl.js                Download logos for every market
+  wikidata-logos.js            Fill gaps from Wikidata / Wikimedia Commons
+  quality.js, svg-quality.js   Audit and repair rules
+  sync.js                      Rebuild manifests and search index
+  audit.js                     Legacy integrity check
+src/                           React component and helpers
+.github/workflows/daily-sync.yml
+```
+
+## Commands
 
 ```bash
-# 1. Audit all 1,180+ image binaries and SVG XML validity (0 errors)
-npm run audit
-
-# 2. Re-index catalog across all markets and update logos-manifest.json
-npm run sync
-
-# 3. Populate or refresh US stocks
-npm run populate:us
-
-# 4. Ingest an unlisted company by symbol
-node scripts/extractor.js NEWTICKER "New Enterprise Inc"
+npm run bulk                 # download logos for all markets (resumable)
+node scripts/bulk-crawl.js --markets korea,china
+node scripts/wikidata-logos.js   # fill missing logos from Wikidata / Commons
+npm run quality              # audit; use quality:fix to repair
+npm run sync                 # rebuild manifests and search index
 ```
 
+Node.js 18 or newer is required. The scripts need internet access.
+
+## Contributing
+
+Contributions are welcome, especially official logos for companies listed in `quality-report.json`.
+
+1. Fork the repository and create a branch.
+2. Add a clean SVG as `logos/<market>/<TICKER>.svg`. Please use only official or openly licensed artwork.
+3. Run `npm run quality` and `npm run sync`.
+4. Open a pull request and mention the source of the logo.
+
+To report a wrong or missing logo, open an issue with the ticker and market.
+
+## Licence and trademarks
+
+- Code, scripts and workflows are released under the [MIT License](./LICENSE).
+- All logos, brand names and emblems belong to their respective owners. They are included for editorial and informational use, such as stock identification in charts, research and learning material. Inclusion does not mean endorsement by, or affiliation with, any company.
+- Logos from Wikimedia Commons keep their own licences; see `logo-sources.json`. If you are a rights holder and want a logo removed, write to [contact@mrchartist.com](mailto:contact@mrchartist.com).
+- Logo data comes from TradingView's public symbol-logo service and Wikidata. Please check their terms before heavy commercial use.
+
+## Disclaimer
+
+This project is for education and information only. It is not investment advice. Market data, tickers and Yahoo Finance links should be verified before use.
+
 ---
 
-## 🤝 Adding More Companies (World Expansion)
-
-We welcome contributions for any listed company worldwide (UK LSE, Japan TSE, Germany DAX, Canada TSX, etc.):
-1. Fork this repository.
-2. Place a clean vector SVG or 256x256 transparent PNG into `logos/<market>/<SYMBOL>.<ext>` (e.g. `logos/uk/AZN.svg`).
-3. Run `npm run audit` and `npm run sync`.
-4. Open a Pull Request!
-
----
-
-## 🔒 Trademark & Fair Use Notice
-
-* All trademarks, logos, brand names, and company emblems displayed in this repository are the intellectual property of their respective corporate owners.
-* Their inclusion in this open-source catalog is strictly for editorial, informational, and non-commercial stock identification purposes in financial charts, trading interfaces, and research applications under standard **Fair Use** doctrines.
-* Repository code, scripts, and workflows are licensed under the **MIT License**.
+Built by **[@MrChartist](https://mrchartist.com)** · [mrchartist.com](https://mrchartist.com)
