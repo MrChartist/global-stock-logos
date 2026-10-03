@@ -17,6 +17,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { US_KNOWN_DOMAINS } from './domains-us.js';
 import { MARKETS } from './markets.js';
+import { isProcedural } from './svg-quality.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -76,6 +77,8 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
         let count = 0;
 
         for (const file of files) {
+            // Prefer the vector when both formats exist for the same symbol.
+            if (file.endsWith('.png') && files.includes(file.replace(/\.png$/, '.svg'))) continue;
             const ext = path.extname(file).replace('.', '').toLowerCase();
             const sym = path.basename(file, '.' + ext).toUpperCase();
             const stats = fs.statSync(path.join(dirPath, file));
@@ -106,7 +109,7 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
                 cdnMarketUrl: `https://cdn.jsdelivr.net/gh/${repoName}@main/logos/${mktLower}/${file}`,
                 cdnDirectUrl: `https://cdn.jsdelivr.net/gh/${repoName}@main/logos/${file}`,
                 sizeBytes: stats.size,
-                isProcedural: prev.isProcedural ?? (ext === 'svg' && stats.size < 2500),
+                isProcedural: ext === 'svg' && isProcedural(fs.readFileSync(path.join(dirPath, file), 'utf-8').slice(0, 1500)),
                 updatedAt: prev.updatedAt || new Date().toISOString()
             };
 
@@ -130,7 +133,7 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
         (shards[mk] ||= {})[item.symbol] = {
             company: item.company, format: item.format, sector: item.sector, industry: item.industry,
             marketCap: item.marketCap, logoid: item.logoid, yahooTicker: item.yahooTicker,
-            yahooUrl: item.yahooUrl, path: item.path,
+            yahooUrl: item.yahooUrl, path: item.path, isProcedural: item.isProcedural,
         };
         searchIndex.push([item.symbol, item.company, item.market, item.format, item.yahooTicker]);
     }

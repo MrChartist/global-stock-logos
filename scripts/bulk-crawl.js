@@ -13,6 +13,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { MARKETS } from './markets.js';
+import { fetchRealSvg } from './svg-quality.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const LOGOS_DIR = path.join(ROOT, 'logos');
@@ -43,27 +44,6 @@ async function scan(region, start) {
         await sleep(2000 * (attempt + 1));
     }
     return { totalCount: 0, data: [] };
-}
-
-async function fetchSvg(logoid) {
-    for (const url of [
-        `https://s3-symbol-logo.tradingview.com/${logoid}--big.svg`,
-        `https://s3-symbol-logo.tradingview.com/${logoid}.svg`,
-    ]) {
-        for (let attempt = 0; attempt < 2; attempt++) {
-            try {
-                const res = await fetch(url, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(15000) });
-                if (res.status === 404) break;
-                if (res.ok) {
-                    const t = await res.text();
-                    if (t.includes('<svg') && t.includes('</svg>')) return t;
-                    break;
-                }
-            } catch {}
-            await sleep(500);
-        }
-    }
-    return null;
 }
 
 async function pool(items, worker) {
@@ -125,7 +105,7 @@ async function crawlMarket(key, cfg, meta, limit) {
     const batch = limit ? todo.slice(0, limit) : todo;
     let saved = 0, missing = 0;
     await pool(batch, async (p) => {
-        const svg = await fetchSvg(p.logoid);
+        const svg = await fetchRealSvg(p.logoid);
         if (svg) { fs.writeFileSync(path.join(dir, `${p.sym}.svg`), svg); saved++; }
         else { missing++; delete meta[`${key.toUpperCase()}:${p.sym}`]; }
     });

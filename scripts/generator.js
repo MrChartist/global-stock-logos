@@ -71,7 +71,7 @@ export function generateProceduralSvg(symbol, companyName = '') {
     fill="${palette.text}" 
     text-anchor="middle" 
     dominant-baseline="middle">
-    ${initials}
+    ${initials.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}
   </text>
   <!-- Micro ticker watermark at bottom -->
   <text 

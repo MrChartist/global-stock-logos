@@ -21,7 +21,14 @@
 **74,000+ real company logos across 60+ countries** (every listed stock TradingView publishes a logo for; no generated placeholders in the bulk set). Logos live in `logos/<market>/<TICKER>.svg`, for example `logos/us/`, `logos/in/`, `logos/korea/`, `logos/china/`, `logos/brazil/`.
 
 | Where | What |
-| :--- | :--- |
+| :### Logo quality
+
+- Every logo is a real vector SVG (resolution-independent). Old low-resolution PNGs were superseded by real SVGs; the PNG files are kept so existing URLs keep working.
+- Gradient/clip ids inside each SVG are unique, so many logos can be inlined on one page without clashes.
+- A few real companies have no logo on TradingView. They keep a generated initials badge, flagged `"isProcedural": true` in `manifests/<market>.json`; the list is in `quality-report.json`.
+- Audit with `npm run quality`, repair with `npm run quality:fix`, then `node scripts/sync.js`.
+
+--- | :--- |
 | [`logos-manifest.json`](./logos-manifest.json) | Summary: totals, per-market counts, shard locations |
 | [`manifests/<market>.json`](./manifests/) | Full company details per market (name, sector, Yahoo link) |
 | [`search-index.json`](./search-index.json) | Compact index of every logo for search UIs |
