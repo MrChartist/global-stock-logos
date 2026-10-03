@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
-export type StockMarket = 'IN' | 'US' | 'AUTO';
+/** 'AUTO', or any market folder name in logos/ (e.g. 'us', 'in', 'uk', 'japan', 'korea'). Case-insensitive. */
+export type StockMarket = string;
 
 export interface StockLogoProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   symbol: string;
-  market?: StockMarket; // 'IN' | 'US' | 'AUTO' (default: 'AUTO')
+  market?: StockMarket; // 'AUTO' (default) or a market folder such as 'us', 'in', 'uk', 'japan'
   companyName?: string;
   size?: number;
   className?: string;
@@ -55,7 +56,7 @@ export const StockLogo: React.FC<StockLogoProps> = ({
   const [sourceIndex, setSourceIndex] = useState(0);
   const sym = (symbol || 'NA').toUpperCase().trim().replace(/[^A-Za-z0-9_.-]/g, '');
 
-  const mkt = market === 'AUTO' ? '' : market.toLowerCase();
+  const mkt = market.toUpperCase() === 'AUTO' ? '' : market.toLowerCase();
   const baseUrl = `https://cdn.jsdelivr.net/gh/${cdnRepo}@main/logos`;
 
   const sources: string[] = [];

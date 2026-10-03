@@ -1,0 +1,19 @@
+name: Wrong or missing logo
+description: Report a logo that is wrong, outdated, low quality or missing
+labels: [logo]
+body:
+  - type: input
+    id: ticker
+    attributes: { label: Ticker, placeholder: "RELIANCE" }
+    validations: { required: true }
+  - type: input
+    id: market
+    attributes: { label: Market folder, placeholder: "in, us, uk, japan ..." }
+    validations: { required: true }
+  - type: textarea
+    id: details
+    attributes: { label: What is wrong, description: "Wrong company, old design, blurry, missing ..." }
+    validations: { required: true }
+  - type: input
+    id: source
+    attributes: { label: Link to the official logo (if you have one) }

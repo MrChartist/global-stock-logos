@@ -1,7 +1,7 @@
 {
   "name": "@mrchartist/global-stock-logos",
-  "version": "2.0.0",
-  "description": "High-performance vector and raster brand logos for 1,180+ Global Listed Equities (India NSE/BSE, US NASDAQ/NYSE/S&P 500, and World) with global jsDelivr CDN and offline React components.",
+  "version": "3.0.0",
+  "description": "Free open-source SVG company logos for 75,000+ listed stocks across 68 markets (India, US and world), served via jsDelivr, with an optional React component.",
   "main": "logos-manifest.json",
   "type": "module",
   "scripts": {
@@ -12,7 +12,9 @@
     "generate": "node scripts/generator.js",
     "bulk": "node scripts/bulk-crawl.js",
     "quality": "node scripts/quality.js",
-    "quality:fix": "node scripts/quality.js --fix"
+    "quality:fix": "node scripts/quality.js --fix",
+    "check": "node scripts/quality.js --check",
+    "test": "node scripts/quality.js --check"
   },
   "keywords": [
     "stock-logos",
@@ -29,9 +31,14 @@
     "logos",
     "fintech",
     "trading",
-    "cdn"
+    "cdn",
+    "company-logos",
+    "svg",
+    "open-source",
+    "mrchartist",
+    "world-markets"
   ],
-  "author": "MrChartist Team <contact@mrchartist.com>",
+  "author": "MrChartist <contact@mrchartist.com> (https://mrchartist.com)",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -40,5 +47,17 @@
   "bugs": {
     "url": "https://github.com/MrChartist/global-stock-logos/issues"
   },
-  "homepage": "https://github.com/MrChartist/global-stock-logos#readme"
+  "homepage": "https://github.com/MrChartist/global-stock-logos#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "logos-manifest.json",
+    "manifests",
+    "search-index.json",
+    "src",
+    "LICENSE",
+    "README.md",
+    "DATA-SOURCES.md"
+  ]
 }

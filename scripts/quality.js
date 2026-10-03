@@ -20,6 +20,30 @@ import { isProcedural, hasVisibleArt, namespaceIds, idsNamespaced, fetchRealSvg 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const LOGOS = path.join(ROOT, 'logos');
 const FIX = process.argv.includes('--fix');
+const CHECK = process.argv.includes('--check');
+
+if (CHECK) {
+    // Offline gate for CI: no network, no changes. Fails on anything a contributor must fix.
+    const { execFileSync: run } = await import('child_process');
+    const markets = fs.readdirSync(LOGOS).filter((d) => fs.statSync(path.join(LOGOS, d)).isDirectory());
+    const files = markets.flatMap((d) => fs.readdirSync(path.join(LOGOS, d)).filter((f) => f.endsWith('.svg')).map((f) => path.join(LOGOS, d, f)));
+    const problems = [];
+    for (const f of files) {
+        const svg = fs.readFileSync(f, 'utf-8');
+        const rel = path.relative(ROOT, f);
+        if (/<script|<foreignObject|\son\w+\s*=|(?:xlink:)?href="(?:https?:)?\/\//i.test(svg)) problems.push(`${rel}: active content or external link`);
+        if (!isProcedural(svg) && !hasVisibleArt(svg)) problems.push(`${rel}: empty logo`);
+        if (!isProcedural(svg) && !idsNamespaced(svg)) problems.push(`${rel}: ids not unique (run npm run quality:fix)`);
+    }
+    for (let k = 0; k < files.length; k += 2000) {
+        try { run('xmllint', ['--noout', ...files.slice(k, k + 2000)], { stdio: 'pipe' }); }
+        catch (e) { for (const m of String(e.stderr).matchAll(/^(.+\.svg):\d+: parser error/gm)) problems.push(`${path.relative(ROOT, m[1])}: invalid XML`); }
+    }
+    console.log(`Checked ${files.length} SVG files; ${problems.length} problem(s).`);
+    problems.slice(0, 50).forEach((p) => console.log(`  - ${p}`));
+    process.exit(problems.length ? 1 : 0);
+}
+
 const meta = JSON.parse(fs.readFileSync(path.join(ROOT, 'companies-metadata.json'), 'utf-8'));
 
 const pngWidth = (f) => { const b = fs.readFileSync(f); return b.readUInt32BE(16); };

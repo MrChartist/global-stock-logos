@@ -1,0 +1,6 @@
+* text=auto eol=lf
+logos/** linguist-generated=true -diff
+manifests/** linguist-generated=true
+search-index.json linguist-generated=true
+logos-manifest.json linguist-generated=true
+companies-metadata.json linguist-generated=true

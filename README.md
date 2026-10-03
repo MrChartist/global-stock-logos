@@ -149,15 +149,15 @@ export const StockLogo: React.FC<StockLogoProps> = ({
 ```html
 <!-- US Stock -->
 <img 
-  src="https://cdn.jsdelivr.net/gh/<USERNAME>/<REPO>@main/logos/us/NVDA.png"
-  onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/<USERNAME>/<REPO>@main/logos/us/NVDA.svg';"
+  src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/NVDA.svg"
+  onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/NVDA.png';"
   width="32" height="32" alt="NVDA" 
 />
 
 <!-- Indian Stock -->
 <img 
-  src="https://cdn.jsdelivr.net/gh/<USERNAME>/<REPO>@main/logos/in/INFY.svg"
-  onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/<USERNAME>/<REPO>@main/logos/in/INFY.png';"
+  src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/INFY.svg"
+  onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/INFY.png';"
   width="32" height="32" alt="INFY" 
 />
 ```
@@ -166,24 +166,23 @@ export const StockLogo: React.FC<StockLogoProps> = ({
 ```dart
 Widget buildStockLogo(String symbol, {String market = 'us'}) {
   final sym = symbol.toUpperCase();
-  return Image.network(
-    'https://cdn.jsdelivr.net/gh/<USERNAME>/<REPO>@main/logos/$market/$sym.png',
+  return SvgPicture.network(
+    // Needs the flutter_svg package: SvgPicture.network works for .svg files
+    'https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/$market/$sym.svg',
     width: 36,
     height: 36,
-    errorBuilder: (context, error, stackTrace) {
-      return CircleAvatar(
-        child: Text(sym.substring(0, sym.length >= 2 ? 2 : 1)),
-      );
-    },
+    placeholderBuilder: (context) => CircleAvatar(
+      child: Text(sym.substring(0, sym.length >= 2 ? 2 : 1)),
+    ),
   );
 }
 ```
 
 ### Python (Streamlit / Dash / Matplotlib)
 ```python
-def get_stock_logo_url(symbol: str, market: str = "us", repo: str = "<USERNAME>/<REPO>") -> str:
+def get_stock_logo_url(symbol: str, market: str = "us", repo: str = "MrChartist/global-stock-logos") -> str:
     sym = symbol.upper().strip()
-    return f"https://cdn.jsdelivr.net/gh/{repo}@main/logos/{market.lower()}/{sym}.png"
+    return f"https://cdn.jsdelivr.net/gh/{repo}@main/logos/{market.lower()}/{sym}.svg"
 ```
 
 ---
@@ -219,6 +218,7 @@ npm run bulk                 # download logos for all markets (resumable)
 node scripts/bulk-crawl.js --markets korea,china
 node scripts/wikidata-logos.js   # fill missing logos from Wikidata / Commons
 npm run quality              # audit; use quality:fix to repair
+npm test                     # offline check used by CI (invalid XML, active content, unique ids)
 npm run sync                 # rebuild manifests and search index
 ```
 
@@ -226,7 +226,7 @@ Node.js 18 or newer is required. The scripts need internet access.
 
 ## Contributing
 
-Contributions are welcome, especially official logos for companies listed in `quality-report.json`.
+Contributions are welcome, especially official logos for companies listed in `quality-report.json`. Read [CONTRIBUTING.md](./CONTRIBUTING.md) and the [Code of Conduct](./CODE_OF_CONDUCT.md) first.
 
 1. Fork the repository and create a branch.
 2. Add a clean SVG as `logos/<market>/<TICKER>.svg`. Please use only official or openly licensed artwork.
@@ -240,7 +240,8 @@ To report a wrong or missing logo, open an issue with the ticker and market.
 - Code, scripts and workflows are released under the [MIT License](./LICENSE).
 - All logos, brand names and emblems belong to their respective owners. They are included for editorial and informational use, such as stock identification in charts, research and learning material. Inclusion does not mean endorsement by, or affiliation with, any company.
 - Logos from Wikimedia Commons keep their own licences; see `logo-sources.json`. If you are a rights holder and want a logo removed, write to [contact@mrchartist.com](mailto:contact@mrchartist.com).
-- Logo data comes from TradingView's public symbol-logo service and Wikidata. Please check their terms before heavy commercial use.
+- Logo data comes from TradingView's public symbol-logo service and Wikidata. Please check their terms before heavy commercial use. Full details are in [DATA-SOURCES.md](./DATA-SOURCES.md).
+- Security issues: see [SECURITY.md](./SECURITY.md).
 
 ## Disclaimer
 
