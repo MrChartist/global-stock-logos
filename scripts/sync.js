@@ -16,6 +16,8 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { US_KNOWN_DOMAINS } from './domains-us.js';
+import { MARKETS } from './markets.js';
+import { isProcedural } from './svg-quality.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -24,17 +26,14 @@ const REPO_ROOT = path.resolve(__dirname, '..');
 const LOGOS_DIR = path.join(REPO_ROOT, 'logos');
 const MANIFEST_PATH = path.join(REPO_ROOT, 'logos-manifest.json');
 
-export const MARKET_METADATA = {
-    in: { market: 'IN', country: 'India', exchanges: ['NSE', 'BSE'], yahooSuffix: '.NS' },
-    us: { market: 'US', country: 'United States', exchanges: ['NASDAQ', 'NYSE'], yahooSuffix: '' },
-    uk: { market: 'UK', country: 'United Kingdom', exchanges: ['LSE'], yahooSuffix: '.L' },
-    germany: { market: 'GERMANY', country: 'Germany', exchanges: ['XETRA'], yahooSuffix: '.DE' },
-    france: { market: 'FRANCE', country: 'France', exchanges: ['Euronext Paris'], yahooSuffix: '.PA' },
-    japan: { market: 'JAPAN', country: 'Japan', exchanges: ['TSE'], yahooSuffix: '.T' },
-    canada: { market: 'CANADA', country: 'Canada', exchanges: ['TSX'], yahooSuffix: '.TO' },
-    australia: { market: 'AUSTRALIA', country: 'Australia', exchanges: ['ASX'], yahooSuffix: '.AX' },
-    hongkong: { market: 'HONGKONG', country: 'Hong Kong', exchanges: ['HKEX'], yahooSuffix: '.HK' },
-};
+export const MARKET_METADATA = Object.fromEntries(
+    Object.entries(MARKETS).map(([key, m]) => [key, {
+        market: key.toUpperCase(),
+        country: m.country,
+        exchanges: m.exchanges,
+        yahooSuffix: m.suffix,
+    }])
+);
 
 export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
     console.log('[sync] 🌐 Scanning Global Logo Assets...');
@@ -78,6 +77,8 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
         let count = 0;
 
         for (const file of files) {
+            // Prefer the vector when both formats exist for the same symbol.
+            if (file.endsWith('.png') && files.includes(file.replace(/\.png$/, '.svg'))) continue;
             const ext = path.extname(file).replace('.', '').toLowerCase();
             const sym = path.basename(file, '.' + ext).toUpperCase();
             const stats = fs.statSync(path.join(dirPath, file));
@@ -108,7 +109,7 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
                 cdnMarketUrl: `https://cdn.jsdelivr.net/gh/${repoName}@main/logos/${mktLower}/${file}`,
                 cdnDirectUrl: `https://cdn.jsdelivr.net/gh/${repoName}@main/logos/${file}`,
                 sizeBytes: stats.size,
-                isProcedural: prev.isProcedural ?? (ext === 'svg' && stats.size < 2500),
+                isProcedural: ext === 'svg' && isProcedural(fs.readFileSync(path.join(dirPath, file), 'utf-8').slice(0, 1500)),
                 updatedAt: prev.updatedAt || new Date().toISOString()
             };
 
@@ -119,28 +120,42 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
         marketCounts[mktConfig.market] = count;
     }
 
+    // Shard the catalog: a 70k+ entry single JSON exceeds GitHub (100MB) and jsDelivr (20MB) limits.
+    const MANIFESTS_DIR = path.join(REPO_ROOT, 'manifests');
+    fs.rmSync(MANIFESTS_DIR, { recursive: true, force: true });
+    fs.mkdirSync(MANIFESTS_DIR, { recursive: true });
+    const cdnBase = `https://cdn.jsdelivr.net/gh/${repoName}@main/logos`;
+    const shards = {};
+    const searchIndex = [];
+    for (const [k, item] of Object.entries(logos)) {
+        if (!k.includes(':')) continue; // namespaced MARKET:SYM keys only
+        const mk = item.market.toLowerCase();
+        (shards[mk] ||= {})[item.symbol] = {
+            company: item.company, format: item.format, sector: item.sector, industry: item.industry,
+            marketCap: item.marketCap, logoid: item.logoid, yahooTicker: item.yahooTicker,
+            yahooUrl: item.yahooUrl, path: item.path, isProcedural: item.isProcedural,
+        };
+        searchIndex.push([item.symbol, item.company, item.market, item.format, item.yahooTicker]);
+    }
+    const marketFiles = {};
+    for (const [mk, items] of Object.entries(shards)) {
+        fs.writeFileSync(path.join(MANIFESTS_DIR, `${mk}.json`), JSON.stringify(items));
+        marketFiles[mk.toUpperCase()] = `manifests/${mk}.json`;
+    }
+    fs.writeFileSync(path.join(REPO_ROOT, 'search-index.json'), JSON.stringify(searchIndex));
+
     const manifest = {
-        name: "Global Stock Logos Catalog (India, US & World)",
-        version: "2.1.0",
+        name: "Global Stock Logos Catalog (World)",
+        version: "3.0.0",
         updatedAt: new Date().toISOString(),
         totalEquities,
-        stats: {
-            markets: marketCounts,
-            formats: {
-                svg: svgs,
-                png: pngs
-            }
-        },
-        cdnBase: `https://cdn.jsdelivr.net/gh/${repoName}@main/logos`,
-        logos
+        stats: { markets: marketCounts, formats: { svg: svgs, png: pngs } },
+        cdnBase,
+        searchIndex: 'search-index.json',
+        marketManifests: marketFiles,
     };
-
     fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2), 'utf-8');
-
-    // Also mirror to logos/logos-manifest.json for convenience
-    try {
-        fs.writeFileSync(path.join(LOGOS_DIR, 'logos-manifest.json'), JSON.stringify(manifest, null, 2), 'utf-8');
-    } catch(e) {}
+    fs.rmSync(path.join(LOGOS_DIR, 'logos-manifest.json'), { force: true });
 
     console.log(`[sync] ✅ Successfully indexed ${totalEquities} Global Equities across ${Object.keys(marketCounts).length} markets:`);
     for (const [m, c] of Object.entries(marketCounts)) {

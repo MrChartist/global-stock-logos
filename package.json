@@ -9,7 +9,10 @@
     "audit": "node scripts/audit.js",
     "populate:us": "node scripts/populate-us.js",
     "ingest": "node scripts/extractor.js",
-    "generate": "node scripts/generator.js"
+    "generate": "node scripts/generator.js",
+    "bulk": "node scripts/bulk-crawl.js",
+    "quality": "node scripts/quality.js",
+    "quality:fix": "node scripts/quality.js --fix"
   },
   "keywords": [
     "stock-logos",
