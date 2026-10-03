@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Total Logos](https://img.shields.io/badge/logos-2070%2B-blue.svg?style=for-the-badge&logo=appveyor)
+![Total Logos](https://img.shields.io/badge/logos-75000%2B-blue.svg?style=for-the-badge&logo=appveyor)
 ![Markets Covered](https://img.shields.io/badge/markets-India%20%7C%20US%20%7C%20World-blueviolet.svg?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge)
 ![Global CDN](https://img.shields.io/badge/CDN-jsDelivr-orange.svg?style=for-the-badge&logo=jsdelivr)
@@ -18,8 +18,17 @@
 
 ## 🌍 Markets Covered
 
-| Market / Exchange | Coverage | Top Equities Included | Directory |
-| :--- | :---: | :--- | :--- |
+**74,000+ real company logos across 60+ countries** (every listed stock TradingView publishes a logo for; no generated placeholders in the bulk set). Logos live in `logos/<market>/<TICKER>.svg`, for example `logos/us/`, `logos/in/`, `logos/korea/`, `logos/china/`, `logos/brazil/`.
+
+| Where | What |
+| :--- | :--- |
+| [`logos-manifest.json`](./logos-manifest.json) | Summary: totals, per-market counts, shard locations |
+| [`manifests/<market>.json`](./manifests/) | Full company details per market (name, sector, Yahoo link) |
+| [`search-index.json`](./search-index.json) | Compact index of every logo for search UIs |
+
+Refresh or extend coverage with `node scripts/bulk-crawl.js [--markets korea,china]` (market list in `scripts/markets.js`), then `node scripts/sync.js`. Yahoo Finance suffixes for some smaller markets are blank in `markets.js`: Needs verification.
+
+--- | :---: | :--- | :--- |
 | 🇮🇳 **India (NSE & BSE)** | **1,072+ Stocks** | Reliance, TCS, HDFC Bank, Infosys, Tata Motors, ICICI, SBI, Airtel, ITC, Zomato | [`logos/in/`](./logos/in/) |
 | 🇺🇸 **United States (NASDAQ, NYSE)** | **1,006+ Stocks** | Apple, Microsoft, NVIDIA, Google, Amazon, Meta, Tesla, Berkshire, JPMorgan, Visa, Walmart, ASML, Alibaba, Roche | [`logos/us/`](./logos/us/) |
 | 🌐 **Unified Global Access** | **2,078+ Equities** | All tickers directly addressable at the root | [`logos/`](./logos/) |

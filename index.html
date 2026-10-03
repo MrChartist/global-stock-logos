@@ -159,31 +159,24 @@
       try {
         const res = await fetch('logos-manifest.json');
         const data = await res.json();
-        const logosMap = data.logos || {};
 
         if (data.totalEquities) {
           document.getElementById('statTotal').innerText = data.totalEquities.toLocaleString() + '+';
         }
         if (data.stats && data.stats.markets) {
           const numMkts = Object.keys(data.stats.markets).length;
-          document.getElementById('statMarkets').innerText = `${numMkts} Exchanges`;
+          document.getElementById('statMarkets').innerText = `${numMkts} Markets`;
         }
         if (data.stats && data.stats.formats) {
           document.getElementById('statFormats').innerText = `${(data.stats.formats.svg || 0).toLocaleString()} SVGs`;
         }
-        
-        // Filter unique by symbol + market
-        const seen = new Set();
-        catalog = [];
 
-        for (const [key, item] of Object.entries(logosMap)) {
-          if (!key.includes(':')) continue; // only use namespaced keys MARKET:SYM
-          const uniqueKey = `${item.market}:${item.symbol}`;
-          if (!seen.has(uniqueKey)) {
-            seen.add(uniqueKey);
-            catalog.push(item);
-          }
-        }
+        const idx = await (await fetch(data.searchIndex || 'search-index.json')).json();
+        catalog = idx.map(([symbol, company, market, format, yahooTicker]) => ({
+          symbol, company, market, format,
+          cdnMarketUrl: `${CDN_BASE}/${market.toLowerCase()}/${symbol}.${format}`,
+          yahooUrl: `https://finance.yahoo.com/quote/${yahooTicker}`
+        }));
 
         renderGrid(catalog);
       } catch (e) {

@@ -1,0 +1,21 @@
+<!-- by TradingView --><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="56" height="56" fill="#F0F3FA"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.2721 15C30.4536 15 34.2421 16.2749 37 19L15 41C12.2919 38.2415 11 34.4597 11 30.2867C11 21.8441 17.8375 15 26.2721 15Z" fill="url(#paint0_linear_5825_208242)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29.7279 41C25.5464 41 21.7579 39.7251 19 37L41 15C43.7081 17.7585 45 21.5403 45 25.7133C45 34.1559 38.1625 41 29.7279 41Z" fill="url(#paint1_linear_5825_208242)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M28.3351 16C31.7125 16 34.7724 16.7989 37 19L19 37C16.8126 34.772 16 31.7175 16 28.347C16 21.528 21.5226 16 28.3351 16Z" fill="url(#paint2_linear_5825_208242)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M31.6649 36C28.2875 36 25.2276 35.2011 23 33L41 15C43.1874 17.228 44 20.2825 44 23.653C44 30.472 38.4774 36 31.6649 36Z" fill="#ED4226"/>
+<defs>
+<linearGradient id="paint0_linear_5825_208242" x1="37" y1="18.5" x2="14.5" y2="42" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7D2E8B"/>
+<stop offset="1" stop-color="#CD2B7B"/>
+</linearGradient>
+<linearGradient id="paint1_linear_5825_208242" x1="40.5" y1="15" x2="19" y2="37.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F9AE40"/>
+<stop offset="1" stop-color="#EE4937"/>
+</linearGradient>
+<linearGradient id="paint2_linear_5825_208242" x1="36" y1="19" x2="18.5" y2="37" gradientUnits="userSpaceOnUse">
+<stop stop-color="#34346A"/>
+<stop offset="1" stop-color="#8E2C69"/>
+</linearGradient>
+</defs>
+</svg>

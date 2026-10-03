@@ -1,0 +1,9 @@
+<!-- by TradingView --><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="56" height="56" fill="#F0F3FA"/>
+<rect x="27" y="34" width="10" height="2" fill="#4FC7EB"/>
+<rect x="6" y="20" width="2" height="16" fill="#231F20"/>
+<path d="M12 20V36H14V22H14.6304L19.1056 36H23V20H21V34H20.4379L16.0311 20H12Z" fill="#231F20"/>
+<rect x="27" y="20" width="10" height="2" fill="#4FC7EB"/>
+<rect x="27" y="27" width="10" height="2" fill="#4FC7EB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M45.5 35.9989C50.2985 36.0715 51 32.4176 51 27.9998C51 23.582 50.0116 20.0591 45.5 20.0007C40.9884 19.9422 40 23.582 40 27.9998C40 32.4176 40.7015 35.9263 45.5 35.9989ZM45.5 33.9992C48.5536 34.0537 49 31.3132 49 27.9999C49 24.6865 48.371 22.0444 45.5 22.0005C42.629 21.9567 42 24.6865 42 27.9999C42 31.3132 42.4464 33.9448 45.5 33.9992Z" fill="#231F20"/>
+</svg>

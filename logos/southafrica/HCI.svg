@@ -1,0 +1,18 @@
+<!-- by TradingView --><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="56" height="56" fill="#F0F3FA"/>
+<rect x="8" y="17" width="8" height="15" fill="#00539F"/>
+<rect x="17" y="17" width="8" height="15" fill="#00539F"/>
+<rect x="41" y="17" width="7" height="15" fill="#00539F"/>
+<rect x="26" y="18" width="7" height="14" fill="#00539F"/>
+<rect x="26" y="24" width="7" height="14" transform="rotate(-90 26 24)" fill="#00539F"/>
+<rect x="9" y="28" width="6" height="14" transform="rotate(-90 9 28)" fill="#00539F"/>
+<rect x="8" y="38" width="5" height="40" transform="rotate(-90 8 38)" fill="url(#paint0_linear_5099_143729)"/>
+<rect opacity="0.5" x="31" y="37" width="3" height="14" transform="rotate(-90 31 37)" fill="#F0F3FA"/>
+<rect x="26" y="32" width="7" height="14" transform="rotate(-90 26 32)" fill="#00539F"/>
+<defs>
+<linearGradient id="paint0_linear_5099_143729" x1="10.5" y1="38" x2="10.5" y2="78" gradientUnits="userSpaceOnUse">
+<stop stop-color="#181B1E"/>
+<stop offset="1" stop-color="#181B1E"/>
+</linearGradient>
+</defs>
+</svg>
