@@ -1,15 +1,15 @@
 {
   "name": "Global Stock Logos Catalog (India, US & World)",
   "version": "2.0.0",
-  "updatedAt": "2026-10-03T16:46:19.070Z",
-  "totalEquities": 2098,
+  "updatedAt": "2026-10-03T16:49:25.049Z",
+  "totalEquities": 2108,
   "stats": {
     "markets": {
       "IN": 1073,
-      "US": 1025
+      "US": 1035
     },
     "formats": {
-      "svg": 1369,
+      "svg": 1379,
       "png": 729
     }
   },
@@ -46425,6 +46425,48 @@
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:36:02.022Z"
     },
+    "US:ALC": {
+      "symbol": "ALC",
+      "company": "Alcon AG",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Health Technology",
+      "industry": "Medical Specialties",
+      "marketCap": 31860872870.003025,
+      "logoid": "alcon",
+      "path": "logos/us/ALC.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/ALC.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/ALC.svg",
+      "sizeBytes": 580,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.028Z"
+    },
+    "ALC": {
+      "symbol": "ALC",
+      "company": "Alcon AG",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Health Technology",
+      "industry": "Medical Specialties",
+      "marketCap": 31860872870.003025,
+      "logoid": "alcon",
+      "path": "logos/us/ALC.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/ALC.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/ALC.svg",
+      "sizeBytes": 580,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.028Z"
+    },
     "US:ALIZF": {
       "symbol": "ALIZF",
       "company": "Allianz SE",
@@ -59634,6 +59676,48 @@
       "isProcedural": false,
       "updatedAt": "2026-10-03T16:36:02.026Z"
     },
+    "US:EXPE": {
+      "symbol": "EXPE",
+      "company": "Expedia Group, Inc.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Consumer Services",
+      "industry": "Other Consumer Services",
+      "marketCap": 31805005255.000004,
+      "logoid": "expedia",
+      "path": "logos/us/EXPE.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/EXPE.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/EXPE.svg",
+      "sizeBytes": 444,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.037Z"
+    },
+    "EXPE": {
+      "symbol": "EXPE",
+      "company": "Expedia Group, Inc.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Consumer Services",
+      "industry": "Other Consumer Services",
+      "marketCap": 31805005255.000004,
+      "logoid": "expedia",
+      "path": "logos/us/EXPE.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/EXPE.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/EXPE.svg",
+      "sizeBytes": 444,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.037Z"
+    },
     "US:F": {
       "symbol": "F",
       "company": "Ford Motor Company",
@@ -60851,6 +60935,48 @@
       "sizeBytes": 440,
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:36:02.026Z"
+    },
+    "US:GASNY": {
+      "symbol": "GASNY",
+      "company": "Naturgy Energy Group, S.A. Unsponsored ADR",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Utilities",
+      "industry": "Gas Distributors",
+      "marketCap": 31779312618.826263,
+      "logoid": "naturgy",
+      "path": "logos/us/GASNY.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/GASNY.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/GASNY.svg",
+      "sizeBytes": 837,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.037Z"
+    },
+    "GASNY": {
+      "symbol": "GASNY",
+      "company": "Naturgy Energy Group, S.A. Unsponsored ADR",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Utilities",
+      "industry": "Gas Distributors",
+      "marketCap": 31779312618.826263,
+      "logoid": "naturgy",
+      "path": "logos/us/GASNY.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/GASNY.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/GASNY.svg",
+      "sizeBytes": 837,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.037Z"
     },
     "US:GD": {
       "symbol": "GD",
@@ -65241,6 +65367,48 @@
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:36:02.029Z"
     },
+    "US:JBL": {
+      "symbol": "JBL",
+      "company": "Jabil Inc.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Producer Manufacturing",
+      "industry": "Industrial Machinery",
+      "marketCap": 31898237381,
+      "logoid": "jabil",
+      "path": "logos/us/JBL.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/JBL.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/JBL.svg",
+      "sizeBytes": 1290,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.040Z"
+    },
+    "JBL": {
+      "symbol": "JBL",
+      "company": "Jabil Inc.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Producer Manufacturing",
+      "industry": "Industrial Machinery",
+      "marketCap": 31898237381,
+      "logoid": "jabil",
+      "path": "logos/us/JBL.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/JBL.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/JBL.svg",
+      "sizeBytes": 1290,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.040Z"
+    },
     "US:JCI": {
       "symbol": "JCI",
       "company": "Johnson Controls International plc",
@@ -65282,6 +65450,48 @@
       "sizeBytes": 6184,
       "isProcedural": false,
       "updatedAt": "2026-10-03T16:36:02.029Z"
+    },
+    "US:JDCMF": {
+      "symbol": "JDCMF",
+      "company": "JD.com, Inc. Class A",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Retail Trade",
+      "industry": "Internet Retail",
+      "marketCap": 31930850693.180267,
+      "logoid": "jd-com",
+      "path": "logos/us/JDCMF.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/JDCMF.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/JDCMF.svg",
+      "sizeBytes": 2950,
+      "isProcedural": false,
+      "updatedAt": "2026-10-03T16:49:25.040Z"
+    },
+    "JDCMF": {
+      "symbol": "JDCMF",
+      "company": "JD.com, Inc. Class A",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Retail Trade",
+      "industry": "Internet Retail",
+      "marketCap": 31930850693.180267,
+      "logoid": "jd-com",
+      "path": "logos/us/JDCMF.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/JDCMF.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/JDCMF.svg",
+      "sizeBytes": 2950,
+      "isProcedural": false,
+      "updatedAt": "2026-10-03T16:49:25.040Z"
     },
     "US:JHPCY": {
       "symbol": "JHPCY",
@@ -70869,6 +71079,174 @@
       "isProcedural": true,
       "updatedAt": "2026-10-03T16:36:02.030Z"
     },
+    "US:MTBPH": {
+      "symbol": "MTBPH",
+      "company": "M&T Bank Corporation Non-Cum Perp Pfd Registered Shs Series -H-",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Regional Banks",
+      "marketCap": 31647379077,
+      "logoid": "m-and-t-bank",
+      "path": "logos/us/MTBPH.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/MTBPH.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/MTBPH.svg",
+      "sizeBytes": 1233,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.043Z"
+    },
+    "MTBPH": {
+      "symbol": "MTBPH",
+      "company": "M&T Bank Corporation Non-Cum Perp Pfd Registered Shs Series -H-",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Regional Banks",
+      "marketCap": 31647379077,
+      "logoid": "m-and-t-bank",
+      "path": "logos/us/MTBPH.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/MTBPH.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/MTBPH.svg",
+      "sizeBytes": 1233,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.043Z"
+    },
+    "US:MTBPJ": {
+      "symbol": "MTBPJ",
+      "company": "M&T Bank Corporation Int Perp Pfd Shs Depository Shs Repr 1/400th Int Perp Pfd Shs Series J",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Regional Banks",
+      "marketCap": 31647379077,
+      "logoid": "m-and-t-bank",
+      "path": "logos/us/MTBPJ.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/MTBPJ.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/MTBPJ.svg",
+      "sizeBytes": 1233,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.043Z"
+    },
+    "MTBPJ": {
+      "symbol": "MTBPJ",
+      "company": "M&T Bank Corporation Int Perp Pfd Shs Depository Shs Repr 1/400th Int Perp Pfd Shs Series J",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Regional Banks",
+      "marketCap": 31647379077,
+      "logoid": "m-and-t-bank",
+      "path": "logos/us/MTBPJ.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/MTBPJ.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/MTBPJ.svg",
+      "sizeBytes": 1233,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.043Z"
+    },
+    "US:MTBPK": {
+      "symbol": "MTBPK",
+      "company": "M&T Bank Corporation Int Perp Pfd Shs Depository Shs Repr 1/400th Int Perp Pfd Shs Series K",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Regional Banks",
+      "marketCap": 31647379077,
+      "logoid": "m-and-t-bank",
+      "path": "logos/us/MTBPK.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/MTBPK.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/MTBPK.svg",
+      "sizeBytes": 1233,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.043Z"
+    },
+    "MTBPK": {
+      "symbol": "MTBPK",
+      "company": "M&T Bank Corporation Int Perp Pfd Shs Depository Shs Repr 1/400th Int Perp Pfd Shs Series K",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Regional Banks",
+      "marketCap": 31647379077,
+      "logoid": "m-and-t-bank",
+      "path": "logos/us/MTBPK.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/MTBPK.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/MTBPK.svg",
+      "sizeBytes": 1233,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.043Z"
+    },
+    "US:MTBPL": {
+      "symbol": "MTBPL",
+      "company": "M&T Bank Corporation Depositary Shs Repr 1/400th Non-Cum Perp Pfd Rg Shs Series L",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Regional Banks",
+      "marketCap": 31647379077,
+      "logoid": null,
+      "path": "logos/us/MTBPL.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/MTBPL.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/MTBPL.svg",
+      "sizeBytes": 1393,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.043Z"
+    },
+    "MTBPL": {
+      "symbol": "MTBPL",
+      "company": "M&T Bank Corporation Depositary Shs Repr 1/400th Non-Cum Perp Pfd Rg Shs Series L",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Finance",
+      "industry": "Regional Banks",
+      "marketCap": 31647379077,
+      "logoid": null,
+      "path": "logos/us/MTBPL.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/MTBPL.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/MTBPL.svg",
+      "sizeBytes": 1393,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.043Z"
+    },
     "US:MTSUY": {
       "symbol": "MTSUY",
       "company": "Mitsubishi Corporation Unsponsored ADR",
@@ -76202,6 +76580,48 @@
       "sizeBytes": 832,
       "isProcedural": false,
       "updatedAt": "2026-10-03T16:19:41.090Z"
+    },
+    "US:QSR": {
+      "symbol": "QSR",
+      "company": "Restaurant Brands International, Inc.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Consumer Services",
+      "industry": "Restaurants",
+      "marketCap": 31774895781,
+      "logoid": "restaurant-brands-international",
+      "path": "logos/us/QSR.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/QSR.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/QSR.svg",
+      "sizeBytes": 508,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.045Z"
+    },
+    "QSR": {
+      "symbol": "QSR",
+      "company": "Restaurant Brands International, Inc.",
+      "market": "US",
+      "country": "United States",
+      "exchanges": [
+        "NASDAQ",
+        "NYSE"
+      ],
+      "format": "svg",
+      "sector": "Consumer Services",
+      "industry": "Restaurants",
+      "marketCap": 31774895781,
+      "logoid": "restaurant-brands-international",
+      "path": "logos/us/QSR.svg",
+      "cdnMarketUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/QSR.svg",
+      "cdnDirectUrl": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/QSR.svg",
+      "sizeBytes": 508,
+      "isProcedural": true,
+      "updatedAt": "2026-10-03T16:49:25.045Z"
     },
     "US:RACE": {
       "symbol": "RACE",

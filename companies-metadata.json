@@ -14785,5 +14785,95 @@
     "industry": "Miscellaneous Manufacturing",
     "marketCap": 93381777771,
     "market": "IN"
+  },
+  "US:JDCMF": {
+    "symbol": "JDCMF",
+    "company": "JD.com, Inc. Class A",
+    "logoid": "jd-com",
+    "sector": "Retail Trade",
+    "industry": "Internet Retail",
+    "marketCap": 31930850693.180267,
+    "market": "US"
+  },
+  "US:JBL": {
+    "symbol": "JBL",
+    "company": "Jabil Inc.",
+    "logoid": "jabil",
+    "sector": "Producer Manufacturing",
+    "industry": "Industrial Machinery",
+    "marketCap": 31898237381,
+    "market": "US"
+  },
+  "US:ALC": {
+    "symbol": "ALC",
+    "company": "Alcon AG",
+    "logoid": "alcon",
+    "sector": "Health Technology",
+    "industry": "Medical Specialties",
+    "marketCap": 31860872870.003025,
+    "market": "US"
+  },
+  "US:EXPE": {
+    "symbol": "EXPE",
+    "company": "Expedia Group, Inc.",
+    "logoid": "expedia",
+    "sector": "Consumer Services",
+    "industry": "Other Consumer Services",
+    "marketCap": 31805005255.000004,
+    "market": "US"
+  },
+  "US:GASNY": {
+    "symbol": "GASNY",
+    "company": "Naturgy Energy Group, S.A. Unsponsored ADR",
+    "logoid": "naturgy",
+    "sector": "Utilities",
+    "industry": "Gas Distributors",
+    "marketCap": 31779312618.826263,
+    "market": "US"
+  },
+  "US:QSR": {
+    "symbol": "QSR",
+    "company": "Restaurant Brands International, Inc.",
+    "logoid": "restaurant-brands-international",
+    "sector": "Consumer Services",
+    "industry": "Restaurants",
+    "marketCap": 31774895781,
+    "market": "US"
+  },
+  "US:MTBPL": {
+    "symbol": "MTBPL",
+    "company": "M&T Bank Corporation Depositary Shs Repr 1/400th Non-Cum Perp Pfd Rg Shs Series L",
+    "logoid": null,
+    "sector": "Finance",
+    "industry": "Regional Banks",
+    "marketCap": 31647379077,
+    "market": "US"
+  },
+  "US:MTBPJ": {
+    "symbol": "MTBPJ",
+    "company": "M&T Bank Corporation Int Perp Pfd Shs Depository Shs Repr 1/400th Int Perp Pfd Shs Series J",
+    "logoid": "m-and-t-bank",
+    "sector": "Finance",
+    "industry": "Regional Banks",
+    "marketCap": 31647379077,
+    "market": "US"
+  },
+  "US:MTBPH": {
+    "symbol": "MTBPH",
+    "company": "M&T Bank Corporation Non-Cum Perp Pfd Registered Shs Series -H-",
+    "logoid": "m-and-t-bank",
+    "sector": "Finance",
+    "industry": "Regional Banks",
+    "marketCap": 31647379077,
+    "market": "US"
+  },
+  "US:MTBPK": {
+    "symbol": "MTBPK",
+    "company": "M&T Bank Corporation Int Perp Pfd Shs Depository Shs Repr 1/400th Int Perp Pfd Shs Series K",
+    "logoid": "m-and-t-bank",
+    "sector": "Finance",
+    "industry": "Regional Banks",
+    "marketCap": 31647379077,
+    "market": "US"
   }
 }
