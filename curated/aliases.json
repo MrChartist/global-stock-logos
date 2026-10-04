@@ -1,0 +1,2202 @@
+{
+ "IN:A2ZMES": {
+  "isin": "INE619I01012",
+  "logoOf": "A2ZINFRA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:AAL": {
+  "isin": "INE0NCC01015",
+  "logoOf": "ARIHANTACA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ABCGAS": {
+  "isin": "INE173M01012",
+  "logoOf": "ONIXSOLAR",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ACKRUTI": {
+  "isin": "INE703H01016",
+  "logoOf": "HUBTOWN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ACRYSIL": {
+  "isin": "INE482D01024",
+  "logoOf": "CARYSIL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ACSAL": {
+  "isin": "INE0P4T01013",
+  "logoOf": "ARVINDPORT",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ADANIGAS": {
+  "isin": "INE399L01023",
+  "logoOf": "ATGL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ADANITRANS": {
+  "isin": "INE931S01010",
+  "logoOf": "ADANIENSOL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ADARSH": {
+  "isin": "INE673E01018",
+  "logoOf": "SMTEL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ADHUNIKIND": {
+  "isin": "INE452L01012",
+  "logoOf": "INCREDIBLE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ADI": {
+  "isin": "INE959A01019",
+  "logoOf": "PRIVISCL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ADIEXRE": {
+  "isin": "INE398H01015",
+  "logoOf": "TRUSTEDGE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ADLABS": {
+  "isin": "INE172N01012",
+  "logoOf": "IMAGICAA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ADORMUL": {
+  "isin": "INE628D01014",
+  "logoOf": "THRIVE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ADORWELD": {
+  "isin": "INE045A01017",
+  "logoOf": "ADOR",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ADVPETR-B": {
+  "isin": "INE334N01018",
+  "logoOf": "ADVPETR_B",
+  "reason": "same ticker written with underscore/hyphen"
+ },
+ "IN:AFL": {
+  "isin": "INE020G01017",
+  "logoOf": "INSPIRISYS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:AGRE": {
+  "isin": "INE360L01017",
+  "logoOf": "FMNL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:AHL": {
+  "isin": "INE00ZE01026",
+  "logoOf": "AFSL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:AIL": {
+  "isin": "INE878A01011",
+  "logoOf": "GVPIL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:AKM": {
+  "isin": "INE777X01017",
+  "logoOf": "AAYUSHBULL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:AKZOINDIA": {
+  "isin": "INE133A01011",
+  "logoOf": "JSWDULUX",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ALKA": {
+  "isin": "INE061B01038",
+  "logoOf": "AUDROC",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ALLSEC": {
+  "isin": "INE835G01018",
+  "logoOf": "ALLDIGI",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ALSTOMT&D": {
+  "isin": "INE200A01026",
+  "logoOf": "GVTD",
+  "reason": "ticker contains a special character"
+ },
+ "IN:AMARAJABAT": {
+  "isin": "INE885A01032",
+  "logoOf": "ARE_M",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:AMBANIORG": {
+  "isin": "INE00C501018",
+  "logoOf": "AMBANIORGO",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:AMBEY": {
+  "isin": "INE0M3I01029",
+  "logoOf": "DHANSA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:AMIRCHAND": {
+  "isin": "INE05TO01019",
+  "logoOf": "AEROPLANE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ARE&M": {
+  "isin": "INE885A01032",
+  "logoOf": "ARE_M",
+  "reason": "ticker contains a special character"
+ },
+ "IN:AREVAT&D": {
+  "isin": "INE200A01026",
+  "logoOf": "GVTD",
+  "reason": "ticker contains a special character"
+ },
+ "IN:ARISINFRA": {
+  "isin": "INE0H9P01028",
+  "logoOf": "ARIS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ARROWCOAT": {
+  "isin": "INE570D01018",
+  "logoOf": "ARROWGREEN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ARTSONEN": {
+  "isin": "INE133D01023",
+  "logoOf": "ARTSON",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ARVINFRA": {
+  "isin": "INE034S01021",
+  "logoOf": "ARVSMART",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ARYAVAN": {
+  "isin": "INE360S01012",
+  "logoOf": "ECOFINITY",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ASHIKA": {
+  "isin": "INE094B01013",
+  "logoOf": "ASHIKAG",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ASLIND": {
+  "isin": "INE617I01024",
+  "logoOf": "AVATAR",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ATFL": {
+  "isin": "INE209A01019",
+  "logoOf": "SUNDROP",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ATLANTA": {
+  "isin": "INE285H01022",
+  "logoOf": "ATLANTAA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:AURDIS": {
+  "isin": "INE448V01019",
+  "logoOf": "ALCODIS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:AVENTIS": {
+  "isin": "INE058A01010",
+  "logoOf": "SANOFI",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:AXIS-IT&T": {
+  "isin": "INE555B01013",
+  "logoOf": "AXISCADES",
+  "reason": "ticker contains a special character"
+ },
+ "IN:BAJAJ-AUTO": {
+  "isin": "INE917I01010",
+  "logoOf": "BAJAJ_AUTO",
+  "reason": "same ticker written with underscore/hyphen"
+ },
+ "IN:BAJAJCORP": {
+  "isin": "INE933K01021",
+  "logoOf": "BAJAJCON",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BANGANGA": {
+  "isin": "INE767M01029",
+  "logoOf": "ASGARD",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BANSTEA": {
+  "isin": "INE856E01019",
+  "logoOf": "NOVYRA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BARBEQUE": {
+  "isin": "INE382M01027",
+  "logoOf": "UFBL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BFFL": {
+  "isin": "INE578R01011",
+  "logoOf": "GRAMEVA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BGJL": {
+  "isin": "INE986W01016",
+  "logoOf": "GKL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BHAGWATIHO": {
+  "isin": "INE797H01018",
+  "logoOf": "TGBHOTELS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BHINVIT": {
+  "isin": "INE0NHL23019",
+  "logoOf": "INDUSINVIT",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BIJHANS": {
+  "isin": "INE491D01017",
+  "logoOf": "ARVAYA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BINANIIND": {
+  "isin": "INE071A01013",
+  "logoOf": "BILVYAPAR",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BINDALAGRO": {
+  "isin": "INE143A01010",
+  "logoOf": "OSWALGREEN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BIRLAERIC": {
+  "isin": "INE800A01015",
+  "logoOf": "BIRLACABLE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BISIL": {
+  "isin": "INE214D01021",
+  "logoOf": "KARNAWATI",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BJDUP": {
+  "isin": "INE265C01025",
+  "logoOf": "PRABHATAM",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BLUEGOD": {
+  "isin": "INE924N01024",
+  "logoOf": "STARBEAM",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BNHOLDINGS": {
+  "isin": "INE00HZ01011",
+  "logoOf": "BNAGROCHEM",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BNL": {
+  "isin": "INE679E01015",
+  "logoOf": "AGRIBIO",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BOC": {
+  "isin": "INE473A01011",
+  "logoOf": "LINDEINDIA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BOMOXY-B1": {
+  "isin": "INE01TL01014",
+  "logoOf": "BOMOXY_B1",
+  "reason": "same ticker written with underscore/hyphen"
+ },
+ "IN:BOROSIL": {
+  "isin": "INE666D01022",
+  "logoOf": "BORORENEW",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BOSCH-HCIL": {
+  "isin": "INE782A01015",
+  "logoOf": "BOSCH_HCIL",
+  "reason": "same ticker written with underscore/hyphen"
+ },
+ "IN:BOSTONBIO": {
+  "isin": "INE109B01019",
+  "logoOf": "BOSTON",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BSELINFRA": {
+  "isin": "INE395A01016",
+  "logoOf": "BSELALGO",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BURGERKING": {
+  "isin": "INE07T201019",
+  "logoOf": "RBA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CAMBRIDGE": {
+  "isin": "INE692G01013",
+  "logoOf": "XCHANGING",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CAMLIN": {
+  "isin": "INE760A01029",
+  "logoOf": "KOKUYOCMLN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CAREERP": {
+  "isin": "INE521J01018",
+  "logoOf": "CPCAP",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CDG": {
+  "isin": "INE198N01017",
+  "logoOf": "JUJHARLOGI",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CEBBCO": {
+  "isin": "INE209L01016",
+  "logoOf": "JWL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CEINSYSTECH": {
+  "isin": "INE016Q01014",
+  "logoOf": "CEINSYS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CENTURYTEX": {
+  "isin": "INE055A01016",
+  "logoOf": "ABREL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CESCVENT": {
+  "isin": "INE425Y01011",
+  "logoOf": "RPSGVENT",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CGFL": {
+  "isin": "INE727C01024",
+  "logoOf": "AMPL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CHECKPOINT": {
+  "isin": "INE396H01019",
+  "logoOf": "CENTUPLE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CHEMOPH": {
+  "isin": "INE320M01019",
+  "logoOf": "STARSOURCE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CHPLIND": {
+  "isin": "INE714Q01014",
+  "logoOf": "CALLISTA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CIL": {
+  "isin": "INE473L01018",
+  "logoOf": "CITIZEN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CINEPRO": {
+  "isin": "INE704H01022",
+  "logoOf": "CINELINE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CINERAD": {
+  "isin": "INE959B01017",
+  "logoOf": "GTTDATA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CLNINDIA": {
+  "isin": "INE492A01029",
+  "logoOf": "SUDARCOLOR",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CNIRESLTD": {
+  "isin": "INE135H01029",
+  "logoOf": "TTGIL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CNOVAPETRO": {
+  "isin": "INE672K01025",
+  "logoOf": "TRUEGREEN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CONFINT": {
+  "isin": "INE180M01033",
+  "logoOf": "LONGSPUR",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:COSMOFILMS": {
+  "isin": "INE757A01017",
+  "logoOf": "COSMOFIRST",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:COVIDH": {
+  "isin": "INE899M01020",
+  "logoOf": "ISERA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CPIL": {
+  "isin": "INE521J01018",
+  "logoOf": "CPCAP",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CRESSAN": {
+  "isin": "INE716D01033",
+  "logoOf": "CRSL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:CROMPGREAV": {
+  "isin": "INE067A01029",
+  "logoOf": "CGPOWER",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:DALALSTCOM": {
+  "isin": "INE055C01020",
+  "logoOf": "KEEPLEARN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:DATASOFT": {
+  "isin": "INE072B01027",
+  "logoOf": "AEIM",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:DCB": {
+  "isin": "INE503A01015",
+  "logoOf": "DCBBANK",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:DCMSRMCONS": {
+  "isin": "INE499A01024",
+  "logoOf": "DCMSHRIRAM",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:DDEVPLASTIK": {
+  "isin": "INE0HR601026",
+  "logoOf": "DDEVPLSTIK",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:DDIL": {
+  "isin": "INE005G01026",
+  "logoOf": "DEEPAI",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:DECANBRG": {
+  "isin": "INE498D01012",
+  "logoOf": "SATANIBRG",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:DHANVARSHA": {
+  "isin": "INE615R01029",
+  "logoOf": "TRU",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:DHARAMSI": {
+  "isin": "INE505A01010",
+  "logoOf": "DMCC",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:DIRL": {
+  "isin": "INE704V01015",
+  "logoOf": "DRL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:DOLAT": {
+  "isin": "INE966A01022",
+  "logoOf": "DOLATALGO",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:DPTL": {
+  "isin": "INE477B01010",
+  "logoOf": "DVL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:DSM": {
+  "isin": "INE0SUM01015",
+  "logoOf": "ZAPPFRESH",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:DUGARHOU": {
+  "isin": "INE919M01026",
+  "logoOf": "AXENTRA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:DYNATECH": {
+  "isin": "INE741L01018",
+  "logoOf": "DUCON",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:EMAIN": {
+  "isin": "INE0ZOL01023",
+  "logoOf": "EMAPARTNER",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:EMAMIINFRA": {
+  "isin": "INE778K01012",
+  "logoOf": "EMAMIREAL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ESSELPACK": {
+  "isin": "INE255A01020",
+  "logoOf": "EPL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:EUREKAFORBE": {
+  "isin": "INE0KCE01017",
+  "logoOf": "EUREKAFORB",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:EUROASIA": {
+  "isin": "INE535P01015",
+  "logoOf": "RRPDEFENSE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:EXCEL": {
+  "isin": "INE688J01023",
+  "logoOf": "LANDSMILL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:EXPOGAS": {
+  "isin": "INE561D01025",
+  "logoOf": "EXPOEAPL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:FAIRCHEM": {
+  "isin": "INE959A01019",
+  "logoOf": "PRIVISCL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:FINANTECH": {
+  "isin": "INE111B01023",
+  "logoOf": "63MOONS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:FLORATX": {
+  "isin": "INE161F01011",
+  "logoOf": "ANIRIT",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:FORTUNEFIN": {
+  "isin": "INE924D01017",
+  "logoOf": "THEINVEST",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:FRL": {
+  "isin": "INE623B01027",
+  "logoOf": "FEL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:FRLDVR": {
+  "isin": "IN9623B01058",
+  "logoOf": "FELDVR",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:FRSHTRP": {
+  "isin": "INE795D01011",
+  "logoOf": "PURETROP",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GANESHHOUC": {
+  "isin": "INE460C01014",
+  "logoOf": "GANESHHOU",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GARWALLROP": {
+  "isin": "INE276A01018",
+  "logoOf": "GARFIBRES",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GBGLOBAL": {
+  "isin": "INE087J01028",
+  "logoOf": "MIL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GCKL": {
+  "isin": "INE403B01016",
+  "logoOf": "GSLTD",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GENESIS": {
+  "isin": "INE194N01016",
+  "logoOf": "CCME",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GEOJITBNPP": {
+  "isin": "INE007B01023",
+  "logoOf": "GEOJITFSL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GEPIL": {
+  "isin": "INE878A01011",
+  "logoOf": "GVPIL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GET&D": {
+  "isin": "INE200A01026",
+  "logoOf": "GVTD",
+  "reason": "ticker contains a special character"
+ },
+ "IN:GLOBOFFS": {
+  "isin": "INE446C01013",
+  "logoOf": "GARWAOFFS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GLS": {
+  "isin": "INE03Q201024",
+  "logoOf": "ALIVUS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GMRINFRA": {
+  "isin": "INE776C01039",
+  "logoOf": "GMRAIRPORT",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GMRP&UI": {
+  "isin": "INE0CU601026",
+  "logoOf": "GMRP_UI",
+  "reason": "ticker contains a special character"
+ },
+ "IN:GOGIACAP": {
+  "isin": "INE832C01014",
+  "logoOf": "GOGIACAPGL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GOLDINFRA": {
+  "isin": "INE260D01016",
+  "logoOf": "OLECTRA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GOPAIST": {
+  "isin": "INE641H01018",
+  "logoOf": "CASTORA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GRCABLE": {
+  "isin": "INE769B01028",
+  "logoOf": "CLENON",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GSSAMERICA": {
+  "isin": "INE871H01011",
+  "logoOf": "GSS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GTNIND": {
+  "isin": "INE537A01013",
+  "logoOf": "GTNINDS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GUJCMDS": {
+  "isin": "INE218N01021",
+  "logoOf": "ZR2",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GUJFLUORO": {
+  "isin": "INE538A01037",
+  "logoOf": "GFLLIMITED",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GUJGASLTD": {
+  "isin": "INE844O01030",
+  "logoOf": "GUJENERGY",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GULFCORP": {
+  "isin": "INE077F01035",
+  "logoOf": "GOCLCORP",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GVT&D": {
+  "isin": "INE200A01026",
+  "logoOf": "GVTD",
+  "reason": "ticker contains a special character"
+ },
+ "IN:HARIGOV": {
+  "isin": "INE167F01018",
+  "logoOf": "POPEES",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HBLPOWER": {
+  "isin": "INE292B01021",
+  "logoOf": "HBLENGINE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HCIL": {
+  "isin": "INE019C01026",
+  "logoOf": "HSCL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HCL-INSYS": {
+  "isin": "INE236A01020",
+  "logoOf": "HCL_INSYS",
+  "reason": "same ticker written with underscore/hyphen"
+ },
+ "IN:HEG": {
+  "isin": "INE545A01024",
+  "logoOf": "HEGAM",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HEROHONDA": {
+  "isin": "INE158A01026",
+  "logoOf": "HEROMOTOCO",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HEUBACHIND": {
+  "isin": "INE492A01029",
+  "logoOf": "SUDARCOLOR",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HGSL": {
+  "isin": "INE170I01016",
+  "logoOf": "HGS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HIGHSTREE": {
+  "isin": "INE319M01011",
+  "logoOf": "TUSALDAH",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HIL": {
+  "isin": "INE557A01011",
+  "logoOf": "BIRLANU",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HINDUJAVEN": {
+  "isin": "INE353A01023",
+  "logoOf": "NDLVENTURE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HITACHIHOM": {
+  "isin": "INE782A01015",
+  "logoOf": "BOSCH_HCIL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HITECHPLAS": {
+  "isin": "INE120D01012",
+  "logoOf": "HITECHCORP",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HITECHWIND": {
+  "isin": "INE173V01013",
+  "logoOf": "GUJWIND",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HORIZONINF": {
+  "isin": "INE429F01012",
+  "logoOf": "SKIL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HOTELEELA": {
+  "isin": "INE102A01024",
+  "logoOf": "HLVLTD",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HOTELRUGBY": {
+  "isin": "INE275F01019",
+  "logoOf": "UNIVAFOODS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HOVS": {
+  "isin": "INE596H01014",
+  "logoOf": "HGM",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HUIL": {
+  "isin": "INE799B01025",
+  "logoOf": "HIIL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HYDRBADIND": {
+  "isin": "INE557A01011",
+  "logoOf": "BIRLANU",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:HYDROS&S": {
+  "isin": "INE473D01015",
+  "logoOf": "KINGFA",
+  "reason": "ticker contains a special character"
+ },
+ "IN:IBIPL": {
+  "isin": "INE834M01019",
+  "logoOf": "RTNINDIA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:IBPOW": {
+  "isin": "INE399K01017",
+  "logoOf": "RTNPOWER",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:IBREALEST": {
+  "isin": "INE069I01010",
+  "logoOf": "EMBDL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:IBRIGST": {
+  "isin": "INE566M01017",
+  "logoOf": "AZADIND",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:IBULHSGFIN": {
+  "isin": "INE148I01020",
+  "logoOf": "SAMMAANCAP",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:IBULISL": {
+  "isin": "INE126M01010",
+  "logoOf": "IBULLSLTD",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:IBWSL": {
+  "isin": "INE126M01010",
+  "logoOf": "IBULLSLTD",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:IDFCBANK": {
+  "isin": "INE092T01019",
+  "logoOf": "IDFCFIRSTB",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:IIFLSEC": {
+  "isin": "INE489L01022",
+  "logoOf": "IIFLCAPS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:IL&FSENGG": {
+  "isin": "INE369I01014",
+  "logoOf": "IL_FSENGG",
+  "reason": "ticker contains a special character"
+ },
+ "IN:IL&FSTRANS": {
+  "isin": "INE975G01012",
+  "logoOf": "IL_FSTRANS",
+  "reason": "ticker contains a special character"
+ },
+ "IN:INDIAINFO": {
+  "isin": "INE530B01024",
+  "logoOf": "IIFL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:INDSOYA": {
+  "isin": "INE314N01028",
+  "logoOf": "APOLLOIN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:INEABS": {
+  "isin": "INE189B01011",
+  "logoOf": "STYRENIX",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:INEOSSTYRO": {
+  "isin": "INE189B01011",
+  "logoOf": "STYRENIX",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:INFIBEAM": {
+  "isin": "INE483S01020",
+  "logoOf": "CCAVENUE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:INFOSYSTCH": {
+  "isin": "INE009A01021",
+  "logoOf": "INFY",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:INFOTECENT": {
+  "isin": "INE136B01020",
+  "logoOf": "CYIENT",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:INFRATEL": {
+  "isin": "INE121J01017",
+  "logoOf": "INDUSTOWER",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:INFRATRUST": {
+  "isin": "INE05KD23015",
+  "logoOf": "ENERGYINF",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ISWL": {
+  "isin": "INE072A01029",
+  "logoOf": "INDIAHOMES",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ITDCEM": {
+  "isin": "INE686A01026",
+  "logoOf": "CEMPRO",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:JAGSONFI": {
+  "isin": "INE582C01015",
+  "logoOf": "JAGSONSER",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:JAIHINDS": {
+  "isin": "INE156E01014",
+  "logoOf": "JAIHIND",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:JCHAC": {
+  "isin": "INE782A01015",
+  "logoOf": "BOSCH_HCIL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:JDORGOCHEM": {
+  "isin": "INE263B01022",
+  "logoOf": "JAYSYNTH",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:JETINFRA": {
+  "isin": "INE155R01018",
+  "logoOf": "JETSOLAR",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:JINDALSWHL": {
+  "isin": "INE824G01012",
+  "logoOf": "JSWHL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:JTAPARIA": {
+  "isin": "INE075K01013",
+  "logoOf": "ANVRDHI",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:JUBILANT": {
+  "isin": "INE700A01033",
+  "logoOf": "JUBLPHARMA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:JYOTHI": {
+  "isin": "INE681K01026",
+  "logoOf": "MIZVEN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:KALECONSUL": {
+  "isin": "INE793A01012",
+  "logoOf": "ACCELYA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:KALPATPOWR": {
+  "isin": "INE220B01022",
+  "logoOf": "KPIL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:KAPILCO": {
+  "isin": "INE393H01016",
+  "logoOf": "SKYBIOTECH",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:KASHYAP": {
+  "isin": "INE108B01029",
+  "logoOf": "JUNE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:KAVVERITEL": {
+  "isin": "INE641C01019",
+  "logoOf": "KAVDEFENCE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:KBCGLOBAL": {
+  "isin": "INE278R01034",
+  "logoOf": "DHARAN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:KEERTI": {
+  "isin": "INE586X01012",
+  "logoOf": "GTECJAINX",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:KEYCORPSER": {
+  "isin": "INE681C01015",
+  "logoOf": "KEYFINSERV",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:KIRANSY-B": {
+  "isin": "INE293D01017",
+  "logoOf": "KIRANSY_B",
+  "reason": "same ticker written with underscore/hyphen"
+ },
+ "IN:KLBRENG-B": {
+  "isin": "INE338F01015",
+  "logoOf": "KLBRENG_B",
+  "reason": "same ticker written with underscore/hyphen"
+ },
+ "IN:KLRF": {
+  "isin": "INE014E01015",
+  "logoOf": "KLRFM",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:KPIT": {
+  "isin": "INE836A01035",
+  "logoOf": "BSOFT",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:KRITIIND": {
+  "isin": "INE479D01038",
+  "logoOf": "KRITI",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:L&TFH": {
+  "isin": "INE498L01015",
+  "logoOf": "LTF",
+  "reason": "ticker contains a special character"
+ },
+ "IN:LAKSHMIFIN": {
+  "isin": "INE850E01012",
+  "logoOf": "LFIC",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:LAWSIKHO": {
+  "isin": "INE0RDH01021",
+  "logoOf": "ADDICTIVE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:LAXMIMACH": {
+  "isin": "INE269B01029",
+  "logoOf": "LMW",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:LICL": {
+  "isin": "INE12QA01010",
+  "logoOf": "LGLL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:LKPFIN": {
+  "isin": "INE724A01017",
+  "logoOf": "GYFTR",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:LOGIXMICRO": {
+  "isin": "INE848A01014",
+  "logoOf": "IZMO",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:LSIL": {
+  "isin": "INE093R01011",
+  "logoOf": "LLOYDSENGG",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:LTI": {
+  "isin": "INE214T01019",
+  "logoOf": "LTM",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:LTIM": {
+  "isin": "INE214T01019",
+  "logoOf": "LTM",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:LUHARUKA": {
+  "isin": "INE195E01020",
+  "logoOf": "DHANSAFAL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:LXMIATO": {
+  "isin": "INE718M01022",
+  "logoOf": "LAKSHMIEW",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:LYCOS": {
+  "isin": "INE425B01027",
+  "logoOf": "BCG",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:LYKISLTD": {
+  "isin": "INE624M01014",
+  "logoOf": "KROWNIQ",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:LYPSAGEMS": {
+  "isin": "INE142K01011",
+  "logoOf": "AURUS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:M&M": {
+  "isin": "INE101A01026",
+  "logoOf": "M_M",
+  "reason": "ticker contains a special character"
+ },
+ "IN:M&MFIN": {
+  "isin": "INE774D01024",
+  "logoOf": "M_MFIN",
+  "reason": "ticker contains a special character"
+ },
+ "IN:MADHUSE": {
+  "isin": "INE856D01011",
+  "logoOf": "MSLGLOBAL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MADRASCEM": {
+  "isin": "INE331A01037",
+  "logoOf": "RAMCOCEM",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MAGMA": {
+  "isin": "INE511C01022",
+  "logoOf": "POONAWALLA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MAHAANF": {
+  "isin": "INE734D01010",
+  "logoOf": "LAKESHORE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MAHINDCIE": {
+  "isin": "INE536H01010",
+  "logoOf": "CIEINDIA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MAHINDFORG": {
+  "isin": "INE536H01010",
+  "logoOf": "CIEINDIA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MAJESCO": {
+  "isin": "INE898S01029",
+  "logoOf": "AURUM",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MANBRO": {
+  "isin": "INE348N01042",
+  "logoOf": "KDGREEN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MARKOBENZ": {
+  "isin": "INE229N01010",
+  "logoOf": "NEWTRAC",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MARUTISE": {
+  "isin": "INE368C01019",
+  "logoOf": "MGIL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MAX": {
+  "isin": "INE180A01020",
+  "logoOf": "MFSL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MAXWELL": {
+  "isin": "INE450G01024",
+  "logoOf": "VIPCLOTHNG",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MCCHRLS-B": {
+  "isin": "INE435D01014",
+  "logoOf": "MCCHRLS_B",
+  "reason": "same ticker written with underscore/hyphen"
+ },
+ "IN:MCEL": {
+  "isin": "INE0UYT01018",
+  "logoOf": "MACHLTD",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MEGASOFT": {
+  "isin": "INE933B01012",
+  "logoOf": "SIGMAADV",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MEHTAHG": {
+  "isin": "INE239B01014",
+  "logoOf": "RFL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MERCK": {
+  "isin": "INE199A01012",
+  "logoOf": "PGHL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MESON": {
+  "isin": "INE0OYE01013",
+  "logoOf": "QUESTFLOW",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MFL": {
+  "isin": "INE071N01016",
+  "logoOf": "EPIGRAL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MICROSEC": {
+  "isin": "INE019J01013",
+  "logoOf": "HEALTHX",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MINFY": {
+  "isin": "INE019D01016",
+  "logoOf": "MAHAVEER",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MIRCELECTR": {
+  "isin": "INE831A01028",
+  "logoOf": "ONIDA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MMRUBBR-B": {
+  "isin": "INE159E01026",
+  "logoOf": "MMRUBBR_B",
+  "reason": "same ticker written with underscore/hyphen"
+ },
+ "IN:MODISNME": {
+  "isin": "INE737D01021",
+  "logoOf": "MODISONLTD",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MORGANITE": {
+  "isin": "INE599F01020",
+  "logoOf": "FOSECOC",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MOTHERSUMI": {
+  "isin": "INE775A01035",
+  "logoOf": "MOTHERSON",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MRO-TEK": {
+  "isin": "INE398B01018",
+  "logoOf": "UMIYA_MRO",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MUDRA": {
+  "isin": "INE311H01018",
+  "logoOf": "ELAND",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:MUNDRAPORT": {
+  "isin": "INE742F01042",
+  "logoOf": "ADANIPORTS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:NAGAAGRI": {
+  "isin": "INE295D01020",
+  "logoOf": "NACLIND",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:NAM-INDIA": {
+  "isin": "INE298J01013",
+  "logoOf": "NAM_INDIA",
+  "reason": "same ticker written with underscore/hyphen"
+ },
+ "IN:NANDANI": {
+  "isin": "INE696V01013",
+  "logoOf": "JAIPURKURT",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:NAVNETPUBL": {
+  "isin": "INE060A01024",
+  "logoOf": "NAVNETEDUL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:NEOCURE": {
+  "isin": "INE695B01025",
+  "logoOf": "COUNCODOS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:NEWMKTADV": {
+  "isin": "INE800K01014",
+  "logoOf": "NEWMKTAVE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:NEYVELILIG": {
+  "isin": "INE589A01014",
+  "logoOf": "NLCINDIA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:NIRVIKARA": {
+  "isin": "INE875R01011",
+  "logoOf": "BALKRISHNA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:NITESHEST": {
+  "isin": "INE639K01016",
+  "logoOf": "SATCH",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:NMSRESRC": {
+  "isin": "INE169F01014",
+  "logoOf": "NMSGLOBAL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:NUMERICPW": {
+  "isin": "INE409B01013",
+  "logoOf": "SWELECTES",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:NXTDIGITAL": {
+  "isin": "INE353A01023",
+  "logoOf": "NDLVENTURE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:OCCL": {
+  "isin": "INE321D01016",
+  "logoOf": "AGVENTURES",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:OMANSH": {
+  "isin": "INE378P01036",
+  "logoOf": "PIPAN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:OMMETALS": {
+  "isin": "INE239D01028",
+  "logoOf": "OMINFRAL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ORIENTABRA": {
+  "isin": "INE569C01020",
+  "logoOf": "ORIENTCER",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ORIENTCERA": {
+  "isin": "INE607D01018",
+  "logoOf": "ORIENTBELL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ORIENTREF": {
+  "isin": "INE743M01012",
+  "logoOf": "RHIM",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ORTINLAB": {
+  "isin": "INE749B01020",
+  "logoOf": "ORTINGLOBE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PAEL": {
+  "isin": "INE766A01026",
+  "logoOf": "AURIQUE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PANTALOONR": {
+  "isin": "INE623B01027",
+  "logoOf": "FEL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PAPERPROD": {
+  "isin": "INE275B01026",
+  "logoOf": "HUHTAMAKI",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PARMCOS-B": {
+  "isin": "INE143I01013",
+  "logoOf": "PARMCOS_B",
+  "reason": "same ticker written with underscore/hyphen"
+ },
+ "IN:PDUMJEIND": {
+  "isin": "INE105C01023",
+  "logoOf": "3PLAND",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PDUMJEPULP": {
+  "isin": "INE606A01024",
+  "logoOf": "AMJLAND",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PERIATEA": {
+  "isin": "INE431F01018",
+  "logoOf": "PKTEA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PFRL": {
+  "isin": "INE647O01011",
+  "logoOf": "ABFRL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PHOENIXTN": {
+  "isin": "INE977M01024",
+  "logoOf": "HBGHOTELS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PIFL": {
+  "isin": "INE926B01016",
+  "logoOf": "GRANDOAK",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PILANIINV": {
+  "isin": "INE417C01014",
+  "logoOf": "PILANIINVS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PIPAVAVDOC": {
+  "isin": "INE542F01012",
+  "logoOf": "RDEL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PIPAVAVYD": {
+  "isin": "INE542F01012",
+  "logoOf": "RDEL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PITTILAM": {
+  "isin": "INE450D01021",
+  "logoOf": "PITTIENG",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PRAKASHCON": {
+  "isin": "INE023M01027",
+  "logoOf": "SETUINFRA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PRATIKSH": {
+  "isin": "INE530D01012",
+  "logoOf": "VELLORA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PRETAILDVR": {
+  "isin": "IN9623B01058",
+  "logoOf": "FELDVR",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PRISMCEM": {
+  "isin": "INE010A01011",
+  "logoOf": "PRSMJOHNSN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PRITHVISOF": {
+  "isin": "INE621B01021",
+  "logoOf": "PRITHVIEXCH",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PROINDIA": {
+  "isin": "INE217G01035",
+  "logoOf": "EQUIPPP",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PROZONE": {
+  "isin": "INE195N01013",
+  "logoOf": "PROZONER",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PROZONECSC": {
+  "isin": "INE195N01013",
+  "logoOf": "PROZONER",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PROZONINTU": {
+  "isin": "INE195N01013",
+  "logoOf": "PROZONER",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:PVR": {
+  "isin": "INE191H01014",
+  "logoOf": "PVRINOX",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:QUANTBUILD": {
+  "isin": "INE222B01028",
+  "logoOf": "CEMAINFRA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:QUEST": {
+  "isin": "INE989J01017",
+  "logoOf": "AMPVOLTS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:RAHME": {
+  "isin": "INE149D01011",
+  "logoOf": "TACENT",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:RAINCOM": {
+  "isin": "INE855B01025",
+  "logoOf": "RAIN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:RAJGASES": {
+  "isin": "INE184D01026",
+  "logoOf": "RAJSEC",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:RAMAPPR-B": {
+  "isin": "INE425E01013",
+  "logoOf": "RAMAPPR_B",
+  "reason": "same ticker written with underscore/hyphen"
+ },
+ "IN:RAUNAQEPC": {
+  "isin": "INE523K01012",
+  "logoOf": "RAUNAQ",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:RAYLA": {
+  "isin": "INE741C01017",
+  "logoOf": "CRESANTO",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:REGTRUS": {
+  "isin": "INE425F01028",
+  "logoOf": "BEFOUNDMOL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:REMLIFE": {
+  "isin": "INE549S01036",
+  "logoOf": "SUPHA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:REVATHI": {
+  "isin": "INE617A01013",
+  "logoOf": "SEMAC",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:REVATHIEQU": {
+  "isin": "INE0DAB01012",
+  "logoOf": "RVTH",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:RISHYRN": {
+  "isin": "INE351D01013",
+  "logoOf": "IMPERA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:RLFL": {
+  "isin": "INE516P01015",
+  "logoOf": "RAAMA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:RNAM": {
+  "isin": "INE298J01013",
+  "logoOf": "NAM_INDIA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:RNAVAL": {
+  "isin": "INE542F01012",
+  "logoOf": "RDEL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ROCKPP": {
+  "isin": "IN90PTR01010",
+  "logoOf": "ROCKPP.E1",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ROMAN": {
+  "isin": "INE924H01018",
+  "logoOf": "TARMAT",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:RTNINFRA": {
+  "isin": "INE834M01019",
+  "logoOf": "RTNINDIA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:RUCHI": {
+  "isin": "INE619A01035",
+  "logoOf": "PATANJALI",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:S&SPOWER": {
+  "isin": "INE902B01017",
+  "logoOf": "S_SPOWER",
+  "reason": "ticker contains a special character"
+ },
+ "IN:SADHNA": {
+  "isin": "INE994R01028",
+  "logoOf": "CRYSTAL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SAH": {
+  "isin": "INE035801013",
+  "logoOf": "AERONEU",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SAHPETRO": {
+  "isin": "INE586G01017",
+  "logoOf": "GULFPETRO",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SAI": {
+  "isin": "INE0QXT01018",
+  "logoOf": "DKUAL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SAINTGOBAIN": {
+  "isin": "INE068B01017",
+  "logoOf": "SEKURITIND",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SALONACOT": {
+  "isin": "INE498E01010",
+  "logoOf": "SALONA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SANGINITA": {
+  "isin": "INE753W01010",
+  "logoOf": "AGASTYAEN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SASTASUNDR": {
+  "isin": "INE019J01013",
+  "logoOf": "HEALTHX",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SATINDLTD": {
+  "isin": "INE065D01027",
+  "logoOf": "AEROENTER",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SATTVASUKU": {
+  "isin": "INE280E01038",
+  "logoOf": "TAVEXIA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SAVFI": {
+  "isin": "INE304E01010",
+  "logoOf": "MANTRA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SAWABUSI": {
+  "isin": "INE248B01023",
+  "logoOf": "SAWACA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SCANPGEOM": {
+  "isin": "INE967B01028",
+  "logoOf": "SGLRES",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SCAPDVR": {
+  "isin": "INE224E01036",
+  "logoOf": "GATECHDVR",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SELAN": {
+  "isin": "INE818A01017",
+  "logoOf": "ANTELOPUS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SENTINEL": {
+  "isin": "INE577L01016",
+  "logoOf": "STEL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SEPOWER": {
+  "isin": "INE735M01018",
+  "logoOf": "SAMPANN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SEQUENT": {
+  "isin": "INE807F01027",
+  "logoOf": "VIYASH",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SERIND": {
+  "isin": "INE358F01013",
+  "logoOf": "DESIFARMS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SERVOTEACH": {
+  "isin": "INE185D01015",
+  "logoOf": "LEXORAA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SESAGOA": {
+  "isin": "INE205A01025",
+  "logoOf": "VEDL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SGLTL": {
+  "isin": "INE0M4D01010",
+  "logoOf": "SETL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SHARP": {
+  "isin": "INE207B01011",
+  "logoOf": "SMAART",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SHARRESLTD": {
+  "isin": "INE559D01011",
+  "logoOf": "CREST",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SHENTRA": {
+  "isin": "INE0OUS01011",
+  "logoOf": "MIDAAS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SHIL": {
+  "isin": "INE05AN01011",
+  "logoOf": "HINDWAREAP",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SHREYAS": {
+  "isin": "INE757B01015",
+  "logoOf": "TRANSWORLD",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SHRIRAMEPC": {
+  "isin": "INE964H01014",
+  "logoOf": "SEPC",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SHYAMAINFO": {
+  "isin": "INE861E01019",
+  "logoOf": "SHYAMACOMP",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SIELFNS": {
+  "isin": "INE027F01014",
+  "logoOf": "CMXLTD",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SILLYMONKS": {
+  "isin": "INE203Y01012",
+  "logoOf": "CRESTO",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SINGER": {
+  "isin": "INE638A01035",
+  "logoOf": "SINGERIND",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SITICABLE": {
+  "isin": "INE965H01011",
+  "logoOf": "SITINET",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SMIFS": {
+  "isin": "INE641A01013",
+  "logoOf": "NEXOME",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SMLISUZU": {
+  "isin": "INE294B01019",
+  "logoOf": "SMLMAH",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SMOBILITY": {
+  "isin": "INE927C01020",
+  "logoOf": "DIGISPICE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SMSLIFE": {
+  "isin": "INE320X01016",
+  "logoOf": "HALEOSLABS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SODFC": {
+  "isin": "INE754C01010",
+  "logoOf": "CRESCENTIS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SOFTBPO": {
+  "isin": "INE459E01012",
+  "logoOf": "IDREAM",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SOFTSOL": {
+  "isin": "INE002B01016",
+  "logoOf": "MADALA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SOMAPPR": {
+  "isin": "INE737E01011",
+  "logoOf": "KSSMART",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SONAHISONA": {
+  "isin": "INE06MH01016",
+  "logoOf": "GOLDKART",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SONASTEER": {
+  "isin": "INE643A01035",
+  "logoOf": "JTEKTINDIA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SORILHOLD": {
+  "isin": "INE126M01010",
+  "logoOf": "IBULLSLTD",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SPHEREGSL": {
+  "isin": "INE737B01033",
+  "logoOf": "ADROITINFO",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SPICEMOBI": {
+  "isin": "INE927C01020",
+  "logoOf": "DIGISPICE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SPICEMOBIL": {
+  "isin": "INE927C01020",
+  "logoOf": "DIGISPICE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SPSINT": {
+  "isin": "INE758B01013",
+  "logoOf": "VKGLOBAL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SQSBFSI": {
+  "isin": "INE201K01015",
+  "logoOf": "EXPLEOSOL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SRDAPRT": {
+  "isin": "INE995U01011",
+  "logoOf": "FRESITA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SREEJAYA": {
+  "isin": "INE618F01010",
+  "logoOf": "SPARKLEGR",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SRGINFOTEC": {
+  "isin": "INE376A01032",
+  "logoOf": "PANINDIAC",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SRGSFL": {
+  "isin": "INE326P01019",
+  "logoOf": "SRGFFL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SSLT": {
+  "isin": "INE205A01025",
+  "logoOf": "VEDL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:STAMPEDE": {
+  "isin": "INE224E01028",
+  "logoOf": "GATECH",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:STRTECH": {
+  "isin": "INE089C01029",
+  "logoOf": "STLTECH",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:STYABS": {
+  "isin": "INE189B01011",
+  "logoOf": "STYRENIX",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SUDTIND-B": {
+  "isin": "INE691D01012",
+  "logoOf": "SUDTIND_B",
+  "reason": "same ticker written with underscore/hyphen"
+ },
+ "IN:SUMUKA": {
+  "isin": "INE311N01016",
+  "logoOf": "GUJJUBHAI",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SUNCLAYLTD": {
+  "isin": "INE105A01035",
+  "logoOf": "TVSHLTD",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SUNDARMHLD": {
+  "isin": "INE202Z01029",
+  "logoOf": "TSFINV",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SURANAT&P": {
+  "isin": "INE130B01031",
+  "logoOf": "SURANAT_P",
+  "reason": "ticker contains a special character"
+ },
+ "IN:SUREVIN": {
+  "isin": "INE082W01014",
+  "logoOf": "WEWIN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SURINDL": {
+  "isin": "INE060N01019",
+  "logoOf": "EQUILATERA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SUVENPHAR": {
+  "isin": "INE03QK01018",
+  "logoOf": "COHANCE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SWANENERGY": {
+  "isin": "INE665A01038",
+  "logoOf": "SWANCORP",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:SWOEF": {
+  "isin": "INE295B01016",
+  "logoOf": "SWOJAS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TATAGLOBAL": {
+  "isin": "INE192A01025",
+  "logoOf": "TATACONSUM",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TATAMOTORS": {
+  "isin": "INE155A01022",
+  "logoOf": "TMPV",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TAVERNIER": {
+  "isin": "INE355H01015",
+  "logoOf": "EFORU",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TCLCONS": {
+  "isin": "INE388G01026",
+  "logoOf": "TICL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TELESYS": {
+  "isin": "INE042B01012",
+  "logoOf": "GROARC",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TEXMACOLTD": {
+  "isin": "INE435C01024",
+  "logoOf": "TEXINFRA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:THEBYKE": {
+  "isin": "INE319B01014",
+  "logoOf": "BYKE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:THINKSOFT": {
+  "isin": "INE201K01015",
+  "logoOf": "EXPLEOSOL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:THIRDFIN": {
+  "isin": "INE528C01018",
+  "logoOf": "UVS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TIDEWATER": {
+  "isin": "INE484C01030",
+  "logoOf": "VEEDOL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TIFIN": {
+  "isin": "INE149A01033",
+  "logoOf": "CHOLAHLDNG",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TIMESGTY": {
+  "isin": "INE289C01025",
+  "logoOf": "TEAMGTY",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TINNATFL": {
+  "isin": "INE401Z01019",
+  "logoOf": "FRATELLI",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TIPSINDLTD": {
+  "isin": "INE716B01029",
+  "logoOf": "TIPSMUSIC",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TMRVL": {
+  "isin": "INE759V01019",
+  "logoOf": "HEADSUP",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TMTIND-B1": {
+  "isin": "INE182E01010",
+  "logoOf": "TMTIND_B1",
+  "reason": "same ticker written with underscore/hyphen"
+ },
+ "IN:TRIL": {
+  "isin": "INE763I01026",
+  "logoOf": "TARIL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TRIMURTHI": {
+  "isin": "INE314I01036",
+  "logoOf": "NOVELIX",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TRITON": {
+  "isin": "INE982C01033",
+  "logoOf": "HOM",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TTIL": {
+  "isin": "INE812Q01016",
+  "logoOf": "TIRUPATIIN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TTKHEALTH": {
+  "isin": "INE910C01018",
+  "logoOf": "TTKHLTCARE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:TWL": {
+  "isin": "INE615H01020",
+  "logoOf": "TITAGARH",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:UCALFUEL": {
+  "isin": "INE139B01016",
+  "logoOf": "UCAL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:UMIYA-MRO": {
+  "isin": "INE398B01018",
+  "logoOf": "UMIYA_MRO",
+  "reason": "same ticker written with underscore/hyphen"
+ },
+ "IN:UNIPHOS": {
+  "isin": "INE628A01036",
+  "logoOf": "UPL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:URAVI": {
+  "isin": "INE568Z01015",
+  "logoOf": "URAVIDEF",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:VAGHANI": {
+  "isin": "INE554H01021",
+  "logoOf": "EMROCK",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:VANDANA": {
+  "isin": "INE219M01021",
+  "logoOf": "ATVOENT",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:VIDHIDYE": {
+  "isin": "INE632C01026",
+  "logoOf": "VIDHIING",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:VIDLI": {
+  "isin": "INE564S01019",
+  "logoOf": "KAMATS",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:VIKASGLOB": {
+  "isin": "INE806A01020",
+  "logoOf": "VIKASECO",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:VIKASMCORP": {
+  "isin": "INE161L01027",
+  "logoOf": "VIKASLIFE",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:VINTRON": {
+  "isin": "INE043B01028",
+  "logoOf": "REGANTO",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:VIPUL": {
+  "isin": "INE946H01037",
+  "logoOf": "VIPULLTD",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:VIRTUALS": {
+  "isin": "INE237C01016",
+  "logoOf": "KATIPATANG",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:VISASTEEL": {
+  "isin": "INE286H01012",
+  "logoOf": "VISACHROME",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:VISCO": {
+  "isin": "INE890S01026",
+  "logoOf": "GAMCO",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:VRWODAR": {
+  "isin": "INE317D01014",
+  "logoOf": "MEGAMONT",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:VUENOW": {
+  "isin": "INE164D01010",
+  "logoOf": "IKOMA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:WABCO-TVS": {
+  "isin": "INE342J01019",
+  "logoOf": "ZFCVINDIA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:WABCOINDIA": {
+  "isin": "INE342J01019",
+  "logoOf": "ZFCVINDIA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:WELPROJ": {
+  "isin": "INE625G01013",
+  "logoOf": "WELENT",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:WELSYNTEX": {
+  "isin": "INE193B01039",
+  "logoOf": "AYMSYNTEX",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:WWIL": {
+  "isin": "INE965H01011",
+  "logoOf": "SITINET",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:YAARI": {
+  "isin": "INE126M01010",
+  "logoOf": "IBULLSLTD",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:YAARII": {
+  "isin": "INE126M01010",
+  "logoOf": "IBULLSLTD",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:YASTF": {
+  "isin": "INE745A01012",
+  "logoOf": "LEXGLOBAL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ZEENEWS": {
+  "isin": "INE966H01019",
+  "logoOf": "ZEEMEDIA",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ZENITHBIR": {
+  "isin": "INE318D01020",
+  "logoOf": "ZENITHSTL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ZOMATO": {
+  "isin": "INE758T01015",
+  "logoOf": "ETERNAL",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ZSANMCOM": {
+  "isin": "INE896J01014",
+  "logoOf": "TANDHANIN",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ZSWASTSA": {
+  "isin": "INE094R01019",
+  "logoOf": "EENTER",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ZUARIAGRO": {
+  "isin": "INE217A01012",
+  "logoOf": "ZUARIIND",
+  "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:ZUARIGLOB": {
+  "isin": "INE217A01012",
+  "logoOf": "ZUARIIND",
+  "reason": "company renamed or re-listed under a new ticker"
+ }
+}

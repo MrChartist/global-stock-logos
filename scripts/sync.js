@@ -19,6 +19,7 @@ import { US_KNOWN_DOMAINS } from './domains-us.js';
 import { MARKETS } from './markets.js';
 import { isProcedural } from './svg-quality.js';
 import { loadShard } from './enrich-store.js';
+import { applyAliases, loadAliases } from './apply-aliases.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -38,6 +39,11 @@ export const MARKET_METADATA = Object.fromEntries(
 
 export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
     console.log('[sync] 🌐 Scanning Global Logo Assets...');
+
+    // Repair tickers that carry a placeholder (special characters, renamed companies) BEFORE indexing: see curated/aliases.json
+    const aliasRun = applyAliases();
+    const aliases = loadAliases();
+    console.log(`[sync] 🔗 Aliases: ${aliasRun.applied} repaired, ${aliasRun.upToDate} already correct`);
 
     let existing = { logos: {} };
     if (fs.existsSync(MANIFEST_PATH)) {
@@ -83,17 +89,29 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
             const ext = path.extname(file).replace('.', '').toLowerCase();
             const sym = path.basename(file, '.' + ext).toUpperCase();
             const stats = fs.statSync(path.join(dirPath, file));
-            if (ext === 'svg') svgs++; else pngs++;
-            count++;
-            totalEquities++;
+            // An alias file is a copy of another company's logo file (renamed ticker, or a ticker with a special character).
+            // It gets its own manifest entry, but it is not a new company: it is not counted and not added to the search index.
+            let logoOf = null;
+            const aliasInfo = aliases[`${mktConfig.market}:${sym}`];
+            if (aliasInfo) {
+                const cf = ['svg', 'png'].map((x) => path.join(dirPath, `${aliasInfo.logoOf}.${x}`)).find((x) => fs.existsSync(x));
+                if (cf && fs.readFileSync(cf).equals(fs.readFileSync(path.join(dirPath, file)))) logoOf = aliasInfo.logoOf;
+            }
+            if (!logoOf) {
+                if (ext === 'svg') svgs++; else pngs++;
+                count++;
+                totalEquities++;
+            }
 
             const usMeta = mktLower === 'us' ? (US_KNOWN_DOMAINS[sym] || {}) : {};
             const prev = existing.logos[sym] || existing.logos[`${mktConfig.market}:${sym}`] || {};
-            const meta = companyMeta[`${mktConfig.market}:${sym}`] || companyMeta[sym] || {};
+            const metaOf = (k) => companyMeta[`${mktConfig.market}:${k}`] || companyMeta[k];
+            const meta = metaOf(sym) || (logoOf ? metaOf(logoOf) : null) || {};
 
             const yahooTicker = `${sym}${mktConfig.yahooSuffix}`;
             const item = {
                 symbol: sym,
+                logoOf,
                 company: meta.company || usMeta.name || prev.company || sym,
                 market: mktConfig.market,
                 country: mktConfig.country,
@@ -136,11 +154,13 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
     for (const [k, item] of Object.entries(logos)) {
         if (!k.includes(':')) continue; // namespaced MARKET:SYM keys only
         const mk = item.market.toLowerCase();
-        const e = (enrichment[mk] ||= loadShard(mk))[item.symbol] || {};
+        const shard = (enrichment[mk] ||= loadShard(mk));
+        const e = shard[item.symbol] || (item.logoOf ? shard[item.logoOf] : null) || {};
         const o = curated[k] || {};
         const pick = (f) => (o[f] !== undefined ? o[f] : e[f] ?? null);
-        const pngBase = e.pngSizes ? Object.fromEntries(e.pngSizes.map((n) => [n, `png/${n}/${mk}/${item.symbol}.png`])) : null;
+        const pngBase = e.pngSizes ? Object.fromEntries(e.pngSizes.map((n) => [n, `png/${n}/${mk}/${item.logoOf || item.symbol}.png`])) : null;
         (shards[mk] ||= {})[item.symbol] = {
+            logoOf: item.logoOf || undefined,   // only present on aliases (JSON drops undefined)
             company: item.company, format: item.format, sector: item.sector, industry: item.industry,
             marketCap: item.marketCap, capCurrency: pick('capCurrency'), marketCapUsd: pick('marketCapUsd'), marketCapInr: pick('marketCapInr'), logoid: item.logoid, yahooTicker: item.yahooTicker,
             yahooUrl: item.yahooUrl, path: item.path, isProcedural: item.isProcedural,
@@ -156,7 +176,7 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
             wikidata: pick('wikidata'), pngPaths: pngBase,
             freshness: { marketData: e.marketDataAt || null, profile: e.wikidataAt || null },
         };
-        searchIndex.push([item.symbol, item.company, item.market, item.format, item.yahooTicker, e.marketCapUsd ?? null]);
+        if (!item.logoOf) searchIndex.push([item.symbol, item.company, item.market, item.format, item.yahooTicker, e.marketCapUsd ?? null]);
         // A depositary receipt of a foreign company (company country differs from the market's country) ranks below home listings.
         if (e.country && e.country !== item.country) foreignListing.add(`${item.market}:${item.symbol}`);
     }

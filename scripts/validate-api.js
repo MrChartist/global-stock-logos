@@ -28,17 +28,19 @@ for (const m of markets) {
     const list = read(path.join(API, 'markets', `${m.key}.json`));
     if (list.length !== m.companies) bad(`${m.key}: list has ${list.length} rows, markets.json says ${m.companies}`);
     const manifest = read(path.join(ROOT, 'manifests', `${m.key}.json`));
-    if (Object.keys(manifest).length !== list.length) bad(`${m.key}: manifest has ${Object.keys(manifest).length} companies, API list ${list.length}`);
-    for (const row of list) {
-        const f = path.join(API, 'companies', m.key, `${row.ticker}.json`);
-        if (!fs.existsSync(f)) { bad(`missing ${m.key}/${row.ticker}.json`); continue; }
+    const real = Object.values(manifest).filter((e) => !e.logoOf).length;
+    if (real !== list.length) bad(`${m.key}: manifest has ${real} companies (aliases excluded), API list ${list.length}`);
+    // every manifest entry, aliases included, must have a valid company file
+    for (const ticker of Object.keys(manifest)) {
+        const f = path.join(API, 'companies', m.key, `${ticker}.json`);
+        if (!fs.existsSync(f)) { bad(`missing ${m.key}/${ticker}.json`); continue; }
         const c = read(f);
         companies++;
-        if (!validate(c)) { invalid++; bad(`${m.key}/${row.ticker}: ${ajv.errorsText(validate.errors, { dataVar: '' })}`); }
-        else if (c.ticker !== row.ticker || c.market !== m.code) bad(`${m.key}/${row.ticker}: ticker or market field mismatch`);
+        if (!validate(c)) { invalid++; bad(`${m.key}/${ticker}: ${ajv.errorsText(validate.errors, { dataVar: '' })}`); }
+        else if (c.ticker !== ticker || c.market !== m.code) bad(`${m.key}/${ticker}: ticker or market field mismatch`);
     }
 }
-if (index.companies !== companies) bad(`index.json says ${index.companies} companies, found ${companies}`);
+if (index.companies + (index.aliases || 0) !== companies) bad(`index.json says ${index.companies} companies + ${index.aliases || 0} aliases, found ${companies} company files`);
 if (index.markets !== markets.length) bad(`index.json says ${index.markets} markets, found ${markets.length}`);
 for (const [k, u] of Object.entries(index.endpoints)) { try { new URL(u.replace(/\{[^}]+\}/g, 'x')); } catch { bad(`endpoint ${k} is not a valid URL: ${u}`); } }
 

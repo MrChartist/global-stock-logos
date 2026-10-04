@@ -174,7 +174,8 @@ if (process.argv[1] && process.argv[1].endsWith('build-api.js')) {
     const write = (rel, data) => fs.writeFileSync(path.join(OUT, rel), JSON.stringify(data));
 
     const markets = [];
-    let total = 0;
+    let total = 0;       // real companies
+    let aliasCount = 0;  // renamed / special-character tickers that reuse another company's logo (see curated/aliases.json)
     for (const f of fs.readdirSync(path.join(ROOT, 'manifests')).sort()) {
         const key = f.replace('.json', '');
         const items = JSON.parse(fs.readFileSync(path.join(ROOT, 'manifests', f), 'utf-8'));
@@ -183,6 +184,7 @@ if (process.argv[1] && process.argv[1].endsWith('build-api.js')) {
         for (const [ticker, m] of Object.entries(items)) {
             const c = toCompany(key, ticker, m);
             fs.writeFileSync(path.join(OUT, 'companies', key, `${ticker}.json`), JSON.stringify(c));
+            if (m.logoOf) { aliasCount++; continue; }   // an alias has its own company file but is not listed or counted as another company
             rows.push({ ticker, name: c.name, sector: c.classification.sector, marketCapUsd: c.marketCap?.usd ?? null, url: c.links.self });
             total++;
         }
@@ -197,7 +199,7 @@ if (process.argv[1] && process.argv[1].endsWith('build-api.js')) {
     write('openapi.json', openapi(counts));
     write('index.json', {
         api: 'Global Stock Logos API', version: API_VERSION, dataVersion: manifest.version,
-        dataRefreshedAt: manifest.dataRefreshedAt, companies: total, markets: markets.length, cdn: CDN,
+        dataRefreshedAt: manifest.dataRefreshedAt, companies: total, aliases: aliasCount, markets: markets.length, cdn: CDN,
         endpoints: {
             markets: `${API_BASE}/markets.json`,
             market: `${API_BASE}/markets/{market}.json`,
@@ -209,5 +211,5 @@ if (process.argv[1] && process.argv[1].endsWith('build-api.js')) {
         },
         docs: 'https://github.com/MrChartist/global-stock-logos/blob/main/docs/API.md',
     });
-    console.log(`[api] ${total} company files, ${markets.length} markets -> api/${API_VERSION}/`);
+    console.log(`[api] ${total} companies + ${aliasCount} alias files, ${markets.length} markets -> api/${API_VERSION}/`);
 }

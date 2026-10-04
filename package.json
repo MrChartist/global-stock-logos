@@ -24,7 +24,9 @@
     "png": "node scripts/render-png.js",
     "quality": "node scripts/quality.js",
     "quality:fix": "node scripts/quality.js --fix",
-    "lighthouse": "node scripts/lighthouse.js"
+    "lighthouse": "node scripts/lighthouse.js",
+    "aliases": "node scripts/apply-aliases.js",
+    "aliases:check": "node scripts/apply-aliases.js --check"
   },
   "keywords": [
     "stock-logos",

@@ -103,6 +103,22 @@ npm run typecheck        # type-check the client
 
 Other steps, one at a time: `bulk`, `refresh`, `enrich`, `registries`, `colors`, `png`, `quality`, `quality:fix`, `validate`.
 
+## Renamed companies and tickers with special characters
+
+Exchanges use tickers that a file name or URL handles badly (`M&M`, `ARE&M`, `GVT&D`), and companies change ticker when they are renamed (`ZOMATO` is now `ETERNAL`, `INFOSYSTCH` is `INFY`, `TATAMOTORS` is `TMPV`). These used to end up with a missing logo, a leftover image with no company details, or the wrong name, while the real logo sat under another file name.
+
+Now every such ticker has its own file that is a copy of the real logo, so the URL you build from the ticker you have always works:
+
+```html
+<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/ZOMATO.svg" />  <!-- Eternal -->
+<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/M&M.svg" />     <!-- Mahindra & Mahindra -->
+```
+
+- The list is [`curated/aliases.json`](./curated/aliases.json): `"IN:ZOMATO": { "logoOf": "ETERNAL" }`. It was built by matching ISIN numbers, so an alias exists only when it is the same legal entity.
+- `npm run aliases` copies the real logo to each alias file. `npm run sync` runs it first, so a placeholder created by a later crawl is repaired automatically. `npm run aliases:check` changes nothing and exits with an error if an alias is out of date.
+- An alias has its own manifest entry and API file with the real company's details (and a `logoOf` field in the manifest). It is **not** counted as another company and is not listed in the search index or the market lists. `api/v1/index.json` reports the number of aliases separately.
+- Known limit: NSE and BSE tickers share one folder per country, so two different companies that use the same ticker on the two exchanges can still collide. Needs verification, one by one.
+
 ## Contributing
 
 Contributions are welcome, especially official logos for companies listed in `quality-report.json`. Read [CONTRIBUTING.md](./CONTRIBUTING.md) and the [Code of Conduct](./CODE_OF_CONDUCT.md) first.
