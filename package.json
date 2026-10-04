@@ -13,14 +13,16 @@
     "bulk": "node scripts/bulk-crawl.js",
     "quality": "node scripts/quality.js",
     "quality:fix": "node scripts/quality.js --fix",
-    "check": "node scripts/quality.js --check",
-    "test": "node scripts/quality.js --check",
+    "check": "node scripts/quality.js --check && node scripts/validate-data.js",
+    "test": "node scripts/quality.js --check && node scripts/validate-data.js",
     "refresh": "node scripts/refresh-metadata.js",
     "enrich": "node scripts/enrich-wikidata.js",
     "colors": "node scripts/brand-color.js",
     "png": "node scripts/render-png.js",
-    "monthly": "npm run bulk && npm run quality:fix && npm run refresh && npm run enrich && npm run registries && npm run colors && npm run png && npm run sync && npm test",
-    "registries": "node scripts/enrich-registries.js"
+    "monthly": "node scripts/run-all.js",
+    "registries": "node scripts/enrich-registries.js",
+    "validate": "node scripts/validate-data.js",
+    "all": "node scripts/run-all.js"
   },
   "keywords": [
     "stock-logos",
@@ -67,7 +69,9 @@
     "DATA-SOURCES.md",
     "enrichment",
     "png",
-    "curated"
+    "curated",
+    "pipeline-status.json",
+    "data-quality-report.json"
   ],
   "devDependencies": {
     "sharp": "^0.35.5"

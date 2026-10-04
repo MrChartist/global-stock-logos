@@ -67,10 +67,15 @@ for (const key of keys) {
         shard[sym] = {
             ...(shard[sym] || {}),
             currency: currency || null, exchange: exchange || null, isin: isin || null,
-            employees: employees || (shard[sym]?.employees ?? null), type: type || null,
+            employees: Number.isInteger(employees) && employees > 0 ? employees : null, // fractional values are not head-counts type: type || null,
             country: country || cfg.country, countryCode: iso2(country || cfg.country), flag: flag(country || cfg.country),
             marketDataAt: now,
         };
+    }
+    // Logos whose company is no longer in the scan (delisted, renamed): mark as checked so they are not retried forever.
+    for (const sym of have) {
+        if (done.has(sym)) { if (shard[sym]) delete shard[sym].notInScan; continue; }
+        shard[sym] = { ...(shard[sym] || {}), marketDataAt: now, notInScan: true };
     }
     saveShard(key, shard);
     console.log(`[${key}] refreshed ${n} of ${have.size} logos`);

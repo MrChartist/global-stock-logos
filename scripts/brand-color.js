@@ -80,6 +80,9 @@ if (process.argv[1] && process.argv[1].endsWith('brand-color.js')) {
             rec.svgHash = hash; rec.brandColor = r?.color || null; rec.brandColorSource = r?.source || null;
             done++;
         }
+        // Entries without an SVG (older PNG-only logos) have no artwork to read a colour from.
+        const svgs = new Set(fs.readdirSync(dir).filter((f) => f.endsWith('.svg')).map((f) => f.slice(0, -4)));
+        for (const [sym, rec] of Object.entries(shard)) if (!svgs.has(sym) && rec.brandColor === undefined) rec.brandColor = null;
         saveShard(key, shard);
         console.log(`[${key}] colours computed for ${done}`);
     }

@@ -1,8 +1,8 @@
 {
   "name": "Global Stock Logos Catalog (World)",
   "version": "3.0.0",
-  "updatedAt": "2026-10-03T21:18:32.837Z",
-  "totalEquities": 75417,
+  "updatedAt": "2026-10-04T01:28:57.271Z",
+  "totalEquities": 75418,
   "stats": {
     "markets": {
       "ARGENTINA": 1454,
@@ -13,7 +13,7 @@
       "BELGIUM": 111,
       "BRAZIL": 1625,
       "CANADA": 2931,
-      "CHILE": 225,
+      "CHILE": 226,
       "CHINA": 5284,
       "COLOMBIA": 132,
       "CYPRUS": 33,
@@ -75,13 +75,13 @@
       "VIETNAM": 1244
     },
     "formats": {
-      "svg": 75310,
+      "svg": 75311,
       "png": 107
     }
   },
   "cdnBase": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos",
   "searchIndex": "search-index.json",
-  "dataRefreshedAt": "2026-10-03",
+  "dataRefreshedAt": "2026-10-04",
   "pngSizes": [
     64,
     128,

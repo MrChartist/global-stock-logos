@@ -67,10 +67,14 @@ async function crawlMarket(key, cfg, meta, limit) {
     // Keep only companies with a logo id, one row per company when a market has many venues.
     const seen = new Map();
     const picked = [];
+    // Multi-venue markets: a company we already have (same logo id) is never added again under another venue's code.
+    const covered = new Set();
+    if (cfg.dedupe) for (const [k, v] of Object.entries(meta)) if (k.startsWith(`${key.toUpperCase()}:`) && v.logoid && fs.existsSync(path.join(dir, `${k.split(':')[1]}.svg`))) covered.add(v.logoid);
     for (const row of rows) {
         const [name, desc, logoid, sector, industry, mcap, exch] = row.d;
         if (!name || !logoid) continue;
         if (cfg.dedupe) {
+            if (covered.has(logoid)) continue;
             const prev = seen.get(logoid);
             if (prev !== undefined) {
                 const better = cfg.primary?.includes(exch) && !cfg.primary.includes(picked[prev].exch);

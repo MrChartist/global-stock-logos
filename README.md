@@ -85,7 +85,13 @@ Besides the logo, each company in `manifests/<market>.json` carries a profile. A
 
 Website, founding year and CEO depend on Wikidata, which covers large and well-known companies far better than small ones. Headquarters also comes from GLEIF and SEC EDGAR, which fill mostly US and European companies. India, Korea, China and Taiwan have the weakest coverage, because their ISINs are not in GLEIF. Gaps stay `null`. You can fill any of them in [`curated/overrides.json`](./curated/).
 
-**Monthly refresh.** A GitHub Action ([`monthly-refresh.yml`](./.github/workflows/monthly-refresh.yml)) runs on the 1st of every month: new listings, market data, profiles older than 30 days, brand colours, PNG sizes, manifests. Run it yourself with `npm run monthly`. Hand-curated values in `curated/overrides.json` are never overwritten.
+**Monthly refresh, with auto finish.** A GitHub Action ([`monthly-refresh.yml`](./.github/workflows/monthly-refresh.yml)) runs on the 1st of every month and calls one pipeline, `node scripts/run-all.js` (also `npm run all`):
+
+1. new listings and logos, 2. logo quality repair, 3. market data, 4. Wikidata profiles, 5. GLEIF and SEC EDGAR gap-filling, 6. brand colours, 7. PNG sizes, 8. manifests, 9. validation.
+
+The slow steps are time-boxed and resumable: a record refreshed within the last 30 days is skipped. If the job runs out of time, it commits its progress and starts itself again (up to 8 times) until `pipeline-status.json` shows `"complete": true`. Locally, run `npm run all` as many times as needed: exit code 0 means complete, 2 means run again, 1 means a check failed.
+
+**Correctness checks.** `npm run validate` (part of `npm test` and CI) checks every ISIN (format and check digit), colour, currency, country code, flag, website, founding year, employee count, market cap, and that every manifest entry points to a real logo and PNG. Invalid values are blanked, never guessed. The result is in `data-quality-report.json`. Hand-curated values in `curated/overrides.json` are never overwritten.
 
 ## Logo quality
 
@@ -257,7 +263,8 @@ npm run refresh              # market data (market cap, sector, currency, ISIN)
 npm run enrich               # company profiles from Wikidata
 npm run registries           # fill gaps from GLEIF and SEC EDGAR
 npm run colors && npm run png  # brand colours and PNG sizes
-npm run monthly              # everything above, in order
+npm run all                  # the whole pipeline; run again until it reports complete
+npm run validate             # data correctness checks
 npm run quality              # audit; use quality:fix to repair
 npm test                     # offline check used by CI (invalid XML, active content, unique ids)
 npm run sync                 # rebuild manifests and search index

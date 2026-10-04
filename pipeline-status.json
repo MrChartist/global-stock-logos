@@ -1,0 +1,77 @@
+{
+  "finishedAt": "2026-10-04T01:29:01.983Z",
+  "complete": true,
+  "failed": false,
+  "note": "",
+  "minutesUsed": 1,
+  "remaining": {
+    "marketData": 0,
+    "wikidataProfile": 0,
+    "registryGleif": 0,
+    "brandColour": 0,
+    "total": 75418
+  },
+  "steps": [
+    {
+      "name": "New listings and logos",
+      "ok": true,
+      "seconds": 38
+    },
+    {
+      "name": "Logo quality repair",
+      "ok": true,
+      "seconds": 3
+    },
+    {
+      "name": "Market data",
+      "ok": true,
+      "seconds": 26
+    },
+    {
+      "name": "Wikidata profiles",
+      "ok": true,
+      "seconds": 4
+    },
+    {
+      "name": "GLEIF / SEC registries",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "Brand colours",
+      "ok": true,
+      "seconds": 2
+    },
+    {
+      "name": "PNG sizes",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "Manifests",
+      "ok": true,
+      "seconds": 3
+    },
+    {
+      "name": "Fix invalid values",
+      "ok": true,
+      "seconds": 1
+    },
+    {
+      "name": "Manifests (after fixes)",
+      "ok": true,
+      "seconds": 2
+    },
+    {
+      "name": "Logo check",
+      "ok": true,
+      "seconds": 3
+    },
+    {
+      "name": "Data validation",
+      "ok": true,
+      "seconds": 1
+    }
+  ],
+  "next": "Nothing to do until the next monthly run."
+}

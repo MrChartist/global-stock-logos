@@ -16,5 +16,5 @@ jobs:
           node-version: 22
       - name: Install xmllint
         run: sudo apt-get update && sudo apt-get install -y libxml2-utils
-      - name: Audit logos (invalid XML, placeholders, empty logos)
-        run: node scripts/quality.js --check
+      - name: Logo and data checks (invalid XML, active content, unique ids, ISIN, colours, URLs, manifests)
+        run: npm test
