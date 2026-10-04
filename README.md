@@ -59,7 +59,7 @@ Besides the logo, each company in `manifests/<market>.json` carries a profile. A
 
 | Field | Source | Notes |
 | :--- | :--- | :--- |
-| `company`, `sector`, `industry`, `marketCap`, `exchange`, `currency`, `isin`, `employees` | TradingView scanner | Refreshed every month |
+| `company`, `sector`, `industry`, `marketCap`, `exchange`, `currency`, `isin`, `employees` | TradingView scanner | Refreshed every month. `marketCap` is in `capCurrency` (the company's reporting currency); `marketCapUsd` converts it at the daily rate in `fx-rates.json` and is approximate |
 | `country`, `countryCode`, `flag` | TradingView scanner | Country of the company, not of the listing (an ADR in the US can show Taiwan) |
 | `website`, `founded`, `headquarters`, `ceo`, `aliases`, `wikidata` | Wikidata | Matched by ISIN first; otherwise by ticker and a close name match. Community-maintained, so verify before relying on it |
 | `headquarters`, `website` (gaps only) | GLEIF, SEC EDGAR | Fills only empty values. GLEIF uses the ISIN, or an exact legal-name match within the same country; SEC EDGAR covers US filers |
@@ -77,14 +77,14 @@ Besides the logo, each company in `manifests/<market>.json` carries a profile. A
 | currency, country, flag, ISIN, brand colour | 99.5% or more |
 | sector, industry | 99.2% |
 | market cap | 96.6% |
-| employees | 71.5% |
+| employees | 70.7% |
 | website | 42.7% |
 | founding year | 39.5% |
 | headquarters, address or local-script address (any) | 51.0% |
 | chairman | 16.9% |
-| CEO | 12.6% |
+| CEO | 12.7% |
 | listing date | 16.9% |
-| aliases | 18.1% |
+| aliases | 18.2% |
 | PNG sizes | 3,000 largest companies |
 
 Coverage differs a lot by market. Hong Kong (98% website), China (90%), the UK (56% website, 88% location) and the US (53% website, 66% location) are well covered. India (4% website, 21% location), Korea (8%) and Brazil's addresses (5%) are the weakest; the reasons and the options are in [docs/DATA-COVERAGE.md](./docs/DATA-COVERAGE.md). Every value records its source in `sources`, and a second source that disagrees is recorded in `checks`. CEO and chairman can be out of date: Needs verification. Gaps stay `null`. You can fill any of them in [`curated/overrides.json`](./curated/).
@@ -238,23 +238,37 @@ def get_stock_logo_url(symbol: str, market: str = "us", repo: str = "MrChartist/
 ## Repository layout
 
 ```
-logos/<market>/<TICKER>.svg    Logo files, one folder per market
-manifests/<market>.json        Company details per market
-logos-manifest.json            Summary and index of market files
-search-index.json              Compact search index
-logo-sources.json              Sources for Wikidata/Commons logos
-quality-report.json            Placeholders, small PNGs, invalid files
-companies-metadata.json        Raw company metadata used to build manifests
-index.html                     Browsable catalogue
+logos/<market>/<TICKER>.svg     Logo files, one folder per market
+png/<size>/<market>/            PNG sizes (64, 128, 256, 512) for the 3,000 largest companies
+manifests/<market>.json         Company profile per market (what you read in your app)
+logos-manifest.json             Summary, market names and index of market files
+search-index.json               Compact search index, largest companies first
+enrichment/<market>.json        Raw profile data with sources and retrieval dates
+companies-metadata.json         Company metadata used to build the manifests
+fx-rates.json                   Exchange rates used for market cap in USD
+curated/overrides.json          Hand-checked facts that always win (slogans, corrections)
+logo-sources.json               Sources for logos not taken from TradingView
+quality-report.json             Placeholders, small PNGs, invalid files
+data-quality-report.json        Result of the data checks
+pipeline-status.json            State of the last pipeline run
+docs/DATA-COVERAGE.md           What each field can reach, what was tested, what is blocked
+index.html                      Browsable catalogue
 scripts/
-  markets.js                   Market list (single source of truth)
-  bulk-crawl.js                Download logos for every market
-  wikidata-logos.js            Fill gaps from Wikidata / Wikimedia Commons
-  quality.js, svg-quality.js   Audit and repair rules
-  sync.js                      Rebuild manifests and search index
-  audit.js                     Legacy integrity check
-src/                           React component and helpers
-.github/workflows/daily-sync.yml
+  run-all.js                    The whole pipeline in order (auto finish)
+  markets.js                    Market list (single source of truth)
+  bulk-crawl.js                 New listings and logos
+  quality.js, svg-quality.js    Logo audit and repair
+  refresh-metadata.js           Market data from TradingView
+  enrich-wikidata.js            Profiles from Wikidata (ISIN first)
+  enrich-registries.js          GLEIF and SEC EDGAR gap-filling
+  enrich-exchanges.js           Exchange and registry sources (US, HK, China, Taiwan, India, Australia, Brazil, Canada, Japan)
+  enrich-by-name.js             Strict name matching, largest companies first
+  wikidata-logos.js             Logos for companies TradingView lacks
+  brand-color.js, render-png.js Brand colours and PNG sizes
+  validate-data.js              Data checks
+  sync.js                       Rebuild manifests and search index
+src/                            React component and helpers
+.github/workflows/              ci.yml, daily-sync.yml, monthly-refresh.yml
 ```
 
 ## Commands

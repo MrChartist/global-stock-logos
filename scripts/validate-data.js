@@ -45,6 +45,8 @@ const rules = {
     addressLocal: (v) => typeof v === 'string' && v.length > 1 && v.length < 300,
     headquartersLocal: (v) => typeof v === 'string' && v.length > 1 && v.length < 300,
     listingDate: (v) => /^\d{4}-\d{2}-\d{2}$/.test(v) && v >= '1600-01-01' && v <= new Date().toISOString().slice(0, 10),
+    marketCapUsd: (v) => Number.isFinite(v) && v > 0,
+    capCurrency: (v) => /^[A-Z]{3}$/.test(v),
     cik: (v) => /^\d{10}$/.test(v),
     ceo: (v) => typeof v === 'string' && v.length > 1 && v.length < 120 && !/^Q\d+$/.test(v),
     wikidata: (v) => /^Q\d+$/.test(v),

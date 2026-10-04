@@ -132,6 +132,7 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
     const curatedFile = path.join(REPO_ROOT, 'curated', 'overrides.json');
     const curated = fs.existsSync(curatedFile) ? JSON.parse(fs.readFileSync(curatedFile, 'utf-8')) : {};
     const enrichment = {};
+    const foreignListing = new Set();
     for (const [k, item] of Object.entries(logos)) {
         if (!k.includes(':')) continue; // namespaced MARKET:SYM keys only
         const mk = item.market.toLowerCase();
@@ -141,7 +142,7 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
         const pngBase = e.pngSizes ? Object.fromEntries(e.pngSizes.map((n) => [n, `png/${n}/${mk}/${item.symbol}.png`])) : null;
         (shards[mk] ||= {})[item.symbol] = {
             company: item.company, format: item.format, sector: item.sector, industry: item.industry,
-            marketCap: item.marketCap, logoid: item.logoid, yahooTicker: item.yahooTicker,
+            marketCap: item.marketCap, capCurrency: pick('capCurrency'), marketCapUsd: pick('marketCapUsd'), logoid: item.logoid, yahooTicker: item.yahooTicker,
             yahooUrl: item.yahooUrl, path: item.path, isProcedural: item.isProcedural,
             // Profile (all values may be null: unknown means Needs verification, never guessed)
             exchange: pick('exchange'), currency: pick('currency'), isin: pick('isin'),
@@ -156,7 +157,13 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
             freshness: { marketData: e.marketDataAt || null, profile: e.wikidataAt || null },
         };
         searchIndex.push([item.symbol, item.company, item.market, item.format, item.yahooTicker]);
+        // A depositary receipt of a foreign company (company country differs from the market's country) ranks below home listings.
+        if (e.country && e.country !== item.country) foreignListing.add(`${item.market}:${item.symbol}`);
     }
+    // Biggest companies first, so catalogues and search boxes show the most useful entries by default.
+    const capOf = (sym, market) => shards[market.toLowerCase()]?.[sym]?.marketCapUsd || 0;
+    const rank = (r) => (foreignListing.has(`${r[2]}:${r[0]}`) ? 0 : 1);
+    searchIndex.sort((a, b) => rank(b) - rank(a) || capOf(b[0], b[2]) - capOf(a[0], a[2]));
     const marketFiles = {};
     for (const [mk, items] of Object.entries(shards)) {
         fs.writeFileSync(path.join(MANIFESTS_DIR, `${mk}.json`), JSON.stringify(items));
@@ -172,6 +179,7 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
         stats: { markets: marketCounts, formats: { svg: svgs, png: pngs } },
         cdnBase,
         searchIndex: 'search-index.json',
+        marketNames: Object.fromEntries(Object.entries(MARKETS).map(([k, m]) => [k.toUpperCase(), m.country])),
         dataRefreshedAt: new Date().toISOString().slice(0, 10),
         pngSizes: [64, 128, 256, 512],
         marketManifests: marketFiles,

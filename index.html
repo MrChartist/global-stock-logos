@@ -39,9 +39,9 @@
         <div>
           <h1 class="text-xl font-bold tracking-tight flex items-center gap-2">
             Global Stock Logos
-            <span class="text-xs px-2 py-0.5 rounded-full bg-brand/20 text-brand border border-brand/30 font-mono">v2.1</span>
+            <span id="versionBadge" class="text-xs px-2 py-0.5 rounded-full bg-brand/20 text-brand border border-brand/30 font-mono">v3</span>
           </h1>
-          <p class="text-xs text-gray-400">Open-Source Stock Logo Catalog for India, US & World Stock Markets</p>
+          <p class="text-xs text-gray-400">Open-source company logos for listed stocks in 68 markets</p>
         </div>
       </div>
 
@@ -60,15 +60,6 @@
           class="bg-darkBg border border-borderColor rounded-xl px-3 py-2 text-sm text-gray-300 focus:outline-none focus:border-brand"
         >
           <option value="ALL">All Markets</option>
-          <option value="IN">🇮🇳 India</option>
-          <option value="US">🇺🇸 United States</option>
-          <option value="UK">🇬🇧 United Kingdom</option>
-          <option value="GERMANY">🇩🇪 Germany</option>
-          <option value="FRANCE">🇫🇷 France</option>
-          <option value="JAPAN">🇯🇵 Japan</option>
-          <option value="CANADA">🇨🇦 Canada</option>
-          <option value="AUSTRALIA">🇦🇺 Australia</option>
-          <option value="HONGKONG">🇭🇰 Hong Kong</option>
         </select>
       </div>
     </div>
@@ -80,7 +71,7 @@
       <div class="bg-cardBg border border-borderColor rounded-2xl p-4">
         <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Total Equities</div>
         <div id="statTotal" class="text-2xl font-black text-white mt-1">2,200+</div>
-        <div class="text-[11px] text-emerald-400 mt-1">✓ 100% Zero broken images</div>
+        <div class="text-[11px] text-emerald-400 mt-1">✓ Real logos only</div>
       </div>
       <div class="bg-cardBg border border-borderColor rounded-2xl p-4">
         <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Active Markets</div>
@@ -171,6 +162,15 @@
           document.getElementById('statFormats').innerText = `${(data.stats.formats.svg || 0).toLocaleString()} SVGs`;
         }
 
+        document.getElementById('versionBadge').innerText = 'v' + (data.version || '3');
+        const sel = document.getElementById('marketFilter');
+        const counts = (data.stats && data.stats.markets) || {};
+        Object.keys(counts).sort((a, b) => counts[b] - counts[a]).forEach((m) => {
+          const o = document.createElement('option');
+          o.value = m;
+          o.textContent = `${(data.marketNames && data.marketNames[m]) || m} (${counts[m].toLocaleString()})`;
+          sel.appendChild(o);
+        });
         const idx = await (await fetch(data.searchIndex || 'search-index.json')).json();
         catalog = idx.map(([symbol, company, market, format, yahooTicker]) => ({
           symbol, company, market, format,

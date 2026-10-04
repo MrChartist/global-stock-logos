@@ -32,13 +32,14 @@ if (args[0] && !args[0].startsWith('--')) {
 }
 
 const top = parseInt(args.includes('--top') ? args[args.indexOf('--top') + 1] : '3000', 10);
-const meta = JSON.parse(fs.readFileSync(path.join(ROOT, 'companies-metadata.json'), 'utf-8'));
-const ranked = Object.entries(meta)
-    .filter(([, v]) => v.marketCap > 0)
-    .sort((a, b) => b[1].marketCap - a[1].marketCap)
-    .map(([k]) => k.split(':'))
-    .filter(([m, s]) => fs.existsSync(path.join(ROOT, 'logos', m.toLowerCase(), `${s}.svg`)))
-    .slice(0, top);
+// Rank by market cap in USD (market caps are reported in each company's own currency).
+const ranked = [];
+for (const m of fs.readdirSync(path.join(ROOT, 'enrichment')).map((f) => f.replace('.json', ''))) {
+    for (const [sym, rec] of Object.entries(loadShard(m)))
+        if (rec.marketCapUsd > 0 && fs.existsSync(path.join(ROOT, 'logos', m, `${sym}.svg`))) ranked.push([m.toUpperCase(), sym, rec.marketCapUsd]);
+}
+ranked.sort((a, b) => b[2] - a[2]);
+ranked.length = Math.min(ranked.length, top);
 
 // Remove PNGs of companies that dropped out of the top list, so the folder stays bounded.
 const keep = new Set(ranked.map(([m, s]) => `${m.toLowerCase()}/${s}`));
