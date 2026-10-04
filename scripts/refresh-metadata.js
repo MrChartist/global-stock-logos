@@ -80,6 +80,7 @@ for (const key of keys) {
             country: country || cfg.country, countryCode: iso2(country || cfg.country), flag: flag(country || cfg.country),
             capCurrency: capCurrency || null,
             marketCapUsd: mcap && fx.rates[capCurrency] ? Math.round(mcap / fx.rates[capCurrency]) : null,
+            marketCapInr: mcap && fx.rates[capCurrency] && fx.rates.INR ? Math.round((mcap / fx.rates[capCurrency]) * fx.rates.INR) : null,
             marketDataAt: now,
         };
     }

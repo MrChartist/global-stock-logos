@@ -142,7 +142,7 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
         const pngBase = e.pngSizes ? Object.fromEntries(e.pngSizes.map((n) => [n, `png/${n}/${mk}/${item.symbol}.png`])) : null;
         (shards[mk] ||= {})[item.symbol] = {
             company: item.company, format: item.format, sector: item.sector, industry: item.industry,
-            marketCap: item.marketCap, capCurrency: pick('capCurrency'), marketCapUsd: pick('marketCapUsd'), logoid: item.logoid, yahooTicker: item.yahooTicker,
+            marketCap: item.marketCap, capCurrency: pick('capCurrency'), marketCapUsd: pick('marketCapUsd'), marketCapInr: pick('marketCapInr'), logoid: item.logoid, yahooTicker: item.yahooTicker,
             yahooUrl: item.yahooUrl, path: item.path, isProcedural: item.isProcedural,
             // Profile (all values may be null: unknown means Needs verification, never guessed)
             exchange: pick('exchange'), currency: pick('currency'), isin: pick('isin'),
