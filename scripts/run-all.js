@@ -5,7 +5,7 @@
  *   node scripts/run-all.js [--max-minutes 300] [--max-age-days 30]
  *
  * Steps (in order): new logos -> logo quality -> market data -> Wikidata profiles -> registries (GLEIF, SEC)
- *                   -> brand colours -> PNG sizes -> manifests -> validation.
+ *                   -> name-based matching (GLEIF + Wikidata, largest companies first) -> brand colours -> PNG sizes -> manifests -> validation.
  * The slow enrichment steps are time-boxed and resumable: records already refreshed within --max-age-days are skipped,
  * so running again continues from where the last run stopped.
  * Writes pipeline-status.json. `complete: true` means nothing is left to refresh and all checks pass.
@@ -15,6 +15,7 @@ import fs from 'fs';
 import path from 'path';
 import { spawnSync } from 'child_process';
 import { ROOT, loadShard } from './enrich-store.js';
+const META = JSON.parse(fs.readFileSync(path.join(ROOT, 'companies-metadata.json'), 'utf-8'));
 import { MARKETS } from './markets.js';
 
 const args = process.argv.slice(2);
@@ -39,15 +40,18 @@ function run(name, script, extra = [], { fatal = true } = {}) {
 
 /** How many records still need a refresh (0 for everything = complete). */
 function remaining() {
-    const out = { marketData: 0, wikidataProfile: 0, registryGleif: 0, brandColour: 0, total: 0 };
+    const out = { marketData: 0, wikidataProfile: 0, registryGleif: 0, exchangeSources: 0, nameMatch: 0, brandColour: 0, total: 0 };
     for (const key of Object.keys(MARKETS)) {
         const shard = loadShard(key);
-        for (const v of Object.values(shard)) {
+        for (const [sym, v] of Object.entries(shard)) {
             out.total++;
             if (stale(v.marketDataAt)) out.marketData++;
             if (stale(v.wikidataAt)) out.wikidataProfile++;
             if (v.isin && stale(v.gleifAt)) out.registryGleif++;
             if (v.brandColor === undefined) out.brandColour++;
+            if (['us', 'hongkong', 'china', 'taiwan', 'in', 'australia', 'brazil', 'canada', 'japan'].includes(key) && stale(v.exchangeAt)) out.exchangeSources++;
+            // Name pass applies to companies with a market cap and a country that are still missing a profile or headquarters.
+            if (META[`${key.toUpperCase()}:${sym}`]?.marketCap && v.countryCode && !(v.wikidata && v.headquarters) && stale(v.nameAt)) out.nameMatch++;
         }
     }
     return out;
@@ -55,7 +59,7 @@ function remaining() {
 
 function finish(failed, note = '') {
     const left = remaining();
-    const pending = left.marketData + left.wikidataProfile + left.registryGleif + left.brandColour;
+    const pending = left.marketData + left.wikidataProfile + left.registryGleif + left.exchangeSources + left.nameMatch + left.brandColour;
     const complete = !failed && pending === 0;
     const status = {
         finishedAt: new Date().toISOString(), complete, failed, note, minutesUsed: Math.round((Date.now() - t0) / 60000),
@@ -70,8 +74,10 @@ function finish(failed, note = '') {
 run('New listings and logos', 'scripts/bulk-crawl.js', [], { fatal: false });
 run('Logo quality repair', 'scripts/quality.js', ['--fix']);
 run('Market data', 'scripts/refresh-metadata.js', [], { fatal: false });
-run('Wikidata profiles', 'scripts/enrich-wikidata.js', ['--max-age-days', String(maxAge), '--max-minutes', String(Math.max(1, Math.floor(minutesLeft() * 0.6)))], { fatal: false });
-run('GLEIF / SEC registries', 'scripts/enrich-registries.js', ['--max-age-days', String(maxAge), '--max-minutes', String(Math.max(1, minutesLeft() - 15))], { fatal: false });
+run('Wikidata profiles', 'scripts/enrich-wikidata.js', ['--max-age-days', String(maxAge), '--max-minutes', String(Math.max(1, Math.floor(minutesLeft() * 0.3)))], { fatal: false });
+run('GLEIF / SEC registries', 'scripts/enrich-registries.js', ['--max-age-days', String(maxAge), '--max-minutes', String(Math.max(1, Math.floor(minutesLeft() * 0.2)))], { fatal: false });
+run('Exchange and registry sources', 'scripts/enrich-exchanges.js', ['--max-age-days', String(maxAge), '--max-minutes', String(Math.max(1, Math.floor(minutesLeft() * 0.25)))], { fatal: false });
+run('Name-based matching', 'scripts/enrich-by-name.js', ['--max-age-days', String(maxAge), '--max-minutes', String(Math.max(1, minutesLeft() - 15))], { fatal: false });
 run('Brand colours', 'scripts/brand-color.js');
 run('PNG sizes', 'scripts/render-png.js', ['--top', '3000']);
 run('Manifests', 'scripts/sync.js');
