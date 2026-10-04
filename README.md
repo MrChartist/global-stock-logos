@@ -65,6 +65,8 @@ Besides the logo, each company in `manifests/<market>.json` carries a profile. A
 | `headquarters`, `website` (gaps only) | GLEIF, SEC EDGAR | Fills only empty values. GLEIF uses the ISIN, or an exact legal-name match within the same country; SEC EDGAR covers US filers |
 | `brandColor`, `brandColorSource` | Computed from the logo | An approximation taken from the logo file, not an official brand colour. `neutral-tile` means a black, white or grey logo: low confidence |
 | `pngPaths` | Generated | PNG sizes 64, 128, 256 and 512 px for the 3,000 largest companies. Any other company can be rendered on demand: `node scripts/render-png.js <market> <ticker> <size>` |
+| `chairman`, `address`, `addressLocal`, `headquartersLocal`, `listingDate` | Exchanges and registries (Eastmoney, TPEx, NSE, ASX, B3, GLEIF) | `Local` fields are in the local script. `listingDate` is the first listing on an exchange, not the founding date |
+| `sources`, `checks` | Generated | `sources` names where each value came from. `checks` records a second source that disagreed with the value |
 | `slogan` | Hand-curated only | Not available from open data. Add yours in [`curated/overrides.json`](./curated/) with a source |
 | `freshness` | Generated | Dates when market data and the profile were last refreshed |
 
@@ -75,15 +77,17 @@ Besides the logo, each company in `manifests/<market>.json` carries a profile. A
 | currency, country, flag, ISIN, brand colour | 99.5% or more |
 | sector, industry | 99.2% |
 | market cap | 96.6% |
-| employees | 70.7% |
-| headquarters | 38.5% |
-| website | 25.6% |
-| founding year | 24.2% |
-| aliases | 18.0% |
-| CEO | 5.2% |
+| employees | 71.5% |
+| website | 42.7% |
+| founding year | 39.5% |
+| headquarters, address or local-script address (any) | 51.0% |
+| chairman | 16.9% |
+| CEO | 12.6% |
+| listing date | 16.9% |
+| aliases | 18.1% |
 | PNG sizes | 3,000 largest companies |
 
-What is and is not possible for each field, and what we tested, is in [docs/DATA-COVERAGE.md](./docs/DATA-COVERAGE.md). Website, founding year and CEO depend on Wikidata, which covers large and well-known companies far better than small ones. Headquarters also comes from GLEIF and SEC EDGAR, which fill mostly US and European companies. India, Korea, China and Taiwan have the weakest coverage, because their ISINs are not in GLEIF. Gaps stay `null`. You can fill any of them in [`curated/overrides.json`](./curated/).
+Coverage differs a lot by market. Hong Kong (98% website), China (90%), the UK (56% website, 88% location) and the US (53% website, 66% location) are well covered. India (4% website, 21% location), Korea (8%) and Brazil's addresses (5%) are the weakest; the reasons and the options are in [docs/DATA-COVERAGE.md](./docs/DATA-COVERAGE.md). Every value records its source in `sources`, and a second source that disagrees is recorded in `checks`. CEO and chairman can be out of date: Needs verification. Gaps stay `null`. You can fill any of them in [`curated/overrides.json`](./curated/).
 
 **Monthly refresh, with auto finish.** A GitHub Action ([`monthly-refresh.yml`](./.github/workflows/monthly-refresh.yml)) runs on the 1st of every month and calls one pipeline, `node scripts/run-all.js` (also `npm run all`):
 

@@ -40,11 +40,19 @@ const rules = {
     founded: (v) => Number.isInteger(v) && v >= 1000 && v <= YEAR,
     employees: (v) => Number.isInteger(v) && v > 0 && v < 5e6,
     headquarters: (v) => typeof v === 'string' && v.length > 1 && v.length < 140 && !/undefined|null/i.test(v),
+    chairman: (v) => typeof v === 'string' && v.length > 1 && v.length < 140,
+    address: (v) => typeof v === 'string' && v.length > 3 && v.length < 300,
+    addressLocal: (v) => typeof v === 'string' && v.length > 1 && v.length < 300,
+    headquartersLocal: (v) => typeof v === 'string' && v.length > 1 && v.length < 300,
+    listingDate: (v) => /^\d{4}-\d{2}-\d{2}$/.test(v) && v >= '1600-01-01' && v <= new Date().toISOString().slice(0, 10),
+    cik: (v) => /^\d{10}$/.test(v),
     ceo: (v) => typeof v === 'string' && v.length > 1 && v.length < 120 && !/^Q\d+$/.test(v),
     wikidata: (v) => /^Q\d+$/.test(v),
     lei: (v) => /^[A-Z0-9]{18}[0-9]{2}$/.test(v),
 };
 
+/** Websites are kept at the site root (scheme + host). Paths like /br/ or /schinese are regional pages. */
+const siteRoot = (u) => { try { const x = new URL(u); return `${x.protocol}//${x.hostname.toLowerCase()}`; } catch { return u; } };
 const errors = {}, warnings = { staleMarketData: 0 };
 const sample = [];
 const bump = (o, k) => { o[k] = (o[k] || 0) + 1; };
@@ -56,6 +64,10 @@ for (const f of fs.readdirSync(path.join(ROOT, 'enrichment'))) {
     let changed = false;
     for (const [sym, rec] of Object.entries(shard)) {
         records++;
+        if (rec.website && urlOk(rec.website) && siteRoot(rec.website) !== rec.website) {
+            bump(warnings, 'websiteHadPath');
+            if (FIX) { rec.website = siteRoot(rec.website); changed = true; fixed++; }
+        }
         for (const [field, ok] of Object.entries(rules)) {
             if (rec[field] == null) continue;
             if (!ok(rec[field])) {

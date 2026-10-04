@@ -40,7 +40,7 @@ function run(name, script, extra = [], { fatal = true } = {}) {
 
 /** How many records still need a refresh (0 for everything = complete). */
 function remaining() {
-    const out = { marketData: 0, wikidataProfile: 0, registryGleif: 0, nameMatch: 0, brandColour: 0, total: 0 };
+    const out = { marketData: 0, wikidataProfile: 0, registryGleif: 0, exchangeSources: 0, nameMatch: 0, brandColour: 0, total: 0 };
     for (const key of Object.keys(MARKETS)) {
         const shard = loadShard(key);
         for (const [sym, v] of Object.entries(shard)) {
@@ -49,6 +49,7 @@ function remaining() {
             if (stale(v.wikidataAt)) out.wikidataProfile++;
             if (v.isin && stale(v.gleifAt)) out.registryGleif++;
             if (v.brandColor === undefined) out.brandColour++;
+            if (['us', 'hongkong', 'china', 'taiwan', 'in', 'australia', 'brazil', 'canada', 'japan'].includes(key) && stale(v.exchangeAt)) out.exchangeSources++;
             // Name pass applies to companies with a market cap and a country that are still missing a profile or headquarters.
             if (META[`${key.toUpperCase()}:${sym}`]?.marketCap && v.countryCode && !(v.wikidata && v.headquarters) && stale(v.nameAt)) out.nameMatch++;
         }
@@ -58,7 +59,7 @@ function remaining() {
 
 function finish(failed, note = '') {
     const left = remaining();
-    const pending = left.marketData + left.wikidataProfile + left.registryGleif + left.nameMatch + left.brandColour;
+    const pending = left.marketData + left.wikidataProfile + left.registryGleif + left.exchangeSources + left.nameMatch + left.brandColour;
     const complete = !failed && pending === 0;
     const status = {
         finishedAt: new Date().toISOString(), complete, failed, note, minutesUsed: Math.round((Date.now() - t0) / 60000),
@@ -74,7 +75,8 @@ run('New listings and logos', 'scripts/bulk-crawl.js', [], { fatal: false });
 run('Logo quality repair', 'scripts/quality.js', ['--fix']);
 run('Market data', 'scripts/refresh-metadata.js', [], { fatal: false });
 run('Wikidata profiles', 'scripts/enrich-wikidata.js', ['--max-age-days', String(maxAge), '--max-minutes', String(Math.max(1, Math.floor(minutesLeft() * 0.3)))], { fatal: false });
-run('GLEIF / SEC registries', 'scripts/enrich-registries.js', ['--max-age-days', String(maxAge), '--max-minutes', String(Math.max(1, Math.floor(minutesLeft() * 0.25)))], { fatal: false });
+run('GLEIF / SEC registries', 'scripts/enrich-registries.js', ['--max-age-days', String(maxAge), '--max-minutes', String(Math.max(1, Math.floor(minutesLeft() * 0.2)))], { fatal: false });
+run('Exchange and registry sources', 'scripts/enrich-exchanges.js', ['--max-age-days', String(maxAge), '--max-minutes', String(Math.max(1, Math.floor(minutesLeft() * 0.25)))], { fatal: false });
 run('Name-based matching', 'scripts/enrich-by-name.js', ['--max-age-days', String(maxAge), '--max-minutes', String(Math.max(1, minutesLeft() - 15))], { fatal: false });
 run('Brand colours', 'scripts/brand-color.js');
 run('PNG sizes', 'scripts/render-png.js', ['--top', '3000']);
