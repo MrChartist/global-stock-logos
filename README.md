@@ -61,6 +61,7 @@ const hits = await api.search('samsung', { limit: 5 });
 | [docs/DATA-COVERAGE.md](./docs/DATA-COVERAGE.md) | What each field can reach, what we tested, what is blocked |
 | [docs/DESIGN.md](./docs/DESIGN.md) | The design system of the catalogue page: colour, type, motion, behaviour, quality bar |
 | [docs/ADAPTERS.md](./docs/ADAPTERS.md) | How to add a verified data source for a market |
+| [TODO.md](./TODO.md) | Open work: owner settings, data coverage, data quality, product, and how to work from a server |
 | [DATA-SOURCES.md](./DATA-SOURCES.md) | Sources, terms and how to ask for a logo to be removed |
 
 ## Repository layout
