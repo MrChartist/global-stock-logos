@@ -2,293 +2,102 @@
 
 <div align="center">
 
-**Free, open-source company logos for 75,000+ listed stocks across 68 markets.**
+**Free, open-source company logos and profiles for 75,000+ listed stocks in 68 markets, with a static JSON API.**
 
 A project by **[@MrChartist](https://mrchartist.com)** · [mrchartist.com](https://mrchartist.com)
 
-![Logos](https://img.shields.io/badge/logos-75%2C000%2B-blue.svg?style=for-the-badge)
-![Markets](https://img.shields.io/badge/markets-68-blueviolet.svg?style=for-the-badge)
-![Format](https://img.shields.io/badge/format-SVG-orange.svg?style=for-the-badge)
-![License](https://img.shields.io/badge/code-MIT-green.svg?style=for-the-badge)
+![Companies](https://img.shields.io/badge/companies-75%2C000%2B-2563eb?style=for-the-badge)
+![Markets](https://img.shields.io/badge/markets-68-7c3aed?style=for-the-badge)
+![API](https://img.shields.io/badge/API-static%20JSON-0ea5e9?style=for-the-badge)
+![Licence](https://img.shields.io/badge/code-MIT-16a34a?style=for-the-badge)
 
-[Browse catalogue](./index.html) • [Use via CDN](#use-via-cdn) • [Quality](#logo-quality) • [Contribute](#contributing) • [Licence and trademarks](#licence-and-trademarks)
+[Catalogue](./index.html) · [API](./docs/API.md) · [Integrations](./docs/INTEGRATIONS.md) · [Data](./docs/DATA.md) · [Contribute](./CONTRIBUTING.md)
 
 </div>
 
 ---
 
-## About
+## What you get
 
-Global Stock Logos is an open-source logo library for traders, analysts, educators and fintech developers. Every logo is a vector SVG named by stock ticker and served free through the jsDelivr CDN, so you can show a company logo next to a quote, chart or watchlist with one `<img>` tag.
+- **Logos.** A vector SVG for every company (PNG sizes 64 to 512 px for the 3,000 largest), served free by the jsDelivr CDN.
+- **A company profile.** Name, ISIN, sector, exchange, market cap in local currency, **USD and INR**, website, founding year, headquarters, employees, CEO and chairman, listing date, and a brand colour. Unknown values are `null`; we do not guess.
+- **A static JSON API.** One small file per company, with an [OpenAPI spec](./api/v1/openapi.json), a [JSON Schema](./api/v1/schema/company.schema.json) and a [typed JavaScript client](./src/client.js). No key, no server.
+- **A catalogue page.** Search, filter by market, open any company and copy ready-made embed code: [`index.html`](./index.html).
+- **Monthly refresh.** A resumable pipeline keeps data current, checks every value, and records where each one came from.
 
-Coverage is strongest for India (NSE/BSE) and the US (NASDAQ/NYSE), and includes the UK, Germany, Japan, China, Korea, Canada, Australia, Brazil and many more. Companies that have no published logo are not included; the list is in [`quality-report.json`](./quality-report.json).
+## Quick start
 
-## Use via CDN
-
-Every logo lives at `logos/<market>/<TICKER>.svg`. Market folder names are lowercase (`us`, `in`, `uk`, `japan`, `china`, `korea`, `brazil`, ...). The full list is in [`logos-manifest.json`](./logos-manifest.json).
+**A logo** (the path is `logos/<market>/<TICKER>.svg`):
 
 ```html
-<!-- Apple (US) -->
-<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/AAPL.svg" width="32" height="32" alt="Apple" />
-
-<!-- Reliance Industries (India, NSE) -->
-<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/RELIANCE.svg" width="32" height="32" alt="Reliance" />
-
-<!-- Samsung Electronics (South Korea) -->
-<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/korea/005930.svg" width="32" height="32" alt="Samsung" />
+<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/TCS.svg" width="32" height="32" alt="TCS logo">
 ```
 
-Always use the market folder. Flat URLs such as `logos/AAPL.svg` exist only for about 2,800 older symbols and may be removed.
+**A company** (market and ticker as in the path above):
 
-### Catalogue data
+```bash
+curl -s https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/api/v1/companies/in/TCS.json
+```
 
-| File | Contents |
+**With the client:**
+
+```js
+import { StockLogosClient } from 'https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/src/client.js';
+
+const api = new StockLogosClient();
+const tcs = await api.company('in', 'TCS');
+console.log(tcs.marketCap.usd, tcs.marketCap.inr, tcs.logo.svg);
+
+const hits = await api.search('samsung', { limit: 5 });
+```
+
+## Documentation
+
+| Page | What is in it |
 | :--- | :--- |
-| [`logos-manifest.json`](./logos-manifest.json) | Totals, per-market counts and the location of each market file |
-| [`manifests/<market>.json`](./manifests/) | Company name, sector, industry, Yahoo Finance link and file path for each ticker |
-| [`search-index.json`](./search-index.json) | Compact list of every logo, for search boxes |
-| [`logo-sources.json`](./logo-sources.json) | Source and match record for logos not taken from TradingView |
-| [`png/<size>/<market>/`](./png/) | PNG versions (64, 128, 256, 512 px) for the 3,000 largest companies |
-| [`enrichment/<market>.json`](./enrichment/) | Raw profile data with retrieval dates |
-
-Each Yahoo Finance link is built from the ticker and the market suffix in `scripts/markets.js`. Suffixes for some smaller markets are blank there: Needs verification.
-
-## Company profile data
-
-Besides the logo, each company in `manifests/<market>.json` carries a profile. Any value can be `null`: when a fact is not found we leave it empty (Needs verification) instead of guessing.
-
-| Field | Source | Notes |
-| :--- | :--- | :--- |
-| `company`, `sector`, `industry`, `marketCap`, `exchange`, `currency`, `isin`, `employees` | TradingView scanner | Refreshed every month. `marketCap` is in `capCurrency` (the company's reporting currency); `marketCapUsd` and `marketCapInr` convert it at the daily rates in `fx-rates.json` and are approximate. Price currency (`currency`) can differ from `capCurrency` (for example UK shares are priced in pence, GBX, but market cap is in GBP) |
-| `country`, `countryCode`, `flag` | TradingView scanner | Country of the company, not of the listing (an ADR in the US can show Taiwan) |
-| `website`, `founded`, `headquarters`, `ceo`, `aliases`, `wikidata` | Wikidata | Matched by ISIN first; otherwise by ticker and a close name match. Community-maintained, so verify before relying on it |
-| `headquarters`, `website` (gaps only) | GLEIF, SEC EDGAR | Fills only empty values. GLEIF uses the ISIN, or an exact legal-name match within the same country; SEC EDGAR covers US filers |
-| `brandColor`, `brandColorSource` | Computed from the logo | An approximation taken from the logo file, not an official brand colour. `neutral-tile` means a black, white or grey logo: low confidence |
-| `pngPaths` | Generated | PNG sizes 64, 128, 256 and 512 px for the 3,000 largest companies. Any other company can be rendered on demand: `node scripts/render-png.js <market> <ticker> <size>` |
-| `chairman`, `address`, `addressLocal`, `headquartersLocal`, `listingDate` | Exchanges and registries (Eastmoney, TPEx, NSE, ASX, B3, GLEIF) | `Local` fields are in the local script. `listingDate` is the first listing on an exchange, not the founding date |
-| `sources`, `checks` | Generated | `sources` names where each value came from. `checks` records a second source that disagreed with the value |
-| `slogan` | Hand-curated only | Not available from open data. Add yours in [`curated/overrides.json`](./curated/) with a source |
-| `freshness` | Generated | Dates when market data and the profile were last refreshed |
-
-**Coverage today** (75,418 companies, refreshed 2026-10-04; it changes every month):
-
-| Field | Filled |
-| :--- | ---: |
-| currency, country, flag, ISIN, brand colour | 99.5% or more |
-| sector, industry | 99.2% |
-| market cap | 96.6% |
-| employees | 70.7% |
-| website | 42.7% |
-| founding year | 39.5% |
-| headquarters, address or local-script address (any) | 51.0% |
-| chairman | 16.9% |
-| CEO | 12.7% |
-| listing date | 16.9% |
-| aliases | 18.2% |
-| PNG sizes | 3,000 largest companies |
-
-Coverage differs a lot by market. Hong Kong (98% website), China (90%), the UK (56% website, 88% location) and the US (53% website, 66% location) are well covered. India (4% website, 21% location), Korea (8%) and Brazil's addresses (5%) are the weakest; the reasons and the options are in [docs/DATA-COVERAGE.md](./docs/DATA-COVERAGE.md). Every value records its source in `sources`, and a second source that disagrees is recorded in `checks`. CEO and chairman can be out of date: Needs verification. Gaps stay `null`. You can fill any of them in [`curated/overrides.json`](./curated/).
-
-**Monthly refresh, with auto finish.** A GitHub Action ([`monthly-refresh.yml`](./.github/workflows/monthly-refresh.yml)) runs on the 1st of every month and calls one pipeline, `node scripts/run-all.js` (also `npm run all`):
-
-1. new listings and logos, 2. logo quality repair, 3. market data, 4. Wikidata profiles, 5. GLEIF and SEC EDGAR gap-filling, 6. brand colours, 7. PNG sizes, 8. manifests, 9. validation.
-
-The slow steps are time-boxed and resumable: a record refreshed within the last 30 days is skipped. If the job runs out of time, it commits its progress and starts itself again (up to 8 times) until `pipeline-status.json` shows `"complete": true`. Locally, run `npm run all` as many times as needed: exit code 0 means complete, 2 means run again, 1 means a check failed.
-
-**Correctness checks.** `npm run validate` (part of `npm test` and CI) checks every ISIN (format and check digit), colour, currency, country code, flag, website, founding year, employee count, market cap, and that every manifest entry points to a real logo and PNG. Invalid values are blanked, never guessed. The result is in `data-quality-report.json`. Hand-curated values in `curated/overrides.json` are never overwritten.
-
-## Logo quality
-
-- Every logo is a vector SVG, so it stays sharp at any size.
-- Gradient and clip ids inside each SVG are unique, so many logos can be inlined on one page without clashes.
-- All SVGs pass `xmllint`. Empty and test entries are removed.
-- 25 real companies have no logo available. They keep a generated initials badge, marked `"isProcedural": true` in `manifests/<market>.json`.
-- 107 older PNG files remain so that existing links keep working. 37 of them are under 256 px.
-
-Check quality with `npm run quality`, repair with `npm run quality:fix`, then run `npm run sync`.
-
-## 🚀 React / Next.js Integration
-
-Our universal `<StockLogo />` component gracefully handles both Indian and US equities, with an automatic 5-tier fallback waterfall with a fallback to a generated badge when no image loads:
-
-```tsx
-import React, { useState } from 'react';
-
-export type StockMarket = 'IN' | 'US' | 'AUTO';
-
-interface StockLogoProps {
-  symbol: string;
-  market?: StockMarket; // 'IN' | 'US' | 'AUTO' (default: 'AUTO')
-  companyName?: string;
-  size?: number;
-  className?: string;
-  cdnRepo?: string; // e.g. "MrChartist/global-stock-logos"
-}
-
-export const StockLogo: React.FC<StockLogoProps> = ({
-  symbol,
-  market = 'AUTO',
-  companyName = '',
-  size = 32,
-  className = '',
-  cdnRepo = 'MrChartist/global-stock-logos'
-}) => {
-  const [sourceIdx, setSourceIdx] = useState(0);
-  const sym = (symbol || 'NA').toUpperCase().trim().replace(/[^A-Za-z0-9_.-]/g, '');
-  const mkt = market === 'AUTO' ? '' : market.toLowerCase();
-  const baseUrl = `https://cdn.jsdelivr.net/gh/${cdnRepo}@main/logos`;
-
-  const sources: string[] = [];
-  if (mkt) {
-    sources.push(`${baseUrl}/${mkt}/${sym}.svg`);
-    sources.push(`${baseUrl}/${mkt}/${sym}.png`);
-  }
-  sources.push(`${baseUrl}/${sym}.svg`);
-  sources.push(`${baseUrl}/${sym}.png`);
-  if (mkt === 'in' || !mkt) {
-    sources.push(`${baseUrl}/in/${sym}.svg`);
-    sources.push(`${baseUrl}/in/${sym}.png`);
-  }
-  if (mkt === 'us' || !mkt) {
-    sources.push(`${baseUrl}/us/${sym}.svg`);
-    sources.push(`${baseUrl}/us/${sym}.png`);
-  }
-
-  // Final fallback: procedural SVG monogram badge
-  if (sourceIdx >= sources.length) {
-    const charCode = sym.charCodeAt(0) || 65;
-    const hue = (charCode * 37) % 360;
-    return (
-      <div
-        style={{
-          width: size,
-          height: size,
-          background: `linear-gradient(135deg, hsl(${hue}, 70%, 45%), hsl(${(hue + 45) % 360}, 75%, 25%))`
-        }}
-        className={`inline-flex shrink-0 items-center justify-center rounded-full text-white font-bold text-xs uppercase shadow-xs ${className}`}
-        title={`${sym} - ${companyName || 'Stock'}`}
-      >
-        {sym.slice(0, 2)}
-      </div>
-    );
-  }
-
-  return (
-    <img
-      src={sources[sourceIdx]}
-      alt={`${sym} logo`}
-      width={size}
-      height={size}
-      onError={() => setSourceIdx((prev) => prev + 1)}
-      className={`rounded-full object-contain bg-white/5 border border-slate-700/30 shrink-0 ${className}`}
-      loading="lazy"
-    />
-  );
-};
-```
-
----
-
-## 📱 Multi-Platform Examples
-
-### Vanilla HTML / JavaScript
-```html
-<!-- US Stock -->
-<img 
-  src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/NVDA.svg"
-  onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/us/NVDA.png';"
-  width="32" height="32" alt="NVDA" 
-/>
-
-<!-- Indian Stock -->
-<img 
-  src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/INFY.svg"
-  onerror="this.onerror=null; this.src='https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/INFY.png';"
-  width="32" height="32" alt="INFY" 
-/>
-```
-
-### Flutter (Dart)
-```dart
-Widget buildStockLogo(String symbol, {String market = 'us'}) {
-  final sym = symbol.toUpperCase();
-  return SvgPicture.network(
-    // Needs the flutter_svg package: SvgPicture.network works for .svg files
-    'https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/$market/$sym.svg',
-    width: 36,
-    height: 36,
-    placeholderBuilder: (context) => CircleAvatar(
-      child: Text(sym.substring(0, sym.length >= 2 ? 2 : 1)),
-    ),
-  );
-}
-```
-
-### Python (Streamlit / Dash / Matplotlib)
-```python
-def get_stock_logo_url(symbol: str, market: str = "us", repo: str = "MrChartist/global-stock-logos") -> str:
-    sym = symbol.upper().strip()
-    return f"https://cdn.jsdelivr.net/gh/{repo}@main/logos/{market.lower()}/{sym}.svg"
-```
-
----
-
----
+| [docs/API.md](./docs/API.md) | Endpoints, the company object, how to read it, client, good practice, versioning |
+| [docs/INTEGRATIONS.md](./docs/INTEGRATIONS.md) | HTML, React and Next.js, Flutter, Python |
+| [docs/DATA.md](./docs/DATA.md) | Every field, where it comes from, coverage today, logo quality |
+| [docs/DATA-COVERAGE.md](./docs/DATA-COVERAGE.md) | What each field can reach, what we tested, what is blocked |
+| [docs/ADAPTERS.md](./docs/ADAPTERS.md) | How to add a verified data source for a market |
+| [DATA-SOURCES.md](./DATA-SOURCES.md) | Sources, terms and how to ask for a logo to be removed |
 
 ## Repository layout
 
 ```
+index.html, assets/             The catalogue page (no build step; works on GitHub Pages)
 logos/<market>/<TICKER>.svg     Logo files, one folder per market
 png/<size>/<market>/            PNG sizes (64, 128, 256, 512) for the 3,000 largest companies
-manifests/<market>.json         Company profile per market (what you read in your app)
+api/v1/                         The static JSON API (generated)
+manifests/<market>.json         Company profiles per market (generated)
 logos-manifest.json             Summary, market names and index of market files
 search-index.json               Compact search index, largest companies first
 enrichment/<market>.json        Raw profile data with sources and retrieval dates
 companies-metadata.json         Company metadata used to build the manifests
-fx-rates.json                   Exchange rates used for market cap in USD
+fx-rates.json                   Exchange rates used for market cap in USD and INR
+*-report.json, pipeline-status.json   Results of the last checks and pipeline run
 curated/overrides.json          Hand-checked facts that always win (slogans, corrections)
-logo-sources.json               Sources for logos not taken from TradingView
-quality-report.json             Placeholders, small PNGs, invalid files
-data-quality-report.json        Result of the data checks
-pipeline-status.json            State of the last pipeline run
-docs/DATA-COVERAGE.md           What each field can reach, what was tested, what is blocked
-index.html                      Browsable catalogue
-scripts/
-  run-all.js                    The whole pipeline in order (auto finish)
-  markets.js                    Market list (single source of truth)
-  bulk-crawl.js                 New listings and logos
-  quality.js, svg-quality.js    Logo audit and repair
-  refresh-metadata.js           Market data from TradingView
-  enrich-wikidata.js            Profiles from Wikidata (ISIN first)
-  enrich-registries.js          GLEIF and SEC EDGAR gap-filling
-  enrich-exchanges.js           Exchange and registry sources (US, HK, China, Taiwan, India, Australia, Brazil, Canada, Japan)
-  enrich-by-name.js             Strict name matching, largest companies first
-  wikidata-logos.js             Logos for companies TradingView lacks
-  brand-color.js, render-png.js Brand colours and PNG sizes
-  validate-data.js              Data checks
-  sync.js                       Rebuild manifests and search index
-src/                            React component and helpers
+src/                            API client (client.js, client.d.ts) and a React component
+scripts/                        The pipeline, checks and generators (run-all.js runs it all)
+docs/                           Documentation
 .github/workflows/              ci.yml, daily-sync.yml, monthly-refresh.yml
 ```
+
+Files marked generated are rebuilt by the pipeline; please do not edit them by hand.
 
 ## Commands
 
 ```bash
-npm run bulk                 # download logos for all markets (resumable)
-node scripts/bulk-crawl.js --markets korea,china
-node scripts/wikidata-logos.js   # fill missing logos from Wikidata / Commons
-npm run refresh              # market data (market cap, sector, currency, ISIN)
-npm run enrich               # company profiles from Wikidata
-npm run registries           # fill gaps from GLEIF and SEC EDGAR
-npm run colors && npm run png  # brand colours and PNG sizes
-npm run all                  # the whole pipeline; run again until it reports complete
-npm run validate             # data correctness checks
-npm run quality              # audit; use quality:fix to repair
-npm test                     # offline check used by CI (invalid XML, active content, unique ids)
-npm run sync                 # rebuild manifests and search index
+npm ci                   # install the development tools (the data and client need none)
+npm test                 # everything CI checks: logos, data, API, client
+npm run all              # the whole data pipeline; run again until it reports complete
+npm run sync             # rebuild manifests and search index
+npm run api              # rebuild the static API (api/v1/)
+npm run test:frontend    # browser test of the catalogue page (needs Chromium)
+npm run typecheck        # type-check the client
 ```
 
-Node.js 18 or newer is required. The scripts need internet access.
+Other steps, one at a time: `bulk`, `refresh`, `enrich`, `registries`, `colors`, `png`, `quality`, `quality:fix`, `validate`.
 
 ## Contributing
 

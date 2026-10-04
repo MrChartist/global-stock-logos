@@ -14,7 +14,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - run: npm ci
       - name: Install xmllint
         run: sudo apt-get update && sudo apt-get install -y libxml2-utils
-      - name: Logo and data checks (invalid XML, active content, unique ids, ISIN, colours, URLs, manifests)
+      - name: Logos, data, API and client (XML, ids, ISIN, URLs, schema of every company file, types, client tests)
         run: npm test

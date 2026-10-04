@@ -156,7 +156,7 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
             wikidata: pick('wikidata'), pngPaths: pngBase,
             freshness: { marketData: e.marketDataAt || null, profile: e.wikidataAt || null },
         };
-        searchIndex.push([item.symbol, item.company, item.market, item.format, item.yahooTicker]);
+        searchIndex.push([item.symbol, item.company, item.market, item.format, item.yahooTicker, e.marketCapUsd ?? null]);
         // A depositary receipt of a foreign company (company country differs from the market's country) ranks below home listings.
         if (e.country && e.country !== item.country) foreignListing.add(`${item.market}:${item.symbol}`);
     }
