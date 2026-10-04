@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "lib": ["ES2022", "DOM"],
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/client.js"]
+}

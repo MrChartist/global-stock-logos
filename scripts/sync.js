@@ -156,7 +156,7 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
             wikidata: pick('wikidata'), pngPaths: pngBase,
             freshness: { marketData: e.marketDataAt || null, profile: e.wikidataAt || null },
         };
-        searchIndex.push([item.symbol, item.company, item.market, item.format, item.yahooTicker]);
+        searchIndex.push([item.symbol, item.company, item.market, item.format, item.yahooTicker, e.marketCapUsd ?? null]);
         // A depositary receipt of a foreign company (company country differs from the market's country) ranks below home listings.
         if (e.country && e.country !== item.country) foreignListing.add(`${item.market}:${item.symbol}`);
     }
@@ -170,6 +170,8 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
         marketFiles[mk.toUpperCase()] = `manifests/${mk}.json`;
     }
     fs.writeFileSync(path.join(REPO_ROOT, 'search-index.json'), JSON.stringify(searchIndex));
+    // The 2,000 largest companies (first screens of the catalogue) as a small file, so a page can render before the full index arrives.
+    fs.writeFileSync(path.join(REPO_ROOT, 'search-index-top.json'), JSON.stringify(searchIndex.slice(0, 2000)));
 
     const manifest = {
         name: "Global Stock Logos Catalog (World)",
@@ -179,6 +181,7 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
         stats: { markets: marketCounts, formats: { svg: svgs, png: pngs } },
         cdnBase,
         searchIndex: 'search-index.json',
+        searchIndexTop: 'search-index-top.json',
         marketNames: Object.fromEntries(Object.entries(MARKETS).map(([k, m]) => [k.toUpperCase(), m.country])),
         dataRefreshedAt: new Date().toISOString().slice(0, 10),
         pngSizes: [64, 128, 256, 512],

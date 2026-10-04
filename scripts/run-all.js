@@ -5,7 +5,7 @@
  *   node scripts/run-all.js [--max-minutes 300] [--max-age-days 30]
  *
  * Steps (in order): new logos -> logo quality -> market data -> Wikidata profiles -> registries (GLEIF, SEC)
- *                   -> name-based matching (GLEIF + Wikidata, largest companies first) -> brand colours -> PNG sizes -> manifests -> validation.
+ *                   -> name-based matching (GLEIF + Wikidata, largest companies first) -> brand colours -> PNG sizes -> manifests -> static API -> validation.
  * The slow enrichment steps are time-boxed and resumable: records already refreshed within --max-age-days are skipped,
  * so running again continues from where the last run stopped.
  * Writes pipeline-status.json. `complete: true` means nothing is left to refresh and all checks pass.
@@ -83,6 +83,7 @@ run('PNG sizes', 'scripts/render-png.js', ['--top', '3000']);
 run('Manifests', 'scripts/sync.js');
 run('Fix invalid values', 'scripts/validate-data.js', ['--fix']);
 run('Manifests (after fixes)', 'scripts/sync.js');
+run('Static API', 'scripts/build-api.js');
 run('Logo check', 'scripts/quality.js', ['--check']);
-const valid = run('Data validation', 'scripts/validate-data.js', [], { fatal: false });
+const valid = run('Data validation', 'scripts/validate-data.js', [], { fatal: false }) && run('API validation', 'scripts/validate-api.js', [], { fatal: false });
 finish(!valid, valid ? '' : 'data validation failed');

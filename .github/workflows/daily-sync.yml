@@ -21,6 +21,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - run: npm ci
       - name: Install xmllint
         run: sudo apt-get update && sudo apt-get install -y libxml2-utils
       - name: Download logos for new listings (real logos only)
@@ -29,10 +30,12 @@ jobs:
         run: node scripts/quality.js --fix
       - name: Rebuild manifests and search index
         run: node scripts/sync.js
-      - name: Final quality gate
-        run: node scripts/quality.js --check
+      - name: Rebuild the static API
+        run: node scripts/build-api.js
+      - name: Final checks
+        run: node scripts/quality.js --check && node scripts/validate-api.js
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(catalog): daily sync of new listings and manifests [skip ci]"
-          file_pattern: "logos manifests logos-manifest.json search-index.json companies-metadata.json logo-sources.json quality-report.json"
+          file_pattern: "api logos manifests logos-manifest.json search-index.json companies-metadata.json logo-sources.json quality-report.json"

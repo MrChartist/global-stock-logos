@@ -1,277 +1,133 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
+<!doctype html>
+<html lang="en-IN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Stock Logos Catalog — Worldwide Stock Markets</title>
-  <link rel="icon" type="image/svg+xml" href="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/AAPL.svg">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Global Stock Logos: open logos and profiles for 75,000+ listed companies</title>
+  <meta name="description" content="Free open-source company logos (SVG, PNG) and profiles for listed stocks in 68 markets, with a static JSON API. By @MrChartist.">
+  <meta name="author" content="Rohit Singh (Mr. Chartist)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#F9F8F5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F0E0D" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Global Stock Logos">
+  <meta property="og:description" content="Open logos and profiles for 75,000+ listed companies in 68 markets, with a static JSON API.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231A1614'/%3E%3Cpath d='M8 21l5-6 4 4 7-9' fill='none' stroke='%23F9F8F5' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/plus-jakarta-sans-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/dm-serif-display-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/style.css">
   <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            brand: '#6366f1',
-            darkBg: '#090d16',
-            cardBg: '#111827',
-            borderColor: '#1f2937'
-          }
-        }
-      }
-    }
+    /* Theme before first paint, so there is no flash.
+       Order: ?theme=light|dark, the saved choice, then the system setting. data-resolved is always light or dark. */
+    (function () {
+      var d = document.documentElement, t = 'system';
+      try { t = new URLSearchParams(location.search).get('theme') || localStorage.getItem('theme') || 'system'; } catch (e) {}
+      if (t !== 'light' && t !== 'dark') t = 'system';
+      var dark = t === 'dark' || (t === 'system' && window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches);
+      d.dataset.theme = t; d.dataset.resolved = dark ? 'dark' : 'light';
+      var m = document.createElement('meta'); m.name = 'theme-color'; m.content = dark ? '#0F0E0D' : '#F9F8F5'; document.head.appendChild(m);
+    })();
   </script>
-  <style>
-    body { background-color: #090d16; color: #f3f4f6; }
-    .custom-scroll::-webkit-scrollbar { width: 6px; }
-    .custom-scroll::-webkit-scrollbar-thumb { background: #374151; border-radius: 4px; }
-  </style>
 </head>
-<body class="min-h-screen flex flex-col font-sans selection:bg-brand selection:text-white">
+<body>
+  <a class="skip" href="#catalogue">Skip to the catalogue</a>
 
-  <!-- Header -->
-  <header class="border-b border-borderColor bg-cardBg/80 backdrop-blur sticky top-0 z-50 px-6 py-4">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-      <div class="flex items-center gap-3">
-        <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-brand to-purple-500 flex items-center justify-center font-bold text-white shadow-lg shadow-brand/20">
-          🌐
-        </div>
-        <div>
-          <h1 class="text-xl font-bold tracking-tight flex items-center gap-2">
-            Global Stock Logos
-            <span id="versionBadge" class="text-xs px-2 py-0.5 rounded-full bg-brand/20 text-brand border border-brand/30 font-mono">v3</span>
-          </h1>
-          <p class="text-xs text-gray-400">Open-source company logos for listed stocks in 68 markets</p>
-        </div>
-      </div>
+  <div class="backdrop" aria-hidden="true"><div class="glow"></div><svg class="art" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMin slice" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M-200 900 C 200 940, 560 640, 900 430 S 1500 110, 1800 -70" transform="translate(0 0)"/><path d="M-200 900 C 200 940, 560 640, 900 430 S 1500 110, 1800 -70" transform="translate(0 46)"/><path d="M-200 900 C 200 940, 560 640, 900 430 S 1500 110, 1800 -70" transform="translate(0 92)"/><path d="M-200 900 C 200 940, 560 640, 900 430 S 1500 110, 1800 -70" transform="translate(0 138)"/><path d="M-200 900 C 200 940, 560 640, 900 430 S 1500 110, 1800 -70" transform="translate(0 184)"/><path d="M-200 900 C 200 940, 560 640, 900 430 S 1500 110, 1800 -70" transform="translate(0 230)"/><path d="M-200 900 C 200 940, 560 640, 900 430 S 1500 110, 1800 -70" transform="translate(0 276)"/><path d="M-200 900 C 200 940, 560 640, 900 430 S 1500 110, 1800 -70" transform="translate(0 322)"/><path d="M-200 900 C 200 940, 560 640, 900 430 S 1500 110, 1800 -70" transform="translate(0 368)"/><path d="M-200 900 C 200 940, 560 640, 900 430 S 1500 110, 1800 -70" transform="translate(0 414)"/></svg></div>
 
-      <!-- Live Search & Market Filter -->
-      <div class="flex items-center gap-3 w-full md:w-auto">
-        <div class="relative flex-1 md:w-80">
-          <input
-            id="searchInput"
-            type="text"
-            placeholder="Search ticker, company, or sector..."
-            class="w-full bg-darkBg border border-borderColor rounded-xl px-4 py-2 text-sm focus:outline-none focus:border-brand transition-colors text-white placeholder-gray-500"
-          />
-        </div>
-        <select
-          id="marketFilter"
-          class="bg-darkBg border border-borderColor rounded-xl px-3 py-2 text-sm text-gray-300 focus:outline-none focus:border-brand"
-        >
-          <option value="ALL">All Markets</option>
-        </select>
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="./" aria-label="Global Stock Logos, home"><svg class="mark" viewBox="0 0 1024 1024" fill="currentColor" aria-hidden="true" focusable="false"><g transform="translate(512.0,512.0) scale(0.9053045186640472) translate(-598.5,-627)"><path d="M113.000 419.000 C128.592 434.006 145.057 448.270 162.000 461.824 C299.947 577.880 486.231 594.815 659.000 599.706 C680.524 601.629 702.137 604.069 723.000 609.941 C739.114 614.722 756.237 621.994 765.294 637.000 C772.039 648.057 770.249 662.141 764.059 673.000 C757.496 684.792 747.292 693.980 737.000 702.471 C622.184 776.562 493.076 829.586 375.000 896.000 L375.000 963.000 C515.515 883.674 670.173 822.286 802.000 726.706 C813.556 716.290 824.300 704.439 830.529 690.000 C838.815 671.480 839.343 649.379 830.353 631.000 C820.580 611.223 801.894 597.282 782.000 588.706 C761.954 580.063 740.467 575.548 719.000 572.118 C554.209 556.993 381.998 531.255 246.000 428.882 C217.642 409.437 190.041 388.438 165.000 365.000 L113.000 419.000 Z"/><path d="M188.000 337.000 C316.846 468.242 496.277 534.615 677.000 549.412 C696.033 552.012 715.091 554.437 734.000 557.882 C755.462 561.939 776.867 567.125 797.000 575.765 C818.791 584.906 838.835 599.627 851.294 620.000 C862.243 638.513 866.051 660.948 861.588 682.000 C858.237 697.772 850.648 712.466 840.588 725.000 C831.364 736.435 820.525 746.457 809.000 755.529 C693.716 834.576 560.949 886.762 440.000 954.000 L440.000 1019.000 C574.338 944.999 718.397 882.423 848.000 798.000 C858.899 789.873 869.372 781.082 878.529 771.000 C894.178 753.831 906.631 733.452 912.941 711.000 C920.380 682.285 918.024 650.759 904.941 624.000 C893.907 601.346 875.568 582.806 854.000 570.000 C832.847 557.324 809.419 549.133 786.000 541.765 C766.238 535.785 746.114 531.161 726.000 526.529 C548.716 496.882 375.210 416.898 258.000 278.000 L188.000 337.000 Z"/><path d="M290.000 254.000 C308.447 274.155 327.161 295.512 348.000 314.000 C453.478 424.326 599.037 483.129 746.000 513.353 C763.758 517.829 781.437 522.609 799.000 527.824 C820.526 534.566 841.986 542.016 862.000 552.529 C886.185 565.229 907.447 583.869 922.118 607.000 C936.227 629.718 943.569 656.320 944.000 683.000 C943.512 706.016 937.438 728.767 926.471 749.000 C918.039 764.406 907.264 778.449 895.000 791.000 C883.493 802.227 871.026 812.419 858.000 821.824 C746.244 894.490 621.481 948.074 505.000 1010.000 L504.000 1076.000 C632.480 1005.064 770.972 946.800 897.000 869.294 C910.758 860.022 923.644 849.526 936.000 838.471 C949.658 825.478 962.100 811.081 972.000 795.000 C986.214 772.034 994.894 745.857 997.529 719.000 C999.937 688.692 995.002 657.792 982.588 630.000 C968.964 599.153 947.229 572.032 920.000 552.118 C902.365 539.381 883.111 528.960 863.000 520.706 C845.298 513.239 827.109 507.048 809.000 500.647 C636.074 454.709 466.017 356.684 383.000 193.000 L290.000 254.000 Z"/><path d="M425.000 170.000 C433.325 187.316 444.967 205.810 455.765 223.000 C533.154 356.596 671.084 441.407 816.000 484.765 C836.523 491.915 856.986 499.223 877.000 507.706 C897.796 516.718 918.241 526.786 937.000 539.588 C960.903 556.257 981.598 577.851 996.412 603.000 C1009.897 626.411 1018.784 652.337 1023.000 679.000 C1026.668 705.231 1025.905 732.331 1019.059 758.000 C1012.980 780.132 1003.460 801.351 990.000 820.000 C978.054 836.793 963.343 851.389 948.000 865.059 C831.432 949.293 692.805 999.811 568.000 1068.000 L568.000 1134.000 C703.535 1066.165 848.062 1008.114 977.000 925.941 C993.062 914.079 1008.092 900.785 1021.529 886.000 C1040.975 864.157 1057.656 839.480 1068.000 812.000 C1078.937 784.083 1083.851 753.948 1083.000 724.000 C1082.049 696.275 1076.066 668.824 1066.000 643.000 C1050.881 604.319 1026.649 569.070 995.000 542.059 C976.526 526.146 955.609 513.398 934.000 502.235 C918.017 493.984 901.516 486.805 885.000 479.706 C739.010 425.017 609.370 318.638 551.353 171.000 C543.555 154.264 535.319 136.249 529.000 120.000 L425.000 170.000 Z"/></g></svg><span class="brand-name">Global Stock Logos</span></a>
+      <ul class="nav-links">
+        <li><a href="#catalogue">Catalogue</a></li>
+        <li><a href="docs/API.md">API</a></li>
+        <li><a href="docs/INTEGRATIONS.md">Integrations</a></li>
+        <li><a href="docs/DATA.md">Data</a></li>
+        <li><a href="https://github.com/MrChartist/global-stock-logos" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="searchBtn" class="icon-btn" type="button" aria-label="Search the catalogue" title="Search (press /)">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+        </button>
+        <button id="theme" class="icon-btn" type="button" aria-label="Switch colour theme" title="Switch colour theme">
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6 7 7M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm" href="docs/API.md">Use the API</a>
       </div>
-    </div>
+    </nav>
   </header>
 
-  <!-- Hero Stats Banner -->
-  <div class="max-w-7xl mx-auto px-6 py-6 w-full">
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-      <div class="bg-cardBg border border-borderColor rounded-2xl p-4">
-        <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Total Equities</div>
-        <div id="statTotal" class="text-2xl font-black text-white mt-1">2,200+</div>
-        <div class="text-[11px] text-emerald-400 mt-1">✓ Real logos only</div>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="chips rise" style="--d:0">
+        <span class="chip"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.4 3.1 7.9 7.5 9.5 4.4-1.6 7.5-5.1 7.5-9.5V6z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg>Open source</span>
+        <span class="chip">MIT code · logos belong to their owners</span>
       </div>
-      <div class="bg-cardBg border border-borderColor rounded-2xl p-4">
-        <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Active Markets</div>
-        <div id="statMarkets" class="text-2xl font-black text-brand mt-1">9 Exchanges</div>
-        <div class="text-[11px] text-gray-400 mt-1">Global Stock Universe</div>
+      <a class="live rise" style="--d:1" href="#catalogue"><i class="dot" aria-hidden="true"></i><span id="liveText">75,000+ companies · 68 markets</span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <h1 id="hero-title">Every listed company.<br><em>Logo, profile, API.</em></h1>
+      <p class="lead rise" style="--d:2">Free, open-source SVG logos and company profiles for 75,000+ stocks in 68 markets. Market cap in USD, INR and local currency. No key, no sign-up.</p>
+      <div class="cta rise" style="--d:3">
+        <a class="btn btn-primary btn-lg" href="#catalogue">Browse the catalogue<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+        <a class="btn btn-glass btn-lg" href="docs/API.md">Read the API<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
       </div>
-      <div class="bg-cardBg border border-borderColor rounded-2xl p-4">
-        <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Vector Assets</div>
-        <div id="statFormats" class="text-2xl font-black text-white mt-1">1,480+ SVGs</div>
-        <div class="text-[11px] text-emerald-400 mt-1">Scalable Brandmarks</div>
-      </div>
-      <div class="bg-cardBg border border-borderColor rounded-2xl p-4">
-        <div class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Global CDN</div>
-        <div class="text-2xl font-black text-purple-400 mt-1">jsDelivr</div>
-        <div class="text-[11px] text-gray-400 mt-1">Edge Cached via Cloudflare</div>
-      </div>
-    </div>
-  </div>
+      <p class="fine rise" style="--d:4">Free to use. Educational information, not investment advice.</p>
+    </section>
 
-  <!-- Main Grid Section -->
-  <main class="max-w-7xl mx-auto px-6 pb-16 flex-1 w-full">
-    <div class="flex items-center justify-between mb-4">
-      <div id="resultsCount" class="text-xs font-semibold text-gray-400">Loading catalog...</div>
-      <div class="text-xs text-gray-500">Click any card to open Yahoo Finance quote</div>
-    </div>
+    <section id="catalogue" class="section wrap" aria-labelledby="cat-title">
+      <div class="marker"><span class="num">01</span><h2 id="cat-title" class="label">The catalogue</h2><span class="rule"></span></div>
 
-    <!-- Logos Grid -->
-    <div id="logosGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-      <!-- Cards rendered via JS -->
-    </div>
+      <div class="stats" id="stats" aria-label="Catalogue size">
+        <div><b id="statCompanies">…</b><span>companies</span></div>
+        <div><b id="statMarkets">…</b><span>markets</span></div>
+        <div><b id="statRefreshed">…</b><span>data refreshed</span></div>
+      </div>
 
-    <div id="emptyState" class="hidden text-center py-16">
-      <div class="text-4xl mb-2">🔍</div>
-      <h3 class="text-lg font-bold text-gray-200">No matching stocks found</h3>
-      <p class="text-sm text-gray-500 mt-1">Try searching by ticker (e.g. AAPL, RELIANCE) or company name.</p>
-    </div>
+      <form class="controls" id="controls" role="search" autocomplete="off">
+        <label class="field search">
+          <span class="sr">Search by ticker or company</span>
+          <svg class="s-ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+          <input id="q" type="search" placeholder="Ticker or company, for example TCS or Samsung" spellcheck="false" enterkeyhint="search">
+          <kbd aria-hidden="true">/</kbd>
+        </label>
+        <label class="field select">
+          <span class="sr">Market</span>
+          <select id="market"><option value="">All markets</option></select>
+        </label>
+        <fieldset class="seg" id="sort" aria-label="Sort order">
+          <legend class="sr">Sort order</legend>
+          <label><input type="radio" name="sort" value="cap" checked><span>Largest</span></label>
+          <label><input type="radio" name="sort" value="name"><span>Name</span></label>
+          <label><input type="radio" name="sort" value="ticker"><span>Ticker</span></label>
+        </fieldset>
+      </form>
+
+      <p id="count" class="count" role="status" aria-live="polite">Loading the catalogue…</p>
+      <ul id="results" class="grid" aria-label="Companies"></ul>
+      <div id="sentinel" class="sentinel" aria-hidden="true"></div>
+      <button id="more" class="btn btn-glass more" type="button" hidden>Show more</button>
+      <p id="empty" class="empty" hidden>No company matches. Try a ticker, or part of the company name.</p>
+      <p id="error" class="empty error" hidden>The catalogue could not be loaded. Check your connection and reload.</p>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="border-t border-borderColor bg-cardBg py-6 px-6 text-center text-xs text-gray-500">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-      <div>
-        Built with ❤️ for global fintech projects. Linked with <strong class="text-gray-300">Yahoo Finance</strong> across Indian & US equities.
-      </div>
-      <div class="flex items-center gap-4">
-        <a href="https://github.com/MrChartist/global-stock-logos" target="_blank" class="hover:text-gray-300 transition-colors">GitHub Repository</a>
-        <span>•</span>
-        <a href="logos-manifest.json" target="_blank" class="hover:text-gray-300 transition-colors">Master Manifest</a>
-      </div>
+  <dialog id="detail" aria-labelledby="dTitle">
+    <div class="sheet">
+      <div class="grab" id="grab" aria-hidden="true"><span></span></div>
+      <button class="close" id="dClose" type="button" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <div id="dBody" aria-live="polite"></div>
     </div>
+  </dialog>
+
+  <footer class="foot wrap">
+    <div class="foot-row">
+      <a class="brand brand-sm" href="./" aria-label="Global Stock Logos, home"><svg class="mark" viewBox="0 0 1024 1024" fill="currentColor" aria-hidden="true" focusable="false"><g transform="translate(512.0,512.0) scale(0.9053045186640472) translate(-598.5,-627)"><path d="M113.000 419.000 C128.592 434.006 145.057 448.270 162.000 461.824 C299.947 577.880 486.231 594.815 659.000 599.706 C680.524 601.629 702.137 604.069 723.000 609.941 C739.114 614.722 756.237 621.994 765.294 637.000 C772.039 648.057 770.249 662.141 764.059 673.000 C757.496 684.792 747.292 693.980 737.000 702.471 C622.184 776.562 493.076 829.586 375.000 896.000 L375.000 963.000 C515.515 883.674 670.173 822.286 802.000 726.706 C813.556 716.290 824.300 704.439 830.529 690.000 C838.815 671.480 839.343 649.379 830.353 631.000 C820.580 611.223 801.894 597.282 782.000 588.706 C761.954 580.063 740.467 575.548 719.000 572.118 C554.209 556.993 381.998 531.255 246.000 428.882 C217.642 409.437 190.041 388.438 165.000 365.000 L113.000 419.000 Z"/><path d="M188.000 337.000 C316.846 468.242 496.277 534.615 677.000 549.412 C696.033 552.012 715.091 554.437 734.000 557.882 C755.462 561.939 776.867 567.125 797.000 575.765 C818.791 584.906 838.835 599.627 851.294 620.000 C862.243 638.513 866.051 660.948 861.588 682.000 C858.237 697.772 850.648 712.466 840.588 725.000 C831.364 736.435 820.525 746.457 809.000 755.529 C693.716 834.576 560.949 886.762 440.000 954.000 L440.000 1019.000 C574.338 944.999 718.397 882.423 848.000 798.000 C858.899 789.873 869.372 781.082 878.529 771.000 C894.178 753.831 906.631 733.452 912.941 711.000 C920.380 682.285 918.024 650.759 904.941 624.000 C893.907 601.346 875.568 582.806 854.000 570.000 C832.847 557.324 809.419 549.133 786.000 541.765 C766.238 535.785 746.114 531.161 726.000 526.529 C548.716 496.882 375.210 416.898 258.000 278.000 L188.000 337.000 Z"/><path d="M290.000 254.000 C308.447 274.155 327.161 295.512 348.000 314.000 C453.478 424.326 599.037 483.129 746.000 513.353 C763.758 517.829 781.437 522.609 799.000 527.824 C820.526 534.566 841.986 542.016 862.000 552.529 C886.185 565.229 907.447 583.869 922.118 607.000 C936.227 629.718 943.569 656.320 944.000 683.000 C943.512 706.016 937.438 728.767 926.471 749.000 C918.039 764.406 907.264 778.449 895.000 791.000 C883.493 802.227 871.026 812.419 858.000 821.824 C746.244 894.490 621.481 948.074 505.000 1010.000 L504.000 1076.000 C632.480 1005.064 770.972 946.800 897.000 869.294 C910.758 860.022 923.644 849.526 936.000 838.471 C949.658 825.478 962.100 811.081 972.000 795.000 C986.214 772.034 994.894 745.857 997.529 719.000 C999.937 688.692 995.002 657.792 982.588 630.000 C968.964 599.153 947.229 572.032 920.000 552.118 C902.365 539.381 883.111 528.960 863.000 520.706 C845.298 513.239 827.109 507.048 809.000 500.647 C636.074 454.709 466.017 356.684 383.000 193.000 L290.000 254.000 Z"/><path d="M425.000 170.000 C433.325 187.316 444.967 205.810 455.765 223.000 C533.154 356.596 671.084 441.407 816.000 484.765 C836.523 491.915 856.986 499.223 877.000 507.706 C897.796 516.718 918.241 526.786 937.000 539.588 C960.903 556.257 981.598 577.851 996.412 603.000 C1009.897 626.411 1018.784 652.337 1023.000 679.000 C1026.668 705.231 1025.905 732.331 1019.059 758.000 C1012.980 780.132 1003.460 801.351 990.000 820.000 C978.054 836.793 963.343 851.389 948.000 865.059 C831.432 949.293 692.805 999.811 568.000 1068.000 L568.000 1134.000 C703.535 1066.165 848.062 1008.114 977.000 925.941 C993.062 914.079 1008.092 900.785 1021.529 886.000 C1040.975 864.157 1057.656 839.480 1068.000 812.000 C1078.937 784.083 1083.851 753.948 1083.000 724.000 C1082.049 696.275 1076.066 668.824 1066.000 643.000 C1050.881 604.319 1026.649 569.070 995.000 542.059 C976.526 526.146 955.609 513.398 934.000 502.235 C918.017 493.984 901.516 486.805 885.000 479.706 C739.010 425.017 609.370 318.638 551.353 171.000 C543.555 154.264 535.319 136.249 529.000 120.000 L425.000 170.000 Z"/></g></svg><span class="brand-name">Global Stock Logos</span></a>
+      <p>A project by <a href="https://mrchartist.com">@MrChartist</a> · <a href="https://github.com/MrChartist/global-stock-logos">Source</a> · <a href="DATA-SOURCES.md">Data sources</a> · <a href="docs/API.md">API</a></p>
+    </div>
+    <p class="fine">Code is MIT licensed. Logos and brand names belong to their owners and are shown for identification only; this is not an endorsement. Profile facts come from open sources and can be out of date: check them before relying on them. Market caps in USD and INR are approximate. This is not investment advice.</p>
   </footer>
 
-  <!-- App Script -->
-  <script>
-    let catalog = [];
-    const CDN_BASE = 'https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos';
-
-    const MARKET_BADGES = {
-      IN: { flag: '🇮🇳', label: 'NSE/BSE', bg: 'bg-amber-500/20 text-amber-400 border-amber-500/30' },
-      US: { flag: '🇺🇸', label: 'US', bg: 'bg-blue-500/20 text-blue-400 border-blue-500/30' },
-      UK: { flag: '🇬🇧', label: 'LSE', bg: 'bg-indigo-500/20 text-indigo-400 border-indigo-500/30' },
-      GERMANY: { flag: '🇩🇪', label: 'XETRA', bg: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30' },
-      FRANCE: { flag: '🇫🇷', label: 'PARIS', bg: 'bg-sky-500/20 text-sky-400 border-sky-500/30' },
-      JAPAN: { flag: '🇯🇵', label: 'TSE', bg: 'bg-rose-500/20 text-rose-400 border-rose-500/30' },
-      CANADA: { flag: '🇨🇦', label: 'TSX', bg: 'bg-red-500/20 text-red-400 border-red-500/30' },
-      AUSTRALIA: { flag: '🇦🇺', label: 'ASX', bg: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30' },
-      HONGKONG: { flag: '🇭🇰', label: 'HKEX', bg: 'bg-teal-500/20 text-teal-400 border-teal-500/30' }
-    };
-
-    function getMarketBadge(mkt) {
-      const info = MARKET_BADGES[mkt] || { flag: '🌐', label: mkt, bg: 'bg-gray-500/20 text-gray-300 border-gray-500/30' };
-      return `<span class="text-[10px] font-bold px-1.5 py-0.5 rounded border ${info.bg}">${info.flag} ${info.label}</span>`;
-    }
-
-    async function loadCatalog() {
-      try {
-        const res = await fetch('logos-manifest.json');
-        const data = await res.json();
-
-        if (data.totalEquities) {
-          document.getElementById('statTotal').innerText = data.totalEquities.toLocaleString() + '+';
-        }
-        if (data.stats && data.stats.markets) {
-          const numMkts = Object.keys(data.stats.markets).length;
-          document.getElementById('statMarkets').innerText = `${numMkts} Markets`;
-        }
-        if (data.stats && data.stats.formats) {
-          document.getElementById('statFormats').innerText = `${(data.stats.formats.svg || 0).toLocaleString()} SVGs`;
-        }
-
-        document.getElementById('versionBadge').innerText = 'v' + (data.version || '3');
-        const sel = document.getElementById('marketFilter');
-        const counts = (data.stats && data.stats.markets) || {};
-        Object.keys(counts).sort((a, b) => counts[b] - counts[a]).forEach((m) => {
-          const o = document.createElement('option');
-          o.value = m;
-          o.textContent = `${(data.marketNames && data.marketNames[m]) || m} (${counts[m].toLocaleString()})`;
-          sel.appendChild(o);
-        });
-        const idx = await (await fetch(data.searchIndex || 'search-index.json')).json();
-        catalog = idx.map(([symbol, company, market, format, yahooTicker]) => ({
-          symbol, company, market, format,
-          cdnMarketUrl: `${CDN_BASE}/${market.toLowerCase()}/${symbol}.${format}`,
-          yahooUrl: `https://finance.yahoo.com/quote/${yahooTicker}`
-        }));
-
-        renderGrid(catalog);
-      } catch (e) {
-        document.getElementById('resultsCount').innerText = 'Failed to load catalog manifest.';
-      }
-    }
-
-    function renderGrid(items) {
-      const grid = document.getElementById('logosGrid');
-      const countEl = document.getElementById('resultsCount');
-      const emptyEl = document.getElementById('emptyState');
-
-      grid.innerHTML = '';
-      countEl.innerText = `Showing ${items.length} stocks`;
-
-      if (items.length === 0) {
-        emptyEl.classList.remove('hidden');
-        return;
-      }
-      emptyEl.classList.add('hidden');
-
-      const fragment = document.createDocumentFragment();
-
-      items.slice(0, 240).forEach(item => {
-        const card = document.createElement('div');
-        card.className = 'group relative flex flex-col justify-between bg-cardBg border border-borderColor rounded-2xl p-4 transition-all hover:border-brand/50 hover:shadow-lg hover:shadow-brand/5';
-
-        const mktBadge = getMarketBadge(item.market);
-        const logoUrl = item.cdnMarketUrl || `${CDN_BASE}/${item.market.toLowerCase()}/${item.symbol}.${item.format}`;
-        const yahooUrl = item.yahooUrl || `https://finance.yahoo.com/quote/${item.symbol}`;
-
-        card.innerHTML = `
-          <div>
-            <div class="flex items-center justify-between mb-3">
-              ${mktBadge}
-              <span class="text-[10px] font-mono text-gray-500 uppercase">${item.format}</span>
-            </div>
-
-            <!-- Logo Image -->
-            <div class="h-16 w-16 mx-auto mb-3 rounded-xl bg-darkBg border border-borderColor p-2 flex items-center justify-center overflow-hidden">
-              <img 
-                src="${logoUrl}" 
-                alt="${item.symbol}" 
-                class="max-h-full max-w-full object-contain"
-                loading="lazy"
-                onerror="this.onerror=null; this.src='${CDN_BASE}/${item.symbol}.${item.format}';"
-              />
-            </div>
-
-            <!-- Ticker & Company -->
-            <div class="text-center">
-              <div class="font-mono font-bold text-sm text-white group-hover:text-brand transition-colors">${item.symbol}</div>
-              <div class="text-xs text-gray-400 truncate mt-0.5" title="${item.company || item.symbol}">${item.company || item.symbol}</div>
-            </div>
-          </div>
-
-          <!-- Yahoo Finance Button -->
-          <div class="mt-4 pt-3 border-t border-borderColor/60 flex items-center justify-between gap-1">
-            <a 
-              href="${yahooUrl}" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="flex-1 text-center py-1.5 px-2 rounded-lg bg-gray-800/80 hover:bg-brand/20 hover:text-brand border border-borderColor hover:border-brand/40 text-[11px] font-semibold text-gray-300 transition-colors"
-            >
-              Yahoo Finance ↗
-            </a>
-          </div>
-        `;
-
-        fragment.appendChild(card);
-      });
-
-      grid.appendChild(fragment);
-    }
-
-    function filterData() {
-      const q = document.getElementById('searchInput').value.toLowerCase().trim();
-      const mkt = document.getElementById('marketFilter').value;
-
-      const filtered = catalog.filter(item => {
-        const matchesMkt = mkt === 'ALL' || item.market === mkt;
-        const matchesQuery = !q || 
-          item.symbol.toLowerCase().includes(q) || 
-          (item.company && item.company.toLowerCase().includes(q)) ||
-          (item.sector && item.sector.toLowerCase().includes(q));
-        return matchesMkt && matchesQuery;
-      });
-
-      renderGrid(filtered);
-    }
-
-    document.getElementById('searchInput').addEventListener('input', filterData);
-    document.getElementById('marketFilter').addEventListener('change', filterData);
-
-    loadCatalog();
-  </script>
+  <script type="module" src="assets/app.js"></script>
 </body>
 </html>
