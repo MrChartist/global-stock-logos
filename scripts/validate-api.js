@@ -42,6 +42,10 @@ if (index.companies !== companies) bad(`index.json says ${index.companies} compa
 if (index.markets !== markets.length) bad(`index.json says ${index.markets} markets, found ${markets.length}`);
 for (const [k, u] of Object.entries(index.endpoints)) { try { new URL(u.replace(/\{[^}]+\}/g, 'x')); } catch { bad(`endpoint ${k} is not a valid URL: ${u}`); } }
 
+const full = read(path.join(ROOT, 'search-index.json')), top = read(path.join(ROOT, 'search-index-top.json'));
+if (full.length !== index.companies) bad(`search-index.json has ${full.length} rows, index.json says ${index.companies}`);
+if (top.length !== Math.min(2000, full.length) || top.some((r, i) => r[0] !== full[i][0] || r[2] !== full[i][2])) bad('search-index-top.json is not the first rows of search-index.json');
+
 const oa = read(path.join(API, 'openapi.json'));
 if (!/^3\.1/.test(oa.openapi)) bad('openapi.json: version is not 3.1');
 for (const [p, v] of Object.entries(oa.paths)) if (!v.get?.operationId || !v.get?.responses?.[200]) bad(`openapi.json: ${p} lacks operationId or a 200 response`);

@@ -22,7 +22,7 @@ A project by **[@MrChartist](https://mrchartist.com)** · [mrchartist.com](https
 - **Logos.** A vector SVG for every company (PNG sizes 64 to 512 px for the 3,000 largest), served free by the jsDelivr CDN.
 - **A company profile.** Name, ISIN, sector, exchange, market cap in local currency, **USD and INR**, website, founding year, headquarters, employees, CEO and chairman, listing date, and a brand colour. Unknown values are `null`; we do not guess.
 - **A static JSON API.** One small file per company, with an [OpenAPI spec](./api/v1/openapi.json), a [JSON Schema](./api/v1/schema/company.schema.json) and a [typed JavaScript client](./src/client.js). No key, no server.
-- **A catalogue page.** Search, filter by market, open any company and copy ready-made embed code: [`index.html`](./index.html). It scores 100 in every Lighthouse category (mobile and desktop, light and dark). Links can carry state: `?q=tata&market=IN&sort=name`, `#/IN/TCS` for a company, and `?theme=dark` or `?theme=light`.
+- **A catalogue page.** Search, filter by market, open any company and copy ready-made embed code: [`index.html`](./index.html). It follows the look of mrchartist.com (light and dark themes, glass navigation, iOS-style detail sheet; see [docs/DESIGN.md](./docs/DESIGN.md)) and scores 99 to 100 in every Lighthouse category on mobile and desktop. Links can carry state: `?q=tata&market=IN&sort=name`, `#/IN/TCS` for a company, and `?theme=dark` or `?theme=light`.
 - **Monthly refresh.** A resumable pipeline keeps data current, checks every value, and records where each one came from.
 
 ## Quick start
@@ -59,6 +59,7 @@ const hits = await api.search('samsung', { limit: 5 });
 | [docs/INTEGRATIONS.md](./docs/INTEGRATIONS.md) | HTML, React and Next.js, Flutter, Python |
 | [docs/DATA.md](./docs/DATA.md) | Every field, where it comes from, coverage today, logo quality |
 | [docs/DATA-COVERAGE.md](./docs/DATA-COVERAGE.md) | What each field can reach, what we tested, what is blocked |
+| [docs/DESIGN.md](./docs/DESIGN.md) | The design system of the catalogue page: colour, type, motion, behaviour, quality bar |
 | [docs/ADAPTERS.md](./docs/ADAPTERS.md) | How to add a verified data source for a market |
 | [DATA-SOURCES.md](./DATA-SOURCES.md) | Sources, terms and how to ask for a logo to be removed |
 
@@ -71,7 +72,8 @@ png/<size>/<market>/            PNG sizes (64, 128, 256, 512) for the 3,000 larg
 api/v1/                         The static JSON API (generated)
 manifests/<market>.json         Company profiles per market (generated)
 logos-manifest.json             Summary, market names and index of market files
-search-index.json               Compact search index, largest companies first
+search-index.json               Compact search index, largest companies first (5 MB)
+search-index-top.json           The 2,000 largest companies of it (158 KB), for a fast first screen
 enrichment/<market>.json        Raw profile data with sources and retrieval dates
 companies-metadata.json         Company metadata used to build the manifests
 fx-rates.json                   Exchange rates used for market cap in USD and INR

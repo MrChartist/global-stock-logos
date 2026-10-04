@@ -9,18 +9,26 @@ import http from 'http';
 import os from 'os';
 import path from 'path';
 import { spawn } from 'child_process';
+import zlib from 'zlib';
 import { ROOT } from './enrich-store.js';
 
 const min = parseInt(process.argv.includes('--min') ? process.argv[process.argv.indexOf('--min') + 1] : '100', 10);
 const exe = [process.env.CHROME_PATH, '/opt/pw-browsers/chromium-1194/chrome-linux/chrome', '/usr/bin/chromium', '/usr/bin/chromium-browser', '/usr/bin/google-chrome'].filter(Boolean).find((p) => fs.existsSync(p));
 if (!exe) { console.log('Lighthouse skipped: no Chromium found (set CHROME_PATH).'); process.exit(0); }
 
-const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png' };
+const TYPES = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2' };
+// Like GitHub Pages and jsDelivr, compress text responses (an uncompressed test server would unfairly penalise the page).
+const COMPRESSIBLE = new Set(['.html', '.js', '.css', '.json', '.svg']);
 const server = http.createServer((req, res) => {
     const u = new URL(req.url, 'http://x');
     const f = path.join(ROOT, decodeURIComponent(u.pathname === '/' ? '/index.html' : u.pathname));
     if (!f.startsWith(ROOT) || !fs.existsSync(f) || fs.statSync(f).isDirectory()) { res.writeHead(404, { 'Content-Type': 'text/plain' }).end('Not found'); return; }
-    res.writeHead(200, { 'Content-Type': TYPES[path.extname(f)] || 'application/octet-stream', 'Cache-Control': 'public, max-age=3600' }).end(fs.readFileSync(f));
+    const ext = path.extname(f);
+    const headers = { 'Content-Type': TYPES[ext] || 'application/octet-stream', 'Cache-Control': 'public, max-age=3600' };
+    let body = fs.readFileSync(f);
+    if (COMPRESSIBLE.has(ext) && /\bgzip\b/.test(req.headers['accept-encoding'] || '')) { body = zlib.gzipSync(body, { level: 9 }); headers['Content-Encoding'] = 'gzip'; }
+    headers['Content-Length'] = body.length;
+    res.writeHead(200, headers).end(body);
 });
 await new Promise((r) => server.listen(0, '127.0.0.1', r));
 const root = `http://127.0.0.1:${server.address().port}/`;

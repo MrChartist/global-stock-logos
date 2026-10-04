@@ -57,7 +57,8 @@ for (const [label, size] of [['desktop', { width: 1280, height: 900 }], ['phone'
         await page.waitForSelector('dialog[open] .kv');
         const text = await page.textContent('dialog');
         assert.match(text, /lakh crore/); assert.match(text, /may be out of date/); assert.match(text, /INE467B01029/);
-        assert.equal((text.match(/Market cap \(INR\)/gi) || []).length, 1, 'INR market cap should appear once');
+        assert.equal(await page.locator('dialog [data-row="cap-inr"]').count(), 1, 'INR market cap should appear once');
+        assert.equal(await page.locator('dialog [data-row="cap-local"]').count(), 0, 'no separate local row when the local currency is INR');
         const over = await page.evaluate(() => { const s = document.querySelector('dialog .sheet'); return s.scrollWidth - s.clientWidth; });
         assert.ok(over <= 0, `detail sheet overflows by ${over}px`);
         assert.match(page.url(), /#\/IN\/TCS/);
@@ -84,13 +85,29 @@ for (const [label, size] of [['desktop', { width: 1280, height: 900 }], ['phone'
     });
     await t(`${label}: light and dark themes both apply, and the toggle works`, async () => {
         const bg = async () => page.evaluate(() => getComputedStyle(document.body).backgroundColor);
+        const settle = async (want) => page.waitForFunction((c) => getComputedStyle(document.body).backgroundColor === c, want);
         await page.goto(`${base}/?theme=light`, { waitUntil: 'networkidle' });
-        assert.equal(await bg(), 'rgb(246, 247, 249)');
+        assert.equal(await bg(), 'rgb(249, 248, 245)');
         await page.goto(`${base}/?theme=dark`, { waitUntil: 'networkidle' });
-        assert.equal(await bg(), 'rgb(13, 17, 23)');
+        assert.equal(await bg(), 'rgb(15, 14, 13)');
+        assert.equal(await page.evaluate(() => document.documentElement.dataset.resolved), 'dark');
         await page.click('#theme');
-        assert.equal(await bg(), 'rgb(246, 247, 249)');
+        await settle('rgb(249, 248, 245)');
+        assert.equal(await page.evaluate(() => document.documentElement.dataset.resolved), 'light');
+        await page.click('#theme');
+        await settle('rgb(15, 14, 13)');
         await page.evaluate(() => localStorage.removeItem('theme'));
+    });
+    await t(`${label}: sort control slides and re-sorts; the / key focuses search`, async () => {
+        await page.goto(`${base}/?market=IN`, { waitUntil: 'networkidle' });
+        await page.waitForSelector('.card');
+        await page.click('#sort label:has-text("Ticker")');
+        await page.waitForFunction(() => document.getElementById('sort').style.getPropertyValue('--i') === '2');
+        const first = await page.locator('.card .tick').first().textContent();
+        assert.ok(/^[0-9A-Z]/.test(first));
+        assert.match(page.url(), /sort=ticker/);
+        await page.mouse.click(5, 300); await page.keyboard.press('/');
+        assert.equal(await page.evaluate(() => document.activeElement.id), 'q');
     });
     await t(`${label}: no script errors`, () => assert.deepEqual(errors, []));
     await page.close();

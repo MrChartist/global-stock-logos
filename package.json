@@ -73,6 +73,7 @@
     "logos-manifest.json",
     "manifests",
     "search-index.json",
+    "search-index-top.json",
     "src",
     "enrichment",
     "png",

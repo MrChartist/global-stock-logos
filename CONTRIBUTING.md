@@ -24,7 +24,7 @@ Thank you for helping. This project is maintained by [@MrChartist](https://mrcha
 - Node.js 18 or newer. The project has no runtime dependencies; please do not add any without discussion.
 - Match the existing style (4-space indent, ES modules).
 - Run `npm ci` once, then `npm test` before opening a pull request. It checks the logos, the data, every file of the API against its JSON Schema, the types and the client. CI runs the same.
-- The catalogue page has a browser test and a Lighthouse check: `npm run test:frontend` and `npm run lighthouse` (they need Chromium; set `CHROME_PATH` if it is not found). The page scores 100 in every Lighthouse category; please keep it that way.
+- The catalogue page has a browser test and a Lighthouse check: `npm run test:frontend` and `npm run lighthouse` (they need Chromium; set `CHROME_PATH` if it is not found). The page scores 99 to 100 in every Lighthouse category; CI fails below 95, so please keep it that way (see [docs/DESIGN.md](./docs/DESIGN.md)).
 
 ## Large generated changes
 

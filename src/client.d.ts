@@ -167,6 +167,11 @@ export declare class StockLogosClient {
      * @returns {Promise<[string, string, string, 'svg' | 'png', string, number | null][]>}
      */
     searchRows(): Promise<[string, string, string, 'svg' | 'png', string, number | null][]>;
+    /**
+     * The 2,000 largest companies as raw rows (about 220 KB), for a fast first screen. Same format as searchRows().
+     * @returns {Promise<[string, string, string, 'svg' | 'png', string, number | null][]>}
+     */
+    topRows(): Promise<[string, string, string, 'svg' | 'png', string, number | null][]>;
     /** @param {[string, string, string, 'svg' | 'png', string, number | null]} r @returns {SearchHit} */
     static hit(r: [string, string, string, 'svg' | 'png', string, number | null]): SearchHit;
     /** Compact index of every company as objects. @returns {Promise<SearchHit[]>} */

@@ -14,6 +14,7 @@ Machine-readable: [OpenAPI 3.1](../api/v1/openapi.json) · [JSON Schema of a com
 | `GET /api/v1/markets.json` | All markets: `key`, `code`, `country`, `companies`, `url` |
 | `GET /api/v1/markets/{market}.json` | Slim rows of one market, largest first: `ticker`, `name`, `sector`, `marketCapUsd`, `url` |
 | `GET /api/v1/companies/{market}/{ticker}.json` | The full profile of one company |
+| `GET /search-index-top.json` | The 2,000 largest companies in the same format (about 160 KB): render a first screen quickly, then load the full index |
 | `GET /search-index.json` | Every company as `[ticker, name, market, format, yahooTicker, marketCapUsd]`, for search boxes |
 
 `{market}` is the lower-case market key from `markets.json` (`us`, `in`, `uk`, `japan`, `korea`, ...). `{ticker}` is the ticker as listed in the market file; URL-encode special characters. A company that does not exist returns **404**.
@@ -84,7 +85,7 @@ Results are cached in memory; failed requests are not cached.
 
 - **Pin a version for production.** `@main` always serves the latest data, and the CDN may cache it for hours. Use a commit hash (or a release tag, once releases are published) instead of `@main` for stable results: `…/global-stock-logos@<commit>/api/v1/…`.
 - **Be kind to the CDN.** Cache responses on your side. The data changes monthly.
-- **Use `search-index.json` once** (about 5 MB) and search in memory, as the [catalogue page](../index.html) does. Per-company files are small (about 1 KB).
+- **Use `search-index.json` once** (about 5 MB) and search in memory, as the [catalogue page](../index.html) does. Render a first screen from `search-index-top.json` (about 160 KB) and load the full index only when needed. Per-company files are small (about 1 KB).
 - **Self-hosting.** The API is just the `api/`, `logos/`, `png/` and `search-index.json` paths of this repository. Serve them from any static host (GitHub Pages works) and pass `baseUrl` to the client.
 
 ## Versioning

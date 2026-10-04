@@ -96,6 +96,12 @@ export class StockLogosClient {
      */
     searchRows() { return this._json('search-index.json'); }
 
+    /**
+     * The 2,000 largest companies as raw rows (about 220 KB), for a fast first screen. Same format as searchRows().
+     * @returns {Promise<[string, string, string, 'svg' | 'png', string, number | null][]>}
+     */
+    topRows() { return this._json('search-index-top.json'); }
+
     /** @param {[string, string, string, 'svg' | 'png', string, number | null]} r @returns {SearchHit} */
     static hit(r) {
         return { ticker: r[0], name: r[1], market: r[2], format: r[3], yahooTicker: r[4], marketCapUsd: r[5] ?? null };

@@ -31,6 +31,10 @@ await t('company profile', async () => {
     assert.match(c.logo.svg, /logos\/in\/TCS\.svg$/); assert.match(c.logo.brandColor, /^#[0-9A-F]{6}$/);
 });
 await t('company is case-insensitive on market', async () => assert.equal((await api.company('US', 'AAPL')).ticker, 'AAPL'));
+await t('top rows are the first rows of the full index and much smaller', async () => {
+    const [top, full] = await Promise.all([api.topRows(), api.searchRows()]);
+    assert.equal(top.length, 2000); assert.deepEqual(top[0], full[0]); assert.deepEqual(top[1999], full[1999]);
+});
 await t('search ranks exact ticker first', async () => { const h = await api.search('aapl', { market: 'us' }); assert.equal(h[0].ticker, 'AAPL'); });
 await t('search by name', async () => { const h = await api.search('tata consultancy', { market: 'in', limit: 5 }); assert.ok(h.some((x) => x.ticker === 'TCS')); });
 await t('search limit and empty query', async () => { assert.equal((await api.search('a', { limit: 7 })).length, 7); assert.deepEqual(await api.search('   '), []); });
