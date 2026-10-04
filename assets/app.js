@@ -34,7 +34,7 @@ function setTheme(t) {
   document.documentElement.dataset.theme = t;
   try { localStorage.setItem('theme', t); } catch {}
 }
-try { const t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch {}
+// The initial theme is set by the inline script in index.html (before first paint).
 $('theme').addEventListener('click', () => {
   const dark = document.documentElement.dataset.theme === 'dark' || (!document.documentElement.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches);
   setTheme(dark ? 'light' : 'dark');
@@ -45,8 +45,8 @@ async function load() {
   let index;
   try { index = await api.index(); }
   catch { api = CDN; index = await api.index(); } // not hosted with its own api/ folder: use the CDN copy
-  const [markets, hits] = await Promise.all([api.markets(), api.searchIndex()]);
-  state.all = hits;
+  const [markets, rows] = await Promise.all([api.markets(), api.searchRows()]);
+  state.all = rows; // raw rows: [ticker, name, market, format, yahooTicker, marketCapUsd]; objects are built only for what is shown
   state.marketNames = Object.fromEntries(markets.map((m) => [m.code, m.country]));
   $('statCompanies').textContent = num.format(index.companies);
   $('statMarkets').textContent = num.format(index.markets);
@@ -66,10 +66,10 @@ function compute() {
   if (q.trim()) {
     rows = state.all.length ? searchLocal(q, market) : [];
   } else {
-    rows = market ? state.all.filter((r) => r.market === market) : state.all;
+    rows = market ? state.all.filter((r) => r[2] === market) : state.all;
   }
-  if (sort === 'name') rows = [...rows].sort((a, b) => a.name.localeCompare(b.name));
-  else if (sort === 'ticker') rows = [...rows].sort((a, b) => a.ticker.localeCompare(b.ticker));
+  if (sort === 'name') rows = [...rows].sort((a, b) => a[1].localeCompare(b[1]));
+  else if (sort === 'ticker') rows = [...rows].sort((a, b) => a[0].localeCompare(b[0]));
   state.rows = rows;
   state.shown = 0;
   $('results').replaceChildren();
@@ -85,8 +85,8 @@ function searchLocal(query, market) {
   const q = fold(query).trim();
   const hits = [];
   for (const r of state.all) {
-    if (market && r.market !== market) continue;
-    const t = fold(r.ticker), n = fold(r.name);
+    if (market && r[2] !== market) continue;
+    const t = fold(r[0]), n = fold(r[1]);
     const s = t === q ? 0 : t.startsWith(q) ? 1 : n.startsWith(q) ? 2 : n.includes(` ${q}`) ? 3 : n.includes(q) ? 4 : -1;
     if (s >= 0) hits.push({ r, s });
   }
@@ -97,7 +97,8 @@ function logoSrc(r) { return api.logoOf(r); }
 function renderMore() {
   const slice = state.rows.slice(state.shown, state.shown + PAGE);
   const frag = document.createDocumentFragment();
-  for (const r of slice) {
+  for (const raw of slice) {
+    const r = StockLogosClient.hit(raw);
     const li = document.createElement('li');
     const b = document.createElement('button');
     b.type = 'button'; b.className = 'card';

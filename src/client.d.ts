@@ -161,7 +161,15 @@ export declare class StockLogosClient {
     market(market: string): Promise<CompanyRow[]>;
     /** Full profile of one company. @param {string} market @param {string} ticker @returns {Promise<Company>} */
     company(market: string, ticker: string): Promise<Company>;
-    /** Compact index of every company. @returns {Promise<SearchHit[]>} */
+    /**
+     * The compact index as raw rows, exactly as stored: [ticker, name, market, format, yahooTicker, marketCapUsd].
+     * Cheaper than searchIndex() because no objects are built; use it for large scans.
+     * @returns {Promise<[string, string, string, 'svg' | 'png', string, number | null][]>}
+     */
+    searchRows(): Promise<[string, string, string, 'svg' | 'png', string, number | null][]>;
+    /** @param {[string, string, string, 'svg' | 'png', string, number | null]} r @returns {SearchHit} */
+    static hit(r: [string, string, string, 'svg' | 'png', string, number | null]): SearchHit;
+    /** Compact index of every company as objects. @returns {Promise<SearchHit[]>} */
     searchIndex(): Promise<SearchHit[]>;
     /**
      * Search by ticker or name. Ranking: exact ticker, ticker prefix, name starts with the query, word prefix, contains.

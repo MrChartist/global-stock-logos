@@ -19,3 +19,21 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y libxml2-utils
       - name: Logos, data, API and client (XML, ids, ISIN, URLs, schema of every company file, types, client tests)
         run: npm test
+
+  frontend:
+    name: Catalogue page (browser test and Lighthouse)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - name: Browser test (desktop and phone, including hostile-data test)
+        run: node scripts/test-frontend.js
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+      - name: Lighthouse (performance, accessibility, best practices, SEO; light and dark; mobile and desktop)
+        run: node scripts/lighthouse.js --min 95
+        env:
+          CHROME_PATH: /usr/bin/google-chrome

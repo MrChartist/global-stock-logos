@@ -89,12 +89,20 @@ export class StockLogosClient {
         return this._json(`api/v1/companies/${encodeURIComponent(market.toLowerCase())}/${encodeURIComponent(ticker)}.json`);
     }
 
-    /** Compact index of every company. @returns {Promise<SearchHit[]>} */
-    async searchIndex() {
-        /** @type {[string, string, 'svg' | 'png', 'svg' | 'png', string, number | null][]} */
-        const rows = await this._json('search-index.json');
-        return rows.map(([ticker, name, market, format, yahooTicker, marketCapUsd]) => ({ ticker, name, market, format, yahooTicker, marketCapUsd: marketCapUsd ?? null }));
+    /**
+     * The compact index as raw rows, exactly as stored: [ticker, name, market, format, yahooTicker, marketCapUsd].
+     * Cheaper than searchIndex() because no objects are built; use it for large scans.
+     * @returns {Promise<[string, string, string, 'svg' | 'png', string, number | null][]>}
+     */
+    searchRows() { return this._json('search-index.json'); }
+
+    /** @param {[string, string, string, 'svg' | 'png', string, number | null]} r @returns {SearchHit} */
+    static hit(r) {
+        return { ticker: r[0], name: r[1], market: r[2], format: r[3], yahooTicker: r[4], marketCapUsd: r[5] ?? null };
     }
+
+    /** Compact index of every company as objects. @returns {Promise<SearchHit[]>} */
+    async searchIndex() { return (await this.searchRows()).map(StockLogosClient.hit); }
 
     /**
      * Search by ticker or name. Ranking: exact ticker, ticker prefix, name starts with the query, word prefix, contains.
@@ -108,14 +116,14 @@ export class StockLogosClient {
         if (!q) return [];
         const m = market ? market.toUpperCase() : null;
         const hits = [];
-        for (const row of await this.searchIndex()) {
-            if (m && row.market !== m) continue;
-            const t = norm(row.ticker), n = norm(row.name);
+        for (const row of await this.searchRows()) {
+            if (m && row[2] !== m) continue;
+            const t = norm(row[0]), n = norm(row[1]);
             const score = t === q ? 0 : t.startsWith(q) ? 1 : n.startsWith(q) ? 2 : n.includes(` ${q}`) ? 3 : n.includes(q) ? 4 : -1;
             if (score >= 0) hits.push({ row, score });
         }
         // Stable sort by score keeps the largest-first order inside each score.
-        return hits.sort((a, b) => a.score - b.score).slice(0, limit).map((h) => h.row);
+        return hits.sort((a, b) => a.score - b.score).slice(0, limit).map((h) => StockLogosClient.hit(h.row));
     }
 
     /**

@@ -22,7 +22,7 @@ A project by **[@MrChartist](https://mrchartist.com)** · [mrchartist.com](https
 - **Logos.** A vector SVG for every company (PNG sizes 64 to 512 px for the 3,000 largest), served free by the jsDelivr CDN.
 - **A company profile.** Name, ISIN, sector, exchange, market cap in local currency, **USD and INR**, website, founding year, headquarters, employees, CEO and chairman, listing date, and a brand colour. Unknown values are `null`; we do not guess.
 - **A static JSON API.** One small file per company, with an [OpenAPI spec](./api/v1/openapi.json), a [JSON Schema](./api/v1/schema/company.schema.json) and a [typed JavaScript client](./src/client.js). No key, no server.
-- **A catalogue page.** Search, filter by market, open any company and copy ready-made embed code: [`index.html`](./index.html).
+- **A catalogue page.** Search, filter by market, open any company and copy ready-made embed code: [`index.html`](./index.html). It scores 100 in every Lighthouse category (mobile and desktop, light and dark). Links can carry state: `?q=tata&market=IN&sort=name`, `#/IN/TCS` for a company, and `?theme=dark` or `?theme=light`.
 - **Monthly refresh.** A resumable pipeline keeps data current, checks every value, and records where each one came from.
 
 ## Quick start
@@ -94,6 +94,7 @@ npm run all              # the whole data pipeline; run again until it reports c
 npm run sync             # rebuild manifests and search index
 npm run api              # rebuild the static API (api/v1/)
 npm run test:frontend    # browser test of the catalogue page (needs Chromium)
+npm run lighthouse       # Lighthouse scores of the page: mobile, desktop, light, dark
 npm run typecheck        # type-check the client
 ```
 

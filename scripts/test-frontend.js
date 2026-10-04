@@ -82,6 +82,16 @@ for (const [label, size] of [['desktop', { width: 1280, height: 900 }], ['phone'
         assert.equal(await page.locator('dialog img[onerror]').count(), 0);
         await page.unroute('**/api/v1/companies/us/AAPL.json');
     });
+    await t(`${label}: light and dark themes both apply, and the toggle works`, async () => {
+        const bg = async () => page.evaluate(() => getComputedStyle(document.body).backgroundColor);
+        await page.goto(`${base}/?theme=light`, { waitUntil: 'networkidle' });
+        assert.equal(await bg(), 'rgb(246, 247, 249)');
+        await page.goto(`${base}/?theme=dark`, { waitUntil: 'networkidle' });
+        assert.equal(await bg(), 'rgb(13, 17, 23)');
+        await page.click('#theme');
+        assert.equal(await bg(), 'rgb(246, 247, 249)');
+        await page.evaluate(() => localStorage.removeItem('theme'));
+    });
     await t(`${label}: no script errors`, () => assert.deepEqual(errors, []));
     await page.close();
 }

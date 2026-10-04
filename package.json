@@ -23,7 +23,8 @@
     "colors": "node scripts/brand-color.js",
     "png": "node scripts/render-png.js",
     "quality": "node scripts/quality.js",
-    "quality:fix": "node scripts/quality.js --fix"
+    "quality:fix": "node scripts/quality.js --fix",
+    "lighthouse": "node scripts/lighthouse.js"
   },
   "keywords": [
     "stock-logos",
@@ -84,6 +85,7 @@
   "devDependencies": {
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
+    "lighthouse": "^13.5.0",
     "playwright-core": "^1.63.0",
     "sharp": "^0.35.5",
     "typescript": "^7.0.2"
