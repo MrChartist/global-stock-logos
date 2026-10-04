@@ -18,6 +18,7 @@ import { fileURLToPath } from 'url';
 import { US_KNOWN_DOMAINS } from './domains-us.js';
 import { MARKETS } from './markets.js';
 import { isProcedural } from './svg-quality.js';
+import { loadShard } from './enrich-store.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -127,13 +128,29 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
     const cdnBase = `https://cdn.jsdelivr.net/gh/${repoName}@main/logos`;
     const shards = {};
     const searchIndex = [];
+    // Hand-curated facts (e.g. slogan, corrected website) always win over automatic data.
+    const curatedFile = path.join(REPO_ROOT, 'curated', 'overrides.json');
+    const curated = fs.existsSync(curatedFile) ? JSON.parse(fs.readFileSync(curatedFile, 'utf-8')) : {};
+    const enrichment = {};
     for (const [k, item] of Object.entries(logos)) {
         if (!k.includes(':')) continue; // namespaced MARKET:SYM keys only
         const mk = item.market.toLowerCase();
+        const e = (enrichment[mk] ||= loadShard(mk))[item.symbol] || {};
+        const o = curated[k] || {};
+        const pick = (f) => (o[f] !== undefined ? o[f] : e[f] ?? null);
+        const pngBase = e.pngSizes ? Object.fromEntries(e.pngSizes.map((n) => [n, `png/${n}/${mk}/${item.symbol}.png`])) : null;
         (shards[mk] ||= {})[item.symbol] = {
             company: item.company, format: item.format, sector: item.sector, industry: item.industry,
             marketCap: item.marketCap, logoid: item.logoid, yahooTicker: item.yahooTicker,
             yahooUrl: item.yahooUrl, path: item.path, isProcedural: item.isProcedural,
+            // Profile (all values may be null: unknown means Needs verification, never guessed)
+            exchange: pick('exchange'), currency: pick('currency'), isin: pick('isin'),
+            country: pick('country'), countryCode: pick('countryCode'), flag: pick('flag'),
+            website: pick('website'), founded: pick('founded'), headquarters: pick('headquarters'),
+            ceo: pick('ceo'), employees: pick('employees'), aliases: pick('aliases') || [],
+            slogan: pick('slogan'), brandColor: pick('brandColor'), brandColorSource: pick('brandColorSource'),
+            wikidata: pick('wikidata'), pngPaths: pngBase,
+            freshness: { marketData: e.marketDataAt || null, profile: e.wikidataAt || null },
         };
         searchIndex.push([item.symbol, item.company, item.market, item.format, item.yahooTicker]);
     }
@@ -152,6 +169,8 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
         stats: { markets: marketCounts, formats: { svg: svgs, png: pngs } },
         cdnBase,
         searchIndex: 'search-index.json',
+        dataRefreshedAt: new Date().toISOString().slice(0, 10),
+        pngSizes: [64, 128, 256, 512],
         marketManifests: marketFiles,
     };
     fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2), 'utf-8');

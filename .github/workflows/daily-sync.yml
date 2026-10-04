@@ -1,41 +1,38 @@
-name: Daily Global Stock Logos Sync & Audit
+name: Daily Logo Sync
 
 on:
   schedule:
-    # Run daily at 02:00 UTC (before Asian and European market opens)
     - cron: '0 2 * * *'
   workflow_dispatch:
 
+concurrency:
+  group: daily-sync
+  cancel-in-progress: false
+
 jobs:
-  audit-and-sync:
-    name: Audit & Sync Global Logos Catalog
+  sync:
+    name: Add new listings, repair quality, rebuild manifests
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     permissions:
       contents: write
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js 22 LTS
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
-
-      - name: Ingest Next Continuous Batch (US & India)
-        run: |
-          node scripts/crawler.js --batch 100
-
-      - name: Audit All Asset Integrity
-        run: |
-          node scripts/audit.js
-
-      - name: Re-index Global Manifest Catalog
-        run: |
-          node scripts/sync.js
-
-      - name: Commit and Push Updates
+      - name: Install xmllint
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+      - name: Download logos for new listings (real logos only)
+        run: node scripts/bulk-crawl.js
+      - name: Repair quality issues
+        run: node scripts/quality.js --fix
+      - name: Rebuild manifests and search index
+        run: node scripts/sync.js
+      - name: Final quality gate
+        run: node scripts/quality.js --check
+      - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore(catalog): automated daily batch crawl, audit, and manifest sync [skip ci]"
-          file_pattern: "logos-manifest.json crawler-state.json companies-metadata.json logos/*"
+          commit_message: "chore(catalog): daily sync of new listings and manifests [skip ci]"
+          file_pattern: "logos manifests logos-manifest.json search-index.json companies-metadata.json logo-sources.json quality-report.json"

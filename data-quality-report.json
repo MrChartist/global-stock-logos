@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-10-04",
+  "enrichmentRecords": 75418,
+  "manifestEntries": 75418,
+  "errors": {},
+  "warnings": {
+    "staleMarketData": 0
+  },
+  "fixed": 0,
+  "sample": []
+}
