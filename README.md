@@ -59,7 +59,7 @@ Besides the logo, each company in `manifests/<market>.json` carries a profile. A
 
 | Field | Source | Notes |
 | :--- | :--- | :--- |
-| `company`, `sector`, `industry`, `marketCap`, `exchange`, `currency`, `isin`, `employees` | TradingView scanner | Refreshed every month. `marketCap` is in `capCurrency` (the company's reporting currency); `marketCapUsd` converts it at the daily rate in `fx-rates.json` and is approximate |
+| `company`, `sector`, `industry`, `marketCap`, `exchange`, `currency`, `isin`, `employees` | TradingView scanner | Refreshed every month. `marketCap` is in `capCurrency` (the company's reporting currency); `marketCapUsd` and `marketCapInr` convert it at the daily rates in `fx-rates.json` and are approximate. Price currency (`currency`) can differ from `capCurrency` (for example UK shares are priced in pence, GBX, but market cap is in GBP) |
 | `country`, `countryCode`, `flag` | TradingView scanner | Country of the company, not of the listing (an ADR in the US can show Taiwan) |
 | `website`, `founded`, `headquarters`, `ceo`, `aliases`, `wikidata` | Wikidata | Matched by ISIN first; otherwise by ticker and a close name match. Community-maintained, so verify before relying on it |
 | `headquarters`, `website` (gaps only) | GLEIF, SEC EDGAR | Fills only empty values. GLEIF uses the ISIN, or an exact legal-name match within the same country; SEC EDGAR covers US filers |

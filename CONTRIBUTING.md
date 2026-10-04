@@ -7,6 +7,7 @@ Thank you for helping. This project is maintained by [@MrChartist](https://mrcha
 - Add an official logo for a company listed in [`quality-report.json`](./quality-report.json).
 - Report a wrong, missing or outdated logo (use the issue templates).
 - Add a country or exchange in `scripts/markets.js`.
+- Write a data adapter for a market with weak coverage: see [docs/ADAPTERS.md](./docs/ADAPTERS.md).
 - Improve scripts, documentation or the React component in `src/`.
 
 ## Adding or replacing a logo
