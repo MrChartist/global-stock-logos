@@ -55,3 +55,7 @@ DART (opendart.fss.or.kr) gives Korean website, CEO, address and founding date f
 1. Add facts to `curated/overrides.json` with a source link. These always win.
 2. Official exchange or registry data for the remaining markets (Korea, Thailand, India, Germany, UK), each needing its own adapter and a test from a GitHub runner.
 3. A licensed data source whose terms allow redistribution, if one exists for your use.
+
+## Next: per-market adapters
+
+Korea, India (website and address), South-East Asia, most of Europe and the smaller markets still have thin coverage. Each can get its own verified adapter in `scripts/adapters/` (see [ADAPTERS.md](./ADAPTERS.md)); one agent per market works well, followed by an independent check of about 40 written records against another source. Nothing from an unfinished or unverified adapter should be committed.

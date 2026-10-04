@@ -95,8 +95,9 @@ for (const key of keys) {
     for (const [sym, rec] of Object.entries(shards[key])) {
         const m = meta[`${key.toUpperCase()}:${sym}`];
         if (!m?.marketCap || !rec.countryCode || !stale(rec.nameAt)) continue;
+        const cap = rec.marketCapUsd || 0; // USD, so the biggest companies worldwide come first
         if (rec.wikidata && rec.headquarters) continue;
-        work.push({ key, sym, rec, company: m.company, cap: m.marketCap });
+        work.push({ key, sym, rec, company: m.company, cap });
     }
 }
 work.sort((a, b) => b.cap - a.cap);
