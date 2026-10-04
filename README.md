@@ -62,28 +62,28 @@ Besides the logo, each company in `manifests/<market>.json` carries a profile. A
 | `company`, `sector`, `industry`, `marketCap`, `exchange`, `currency`, `isin`, `employees` | TradingView scanner | Refreshed every month |
 | `country`, `countryCode`, `flag` | TradingView scanner | Country of the company, not of the listing (an ADR in the US can show Taiwan) |
 | `website`, `founded`, `headquarters`, `ceo`, `aliases`, `wikidata` | Wikidata | Matched by ISIN first; otherwise by ticker and a close name match. Community-maintained, so verify before relying on it |
-| `headquarters`, `website` (gaps only) | GLEIF, SEC EDGAR | Fills only empty values. GLEIF uses the ISIN; SEC EDGAR covers US filers |
+| `headquarters`, `website` (gaps only) | GLEIF, SEC EDGAR | Fills only empty values. GLEIF uses the ISIN, or an exact legal-name match within the same country; SEC EDGAR covers US filers |
 | `brandColor`, `brandColorSource` | Computed from the logo | An approximation taken from the logo file, not an official brand colour. `neutral-tile` means a black, white or grey logo: low confidence |
 | `pngPaths` | Generated | PNG sizes 64, 128, 256 and 512 px for the 3,000 largest companies. Any other company can be rendered on demand: `node scripts/render-png.js <market> <ticker> <size>` |
 | `slogan` | Hand-curated only | Not available from open data. Add yours in [`curated/overrides.json`](./curated/) with a source |
 | `freshness` | Generated | Dates when market data and the profile were last refreshed |
 
-**Coverage today** (75,417 companies, refreshed 2026-10-03; it changes every month):
+**Coverage today** (75,418 companies, refreshed 2026-10-04; it changes every month):
 
 | Field | Filled |
 | :--- | ---: |
 | currency, country, flag, ISIN, brand colour | 99.5% or more |
 | sector, industry | 99.2% |
 | market cap | 96.6% |
-| employees | 71.3% |
-| headquarters | 38.4% |
-| website | 25.5% |
-| founding year | 24.1% |
+| employees | 70.7% |
+| headquarters | 38.5% |
+| website | 25.6% |
+| founding year | 24.2% |
 | aliases | 18.0% |
 | CEO | 5.2% |
 | PNG sizes | 3,000 largest companies |
 
-Website, founding year and CEO depend on Wikidata, which covers large and well-known companies far better than small ones. Headquarters also comes from GLEIF and SEC EDGAR, which fill mostly US and European companies. India, Korea, China and Taiwan have the weakest coverage, because their ISINs are not in GLEIF. Gaps stay `null`. You can fill any of them in [`curated/overrides.json`](./curated/).
+What is and is not possible for each field, and what we tested, is in [docs/DATA-COVERAGE.md](./docs/DATA-COVERAGE.md). Website, founding year and CEO depend on Wikidata, which covers large and well-known companies far better than small ones. Headquarters also comes from GLEIF and SEC EDGAR, which fill mostly US and European companies. India, Korea, China and Taiwan have the weakest coverage, because their ISINs are not in GLEIF. Gaps stay `null`. You can fill any of them in [`curated/overrides.json`](./curated/).
 
 **Monthly refresh, with auto finish.** A GitHub Action ([`monthly-refresh.yml`](./.github/workflows/monthly-refresh.yml)) runs on the 1st of every month and calls one pipeline, `node scripts/run-all.js` (also `npm run all`):
 
