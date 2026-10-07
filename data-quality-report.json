@@ -1,10 +1,11 @@
 {
-  "checkedAt": "2026-10-04",
-  "enrichmentRecords": 75418,
-  "manifestEntries": 76558,
+  "checkedAt": "2026-10-07",
+  "enrichmentRecords": 77439,
+  "manifestEntries": 77439,
   "errors": {},
   "warnings": {
-    "staleMarketData": 0
+    "staleMarketData": 0,
+    "notInMarketScan": 2837
   },
   "fixed": 0,
   "sample": []
