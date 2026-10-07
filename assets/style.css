@@ -186,11 +186,11 @@ h1 em { display: inline-block; margin-top: .06em; font: italic 400 1.04em/1.02 v
 .count { height: 1.5em; margin: 0 4px 14px; color: var(--ink-2); font-size: .88rem; line-height: 1.5; }
 .grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(188px, 1fr)); gap: 14px; }
 .grid > li { min-width: 0; }
-.card { width: 100%; height: 100%; min-height: 168px; display: flex; flex-direction: column; gap: 10px; padding: 16px; text-align: left; color: inherit; font: inherit; cursor: pointer; border: 0; border-radius: var(--r-card); background: var(--surface); box-shadow: inset 0 0 0 1px var(--ring), var(--shadow-card); transition: transform .35s var(--ease), box-shadow .35s var(--ease); animation: rise .6s var(--ease) both; animation-delay: calc(min(var(--i, 0), 14) * 32ms); }
+.card { position: relative; width: 100%; height: 100%; min-height: 168px; display: flex; flex-direction: column; gap: 10px; padding: 16px; text-align: left; color: inherit; font: inherit; cursor: pointer; border: 0; border-radius: var(--r-card); background: var(--surface); box-shadow: inset 0 0 0 1px var(--ring), var(--shadow-card); transition: transform .35s var(--ease), box-shadow .35s var(--ease); animation: rise .6s var(--ease) both; animation-delay: calc(min(var(--i, 0), 14) * 32ms); }
 .card:hover { transform: translateY(-3px); box-shadow: inset 0 0 0 1px var(--accent-ring), var(--shadow-card-hover); }
 .card:active { transform: scale(.985); }
 .logo { width: 56px; height: 56px; border-radius: var(--r-tile); background: var(--logo-tile); box-shadow: inset 0 0 0 1px var(--ring); object-fit: contain; display: block; }
-.card .tick { font: 700 15px/1.2 var(--font-mono); letter-spacing: -.01em; }
+.card .tick { font: 700 15px/1.2 var(--font-mono); letter-spacing: -.01em; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .card .nm { color: var(--ink-2); font-size: .84rem; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.9em; }
 .meta { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; font: 600 12.5px/1 var(--font-display); color: var(--ink-2); font-variant-numeric: tabular-nums; }
 .tag { padding: 5px 10px; border-radius: 999px; color: var(--accent); background: var(--accent-bg); box-shadow: inset 0 0 0 1px var(--accent-ring); font: 700 11px/1 var(--font-display); letter-spacing: .06em; }
@@ -242,6 +242,9 @@ dialog.closing .sheet { animation: sheet-out .22s var(--ease-std) both; }
 .row dd a:hover { text-decoration: underline; }
 .row small { display: block; margin-top: 2px; color: var(--ink-2); font-weight: 500; font-size: .8rem; }
 .na { color: var(--ink-3); font-weight: 500; }
+.tag-muted { position: absolute; top: 10px; right: 10px; padding: 4px 8px; color: var(--ink-2); background: var(--surface); box-shadow: inset 0 0 0 1px var(--ring); font-size: 10px; letter-spacing: .02em; }
+.unverified { color: var(--ink-2); font-style: italic; }
+.note a { color: inherit; text-decoration: underline; }
 .sw { display: inline-flex; align-items: center; gap: 8px; }
 .sw i { width: 18px; height: 18px; border-radius: 6px; box-shadow: inset 0 0 0 1px var(--ring); display: inline-block; }
 .files { display: flex; flex-wrap: wrap; gap: 8px; padding: 14px 16px; }

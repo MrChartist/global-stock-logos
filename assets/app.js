@@ -1,5 +1,5 @@
 // Global Stock Logos: catalogue page. Uses the public API client (src/client.js); no other dependencies.
-import { StockLogosClient, DEFAULT_BASE_URL } from '../src/client.js';
+import { StockLogosClient, DEFAULT_BASE_URL, rankRows } from '../src/client.js';
 
 const here = new URL('../', import.meta.url).href.replace(/\/$/, '');
 const CDN = new StockLogosClient({ baseUrl: DEFAULT_BASE_URL });
@@ -9,7 +9,7 @@ const PAGE = 60;
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
 
 // partial = only the top 2,000 rows are loaded so far; the full index is fetched on demand (see ensureFull).
-const state = { q: '', market: '', sort: 'cap', all: [], rows: [], shown: 0, marketNames: {}, partial: true, total: 0, fullPromise: null };
+const state = { q: '', market: '', sort: 'cap', all: [], rows: [], shown: 0, marketNames: {}, partial: true, total: 0, fullPromise: null, inr: null };
 const needsFull = () => Boolean(state.q.trim() || state.market || state.sort !== 'cap');
 
 // ---------------------------------------------------------------- formatting
@@ -20,6 +20,12 @@ function fmtInr(v) {
   if (v == null) return '—';
   if (v >= 1e12) return `₹${(v / 1e12).toFixed(2)} lakh crore`;
   if (v >= 1e7) return `₹${num.format(Math.round(v / 1e7))} crore`;
+  return `₹${num.format(Math.round(v))}`;
+}
+/** Short INR for cards: ₹7.59 L Cr, ₹5,230 Cr. */
+function fmtInrShort(v) {
+  if (v >= 1e12) return `₹${(v / 1e12).toFixed(2)} L Cr`;
+  if (v >= 1e7) return `₹${num.format(Math.round(v / 1e7))} Cr`;
   return `₹${num.format(Math.round(v))}`;
 }
 function fmtLocal(v, currency) {
@@ -35,11 +41,15 @@ const val = (v) => (v == null || v === '' ? na : esc(v));
 
 // ---------------------------------------------------------------- theme
 // The initial theme is set by the inline script in index.html (before first paint).
+const setThemeColor = (resolved) => document.querySelectorAll('meta[name="theme-color"]').forEach((m) => m.setAttribute('content', resolved === 'dark' ? '#0F0E0D' : '#F9F8F5'));
 function applyTheme(mode) {
   const d = document.documentElement;
   d.dataset.theme = mode; d.dataset.resolved = mode;
   try { localStorage.setItem('theme', mode); } catch {}
-  document.querySelectorAll('meta[name="theme-color"]').forEach((m) => m.setAttribute('content', mode === 'dark' ? '#0F0E0D' : '#F9F8F5'));
+  setThemeColor(mode);
+  // A ?theme= link sets the first view only; once the visitor picks a theme, the link must not override it on reload.
+  const p = new URLSearchParams(location.search);
+  if (p.has('theme')) { p.delete('theme'); const qs = p.toString(); history.replaceState(history.state, '', `${location.pathname}${qs ? `?${qs}` : ''}${location.hash}`); }
 }
 $('theme').addEventListener('click', (e) => {
   const next = document.documentElement.dataset.resolved === 'dark' ? 'light' : 'dark';
@@ -56,7 +66,10 @@ $('theme').addEventListener('click', (e) => {
 });
 matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', (e) => {
   let saved = null; try { saved = localStorage.getItem('theme'); } catch {}
-  if (!saved) { document.documentElement.dataset.resolved = e.matches ? 'dark' : 'light'; }
+  if (!saved && !new URLSearchParams(location.search).has('theme')) {
+    document.documentElement.dataset.resolved = e.matches ? 'dark' : 'light';
+    setThemeColor(e.matches ? 'dark' : 'light');
+  }
 });
 
 // ---------------------------------------------------------------- data
@@ -65,13 +78,18 @@ async function load() {
   try { index = await api.index(); }
   catch { api = CDN; index = await api.index(); } // not hosted with its own api/ folder: use the CDN copy
   const [markets, top] = await Promise.all([api.markets(), api.topRows()]);
-  state.all = top; // raw rows: [ticker, name, market, format, yahooTicker, marketCapUsd]; objects are built only for what is shown
+  state.all = top; // raw rows: [ticker, name, market, format, yahooTicker, marketCapUsd, flags, otherTickers?]; objects are built only for what is shown
   state.total = index.companies;
   state.marketNames = Object.fromEntries(markets.map((m) => [m.code, m.country]));
   // The full index (5 MB) loads on demand (search, market, sort, or reaching the end of the top list) or when the browser is idle.
   $('statCompanies').textContent = num.format(index.companies);
   $('statMarkets').textContent = num.format(index.markets);
   $('statRefreshed').textContent = index.dataRefreshedAt;
+  // USD -> INR for the India view's cards (the same daily rate the API uses); the page works without it.
+  fetch(`${api.baseUrl}/fx-rates.json`).then((r) => (r.ok ? r.json() : null)).then((fx) => {
+    state.inr = fx?.rates?.INR || null;
+    if (state.inr && state.market === 'IN') compute();
+  }).catch(() => {});
   $('liveText').textContent = `${num.format(index.companies)} companies · ${index.markets} markets`;
   const sel = $('market');
   for (const m of markets) {
@@ -92,25 +110,21 @@ function skeleton() {
   $('results').replaceChildren(frag);
 }
 
-const fold = (s) => String(s ?? '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '');
-// Same ranking as the client's search(), on the rows already in memory (no second download).
-function searchLocal(query, market) {
-  const q = fold(query).trim();
-  const hits = [];
-  for (const r of state.all) {
-    if (market && r[2] !== market) continue;
-    const t = fold(r[0]), n = fold(r[1]);
-    const s = t === q ? 0 : t.startsWith(q) ? 1 : n.startsWith(q) ? 2 : n.includes(` ${q}`) ? 3 : n.includes(q) ? 4 : -1;
-    if (s >= 0) hits.push({ r, s });
-  }
-  return hits.sort((a, b) => a.s - b.s).map((h) => h.r);
-}
+// Same ranking as the client's search() (exchange spellings such as M&M, former tickers, home listings first),
+// on the rows already in memory (no second download). The folded text is cached per index, not rebuilt per keystroke.
+const searchLocal = (query, market) => rankRows(state.all, query, { market });
 
 function setCount() {
   const { market } = state;
+  const waiting = needsFull() && state.partial; // only the top 2,000 are loaded: the answer is not final yet
   const n = !needsFull() && state.partial ? state.total : state.rows.length;
-  $('count').textContent = n ? `${num.format(n)} ${n === 1 ? 'company' : 'companies'}${market ? ` in ${state.marketNames[market] || market}` : ''}` : '';
-  $('empty').hidden = n > 0 || !state.all.length;
+  const where = market ? ` in ${state.marketNames[market] || market}` : '';
+  if (waiting) $('count').textContent = `${n ? `${num.format(n)} so far · ` : ''}searching all ${num.format(state.total)} companies…`;
+  else $('count').textContent = n ? `${num.format(n)} ${n === 1 ? 'company' : 'companies'}${where}` : '';
+  $('empty').hidden = waiting || n > 0 || !state.all.length;
+  if (!$('empty').hidden) $('emptyHint').textContent = market ? ` Or search all markets instead of ${state.marketNames[market] || market}.` : '';
+  // While a query is active the order is relevance first; the "Largest" option breaks ties by size.
+  $('sortCapLabel').textContent = state.q.trim() ? 'Relevance' : 'Largest';
 }
 
 let seq = 0;
@@ -126,11 +140,17 @@ function ensureFull() {
     else { state.rows = rows; $('more').hidden = state.shown >= rows.length; setCount(); }
     return rows;
   });
-  state.fullPromise.catch(() => { state.fullPromise = null; });
+  state.fullPromise.catch(() => {
+    state.fullPromise = null;
+    if (needsFull()) { $('count').textContent = 'Only the 2,000 largest companies could be searched: the full list did not load. Check your connection and try again.'; $('empty').hidden = state.rows.length > 0; }
+  });
   return state.fullPromise;
 }
-// Warm it up when the browser has nothing else to do.
-setTimeout(() => { if ('requestIdleCallback' in window) requestIdleCallback(() => ensureFull(), { timeout: 3000 }); else ensureFull(); }, 8000);
+// Warm it up when the browser has nothing else to do (not on a data-saver connection: it is 5 MB).
+setTimeout(() => {
+  if (navigator.connection?.saveData) return;
+  if ('requestIdleCallback' in window) requestIdleCallback(() => ensureFull(), { timeout: 3000 }); else ensureFull();
+}, 8000);
 function compute() {
   ++seq;
   const partialNow = needsFull() && state.partial;
@@ -146,7 +166,6 @@ function compute() {
   $('results').replaceChildren();
   renderMore();
   setCount();
-  if (partialNow) $('count').textContent += ' so far · searching all companies…';
 }
 
 function renderMore() {
@@ -157,11 +176,14 @@ function renderMore() {
     const li = document.createElement('li');
     const b = document.createElement('button');
     b.type = 'button'; b.className = 'card'; b.style.setProperty('--i', k);
-    b.setAttribute('aria-label', `${r.name}, ${r.ticker}, ${state.marketNames[r.market] || r.market}`);
+    const notes = [r.isPlaceholder ? 'no logo yet' : '', r.secondaryListing ? 'also listed elsewhere' : ''].filter(Boolean);
+    b.setAttribute('aria-label', `${r.name}, ${r.ticker}, ${state.marketNames[r.market] || r.market}${notes.length ? `, ${notes.join(', ')}` : ''}`);
+    if (r.secondaryListing) b.title = 'A copy of a company whose main listing is in another market';
+    const cap = state.market === 'IN' && r.marketCapUsd != null && state.inr ? fmtInrShort(r.marketCapUsd * state.inr) : fmtUsd(r.marketCapUsd);
     b.innerHTML = `<img class="logo" width="56" height="56" loading="lazy" decoding="async" alt="" src="${esc(api.logoOf(r))}">
       <span class="tick">${esc(r.ticker)}</span>
       <span class="nm">${esc(r.name)}</span>
-      <span class="meta"><span class="tag">${esc(r.market)}</span><span>${fmtUsd(r.marketCapUsd)}</span></span>`;
+      <span class="meta"><span class="tag">${esc(r.market)}</span><span>${cap}</span></span>${r.isPlaceholder ? '<span class="tag tag-muted">No logo yet</span>' : ''}`;
     const img = b.querySelector('img');
     img.addEventListener('error', () => { if (!img.dataset.fb) { img.dataset.fb = '1'; img.src = CDN.logoOf(r); } });
     b.addEventListener('click', () => open(r.market, r.ticker));
@@ -170,7 +192,8 @@ function renderMore() {
   });
   $('results').appendChild(frag);
   state.shown += slice.length;
-  $('more').hidden = state.shown >= state.rows.length && !state.partial;
+  // While a search waits for the full index the list is not final: no "Show more" for a short partial result.
+  $('more').hidden = state.shown >= state.rows.length && (!state.partial || needsFull());
 }
 $('more').addEventListener('click', async () => {
   if (state.shown >= state.rows.length && state.partial) { $('more').disabled = true; try { await ensureFull(); } catch {} $('more').disabled = false; }
@@ -186,9 +209,21 @@ function setSeg(value) {
   inputs[i].checked = true;
   seg.style.setProperty('--i', i);
 }
+/** A market from a link: the code (IN, GERMANY), the country name (India) or an ISO code (DE); unknown = all markets. */
+function marketFrom(v) {
+  const x = String(v || '').trim().toUpperCase();
+  if (!x) return '';
+  if (state.marketNames[x]) return x;
+  const byName = Object.entries(state.marketNames).find(([, country]) => country.toUpperCase() === x);
+  if (byName) return byName[0];
+  let iso = null; try { iso = new Intl.DisplayNames(['en'], { type: 'region' }).of(x); } catch {}
+  const byIso = iso && Object.entries(state.marketNames).find(([, country]) => country === iso);
+  return byIso ? byIso[0] : '';
+}
 function readUrl() {
   const p = new URLSearchParams(location.search);
-  state.q = p.get('q') || ''; state.market = (p.get('market') || '').toUpperCase();
+  // Text typed while the page was loading wins over the (empty) query of the URL.
+  state.q = $('q').value || p.get('q') || ''; state.market = marketFrom(p.get('market'));
   state.sort = ['cap', 'name', 'ticker'].includes(p.get('sort')) ? p.get('sort') : 'cap';
   $('q').value = state.q; $('market').value = state.market; setSeg(state.sort);
 }
@@ -222,8 +257,11 @@ addEventListener('keydown', (e) => {
 // ---------------------------------------------------------------- detail sheet
 const dlg = $('detail');
 const sheet = dlg.querySelector('.sheet');
-function open(market, ticker) {
-  if (location.hash !== `#/${market}/${encodeURIComponent(ticker)}`) history.pushState(null, '', `${location.search}#/${market}/${encodeURIComponent(ticker)}`);
+let pushed = false; // the sheet added a history entry, so closing it goes back instead of leaving a dead entry
+function open(market, ticker, { replace = false } = {}) {
+  const url = `${location.search}#/${market}/${encodeURIComponent(ticker)}`;
+  if (replace) history.replaceState(history.state, '', url); // moving inside the open sheet: no extra Back step
+  else if (location.hash !== `#/${market}/${encodeURIComponent(ticker)}`) { history.pushState({ sheet: true }, '', url); pushed = true; }
   showDetail(market, ticker);
 }
 function closeSheet() {
@@ -238,8 +276,11 @@ async function showDetail(market, ticker) {
   if (!dlg.open) dlg.showModal();
   try {
     const c = await api.company(market, ticker);
-    if (c.logo.brandColor && c.logo.brandColorSource !== 'neutral-tile') sheet.style.setProperty('--brand', c.logo.brandColor);
+    // A generated badge's colour is not the company's: only a real logo tints the sheet.
+    if (c.logo.brandColor && c.logo.brandColorSource !== 'neutral-tile' && !c.logo.isPlaceholder) sheet.style.setProperty('--brand', c.logo.brandColor);
     $('dBody').innerHTML = detailHtml(c);
+    $('dTitle')?.focus({ preventScroll: true });
+    $('dBody').querySelector('[data-goto]')?.addEventListener('click', (e) => { e.preventDefault(); open(c.market, c.aliasOf, { replace: true }); });
     $('dBody').querySelectorAll('[data-copy]').forEach((b) => b.addEventListener('click', async () => {
       const label = b.querySelector('span');
       try { await navigator.clipboard.writeText(b.dataset.copy); label.textContent = 'Copied'; b.classList.add('done'); } catch { label.textContent = 'Press Ctrl+C'; }
@@ -253,7 +294,12 @@ async function showDetail(market, ticker) {
 }
 function officer(p) {
   if (!p) return na;
-  return `${esc(p.name)}<small>Source: ${esc(p.source)}</small>${p.confidence === 'low' ? '<span class="note">Community data: may be out of date</span>' : ''}`;
+  const since = p.since ? ` · since ${esc(p.since.slice(0, 4))}` : '';
+  if (p.confidence === 'low') {
+    // Wikidata officers can be years out of date: shown muted, with the reason, not as a plain fact.
+    return `<span class="unverified">${esc(p.name)}</span><small>Source: ${esc(p.source)}${since}</small><span class="note">Unverified community data${p.since ? '' : ' with no start date'}: may be out of date</span>`;
+  }
+  return `${esc(p.name)}<small>Source: ${esc(p.source)}${since}</small>`;
 }
 const row = (label, html, attr = '') => `<div class="row"${attr}><dt>${label}</dt><dd>${html}</dd></div>`;
 function detailHtml(c) {
@@ -265,11 +311,14 @@ function detailHtml(c) {
   const addr = [p.address, p.addressLocal].filter(Boolean).join(' · ');
   const site = safeUrl(p.website);
   const sizes = lg.png ? Object.keys(lg.png).sort((a, b) => a - b).map((s) => `<a href="${esc(lg.png[s])}">${s} px PNG</a>`).join('') : '';
+  // Company names can hold quotes and brackets (AO "Dorogi i Mosty"): escape them inside the copied snippets.
+  const attr = (v) => String(v).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+  const mdText = (v) => String(v).replace(/([\\[\]])/g, '\\$1');
   const embed = [
-    ['HTML', `<img src="${cdnSvg}" width="32" height="32" alt="${c.name} logo">`],
-    ['Markdown', `![${c.name}](${cdnSvg})`],
+    ['HTML', `<img src="${cdnSvg}" width="32" height="32" alt="${attr(c.name)} logo">`],
+    ['Markdown', `![${mdText(c.name)}](${cdnSvg})`],
     ['API', c.links.self],
-    ['JavaScript', `const c = await new StockLogosClient().company('${c.market.toLowerCase()}', '${c.ticker}');`],
+    ['JavaScript', `const c = await new StockLogosClient().company(${JSON.stringify(c.market.toLowerCase())}, ${JSON.stringify(c.ticker)});`],
   ];
   const capRows = m ? [
     row('USD', fmtUsd(m.usd), ' data-row="cap-usd"'),
@@ -283,11 +332,13 @@ function detailHtml(c) {
         <h2 id="dTitle" tabindex="-1">${esc(c.name)}</h2>
         <div class="d-sub">${esc(c.ticker)} · ${esc(c.exchange || c.market)} · ${esc(c.flag || '')} ${esc(c.country || '')}</div>
         ${lg.isPlaceholder ? '<span class="note">Generated badge, not the real logo</span>' : ''}
+        ${c.aliasOf ? `<span class="note">Exchange spelling or former ticker of <a href="#/${esc(c.market)}/${esc(encodeURIComponent(c.aliasOf))}" data-goto>${esc(c.aliasOf)}</a></span>` : ''}
+        ${c.secondaryListing ? '<span class="note">Also listed elsewhere: this is not the company\'s main listing</span>' : ''}
       </div>
     </div>
     <div class="d-cap">
       <div class="big">${fmtUsd(m?.usd)}</div>
-      <span class="sub">Market cap in USD. Approximate, at the daily exchange rate.</span>
+      <span class="sub">Market cap in USD${m?.currency === 'USD' ? '' : '. Approximate, at the daily exchange rate'}${m?.asOf ? `. As of ${esc(m.asOf)}` : ''}.</span>
     </div>
     <div class="kv">
       <section class="group"><h3>Market cap</h3><dl class="rows">${capRows}</dl></section>
@@ -310,9 +361,9 @@ function detailHtml(c) {
         ${c.wikidata ? row('Wikidata', `<a href="https://www.wikidata.org/wiki/${esc(c.wikidata)}" rel="noopener noreferrer">${esc(c.wikidata)}</a>`) : ''}
       </dl></section>
       <section class="group"><h3>Logo</h3><dl class="rows">
-        ${row('Brand colour', lg.brandColor ? `<span class="sw"><i style="background:${esc(lg.brandColor)}"></i>${esc(lg.brandColor)}</span><small>From the logo file${lg.brandColorSource === 'neutral-tile' ? ' (black, white or grey logo: low confidence)' : ''}</small>` : na)}
+        ${row('Brand colour', lg.brandColor && !lg.isPlaceholder ? `<span class="sw"><i style="background:${esc(lg.brandColor)}"></i>${esc(lg.brandColor)}</span><small>From the logo file${lg.brandColorSource === 'neutral-tile' ? ' (black, white or grey logo: low confidence)' : ''}</small>` : na)}
       </dl>
-      <div class="rows" style="margin-top:8px"><div class="files"><a href="${esc(svg)}">${ext === 'png' ? 'PNG (original)' : 'SVG'}</a>${sizes}${lg.png ? '' : '<span class="prov">PNG sizes exist for the 3,000 largest companies; other logos are SVG.</span>'}</div></div></section>
+      <div class="rows" style="margin-top:8px"><div class="files"><a href="${esc(svg)}">${ext === 'png' ? 'PNG (original)' : 'SVG'}</a>${sizes}${lg.png ? '' : '<span class="prov">Ready-made PNG sizes exist for the 3,000 largest companies (main listing, and the US listing if any); use the SVG for this one.</span>'}</div></div></section>
       <section class="group"><h3>Use it</h3><div class="rows">
         ${embed.map(([k, v]) => `<div class="snip"><span class="k">${esc(k)}</span><code title="${esc(k)}">${esc(v)}</code><button type="button" class="copy" data-copy="${esc(v)}" aria-label="Copy ${esc(k)}"><span>Copy</span></button></div>`).join('')}
       </div></section>
@@ -324,7 +375,11 @@ function detailHtml(c) {
 $('dClose').addEventListener('click', closeSheet);
 dlg.addEventListener('click', (e) => { if (e.target === dlg) closeSheet(); });
 dlg.addEventListener('cancel', (e) => { e.preventDefault(); closeSheet(); }); // Escape: animate out, then close
-dlg.addEventListener('close', () => { if (location.hash) history.replaceState(null, '', `${location.pathname}${location.search}`); });
+dlg.addEventListener('close', () => {
+  if (!location.hash) return;
+  if (pushed) { pushed = false; history.back(); } // undo our own entry: one Back press then leaves the page, as expected
+  else history.replaceState(null, '', `${location.pathname}${location.search}`);
+});
 
 // Drag the grabber down to dismiss (phones).
 (function () {
@@ -343,7 +398,11 @@ dlg.addEventListener('close', () => { if (location.hash) history.replaceState(nu
 
 function fromHash() {
   const m = location.hash.match(/^#\/([^/]+)\/(.+)$/);
-  if (m) showDetail(m[1], decodeURIComponent(m[2])); else if (dlg.open) closeSheet();
+  let ticker = null;
+  try { ticker = m && decodeURIComponent(m[2]); } catch { ticker = null; } // a malformed link must not break the page
+  // Tickers and market codes are upper case in the data: #/in/tcs works too.
+  if (ticker) showDetail(m[1].toUpperCase(), ticker.toUpperCase());
+  else { pushed = false; if (dlg.open) closeSheet(); }
 }
 addEventListener('popstate', fromHash);
 
