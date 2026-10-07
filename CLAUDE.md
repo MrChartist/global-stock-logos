@@ -33,9 +33,10 @@ After changing anything that feeds the data, run `npm run sync && npm run api &&
 - **Verify identity before writing:** ISIN equality, or exchange code plus a close name (`similar() >= 0.75`).
 - **Dates are honest.** `marketDataAt` is the date of the data itself; `marketCheckedAt` is when we last looked.
   A listing the scanner no longer returns keeps its old data with its old date (`notInScan: true`).
-- **Same company, many listings.** `scripts/listings.js` groups listings with an identical logo and a market cap
-  within 5%; the home listing is the main one, the rest are `secondaryListing` and rank below main listings in the
-  search index and the API market lists. PNGs go to the 3,000 largest companies, not listings.
+- **Same company, many listings.** `scripts/listings.js` groups listings of the same brand (TradingView `logoid`, else
+  a byte-identical logo file) with a market cap within 5%; the home listing is the main one, the rest are
+  `secondaryListing` and rank below main listings in the search index and the API market lists. `sync.js` and
+  `render-png.js` must pass the same fields to it. PNGs go to the 3,000 largest companies, not listings.
 - **CEOs** come from Wikidata P169 by rank and start date (`scripts/wikidata-officers.js`), with `ceoSince`.
   A stale CEO is fixed in `curated/overrides.json` with a source note, and ideally on Wikidata too.
 - **Tickers with special characters and renamed companies** go through `curated/aliases.json` (same ISIN only).
