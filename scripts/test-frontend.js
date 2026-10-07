@@ -10,7 +10,8 @@ import path from 'path';
 import { chromium } from 'playwright-core';
 import { ROOT } from './enrich-store.js';
 
-const candidates = [process.env.CHROME_PATH, '/opt/pw-browsers/chromium-1194/chrome-linux/chrome', '/usr/bin/chromium', '/usr/bin/chromium-browser', '/usr/bin/google-chrome'].filter(Boolean);
+const pw = fs.existsSync('/opt/pw-browsers') ? fs.readdirSync('/opt/pw-browsers').filter((d) => d.startsWith('chromium')).map((d) => `/opt/pw-browsers/${d}/chrome-linux/chrome`) : [];
+const candidates = [process.env.CHROME_PATH, ...pw, '/opt/pw-browsers/chromium-1194/chrome-linux/chrome', '/usr/bin/chromium', '/usr/bin/chromium-browser', '/usr/bin/google-chrome'].filter(Boolean);
 const exe = candidates.find((p) => fs.existsSync(p));
 if (!exe) { console.log('Frontend check skipped: no Chromium found (set CHROME_PATH).'); process.exit(0); }
 
@@ -35,8 +36,8 @@ for (const [label, size] of [['desktop', { width: 1280, height: 900 }], ['phone'
     await page.goto(base, { waitUntil: 'networkidle' });
 
     await t(`${label}: catalogue loads and is sorted largest first`, async () => {
-        await page.waitForSelector('.card');
-        assert.match(await page.textContent('#count'), /75,4\d\d companies/);
+        await page.waitForSelector('.card:not(.skel)');
+        assert.match(await page.textContent('#count'), /\d{2},\d{3} companies/);
         assert.equal(await page.locator('.card .tick').first().textContent(), 'NVDA');
         assert.ok((await page.locator('#market option').count()) >= 69);
     });
@@ -52,11 +53,12 @@ for (const [label, size] of [['desktop', { width: 1280, height: 900 }], ['phone'
         assert.match(page.url(), /q=tata\+consultancy/);
         assert.match(page.url(), /market=IN/);
     });
-    await t(`${label}: detail opens, shows INR and the CEO caution, and closes with Escape`, async () => {
+    await t(`${label}: detail opens, shows INR and the curated CEO, and closes with Escape`, async () => {
         await page.click('.card');
         await page.waitForSelector('dialog[open] .kv');
         const text = await page.textContent('dialog');
-        assert.match(text, /lakh crore/); assert.match(text, /may be out of date/); assert.match(text, /INE467B01029/);
+        assert.match(text, /lakh crore/); assert.match(text, /K\. Krithivasan/); assert.match(text, /curated/); assert.match(text, /INE467B01029/);
+        assert.equal(await page.evaluate(() => document.activeElement?.id), 'dTitle', 'focus moves to the company name');
         assert.equal(await page.locator('dialog [data-row="cap-inr"]').count(), 1, 'INR market cap should appear once');
         assert.equal(await page.locator('dialog [data-row="cap-local"]').count(), 0, 'no separate local row when the local currency is INR');
         const over = await page.evaluate(() => { const s = document.querySelector('dialog .sheet'); return s.scrollWidth - s.clientWidth; });
@@ -64,12 +66,43 @@ for (const [label, size] of [['desktop', { width: 1280, height: 900 }], ['phone'
         assert.match(page.url(), /#\/IN\/TCS/);
         await page.keyboard.press('Escape');
         await page.waitForFunction(() => !document.querySelector('dialog[open]'));
+        await page.waitForFunction(() => !location.hash);
+        assert.match(page.url(), /q=tata\+consultancy/, 'closing the sheet returns to the search');
     });
-    await t(`${label}: deep link opens a PNG-only company with a working logo`, async () => {
-        await page.goto(`${base}/?q=meta&market=US#/US/META`, { waitUntil: 'networkidle' });
+    await t(`${label}: a low-confidence CEO is marked unverified, with the start of the term`, async () => {
+        await page.goto(`${base}/#/US/MSFT`, { waitUntil: 'networkidle' });
+        await page.waitForSelector('dialog[open] .kv');
+        const text = await page.textContent('dialog');
+        assert.match(text, /Unverified community data/); assert.match(text, /since \d{4}/);
+        assert.equal(await page.locator('dialog .unverified').count() >= 1, true);
+    });
+    await t(`${label}: deep links: PNG-only logo, lower case, malformed`, async () => {
+        const png = JSON.parse(fs.readFileSync(path.join(ROOT, 'search-index.json'), 'utf-8')).find((r) => r[3] === 'png');
+        await page.goto(`${base}/#/${png[2]}/${encodeURIComponent(png[0])}`, { waitUntil: 'networkidle' });
         await page.waitForSelector('dialog[open] img.logo');
         const ok = await page.evaluate(() => { const i = document.querySelector('dialog img.logo'); return i.complete && i.naturalWidth > 0; });
         assert.ok(ok, 'logo image did not load');
+        await page.goto(`${base}/#/in/tcs`, { waitUntil: 'networkidle' });
+        await page.waitForSelector('dialog[open] .kv');
+        assert.match(await page.textContent('dialog h2'), /Tata Consultancy/);
+        await page.goto(`${base}/#/IN/%E0%A4`, { waitUntil: 'networkidle' });
+        await page.waitForSelector('.card:not(.skel)');
+        assert.equal(await page.isHidden('#error'), true, 'a malformed link must not break the page');
+    });
+    await t(`${label}: exchange spellings, former tickers and unknown markets`, async () => {
+        await page.goto(`${base}/?q=m%26m&market=india`, { waitUntil: 'networkidle' });
+        await page.waitForFunction(() => /Mahindra/.test(document.querySelector('.card .nm')?.textContent || ''));
+        assert.equal(await page.inputValue('#market'), 'IN', 'a country name selects its market');
+        await page.goto(`${base}/?q=zomato`, { waitUntil: 'networkidle' });
+        await page.waitForFunction(() => document.querySelector('.card .tick')?.textContent === 'ETERNAL');
+        await page.goto(`${base}/?market=nowhere`, { waitUntil: 'networkidle' });
+        await page.waitForSelector('.card:not(.skel)');
+        assert.equal(await page.inputValue('#market'), '', 'an unknown market falls back to all markets');
+    });
+    await t(`${label}: the largest-first view shows main listings, not copies`, async () => {
+        const ticks = await page.locator('.card .tick').allTextContents();
+        const firstTwenty = ticks.slice(0, 20);
+        assert.ok(!firstTwenty.some((x) => /^(1|4)[A-Z]/.test(x) || /^(JPMP|BACP|GOOGM|GOOGN)/.test(x)), `copies in the top 20: ${firstTwenty.join(' ')}`);
     });
     await t(`${label}: unsafe URLs in data never become links`, async () => {
         await page.route('**/api/v1/companies/us/AAPL.json', async (route) => {

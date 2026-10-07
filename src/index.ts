@@ -1,5 +1,5 @@
-export { StockLogosClient, ApiError, DEFAULT_BASE_URL } from './client.js';
-export type { Company, CompanyRow, Market, SearchHit, ApiIndex, Person } from './client.js';
+export { StockLogosClient, ApiError, DEFAULT_BASE_URL, rankRows } from './client.js';
+export type { Company, CompanyRow, Market, SearchHit, ApiIndex, Person, IndexRow } from './client.js';
 export { StockLogo } from './StockLogo.js';
 export type { StockLogoProps, StockMarket } from './StockLogo.js';
 
@@ -11,7 +11,8 @@ export function getGlobalStockLogoUrls(
   market: string = 'AUTO', 
   repo: string = 'MrChartist/global-stock-logos'
 ) {
-  const sym = (symbol || 'NA').toUpperCase().trim().replace(/[^A-Za-z0-9_.-]/g, '');
+  // Keep '&' (M&M, ARE&M have their own files) and encode it for the URL.
+  const sym = encodeURIComponent((symbol || 'NA').toUpperCase().trim().replace(/[^A-Za-z0-9_.&-]/g, ''));
   const mkt = market.toUpperCase() === 'AUTO' ? '' : market.toLowerCase();
   const cdnBase = `https://cdn.jsdelivr.net/gh/${repo}@main/logos`;
 

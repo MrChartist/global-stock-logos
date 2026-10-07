@@ -46,7 +46,10 @@ if (CHECK) {
 
 const meta = JSON.parse(fs.readFileSync(path.join(ROOT, 'companies-metadata.json'), 'utf-8'));
 
-const pngWidth = (f) => { const b = fs.readFileSync(f); return b.readUInt32BE(16); };
+// Width of a real PNG; 0 for anything else. Some older .png files are JPEG or WebP data: reading their bytes as a PNG
+// header gave 65536 px, so they were never upgraded. Treating them as weak lets --fix replace them with the real SVG.
+const PNG_SIGNATURE = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]);
+const pngWidth = (f) => { const b = fs.readFileSync(f); return b.subarray(0, 8).equals(PNG_SIGNATURE) ? b.readUInt32BE(16) : 0; };
 const dirs = fs.readdirSync(LOGOS).filter((d) => fs.statSync(path.join(LOGOS, d)).isDirectory());
 const stats = { upgraded: 0, removedEmpty: 0, idsFixed: 0, noRealLogo: [], lowResPng: [], invalid: [] };
 

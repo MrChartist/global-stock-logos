@@ -26,7 +26,8 @@
     "quality:fix": "node scripts/quality.js --fix",
     "lighthouse": "node scripts/lighthouse.js",
     "aliases": "node scripts/apply-aliases.js",
-    "aliases:check": "node scripts/apply-aliases.js --check"
+    "aliases:check": "node scripts/apply-aliases.js --check",
+    "coverage": "node scripts/coverage.js"
   },
   "keywords": [
     "stock-logos",
@@ -86,6 +87,7 @@
     "docs"
   ],
   "devDependencies": {
+    "@types/react": "^19.3.0",
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
     "lighthouse": "^13.5.0",

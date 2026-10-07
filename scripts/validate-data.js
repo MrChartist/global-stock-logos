@@ -6,7 +6,7 @@
  *
  * Errors: malformed ISIN (format or check digit), colour, currency, country code, flag, URL, founding year,
  *         employee count, market cap; manifest entries whose files are missing.
- * Warnings: market data older than 45 days.
+ * Warnings: market data older than 45 days; listings the market scan no longer returns (their last data keeps its date).
  * Writes data-quality-report.json.
  */
 import fs from 'fs';
@@ -50,6 +50,7 @@ const rules = {
     capCurrency: (v) => /^[A-Z]{3}$/.test(v),
     cik: (v) => /^\d{10}$/.test(v),
     ceo: (v) => typeof v === 'string' && v.length > 1 && v.length < 120 && !/^Q\d+$/.test(v),
+    ceoSince: (v) => /^\d{4}-\d{2}-\d{2}$/.test(v) && v >= '1800-01-01' && v <= new Date().toISOString().slice(0, 10),
     wikidata: (v) => /^Q\d+$/.test(v),
     lei: (v) => /^[A-Z0-9]{18}[0-9]{2}$/.test(v),
 };
@@ -80,7 +81,9 @@ for (const f of fs.readdirSync(path.join(ROOT, 'enrichment'))) {
             }
         }
         if (rec.countryCode && rec.flag && flag(rec.country) !== rec.flag) { bump(errors, 'flagMismatch'); if (FIX) { rec.flag = flag(rec.country); changed = true; fixed++; } }
-        if (rec.marketDataAt && (today - Date.parse(rec.marketDataAt)) / 864e5 > 45) warnings.staleMarketData++;
+        // A listing the market scan no longer returns (delisted, renamed, a fund) keeps its last known data and date.
+        if (rec.notInScan) bump(warnings, 'notInMarketScan');
+        else if (rec.marketDataAt && (today - Date.parse(rec.marketDataAt)) / 864e5 > 45) warnings.staleMarketData++;
     }
     if (changed) saveShard(market, shard);
 }

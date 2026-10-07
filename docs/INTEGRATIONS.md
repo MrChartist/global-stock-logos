@@ -8,7 +8,7 @@ Ways to show a company logo or read its profile from your own app. All of them u
 <img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos/in/TCS.svg" width="32" height="32" alt="TCS logo">
 ```
 
-The path is `logos/<market>/<TICKER>.svg`. Market folders are lower-case (`us`, `in`, `uk`, `japan`, `korea`, ...). The list is in [`logos-manifest.json`](../logos-manifest.json). For 107 older companies only a `.png` exists; the API's `logo.file.url` always gives the right file.
+The path is `logos/<market>/<TICKER>.svg`. Market folders are lower-case (`us`, `in`, `uk`, `japan`, `korea`, ...). The list is in [`logos-manifest.json`](../logos-manifest.json). For a few older companies (45 in October 2026) only a `.png` exists; the API's `logo.file.url` always gives the right file.
 
 ## The typed JavaScript client
 
