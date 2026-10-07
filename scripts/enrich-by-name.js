@@ -13,6 +13,7 @@ import fs from 'fs';
 import path from 'path';
 import { MARKETS } from './markets.js';
 import { ROOT, loadShard, saveShard, similar } from './enrich-store.js';
+import { fetchOfficers } from './wikidata-officers.js';
 
 const UA = 'global-stock-logos/1.0 (https://github.com/MrChartist/global-stock-logos; contact@mrchartist.com)';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -66,21 +67,23 @@ async function wikidataByName(company, cc) {
 }
 async function sparqlFacts(qids, cc) {
     const q = `SELECT ?i (SAMPLE(?web) AS ?website) (MIN(YEAR(?inc)) AS ?founded) (SAMPLE(?hql) AS ?hq)
-      (GROUP_CONCAT(DISTINCT ?ceol; separator=" / ") AS ?ceo) (MAX(?emp) AS ?employees) (GROUP_CONCAT(DISTINCT ?alt; separator="|") AS ?aliases) WHERE {
+      (MAX(?emp) AS ?employees) (GROUP_CONCAT(DISTINCT ?alt; separator="|") AS ?aliases) WHERE {
       VALUES ?i { ${qids.map((x) => `wd:${x}`).join(' ')} }
       ?i wdt:P31/wdt:P279* wd:Q4830453.
       { ?i wdt:P17 ?c. ?c wdt:P297 "${cc}". } UNION { ?i wdt:P159/wdt:P17 ?c2. ?c2 wdt:P297 "${cc}". }
       OPTIONAL { ?i wdt:P856 ?web } OPTIONAL { ?i wdt:P571 ?inc } OPTIONAL { ?i wdt:P1128 ?emp }
       OPTIONAL { ?i wdt:P159 ?hqi. ?hqi rdfs:label ?hql. FILTER(LANG(?hql)="en") }
-      OPTIONAL { ?i p:P169 ?cst. ?cst ps:P169 ?ceoi. FILTER NOT EXISTS { ?cst pq:P582 ?cend } ?ceoi rdfs:label ?ceol. FILTER(LANG(?ceol)="en") }
       OPTIONAL { ?i skos:altLabel ?alt. FILTER(LANG(?alt)="en") }
     } GROUP BY ?i`;
     const j = await getJson('https://query.wikidata.org/sparql', { method: 'POST', headers: { Accept: 'application/sparql-results+json', 'Content-Type': 'application/x-www-form-urlencoded' }, body: 'format=json&query=' + encodeURIComponent(q) });
     if (!j) return null;
+    const found = j.results.bindings.map((r) => qid(r.i.value));
+    // The current CEO by rank and start date (wikidata-officers.js), not every CEO without an end date.
+    const officers = await fetchOfficers(async (query) => (await getJson('https://query.wikidata.org/sparql', { method: 'POST', headers: { Accept: 'application/sparql-results+json', 'Content-Type': 'application/x-www-form-urlencoded' }, body: 'format=json&query=' + encodeURIComponent(query) }))?.results.bindings ?? null, found, today);
     const out = new Map();
     for (const r of j.results.bindings) out.set(qid(r.i.value), {
         website: r.website?.value || null, founded: r.founded && +r.founded.value > 0 ? +r.founded.value : null,
-        headquarters: r.hq?.value || null, ceo: r.ceo?.value ? r.ceo.value.split(' / ').slice(0, 2).join(' / ') : null,
+        headquarters: r.hq?.value || null, ...(officers?.get(qid(r.i.value)) || { ceo: null, ceoSince: null }),
         employees: r.employees ? Math.round(+r.employees.value) : null, aliases: (r.aliases?.value || '').split('|').filter(Boolean).slice(0, 8),
     });
     return out;
@@ -130,6 +133,7 @@ for (const w of work.slice(0, limit)) {
         if (f) {
             let n = 0;
             for (const field of ['website', 'founded', 'headquarters', 'ceo', 'aliases', 'employees']) n += setIfEmpty(rec, field, f[field], 'wikidata-name');
+            if (rec.sources?.ceo === 'wikidata-name' && rec.ceo === f.ceo) rec.ceoSince = f.ceoSince;
             rec.wikidata = f.q; rec.wikidataMatch = 'name+country';
             if (n) wd++;
         }

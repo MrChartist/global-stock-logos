@@ -38,4 +38,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(catalog): daily sync of new listings and manifests [skip ci]"
-          file_pattern: "api logos manifests logos-manifest.json search-index.json companies-metadata.json logo-sources.json quality-report.json"
+          file_pattern: "api logos manifests logos-manifest.json search-index.json search-index-top.json companies-metadata.json logo-sources.json quality-report.json"

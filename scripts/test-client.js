@@ -38,6 +38,36 @@ await t('top rows are the first rows of the full index and much smaller', async 
 await t('search ranks exact ticker first', async () => { const h = await api.search('aapl', { market: 'us' }); assert.equal(h[0].ticker, 'AAPL'); });
 await t('search by name', async () => { const h = await api.search('tata consultancy', { market: 'in', limit: 5 }); assert.ok(h.some((x) => x.ticker === 'TCS')); });
 await t('search limit and empty query', async () => { assert.equal((await api.search('a', { limit: 7 })).length, 7); assert.deepEqual(await api.search('   '), []); });
+await t('search finds exchange spellings and former tickers', async () => {
+    assert.match((await api.search('m&m', { market: 'in', limit: 1 }))[0].name, /Mahindra/);
+    assert.equal((await api.search('zomato', { limit: 1 }))[0].ticker, 'ETERNAL');
+    assert.equal((await api.search('bajaj-auto', { limit: 1 }))[0].market, 'IN');
+});
+await t('search puts the home listing above copies elsewhere', async () => {
+    assert.equal((await api.search('lvmh', { limit: 1 }))[0].ticker, 'MC');
+    assert.equal((await api.search('toyota', { limit: 1 }))[0].ticker, '7203');
+    const nvda = await api.search('nvda', { limit: 5 });
+    assert.equal(nvda[0].market, 'US'); assert.ok(nvda.slice(1).every((h) => h.secondaryListing));
+});
+await t('market lists: main listings first, copies after', async () => {
+    const l = await api.market('chile');
+    const firstCopy = l.findIndex((r) => r.secondaryListing);
+    assert.ok(firstCopy > 0 && l.slice(firstCopy).every((r) => r.secondaryListing));
+});
+await t('officers carry a start date; curated values name their source', async () => {
+    const tcs = await api.company('in', 'TCS');
+    assert.equal(tcs.profile.ceo.source, 'curated'); assert.equal(tcs.profile.ceo.confidence, 'medium'); assert.equal(tcs.profile.ceo.since, '2023-06-01');
+    const msft = await api.company('us', 'MSFT');
+    assert.equal(msft.profile.ceo.confidence, 'low'); assert.match(msft.profile.ceo.since, /^\d{4}-\d{2}-\d{2}$/);
+});
+await t('market cap in the reporting currency converts exactly', async () => {
+    const tcs = await api.company('in', 'TCS');
+    assert.equal(tcs.marketCap.inr, Math.round(tcs.marketCap.local));
+});
+await t('an alias file says which company it repeats', async () => {
+    const z = await api.company('in', 'ZOMATO');
+    assert.equal(z.aliasOf, 'ETERNAL'); assert.equal((await api.company('in', 'ETERNAL')).aliasOf, null);
+});
 await t('unknown company is a typed 404', async () => { await assert.rejects(() => api.company('in', 'NOSUCHTICKER'), (e) => e instanceof ApiError && e.status === 404); });
 await t('failures are not cached', async () => { await assert.rejects(() => api.company('in', 'NOSUCHTICKER')); });
 await t('logo urls', () => {

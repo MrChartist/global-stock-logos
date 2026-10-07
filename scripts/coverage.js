@@ -8,7 +8,7 @@ import { loadShard } from './enrich-store.js';
 
 const want = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 const keys = want.length ? want : Object.keys(MARKETS);
-const FIELDS = ['website', 'founded', 'listingDate', 'employees', 'ceo', 'chairman', 'lei'];
+const FIELDS = ['website', 'founded', 'listingDate', 'employees', 'ceo', 'ceoSince', 'chairman', 'lei'];
 const rows = [];
 for (const k of keys) {
     if (!MARKETS[k]) { console.warn(`unknown market ${k}`); continue; }

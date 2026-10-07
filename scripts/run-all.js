@@ -45,7 +45,7 @@ function remaining() {
         const shard = loadShard(key);
         for (const [sym, v] of Object.entries(shard)) {
             out.total++;
-            if (stale(v.marketDataAt)) out.marketData++;
+            if (stale(v.marketCheckedAt || v.marketDataAt)) out.marketData++;
             if (stale(v.wikidataAt)) out.wikidataProfile++;
             if (v.isin && stale(v.gleifAt)) out.registryGleif++;
             if (v.brandColor === undefined) out.brandColour++;

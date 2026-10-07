@@ -5,14 +5,19 @@
  *   1. ISIN (Wikidata P946) — exact, no ticker clashes.
  *   2. Ticker (P249) AND company-name similarity >= 0.75.
  * Facts are only written when a match exists; anything else stays null (Needs verification).
+ * A field that another source filled (an exchange or registry, recorded in rec.sources) is never overwritten or
+ * cleared here: those sources are kept by a vendor and rank above community data.
+ * CEO: the current one by rank and start date, with the start date kept as ceoSince (see wikidata-officers.js).
  * Records older than --max-age-days (default 30) are refreshed, so a monthly run keeps data current.
  *
  *   node scripts/enrich-wikidata.js [--markets us,in] [--max-age-days 30] [--max-minutes 300]
+ *   node scripts/enrich-wikidata.js --facts-only    re-read the facts of companies already matched (no new matching)
  */
 import fs from 'fs';
 import path from 'path';
 import { MARKETS } from './markets.js';
 import { ROOT, loadShard, saveShard } from './enrich-store.js';
+import { fetchOfficers } from './wikidata-officers.js';
 
 const UA = 'global-stock-logos/1.0 (https://github.com/MrChartist/global-stock-logos; contact@mrchartist.com)';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -20,6 +25,7 @@ const args = process.argv.slice(2);
 const opt = (n, d) => (args.includes(n) ? args[args.indexOf(n) + 1] : d);
 const keys = opt('--markets') ? opt('--markets').split(',') : Object.keys(MARKETS);
 const maxAge = parseInt(opt('--max-age-days', '30'), 10);
+const factsOnly = args.includes('--facts-only');
 const deadline = Date.now() + parseInt(opt('--max-minutes', '300'), 10) * 60000;
 const today = new Date().toISOString().slice(0, 10);
 const stale = (d) => !d || (Date.parse(today) - Date.parse(d)) / 864e5 >= maxAge;
@@ -49,6 +55,8 @@ async function sparql(q) {
     return null;
 }
 const qid = (u) => u.split('/').pop();
+/** A value filled by an exchange or registry (not by a Wikidata pass) stays: see the header. */
+const ownedByOtherSource = (rec, field) => rec[field] != null && !!rec.sources?.[field] && !/^wikidata/.test(rec.sources[field]);
 const chunks = (arr, n) => Array.from({ length: Math.ceil(arr.length / n) }, (_, i) => arr.slice(i * n, i * n + n));
 
 /** Step 1: ISIN / ticker -> Wikidata item ids. */
@@ -83,20 +91,21 @@ async function getFacts(qids) {
     for (const c of chunks(qids, 120)) {
         const rows = await sparql(`SELECT ?i
           (SAMPLE(?web) AS ?website) (MIN(YEAR(?inc)) AS ?founded)
-          (SAMPLE(?hql) AS ?hq) (GROUP_CONCAT(DISTINCT ?ceol; separator=" / ") AS ?ceo) (MAX(?emp) AS ?employees)
+          (SAMPLE(?hql) AS ?hq) (MAX(?emp) AS ?employees)
           (GROUP_CONCAT(DISTINCT ?alt; separator="|") AS ?aliases) WHERE {
           VALUES ?i { ${c.map((q) => `wd:${q}`).join(' ')} }
           OPTIONAL { ?i wdt:P856 ?web } OPTIONAL { ?i wdt:P571 ?inc } OPTIONAL { ?i wdt:P1128 ?emp }
           OPTIONAL { ?i wdt:P159 ?hqi. ?hqi rdfs:label ?hql. FILTER(LANG(?hql)="en") }
-          OPTIONAL { ?i p:P169 ?cst. ?cst ps:P169 ?ceoi. FILTER NOT EXISTS { ?cst pq:P582 ?cend }
-            ?ceoi rdfs:label ?ceol. FILTER(LANG(?ceol)="en") }
           OPTIONAL { ?i skos:altLabel ?alt. FILTER(LANG(?alt)="en") }
         } GROUP BY ?i`);
         if (!rows) return facts;
+        const officers = await fetchOfficers(sparql, c, today);
+        if (!officers) return facts;
         for (const r of rows) facts.set(qid(r.i.value), {
             website: r.website?.value || null,
             founded: r.founded && +r.founded.value > 0 ? +r.founded.value : null,
-            headquarters: r.hq?.value || null, ceo: r.ceo?.value ? r.ceo.value.split(' / ').slice(0, 2).join(' / ') : null,
+            headquarters: r.hq?.value || null,
+            ...(officers.get(qid(r.i.value)) || { ceo: null, ceoSince: null }),
             employees: r.employees ? Math.round(+r.employees.value) : null,
             aliases: (r.aliases?.value || '').split('|').filter(Boolean).slice(0, 8),
         });
@@ -109,11 +118,14 @@ for (const key of keys) {
     if (!MARKETS[key]) continue;
     if (Date.now() > deadline) { console.log('Time budget reached; rerun to continue (resumable).'); break; }
     const shard = loadShard(key);
+    // --facts-only: companies this script matched before (by ISIN or ticker+name), whatever their age.
     const todo = Object.entries(shard)
-        .filter(([, v]) => stale(v.wikidataAt))
+        .filter(([, v]) => (factsOnly ? v.wikidata && ['isin', 'ticker+name'].includes(v.wikidataMatch) : stale(v.wikidataAt)))
         .map(([sym, v]) => ({ id: `${key}:${sym}`, sym, isin: v.isin, company: meta[`${key.toUpperCase()}:${sym}`]?.company || sym }));
     if (!todo.length) { console.log(`[${key}] up to date`); continue; }
-    const items = await findItems(todo);
+    const items = factsOnly
+        ? new Map(todo.map((t) => [t.id, { q: shard[t.sym].wikidata, how: shard[t.sym].wikidataMatch }]))
+        : await findItems(todo);
     const facts = await getFacts([...new Set([...items.values()].map((v) => v.q))]);
     let matched = 0;
     for (const t of todo) {
@@ -121,11 +133,13 @@ for (const key of keys) {
         const rec = shard[t.sym];
         if (it && facts.has(it.q)) {
             const f = facts.get(it.q); matched++;
-            Object.assign(rec, {
-                wikidata: it.q, wikidataMatch: it.how, website: f.website, founded: f.founded,
-                headquarters: f.headquarters, ceo: f.ceo, aliases: f.aliases,
-                employees: rec.employees ?? f.employees,
-            });
+            Object.assign(rec, { wikidata: it.q, wikidataMatch: it.how, employees: rec.employees ?? f.employees });
+            for (const field of ['website', 'founded', 'headquarters', 'ceo', 'aliases']) {
+                if (ownedByOtherSource(rec, field)) continue;
+                rec[field] = f[field];
+                if (rec.sources) delete rec.sources[field]; // no source entry = Wikidata (matched by ISIN or ticker)
+                if (field === 'ceo') rec.ceoSince = f.ceo ? f.ceoSince : null;
+            }
         }
         rec.wikidataAt = today; // checked today, even when no match, so the next run skips it until it is stale
     }

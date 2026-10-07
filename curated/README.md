@@ -10,7 +10,11 @@ Add hand-checked facts here. They always win over automatic data and are never o
 }
 ```
 
-Allowed fields: any profile field (`website`, `founded`, `headquarters`, `ceo`, `employees`, `slogan`, `brandColor`, `aliases`, ...). Add a source link in your pull request. Do not add slogans you cannot source.
+Allowed fields: any profile field (`website`, `founded`, `headquarters`, `ceo`, `ceoSince`, `employees`, `slogan`, `brandColor`, `aliases`, ...). Write where the fact comes from in `_source` (keys that start with `_` are notes and are not published). Do not add slogans you cannot source.
+
+A curated value is published with the source `curated` (and, for a CEO or chairman, confidence `medium`), so the API never credits it to the automatic source it replaced.
+
+When to curate: a fact that is wrong in every automatic source, typically a CEO who left but is still listed on Wikidata without an end date. Better still, also fix it on Wikidata (add the end date, mark the new CEO as preferred), so every user of Wikidata benefits and the next monthly refresh agrees with the override.
 
 ## aliases.json
 

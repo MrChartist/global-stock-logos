@@ -2,7 +2,9 @@
  * refresh-metadata.js — Monthly refresh of market data for every logo in the catalog.
  * Source: TradingView scanner (one request page covers thousands of companies).
  * Updates companies-metadata.json (company, sector, industry, marketCap) and
- * enrichment/<market>.json (currency, exchange, isin, employees, country, flag, marketDataAt).
+ * enrichment/<market>.json (currency, exchange, isin, employees, type, country, flag, marketDataAt, marketCheckedAt).
+ * marketDataAt is the date of the market data itself; marketCheckedAt is the date we last looked (also for listings
+ * the scan no longer returns).
  *
  *   node scripts/refresh-metadata.js [--markets us,in]
  */
@@ -47,6 +49,12 @@ try {
     if (j?.result === 'success') { fx = { date: now, source: 'open.er-api.com', rates: j.rates }; fs.writeFileSync(FX_FILE, JSON.stringify(fx)); }
 } catch {}
 if (!Object.keys(fx.rates).length) console.warn('No exchange rates available: marketCapUsd will be left empty');
+/** Market cap in another currency; exact (no round trip through USD) when the currency is the same. */
+const convert = (amount, from, to) => {
+    if (!amount || !from) return null;
+    if (from === to) return Math.round(amount);
+    return fx.rates[from] && fx.rates[to] ? Math.round((amount / fx.rates[from]) * fx.rates[to]) : null;
+};
 const meta = JSON.parse(fs.readFileSync(META, 'utf-8'));
 for (const key of keys) {
     const cfg = MARKETS[key]; if (!cfg) continue;
@@ -76,18 +84,20 @@ for (const key of keys) {
         shard[sym] = {
             ...(shard[sym] || {}),
             currency: currency || null, exchange: exchange || null, isin: isin || null,
-            employees: Number.isInteger(employees) && employees > 0 ? employees : null, // fractional values are not head-counts type: type || null,
+            employees: Number.isInteger(employees) && employees > 0 ? employees : null, // fractional values are not head-counts
+            type: type || null, // 'stock' or 'dr' (depositary receipt): ranks secondary listings below home listings
             country: country || cfg.country, countryCode: iso2(country || cfg.country), flag: flag(country || cfg.country),
             capCurrency: capCurrency || null,
-            marketCapUsd: mcap && fx.rates[capCurrency] ? Math.round(mcap / fx.rates[capCurrency]) : null,
-            marketCapInr: mcap && fx.rates[capCurrency] && fx.rates.INR ? Math.round((mcap / fx.rates[capCurrency]) * fx.rates.INR) : null,
-            marketDataAt: now,
+            marketCapUsd: convert(mcap, capCurrency, 'USD'),
+            marketCapInr: convert(mcap, capCurrency, 'INR'),
+            marketDataAt: now, marketCheckedAt: now,
         };
     }
-    // Logos whose company is no longer in the scan (delisted, renamed): mark as checked so they are not retried forever.
+    // Logos whose company is no longer in the scan (delisted, renamed, or a fund): mark as checked so they are not retried
+    // forever, but keep marketDataAt as it was. The last known market cap then keeps its real date instead of looking fresh.
     for (const sym of have) {
         if (done.has(sym)) { if (shard[sym]) delete shard[sym].notInScan; continue; }
-        shard[sym] = { ...(shard[sym] || {}), marketDataAt: now, notInScan: true };
+        shard[sym] = { ...(shard[sym] || {}), marketCheckedAt: now, notInScan: true };
     }
     saveShard(key, shard);
     console.log(`[${key}] refreshed ${n} of ${have.size} logos`);

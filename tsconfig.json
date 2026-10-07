@@ -8,7 +8,8 @@
     "strict": true,
     "lib": ["ES2022", "DOM"],
     "noEmit": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "jsx": "react-jsx"
   },
-  "include": ["src/client.js"]
+  "include": ["src/client.js", "src/StockLogo.tsx", "src/index.ts"]
 }

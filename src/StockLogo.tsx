@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 /** 'AUTO', or any market folder name in logos/ (e.g. 'us', 'in', 'uk', 'japan', 'korea'). Case-insensitive. */
 export type StockMarket = string;
@@ -54,25 +54,29 @@ export const StockLogo: React.FC<StockLogoProps> = ({
   ...rest
 }) => {
   const [sourceIndex, setSourceIndex] = useState(0);
-  const sym = (symbol || 'NA').toUpperCase().trim().replace(/[^A-Za-z0-9_.-]/g, '');
+  // Keep '&': exchange tickers such as M&M and ARE&M have their own logo files (curated/aliases.json).
+  const sym = (symbol || 'NA').toUpperCase().trim().replace(/[^A-Za-z0-9_.&-]/g, '');
+  const file = encodeURIComponent(sym);
+  // A reused component (a list row showing another company) must start the waterfall again.
+  useEffect(() => setSourceIndex(0), [sym, market, cdnRepo]);
 
   const mkt = market.toUpperCase() === 'AUTO' ? '' : market.toLowerCase();
   const baseUrl = `https://cdn.jsdelivr.net/gh/${cdnRepo}@main/logos`;
 
   const sources: string[] = [];
   if (mkt) {
-    sources.push(`${baseUrl}/${mkt}/${sym}.svg`);
-    sources.push(`${baseUrl}/${mkt}/${sym}.png`);
+    sources.push(`${baseUrl}/${mkt}/${file}.svg`);
+    sources.push(`${baseUrl}/${mkt}/${file}.png`);
   }
-  sources.push(`${baseUrl}/${sym}.svg`);
-  sources.push(`${baseUrl}/${sym}.png`);
+  sources.push(`${baseUrl}/${file}.svg`);
+  sources.push(`${baseUrl}/${file}.png`);
   if (mkt === 'in' || !mkt) {
-    sources.push(`${baseUrl}/in/${sym}.svg`);
-    sources.push(`${baseUrl}/in/${sym}.png`);
+    sources.push(`${baseUrl}/in/${file}.svg`);
+    sources.push(`${baseUrl}/in/${file}.png`);
   }
   if (mkt === 'us' || !mkt) {
-    sources.push(`${baseUrl}/us/${sym}.svg`);
-    sources.push(`${baseUrl}/us/${sym}.png`);
+    sources.push(`${baseUrl}/us/${file}.svg`);
+    sources.push(`${baseUrl}/us/${file}.png`);
   }
 
   // If all CDN sources fail or image errors out, render procedural badge

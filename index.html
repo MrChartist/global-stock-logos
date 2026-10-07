@@ -79,7 +79,7 @@
       <div class="stats" id="stats" aria-label="Catalogue size">
         <div><b id="statCompanies">…</b><span>companies</span></div>
         <div><b id="statMarkets">…</b><span>markets</span></div>
-        <div><b id="statRefreshed">…</b><span>data refreshed</span></div>
+        <div><b id="statRefreshed">…</b><span>catalogue updated</span></div>
       </div>
 
       <form class="controls" id="controls" role="search" autocomplete="off">
@@ -95,7 +95,7 @@
         </label>
         <fieldset class="seg" id="sort" aria-label="Sort order">
           <legend class="sr">Sort order</legend>
-          <label><input type="radio" name="sort" value="cap" checked><span>Largest</span></label>
+          <label><input type="radio" name="sort" value="cap" checked><span id="sortCapLabel">Largest</span></label>
           <label><input type="radio" name="sort" value="name"><span>Name</span></label>
           <label><input type="radio" name="sort" value="ticker"><span>Ticker</span></label>
         </fieldset>
@@ -105,7 +105,7 @@
       <ul id="results" class="grid" aria-label="Companies"></ul>
       <div id="sentinel" class="sentinel" aria-hidden="true"></div>
       <button id="more" class="btn btn-glass more" type="button" hidden>Show more</button>
-      <p id="empty" class="empty" hidden>No company matches. Try a ticker, or part of the company name.</p>
+      <p id="empty" class="empty" hidden>No company matches. Try a ticker (M&amp;M and old tickers work too), part of the company name, or fewer letters.<span id="emptyHint"></span></p>
       <p id="error" class="empty error" hidden>The catalogue could not be loaded. Check your connection and reload.</p>
     </section>
   </main>
@@ -116,7 +116,7 @@
       <button class="close" id="dClose" type="button" aria-label="Close">
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
       </button>
-      <div id="dBody" aria-live="polite"></div>
+      <div id="dBody"></div>
     </div>
   </dialog>
 

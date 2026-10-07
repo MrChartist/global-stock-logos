@@ -19,7 +19,7 @@ A project by **[@MrChartist](https://mrchartist.com)** · [mrchartist.com](https
 
 ## What you get
 
-- **Logos.** A vector SVG for every company (PNG sizes 64 to 512 px for the 3,000 largest), served free by the jsDelivr CDN.
+- **Logos.** A vector SVG for almost every company (PNG sizes 64 to 512 px for the 3,000 largest companies), served free by the jsDelivr CDN.
 - **A company profile.** Name, ISIN, sector, exchange, market cap in local currency, **USD and INR**, website, founding year, headquarters, employees, CEO and chairman, listing date, and a brand colour. Unknown values are `null`; we do not guess.
 - **A static JSON API.** One small file per company, with an [OpenAPI spec](./api/v1/openapi.json), a [JSON Schema](./api/v1/schema/company.schema.json) and a [typed JavaScript client](./src/client.js). No key, no server.
 - **A catalogue page.** Search, filter by market, open any company and copy ready-made embed code: [`index.html`](./index.html). It follows the look of mrchartist.com (light and dark themes, glass navigation, iOS-style detail sheet; see [docs/DESIGN.md](./docs/DESIGN.md)) and scores 99 to 100 in every Lighthouse category on mobile and desktop. Links can carry state: `?q=tata&market=IN&sort=name`, `#/IN/TCS` for a company, and `?theme=dark` or `?theme=light`.
@@ -69,17 +69,17 @@ const hits = await api.search('samsung', { limit: 5 });
 ```
 index.html, assets/             The catalogue page (no build step; works on GitHub Pages)
 logos/<market>/<TICKER>.svg     Logo files, one folder per market
-png/<size>/<market>/            PNG sizes (64, 128, 256, 512) for the 3,000 largest companies
+png/<size>/<market>/            PNG sizes (64, 128, 256, 512) for the 3,000 largest companies (counted once, not per listing)
 api/v1/                         The static JSON API (generated)
 manifests/<market>.json         Company profiles per market (generated)
 logos-manifest.json             Summary, market names and index of market files
-search-index.json               Compact search index, largest companies first (5 MB)
+search-index.json               Compact search index: main listings first, largest first (5 MB)
 search-index-top.json           The 2,000 largest companies of it (158 KB), for a fast first screen
 enrichment/<market>.json        Raw profile data with sources and retrieval dates
 companies-metadata.json         Company metadata used to build the manifests
 fx-rates.json                   Exchange rates used for market cap in USD and INR
 *-report.json, pipeline-status.json   Results of the last checks and pipeline run
-curated/overrides.json          Hand-checked facts that always win (slogans, corrections)
+curated/overrides.json          Hand-checked facts that always win (slogans, corrections such as a CEO), with a _source note
 src/                            API client (client.js, client.d.ts) and a React component
 scripts/                        The pipeline, checks and generators (run-all.js runs it all)
 docs/                           Documentation
@@ -101,7 +101,7 @@ npm run lighthouse       # Lighthouse scores of the page: mobile, desktop, light
 npm run typecheck        # type-check the client
 ```
 
-Other steps, one at a time: `bulk`, `refresh`, `enrich`, `registries`, `colors`, `png`, `quality`, `quality:fix`, `validate`.
+Other steps, one at a time: `bulk`, `refresh`, `enrich`, `registries`, `colors`, `png`, `quality`, `quality:fix`, `validate`, `coverage`.
 
 ## Renamed companies and tickers with special characters
 
