@@ -1,7 +1,7 @@
 {
   "name": "Global Stock Logos Catalog (World)",
   "version": "3.0.0",
-  "updatedAt": "2026-10-10T08:05:08.317Z",
+  "updatedAt": "2026-10-11T08:16:17.422Z",
   "totalEquities": 77760,
   "stats": {
     "markets": {
@@ -152,7 +152,7 @@
     "VENEZUELA": "Venezuela",
     "SLOVENIA": "Slovenia"
   },
-  "dataRefreshedAt": "2026-10-10",
+  "dataRefreshedAt": "2026-10-11",
   "pngSizes": [
     64,
     128,
