@@ -1,12 +1,12 @@
 {
   "name": "Global Stock Logos Catalog (World)",
   "version": "3.0.0",
-  "updatedAt": "2026-10-18T06:57:11.640Z",
-  "totalEquities": 78902,
+  "updatedAt": "2026-10-19T07:17:57.430Z",
+  "totalEquities": 78927,
   "stats": {
     "markets": {
       "ARGENTINA": 1488,
-      "AUSTRALIA": 1658,
+      "AUSTRALIA": 1659,
       "AUSTRIA": 1093,
       "BAHRAIN": 30,
       "BANGLADESH": 351,
@@ -23,17 +23,17 @@
       "ESTONIA": 28,
       "FINLAND": 190,
       "FRANCE": 619,
-      "GERMANY": 9008,
+      "GERMANY": 9021,
       "GREECE": 143,
       "HONGKONG": 2602,
       "HUNGARY": 76,
       "ICELAND": 29,
-      "IN": 6028,
+      "IN": 6029,
       "INDONESIA": 843,
       "IRELAND": 18,
       "ISRAEL": 531,
       "ITALY": 1784,
-      "JAPAN": 3868,
+      "JAPAN": 3869,
       "KENYA": 57,
       "KOREA": 2749,
       "KSA": 389,
@@ -63,19 +63,19 @@
       "SPAIN": 294,
       "SRILANKA": 291,
       "SWEDEN": 1093,
-      "SWITZERLAND": 1185,
+      "SWITZERLAND": 1188,
       "TAIWAN": 2310,
       "THAILAND": 2259,
       "TUNISIA": 71,
       "TURKEY": 605,
       "UAE": 159,
-      "UK": 3885,
+      "UK": 3886,
       "US": 14076,
       "VENEZUELA": 32,
-      "VIETNAM": 1299
+      "VIETNAM": 1304
     },
     "formats": {
-      "svg": 78799,
+      "svg": 78824,
       "png": 103
     }
   },
@@ -152,7 +152,7 @@
     "VENEZUELA": "Venezuela",
     "SLOVENIA": "Slovenia"
   },
-  "dataRefreshedAt": "2026-10-18",
+  "dataRefreshedAt": "2026-10-19",
   "pngSizes": [
     64,
     128,
