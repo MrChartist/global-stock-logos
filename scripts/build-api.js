@@ -5,6 +5,8 @@
  *   api/v1/markets.json                        every market with country, currency, company count
  *   api/v1/markets/<market>.json               slim list of the market's companies, largest first
  *   api/v1/companies/<market>/<TICKER>.json    the full profile of one company
+ *   api/v1/brands.json                         every brand (consumer brand, sub-brand, subsidiary) with its listed parent
+ *   api/v1/brands/<slug>.json                  one brand
  *   api/v1/schema/company.schema.json          JSON Schema of a company
  *   api/v1/openapi.json                        OpenAPI 3.1 description of all of the above
  *
@@ -15,6 +17,7 @@ import fs from 'fs';
 import path from 'path';
 import { ROOT } from './enrich-store.js';
 import { MARKETS } from './markets.js';
+import { loadBrands, BRAND_PNG_SIZES } from './brands.js';
 
 export const API_VERSION = 'v1';
 const OUT = path.join(ROOT, 'api', API_VERSION);
@@ -22,10 +25,39 @@ const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'logos-manifest.json
 const CDN = manifest.cdnBase.replace(/\/logos$/, '');
 const API_BASE = `${CDN}/api/${API_VERSION}`;
 
-/** Wikidata officers can be years out of date; exchange and registry officers are kept by a vendor. */
-const confidence = (source) => (source === 'wikidata' || source === 'wikidata-name' ? 'low' : 'medium');
+/** Wikidata officers can be years out of date; exchange and registry officers are kept by a vendor;
+ *  a URL is a hand check against the company's own page or filing (curated/overrides.json). */
+const confidence = (source) => (source === 'wikidata' || source === 'wikidata-name' ? 'low' : /^https?:\/\//.test(source || '') ? 'high' : 'medium');
 const person = (name, source) => (name ? { name, source: source || 'unknown', confidence: confidence(source) } : null);
 const clean = (o) => (o && Object.keys(o).length ? o : null);
+
+const BRANDS = loadBrands();
+const brandsOf = new Map();
+for (const b of BRANDS) for (const owner of [b.parent, ...(b.otherListedOwners || [])]) {
+    if (!brandsOf.has(owner)) brandsOf.set(owner, []);
+    brandsOf.get(owner).push(b);
+}
+
+export function brandUrls(b) {
+    return {
+        svg: `${CDN}/${b.logo}`,
+        mark: b.mark ? `${CDN}/${b.mark}` : null,
+        png: Object.fromEntries(BRAND_PNG_SIZES.map((s) => [s, `${CDN}/brands/png/${s}/${b.slug}.png`])),
+    };
+}
+
+export function toBrand(b) {
+    const [market, ticker] = b.parent.split(':');
+    return {
+        slug: b.slug, name: b.name, kind: b.kind, category: b.category ?? null, description: b.description ?? null,
+        parent: { market, ticker, url: `${API_BASE}/companies/${market.toLowerCase()}/${encodeURIComponent(ticker)}.json` },
+        otherListedOwners: b.otherListedOwners || [],
+        website: b.website ?? null, wikidata: b.wikidata ?? null, brandColor: b.brandColor ?? null, onDark: !!b.onDark,
+        logo: brandUrls(b),
+        sources: { logo: b.logoSource, logoType: b.logoSourceType, ownership: b.ownershipSource ?? null, checkedAt: b.checkedAt ?? null },
+        links: { self: `${API_BASE}/brands/${b.slug}.json` },
+    };
+}
 
 export function toCompany(marketKey, ticker, m) {
     const src = m.sources || {};
@@ -69,7 +101,10 @@ export function toCompany(marketKey, ticker, m) {
             brandColor: m.brandColor ?? null,
             brandColorSource: m.brandColorSource ?? null,
             isPlaceholder: !!m.isProcedural,
+            hd: m.hdPath ? `${CDN}/${m.hdPath}` : null,
         },
+        brands: (brandsOf.get(`${marketKey.toUpperCase()}:${ticker}`) || [])
+            .map((b) => ({ slug: b.slug, name: b.name, kind: b.kind, logo: `${CDN}/${b.logo}`, url: `${API_BASE}/brands/${b.slug}.json` })),
         links: {
             self: `${API_BASE}/companies/${marketKey}/${encodeURIComponent(ticker)}.json`,
             yahoo: m.yahooUrl ?? null,
@@ -81,7 +116,7 @@ export function toCompany(marketKey, ticker, m) {
     };
 }
 
-const person_ = { type: ['object', 'null'], required: ['name', 'source', 'confidence'], properties: { name: { type: 'string' }, source: { type: 'string' }, confidence: { enum: ['low', 'medium'], description: 'low = community data that may be out of date (Wikidata); medium = exchange or registry data' } }, additionalProperties: false };
+const person_ = { type: ['object', 'null'], required: ['name', 'source', 'confidence'], properties: { name: { type: 'string' }, source: { type: 'string' }, confidence: { enum: ['low', 'medium', 'high'], description: 'low = community data that may be out of date (Wikidata); medium = exchange or registry data; high = checked by hand against the company\'s own page or filing (source is that URL)' } }, additionalProperties: false };
 const nullable = (t, extra = {}) => ({ type: [t, 'null'], ...extra });
 export const COMPANY_SCHEMA = {
     $schema: 'https://json-schema.org/draft/2020-12/schema',
@@ -125,8 +160,13 @@ export const COMPANY_SCHEMA = {
                 png: { type: ['object', 'null'], description: 'PNG URLs by pixel size (64, 128, 256, 512); present for the 3,000 largest companies', additionalProperties: { type: 'string', format: 'uri' } },
                 brandColor: nullable('string', { pattern: '^#[0-9A-F]{6}$', description: 'Taken from the logo file: an approximation, not an official brand colour' }),
                 brandColorSource: nullable('string'), isPlaceholder: { type: 'boolean', description: 'true = generated initials badge, not a real logo' },
+                hd: nullable('string', { format: 'uri', description: 'Official full logo (wordmark or lock-up, original aspect ratio) as vector SVG, when we have one; `svg` is the square icon' }),
             },
             additionalProperties: false,
+        },
+        brands: {
+            type: 'array', description: 'Brands, sub-brands and subsidiaries this company owns (see /brands.json)',
+            items: { type: 'object', required: ['slug', 'name', 'kind', 'logo', 'url'], properties: { slug: { type: 'string' }, name: { type: 'string' }, kind: { enum: ['brand', 'subsidiary', 'product', 'service', 'app'] }, logo: { type: 'string', format: 'uri' }, url: { type: 'string', format: 'uri' } }, additionalProperties: false },
         },
         links: { type: 'object', required: ['self', 'yahoo', 'website'], properties: { self: { type: 'string', format: 'uri' }, yahoo: nullable('string'), website: nullable('string') }, additionalProperties: false },
         sources: { type: ['object', 'null'], description: 'Where each profile value came from', additionalProperties: { type: 'string' } },
@@ -148,12 +188,14 @@ function openapi(counts) {
         },
         servers: [{ url: CDN, description: 'jsDelivr CDN (GitHub main)' }],
         externalDocs: { description: 'Guide and examples', url: 'https://github.com/MrChartist/global-stock-logos/blob/main/docs/API.md' },
-        tags: [{ name: 'Catalogue' }, { name: 'Company' }],
+        tags: [{ name: 'Catalogue' }, { name: 'Company' }, { name: 'Brand' }],
         paths: {
             [`/api/${API_VERSION}/index.json`]: { get: { tags: ['Catalogue'], operationId: 'getIndex', summary: 'API root', responses: { 200: { description: 'Endpoints, counts and data freshness', content: { 'application/json': { schema: { $ref: '#/components/schemas/Index' } } } } } } },
             [`/api/${API_VERSION}/markets.json`]: { get: { tags: ['Catalogue'], operationId: 'listMarkets', summary: 'All markets', responses: { 200: { description: 'Markets, largest first', content: { 'application/json': { schema: { type: 'array', items: { $ref: '#/components/schemas/Market' } } } } } } } },
             [`/api/${API_VERSION}/markets/{market}.json`]: { get: { tags: ['Catalogue'], operationId: 'getMarket', summary: 'Companies of one market, largest first', parameters: [{ name: 'market', in: 'path', required: true, schema: { type: 'string', examples: ['in', 'us', 'korea'] }, description: 'Lower-case market key from markets.json' }], responses: { 200: { description: 'Slim company rows', content: { 'application/json': { schema: { type: 'array', items: { $ref: '#/components/schemas/CompanyRow' } } } } }, 404: err } } },
             [`/api/${API_VERSION}/companies/{market}/{ticker}.json`]: { get: { tags: ['Company'], operationId: 'getCompany', summary: 'Full profile of one company', parameters: [{ name: 'market', in: 'path', required: true, schema: { type: 'string' } }, { name: 'ticker', in: 'path', required: true, schema: { type: 'string', examples: ['TCS', 'AAPL'] }, description: 'Ticker as in the market list; URL-encode special characters' }], responses: { 200: { description: 'The company', content: { 'application/json': { schema: { $ref: '#/components/schemas/Company' } } } }, 404: err } } },
+            [`/api/${API_VERSION}/brands.json`]: { get: { tags: ['Brand'], operationId: 'listBrands', summary: 'Every brand, sub-brand and subsidiary with its listed parent', responses: { 200: { description: 'Brands, by name', content: { 'application/json': { schema: { type: 'array', items: { $ref: '#/components/schemas/Brand' } } } } } } } },
+            [`/api/${API_VERSION}/brands/{slug}.json`]: { get: { tags: ['Brand'], operationId: 'getBrand', summary: 'One brand', parameters: [{ name: 'slug', in: 'path', required: true, schema: { type: 'string', examples: ['jio', 'instagram'] } }], responses: { 200: { description: 'The brand', content: { 'application/json': { schema: { $ref: '#/components/schemas/Brand' } } } }, 404: err } } },
             '/search-index-top.json': { get: { tags: ['Catalogue'], operationId: 'searchIndexTop', summary: 'The 2,000 largest companies in the same format, about 220 KB', description: 'Use it to render a first screen quickly, then load the full index.', responses: { 200: { description: 'The top of the index', content: { 'application/json': { schema: { type: 'array', items: { type: 'array' } } } } } } } },
             '/search-index.json': { get: { tags: ['Catalogue'], operationId: 'searchIndex', summary: 'Compact index of every company, for search boxes', description: 'Array of [ticker, name, market, format, yahooTicker, marketCapUsd]. Largest companies first; home-market listings ahead of depositary receipts.', responses: { 200: { description: 'The index', content: { 'application/json': { schema: { type: 'array', items: { type: 'array', prefixItems: [{ type: 'string' }, { type: 'string' }, { type: 'string' }, { type: 'string' }, { type: 'string' }, { type: ['number', 'null'] }] } } } } } } } },
         },
@@ -163,6 +205,20 @@ function openapi(counts) {
                 Market: { type: 'object', required: ['key', 'code', 'country', 'companies', 'url'], properties: { key: { type: 'string' }, code: { type: 'string' }, country: { type: 'string' }, companies: { type: 'integer' }, url: { type: 'string', format: 'uri' } } },
                 CompanyRow: { type: 'object', required: ['ticker', 'name'], properties: { ticker: { type: 'string' }, name: { type: 'string' }, sector: { type: ['string', 'null'] }, marketCapUsd: { type: ['number', 'null'] }, url: { type: 'string', format: 'uri' } } },
                 Company: { ...COMPANY_SCHEMA, $schema: undefined, $id: undefined },
+                Brand: {
+                    type: 'object', required: ['slug', 'name', 'kind', 'parent', 'logo', 'sources', 'links'],
+                    properties: {
+                        slug: { type: 'string' }, name: { type: 'string' }, kind: { enum: ['brand', 'subsidiary', 'product', 'service', 'app'] },
+                        category: { type: ['string', 'null'] }, description: { type: ['string', 'null'] },
+                        parent: { type: 'object', description: 'The ultimate listed owner', properties: { market: { type: 'string' }, ticker: { type: 'string' }, url: { type: 'string', format: 'uri' } } },
+                        otherListedOwners: { type: 'array', items: { type: 'string' }, description: 'Other listed group companies that own or run it, as MARKET:TICKER' },
+                        website: { type: ['string', 'null'] }, wikidata: { type: ['string', 'null'] }, brandColor: { type: ['string', 'null'] },
+                        onDark: { type: 'boolean', description: 'true = a light logo meant for dark backgrounds' },
+                        logo: { type: 'object', properties: { svg: { type: 'string', format: 'uri' }, mark: { type: ['string', 'null'] }, png: { type: 'object', additionalProperties: { type: 'string', format: 'uri' } } } },
+                        sources: { type: 'object', properties: { logo: { type: 'string' }, logoType: { type: 'string' }, ownership: { type: ['string', 'null'] }, checkedAt: { type: ['string', 'null'] } } },
+                        links: { type: 'object', properties: { self: { type: 'string', format: 'uri' } } },
+                    },
+                },
             },
         },
     };
@@ -193,17 +249,23 @@ if (process.argv[1] && process.argv[1].endsWith('build-api.js')) {
         markets.push({ key, code: key.toUpperCase(), country: MARKETS[key]?.country || key, companies: rows.length, url: `${API_BASE}/markets/${key}.json` });
     }
     markets.sort((a, b) => b.companies - a.companies);
+    fs.mkdirSync(path.join(OUT, 'brands'), { recursive: true });
+    const brands = BRANDS.map(toBrand).sort((a, b) => a.name.localeCompare(b.name, 'en'));
+    for (const b of brands) write(`brands/${b.slug}.json`, b);
+    write('brands.json', brands);
     write('markets.json', markets);
     write('schema/company.schema.json', COMPANY_SCHEMA);
     const counts = { companies: total, markets: markets.length };
     write('openapi.json', openapi(counts));
     write('index.json', {
         api: 'Global Stock Logos API', version: API_VERSION, dataVersion: manifest.version,
-        dataRefreshedAt: manifest.dataRefreshedAt, companies: total, aliases: aliasCount, markets: markets.length, cdn: CDN,
+        dataRefreshedAt: manifest.dataRefreshedAt, companies: total, aliases: aliasCount, markets: markets.length, brands: brands.length, cdn: CDN,
         endpoints: {
             markets: `${API_BASE}/markets.json`,
             market: `${API_BASE}/markets/{market}.json`,
             company: `${API_BASE}/companies/{market}/{ticker}.json`,
+            brands: `${API_BASE}/brands.json`,
+            brand: `${API_BASE}/brands/{slug}.json`,
             searchIndex: `${CDN}/search-index.json`,
             searchIndexTop: `${CDN}/search-index-top.json`,
             schema: `${API_BASE}/schema/company.schema.json`,
@@ -211,5 +273,5 @@ if (process.argv[1] && process.argv[1].endsWith('build-api.js')) {
         },
         docs: 'https://github.com/MrChartist/global-stock-logos/blob/main/docs/API.md',
     });
-    console.log(`[api] ${total} companies + ${aliasCount} alias files, ${markets.length} markets -> api/${API_VERSION}/`);
+    console.log(`[api] ${total} companies + ${aliasCount} alias files, ${markets.length} markets, ${brands.length} brands -> api/${API_VERSION}/`);
 }

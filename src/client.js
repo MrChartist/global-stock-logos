@@ -12,7 +12,7 @@
 export const DEFAULT_BASE_URL = 'https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main';
 
 /**
- * @typedef {{ name: string, source: string, confidence: 'low' | 'medium' }} Person
+ * @typedef {{ name: string, source: string, confidence: 'low' | 'medium' | 'high' }} Person
  * @typedef {{
  *   ticker: string, market: string, name: string, legalName: string | null, aliases: string[],
  *   country: string | null, countryCode: string | null, flag: string | null, exchange: string | null,
@@ -24,11 +24,22 @@ export const DEFAULT_BASE_URL = 'https://cdn.jsdelivr.net/gh/MrChartist/global-s
  *     headquarters: string | null, headquartersLocal: string | null, address: string | null, addressLocal: string | null,
  *     employees: number | null, ceo: Person | null, chairman: Person | null, slogan: string | null
  *   },
- *   logo: { svg: string | null, file: { url: string, format: 'svg' | 'png' }, png: Record<string, string> | null, brandColor: string | null, brandColorSource: string | null, isPlaceholder: boolean },
+ *   logo: { svg: string | null, file: { url: string, format: 'svg' | 'png' }, png: Record<string, string> | null, brandColor: string | null, brandColorSource: string | null, isPlaceholder: boolean, hd?: string | null },
+ *   brands?: BrandRef[],
  *   links: { self: string, yahoo: string | null, website: string | null },
  *   sources: Record<string, string> | null, checks: Record<string, unknown> | null,
  *   freshness: { marketData: string | null, profile: string | null }
  * }} Company
+ * @typedef {{ slug: string, name: string, kind: BrandKind, logo: string, url: string }} BrandRef
+ * @typedef {'brand' | 'subsidiary' | 'product' | 'service' | 'app'} BrandKind
+ * @typedef {{
+ *   slug: string, name: string, kind: BrandKind, category: string | null, description: string | null,
+ *   parent: { market: string, ticker: string, url: string }, otherListedOwners: string[],
+ *   website: string | null, wikidata: string | null, brandColor: string | null, onDark: boolean,
+ *   logo: { svg: string, mark: string | null, png: Record<string, string> },
+ *   sources: { logo: string, logoType: string, ownership: string | null, checkedAt: string | null },
+ *   links: { self: string }
+ * }} Brand
  * @typedef {{ ticker: string, name: string, sector: string | null, marketCapUsd: number | null, url: string }} CompanyRow
  * @typedef {{ key: string, code: string, country: string, companies: number, url: string }} Market
  * @typedef {{ ticker: string, name: string, market: string, format: 'svg' | 'png', marketCapUsd: number | null, yahooTicker: string }} SearchHit
@@ -77,6 +88,12 @@ export class StockLogosClient {
 
     /** API root: version, counts, data freshness and endpoint templates. @returns {Promise<ApiIndex>} */
     index() { return this._json('api/v1/index.json'); }
+
+    /** Every brand, sub-brand and subsidiary with its listed parent, by name. @returns {Promise<Brand[]>} */
+    brands() { return this._json('api/v1/brands.json'); }
+
+    /** One brand by slug, e.g. 'jio' or 'instagram'. @param {string} slug @returns {Promise<Brand>} */
+    brand(slug) { return this._json(`api/v1/brands/${encodeURIComponent(slug.toLowerCase())}.json`); }
 
     /** All markets, largest first. @returns {Promise<Market[]>} */
     markets() { return this._json('api/v1/markets.json'); }

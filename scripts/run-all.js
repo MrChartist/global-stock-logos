@@ -80,6 +80,7 @@ run('Exchange and registry sources', 'scripts/enrich-exchanges.js', ['--max-age-
 run('Name-based matching', 'scripts/enrich-by-name.js', ['--max-age-days', String(maxAge), '--max-minutes', String(Math.max(1, minutesLeft() - 15))], { fatal: false });
 run('Brand colours', 'scripts/brand-color.js');
 run('PNG sizes', 'scripts/render-png.js', ['--top', '3000']);
+run('Brands', 'scripts/brands.js');
 run('Manifests', 'scripts/sync.js');
 run('Fix invalid values', 'scripts/validate-data.js', ['--fix']);
 run('Manifests (after fixes)', 'scripts/sync.js');

@@ -248,6 +248,11 @@ dialog.closing .sheet { animation: sheet-out .22s var(--ease-std) both; }
 .files a { padding: 8px 14px; border-radius: 999px; text-decoration: none; background: var(--tint-2); box-shadow: inset 0 0 0 1px var(--ring); font: 600 13px/1 var(--font-display); transition: background .2s, transform .2s var(--ease); }
 .files a:hover { background: var(--ring); transform: translateY(-1px); }
 .files .prov { align-self: center; }
+.brands { list-style: none; margin: 0; padding: 12px; display: grid; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); gap: 8px; }
+.brands a { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 12px 8px; border-radius: 14px; text-decoration: none; color: var(--ink); background: var(--tint-2); box-shadow: inset 0 0 0 1px var(--ring); font: 600 12.5px/1.25 var(--font-display); text-align: center; transition: background .2s, transform .2s var(--ease); }
+.brands a:hover { background: var(--ring); transform: translateY(-1px); }
+.brands img { width: 100%; height: 40px; object-fit: contain; background: #fff; border-radius: 8px; padding: 4px; }
+.brands span { overflow-wrap: anywhere; }
 .snip { display: flex; align-items: stretch; gap: 8px; padding: 10px 10px 10px 16px; }
 .snip + .snip { box-shadow: inset 0 1px 0 var(--hair); }
 .snip code { flex: 1; min-width: 0; align-self: center; font: 500 12.5px/1.5 var(--font-mono); overflow-x: auto; white-space: nowrap; scrollbar-width: none; color: var(--ink); }
@@ -310,3 +315,10 @@ dialog.closing .sheet { animation: sheet-out .22s var(--ease-std) both; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .001ms !important; animation-delay: 0ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
 }
+
+/* Brands */
+.lead-sm { margin: 0 0 18px; max-width: 68ch; color: var(--ink-2, inherit); font-size: 15px; line-height: 1.55; }
+.bgrid { grid-template-columns: repeat(auto-fill, minmax(176px, 1fr)); }
+.bcard .bl { display: flex; align-items: center; justify-content: center; width: 100%; height: 84px; padding: 10px 12px; border-radius: 14px; background: #fff; box-shadow: inset 0 0 0 1px var(--hair); }
+.bcard .bl.dark { background: #111827; }
+.bcard .bl img { max-width: 100%; max-height: 64px; width: auto; height: auto; object-fit: contain; }

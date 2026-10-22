@@ -158,6 +158,7 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
         const e = shard[item.symbol] || (item.logoOf ? shard[item.logoOf] : null) || {};
         const o = curated[k] || {};
         const pick = (f) => (o[f] !== undefined ? o[f] : e[f] ?? null);
+        const hdRel = `logos-hd/${mk}/${item.logoOf || item.symbol}.svg`;
         const pngBase = e.pngSizes ? Object.fromEntries(e.pngSizes.map((n) => [n, `png/${n}/${mk}/${item.logoOf || item.symbol}.png`])) : null;
         (shards[mk] ||= {})[item.symbol] = {
             logoOf: item.logoOf || undefined,   // only present on aliases (JSON drops undefined)
@@ -171,9 +172,11 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
             ceo: pick('ceo'), employees: pick('employees'), aliases: pick('aliases') || [],
             chairman: pick('chairman'), address: pick('address'), addressLocal: pick('addressLocal'), headquartersLocal: pick('headquartersLocal'),
             listingDate: pick('listingDate'), lei: pick('lei'), legalName: pick('legalName'), cik: pick('cik'),
-            sources: e.sources || null, checks: e.checks || null,
+            // Curated values carry their own source URLs (curated/overrides.json "sources"); they replace the automatic source of that field.
+            sources: (e.sources || o.sources) ? { ...e.sources, ...o.sources } : null, checks: e.checks || null,
             slogan: pick('slogan'), brandColor: pick('brandColor'), brandColorSource: pick('brandColorSource'),
             wikidata: pick('wikidata'), pngPaths: pngBase,
+            hdPath: fs.existsSync(path.join(REPO_ROOT, hdRel)) ? hdRel : undefined,   // official full logo (wordmark), when we have one
             freshness: { marketData: e.marketDataAt || null, profile: e.wikidataAt || null },
         };
         if (!item.logoOf) searchIndex.push([item.symbol, item.company, item.market, item.format, item.yahooTicker, e.marketCapUsd ?? null]);

@@ -35,6 +35,15 @@ if (CHECK) {
         if (!isProcedural(svg) && !hasVisibleArt(svg)) problems.push(`${rel}: empty logo`);
         if (!isProcedural(svg) && !idsNamespaced(svg)) problems.push(`${rel}: ids not unique (run npm run quality:fix)`);
     }
+    // Brand logos and HD full logos are newer and held to the strict rules: pure vector, viewBox, namespaced ids.
+    const { problemsOf } = await import('./logo-tool.js');
+    const strictDirs = [path.join(ROOT, 'brands', 'logos'), ...(fs.existsSync(path.join(ROOT, 'logos-hd')) ? fs.readdirSync(path.join(ROOT, 'logos-hd')).map((d) => path.join(ROOT, 'logos-hd', d)) : [])];
+    for (const dir of strictDirs.filter((d) => fs.existsSync(d))) {
+        for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.svg')).map((x) => path.join(dir, x))) {
+            files.push(f);
+            for (const p of problemsOf(fs.readFileSync(f, 'utf-8'))) problems.push(`${path.relative(ROOT, f)}: ${p}`);
+        }
+    }
     for (let k = 0; k < files.length; k += 2000) {
         try { run('xmllint', ['--noout', ...files.slice(k, k + 2000)], { stdio: 'pipe' }); }
         catch (e) { for (const m of String(e.stderr).matchAll(/^(.+\.svg):\d+: parser error/gm)) problems.push(`${path.relative(ROOT, m[1])}: invalid XML`); }

@@ -253,7 +253,9 @@ async function showDetail(market, ticker) {
 }
 function officer(p) {
   if (!p) return na;
-  return `${esc(p.name)}<small>Source: ${esc(p.source)}</small>${p.confidence === 'low' ? '<span class="note">Community data: may be out of date</span>' : ''}`;
+  const src = safeUrl(p.source);
+  const from = src ? `<a href="${esc(src)}" rel="noopener noreferrer">${esc(new URL(src).hostname.replace(/^www\./, ''))}</a>` : esc(p.source);
+  return `${esc(p.name)}<small>Source: ${from}${p.confidence === 'high' ? ' · checked by hand' : ''}</small>${p.confidence === 'low' ? '<span class="note">Community data: may be out of date</span>' : ''}`;
 }
 const row = (label, html, attr = '') => `<div class="row"${attr}><dt>${label}</dt><dd>${html}</dd></div>`;
 function detailHtml(c) {
@@ -264,6 +266,9 @@ function detailHtml(c) {
   const where = [p.headquarters, p.headquartersLocal].filter(Boolean).join(' · ');
   const addr = [p.address, p.addressLocal].filter(Boolean).join(' · ');
   const site = safeUrl(p.website);
+  const hd = safeUrl(lg.hd);
+  const brands = c.brands || [];
+  const srcText = (k, v) => { const u = safeUrl(v); return u ? `<a href="${esc(u)}" rel="noopener noreferrer">${esc(k)}</a>` : `${esc(k)} (${esc(v)})`; };
   const sizes = lg.png ? Object.keys(lg.png).sort((a, b) => a - b).map((s) => `<a href="${esc(lg.png[s])}">${s} px PNG</a>`).join('') : '';
   const embed = [
     ['HTML', `<img src="${cdnSvg}" width="32" height="32" alt="${c.name} logo">`],
@@ -312,13 +317,14 @@ function detailHtml(c) {
       <section class="group"><h3>Logo</h3><dl class="rows">
         ${row('Brand colour', lg.brandColor ? `<span class="sw"><i style="background:${esc(lg.brandColor)}"></i>${esc(lg.brandColor)}</span><small>From the logo file${lg.brandColorSource === 'neutral-tile' ? ' (black, white or grey logo: low confidence)' : ''}</small>` : na)}
       </dl>
-      <div class="rows" style="margin-top:8px"><div class="files"><a href="${esc(svg)}">${ext === 'png' ? 'PNG (original)' : 'SVG'}</a>${sizes}${lg.png ? '' : '<span class="prov">PNG sizes exist for the 3,000 largest companies; other logos are SVG.</span>'}</div></div></section>
+      <div class="rows" style="margin-top:8px"><div class="files"><a href="${esc(svg)}">${ext === 'png' ? 'PNG (original)' : 'SVG'}</a>${hd ? `<a href="${esc(hd)}">Full logo (HD SVG)</a>` : ''}${sizes}${lg.png ? '' : '<span class="prov">PNG sizes exist for the 3,000 largest companies; other logos are SVG.</span>'}</div></div></section>
+      ${brands.length ? `<section class="group"><h3>Brands</h3><ul class="brands">${brands.map((b) => `<li><a href="${esc(safeUrl(b.logo) || '')}" rel="noopener noreferrer"><img src="${esc(safeUrl(b.logo) || '')}" alt="" loading="lazy" decoding="async"><span>${esc(b.name)}</span></a></li>`).join('')}</ul></section>` : ''}
       <section class="group"><h3>Use it</h3><div class="rows">
         ${embed.map(([k, v]) => `<div class="snip"><span class="k">${esc(k)}</span><code title="${esc(k)}">${esc(v)}</code><button type="button" class="copy" data-copy="${esc(v)}" aria-label="Copy ${esc(k)}"><span>Copy</span></button></div>`).join('')}
       </div></section>
     </div>
     <p class="prov d-foot">Profile refreshed ${esc(c.freshness.profile || 'n/a')}; market data ${esc(c.freshness.marketData || 'n/a')}.
-      ${c.sources ? `Sources: ${esc(Object.entries(c.sources).map(([k, v]) => `${k} (${v})`).join(', '))}.` : ''}
+      ${c.sources ? `Sources: ${Object.entries(c.sources).map(([k, v]) => srcText(k, v)).join(', ')}.` : ''}
       Missing values are not available from our sources.</p>`;
 }
 $('dClose').addEventListener('click', closeSheet);
@@ -340,6 +346,50 @@ dlg.addEventListener('close', () => { if (location.hash) history.replaceState(nu
   };
   grab.addEventListener('pointerup', end); grab.addEventListener('pointercancel', end);
 })();
+
+// ---------------------------------------------------------------- brands (loaded when the section comes into view)
+const brandState = { all: null, rows: [], shown: 0 };
+const BPAGE = 48;
+function renderBrands() {
+  const slice = brandState.rows.slice(brandState.shown, brandState.shown + BPAGE);
+  const frag = document.createDocumentFragment();
+  for (const b of slice) {
+    const li = document.createElement('li');
+    const el = document.createElement('button');
+    el.type = 'button'; el.className = 'card bcard';
+    el.setAttribute('aria-label', `${b.name}, owned by ${b.parent.market}:${b.parent.ticker}`);
+    el.innerHTML = `<span class="bl${b.onDark ? ' dark' : ''}"><img width="160" height="64" loading="lazy" decoding="async" alt="" src="${esc(safeUrl(b.logo.svg) || '')}"></span>
+      <span class="nm">${esc(b.name)}</span>
+      <span class="meta"><span class="tag">${esc(b.parent.ticker)}</span><span>${esc(b.category || b.kind)}</span></span>`;
+    el.addEventListener('click', () => open(b.parent.market, b.parent.ticker));
+    li.appendChild(el);
+    frag.appendChild(li);
+  }
+  $('bResults').appendChild(frag);
+  brandState.shown += slice.length;
+  $('bMore').hidden = brandState.shown >= brandState.rows.length;
+}
+function filterBrands() {
+  const q = norm($('bq').value.trim());
+  brandState.rows = !q ? brandState.all : brandState.all.filter((b) => norm(`${b.name} ${b.category || ''} ${b.kind} ${b.parent.ticker} ${b.description || ''}`).includes(q));
+  brandState.shown = 0;
+  $('bResults').replaceChildren();
+  renderBrands();
+  $('bCount').textContent = `${num.format(brandState.rows.length)} of ${num.format(brandState.all.length)} brands`;
+}
+async function loadBrands() {
+  if (brandState.all) return;
+  brandState.all = [];
+  try {
+    brandState.all = await api.brands();
+    filterBrands();
+  } catch { $('bCount').textContent = 'The brands could not be loaded.'; }
+}
+const norm = (s) => String(s).toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
+new IntersectionObserver((e, o) => { if (e[0].isIntersecting) { o.disconnect(); loadBrands(); } }, { rootMargin: '400px' }).observe($('brands'));
+$('bq').addEventListener('input', () => { if (brandState.all?.length) filterBrands(); });
+$('bControls').addEventListener('submit', (e) => e.preventDefault());
+$('bMore').addEventListener('click', renderBrands);
 
 function fromHash() {
   const m = location.hash.match(/^#\/([^/]+)\/(.+)$/);
