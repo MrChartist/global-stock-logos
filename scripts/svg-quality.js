@@ -14,8 +14,11 @@ export function isProcedural(svg) {
 /** True if the file draws something besides the flat tile background. */
 export function hasVisibleArt(svg) {
     const body = svg.replace(/<!--[\s\S]*?-->/g, '').replace(/<defs[\s\S]*?<\/defs>/g, '');
-    const shapes = body.match(/<(path|circle|ellipse|rect|polygon|polyline|image|text|line|use)\b/g) || [];
-    return shapes.length > 1;
+    const shapes = body.match(/<(path|circle|ellipse|rect|polygon|polyline|image|text|line|use)\b[^>]*>/g) || [];
+    if (shapes.length !== 1) return shapes.length > 1;
+    // A single shape is a logo drawn as one compound path, unless it is only a background tile.
+    const s = shapes[0];
+    return !(/^<rect\b/.test(s) || /\sd="\s*M\s*0[ ,]0\s*h[\d.]+\s*v[\d.]+\s*H\s*0\s*z?\s*"/i.test(s));
 }
 
 /** Prefix every id (and its references) so several logos can be inlined in one page without clashes. */

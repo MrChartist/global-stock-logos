@@ -13,7 +13,9 @@ Machine-readable: [OpenAPI 3.1](../api/v1/openapi.json) · [JSON Schema of a com
 | `GET /api/v1/index.json` | Version, counts, data freshness and every endpoint template |
 | `GET /api/v1/markets.json` | All markets: `key`, `code`, `country`, `companies`, `url` |
 | `GET /api/v1/markets/{market}.json` | Slim rows of one market, largest first: `ticker`, `name`, `sector`, `marketCapUsd`, `url` |
-| `GET /api/v1/companies/{market}/{ticker}.json` | The full profile of one company |
+| `GET /api/v1/companies/{market}/{ticker}.json` | The full profile of one company, with its `brands` |
+| `GET /api/v1/brands.json` | Every brand, sub-brand and subsidiary with its listed parent (see [BRANDS.md](./BRANDS.md)) |
+| `GET /api/v1/brands/{slug}.json` | One brand: parent, other listed owners, logo URLs (SVG, mark, PNG 256/512/1024), sources |
 | `GET /search-index-top.json` | The 2,000 largest companies in the same format (about 160 KB): render a first screen quickly, then load the full index |
 | `GET /search-index.json` | Every company as `[ticker, name, market, format, yahooTicker, marketCapUsd]`, for search boxes |
 
@@ -53,8 +55,8 @@ curl -s https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/api/v1/co
 
 - **Unknown is `null`.** We never guess. Coverage per field is in [DATA.md](./DATA.md).
 - **Market cap.** `local` is in the company's reporting currency (`marketCap.currency`). `usd` and `inr` are converted at the daily rate in [`fx-rates.json`](../fx-rates.json) and are approximate. `currency` (price currency) can differ: UK shares are priced in pence (`GBX`) but their market cap is in `GBP`.
-- **Officers carry a source and a confidence.** `confidence: "low"` means community data (Wikidata) that may be years out of date; `"medium"` means exchange or registry data. Check before you rely on a name.
-- **Logo.** `logo.svg` is the vector file; it is `null` for 107 older companies that only have a PNG, so use `logo.file.url`, which always exists. `logo.png` lists rendered sizes (64, 128, 256, 512) and exists for the 3,000 largest companies. `isPlaceholder: true` means a generated initials badge, not the real logo. `brandColor` is taken from the logo file: an approximation, not an official brand colour.
+- **Officers carry a source and a confidence.** `confidence: "low"` means community data (Wikidata) that may be years out of date; `"medium"` means exchange or registry data; `"high"` means checked by hand against the company's own page or a filing, and `source` is that URL. Check before you rely on a name.
+- **Logo.** `logo.svg` is the vector file; it is `null` for 107 older companies that only have a PNG, so use `logo.file.url`, which always exists. `logo.png` lists rendered sizes (64, 128, 256, 512) and exists for the 3,000 largest companies. `isPlaceholder: true` means a generated initials badge, not the real logo. `logo.hd`, when present, is the official full logo (wordmark or lock-up) as vector SVG; `logo.svg` is the square icon. `brandColor` is taken from the logo file: an approximation, not an official brand colour.
 - **`listingDate`** is the first listing on an exchange, not the founding date.
 - **`sources`** says where each value came from; **`checks`** records a second source that disagreed.
 - **`freshness`** gives the dates of the last market-data and profile refresh. Data is refreshed monthly.
@@ -72,6 +74,8 @@ await api.index();                                         // version, counts, f
 await api.markets();                                       // all markets
 await api.market('korea');                                 // companies of one market, largest first
 await api.company('us', 'AAPL');                           // full profile
+await api.brands();                                        // every brand with its listed parent
+await api.brand('instagram');                              // one brand
 await api.search('tata', { market: 'in', limit: 10 });     // ranked: exact ticker, ticker prefix, name prefix, word prefix, contains
 api.logoUrl('us', 'AAPL', { format: 'png', size: 128 });   // 'svg' (default) | 'png' | 'original-png'
 

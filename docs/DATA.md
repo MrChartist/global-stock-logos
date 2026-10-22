@@ -40,7 +40,7 @@ Coverage differs a lot by market. Hong Kong (98% website), China (90%), the UK (
 
 **Monthly refresh, with auto finish.** A GitHub Action ([`monthly-refresh.yml`](../.github/workflows/monthly-refresh.yml)) runs on the 1st of every month and calls one pipeline, `node scripts/run-all.js` (also `npm run all`):
 
-1. new listings and logos, 2. logo quality repair, 3. market data, 4. Wikidata profiles, 5. GLEIF and SEC EDGAR gap-filling, 6. brand colours, 7. PNG sizes, 8. manifests, 9. validation.
+1. new listings and logos, 2. logo quality repair, 3. market data, 4. Wikidata profiles, 5. GLEIF and SEC EDGAR gap-filling, 6. brand colours, 7. PNG sizes, 8. brand check and brand PNGs, 9. manifests, 10. validation.
 
 The slow steps are time-boxed and resumable: a record refreshed within the last 30 days is skipped. If the job runs out of time, it commits its progress and starts itself again (up to 8 times) until `pipeline-status.json` shows `"complete": true`. Locally, run `npm run all` as many times as needed: exit code 0 means complete, 2 means run again, 1 means a check failed.
 
@@ -51,7 +51,8 @@ The slow steps are time-boxed and resumable: a record refreshed within the last 
 - Every logo is a vector SVG, so it stays sharp at any size.
 - Gradient and clip ids inside each SVG are unique, so many logos can be inlined on one page without clashes.
 - All SVGs pass `xmllint`. Empty and test entries are removed.
-- 25 real companies have no logo available. They keep a generated initials badge, marked `"isProcedural": true` in `manifests/<market>.json`.
-- 107 older PNG files remain so that existing links keep working. 37 of them are under 256 px.
+- 278 entries have no logo available and keep a generated initials badge, marked `"isProcedural": true` in `manifests/<market>.json`. This includes 16 companies whose old PNG was found in October 2026 to be another company's logo (GoDaddy, a parked-domain ad, a game screenshot): a badge is better than a wrong logo.
+- 42 older PNG-only logos remain; 61 others were replaced with official vector logos in October 2026.
+- **HD full logos** (`logos-hd/`) and **brand logos** (`brands/`) are held to stricter rules: pure vector (no embedded raster), a viewBox, current official design, a recorded source. See [BRANDS.md](./BRANDS.md).
 
 Check quality with `npm run quality`, repair with `npm run quality:fix`, then run `npm run sync`.

@@ -36,7 +36,7 @@ for (const [label, size] of [['desktop', { width: 1280, height: 900 }], ['phone'
 
     await t(`${label}: catalogue loads and is sorted largest first`, async () => {
         await page.waitForSelector('.card');
-        assert.match(await page.textContent('#count'), /75,4\d\d companies/);
+        assert.match(await page.textContent('#count'), /\d\d,\d{3} companies/);
         assert.equal(await page.locator('.card .tick').first().textContent(), 'NVDA');
         assert.ok((await page.locator('#market option').count()) >= 69);
     });
@@ -52,11 +52,11 @@ for (const [label, size] of [['desktop', { width: 1280, height: 900 }], ['phone'
         assert.match(page.url(), /q=tata\+consultancy/);
         assert.match(page.url(), /market=IN/);
     });
-    await t(`${label}: detail opens, shows INR and the CEO caution, and closes with Escape`, async () => {
+    await t(`${label}: detail opens, shows INR and the hand-checked CEO, and closes with Escape`, async () => {
         await page.click('.card');
         await page.waitForSelector('dialog[open] .kv');
         const text = await page.textContent('dialog');
-        assert.match(text, /lakh crore/); assert.match(text, /may be out of date/); assert.match(text, /INE467B01029/);
+        assert.match(text, /lakh crore/); assert.match(text, /K\. Krithivasan/); assert.match(text, /checked by hand/); assert.match(text, /INE467B01029/);
         assert.equal(await page.locator('dialog [data-row="cap-inr"]').count(), 1, 'INR market cap should appear once');
         assert.equal(await page.locator('dialog [data-row="cap-local"]').count(), 0, 'no separate local row when the local currency is INR');
         const over = await page.evaluate(() => { const s = document.querySelector('dialog .sheet'); return s.scrollWidth - s.clientWidth; });
@@ -108,6 +108,18 @@ for (const [label, size] of [['desktop', { width: 1280, height: 900 }], ['phone'
         assert.match(page.url(), /sort=ticker/);
         await page.mouse.click(5, 300); await page.keyboard.press('/');
         assert.equal(await page.evaluate(() => document.activeElement.id), 'q');
+    });
+    await t(`${label}: brands load on scroll, filter, and open the parent company`, async () => {
+        await page.goto(`${base}/`, { waitUntil: 'networkidle' });
+        await page.locator('#brands').scrollIntoViewIfNeeded();
+        await page.waitForFunction(() => / of \d+ brands/.test(document.getElementById('bCount').textContent));
+        await page.fill('#bq', 'jio');
+        await page.waitForFunction(() => /^\d+ of/.test(document.getElementById('bCount').textContent) && document.querySelectorAll('#bResults .bcard').length > 0);
+        await page.locator('#bResults .bcard', { has: page.locator('.nm', { hasText: /^Jio$/ }) }).first().click();
+        await page.waitForSelector('dialog[open] .kv');
+        assert.match(await page.textContent('dialog'), /Reliance Industries/);
+        assert.ok(await page.locator('dialog .brands li').count() > 0, 'the parent sheet lists its brands');
+        await page.keyboard.press('Escape');
     });
     await t(`${label}: no script errors`, () => assert.deepEqual(errors, []));
     await page.close();

@@ -8,6 +8,8 @@
 | SEC EDGAR | US headquarters, website when filed, CIK, for gaps only | Public domain US government data. |
 | Eastmoney company-profile API | Website, address, chairman, president, employees, founding and listing dates for US, Hong Kong and China | Unofficial public endpoint. Check its terms before heavy use: Needs verification. |
 | TPEx, NSE archive, ASX directory, B3, TMX Money | Taiwan OTC profiles, India and Australia listing dates, Brazil and Canada websites | Public exchange data; check each exchange's terms before commercial redistribution: Needs verification. |
+| Company websites, press kits, annual reports and exchange filings (NSE, BSE, SEC EDGAR, HKEX) | Brand logos, HD full logos, replaced main logos, and the hand-checked facts in `curated/overrides.json` | Every value links its source URL; every brand records `logoSource` and `ownershipSource` in `brands/brands.json`. |
+| Wikimedia Commons and Wikipedia file pages | Brand and HD logos where the company publishes no vector file | Commons files keep their own licence; the file page is the `logoSource`. |
 | Yahoo Finance | Quote links only (no data is copied) | Links are built from the ticker and the market suffix in `scripts/markets.js`. Suffixes for some smaller markets are blank: Needs verification. |
 
 ## Trademarks
