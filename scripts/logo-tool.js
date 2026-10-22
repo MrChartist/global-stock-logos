@@ -70,7 +70,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.a
         const sharp = (await import('sharp')).default;
         const size = parseInt(c || '512', 10);
         const svg = fs.readFileSync(a);
-        const art = await sharp(svg, { density: 600 }).resize(size - 32, size - 32, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } }).png().toBuffer();
+        const art = await sharp(svg, { density: 600, limitInputPixels: false }).resize(size - 32, size - 32, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } }).png().toBuffer();
         const tile = (bg) => sharp({ create: { width: size, height: size, channels: 4, background: bg } }).composite([{ input: art, gravity: 'center' }]).png().toBuffer();
         const [light, dark] = await Promise.all([tile('#ffffff'), tile('#1f2937')]);
         await sharp({ create: { width: size * 2, height: size, channels: 4, background: '#ffffff' } })

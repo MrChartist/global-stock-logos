@@ -85,7 +85,7 @@ async function renderPngs(brands) {
                 const out = path.join(BRANDS_DIR, 'png', String(size), `${b.slug}.png`);
                 want.add(out);
                 fs.mkdirSync(path.dirname(out), { recursive: true });
-                const buf = await sharp(svg, { density: Math.min(2400, Math.max(72, size * 4)) })
+                const buf = await sharp(svg, { density: Math.min(2400, Math.max(72, size * 4)), limitInputPixels: false })
                     .resize(size, size, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
                     .png({ compressionLevel: 9, palette: true }).toBuffer();
                 if (!fs.existsSync(out) || !buf.equals(fs.readFileSync(out))) fs.writeFileSync(out, buf);
