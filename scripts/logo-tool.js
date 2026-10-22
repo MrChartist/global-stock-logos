@@ -13,7 +13,7 @@ import fs from 'fs';
 import path from 'path';
 import { execFileSync } from 'child_process';
 import { fileURLToPath } from 'url';
-import { hasVisibleArt, namespaceIds, idsNamespaced } from './svg-quality.js';
+import { namespaceIds, idsNamespaced } from './svg-quality.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const MAX_BYTES = 300 * 1024;
@@ -24,7 +24,9 @@ export function problemsOf(svg) {
     if (/<script|<foreignObject|\son\w+\s*=|(?:xlink:)?href="(?:https?:)?\/\//i.test(svg)) p.push('active content or external link');
     if (/<image\b/i.test(svg) || /data:image\/(png|jpe?g|gif|webp)/i.test(svg)) p.push('embedded raster image (must be pure vector)');
     if (!/<svg[^>]*\bviewBox=/i.test(svg)) p.push('no viewBox');
-    if (!hasVisibleArt(svg)) p.push('no visible art');
+    // One compound path is a valid logo here (hasVisibleArt expects a tile plus art, as in the TradingView icons).
+    const body = svg.replace(/<!--[\s\S]*?-->/g, '').replace(/<defs[\s\S]*?<\/defs>/g, '');
+    if (!/<(path|circle|ellipse|rect|polygon|polyline|text|line|use)\b/.test(body)) p.push('no visible art');
     if (!idsNamespaced(svg)) p.push('ids not namespaced');
     if (Buffer.byteLength(svg) > MAX_BYTES) p.push(`larger than ${MAX_BYTES / 1024} KB`);
     return p;
