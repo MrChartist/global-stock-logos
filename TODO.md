@@ -26,7 +26,7 @@ How to add a source: one adapter file per source in `scripts/adapters/`, followi
 ## 3. Data quality
 
 - [ ] **Stale CEOs.** The CEO from Wikidata can be years out of date. India's 400 largest companies, Korea's 100 largest and about 70 large US and global companies now have hand-checked CEO and chairman with source links (`curated/overrides.json`, `confidence: "high"`). The rest still carry the low-confidence Wikidata value. Next: extend the same check to the next 400 Indian companies and the US top 500 (NSE governance filings and SEC 8-K item 5.02 worked well).
-- [ ] Founding-year disagreements: the 400 largest were resolved on October 23 (274 hand-checked with a source, 66 corrected, e.g. Alphabet 1998, BHP 1885, Darden 1938); about 1,100 smaller ones remain in `checks`.
+- [ ] Founding-year disagreements: the 400 largest were resolved on October 23 (274 hand-checked with a source, 63 of them corrected, e.g. Alphabet 1998, BHP 1885, Darden 1938); about 1,100 smaller ones remain in `checks`.
 - [ ] 182 entries still have a generated placeholder badge and 20 are PNG only (was 278 and 42 before October 23). The rest are mostly small BSE-only or SME listings whose only logos are rasters (their offer documents too). GMR Airports, Marsh and Intuitive Surgical are done; ICICI Bank and Asian Paints still lack an HD logo (only white-only or partly raster versions exist).
 - [ ] Check data terms before wide public use: Eastmoney is an unofficial endpoint, and exchange feeds may limit redistribution (see DATA-SOURCES.md). TradingView logo terms are also unconfirmed.
 
