@@ -10,7 +10,7 @@ Add hand-checked facts here. They always win over automatic data and are never o
 }
 ```
 
-Allowed fields: any profile field (`website`, `founded`, `headquarters`, `ceo`, `employees`, `slogan`, `brandColor`, `aliases`, ...). Add a source link in your pull request. Do not add slogans you cannot source.
+Allowed fields: `name` (the current name after a rename, until the exchange data catches up), `status`/`delistedAt`/`successor` (a company that was acquired, taken private or moved to a new ticker: `"status": "delisted"`, `"successor": "US:SKYD"`), and any profile field (`website`, `founded`, `headquarters`, `ceo`, `employees`, `slogan`, `brandColor`, `aliases`, ...). Add a source link in your pull request. Do not add slogans you cannot source.
 
 ## aliases.json
 

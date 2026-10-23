@@ -163,7 +163,8 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
         const pngBase = e.pngSizes ? Object.fromEntries(e.pngSizes.map((n) => [n, `png/${n}/${mk}/${item.logoOf || item.symbol}.png`])) : null;
         (shards[mk] ||= {})[item.symbol] = {
             logoOf: item.logoOf || undefined,   // only present on aliases (JSON drops undefined)
-            company: item.company, format: item.format, sector: item.sector, industry: item.industry,
+            // curated `name`: the company's current name after a rename, until the exchange data catches up
+            company: o.name || item.company, format: item.format, sector: item.sector, industry: item.industry,
             marketCap: item.marketCap, capCurrency: pick('capCurrency'), marketCapUsd: pick('marketCapUsd'), marketCapInr: pick('marketCapInr'), logoid: item.logoid, yahooTicker: item.yahooTicker,
             yahooUrl: item.yahooUrl, path: item.path, isProcedural: item.isProcedural,
             // Profile (all values may be null: unknown means Needs verification, never guessed)
@@ -174,7 +175,11 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
             chairman: pick('chairman'), address: pick('address'), addressLocal: pick('addressLocal'), headquartersLocal: pick('headquartersLocal'),
             listingDate: pick('listingDate'), lei: pick('lei'), legalName: pick('legalName'), cik: pick('cik'),
             // Curated values carry their own source URLs (curated/overrides.json "sources"); they replace the automatic source of that field.
-            sources: (e.sources || o.sources) ? { ...e.sources, ...o.sources } : null, checks: e.checks || null,
+            // A value read from an exchange filing points at that filing (rec.filingUrls), so readers can open it.
+            sources: (e.sources || o.sources)
+                ? { ...Object.fromEntries(Object.entries(e.sources || {}).map(([f, v]) => [f, v === 'nse-filing' && e.filingUrls?.[f] ? e.filingUrls[f] : v])), ...o.sources }
+                : null,
+            checks: e.checks || null,
             slogan: pick('slogan'), brandColor: pick('brandColor'), brandColorSource: pick('brandColorSource'),
             wikidata: pick('wikidata'), pngPaths: pngBase,
             // Listing status (curated/overrides.json): a delisted, acquired or renamed company keeps its file, marked, with its successor.
@@ -183,7 +188,7 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
             freshness: { marketData: e.marketDataAt || null, profile: e.wikidataAt || null },
         };
         if (o.status === 'delisted') Object.assign(shards[mk][item.symbol], { marketCap: null, capCurrency: null, marketCapUsd: null, marketCapInr: null });   // no longer trades: no market cap
-        if (!item.logoOf) searchIndex.push([item.symbol, item.company, item.market, item.format, item.yahooTicker, o.status === 'delisted' ? null : e.marketCapUsd ?? null]);
+        if (!item.logoOf) searchIndex.push([item.symbol, o.name || item.company, item.market, item.format, item.yahooTicker, o.status === 'delisted' ? null : e.marketCapUsd ?? null]);
         if (o.status === 'delisted') delisted.add(`${item.market}:${item.symbol}`);
         // A depositary receipt of a foreign company (company country differs from the market's country) ranks below home listings.
         if (e.country && e.country !== item.country) foreignListing.add(`${item.market}:${item.symbol}`);
