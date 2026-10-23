@@ -396,6 +396,37 @@ $('bq').addEventListener('input', () => { if (brandState.all?.length) filterBran
 $('bControls').addEventListener('submit', (e) => e.preventDefault());
 $('bMore').addEventListener('click', renderBrands);
 
+// ---------------------------------------------------------------- institutions (loaded when the section comes into view)
+const instState = { all: null };
+function renderInstitutions() {
+  const q = norm($('iq').value.trim());
+  const rows = !q ? instState.all : instState.all.filter((x) => norm(`${x.name} ${x.shortName || ''} ${x.kind} ${x.description || ''}`).includes(q));
+  const frag = document.createDocumentFragment();
+  for (const x of rows) {
+    const sizes = Object.keys(x.logo.png).map(Number).sort((a, b) => b - a);
+    const best = safeUrl(x.logo.format === 'svg' ? x.logo.url : (x.logo.png[sizes[0]] || x.logo.url));
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.className = 'card bcard'; a.href = best || '#'; a.target = '_blank'; a.rel = 'noopener';
+    a.setAttribute('aria-label', `${x.name}: open the ${x.logo.format === 'svg' ? 'vector' : `${sizes[0]} px`} logo`);
+    a.innerHTML = `<span class="bl${x.onDark ? ' dark' : ''}"><img width="160" height="64" loading="lazy" decoding="async" alt="" src="${esc(own(safeUrl(x.logo.url)) || '')}"></span>
+      <span class="nm">${esc(x.shortName || x.name)}</span>
+      <span class="meta"><span class="tag">${esc(x.kind.replace(/-/g, ' '))}</span><span>${x.logo.format === 'svg' ? 'SVG' : `${sizes[0] || ''} px`}</span></span>`;
+    fallback(a.querySelector('img'), safeUrl(x.logo.url));
+    li.appendChild(a); frag.appendChild(li);
+  }
+  $('iResults').replaceChildren(frag);
+  $('iCount').textContent = `${num.format(rows.length)} of ${num.format(instState.all.length)} institutions`;
+}
+async function loadInstitutions() {
+  if (instState.all) return;
+  instState.all = [];
+  try { instState.all = await api.institutions(); renderInstitutions(); } catch { $('iCount').textContent = 'The institutions could not be loaded.'; }
+}
+new IntersectionObserver((e, o) => { if (e[0].isIntersecting) { o.disconnect(); loadInstitutions(); } }, { rootMargin: '400px' }).observe($('institutions'));
+$('iq').addEventListener('input', () => { if (instState.all?.length) renderInstitutions(); });
+$('iControls').addEventListener('submit', (e) => e.preventDefault());
+
 function fromHash() {
   const m = location.hash.match(/^#\/([^/]+)\/(.+)$/);
   if (m) showDetail(m[1], decodeURIComponent(m[2])); else if (dlg.open) closeSheet();
