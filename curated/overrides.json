@@ -9958,8 +9958,10 @@
  "CHINA:600031": {
   "website": "https://www.sany.com.cn",
   "sources": {
-   "website": "https://www.sany.com.cn/"
-  }
+   "website": "https://www.sany.com.cn/",
+   "founded": "https://www.sany.com.cn/en/about/"
+  },
+  "founded": 1994
  },
  "CHINA:600048": {
   "website": "https://www.polycn.com",
@@ -10009,17 +10011,37 @@
    "website": "https://www.cmschina.com/"
   }
  },
+ "CHINA:601088": {
+  "founded": 2004,
+  "sources": {
+   "founded": "http://en.shenhuachina.com/zgshwwEn/gsjj/gsjjList.shtml"
+  }
+ },
  "CHINA:601229": {
   "website": "https://www.bosc.cn",
   "sources": {
    "website": "https://www.bosc.cn/"
   }
  },
+ "CHINA:601288": {
+  "founded": 1951,
+  "sources": {
+   "founded": "https://www.abchina.com/en/aboutus/annual-report/default_1.htm"
+  }
+ },
+ "CHINA:601328": {
+  "founded": 1908,
+  "sources": {
+   "founded": "https://www.hk.bankcomm.com/hk/shtml/bhk/en/2012886/2012947/list.shtml?channelId=2012886"
+  }
+ },
  "CHINA:601628": {
   "website": "https://www.e-chinalife.com",
   "sources": {
-   "website": "https://www.e-chinalife.com/"
-  }
+   "website": "https://www.e-chinalife.com/",
+   "founded": "https://www.e-chinalife.com/upload/resources/file/2026/09/09/%E8%8B%B1%E6%96%87.pdf"
+  },
+  "founded": 2003
  },
  "CHINA:601633": {
   "website": "https://www.gwm.com.cn",
@@ -10046,6 +10068,18 @@
    "chairman": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0817/2026081700357.pdf"
   },
   "chairman": "Dai Houliang"
+ },
+ "CHINA:601939": {
+  "founded": 1954,
+  "sources": {
+   "founded": "http://www.ccb.com/en/investor/history.html"
+  }
+ },
+ "CHINA:601988": {
+  "founded": 1912,
+  "sources": {
+   "founded": "https://www.boc.cn/en/aboutboc/ab7/200809/t20080926_1601882.html"
+  }
  },
  "CHINA:603259": {
   "website": "http://www.wuxiapptec.com",
@@ -12614,8 +12648,10 @@
  "HONGKONG:1088": {
   "ceo": "Zhang Changyan",
   "sources": {
-   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082802662.pdf"
-  }
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082802662.pdf",
+   "founded": "http://en.shenhuachina.com/zgshwwEn/gsjj/gsjjList.shtml"
+  },
+  "founded": 2004
  },
  "HONGKONG:1093": {
   "website": "https://www.cspc.com.hk",
@@ -12659,6 +12695,18 @@
    "website": "https://www.hworld.com/"
   }
  },
+ "HONGKONG:12": {
+  "founded": 1976,
+  "sources": {
+   "founded": "https://www.hld.com/en/about-the-group/corporate-profile"
+  }
+ },
+ "HONGKONG:1208": {
+  "founded": 2009,
+  "sources": {
+   "founded": "https://www.mmg.com/who-we-are/company-overview/"
+  }
+ },
  "HONGKONG:1211": {
   "ceo": "Wang Chuan-fu",
   "sources": {
@@ -12686,16 +12734,20 @@
  "HONGKONG:1288": {
   "ceo": "Wang Zhiheng",
   "sources": {
-   "ceo": "https://www.abchina.com/en/investor-relations/performance-reports/annual-reports/202603/P020260423652699711023.pdf"
-  }
+   "ceo": "https://www.abchina.com/en/investor-relations/performance-reports/annual-reports/202603/P020260423652699711023.pdf",
+   "founded": "https://www.abchina.com/en/aboutus/annual-report/default_1.htm"
+  },
+  "founded": 1951
  },
  "HONGKONG:1299": {
   "ceo": "Lee Yuan Siong",
   "sources": {
    "ceo": "https://www.aia.com/en/about-aia/overview/leadership-team",
-   "chairman": "https://www.aia.com/en/about-aia/overview/leadership-team"
+   "chairman": "https://www.aia.com/en/about-aia/overview/leadership-team",
+   "founded": "https://www.aia.com/en/about-aia/overview"
   },
-  "chairman": "Mark Tucker"
+  "chairman": "Mark Tucker",
+  "founded": 1919
  },
  "HONGKONG:1347": {
   "website": "https://www.huahonggrace.com",
@@ -12757,6 +12809,18 @@
    "website": "https://euroeyes.com/"
   }
  },
+ "HONGKONG:1913": {
+  "founded": 1913,
+  "sources": {
+   "founded": "https://www.pradagroup.com/en/group/history.html"
+  }
+ },
+ "HONGKONG:2020": {
+  "founded": 1991,
+  "sources": {
+   "founded": "https://anta.com/pages/about-anta"
+  }
+ },
  "HONGKONG:2068": {
   "website": "https://zlgj.chinalco.com.cn",
   "sources": {
@@ -12799,6 +12863,12 @@
    "ceo": "https://www.wuxiapptec.com/about/leadership"
   }
  },
+ "HONGKONG:2378": {
+  "founded": 1848,
+  "sources": {
+   "founded": "https://www.prudentialplc.com/en/about-us/our-history/serving-our-customers-for-over-178-years/"
+  }
+ },
  "HONGKONG:2589": {
   "website": "https://www.hsay.com",
   "sources": {
@@ -12815,9 +12885,11 @@
   "website": "https://www.e-chinalife.com",
   "sources": {
    "website": "https://www.e-chinalife.com/",
-   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0907/2026090700288.pdf"
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0907/2026090700288.pdf",
+   "founded": "https://www.e-chinalife.com/upload/resources/file/2026/09/09/%E8%8B%B1%E6%96%87.pdf"
   },
-  "ceo": "Li Mingguang"
+  "ceo": "Li Mingguang",
+  "founded": 2003
  },
  "HONGKONG:2669": {
   "website": "https://www.copl.com.hk",
@@ -12829,6 +12901,12 @@
   "website": "https://www.byd-electronics.com",
   "sources": {
    "website": "https://www.byd-electronics.com/en"
+  }
+ },
+ "HONGKONG:2888": {
+  "founded": 1853,
+  "sources": {
+   "founded": "https://www.sc.com/en/about/our-history/"
   }
  },
  "HONGKONG:2899": {
@@ -12864,8 +12942,10 @@
  "HONGKONG:3328": {
   "ceo": "Zhang Baojiang",
   "sources": {
-   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0929/2026092900348.pdf"
-  }
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0929/2026092900348.pdf",
+   "founded": "https://www.hk.bankcomm.com/hk/shtml/bhk/en/2012886/2012947/list.shtml?channelId=2012886"
+  },
+  "founded": 1908
  },
  "HONGKONG:3377": {
   "website": "https://www.sinooceangroup.com",
@@ -12877,6 +12957,12 @@
   "website": "https://www.agile.com.cn",
   "sources": {
    "website": "https://www.agile.com.cn/"
+  }
+ },
+ "HONGKONG:3690": {
+  "founded": 2010,
+  "sources": {
+   "founded": "https://www.meituan.com/en-US/about-us"
   }
  },
  "HONGKONG:3750": {
@@ -12908,8 +12994,10 @@
  "HONGKONG:3988": {
   "ceo": "Zhang Hui",
   "sources": {
-   "ceo": "https://www.boc.cn/en/investor/ir6/201504/t20150402_4830131.html"
-  }
+   "ceo": "https://www.boc.cn/en/investor/ir6/201504/t20150402_4830131.html",
+   "founded": "https://www.boc.cn/en/aboutboc/ab7/200809/t20080926_1601882.html"
+  },
+  "founded": 1912
  },
  "HONGKONG:4335": {
   "ceo": "Lip-Bu Tan",
@@ -12923,14 +13011,22 @@
   "ceo": "Georges Elhedery",
   "sources": {
    "ceo": "https://www.hsbc.com/who-we-are/our-people/board-of-directors",
-   "chairman": "https://www.hsbc.com/who-we-are/our-people/board-of-directors"
+   "chairman": "https://www.hsbc.com/who-we-are/our-people/board-of-directors",
+   "founded": "https://www.hsbc.com/who-we-are/our-strategy-and-values/our-history/history-timeline"
   },
-  "chairman": "Brendan Nelson"
+  "chairman": "Brendan Nelson",
+  "founded": 1865
  },
  "HONGKONG:6099": {
   "website": "https://www.cmschina.com",
   "sources": {
    "website": "https://www.cmschina.com/"
+  }
+ },
+ "HONGKONG:6160": {
+  "founded": 2010,
+  "sources": {
+   "founded": "https://beonemedicines.com/about/history/"
   }
  },
  "HONGKONG:666": {
@@ -13005,6 +13101,12 @@
    "website": "https://www.chinamobileltd.com/en/global/home.php"
   }
  },
+ "HONGKONG:80992": {
+  "founded": 1984,
+  "sources": {
+   "founded": "https://www.lenovo.com/us/en/about/who-we-are/history/"
+  }
+ },
  "HONGKONG:81211": {
   "ceo": "Wang Chuan-fu",
   "sources": {
@@ -13017,9 +13119,11 @@
   "ceo": "Lee Yuan Siong",
   "sources": {
    "ceo": "https://www.aia.com/en/about-aia/overview/leadership-team",
-   "chairman": "https://www.aia.com/en/about-aia/overview/leadership-team"
+   "chairman": "https://www.aia.com/en/about-aia/overview/leadership-team",
+   "founded": "https://www.aia.com/en/about-aia/overview"
   },
-  "chairman": "Mark Tucker"
+  "chairman": "Mark Tucker",
+  "founded": 1919
  },
  "HONGKONG:81810": {
   "ceo": "Lei Jun",
@@ -13028,6 +13132,12 @@
    "chairman": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1023/2026102301169.pdf"
   },
   "chairman": "Lei Jun"
+ },
+ "HONGKONG:82020": {
+  "founded": 1991,
+  "sources": {
+   "founded": "https://anta.com/pages/about-anta"
+  }
  },
  "HONGKONG:82318": {
   "ceo": "Xie Yonglin and Michael Guo",
@@ -13068,8 +13178,10 @@
  "HONGKONG:939": {
   "ceo": "Zhang Yi",
   "sources": {
-   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082801489.pdf"
-  }
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082801489.pdf",
+   "founded": "http://www.ccb.com/en/investor/history.html"
+  },
+  "founded": 1954
  },
  "HONGKONG:941": {
   "website": "https://www.chinamobileltd.com",
@@ -13087,6 +13199,12 @@
   "website": "https://www.horizon.auto",
   "sources": {
    "website": "https://www.horizon.auto/"
+  }
+ },
+ "HONGKONG:992": {
+  "founded": 1984,
+  "sources": {
+   "founded": "https://www.lenovo.com/us/en/about/who-we-are/history/"
   }
  },
  "HONGKONG:9988": {
@@ -13617,11 +13735,13 @@
    "website": "https://www.asianpaints.com/about-us.html",
    "headquarters": "https://en.wikipedia.org/wiki/Asian_Paints",
    "ceo": "https://www.asianpaints.com/about-us.html",
-   "chairman": "https://www.asianpaints.com/about-us.html"
+   "chairman": "https://www.asianpaints.com/about-us.html",
+   "founded": "https://www.asianpaints.com/about-us.html"
   },
   "headquarters": "Mumbai, Maharashtra, India",
   "ceo": "Amit Syngle",
-  "chairman": "R Seshasayee"
+  "chairman": "R Seshasayee",
+  "founded": 1942
  },
  "IN:ASTERDM": {
   "website": "https://www.asterqualitycare.com",
@@ -14048,10 +14168,12 @@
   "sources": {
    "headquarters": "https://en.wikipedia.org/wiki/Britannia_Industries",
    "ceo": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_180943_30072026204453_iXBRL_WEB.html",
-   "chairman": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_180943_30072026204453_iXBRL_WEB.html"
+   "chairman": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_180943_30072026204453_iXBRL_WEB.html",
+   "founded": "https://www.britannia.co.in/about-us"
   },
   "ceo": "Rakshit Hargave",
-  "chairman": "Nusli Wadia"
+  "chairman": "Nusli Wadia",
+  "founded": 1892
  },
  "IN:BSE": {
   "website": "https://www.bseindia.com",
@@ -14273,11 +14395,13 @@
    "website": "https://www.coalindia.in/",
    "headquarters": "https://en.wikipedia.org/wiki/Coal_India",
    "ceo": "https://nsearchives.nseindia.com/corporate/COALINDIA_26122025141308_NSECEO.pdf",
-   "chairman": "https://nsearchives.nseindia.com/corporate/COALINDIA_26122025141308_NSECEO.pdf"
+   "chairman": "https://nsearchives.nseindia.com/corporate/COALINDIA_26122025141308_NSECEO.pdf",
+   "founded": "https://www.coalindia.in/history/"
   },
   "headquarters": "Kolkata, West Bengal, India",
   "ceo": "B. Sairam",
-  "chairman": "B. Sairam"
+  "chairman": "B. Sairam",
+  "founded": 1975
  },
  "IN:COCHINSHIP": {
   "website": "https://cochinshipyard.in",
@@ -14577,11 +14701,13 @@
    "website": "https://www.dlf.in/about-us.php",
    "headquarters": "https://en.wikipedia.org/wiki/DLF_Limited",
    "ceo": "https://www.dlf.in/about-us.php#leadership",
-   "chairman": "https://www.dlf.in/about-us.php#chairman"
+   "chairman": "https://www.dlf.in/about-us.php#chairman",
+   "founded": "https://www.dlf.in/about-us.php"
   },
   "headquarters": "Gurugram, Haryana, India",
   "ceo": "Devinder Singh / Ashok Kumar Tyagi",
-  "chairman": "Rajiv Singh"
+  "chairman": "Rajiv Singh",
+  "founded": 1946
  },
  "IN:DMART": {
   "website": "https://www.dmartindia.com",
@@ -14618,10 +14744,12 @@
   "sources": {
    "website": "https://www.eicher.in/",
    "ceo": "https://www.eicher.in/about-us/directors",
-   "chairman": "https://www.eicher.in/about-us/directors"
+   "chairman": "https://www.eicher.in/about-us/directors",
+   "founded": "https://www.eicher.in/"
   },
   "ceo": "B Govindarajan",
-  "chairman": "Siddhartha Lal"
+  "chairman": "Siddhartha Lal",
+  "founded": 1982
  },
  "IN:EIHOTEL": {
   "website": "https://www.eihltd.com",
@@ -15329,11 +15457,13 @@
    "website": "https://www.hindalco.com/",
    "headquarters": "https://en.wikipedia.org/wiki/Hindalco_Industries",
    "ceo": "https://www.hindalco.com/about-us/leadership",
-   "chairman": "https://www.hindalco.com/about-us/leadership"
+   "chairman": "https://www.hindalco.com/about-us/leadership",
+   "founded": "https://www.hindalco.com/about-us/legacy"
   },
   "headquarters": "Mumbai, Maharashtra, India",
   "ceo": "Satish Pai",
-  "chairman": "Kumar Mangalam Birla"
+  "chairman": "Kumar Mangalam Birla",
+  "founded": 1958
  },
  "IN:HINDCOPPER": {
   "website": "https://www.hindustancopper.com",
@@ -17480,10 +17610,12 @@
   "sources": {
    "headquarters": "https://en.wikipedia.org/wiki/Reliance_Industries",
    "chairman": "https://www.ril.com/about/board-of-directors",
-   "slogan": "https://www.ril.com/"
+   "slogan": "https://www.ril.com/",
+   "founded": "https://www.ril.com/sites/default/files/2023-11/RIL_CSR_2006.pdf"
   },
   "chairman": "Mukesh Ambani",
-  "slogan": "Growth is Life"
+  "slogan": "Growth is Life",
+  "founded": 1958
  },
  "IN:RNAM": {
   "website": "https://mf.nipponindiaim.com",
@@ -17631,9 +17763,11 @@
   "headquarters": "Mumbai, Maharashtra, India",
   "sources": {
    "headquarters": "https://en.wikipedia.org/wiki/State_Bank_of_India",
-   "chairman": "https://sbi.bank.in/web/about-us/board-of-directors"
+   "chairman": "https://sbi.bank.in/web/about-us/board-of-directors",
+   "founded": "https://sbi.bank.in/web/about-us"
   },
-  "chairman": "Challa Sreenivasulu Setty"
+  "chairman": "Challa Sreenivasulu Setty",
+  "founded": 1806
  },
  "IN:SCHAEFFLER": {
   "website": "https://www.schaeffler.co.in",
@@ -17917,11 +18051,13 @@
    "website": "https://sunpharma.com/board-of-directors/",
    "headquarters": "https://en.wikipedia.org/wiki/Sun_Pharmaceutical",
    "ceo": "https://sunpharma.com/board-of-directors/",
-   "chairman": "https://sunpharma.com/board-of-directors/"
+   "chairman": "https://sunpharma.com/board-of-directors/",
+   "founded": "https://sunpharma.com/about-us/"
   },
   "headquarters": "Mumbai, Maharashtra, India",
   "ceo": "Kirti Ganorkar",
-  "chairman": "Dilip Shanghvi"
+  "chairman": "Dilip Shanghvi",
+  "founded": 1983
  },
  "IN:SUNTV": {
   "website": "https://www.suntv.in",
@@ -18110,10 +18246,12 @@
   "sources": {
    "headquarters": "https://en.wikipedia.org/wiki/Tata_Consultancy_Services",
    "ceo": "https://www.tcs.com/who-we-are/leadership",
-   "chairman": "https://www.tcs.com/who-we-are/leadership"
+   "chairman": "https://www.tcs.com/who-we-are/leadership",
+   "founded": "https://tcs.com/tcs-50"
   },
   "ceo": "K. Krithivasan",
-  "chairman": "Natarajan Chandrasekaran"
+  "chairman": "Natarajan Chandrasekaran",
+  "founded": 1968
  },
  "IN:TDPOWERSYS": {
   "website": "https://www.tdps.co.in",
@@ -18278,10 +18416,12 @@
   "sources": {
    "headquarters": "https://en.wikipedia.org/wiki/Trent_Limited",
    "ceo": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_202324_19102026165404_iXBRL_WEB.html",
-   "chairman": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_202324_19102026165404_iXBRL_WEB.html"
+   "chairman": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_202324_19102026165404_iXBRL_WEB.html",
+   "founded": "https://trentlimited.com/pages/copy-of-about-us2-0"
   },
   "ceo": "P. Venkatesalu",
-  "chairman": "Noel Tata"
+  "chairman": "Noel Tata",
+  "founded": 1952
  },
  "IN:TVSHLTD": {
   "website": "https://www.tvsholdings.com",
@@ -32691,9 +32831,11 @@
   "ceo": "Lee Yuan Siong",
   "sources": {
    "ceo": "https://www.aia.com/en/about-aia/overview/leadership-team",
-   "chairman": "https://www.aia.com/en/about-aia/overview/leadership-team"
+   "chairman": "https://www.aia.com/en/about-aia/overview/leadership-team",
+   "founded": "https://www.aia.com/en/about-aia/overview"
   },
-  "chairman": "Mark Tucker"
+  "chairman": "Mark Tucker",
+  "founded": 1919
  },
  "US:AAPL": {
   "headquarters": "Cupertino, California, United States",
@@ -32726,18 +32868,22 @@
   "sources": {
    "ceo": "https://resources.news.e.abb.com/attachments/published/137496/en-US/9123465FF532/ABB_Q2_2026_Press_release_English.pdf",
    "chairman": "https://resources.news.e.abb.com/attachments/published/133546/en-US/8391113F9F38/Press_release_and_invitation_to_ABB_AGM_2026_-_English_PDF.pdf",
-   "website": "https://www.abb.com/global/en"
+   "website": "https://www.abb.com/global/en",
+   "founded": "https://www.abb.com/global/en/company/about/history"
   },
   "chairman": "Peter Voser",
-  "website": "https://www.abb.com"
+  "website": "https://www.abb.com",
+  "founded": 1988
  },
  "US:ABT": {
   "ceo": "Robert B. Ford",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1800/000130817926000064/abt-20260311.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1800/000130817926000064/abt-20260311.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1800/000130817926000064/abt-20260311.htm",
+   "founded": "https://www.abbott.com/about-abbott/our-heritage.html"
   },
-  "chairman": "Robert B. Ford"
+  "chairman": "Robert B. Ford",
+  "founded": 1888
  },
  "US:ACAD": {
   "website": "https://acadia.com",
@@ -32750,10 +32896,12 @@
   "sources": {
    "headquarters": "https://en.wikipedia.org/wiki/Agricultural_Bank_of_China",
    "ceo": "https://www.abchina.com/en/investor-relations/performance-reports/annual-reports/202603/P020260423652699711023.pdf",
-   "chairman": "https://www.abchina.com/en/investor-relations/performance-reports/annual-reports/202603/P020260423652699711023.pdf"
+   "chairman": "https://www.abchina.com/en/investor-relations/performance-reports/annual-reports/202603/P020260423652699711023.pdf",
+   "founded": "https://www.abchina.com/en/aboutus/annual-report/default_1.htm"
   },
   "ceo": "Wang Zhiheng",
-  "chairman": "Gu Shu"
+  "chairman": "Gu Shu",
+  "founded": 1951
  },
  "US:ACGBY": {
   "website": "https://www.abchina.com",
@@ -32774,7 +32922,15 @@
  "US:ACGL": {
   "website": "https://www.archgroup.com",
   "sources": {
-   "website": "https://www.archgroup.com/"
+   "website": "https://www.archgroup.com/",
+   "founded": "https://www.archgroup.com/about/"
+  },
+  "founded": 2001
+ },
+ "US:ACN": {
+  "founded": 1989,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/0001134538/000095013001500748/ds1.htm"
   }
  },
  "US:AD": {
@@ -32787,9 +32943,11 @@
   "ceo": "Shantanu Narayen",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000144/adbe-20260902.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000144/adbe-20260902.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000144/adbe-20260902.htm",
+   "founded": "https://www.adobe.com/content/dam/cc/en/fast-facts/pdfs/fast-facts.pdf"
   },
-  "chairman": "Shantanu Narayen"
+  "chairman": "Shantanu Narayen",
+  "founded": 1982
  },
  "US:ADI": {
   "ceo": "Vincent Roche",
@@ -32809,9 +32967,11 @@
   "ceo": "Douglas Lefever",
   "sources": {
    "ceo": "https://www.advantest.com/en/about/management/",
-   "chairman": "https://www.advantest.com/en/about/management/"
+   "chairman": "https://www.advantest.com/en/about/management/",
+   "founded": "https://www.advantest.com/en/about/history/"
   },
-  "chairman": "Yoshiaki Yoshida"
+  "chairman": "Yoshiaki Yoshida",
+  "founded": 1954
  },
  "US:ADYEY": {
   "ceo": "Pieter van der Does, Ingo Uytdehaage",
@@ -32832,8 +32992,10 @@
  "US:AEE": {
   "website": "https://www.ameren.com",
   "sources": {
-   "website": "https://www.ameren.com/"
-  }
+   "website": "https://www.ameren.com/",
+   "founded": "https://www.sec.gov/Archives/edgar/data/1002910/000100291026000009/aee-20251231.htm"
+  },
+  "founded": 1997
  },
  "US:AEIS": {
   "website": "https://www.advancedenergy.com",
@@ -32846,10 +33008,24 @@
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/2809/000110465926032153/aem-20251231xex99d1.htm",
    "chairman": "https://www.sec.gov/Archives/edgar/data/2809/000110465926032153/aem-20251231xex99d1.htm",
-   "website": "https://en.wikipedia.org/wiki/Agnico_Eagle_Mines"
+   "website": "https://en.wikipedia.org/wiki/Agnico_Eagle_Mines",
+   "founded": "https://www.agnicoeagle.com/English/news-and-media/our-stories/the-eagle-blog-and-more/blog-details/2017/How-time-flies-Agnico-Eagle-turns-60-10-25-2017/default.aspx"
   },
   "chairman": "Sean Boyd",
-  "website": "https://www.agnicoeagle.com"
+  "website": "https://www.agnicoeagle.com",
+  "founded": 1957
+ },
+ "US:AFL": {
+  "founded": 1955,
+  "sources": {
+   "founded": "https://newsroom.aflac.com/Aflac-celebrates-70-years-of-innovation,-care-and-the-iconic-Aflac-Duck"
+  }
+ },
+ "US:AFRM": {
+  "founded": 2012,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1820953/000162828026059279/afrm-20260630.htm"
+  }
  },
  "US:AGNT": {
   "website": "https://www.agnt.inc",
@@ -32870,6 +33046,12 @@
    "chairman": "https://www.airliquide.com/group/board-directors"
   },
   "chairman": "Benoît Potier"
+ },
+ "US:ALC": {
+  "founded": 1945,
+  "sources": {
+   "founded": "https://www.alcon.com/about-us/"
+  }
  },
  "US:ALGIF": {
   "website": "https://allgeier.com",
@@ -32895,6 +33077,18 @@
   "ceo": "Oliver Bäte",
   "chairman": "Jörg Schneider"
  },
+ "US:ALL": {
+  "founded": 1931,
+  "sources": {
+   "founded": "https://www.allstatecorporation.com/about/our-history.aspx"
+  }
+ },
+ "US:ALPMF": {
+  "founded": 2005,
+  "sources": {
+   "founded": "https://www.astellas.com/en/about/our-history"
+  }
+ },
  "US:AMAT": {
   "headquarters": "Santa Clara, California, United States",
   "sources": {
@@ -32911,6 +33105,12 @@
   },
   "chairman": "Lisa Su"
  },
+ "US:AME": {
+  "founded": 1930,
+  "sources": {
+   "founded": "https://www.ametek.com/our-stories/stories/sustainability/2023/may/nyse-closing-bell-2023"
+  }
+ },
  "US:AMGN": {
   "headquarters": "Thousand Oaks, California, United States",
   "sources": {
@@ -32922,7 +33122,15 @@
  "US:AMP": {
   "website": "https://www.ameriprise.com",
   "sources": {
-   "website": "https://www.ameriprise.com/"
+   "website": "https://www.ameriprise.com/",
+   "founded": "https://www.ameriprise.com/about"
+  },
+  "founded": 1894
+ },
+ "US:AMRZ": {
+  "founded": 2025,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/2035989/000203598926000017/holcim-20251231.htm"
   }
  },
  "US:AMT": {
@@ -32953,6 +33161,12 @@
   "website": "https://www.angi.com",
   "sources": {
    "website": "https://www.angi.com"
+  }
+ },
+ "US:ANPDF": {
+  "founded": 1991,
+  "sources": {
+   "founded": "https://anta.com/pages/about-anta"
   }
  },
  "US:ANZGF": {
@@ -32987,9 +33201,17 @@
   "headquarters": "Wallingford, Connecticut, United States",
   "sources": {
    "headquarters": "https://www.sec.gov/Archives/edgar/data/820313/000110465926013549/aph-20251231x10k.htm",
-   "ceo": "https://www.sec.gov/Archives/edgar/data/820313/000110465926040688/tm261344-1_def14a.htm"
+   "ceo": "https://www.sec.gov/Archives/edgar/data/820313/000110465926040688/tm261344-1_def14a.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/820313/000110465926013549/aph-20251231x10k.htm"
   },
-  "ceo": "R. Adam Norwitt"
+  "ceo": "R. Adam Norwitt",
+  "founded": 1932
+ },
+ "US:APO": {
+  "founded": 1990,
+  "sources": {
+   "founded": "https://www.apollo.com/aboutus/apollo-history"
+  }
  },
  "US:APP": {
   "ceo": "Adam Foroughi",
@@ -33003,9 +33225,11 @@
   "ceo": "Rene Haas",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000097/arm-20260331.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000097/arm-20260331.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000097/arm-20260331.htm",
+   "founded": "https://newsroom.arm.com/blog/arm-official-history"
   },
-  "chairman": "Masayoshi Son"
+  "chairman": "Masayoshi Son",
+  "founded": 1990
  },
  "US:ARZGF": {
   "ceo": "Philippe Donnet",
@@ -33113,13 +33337,33 @@
   },
   "chairman": "Hans Stråberg"
  },
+ "US:AU": {
+  "founded": 2004,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1973832/000197383226000066/au-20251231.htm"
+  }
+ },
+ "US:AUR": {
+  "founded": 2017,
+  "sources": {
+   "founded": "https://aurora.tech/company"
+  }
+ },
  "US:AVGO": {
   "ceo": "Hock Tan",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526085691/d49254ddef14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526085691/d49254ddef14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526085691/d49254ddef14a.htm",
+   "founded": "https://en.wikipedia.org/wiki/Broadcom"
   },
-  "chairman": "Henry Samueli"
+  "chairman": "Henry Samueli",
+  "founded": 1961
+ },
+ "US:AVY": {
+  "founded": 1935,
+  "sources": {
+   "founded": "https://www.averydennison.com/en/home/company/our-history.html"
+  }
  },
  "US:AWI": {
   "website": "https://www.armstrong.com",
@@ -33151,13 +33395,21 @@
   "ceo": "Thomas Buberl",
   "chairman": "Antoine Gosset-Grainville"
  },
+ "US:AXON": {
+  "founded": 1993,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1069183/000162828026011360/axon-20251231.htm"
+  }
+ },
  "US:AXP": {
   "ceo": "Stephen J. Squeri",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/4962/000110465926034163/tm2519434-8_def14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/4962/000110465926034163/tm2519434-8_def14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/4962/000110465926034163/tm2519434-8_def14a.htm",
+   "founded": "https://ir.americanexpress.com/investor-relations/default.aspx"
   },
-  "chairman": "Stephen J. Squeri"
+  "chairman": "Stephen J. Squeri",
+  "founded": 1850
  },
  "US:AXTA": {
   "website": "https://www.axalta.com",
@@ -33175,15 +33427,19 @@
   "ceo": "Pascal Soriot",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/901832/000110465926025559/tm268365d1_6k.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/901832/000110465926025559/tm268365d1_6k.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/901832/000110465926025559/tm268365d1_6k.htm",
+   "founded": "https://www.astrazeneca.com/investor-relations/faqs.html"
   },
-  "chairman": "Michel Demaré"
+  "chairman": "Michel Demaré",
+  "founded": 1999
  },
  "US:BA": {
   "chairman": "Steven M. Mollenkopf",
   "sources": {
-   "chairman": "https://www.sec.gov/Archives/edgar/data/12927/000119312526096787/d39411ddef14a.htm"
-  }
+   "chairman": "https://www.sec.gov/Archives/edgar/data/12927/000119312526096787/d39411ddef14a.htm",
+   "founded": "https://www.boeing.com/"
+  },
+  "founded": 1916
  },
  "US:BABA": {
   "ceo": "Eddie Wu",
@@ -33411,6 +33667,12 @@
   "chairman": "Brian Moynihan",
   "wikidata": "Q487907"
  },
+ "US:BALL": {
+  "founded": 1880,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/9389/000110465926017410/ball-20251231x10k.htm"
+  }
+ },
  "US:BAM": {
   "ceo": "Connor Teskey",
   "sources": {
@@ -33455,19 +33717,23 @@
   "ceo": "Héctor Grisi",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/891478/000089147826000030/san-20251231.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/891478/000089147826000030/san-20251231.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/891478/000089147826000030/san-20251231.htm",
+   "founded": "https://www.santander.com/en/about-us/our-history"
   },
-  "chairman": "Ana Botín"
+  "chairman": "Ana Botín",
+  "founded": 1857
  },
  "US:BCLYF": {
   "website": "https://home.barclays",
   "sources": {
    "website": "https://home.barclays/",
    "ceo": "https://www.sec.gov/Archives/edgar/data/312069/000165495426009079/a9532z.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/312069/000165495426006931/a0595o.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/312069/000165495426006931/a0595o.htm",
+   "founded": "https://home.barclays/who-we-are/our-history/"
   },
   "ceo": "C. S. Venkatakrishnan",
-  "chairman": "Nigel Higgins"
+  "chairman": "Nigel Higgins",
+  "founded": 1690
  },
  "US:BCMXY": {
   "ceo": "Zhang Baojiang",
@@ -33488,8 +33754,10 @@
  "US:BDX": {
   "website": "https://www.bd.com",
   "sources": {
-   "website": "https://www.bd.com/en-us"
-  }
+   "website": "https://www.bd.com/en-us",
+   "founded": "https://www.sec.gov/Archives/edgar/data/10795/000001079525000099/bdx-20250930.htm"
+  },
+  "founded": 1897
  },
  "US:BE": {
   "ceo": "K.R. Sridhar",
@@ -33519,9 +33787,17 @@
   "ceo": "Brandon Craig",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/811809/000119312526354647/bhp-20260630.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/811809/000119312526354647/bhp-20260630.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/811809/000119312526354647/bhp-20260630.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/811809/000119312526354647/bhp-20260630.htm"
   },
-  "chairman": "Ross McEwan"
+  "chairman": "Ross McEwan",
+  "founded": 1885
+ },
+ "US:BIIB": {
+  "founded": 1978,
+  "sources": {
+   "founded": "https://www.biogen.com/company.html"
+  }
  },
  "US:BKFCF": {
   "ceo": "Zhang Baojiang",
@@ -33541,9 +33817,11 @@
   "ceo": "Laurence D. Fink",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/2012383/000130817926000262/ny-20260410.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/2012383/000130817926000262/ny-20260410.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/2012383/000130817926000262/ny-20260410.htm",
+   "founded": "https://www.blackrock.com/corporate/about-us/blackrock-in-ireland"
   },
-  "chairman": "Laurence D. Fink"
+  "chairman": "Laurence D. Fink",
+  "founded": 1988
  },
  "US:BMLPG": {
   "website": "https://www.bankofamerica.com",
@@ -33612,8 +33890,10 @@
  "US:BMO": {
   "ceo": "Darryl White",
   "sources": {
-   "ceo": "https://www.sec.gov/Archives/edgar/data/927971/000119312526102176/d63354dex991.htm"
-  }
+   "ceo": "https://www.sec.gov/Archives/edgar/data/927971/000119312526102176/d63354dex991.htm",
+   "founded": "https://newsroom.bmo.com/2007-11-02-BMO-Financial-Group-Celebrates-190th-Anniversary-Canadas-First-Bank-a-history-of-firsts-for-customers-employees-and-communities"
+  },
+  "founded": 1817
  },
  "US:BMY": {
   "ceo": "Christopher S. Boerner",
@@ -33807,13 +34087,21 @@
    "website": "https://en.wikipedia.org/wiki/Callaway_Golf_Company"
   }
  },
+ "US:CAPMF": {
+  "founded": 1967,
+  "sources": {
+   "founded": "https://www.capgemini.com/about-us/who-we-are/"
+  }
+ },
  "US:CAT": {
   "ceo": "Joseph E. Creed",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/18230/000130817926000358/cat014496-def14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/18230/000130817926000358/cat014496-def14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/18230/000130817926000358/cat014496-def14a.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000008/cat-20251231.htm"
   },
-  "chairman": "Joseph E. Creed"
+  "chairman": "Joseph E. Creed",
+  "founded": 1925
  },
  "US:CB": {
   "ceo": "Evan G. Greenberg",
@@ -33862,10 +34150,18 @@
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000089/ceg-20260804.htm",
    "chairman": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000089/ceg-20260804.htm",
-   "website": "https://www.constellationenergy.com/"
+   "website": "https://www.constellationenergy.com/",
+   "founded": "https://www.constellationenergy.com/news/2022/constellation-launches-as-largest-u-s--clean-energy-company-afte.html"
   },
   "chairman": "Joseph Dominguez",
-  "website": "https://www.constellationenergy.com"
+  "website": "https://www.constellationenergy.com",
+  "founded": 2022
+ },
+ "US:CFG": {
+  "founded": 1828,
+  "sources": {
+   "founded": "https://www.citizensbank.com/private-banking/overview.aspx"
+  }
  },
  "US:CFRHF": {
   "ceo": "Nicolas Bos",
@@ -33911,9 +34207,11 @@
   "ceo": "Brian C. Evanko",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1739940/000173994026000023/ci-20260312.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1739940/000173994026000023/ci-20260312.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1739940/000173994026000023/ci-20260312.htm",
+   "founded": "https://www.thecignagroup.com/about-us/milestones"
   },
-  "chairman": "David M. Cordani"
+  "chairman": "David M. Cordani",
+  "founded": 1792
  },
  "US:CICHF": {
   "headquarters": "Beijing, China",
@@ -33940,6 +34238,12 @@
   "ceo": "Zhang Yi",
   "chairman": "Zhang Jinliang",
   "wikidata": "Q26299"
+ },
+ "US:CIEN": {
+  "founded": 1992,
+  "sources": {
+   "founded": "https://media.ciena.com/documents/2019-History-of-Ciena.pdf"
+  }
  },
  "US:CIHHF": {
   "website": "https://www.cmbchina.com",
@@ -33969,6 +34273,12 @@
   },
   "chairman": "Cai Xiliang"
  },
+ "US:CINF": {
+  "founded": 1950,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/20286/000002028626000008/cinf-20251231.htm"
+  }
+ },
  "US:CIXPF": {
   "ceo": "Gonzalo Gortázar",
   "sources": {
@@ -33977,10 +34287,22 @@
   },
   "chairman": "Tomás Muniesa"
  },
+ "US:CL": {
+  "founded": 1806,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/21665/000002166526000006/cl-20251231.htm"
+  }
+ },
  "US:CLFD": {
   "website": "https://www.seeclearfield.com",
   "sources": {
    "website": "https://www.seeclearfield.com/"
+  }
+ },
+ "US:CLS": {
+  "founded": 1994,
+  "sources": {
+   "founded": "https://www.celestica.com/about-us/history-and-milestones"
   }
  },
  "US:CM": {
@@ -34019,6 +34341,12 @@
   },
   "chairman": "Jennifer Rumsey"
  },
+ "US:CMS": {
+  "founded": 1886,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/811156/000081115626000004/cms-20251231.htm"
+  }
+ },
  "US:CMWAY": {
   "website": "https://www.commbank.com.au",
   "sources": {
@@ -34028,6 +34356,12 @@
   },
   "ceo": "Matt Comyn",
   "chairman": "Paul O'Malley"
+ },
+ "US:CNC": {
+  "founded": 1984,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1071739/000107173926000049/cnc-20251231.htm"
+  }
  },
  "US:CNCK": {
   "website": "https://www.coincheckgroup.com",
@@ -34042,6 +34376,18 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/16868/000110465926010352/tm261145d1_40f.htm"
   },
   "chairman": "Shauneen Bruder"
+ },
+ "US:COHR": {
+  "founded": 1971,
+  "sources": {
+   "founded": "https://www.coherent.com/company/about-us"
+  }
+ },
+ "US:COIN": {
+  "founded": 2012,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000015/coin-20251231.htm"
+  }
  },
  "US:COP": {
   "ceo": "Andrew M. O'Brien",
@@ -34068,8 +34414,10 @@
  "US:CPAY": {
   "website": "https://www.corpay.com",
   "sources": {
-   "website": "https://www.corpay.com/"
-  }
+   "website": "https://www.corpay.com/",
+   "founded": "https://www.sec.gov/Archives/edgar/data/1175454/000117545426000018/flt-20251231.htm"
+  },
+  "founded": 2000
  },
  "US:CPR": {
   "website": "https://www.citigroup.com",
@@ -34098,8 +34446,10 @@
  "US:CRS": {
   "website": "https://www.carpentertechnology.com",
   "sources": {
-   "website": "https://www.carpentertechnology.com/"
-  }
+   "website": "https://www.carpentertechnology.com/",
+   "founded": "https://www.sec.gov/Archives/edgar/data/17843/000001784326000034/crs-20260630.htm"
+  },
+  "founded": 1889
  },
  "US:CRWD": {
   "headquarters": "Austin, Texas, United States",
@@ -34139,9 +34489,11 @@
   "ceo": "Stephen F. Angel",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/277948/000162828026021944/csx-20260326.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/277948/000162828026021944/csx-20260326.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/277948/000162828026021944/csx-20260326.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/0000277948/000027794808000036/form2007_10k.htm"
   },
-  "chairman": "John J. Zillmer"
+  "chairman": "John J. Zillmer",
+  "founded": 1980
  },
  "US:CTAS": {
   "ceo": "Todd M. Schneider",
@@ -34177,9 +34529,11 @@
   "ceo": "J. David Joyner",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/64803/000130817926000201/cvs014969-def14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/64803/000130817926000201/cvs014969-def14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/64803/000130817926000201/cvs014969-def14a.htm",
+   "founded": "https://www.cvshealth.com/about/our-strategy/company-history.html"
   },
-  "chairman": "J. David Joyner"
+  "chairman": "J. David Joyner",
+  "founded": 1963
  },
  "US:CVX": {
   "ceo": "Michael K. Wirth",
@@ -34188,6 +34542,12 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/93410/000119312526145617/d77994ddef14a.htm"
   },
   "chairman": "Michael K. Wirth"
+ },
+ "US:CX": {
+  "founded": 1906,
+  "sources": {
+   "founded": "https://www.cemex.com/about-us"
+  }
  },
  "US:CYATY": {
   "website": "https://www.catl.com",
@@ -34205,6 +34565,12 @@
    "website": "https://www.daifuku.com/"
   }
  },
+ "US:DAL": {
+  "founded": 1925,
+  "sources": {
+   "founded": "https://news.delta.com/corporate-stats-and-facts"
+  }
+ },
  "US:DASH": {
   "ceo": "Tony Xu",
   "sources": {
@@ -34213,11 +34579,19 @@
   },
   "chairman": "Tony Xu"
  },
+ "US:DB": {
+  "founded": 1870,
+  "sources": {
+   "founded": "https://www.db.com/who-we-are/history/"
+  }
+ },
  "US:DBOEF": {
   "chairman": "Clara-Christina Streit",
   "sources": {
-   "chairman": "https://www.deutsche-boerse.com/dbg-en/investor-relations/corporate-governance/supervisory-board"
-  }
+   "chairman": "https://www.deutsche-boerse.com/dbg-en/investor-relations/corporate-governance/supervisory-board",
+   "founded": "https://www.deutsche-boerse.com/dbg-en/about-us/deutsche-boerse-group/company-history/1990-to-1999-245226"
+  },
+  "founded": 1992
  },
  "US:DBOEY": {
   "website": "https://www.deutsche-boerse.com",
@@ -34232,10 +34606,12 @@
   "sources": {
    "ceo": "https://www.dbs.com/iwov-resources/images/investors/other-materials/2026/DBSH%20Minutes%20of%202026%20AGM.pdf",
    "chairman": "https://www.dbs.com/iwov-resources/images/investors/other-materials/2026/DBSH%20Minutes%20of%202026%20AGM.pdf",
-   "website": "https://www.dbs.com/default.page"
+   "website": "https://www.dbs.com/default.page",
+   "founded": "https://www.dbs.com/dbs-heritage/index.html"
   },
   "chairman": "Peter Seah",
-  "website": "https://www.dbs.com"
+  "website": "https://www.dbs.com",
+  "founded": 1968
  },
  "US:DBSDY": {
   "website": "https://www.dbs.com",
@@ -34275,17 +34651,21 @@
   "ceo": "John C. May",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/315189/000110465926003618/de-20260225xdef14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/315189/000110465926003618/de-20260225xdef14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/315189/000110465926003618/de-20260225xdef14a.htm",
+   "founded": "https://www.deere.com/international/en/our-company/history/"
   },
-  "chairman": "John C. May"
+  "chairman": "John C. May",
+  "founded": 1837
  },
  "US:DELL": {
   "ceo": "Michael Dell",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1571996/000119312526226734/d132444ddef14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1571996/000119312526226734/d132444ddef14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1571996/000119312526226734/d132444ddef14a.htm",
+   "founded": "https://www.dell.com/en-us/learn/our-company/lp/timeline"
   },
-  "chairman": "Michael Dell"
+  "chairman": "Michael Dell",
+  "founded": 1984
  },
  "US:DFRYF": {
   "website": "https://www.avoltaworld.com",
@@ -34293,25 +34673,49 @@
    "website": "https://www.avoltaworld.com/en"
   }
  },
+ "US:DG": {
+  "founded": 1939,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/29534/000110465926032325/dg-20260130x10k.htm"
+  }
+ },
+ "US:DGEAF": {
+  "founded": 1997,
+  "sources": {
+   "founded": "https://www.diageo.com/en/our-business/our-history"
+  }
+ },
+ "US:DGX": {
+  "founded": 1967,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1022079/000102207926000015/dgx-20251231.htm"
+  }
+ },
  "US:DHR": {
   "ceo": "Julie Sawyer Montgomery",
   "sources": {
-   "ceo": "https://www.sec.gov/Archives/edgar/data/313616/000119312526330652/d161342d8k.htm"
-  }
+   "ceo": "https://www.sec.gov/Archives/edgar/data/313616/000119312526330652/d161342d8k.htm",
+   "founded": "https://www.danaher.com/about-danaher"
+  },
+  "founded": 1984
  },
  "US:DIS": {
   "ceo": "Josh D'Amaro",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000022/dis-20260202.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000013/dis-20260122.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000013/dis-20260122.htm",
+   "founded": "https://d23.com/this-day/official-start-of-the-walt-disney-company/"
   },
-  "chairman": "James P. Gorman"
+  "chairman": "James P. Gorman",
+  "founded": 1923
  },
  "US:DKILF": {
   "website": "https://www.daikin.com",
   "sources": {
-   "website": "https://www.daikin.com/"
-  }
+   "website": "https://www.daikin.com/",
+   "founded": "https://www.daikin.com/corporate/overview/vision"
+  },
+  "founded": 1924
  },
  "US:DNOPF": {
   "website": "https://grupadino.pl",
@@ -34329,6 +34733,12 @@
   "website": "https://group.dhl.com",
   "sources": {
    "website": "https://group.dhl.com/en.html"
+  }
+ },
+ "US:DRI": {
+  "founded": 1938,
+  "sources": {
+   "founded": "https://www.darden.com/our-company"
   }
  },
  "US:DTEGF": {
@@ -34349,9 +34759,11 @@
   "ceo": "Harry K. Sideris",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1326160/000110465926032443/tm261356-4_def14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1326160/000110465926032443/tm261356-4_def14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1326160/000110465926032443/tm261356-4_def14a.htm",
+   "founded": "https://www.duke-energy.com/our-company/about-us/our-history"
   },
-  "chairman": "Theodore F. Craver, Jr."
+  "chairman": "Theodore F. Craver, Jr.",
+  "founded": 1904
  },
  "US:DUKPA": {
   "ceo": "Harry K. Sideris",
@@ -34400,6 +34812,12 @@
   },
   "ceo": "Guillaume Faury",
   "chairman": "René Obermann"
+ },
+ "US:EBAY": {
+  "founded": 1995,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1065088/000106508826000027/ebay-20251231.htm"
+  }
  },
  "US:EBBGF": {
   "ceo": "Gregory L. Ebel",
@@ -34453,6 +34871,12 @@
    "website": "https://www.conedison.com/en/"
   }
  },
+ "US:EFX": {
+  "founded": 1899,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/33185/000003318526000010/efx-20251231.htm"
+  }
+ },
  "US:EIPAF": {
   "ceo": "Claudio Descalzi",
   "sources": {
@@ -34460,6 +34884,12 @@
    "chairman": "https://www.eni.com/en-IT/governance/corporate-bodies/board-directors.html"
   },
   "chairman": "Giuseppina Di Foggia"
+ },
+ "US:EIX": {
+  "founded": 1886,
+  "sources": {
+   "founded": "https://www.edison.com/about-us"
+  }
  },
  "US:ELV": {
   "ceo": "Gail Boudreaux",
@@ -34487,9 +34917,11 @@
   "ceo": "Gregory L. Ebel",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/895728/000110465926105899/tm2624881d2_8k.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/895728/000119312526049810/enb-20251231.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/895728/000119312526049810/enb-20251231.htm",
+   "founded": "https://www.enbridge.com/about-us"
   },
-  "chairman": "Steven W. Williams"
+  "chairman": "Steven W. Williams",
+  "founded": 1949
  },
  "US:ENBGF": {
   "ceo": "Gregory L. Ebel",
@@ -34537,9 +34969,17 @@
   "ceo": "A. James Teague and W. Randall Fowler",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1061219/000119312526291582/d67955d8k.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1061219/000106121926000006/epd-20251231.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1061219/000106121926000006/epd-20251231.htm",
+   "founded": "https://enterpriseproducts.com/about-us/"
   },
-  "chairman": "Randa Duncan Williams"
+  "chairman": "Randa Duncan Williams",
+  "founded": 1968
+ },
+ "US:EQH": {
+  "founded": 1859,
+  "sources": {
+   "founded": "https://equitable.com/"
+  }
  },
  "US:EQIX": {
   "ceo": "Adaire Fox-Martin",
@@ -34579,9 +35019,11 @@
   "ceo": "Paulo Ruiz",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1551182/000119312526105117/etn-20260312.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1551182/000119312526105117/etn-20260312.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1551182/000119312526105117/etn-20260312.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000007/etn-20251231.htm"
   },
-  "chairman": "Gregory R. Page"
+  "chairman": "Gregory R. Page",
+  "founded": 1911
  },
  "US:EUXTF": {
   "chairman": "Piero Novelli",
@@ -34592,8 +35034,10 @@
  "US:EW": {
   "website": "https://www.edwards.com",
   "sources": {
-   "website": "https://www.edwards.com/"
-  }
+   "website": "https://www.edwards.com/",
+   "founded": "https://www.edwards.com/about-us/who-we-are"
+  },
+  "founded": 1958
  },
  "US:EXPGF": {
   "website": "https://www.experianplc.com",
@@ -34601,10 +35045,28 @@
    "website": "https://www.experianplc.com/"
   }
  },
+ "US:EXR": {
+  "founded": 1977,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1289490/000128949026000011/exr-20251231.htm"
+  }
+ },
  "US:EYPT": {
   "website": "https://eyepoint.bio",
   "sources": {
    "website": "https://eyepoint.bio/"
+  }
+ },
+ "US:F": {
+  "founded": 1903,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/f-20251231.htm"
+  }
+ },
+ "US:FANG": {
+  "founded": 2007,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/0001539838/000153983813000004/a12311210-k.htm"
   }
  },
  "US:FANUF": {
@@ -34616,8 +35078,10 @@
  "US:FCX": {
   "ceo": "Kathleen L. Quirk",
   "sources": {
-   "ceo": "https://www.sec.gov/Archives/edgar/data/831259/000119312526173666/d30227ddef14a.htm"
-  }
+   "ceo": "https://www.sec.gov/Archives/edgar/data/831259/000119312526173666/d30227ddef14a.htm",
+   "founded": "https://www.fcx.com/about/history"
+  },
+  "founded": 1912
  },
  "US:FDS": {
   "website": "https://www.factset.com",
@@ -34628,6 +35092,12 @@
   },
   "ceo": "Sanoke Viswanathan",
   "chairman": "Malcolm Frank"
+ },
+ "US:FDX": {
+  "founded": 1971,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000105/fdx-20260531.htm"
+  }
  },
  "US:FHN": {
   "website": "https://www.firsthorizon.com",
@@ -34649,6 +35119,12 @@
   "website": "https://www.nationalbeverage.com",
   "sources": {
    "website": "https://www.nationalbeverage.com/"
+  }
+ },
+ "US:FLEX": {
+  "founded": 1969,
+  "sources": {
+   "founded": "https://flex.com/company"
   }
  },
  "US:FLMNF": {
@@ -34691,10 +35167,34 @@
   },
   "chairman": "Tadashi Yanai"
  },
+ "US:FRHC": {
+  "founded": 2008,
+  "sources": {
+   "founded": "https://www.freedomholdingcorp.com/about"
+  }
+ },
+ "US:FRO": {
+  "founded": 1985,
+  "sources": {
+   "founded": "https://www.frontlineplc.cy/history/"
+  }
+ },
+ "US:FSLR": {
+  "founded": 1999,
+  "sources": {
+   "founded": "https://www.firstsolar.com/About-Us/Overview"
+  }
+ },
  "US:FSM": {
   "website": "https://fortunamining.com",
   "sources": {
    "website": "https://fortunamining.com"
+  }
+ },
+ "US:FTI": {
+  "founded": 2017,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1681459/000168145926000010/fti-20251231.htm"
   }
  },
  "US:FTNT": {
@@ -34773,11 +35273,19 @@
   },
   "chairman": "Daniel O'Day"
  },
+ "US:GIS": {
+  "founded": 1866,
+  "sources": {
+   "founded": "https://www.generalmills.com/about"
+  }
+ },
  "US:GL": {
   "website": "https://home.globelifeinsurance.com",
   "sources": {
-   "website": "https://home.globelifeinsurance.com/"
-  }
+   "website": "https://home.globelifeinsurance.com/",
+   "founded": "https://home.globelifeinsurance.com/about"
+  },
+  "founded": 1900
  },
  "US:GLAXF": {
   "ceo": "Luke Miels",
@@ -34791,9 +35299,11 @@
   "ceo": "Gary Nagle",
   "sources": {
    "ceo": "https://www.glencore.com/who-we-are/our-leadership",
-   "chairman": "https://www.glencore.com/.rest/api/v1/documents/static/436918bf-6238-444d-8879-2b171565d6fa/Corporate-Governance-and-Board-Committees-reports-2025.pdf"
+   "chairman": "https://www.glencore.com/.rest/api/v1/documents/static/436918bf-6238-444d-8879-2b171565d6fa/Corporate-Governance-and-Board-Committees-reports-2025.pdf",
+   "founded": "https://www.glencore.com/gl-timeline/index.html"
   },
-  "chairman": "Kalidas Madhavpeddi"
+  "chairman": "Kalidas Madhavpeddi",
+  "founded": 1974
  },
  "US:GLNCY": {
   "website": "https://www.glencore.com",
@@ -34816,7 +35326,15 @@
  "US:GLW": {
   "ceo": "Wendell P. Weeks",
   "sources": {
-   "ceo": "https://www.sec.gov/Archives/edgar/data/24741/000120677426000148/glw4500541-def14a.htm"
+   "ceo": "https://www.sec.gov/Archives/edgar/data/24741/000120677426000148/glw4500541-def14a.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000124/glw-20251231.htm"
+  },
+  "founded": 1851
+ },
+ "US:GM": {
+  "founded": 1908,
+  "sources": {
+   "founded": "https://www.gm.com/heritage/durant"
   }
  },
  "US:GMBXF": {
@@ -34841,17 +35359,21 @@
   "ceo": "Sundar Pichai",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm",
+   "founded": "https://abc.xyz/investor/founders-letters/2015/"
   },
-  "chairman": "John L. Hennessy"
+  "chairman": "John L. Hennessy",
+  "founded": 1998
  },
  "US:GOOGL": {
   "ceo": "Sundar Pichai",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm",
+   "founded": "https://abc.xyz/investor/founders-letters/2015/"
   },
-  "chairman": "John L. Hennessy"
+  "chairman": "John L. Hennessy",
+  "founded": 1998
  },
  "US:GOOGM": {
   "website": "https://abc.xyz",
@@ -34884,6 +35406,18 @@
   "ceo": "Sundar Pichai",
   "chairman": "John L. Hennessy",
   "wikidata": "Q20800404"
+ },
+ "US:GPC": {
+  "founded": 1928,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/40987/000004098726000003/gpc-20251231.htm"
+  }
+ },
+ "US:GPDNF": {
+  "founded": 1919,
+  "sources": {
+   "founded": "https://www.danone.com/group/about-us.html"
+  }
  },
  "US:GPI": {
   "website": "https://www.group1auto.com",
@@ -35001,23 +35535,45 @@
    "website": "https://www.hain.com/"
   }
  },
+ "US:HAL": {
+  "founded": 1919,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/45012/000004501226000015/hal-20251231.htm"
+  }
+ },
+ "US:HBAN": {
+  "founded": 1866,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/49196/000004919626000015/hban-20251231.htm"
+  }
+ },
  "US:HBCYF": {
   "ceo": "Georges Elhedery",
   "sources": {
    "ceo": "https://www.hsbc.com/who-we-are/leadership-and-governance/board-of-directors",
-   "chairman": "https://www.hsbc.com/who-we-are/leadership-and-governance/board-of-directors"
+   "chairman": "https://www.hsbc.com/who-we-are/leadership-and-governance/board-of-directors",
+   "founded": "https://www.hsbc.com/who-we-are/our-strategy-and-values/our-history/history-timeline"
   },
-  "chairman": "Brendan Nelson"
+  "chairman": "Brendan Nelson",
+  "founded": 1865
  },
  "US:HCA": {
   "website": "https://www.hcahealthcare.com",
   "sources": {
    "website": "https://www.sec.gov/Archives/edgar/data/860730/000119312526106142/d939252ddef14a.htm",
    "ceo": "https://www.sec.gov/Archives/edgar/data/860730/000119312526106142/d939252ddef14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/860730/000119312526106142/d939252ddef14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/860730/000119312526106142/d939252ddef14a.htm",
+   "founded": "https://www.hcahealthcare.com/about/our-history"
   },
   "ceo": "Samuel N. Hazen",
-  "chairman": "Thomas F. Frist III"
+  "chairman": "Thomas F. Frist III",
+  "founded": 1968
+ },
+ "US:HCMLF": {
+  "founded": 1912,
+  "sources": {
+   "founded": "https://www.holcim.com/about/history"
+  }
  },
  "US:HD": {
   "ceo": "Edward P. Decker",
@@ -35091,13 +35647,21 @@
   },
   "chairman": "Carlson Tong"
  },
+ "US:HLDVF": {
+  "founded": 1976,
+  "sources": {
+   "founded": "https://www.hld.com/en/about-the-group/corporate-profile"
+  }
+ },
  "US:HLT": {
   "ceo": "Christopher J. Nassetta",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1585689/000158568926000023/hlt-20260401.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1585689/000158568926000023/hlt-20260401.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1585689/000158568926000023/hlt-20260401.htm",
+   "founded": "https://stories.hilton.com/hilton-history/hiltons-first-hilton-2"
   },
-  "chairman": "Jonathan D. Gray"
+  "chairman": "Jonathan D. Gray",
+  "founded": 1919
  },
  "US:HNHPF": {
   "ceo": "Young Liu",
@@ -35106,6 +35670,12 @@
    "chairman": "https://www.honhai.com/s3/upload/202606/global/%E9%B4%BB%E6%B5%B7%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E8%AD%B0%E4%BA%8B%E9%8C%84_E-115%E5%B9%B4_20260623_5534.pdf"
   },
   "chairman": "Young Liu"
+ },
+ "US:HOCPF": {
+  "founded": 1941,
+  "sources": {
+   "founded": "https://www.hoya.com/en/company/profile/"
+  }
  },
  "US:HOOD": {
   "headquarters": "Menlo Park, California, United States",
@@ -35131,9 +35701,11 @@
   "ceo": "Antonio Neri",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000019/hpe-20260210.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000019/hpe-20260210.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000019/hpe-20260210.htm",
+   "founded": "https://news.hpe.com/timeline/our-history/"
   },
-  "chairman": "Patricia F. Russo"
+  "chairman": "Patricia F. Russo",
+  "founded": 2015
  },
  "US:HPEPC": {
   "ceo": "Antonio Neri",
@@ -35163,11 +35735,19 @@
   "ceo": "Georges Elhedery",
   "wikidata": "Q190464"
  },
+ "US:HSY": {
+  "founded": 1894,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/47111/000162828026008586/hsy-20251231.htm"
+  }
+ },
  "US:HTHIF": {
   "ceo": "Toshiaki Tokunaga",
   "sources": {
-   "ceo": "https://www.hitachi.com/content/dam/hitachi/global/en/ir/media/corporate/governance/governance.pdf"
-  }
+   "ceo": "https://www.hitachi.com/content/dam/hitachi/global/en/ir/media/corporate/governance/governance.pdf",
+   "founded": "https://www.hitachi.com/en/about/history/"
+  },
+  "founded": 1910
  },
  "US:HTHIY": {
   "website": "https://www.hitachi.com",
@@ -35181,6 +35761,18 @@
   "website": "https://www.hworld.com",
   "sources": {
    "website": "https://www.hworld.com/"
+  }
+ },
+ "US:HUBB": {
+  "founded": 1888,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/48898/000162828026007500/hubb-20251231.htm"
+  }
+ },
+ "US:HUM": {
+  "founded": 1961,
+  "sources": {
+   "founded": "https://www.humana.com/about"
   }
  },
  "US:HWM": {
@@ -35209,9 +35801,11 @@
   "ceo": "Sandeep Bakhshi",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1103838/000095010326010820/dp249803_20f.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1103838/000095010326010820/dp249803_20f.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1103838/000095010326010820/dp249803_20f.htm",
+   "founded": "https://www.icici.bank.in/about-us"
   },
-  "chairman": "Pradeep Kumar Sinha"
+  "chairman": "Pradeep Kumar Sinha",
+  "founded": 1955
  },
  "US:ICE": {
   "website": "https://www.ice.com",
@@ -35267,6 +35861,12 @@
   "ceo": "Óscar García Maceiras",
   "chairman": "Marta Ortega"
  },
+ "US:IDKOF": {
+  "founded": 1911,
+  "sources": {
+   "founded": "https://www.idemitsu.com/en/company/history/index.html"
+  }
+ },
  "US:IFNNF": {
   "ceo": "Jochen Hanebeck",
   "sources": {
@@ -35292,6 +35892,18 @@
    "chairman": "https://group.intesasanpaolo.com/en/governance/bod"
   },
   "chairman": "Gian Maria Gros-Pietro"
+ },
+ "US:ILMN": {
+  "founded": 1998,
+  "sources": {
+   "founded": "https://www.illumina.com/company/about-us.html"
+  }
+ },
+ "US:INCY": {
+  "founded": 1991,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000010/incy-20251231.htm"
+  }
  },
  "US:INFY": {
   "chairman": "Nandan Nilekani",
@@ -35327,14 +35939,22 @@
   "ceo": "Sasan K. Goodarzi",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/896878/000089687825000057/intu-20251126.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/896878/000089687825000057/intu-20251126.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/896878/000089687825000057/intu-20251126.htm",
+   "founded": "https://investors.intuit.com/company-information/faq"
   },
-  "chairman": "Sasan K. Goodarzi"
+  "chairman": "Sasan K. Goodarzi",
+  "founded": 1983
  },
  "US:IONQ": {
   "website": "https://ionq.com",
   "sources": {
    "website": "https://ionq.com/"
+  }
+ },
+ "US:IP": {
+  "founded": 1898,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/51434/000005143426000055/ip-20251231.htm"
   }
  },
  "US:IPAR": {
@@ -35381,17 +36001,21 @@
   "ceo": "Milton Maluhy Filho",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1132597/000113259726000132/itub-20251231.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1132597/000113259726000132/itub-20251231.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1132597/000113259726000132/itub-20251231.htm",
+   "founded": "https://www.itau.com.br/relacoes-com-investidores/en/100-years/"
   },
-  "chairman": "Pedro Moreira Salles and Roberto Egydio Setubal"
+  "chairman": "Pedro Moreira Salles and Roberto Egydio Setubal",
+  "founded": 1924
  },
  "US:ITW": {
   "ceo": "Christopher A. O'Herlihy",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/49826/000119312526127599/itw-20260325.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/49826/000119312526127599/itw-20260325.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/49826/000119312526127599/itw-20260325.htm",
+   "founded": "https://www.itw.com/"
   },
-  "chairman": "E. Scott Santi"
+  "chairman": "E. Scott Santi",
+  "founded": 1912
  },
  "US:IVSBF": {
   "ceo": "Christian Cederholm",
@@ -35409,6 +36033,18 @@
   },
   "chairman": "Jacob Wallenberg"
  },
+ "US:JAZZ": {
+  "founded": 2003,
+  "sources": {
+   "founded": "https://www.jazzpharma.com/about/history"
+  }
+ },
+ "US:JBL": {
+  "founded": 1966,
+  "sources": {
+   "founded": "https://www.jabil.com/about-us/jabil-history.html"
+  }
+ },
  "US:JCI": {
   "ceo": "Joakim Weidemanis",
   "sources": {
@@ -35421,6 +36057,12 @@
   "website": "https://www.jdplc.com",
   "sources": {
    "website": "https://www.jdplc.com/"
+  }
+ },
+ "US:JLL": {
+  "founded": 1783,
+  "sources": {
+   "founded": "https://www.jll.com/en-us/about-jll"
   }
  },
  "US:JNJ": {
@@ -35599,13 +36241,27 @@
    "website": "https://www.keller.com/"
   }
  },
+ "US:KMB": {
+  "founded": 1872,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/55785/000162828026007567/kmb-20251231.htm"
+  }
+ },
+ "US:KMI": {
+  "founded": 1997,
+  "sources": {
+   "founded": "https://www.kindermorgan.com/About-Us/History"
+  }
+ },
  "US:KO": {
   "ceo": "Henrique Braun",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/21344/000110465926028215/ko-20260429xdef14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/21344/000110465926028215/ko-20260429xdef14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/21344/000110465926028215/ko-20260429xdef14a.htm",
+   "founded": "https://www.coca-colacompany.com/about-us/history"
   },
-  "chairman": "James Quincey"
+  "chairman": "James Quincey",
+  "founded": 1886
  },
  "US:KODK": {
   "website": "https://www.kodak.com",
@@ -35621,13 +36277,21 @@
   },
   "chairman": "Yong-hun Kim"
  },
+ "US:KUBTF": {
+  "founded": 1890,
+  "sources": {
+   "founded": "https://www.kubota.com/corporate/history/index.html"
+  }
+ },
  "US:KXHCF": {
   "ceo": "Hiroo Ota",
   "sources": {
    "ceo": "https://www.kioxia-holdings.com/en-jp/about/company.html",
-   "website": "https://www.kioxia-holdings.com/ja-jp/top.html"
+   "website": "https://www.kioxia-holdings.com/ja-jp/top.html",
+   "founded": "https://www.kioxia-holdings.com/en-jp/about/company.html"
   },
-  "website": "https://www.kioxia-holdings.com"
+  "website": "https://www.kioxia-holdings.com",
+  "founded": 2017
  },
  "US:KXIAY": {
   "website": "https://www.kioxia-holdings.com",
@@ -35671,6 +36335,18 @@
   "ceo": "David Schwimmer",
   "chairman": "Don Robert"
  },
+ "US:LDOS": {
+  "founded": 1969,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1336920/000133692026000030/ldos-20260102.htm"
+  }
+ },
+ "US:LII": {
+  "founded": 1895,
+  "sources": {
+   "founded": "https://www.lennox.com/about/"
+  }
+ },
  "US:LIN": {
   "headquarters": "Woking, Surrey, United Kingdom",
   "sources": {
@@ -35705,14 +36381,28 @@
   "ceo": "David A. Ricks",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000029/lly-20260317.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000029/lly-20260317.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000029/lly-20260317.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm"
   },
-  "chairman": "David A. Ricks"
+  "chairman": "David A. Ricks",
+  "founded": 1876
+ },
+ "US:LNVGF": {
+  "founded": 1984,
+  "sources": {
+   "founded": "https://www.lenovo.com/us/en/about/who-we-are/history/"
+  }
  },
  "US:LNWO": {
   "website": "https://www.lnw.com",
   "sources": {
    "website": "https://www.lnw.com/about"
+  }
+ },
+ "US:LOW": {
+  "founded": 1921,
+  "sources": {
+   "founded": "https://corporate.lowes.com/who-we-are/our-history"
   }
  },
  "US:LRCX": {
@@ -35753,6 +36443,12 @@
    "website": "https://www.stridelearning.com/"
   }
  },
+ "US:LSCC": {
+  "founded": 1983,
+  "sources": {
+   "founded": "https://www.latticesemi.com/About"
+  }
+ },
  "US:LSEGY": {
   "website": "https://www.lseg.com",
   "sources": {
@@ -35775,9 +36471,11 @@
   "ceo": "Bernard Arnault",
   "sources": {
    "ceo": "https://www.lvmh.com/en/our-group/governance",
-   "chairman": "https://www.lvmh.com/en/our-group/governance"
+   "chairman": "https://www.lvmh.com/en/our-group/governance",
+   "founded": "https://www.lvmh.com/en/our-group/history"
   },
-  "chairman": "Bernard Arnault"
+  "chairman": "Bernard Arnault",
+  "founded": 1987
  },
  "US:LVMUY": {
   "website": "https://www.lvmh.com",
@@ -35813,9 +36511,11 @@
   "chairman": "Merit Janow",
   "sources": {
    "chairman": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000021/ma-20260427.htm",
-   "ceo": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000021/ma-20260427.htm"
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000021/ma-20260427.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000013/ma-20251231.htm"
   },
-  "ceo": "Michael Miebach"
+  "ceo": "Michael Miebach",
+  "founded": 1966
  },
  "US:MAHMF": {
   "ceo": "Anish Shah",
@@ -35825,6 +36525,12 @@
   },
   "chairman": "Anand Mahindra"
  },
+ "US:MANH": {
+  "founded": 1990,
+  "sources": {
+   "founded": "https://www.manh.com/about-us"
+  }
+ },
  "US:MAR": {
   "ceo": "Anthony G. Capuano",
   "sources": {
@@ -35832,6 +36538,12 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1048286/000114036126011590/ny20062722x771_def14a.htm"
   },
   "chairman": "David S. Marriott"
+ },
+ "US:MAS": {
+  "founded": 1929,
+  "sources": {
+   "founded": "https://masco.com/about-us/historical-timeline/"
+  }
  },
  "US:MBAI": {
   "website": "https://mbody.ai",
@@ -35843,17 +36555,21 @@
   "ceo": "Junichi Hanzawa",
   "sources": {
    "ceo": "https://www.mufg.jp/english/profile/overview/executive_committee/index.html",
-   "chairman": "https://www.mufg.jp/english/profile/overview/executive_committee/index.html"
+   "chairman": "https://www.mufg.jp/english/profile/overview/executive_committee/index.html",
+   "founded": "https://www.mufg.jp/english/profile/overview/history/index.html"
   },
-  "chairman": "Hironori Kamezawa"
+  "chairman": "Hironori Kamezawa",
+  "founded": 2005
  },
  "US:MCD": {
   "ceo": "Christopher Kempczinski",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/63908/000119312526145548/mcd-20260407.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/63908/000119312526145548/mcd-20260407.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/63908/000119312526145548/mcd-20260407.htm",
+   "founded": "https://www.mcdonalds.com/us/en-us/faq/when-was-mcdonalds-founded.html"
   },
-  "chairman": "Christopher Kempczinski"
+  "chairman": "Christopher Kempczinski",
+  "founded": 1940
  },
  "US:MCK": {
   "chairman": "Brian S. Tyler",
@@ -35867,21 +36583,43 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/1059556/000105955626000019/mco-20260304.htm"
   }
  },
+ "US:MCQEF": {
+  "founded": 1969,
+  "sources": {
+   "founded": "https://www.macquarie.com/br/en/about/company.html"
+  }
+ },
+ "US:MDLN": {
+  "founded": 1966,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/2046386/000204638626000009/mdln-20251231.htm"
+  }
+ },
  "US:MDLZ": {
   "ceo": "Dirk Van de Put",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026044384/mdlz-20260615.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026044384/mdlz-20260615.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026044384/mdlz-20260615.htm",
+   "founded": "https://www.mondelezinternational.com/about-us/who-we-are/our-history/"
   },
-  "chairman": "Dirk Van de Put"
+  "chairman": "Dirk Van de Put",
+  "founded": 2012
  },
  "US:MELI": {
   "ceo": "Ariel Szarfsztejn",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1099590/000109959026000010/meli-20260423.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1099590/000109959026000010/meli-20260423.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1099590/000109959026000010/meli-20260423.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/1099590/000109959026000006/meli-20251231.htm"
   },
-  "chairman": "Marcos Galperin"
+  "chairman": "Marcos Galperin",
+  "founded": 1999
+ },
+ "US:MET": {
+  "founded": 1868,
+  "sources": {
+   "founded": "https://www.metlife.com/about-us/newsroom/2025/november/metlife-pet-insurance-teams-up-with-the-animal-foundation-to-support-las-vegas-pet-adopters/"
+  }
  },
  "US:META": {
   "ceo": "Mark Zuckerberg",
@@ -35906,6 +36644,12 @@
   },
   "ceo": "Masahiro Kihara",
   "chairman": "Takashi Tsukioka"
+ },
+ "US:MGA": {
+  "founded": 1957,
+  "sources": {
+   "founded": "https://www.magna.com/company/company-information/facts-history"
+  }
  },
  "US:MGCLY": {
   "ceo": "Fang Hongbo",
@@ -35943,9 +36687,11 @@
   "ceo": "Eisaku Ito",
   "sources": {
    "ceo": "https://www.mhi.com/company/overview/officers",
-   "chairman": "https://www.mhi.com/company/overview/officers"
+   "chairman": "https://www.mhi.com/company/overview/officers",
+   "founded": "https://www.mhi.com/company/overview/history.html"
   },
-  "chairman": "Seiji Izumisawa"
+  "chairman": "Seiji Izumisawa",
+  "founded": 1884
  },
  "US:MIAX": {
   "website": "https://www.miaxglobal.com",
@@ -35997,13 +36743,21 @@
   "ceo": "John Q. Doyle",
   "chairman": "H. Edward Hanway"
  },
+ "US:MMLTF": {
+  "founded": 2009,
+  "sources": {
+   "founded": "https://www.mmg.com/who-we-are/company-overview/"
+  }
+ },
  "US:MMM": {
   "ceo": "William M. Brown",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/66740/000006674026000151/mmm-20260324.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/66740/000006674026000151/mmm-20260324.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/66740/000006674026000151/mmm-20260324.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/66740/000006674026000014/mmm-20251231.htm"
   },
-  "chairman": "William M. Brown"
+  "chairman": "William M. Brown",
+  "founded": 1902
  },
  "US:MNST": {
   "ceo": "Hilton H. Schlosberg",
@@ -36031,6 +36785,12 @@
   "ceo": "Maryann T. Mannen",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1510295/000151029526000023/mpc-20260316.htm"
+  }
+ },
+ "US:MPWR": {
+  "founded": 1997,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1280452/000143774926006113/mpwr20251231_10k.htm"
   }
  },
  "US:MRAAF": {
@@ -36065,9 +36825,11 @@
   "ceo": "Stéphane Bancel",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1682852/000119312526408289/d18337d8k.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1682852/000130817926000081/mrna-20260316.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1682852/000130817926000081/mrna-20260316.htm",
+   "founded": "https://www.modernatx.com/about-us/our-story"
   },
-  "chairman": "Noubar B. Afeyan"
+  "chairman": "Noubar B. Afeyan",
+  "founded": 2010
  },
  "US:MRSH": {
   "website": "https://www.marsh.com",
@@ -36083,22 +36845,32 @@
   "ceo": "Matthew J. Murphy",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1835632/000110465926060253/tm261486-1_def14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1835632/000110465926060253/tm261486-1_def14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1835632/000110465926060253/tm261486-1_def14a.htm",
+   "founded": "https://www.marvell.com/blogs/remembering-sehat-sutardja-marvell-co-founder.html"
   },
-  "chairman": "Matthew J. Murphy"
+  "chairman": "Matthew J. Murphy",
+  "founded": 1995
  },
  "US:MS": {
   "ceo": "Ted Pick",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/895421/000114036126012975/ny20058185x1_def14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/895421/000114036126012975/ny20058185x1_def14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/895421/000114036126012975/ny20058185x1_def14a.htm",
+   "founded": "https://www.morganstanley.com/about-us/history"
   },
-  "chairman": "Ted Pick"
+  "chairman": "Ted Pick",
+  "founded": 1935
  },
  "US:MSADF": {
   "website": "https://www.ms-ad-hd.com",
   "sources": {
    "website": "https://www.ms-ad-hd.com/ja/index.html"
+  }
+ },
+ "US:MSBHF": {
+  "founded": 1954,
+  "sources": {
+   "founded": "https://www.mitsubishicorp.com/jp/en/about/profile/"
   }
  },
  "US:MSCI": {
@@ -36119,9 +36891,11 @@
   "ceo": "Greg Brown",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/68505/000119312526139004/d50373ddef14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/68505/000119312526139004/d50373ddef14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/68505/000119312526139004/d50373ddef14a.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/68505/000006850526000010/msi-20251231.htm"
   },
-  "chairman": "Gregory Q. Brown"
+  "chairman": "Gregory Q. Brown",
+  "founded": 1928
  },
  "US:MSPA": {
   "website": "https://www.morganstanley.com",
@@ -36281,9 +37055,11 @@
   "ceo": "Junichi Hanzawa",
   "sources": {
    "ceo": "https://www.mufg.jp/english/profile/overview/executive_committee/index.html",
-   "chairman": "https://www.mufg.jp/english/profile/overview/executive_committee/index.html"
+   "chairman": "https://www.mufg.jp/english/profile/overview/executive_committee/index.html",
+   "founded": "https://www.mufg.jp/english/profile/overview/history/index.html"
   },
-  "chairman": "Hironori Kamezawa"
+  "chairman": "Hironori Kamezawa",
+  "founded": 2005
  },
  "US:MURGF": {
   "ceo": "Christoph Jurecka",
@@ -36365,17 +37141,21 @@
   "ceo": "John W. Ketchum",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/753308/000110465926038551/tm261592-1_def14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/753308/000110465926038551/tm261592-1_def14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/753308/000110465926038551/tm261592-1_def14a.htm",
+   "founded": "https://www.nexteraenergy.com/about-us/our-history.html"
   },
-  "chairman": "John W. Ketchum"
+  "chairman": "John W. Ketchum",
+  "founded": 1925
  },
  "US:NEM": {
   "ceo": "Natascha Viljoen",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1164727/000110465926035211/nem-20260512xdef14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1164727/000110465926035211/nem-20260512xdef14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1164727/000110465926035211/nem-20260512xdef14a.htm",
+   "founded": "https://www.newmont.com/investors/news-release/news-details/2021/Newmont-Celebrates-100-Years/default.aspx"
   },
-  "chairman": "Gregory H. Boyce"
+  "chairman": "Gregory H. Boyce",
+  "founded": 1921
  },
  "US:NEMCL": {
   "ceo": "Natascha Viljoen",
@@ -36407,17 +37187,33 @@
   "ceo": "Zoë Yujnovich",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1004315/000100431526000006/nggtf-20260331.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1004315/000100431526000006/nggtf-20260331.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1004315/000100431526000006/nggtf-20260331.htm",
+   "founded": "https://www.nationalgrid.com/sites/default/files/documents/NGAR18_5_Additional-information_Web.pdf"
   },
-  "chairman": "Paula Rosput Reynolds"
+  "chairman": "Paula Rosput Reynolds",
+  "founded": 1990
+ },
+ "US:NISTF": {
+  "founded": 1950,
+  "sources": {
+   "founded": "https://www.nipponsteel.com/en/company/history/"
+  }
+ },
+ "US:NKE": {
+  "founded": 1964,
+  "sources": {
+   "founded": "https://about.nike.com/en/magazine/the-handshake-that-started-it-all"
+  }
  },
  "US:NONOF": {
   "ceo": "Mike Doustdar",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/353278/000035327826000012/nvo-20251231.htm",
-   "chairman": "https://www.novonordisk.com/about/board-of-directors/lars-rebien-soerensen.html"
+   "chairman": "https://www.novonordisk.com/about/board-of-directors/lars-rebien-soerensen.html",
+   "founded": "https://www.novonordisk.com/news-and-media/novo-nordisk-in-brief.html"
   },
-  "chairman": "Lars Rebien Sørensen"
+  "chairman": "Lars Rebien Sørensen",
+  "founded": 1923
  },
  "US:NOW": {
   "ceo": "William R. McDermott",
@@ -36445,6 +37241,12 @@
   },
   "chairman": "Jun Sawada"
  },
+ "US:NSC": {
+  "founded": 1827,
+  "sources": {
+   "founded": "https://www.norfolksouthern.com/en/about-us/our-history"
+  }
+ },
  "US:NSRGF": {
   "ceo": "Philipp Navratil",
   "sources": {
@@ -36461,6 +37263,12 @@
   },
   "chairman": "Pablo Isla"
  },
+ "US:NTDOF": {
+  "founded": 1889,
+  "sources": {
+   "founded": "https://www.nintendo.com/us/about/"
+  }
+ },
  "US:NTES": {
   "ceo": "Ding Lei",
   "sources": {
@@ -36468,6 +37276,12 @@
    "website": "https://www.netease.com/"
   },
   "website": "https://www.netease.com"
+ },
+ "US:NTRS": {
+  "founded": 1889,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/73124/000007312426000016/ntrs-20251231.htm"
+  }
  },
  "US:NTTYY": {
   "website": "https://group.ntt",
@@ -36478,6 +37292,12 @@
   },
   "ceo": "Akira Shimada",
   "chairman": "Jun Sawada"
+ },
+ "US:NU": {
+  "founded": 2013,
+  "sources": {
+   "founded": "https://international.nubank.com.br/company/nubank-turns-13-as-one-of-the-most-influential-financial-institutions-in-the-world/"
+  }
  },
  "US:NVDA": {
   "ceo": "Jensen Huang",
@@ -36526,8 +37346,10 @@
  "US:NXPI": {
   "website": "https://www.nxp.com",
   "sources": {
-   "website": "https://www.nxp.com/"
-  }
+   "website": "https://www.nxp.com/",
+   "founded": "https://www.sec.gov/Archives/edgar/data/1413447/000141344726000008/nxpi-20251231.htm"
+  },
+  "founded": 2006
  },
  "US:NXT": {
   "website": "https://www.nextpower.com",
@@ -36545,6 +37367,12 @@
   "website": "https://obsidianenergy.com",
   "sources": {
    "website": "https://obsidianenergy.com/"
+  }
+ },
+ "US:ODFL": {
+  "founded": 1934,
+  "sources": {
+   "founded": "https://www.odfl.com/us/en/careers/od-history.html"
   }
  },
  "US:OLED": {
@@ -36598,8 +37426,10 @@
  "US:OTSKF": {
   "website": "https://www.otsuka.com",
   "sources": {
-   "website": "https://www.otsuka.com:443/jp/"
-  }
+   "website": "https://www.otsuka.com:443/jp/",
+   "founded": "https://www.otsuka.com/en/company/"
+  },
+  "founded": 1921
  },
  "US:OVCHF": {
   "ceo": "Tan Teck Long",
@@ -36629,6 +37459,12 @@
    "website": "https://www.everpuredata.com/"
   }
  },
+ "US:PAAS": {
+  "founded": 1994,
+  "sources": {
+   "founded": "https://panamericansilver.com/about/"
+  }
+ },
  "US:PANW": {
   "ceo": "Nikesh Arora",
   "sources": {
@@ -36636,6 +37472,18 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1327567/000130817925000624/panw-20251107.htm"
   },
   "chairman": "Nikesh Arora"
+ },
+ "US:PAYX": {
+  "founded": 1971,
+  "sources": {
+   "founded": "https://www.paychex.com/corporate"
+  }
+ },
+ "US:PBA": {
+  "founded": 1954,
+  "sources": {
+   "founded": "https://www.pembina.com/about/history"
+  }
  },
  "US:PBR": {
   "ceo": "Magda Chambriard",
@@ -36659,6 +37507,12 @@
    "website": "https://pbt-permian.com/"
   }
  },
+ "US:PCAR": {
+  "founded": 1905,
+  "sources": {
+   "founded": "https://www.paccar.com/about-us/history/"
+  }
+ },
  "US:PCCYF": {
   "website": "https://www.petrochina.com.cn",
   "sources": {
@@ -36670,16 +37524,26 @@
  "US:PCG": {
   "website": "https://www.pgecorp.com",
   "sources": {
-   "website": "https://www.pgecorp.com/"
+   "website": "https://www.pgecorp.com/",
+   "founded": "https://www.sec.gov/Archives/edgar/data/1004980/000100498026000009/pcg-20251231.htm"
+  },
+  "founded": 1905
+ },
+ "US:PCRFF": {
+  "founded": 1918,
+  "sources": {
+   "founded": "https://holdings.panasonic/global/corporate/about/history/chronicle/1918.html"
   }
  },
  "US:PDD": {
   "ceo": "Lei Chen and Jiazhen Zhao",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1737806/000110465926050727/pdd-20251231x20f.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1737806/000110465926050727/pdd-20251231x20f.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1737806/000110465926050727/pdd-20251231x20f.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/1737806/000110465926050727/pdd-20251231x20f.htm"
   },
-  "chairman": "Lei Chen and Jiazhen Zhao"
+  "chairman": "Lei Chen and Jiazhen Zhao",
+  "founded": 2015
  },
  "US:PENN": {
   "website": "https://www.pennentertainment.com",
@@ -36691,37 +37555,53 @@
   "ceo": "Ramon L. Laguarta",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/77476/000130817926000169/pep015012_def14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/77476/000130817926000169/pep015012_def14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/77476/000130817926000169/pep015012_def14a.htm",
+   "founded": "https://www.pepsico.com/about/mission"
   },
-  "chairman": "Ramon L. Laguarta"
+  "chairman": "Ramon L. Laguarta",
+  "founded": 1965
  },
  "US:PFE": {
   "ceo": "Albert Bourla",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000033/pfe-20260312.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000033/pfe-20260312.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000033/pfe-20260312.htm",
+   "founded": "https://www.pfizer.com/about/history"
   },
-  "chairman": "Albert Bourla"
+  "chairman": "Albert Bourla",
+  "founded": 1849
+ },
+ "US:PFGC": {
+  "founded": 1885,
+  "sources": {
+   "founded": "https://www.pfgc.com/About/"
+  }
  },
  "US:PG": {
   "ceo": "Shailesh G. Jejurikar",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/80424/000119312526372211/pg-20260826.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/80424/000119312526372211/pg-20260826.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/80424/000119312526372211/pg-20260826.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000103/pg-20260630.htm"
   },
-  "chairman": "Shailesh G. Jejurikar"
+  "chairman": "Shailesh G. Jejurikar",
+  "founded": 1837
  },
  "US:PGR": {
   "ceo": "Tricia Griffith",
   "sources": {
-   "ceo": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000099/pgr-20260318.htm"
-  }
+   "ceo": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000099/pgr-20260318.htm",
+   "founded": "https://www.progressive.com/about/"
+  },
+  "founded": 1937
  },
  "US:PH": {
   "ceo": "Jennifer A. Parmentier",
   "sources": {
-   "ceo": "https://www.sec.gov/Archives/edgar/data/76334/000130817926000394/ph-20260915.htm"
-  }
+   "ceo": "https://www.sec.gov/Archives/edgar/data/76334/000130817926000394/ph-20260915.htm",
+   "founded": "https://investors.parker.com/news-events/press-releases/detail/163/parker-hannifin-celebrates-100-years"
+  },
+  "founded": 1917
  },
  "US:PIAIF": {
   "ceo": "Xie Yonglin and Michael Guo",
@@ -36730,6 +37610,12 @@
    "chairman": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1015/2026101500689.pdf"
   },
   "chairman": "Ma Mingzhe"
+ },
+ "US:PKG": {
+  "founded": 1959,
+  "sources": {
+   "founded": "https://www.packagingcorp.com/our-company/history/"
+  }
  },
  "US:PKX": {
   "website": "https://www.posco-inc.com",
@@ -36744,8 +37630,10 @@
  "US:PLD": {
   "ceo": "Daniel S. Letter",
   "sources": {
-   "ceo": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526115132/d36709ddef14a.htm"
-  }
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526115132/d36709ddef14a.htm",
+   "founded": "https://www.prologis.com/about/history"
+  },
+  "founded": 1983
  },
  "US:PLDGP": {
   "ceo": "Daniel S. Letter",
@@ -36765,9 +37653,11 @@
   "ceo": "Jacek Olczak",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1413329/000162828026021169/pmi-20260325.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1413329/000162828026021169/pmi-20260325.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1413329/000162828026021169/pmi-20260325.htm",
+   "founded": "https://en.wikipedia.org/wiki/Philip_Morris_International"
   },
-  "chairman": "André Calantzopoulos"
+  "chairman": "André Calantzopoulos",
+  "founded": 2008
  },
  "US:PNC": {
   "ceo": "William S. Demchak",
@@ -36791,10 +37681,22 @@
    "website": "https://www.pilgrims.com/"
   }
  },
+ "US:PPL": {
+  "founded": 1920,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/922224/000092222426000008/ppl-20251231.htm"
+  }
+ },
  "US:PRDO": {
   "website": "https://www.perdoceoed.com",
   "sources": {
    "website": "https://www.perdoceoed.com/"
+  }
+ },
+ "US:PRDSF": {
+  "founded": 1913,
+  "sources": {
+   "founded": "https://www.pradagroup.com/en/group/history.html"
   }
  },
  "US:PROSF": {
@@ -36827,9 +37729,17 @@
   "website": "https://www.phillips66.com",
   "sources": {
    "website": "https://www.phillips66.com/",
-   "ceo": "https://www.sec.gov/Archives/edgar/data/1534701/000153470126000010/psx-20260401.htm"
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1534701/000153470126000010/psx-20260401.htm",
+   "founded": "https://www.phillips66.com/history/"
   },
-  "ceo": "Mark E. Lashier"
+  "ceo": "Mark E. Lashier",
+  "founded": 2012
+ },
+ "US:PUKPF": {
+  "founded": 1848,
+  "sources": {
+   "founded": "https://www.prudentialplc.com/en/about-us/our-history/serving-our-customers-for-over-178-years/"
+  }
  },
  "US:PWR": {
   "ceo": "Earl C. Austin, Jr.",
@@ -36949,6 +37859,18 @@
   },
   "chairman": "Dominic Barton"
  },
+ "US:RJF": {
+  "founded": 1962,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/720005/000072000525000093/rjf-20250930.htm"
+  }
+ },
+ "US:RL": {
+  "founded": 1967,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1037038/000162828026037074/rl-20260328.htm"
+  }
+ },
  "US:RLLCF": {
   "website": "https://www.rolls-royce.com",
   "sources": {
@@ -36958,6 +37880,24 @@
   },
   "ceo": "Tufan Erginbilgic",
   "chairman": "Anita Frew"
+ },
+ "US:RLXXF": {
+  "founded": 1993,
+  "sources": {
+   "founded": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/reports/20f/2001-20f.pdf"
+  }
+ },
+ "US:RMD": {
+  "founded": 1989,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/943819/000094381926000047/rmd-20260630.htm"
+  }
+ },
+ "US:ROK": {
+  "founded": 1903,
+  "sources": {
+   "founded": "https://www.rockwellautomation.com/en-us/company/about-us/our-history.html"
+  }
  },
  "US:ROST": {
   "ceo": "James G. Conroy",
@@ -36971,6 +37911,12 @@
   "website": "https://www.reliance.com",
   "sources": {
    "website": "https://www.reliance.com/"
+  }
+ },
+ "US:RSG": {
+  "founded": 1998,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/0001060391/000095014405001868/g93417e10vk.htm"
   }
  },
  "US:RTNTF": {
@@ -37041,9 +37987,11 @@
   "ceo": "Olivier Andriès",
   "sources": {
    "ceo": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2026/07/FCECO082738_20260728.pdf",
-   "chairman": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2026/07/FCECO082738_20260728.pdf"
+   "chairman": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2026/07/FCECO082738_20260728.pdf",
+   "founded": "https://www.safran-group.com/group/history-and-heritage/timeline/2005-founding-safran"
   },
-  "chairman": "Ross McInnes"
+  "chairman": "Ross McInnes",
+  "founded": 2005
  },
  "US:SAFRY": {
   "ceo": "Olivier Andriès",
@@ -37057,9 +38005,17 @@
   "ceo": "Héctor Grisi",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/891478/000089147826000030/san-20251231.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/891478/000089147826000030/san-20251231.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/891478/000089147826000030/san-20251231.htm",
+   "founded": "https://www.santander.com/en/about-us/our-history"
   },
-  "chairman": "Ana Botín"
+  "chairman": "Ana Botín",
+  "founded": 1857
+ },
+ "US:SANM": {
+  "founded": 1980,
+  "sources": {
+   "founded": "https://www.sanmina.com/company-profile/"
+  }
  },
  "US:SAP": {
   "headquarters": "Walldorf, Baden-Württemberg, Germany",
@@ -37080,6 +38036,12 @@
    "chairman": "https://www.sap.com/investors/en/governance-and-sustainability/supervisory-board.html"
   },
   "chairman": "Pekka Ala-Pietilä"
+ },
+ "US:SBAC": {
+  "founded": 1989,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1034054/000103405426000002/sbac-20251231x10k.htm"
+  }
  },
  "US:SBGSF": {
   "ceo": "Olivier Blum",
@@ -37113,6 +38075,12 @@
    "website": "https://www.sbpgroup.com/"
   }
  },
+ "US:SCBFF": {
+  "founded": 1853,
+  "sources": {
+   "founded": "https://www.sc.com/en/about/our-history/"
+  }
+ },
  "US:SCCO": {
   "ceo": "Leonardo Contreras Lerdo de Tejada",
   "sources": {
@@ -37125,9 +38093,11 @@
   "headquarters": "Westlake, Texas, United States",
   "sources": {
    "headquarters": "https://data.sec.gov/submissions/CIK0000316709.json",
-   "ceo": "https://www.sec.gov/Archives/edgar/data/316709/000119312526142826/d930509ddef14a.htm"
+   "ceo": "https://www.sec.gov/Archives/edgar/data/316709/000119312526142826/d930509ddef14a.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/316709/000031670926000009/schw-20251231.htm"
   },
-  "ceo": "Rick Wurster"
+  "ceo": "Rick Wurster",
+  "founded": 1971
  },
  "US:SCHWPD": {
   "ceo": "Rick Wurster",
@@ -37172,6 +38142,12 @@
   "ceo": "Masayoshi Son",
   "chairman": "Masayoshi Son",
   "wikidata": "Q201653"
+ },
+ "US:SGGKF": {
+  "founded": 1967,
+  "sources": {
+   "founded": "https://www.stengg.com/en/about-us/"
+  }
  },
  "US:SHAK": {
   "website": "https://shakeshack.com",
@@ -37297,8 +38273,10 @@
  "US:SLF": {
   "website": "https://www.sunlife.com",
   "sources": {
-   "website": "https://www.sunlife.com/en/"
-  }
+   "website": "https://www.sunlife.com/en/",
+   "founded": "https://www.sunlife.com/en/about-us/who-we-are/our-company-history/"
+  },
+  "founded": 1865
  },
  "US:SMAWF": {
   "ceo": "Roland Busch",
@@ -37372,6 +38350,18 @@
   },
   "chairman": "Wendy Becker"
  },
+ "US:SNN": {
+  "founded": 1856,
+  "sources": {
+   "founded": "https://www.smith-nephew.com/en/who-we-are"
+  }
+ },
+ "US:SNNUF": {
+  "founded": 1856,
+  "sources": {
+   "founded": "https://www.smith-nephew.com/en/who-we-are"
+  }
+ },
  "US:SNOW": {
   "ceo": "Sridhar Ramaswamy",
   "sources": {
@@ -37404,9 +38394,11 @@
   "ceo": "Belén Garijo",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1121404/000119312526204946/d123331d6k.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1121404/000162828026008403/sny-20251231.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1121404/000162828026008403/sny-20251231.htm",
+   "founded": "https://www.sanofi.com/en/our-company/our-legacy"
   },
-  "chairman": "Frédéric Oudéa"
+  "chairman": "Frédéric Oudéa",
+  "founded": 1973
  },
  "US:SO": {
   "ceo": "Christopher C. Womack",
@@ -37456,6 +38448,12 @@
   },
   "chairman": "Elon Musk"
  },
+ "US:SPG": {
+  "founded": 1960,
+  "sources": {
+   "founded": "https://investors.simon.com/news-releases/news-release-details/simon-property-group-celebrates-twenty-years-public-company"
+  }
+ },
  "US:SPGI": {
   "ceo": "Martina Cheung",
   "sources": {
@@ -37476,6 +38474,12 @@
    "website": "https://www.ssrmining.com/"
   }
  },
+ "US:STE": {
+  "founded": 1985,
+  "sources": {
+   "founded": "https://www.steris.com/about/our-history"
+  }
+ },
  "US:STIM": {
   "website": "https://neurostar.com",
   "sources": {
@@ -37489,6 +38493,12 @@
    "chairman": "https://www.equinor.com/about-us/board-of-directors"
   },
   "chairman": "Jarle Roth"
+ },
+ "US:STT": {
+  "founded": 1792,
+  "sources": {
+   "founded": "https://www.statestreet.com/wealth-services/solutions/custody-clearing"
+  }
  },
  "US:STX": {
   "ceo": "William D. Mosley",
@@ -37552,15 +38562,19 @@
   "ceo": "John T. Stankey",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/732717/000119312526119888/d919223ddef14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/732717/000119312526119888/d919223ddef14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/732717/000119312526119888/d919223ddef14a.htm",
+   "founded": "https://investors.att.com/~/media/Files/A/ATT-IR-V2/financial-reports/t-2024-12-31-10k-final.pdf"
   },
-  "chairman": "John T. Stankey"
+  "chairman": "John T. Stankey",
+  "founded": 1983
  },
  "US:TAK": {
   "website": "https://www.takeda.com",
   "sources": {
-   "website": "https://www.takeda.com/"
-  }
+   "website": "https://www.takeda.com/",
+   "founded": "https://www.takeda.com/about/our-company/"
+  },
+  "founded": 1781
  },
  "US:TCEHY": {
   "website": "https://www.tencent.com",
@@ -37590,9 +38604,17 @@
   "ceo": "Raymond Chun",
   "sources": {
    "ceo": "https://www.td.com/ca/en/about-td/corporate-profile",
-   "chairman": "https://www.td.com/ca/en/about-td/corporate-profile"
+   "chairman": "https://www.td.com/ca/en/about-td/corporate-profile",
+   "founded": "https://www.td.com/ca/en/about-td/corporate-profile/tds-history/historical-fast-facts"
   },
-  "chairman": "John B. MacIntyre"
+  "chairman": "John B. MacIntyre",
+  "founded": 1955
+ },
+ "US:TDG": {
+  "founded": 1993,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1260221/000126022125000081/tdg-20250930.htm"
+  }
  },
  "US:TDOC": {
   "website": "https://www.teladochealth.com",
@@ -37604,6 +38626,12 @@
   "website": "https://www.teads.com",
   "sources": {
    "website": "https://www.teads.com/"
+  }
+ },
+ "US:TEL": {
+  "founded": 2007,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1385157/000110465925109150/tel-20250926x10k.htm"
   }
  },
  "US:TELWY": {
@@ -37619,8 +38647,10 @@
  "US:TEVA": {
   "website": "https://www.tevapharm.com",
   "sources": {
-   "website": "https://www.tevapharm.com/"
-  }
+   "website": "https://www.tevapharm.com/",
+   "founded": "https://www.tevapharm.com/our-company"
+  },
+  "founded": 1901
  },
  "US:TGNOF": {
   "website": "https://trigano.com",
@@ -37656,9 +38686,11 @@
   "ceo": "Masahiro Koike",
   "sources": {
    "ceo": "https://www.tokiomarinehd.com/en/company/officers/",
-   "chairman": "https://www.tokiomarinehd.com/en/company/officers/"
+   "chairman": "https://www.tokiomarinehd.com/en/company/officers/",
+   "founded": "https://www.tokiomarinehd.com/en/ir/download/pdf/Integrated_Report_19E.pdf"
   },
-  "chairman": "Satoru Komiya"
+  "chairman": "Satoru Komiya",
+  "founded": 1879
  },
  "US:TKOMY": {
   "website": "https://www.tokiomarinehd.com",
@@ -37673,8 +38705,10 @@
  "US:TKPHF": {
   "website": "https://www.takeda.com",
   "sources": {
-   "website": "https://www.takeda.com/"
-  }
+   "website": "https://www.takeda.com/",
+   "founded": "https://www.takeda.com/about/our-company/"
+  },
+  "founded": 1781
  },
  "US:TLPFF": {
   "website": "https://www.tp.com",
@@ -37694,17 +38728,21 @@
   "headquarters": "Waltham, Massachusetts, United States",
   "sources": {
    "headquarters": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000018/tmo-20251231.htm",
-   "ceo": "https://www.sec.gov/Archives/edgar/data/97745/000119312526144585/d66426ddef14a.htm"
+   "ceo": "https://www.sec.gov/Archives/edgar/data/97745/000119312526144585/d66426ddef14a.htm",
+   "founded": "https://ir.thermofisher.com/investors/contact-us/investor-faqs/default.aspx"
   },
-  "ceo": "Marc N. Casper"
+  "ceo": "Marc N. Casper",
+  "founded": 2006
  },
  "US:TMUS": {
   "ceo": "Srinivasan Gopalan",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1283699/000119312526181884/d11985ddef14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1283699/000119312526181884/d11985ddef14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1283699/000119312526181884/d11985ddef14a.htm",
+   "founded": "https://www.t-mobile.com/news/blog/cmo-mike-katz-voicestream-to-t-mobile-anniversary"
   },
-  "chairman": "Timotheus Höttges"
+  "chairman": "Timotheus Höttges",
+  "founded": 1994
  },
  "US:TOELF": {
   "ceo": "Toshiki Kawai",
@@ -37713,6 +38751,12 @@
    "chairman": "https://www.tel.com/about/leader/"
   },
   "chairman": "Kazushi Tahara"
+ },
+ "US:TOL": {
+  "founded": 1967,
+  "sources": {
+   "founded": "https://www.tollbrothers.com/about"
+  }
  },
  "US:TOYOF": {
   "ceo": "Kenta Kon",
@@ -37737,6 +38781,18 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/732717/000119312526119888/d919223ddef14a.htm"
   },
   "chairman": "John T. Stankey"
+ },
+ "US:TRMB": {
+  "founded": 1978,
+  "sources": {
+   "founded": "https://www.trimble.com/en/about"
+  }
+ },
+ "US:TROW": {
+  "founded": 1937,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026008002/trow-20251231.htm"
+  }
  },
  "US:TRV": {
   "ceo": "Alan D. Schnitzer",
@@ -37802,6 +38858,12 @@
   "website": "https://www.yuden.co.jp",
   "sources": {
    "website": "https://www.yuden.co.jp/jp/"
+  }
+ },
+ "US:ULS": {
+  "founded": 1894,
+  "sources": {
+   "founded": "https://www.ul.com/"
   }
  },
  "US:UNCFF": {
@@ -37870,9 +38932,11 @@
   "ceo": "Gunjan Kedia",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/36104/000110465926025844/tm261379-1_def14a.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/36104/000110465926025844/tm261379-1_def14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/36104/000110465926025844/tm261379-1_def14a.htm",
+   "founded": "https://www.usbank.com/about-us-bank.html"
   },
-  "chairman": "Gunjan Kedia"
+  "chairman": "Gunjan Kedia",
+  "founded": 1863
  },
  "US:USBPA": {
   "ceo": "Gunjan Kedia",
@@ -37932,14 +38996,22 @@
   "ceo": "Ryan McInerney",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1403161/000130817925000635/v-20251208.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1403161/000130817925000635/v-20251208.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1403161/000130817925000635/v-20251208.htm",
+   "founded": "https://usa.visa.com/about-visa/our_business/history-of-visa.html"
   },
-  "chairman": "John F. Lundgren"
+  "chairman": "John F. Lundgren",
+  "founded": 1958
  },
  "US:VATE": {
   "website": "https://innovatecorp.com",
   "sources": {
    "website": "https://innovatecorp.com/"
+  }
+ },
+ "US:VCISF": {
+  "founded": 1899,
+  "sources": {
+   "founded": "https://www.vinci.com/en/group/our-history"
   }
  },
  "US:VERX": {
@@ -37958,6 +39030,12 @@
   "website": "https://ventureglobal.com",
   "sources": {
    "website": "https://ventureglobal.com/"
+  }
+ },
+ "US:VIK": {
+  "founded": 1997,
+  "sources": {
+   "founded": "https://www.vikingcruises.com/about-us/history.html"
   }
  },
  "US:VLKAF": {
@@ -38020,9 +39098,11 @@
   "ceo": "Anthony Miller",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/719245/000110465925105894/webnf-20250930x20f.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/719245/000110465925105894/webnf-20250930x20f.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/719245/000110465925105894/webnf-20250930x20f.htm",
+   "founded": "https://www.westpac.com.au/about-westpac/westpac-group/company-overview/our-history/"
   },
-  "chairman": "Steven Gregg"
+  "chairman": "Steven Gregg",
+  "founded": 1817
  },
  "US:WEC": {
   "website": "https://www.wecenergygroup.com",
@@ -38034,9 +39114,11 @@
   "ceo": "Shankh Mitra",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/766704/000076670426000014/well-20260409.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/766704/000076670426000014/well-20260409.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/766704/000076670426000014/well-20260409.htm",
+   "founded": "https://welltower.com/wp-content/uploads/financial-summary/10k-10q/2008/4Q.pdf"
   },
-  "chairman": "Kenneth J. Bacon"
+  "chairman": "Kenneth J. Bacon",
+  "founded": 1970
  },
  "US:WF": {
   "ceo": "Jong-Yong Yim",
@@ -38048,9 +39130,11 @@
   "chairman": "Charles Scharf",
   "sources": {
    "chairman": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000200/wfc-20260318.htm",
-   "ceo": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000200/wfc-20260318.htm"
+   "ceo": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000200/wfc-20260318.htm",
+   "founded": "https://www.wellsfargo.com/about/"
   },
-  "ceo": "Charles W. Scharf"
+  "ceo": "Charles W. Scharf",
+  "founded": 1852
  },
  "US:WFCPA": {
   "website": "https://www.wellsfargo.com",
@@ -38156,6 +39240,12 @@
   },
   "chairman": "Rishad Premji"
  },
+ "US:WLMIF": {
+  "founded": 1991,
+  "sources": {
+   "founded": "https://www.wilmar-international.com/about-us"
+  }
+ },
  "US:WLMTF": {
   "website": "https://www.wuling.com.hk",
   "sources": {
@@ -38166,25 +39256,31 @@
   "ceo": "James C. Fish, Jr.",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/823768/000110465926101077/tm2624023d1_8k.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/823768/000110465926037381/tm261369-1_def14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/823768/000110465926037381/tm261369-1_def14a.htm",
+   "founded": "https://www.wm.com/us/en/inside-wm/our-story"
   },
-  "chairman": "Kathleen M. Mazzarella"
+  "chairman": "Kathleen M. Mazzarella",
+  "founded": 1968
  },
  "US:WMB": {
   "ceo": "Chad J. Zamarin",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/107263/000119312526112643/wmb-20260317.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000008/wmb-20260326.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000008/wmb-20260326.htm",
+   "founded": "https://www.williams.com/our-company/our-history/"
   },
-  "chairman": "Stephen W. Bergstrom"
+  "chairman": "Stephen W. Bergstrom",
+  "founded": 1908
  },
  "US:WMT": {
   "ceo": "John Furner",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/104169/000119312526173673/wmt-20260423.htm",
-   "chairman": "https://www.sec.gov/Archives/edgar/data/104169/000119312526173673/wmt-20260423.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/104169/000119312526173673/wmt-20260423.htm",
+   "founded": "https://corporate.walmart.com/about/history"
   },
-  "chairman": "Greg Penner"
+  "chairman": "Greg Penner",
+  "founded": 1962
  },
  "US:WOR": {
   "website": "https://www.worthingtonenterprises.com",
@@ -38232,6 +39328,12 @@
   "website": "https://www.westwaterresources.net",
   "sources": {
    "website": "https://en.wikipedia.org/wiki/Westwater_Resources"
+  }
+ },
+ "US:XEL": {
+  "founded": 1909,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/72903/000007290326000009/xel-20251231.htm"
   }
  },
  "US:XIACF": {
