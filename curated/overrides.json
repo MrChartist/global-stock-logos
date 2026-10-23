@@ -901,13 +901,15 @@
    "headquarters": "https://en.wikipedia.org/wiki/Bombay_Stock_Exchange",
    "ceo": "https://nsearchives.nseindia.com/corporate/BSE1_04082026185534_NSEintimation.pdf",
    "chairman": "https://nsearchives.nseindia.com/corporate/BSE1_04082026185534_NSEintimation.pdf",
-   "wikidata": "https://en.wikipedia.org/wiki/Bombay_Stock_Exchange"
+   "wikidata": "https://en.wikipedia.org/wiki/Bombay_Stock_Exchange",
+   "slogan": "https://nsearchives.nseindia.com/corporate/BSE1_04082026185534_NSEintimation.pdf"
   },
   "founded": 1875,
   "headquarters": "Mumbai, Maharashtra, India",
   "ceo": "Sundararaman Ramamurthy",
   "chairman": "Subhasis Chaudhuri",
-  "wikidata": "Q638398"
+  "wikidata": "Q638398",
+  "slogan": "The Power of Vibrance"
  },
  "IN:CAMS": {
   "website": "https://www.camsonline.com",

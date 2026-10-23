@@ -75,3 +75,5 @@ These values win over automatic data and are never overwritten by the monthly re
 ## How this data was built (October 2026)
 
 About 25 agents worked in parallel, one per group of companies or brands. Each value and logo needed a source opened at the time. Each job was then reviewed by an independent verifier that looked at every logo, checked every brand owner, every CEO and chairman, and a sample of the other fields, and removed or corrected what was wrong. Verifiers found error rates of 0 to 2 % in most jobs (up to about 8 % in logo replacement and 10 % for Korean board chairs, where "Chairman" is often an executive title); every error found was fixed before merging.
+
+A day later, once Wikimedia stopped rate-limiting the build machine, one central downloader fetched the 237 logo files the agents had chosen but could not download. The agents installed them and three independent verifiers reviewed every new item, removing 16 outdated or unofficial designs (for example renamed TV channels, an old Flipkart logo, a fan-made Warner Bros. variant).

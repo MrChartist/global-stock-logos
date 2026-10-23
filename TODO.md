@@ -32,7 +32,7 @@ How to add a source: one adapter file per source in `scripts/adapters/`, followi
 
 ## 3b. Brands and logos (see docs/BRANDS.md)
 
-- [ ] **Wikimedia retry.** About 150 brand and HD logos were chosen but not downloaded because upload.wikimedia.org rate-limited the build machine (HTTP 429). The lists are in each job's notes; first: CDSL and BSE HD logos, Tencent, Riot Games, Arm, Crunchyroll, PayPay, UltraTech, Grasim, Gillette, Olay, Band-Aid, Neutrogena, Bentley, Rolls-Royce, Post-it, Pratt & Whitney.
+- [x] **Wikimedia retry** (October 23): 235 files downloaded; after review, 134 brands and 68 HD logos added (CDSL and BSE among them). Still missing for lack of a usable vector: Tata Technologies, Grasim, Adani Green, Tencent HD, Buick, Denza, Stella Artois, Carlsberg, Palmolive, Sky, Peter England.
 - [ ] **NSDL and LIC HD logos.** Neither publishes a vector logo (NSDL's SVG wraps a PNG; licindia.in had TLS errors). Ask them, or find an official vector in an annual report PDF.
 - [ ] **More brands.** Many Indian sub-brands (Tata Tea, Zudio, Westside, CaratLane, Thar, Pulsar, Indane, Bharat Gas) only exist as raster on official sites. Add them when vector files appear.
 
