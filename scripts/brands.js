@@ -14,7 +14,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { problemsOf } from './logo-tool.js';
-import { MIN_RASTER } from './institutions.js';
+import { MIN_RASTER, checkFacts } from './institutions.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const BRANDS_DIR = path.join(ROOT, 'brands');
@@ -22,7 +22,7 @@ export const BRAND_PNG_SIZES = [256, 512, 1024];
 const REGISTRY = path.join(BRANDS_DIR, 'brands.json');
 
 export const KINDS = ['brand', 'subsidiary', 'product', 'service', 'app'];
-const SOURCE_TYPES = ['official-site', 'press-kit', 'wikimedia-commons', 'wikipedia'];
+const SOURCE_TYPES = ['official-site', 'press-kit', 'official-document', 'wikimedia-commons', 'wikipedia'];
 
 export function loadBrands() {
     return fs.existsSync(REGISTRY) ? JSON.parse(fs.readFileSync(REGISTRY, 'utf-8')) : [];
@@ -67,6 +67,8 @@ export function checkBrands(brands = loadBrands()) {
         if (b.wikidata != null && !/^Q\d+$/.test(b.wikidata)) problems.push(`${at}: bad wikidata id`);
         if (!isUrl(b.logoSource)) problems.push(`${at}: logoSource must be a URL`);
         if (!SOURCE_TYPES.includes(b.logoSourceType)) problems.push(`${at}: logoSourceType must be one of ${SOURCE_TYPES.join(', ')}`);
+        checkFacts(b, at, problems);
+        if (b.country != null && !b.factSources?.country) problems.push(`${at}: country needs a source in factSources.country`);
         for (const [field, rel] of [['logo', b.logo], ['mark', b.mark]]) {
             if (rel == null && field === 'mark') continue;
             const want = `brands/logos/${b.slug}${field === 'mark' ? '.mark' : ''}`;

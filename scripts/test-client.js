@@ -55,5 +55,29 @@ await t('logo and png files exist', async () => {
     assert.equal((await fetch(api.logoUrl('us', 'AAPL'))).status, 200);
     assert.equal((await fetch(api.logoUrl('us', 'AAPL', { format: 'png', size: 512 }))).status, 200);
 });
+await t('brand with owners and markets', async () => {
+    const b = await api.brand('surf-excel');
+    assert.equal(b.parent.ticker, 'ULVR'); assert.ok(b.owners.some((o) => o.role === 'listed' && o.ticker === 'HINDUNILVR'));
+    assert.deepEqual([...b.markets].sort(), ['IN', 'UK']);
+});
+await t('institution children and listed institutions', async () => {
+    const npci = await api.institution('npci');
+    assert.ok(npci.children.some((c) => c.slug === 'upi'));
+    assert.equal((await api.company('in', 'CDSL')).institution?.slug, 'cdsl');
+});
+await t('find covers companies, brands and institutions', async () => {
+    const r = await api.find('upi');
+    assert.equal(r[0].type, 'institution'); assert.equal(r[0].id, 'upi');
+    const j = await api.find('jio', { types: ['brand'] });
+    assert.ok(j.length && j.every((x) => x.type === 'brand'));
+    const tcs = await api.find('tcs', { types: ['company'] });
+    assert.ok(tcs.some((x) => x.type === 'company' && x.id === 'IN:TCS'));
+});
+await t('brand and institution logo urls exist for every record at 256 and 512', async () => {
+    for (const e of await api.entities()) for (const size of /** @type {const} */ ([256, 512])) {
+        const url = e.type === 'brand' ? api.brandLogoUrl(e.id, size) : api.institutionLogoUrl(e.id, size);
+        assert.ok(fs.existsSync(path.join(ROOT, new URL(url).pathname)), url);
+    }
+});
 server.close();
 console.log(`Client check: ${passed} passed${process.exitCode ? ', some FAILED' : ''}.`);

@@ -48,6 +48,21 @@ const full = read(path.join(ROOT, 'search-index.json')), top = read(path.join(RO
 if (full.length !== index.companies) bad(`search-index.json has ${full.length} rows, index.json says ${index.companies}`);
 if (top.length !== Math.min(2000, full.length) || top.some((r, i) => r[0] !== full[i][0] || r[2] !== full[i][2])) bad('search-index-top.json is not the first rows of search-index.json');
 
+// Brands and institutions: every file validates, list = files, entities.json covers both, the guaranteed PNG sizes exist.
+for (const [kind, dir, pngDir] of [['brand', 'brands', 'brands/png'], ['institution', 'institutions', 'institutions/png']]) {
+    const check = ajv.compile(read(path.join(API, 'schema', `${kind}.schema.json`)));
+    const list = read(path.join(API, `${dir}.json`));
+    if (index[dir] !== list.length) bad(`index.json says ${index[dir]} ${dir}, ${dir}.json has ${list.length}`);
+    for (const x of list) {
+        const f = path.join(API, dir, `${x.slug}.json`);
+        if (!fs.existsSync(f)) { bad(`missing ${dir}/${x.slug}.json`); continue; }
+        if (!check(read(f))) bad(`${dir}/${x.slug}: ${ajv.errorsText(check.errors, { dataVar: '' })}`);
+        for (const size of [256, 512]) if (!fs.existsSync(path.join(ROOT, pngDir, String(size), `${x.slug}.png`))) bad(`${pngDir}/${size}/${x.slug}.png is missing (256 and 512 are promised for every ${kind})`);
+    }
+}
+const entities = read(path.join(API, 'entities.json'));
+if (entities.length !== index.brands + index.institutions) bad(`entities.json has ${entities.length} rows, expected ${index.brands + index.institutions}`);
+
 const oa = read(path.join(API, 'openapi.json'));
 if (!/^3\.1/.test(oa.openapi)) bad('openapi.json: version is not 3.1');
 for (const [p, v] of Object.entries(oa.paths)) if (!v.get?.operationId || !v.get?.responses?.[200]) bad(`openapi.json: ${p} lacks operationId or a 200 response`);

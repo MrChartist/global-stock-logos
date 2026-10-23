@@ -5,6 +5,8 @@
  *   const api = new StockLogosClient();                 // jsDelivr CDN by default
  *   const tcs = await api.company('in', 'TCS');
  *   const hits = await api.search('tata', { market: 'in', limit: 10 });
+ *   const all = await api.find('surf');                 // companies, brands and institutions together
+ *   img.src = api.brandLogoUrl('jio', 512);             // no fetch needed
  *
  * Every method reads a static JSON file (see docs/API.md). Results are cached in memory.
  */
@@ -25,28 +27,39 @@ export const DEFAULT_BASE_URL = 'https://cdn.jsdelivr.net/gh/MrChartist/global-s
  *     employees: number | null, ceo: Person | null, chairman: Person | null, slogan: string | null
  *   },
  *   logo: { svg: string | null, file: { url: string, format: 'svg' | 'png' }, png: Record<string, string> | null, brandColor: string | null, brandColorSource: string | null, isPlaceholder: boolean, hd?: string | null },
- *   brands?: BrandRef[],
+ *   brands?: BrandRef[], institution?: { slug: string, name: string, url: string } | null,
  *   links: { self: string, yahoo: string | null, website: string | null },
  *   sources: Record<string, string> | null, checks: Record<string, unknown> | null,
  *   freshness: { marketData: string | null, profile: string | null }
  * }} Company
- * @typedef {{ slug: string, name: string, kind: BrandKind, logo: string, url: string }} BrandRef
+ * @typedef {{ slug: string, name: string, kind: BrandKind, logo: string, png: string, url: string }} BrandRef
  * @typedef {'brand' | 'subsidiary' | 'product' | 'service' | 'app'} BrandKind
  * @typedef {{
- *   slug: string, name: string, kind: BrandKind, category: string | null, description: string | null,
+ *   slug: string, name: string, aliases: string[], kind: BrandKind, category: string | null, description: string | null,
+ *   founded: number | null, country: string | null,
  *   parent: { market: string, ticker: string, url: string }, otherListedOwners: string[],
+ *   owners: { market: string, ticker: string, role: 'parent' | 'listed', url: string }[], markets: string[],
  *   website: string | null, wikidata: string | null, brandColor: string | null, onDark: boolean,
- *   logo: { svg: string, mark: string | null, png: Record<string, string> },
- *   sources: { logo: string, logoType: string, ownership: string | null, checkedAt: string | null },
+ *   logo: { url: string, format: 'svg' | 'png', svg: string | null, mark: string | null, png: Record<string, string> },
+ *   sources: { logo: string, logoType: string, ownership: string | null, facts: Record<string, string> | null, checkedAt: string | null },
  *   links: { self: string }
  * }} Brand
  * @typedef {{
- *   slug: string, name: string, shortName: string | null, kind: string, country: string, description: string | null,
- *   parent: { institution?: string, company?: string, url: string } | null, listedAs: { company: string, url: string } | null,
+ *   slug: string, name: string, shortName: string | null, aliases: string[], kind: string, country: string, description: string | null,
+ *   founded: number | null, headquarters: string | null, legalBasis: string | null,
+ *   parent: { institution?: string, company?: string, url: string } | null,
+ *   children: { slug: string, name: string, url: string }[], listedAs: { company: string, url: string } | null,
  *   website: string | null, wikidata: string | null, brandColor: string | null, onDark: boolean,
- *   logo: { url: string, format: 'svg' | 'png', mark: string | null, png: Record<string, string> },
- *   usageNote: string | null, sources: { logo: string, logoType: string, checkedAt: string | null }, links: { self: string }
+ *   logo: { url: string, format: 'svg' | 'png', svg: string | null, mark: string | null, png: Record<string, string> },
+ *   usageNote: string | null, sources: { logo: string, logoType: string, facts: Record<string, string> | null, checkedAt: string | null },
+ *   links: { self: string }
  * }} Institution
+ * @typedef {{
+ *   type: 'brand' | 'institution', id: string, name: string, shortName: string | null, aliases: string[], kind: string,
+ *   owner: string | null, country: string | null, logo: string, onDark: boolean, url: string
+ * }} Entity
+ * @typedef {{ type: 'company', id: string, name: string, market: string, ticker: string, logo: string, url: string, hit: SearchHit }} CompanyResult
+ * @typedef {CompanyResult | Entity} FindResult
  * @typedef {{ ticker: string, name: string, sector: string | null, marketCapUsd: number | null, url: string }} CompanyRow
  * @typedef {{ key: string, code: string, country: string, companies: number, url: string }} Market
  * @typedef {{ ticker: string, name: string, market: string, format: 'svg' | 'png', marketCapUsd: number | null, yahooTicker: string }} SearchHit
@@ -107,6 +120,61 @@ export class StockLogosClient {
 
     /** One institution by slug, e.g. 'sebi', 'rbi' or 'upi'. @param {string} slug @returns {Promise<Institution>} */
     institution(slug) { return this._json(`api/v1/institutions/${encodeURIComponent(slug.toLowerCase())}.json`); }
+
+    /** Every brand and institution as one small search index (companies are in searchRows()). @returns {Promise<Entity[]>} */
+    entities() { return this._json('api/v1/entities.json'); }
+
+    /**
+     * One search across companies, brands and institutions, e.g. find('surf') → Surf Excel (brand) and Hindustan Unilever.
+     * Ranking within each type: exact name or alias, prefix, word prefix, contains; brands and institutions come before
+     * companies with the same score, because a name like "UPI" or "Jio" means the brand.
+     * @param {string} query
+     * @param {{ types?: ('company' | 'brand' | 'institution')[], limit?: number, market?: string }} [options]
+     * @returns {Promise<FindResult[]>}
+     */
+    async find(query, { types = ['company', 'brand', 'institution'], limit = 20, market } = {}) {
+        const q = norm(query).trim();
+        if (!q) return [];
+        /** @param {string[]} names */
+        const rank = (names) => {
+            let best = -1;
+            for (const raw of names) {
+                const n = norm(raw);
+                if (!n) continue;
+                const sc = n === q ? 0 : n.startsWith(q) ? 2 : n.includes(` ${q}`) ? 3 : n.includes(q) ? 4 : -1;
+                if (sc >= 0 && (best < 0 || sc < best)) best = sc;
+            }
+            return best;
+        };
+        /** @type {{ r: FindResult, score: number }[]} */
+        const out = [];
+        if (types.includes('brand') || types.includes('institution')) {
+            for (const e of await this.entities()) {
+                if (!types.includes(e.type)) continue;
+                const score = rank([e.name, e.shortName || '', ...e.aliases]);
+                if (score >= 0) out.push({ r: e, score });
+            }
+        }
+        if (types.includes('company')) {
+            for (const h of await this.search(query, { market, limit })) {
+                const exact = norm(h.ticker) === q || norm(h.name) === q;
+                out.push({
+                    r: { type: 'company', id: `${h.market}:${h.ticker}`, name: h.name, market: h.market, ticker: h.ticker, logo: this.logoOf(h), url: `${this.baseUrl}/api/v1/companies/${encodeURIComponent(h.market.toLowerCase())}/${encodeURIComponent(h.ticker)}.json`, hit: h },
+                    score: exact ? 0.5 : 2.5,
+                });
+            }
+        }
+        return out.sort((a, b) => a.score - b.score).slice(0, limit).map((x) => x.r);
+    }
+
+    /** Brands a company owns or sells (from its profile). @param {string} market @param {string} ticker @returns {Promise<BrandRef[]>} */
+    async brandsOf(market, ticker) { return (await this.company(market, ticker)).brands || []; }
+
+    /** PNG of a brand's logo; 256 and 512 always exist, 1024 for vector logos and large originals. @param {string} slug @param {256 | 512 | 1024} [size] */
+    brandLogoUrl(slug, size = 256) { return `${this.baseUrl}/brands/png/${size}/${encodeURIComponent(slug.toLowerCase())}.png`; }
+
+    /** PNG of an institution's logo; 256 and 512 always exist, up to 2048 for vector logos. @param {string} slug @param {256 | 512 | 1024 | 2048} [size] */
+    institutionLogoUrl(slug, size = 256) { return `${this.baseUrl}/institutions/png/${size}/${encodeURIComponent(slug.toLowerCase())}.png`; }
 
     /** All markets, largest first. @returns {Promise<Market[]>} */
     markets() { return this._json('api/v1/markets.json'); }

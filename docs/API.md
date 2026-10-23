@@ -4,7 +4,7 @@ A static JSON API for 75,000+ listed companies in 68 markets: logo, identity, ma
 
 Base URL: `https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main`
 
-Machine-readable: [OpenAPI 3.1](../api/v1/openapi.json) · [JSON Schema of a company](../api/v1/schema/company.schema.json)
+Machine-readable: [OpenAPI 3.1](../api/v1/openapi.json) · JSON Schemas of a [company](../api/v1/schema/company.schema.json), a [brand](../api/v1/schema/brand.schema.json) and an [institution](../api/v1/schema/institution.schema.json)
 
 ## Endpoints
 
@@ -15,9 +15,10 @@ Machine-readable: [OpenAPI 3.1](../api/v1/openapi.json) · [JSON Schema of a com
 | `GET /api/v1/markets/{market}.json` | Slim rows of one market, largest first: `ticker`, `name`, `sector`, `marketCapUsd`, `url` |
 | `GET /api/v1/companies/{market}/{ticker}.json` | The full profile of one company, with its `brands` |
 | `GET /api/v1/brands.json` | Every brand, sub-brand and subsidiary with its listed parent (see [BRANDS.md](./BRANDS.md)) |
-| `GET /api/v1/brands/{slug}.json` | One brand: parent, other listed owners, logo URLs (SVG or PNG, mark, PNG 256/512/1024), sources |
+| `GET /api/v1/brands/{slug}.json` | One brand: aliases, founded, country, parent and all listed `owners`, `markets`, logo URLs (SVG or PNG, mark, PNG 256/512/1024), sources |
 | `GET /api/v1/institutions.json` | Market institutions: regulators, government bodies, exchanges, depositories, payment systems (see [BRANDS.md](./BRANDS.md#market-institutions)) |
-| `GET /api/v1/institutions/{slug}.json` | One institution: kind, parent, listing, logo URLs (SVG or PNG, mark, PNG up to 2048 px), usage note |
+| `GET /api/v1/institutions/{slug}.json` | One institution: kind, aliases, founded, headquarters, legal basis, parent, `children`, listing, logo URLs (SVG or PNG, mark, PNG up to 2048 px), usage note |
+| `GET /api/v1/entities.json` | Every brand and institution in one small index (`type`, `id`, `name`, `aliases`, `kind`, `owner`, 256 px `logo`, `url`): with `search-index.json` it covers everything that has a logo |
 | `GET /search-index-top.json` | The 2,000 largest companies in the same format (about 160 KB): render a first screen quickly, then load the full index |
 | `GET /search-index.json` | Every company as `[ticker, name, market, format, yahooTicker, marketCapUsd]`, for search boxes |
 
@@ -26,6 +27,37 @@ Machine-readable: [OpenAPI 3.1](../api/v1/openapi.json) · [JSON Schema of a com
 ```bash
 curl -s https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/api/v1/companies/in/TCS.json
 ```
+
+## Use it from a website
+
+Logo URLs follow fixed patterns, so a page can show a logo from an id alone, with no JSON request first:
+
+| What | URL | Sizes that always exist |
+| :--- | :--- | :--- |
+| Company (vector) | `{base}/logos/{market}/{TICKER}.svg` | any (vector); 107 older companies have `.png` only (see `format` in the search index) |
+| Company (PNG) | `{base}/png/{size}/{market}/{TICKER}.png` | 64, 128, 256, 512 for the 3,000 largest |
+| Brand | `{base}/brands/png/{size}/{slug}.png` | **256 and 512 for every brand**; 1024 for vector logos and large originals |
+| Institution | `{base}/institutions/png/{size}/{slug}.png` | **256 and 512 for every institution**; up to 2048 for vector logos |
+
+The PNGs are transparent squares with the logo contained, so they drop into a grid. For the original file (SVG or official PNG, original aspect ratio), use `logo.url` from the record. When `onDark` is `true` the logo is light and needs a dark background.
+
+```html
+<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/brands/png/256/jio.png" alt="Jio" width="64" height="64">
+<img src="https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/institutions/png/512/sebi.png" alt="SEBI" width="64" height="64">
+```
+
+**One search box for everything.** Load `search-index-top.json` (companies) and `api/v1/entities.json` (brands and institutions, about 320 KB, much less gzipped), or let the client do it:
+
+```js
+import { StockLogosClient } from 'https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/src/client.js';
+const api = new StockLogosClient();
+const results = await api.find('surf');        // [{ type: 'brand', id: 'surf-excel', logo, owner: 'UK:ULVR', ... }, { type: 'company', id: 'IN:HINDUNILVR', ... }]
+const upi = await api.institution('upi');      // upi.parent.institution === 'npci'; upi.logo.png['2048']
+const hul = await api.brandsOf('in', 'HINDUNILVR');   // every brand Hindustan Unilever owns or sells
+img.src = api.brandLogoUrl('jio', 512);        // no request needed
+```
+
+**Links between records.** A company lists its `brands` (and `institution` when the company is also a market institution, such as NSE or CDSL); a brand lists all its listed `owners` (Surf Excel: Unilever as parent, Hindustan Unilever as the Indian listed owner); an institution has its `parent` and `children` (NPCI → UPI, RuPay, IMPS...). Every link carries the `url` of the record it points to.
 
 ## A company
 
@@ -78,6 +110,9 @@ await api.market('korea');                                 // companies of one m
 await api.company('us', 'AAPL');                           // full profile
 await api.brands();                                        // every brand with its listed parent
 await api.institutions();                                  // SEBI, RBI, NSE, NPCI, UPI... with logos
+await api.entities();                                      // brands and institutions in one small index
+await api.find('upi');                                     // companies, brands and institutions together
+api.brandLogoUrl('jio', 512); api.institutionLogoUrl('sebi', 256);   // URLs without a request
 await api.brand('instagram');                              // one brand
 await api.search('tata', { market: 'in', limit: 10 });     // ranked: exact ticker, ticker prefix, name prefix, word prefix, contains
 api.logoUrl('us', 'AAPL', { format: 'png', size: 128 });   // 'svg' (default) | 'png' | 'original-png'

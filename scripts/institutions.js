@@ -41,6 +41,19 @@ const pngSize = (fp) => { const b = fs.readFileSync(fp); return b.toString('asci
 const urlRoot = (u) => { try { const x = new URL(u); return /^https?:$/.test(x.protocol) && `${x.protocol}//${x.hostname}` === u; } catch { return false; } };
 const isUrl = (u) => { try { return /^https?:$/.test(new URL(u).protocol); } catch { return false; } };
 
+/** Optional facts shared by brands and institutions: aliases, founding year, home country, and a source URL per fact. */
+export function checkFacts(x, at, problems, fields = ['founded', 'country']) {
+    if (x.aliases != null && (!Array.isArray(x.aliases) || x.aliases.some((a) => typeof a !== 'string' || !a.trim() || a === x.name))) problems.push(`${at}: aliases must be other names (strings), not the name itself`);
+    if (x.founded != null && !(Number.isInteger(x.founded) && x.founded >= 1600 && x.founded <= new Date().getFullYear())) problems.push(`${at}: founded must be a year`);
+    if (fields.includes('country') && x.country != null && !/^[A-Z]{2}$/.test(x.country)) problems.push(`${at}: country must be an ISO 3166 alpha-2 code`);
+    for (const f of ['headquarters', 'legalBasis']) if (x[f] != null && (typeof x[f] !== 'string' || !x[f].trim())) problems.push(`${at}: ${f} must be text`);
+    for (const [f, u] of Object.entries(x.factSources || {})) {
+        if (!isUrl(u)) problems.push(`${at}: factSources.${f} must be a URL`);
+        if (x[f] == null) problems.push(`${at}: factSources.${f} has no ${f} value`);
+    }
+    for (const f of ['founded', 'headquarters', 'legalBasis']) if (x[f] != null && !x.factSources?.[f]) problems.push(`${at}: ${f} needs a source in factSources.${f}`);
+}
+
 export function checkInstitutions(list = loadInstitutions()) {
     const problems = [];
     const keys = catalogueKeys();
@@ -61,6 +74,7 @@ export function checkInstitutions(list = loadInstitutions()) {
         if (x.wikidata != null && !/^Q\d+$/.test(x.wikidata)) problems.push(`${at}: bad wikidata id`);
         if (!isUrl(x.logoSource)) problems.push(`${at}: logoSource must be a URL`);
         if (!SOURCE_TYPES.includes(x.logoSourceType)) problems.push(`${at}: logoSourceType must be one of ${SOURCE_TYPES.join(', ')}`);
+        checkFacts(x, at, problems, []);
         for (const field of ['logo', 'mark']) {
             const rel = x[field];
             if (rel == null && field === 'mark') continue;
