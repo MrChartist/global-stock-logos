@@ -17,7 +17,14 @@
   "logoSource": "https://uidai.gov.in/assets/logo/logo.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "आधार"
+  ],
+  "legalBasis": "Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act, 2016",
+  "factSources": {
+   "legalBasis": "https://uidai.gov.in/en/about-uidai"
+  }
  },
  {
   "slug": "aeps",
@@ -37,7 +44,15 @@
   "logoSource": "https://www.npci.org.in/uploads/Ae_PS_Brand_Guidelines_48f1b86367.pdf",
   "logoSourceType": "official-document",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "AePS",
+   "Aadhaar Enabled Payments System"
+  ],
+  "legalBasis": "Operated by NPCI under the Payment and Settlement Systems Act, 2007",
+  "factSources": {
+   "legalBasis": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=12043"
+  }
  },
  {
   "slug": "aibi",
@@ -57,7 +72,18 @@
   "logoSource": "https://www.aibi.org.in/33_AGM/AIBI_Annual_Report_25-26.pdf",
   "logoSourceType": "official-document",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "AIBI",
+   "Association of Merchant Bankers of India",
+   "AMBI"
+  ],
+  "founded": 1993,
+  "factSources": {
+   "founded": "https://www.aibi.org.in/about.asp",
+   "legalBasis": "https://www.aibi.org.in/about.asp"
+  },
+  "legalBasis": "Incorporated under the Companies Act, 1956 (Section 25)"
  },
  {
   "slug": "amfi",
@@ -69,7 +95,7 @@
   "listedAs": null,
   "description": "Industry association of SEBI-registered mutual fund asset management companies in India.",
   "website": "https://www.amfiindia.com",
-  "wikidata": null,
+  "wikidata": "Q16965809",
   "brandColor": "#00A888",
   "logo": "institutions/logos/amfi.svg",
   "mark": null,
@@ -77,7 +103,18 @@
   "logoSource": "https://www.amfiindia.com/logo.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "AMFI"
+  ],
+  "founded": 1995,
+  "factSources": {
+   "founded": "https://www.amfiindia.com/aboutamfi",
+   "headquarters": "https://www.amfiindia.com/contact",
+   "legalBasis": "https://www.amfiindia.com/aboutamfi"
+  },
+  "headquarters": "Mumbai, Maharashtra, India",
+  "legalBasis": "Incorporated under the Companies Act, 1956 (Section 25)"
  },
  {
   "slug": "anmi",
@@ -97,7 +134,15 @@
   "logoSource": "https://anmi.in/anmi_front/assets/images/ANMI-Logo-HR-PNG.png",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "ANMI",
+   "Association of National Exchanges Members of India"
+  ],
+  "headquarters": "Mumbai, Maharashtra, India",
+  "factSources": {
+   "headquarters": "https://anmi.in/anmi_front/contact-us"
+  }
  },
  {
   "slug": "bharat-connect",
@@ -117,7 +162,16 @@
   "logoSource": "https://www.bharat-connect.com/assets/images/vectors/icon_logo.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "Bharat BillPay",
+   "Bharat Bill Payment System",
+   "BBPS"
+  ],
+  "legalBasis": "Operated by NPCI Bharat BillPay Limited under the Payment and Settlement Systems Act, 2007",
+  "factSources": {
+   "legalBasis": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=12043"
+  }
  },
  {
   "slug": "bhim",
@@ -137,7 +191,16 @@
   "logoSource": "https://www.npci.org.in/uploads/BHIM_UPI_Guidelines_2026_012a0b1bce.pdf",
   "logoSourceType": "official-document",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "Bharat Interface for Money",
+   "BHIM UPI",
+   "भीम"
+  ],
+  "founded": 2016,
+  "factSources": {
+   "founded": "https://www.bhimupi.org.in/about-bhim.html"
+  }
  },
  {
   "slug": "bse",
@@ -149,7 +212,7 @@
   "listedAs": "IN:BSE",
   "description": "Stock exchange in Mumbai, established in 1875 as the Bombay Stock Exchange; operator of the S&P BSE Sensex market.",
   "website": "https://www.bseindia.com",
-  "wikidata": null,
+  "wikidata": "Q638398",
   "brandColor": "#26366D",
   "logo": "institutions/logos/bse.svg",
   "mark": null,
@@ -157,7 +220,17 @@
   "logoSource": "https://commons.wikimedia.org/wiki/File:BSE_logo.svg",
   "logoSourceType": "wikimedia-commons",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "BSE",
+   "Bombay Stock Exchange"
+  ],
+  "founded": 1875,
+  "factSources": {
+   "founded": "https://en.wikipedia.org/wiki/Bombay_Stock_Exchange",
+   "headquarters": "https://nsearchives.nseindia.com/corporate/xbrl/BRSRXML_BRSR_WebXMLFile_20260723_104238488.xml"
+  },
+  "headquarters": "Mumbai, Maharashtra, India"
  },
  {
   "slug": "cams",
@@ -169,7 +242,7 @@
   "listedAs": "IN:CAMS",
   "description": "Registrar and transfer agent to Indian mutual funds, based in Chennai.",
   "website": "https://www.camsonline.com",
-  "wikidata": null,
+  "wikidata": "Q18348627",
   "brandColor": "#0B509D",
   "logo": "institutions/logos/cams.svg",
   "mark": null,
@@ -177,7 +250,17 @@
   "logoSource": "https://www.camsonline.com/assets/image/cams-logo.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "CAMS",
+   "Computer Age Management Services Limited"
+  ],
+  "founded": 1988,
+  "factSources": {
+   "founded": "https://nsearchives.nseindia.com/corporate/xbrl/BRSR_XML_15062026_BRSR_WebXMLFile_20260615_215715138.xml",
+   "headquarters": "https://nsearchives.nseindia.com/corporate/xbrl/BRSR_XML_15062026_BRSR_WebXMLFile_20260615_215715138.xml"
+  },
+  "headquarters": "Chennai, Tamil Nadu, India"
  },
  {
   "slug": "careedge-ratings",
@@ -197,7 +280,19 @@
   "logoSource": "https://www.careratings.com/public/frontend-assets/images/CareEdge_ratings_logo.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "CARE Ratings",
+   "CareEdge",
+   "CARE Ratings Limited",
+   "Credit Analysis and Research Limited"
+  ],
+  "founded": 1993,
+  "factSources": {
+   "founded": "https://nsearchives.nseindia.com/corporate/xbrl/BRSR_534804_862026192841_BRSR_WebXMLFile_20260608_192856817.xml",
+   "headquarters": "https://nsearchives.nseindia.com/corporate/xbrl/BRSR_534804_862026192841_BRSR_WebXMLFile_20260608_192856817.xml"
+  },
+  "headquarters": "Mumbai, Maharashtra, India"
  },
  {
   "slug": "cbdt",
@@ -217,7 +312,19 @@
   "logoSource": "https://www.incometax.gov.in/iec/foportal/themes/custom/itdbase/images/mobile-logo.svg",
   "logoSourceType": "official-site",
   "usageNote": "Contains the State Emblem of India; use is restricted by the State Emblem of India (Prohibition of Improper Use) Act, 2005. CBDT uses the Income Tax Department logo (shared file).",
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "CBDT",
+   "केन्द्रीय प्रत्यक्ष कर बोर्ड"
+  ],
+  "founded": 1964,
+  "factSources": {
+   "founded": "https://www.incometaxindia.gov.in/cbdt",
+   "headquarters": "https://en.wikipedia.org/wiki/Central_Board_of_Direct_Taxes",
+   "legalBasis": "https://www.incometaxindia.gov.in/cbdt"
+  },
+  "headquarters": "New Delhi, Delhi, India",
+  "legalBasis": "Central Boards of Revenue Act, 1963"
  },
  {
   "slug": "cbic",
@@ -237,7 +344,21 @@
   "logoSource": "https://cbic-gst.gov.in/images/CBIC_Logo_vector.svg",
   "logoSourceType": "official-site",
   "usageNote": "Contains the State Emblem of India; use is restricted by the State Emblem of India (Prohibition of Improper Use) Act, 2005.",
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "CBIC",
+   "CBEC",
+   "Central Board of Excise and Customs",
+   "केंद्रीय अप्रत्यक्ष कर एवं सीमा शुल्क बोर्ड"
+  ],
+  "founded": 1964,
+  "factSources": {
+   "founded": "https://www.incometaxindia.gov.in/cbdt",
+   "headquarters": "https://en.wikipedia.org/wiki/Central_Board_of_Indirect_Taxes_and_Customs",
+   "legalBasis": "https://indiacode.gov.in/handle/123456789/496279"
+  },
+  "headquarters": "New Delhi, Delhi, India",
+  "legalBasis": "Central Boards of Revenue Act, 1963"
  },
  {
   "slug": "ccil",
@@ -257,7 +378,17 @@
   "logoSource": "https://www.ccilindia.com/documents/d/ccil/financials-ccil-fy-2025-26",
   "logoSourceType": "official-document",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "CCIL",
+   "Clearing Corporation of India"
+  ],
+  "founded": 2001,
+  "factSources": {
+   "founded": "https://www.ccilindia.com/companyprofile",
+   "headquarters": "https://www.ccilindia.com/companyprofile"
+  },
+  "headquarters": "Mumbai, Maharashtra, India"
  },
  {
   "slug": "cdsl",
@@ -269,7 +400,7 @@
   "listedAs": "IN:CDSL",
   "description": "Securities depository in Mumbai, promoted by BSE, holding securities in dematerialised form.",
   "website": "https://www.cdslindia.com",
-  "wikidata": null,
+  "wikidata": "Q5060704",
   "brandColor": "#27275B",
   "logo": "institutions/logos/cdsl.svg",
   "mark": null,
@@ -277,7 +408,17 @@
   "logoSource": "https://commons.wikimedia.org/wiki/File:Central_Depository_Services_(India)_Limited.svg",
   "logoSourceType": "wikimedia-commons",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "CDSL",
+   "Central Depository Services Limited"
+  ],
+  "founded": 1997,
+  "factSources": {
+   "founded": "https://nsearchives.nseindia.com/corporate/xbrl/temp_report_1783581860_BRSR_WebXMLFile_20260709_125740076.xml",
+   "headquarters": "https://nsearchives.nseindia.com/corporate/xbrl/temp_report_1783581860_BRSR_WebXMLFile_20260709_125740076.xml"
+  },
+  "headquarters": "Mumbai, Maharashtra, India"
  },
  {
   "slug": "cii",
@@ -297,7 +438,16 @@
   "logoSource": "https://commons.wikimedia.org/wiki/File:Official_logo_of_the_Confederation_of_Indian_Industry_(CII).svg",
   "logoSourceType": "wikimedia-commons",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "CII"
+  ],
+  "founded": 1895,
+  "factSources": {
+   "founded": "https://en.wikipedia.org/wiki/Confederation_of_Indian_Industry",
+   "headquarters": "https://en.wikipedia.org/wiki/Confederation_of_Indian_Industry"
+  },
+  "headquarters": "New Delhi, Delhi, India"
  },
  {
   "slug": "crif-high-mark",
@@ -317,7 +467,16 @@
   "logoSource": "https://www.crifhighmark.com/media/7697/account-aggregator-report-october-26.pdf",
   "logoSourceType": "official-document",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "CRIF High Mark",
+   "CRIF Credit Information Services",
+   "CRIF India"
+  ],
+  "headquarters": "Mumbai, Maharashtra, India",
+  "factSources": {
+   "headquarters": "https://www.crifhighmark.com/about-us/about-crif"
+  }
  },
  {
   "slug": "crisil",
@@ -337,7 +496,18 @@
   "logoSource": "https://www.crisil.com/crisil-microsite/images/logo.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "CRISIL",
+   "Crisil Limited",
+   "Credit Rating Information Services of India Limited"
+  ],
+  "founded": 1987,
+  "factSources": {
+   "founded": "https://www.crisil.com/en/home/our-organisation/our-history.html",
+   "headquarters": "https://nsearchives.nseindia.com/corporate/xbrl/BRSR_1638995_23032026081440_WEB.xml"
+  },
+  "headquarters": "Mumbai, Maharashtra, India"
  },
  {
   "slug": "dicgc",
@@ -349,7 +519,7 @@
   "listedAs": null,
   "description": "Deposit insurer for banks in India; a wholly owned subsidiary of the Reserve Bank of India.",
   "website": "https://www.dicgc.org.in",
-  "wikidata": null,
+  "wikidata": "Q17051676",
   "brandColor": "#145536",
   "logo": "institutions/logos/dicgc.svg",
   "mark": null,
@@ -357,7 +527,19 @@
   "logoSource": "https://www.dicgc.org.in/sites/default/files/2025-09/dicgc-annual-report-2024-25-bilingual_0.pdf",
   "logoSourceType": "official-document",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "DICGC",
+   "निक्षेप बीमा और प्रत्यय गारंटी निगम"
+  ],
+  "founded": 1978,
+  "factSources": {
+   "founded": "https://www.dicgc.org.in/about-us",
+   "headquarters": "https://www.dicgc.org.in/about-us",
+   "legalBasis": "https://www.dicgc.org.in/about-us"
+  },
+  "headquarters": "Mumbai, Maharashtra, India",
+  "legalBasis": "Deposit Insurance and Credit Guarantee Corporation Act, 1961"
  },
  {
   "slug": "digilocker",
@@ -377,7 +559,11 @@
   "logoSource": "https://cdn.digilocker.gov.in/digilocker-landing-page/assets/img/DigilockerLogo.svg",
   "logoSourceType": "official-site",
   "usageNote": "Contains the State Emblem of India; use is restricted by the State Emblem of India (Prohibition of Improper Use) Act, 2005.",
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "Digital Locker",
+   "डिजिलॉकर"
+  ]
  },
  {
   "slug": "digital-india",
@@ -397,7 +583,45 @@
   "logoSource": "https://www.digitalindia.gov.in/wp-content/themes/di-child/assets/images/digital-india.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "डिजिटल इंडिया"
+  ],
+  "founded": 2015,
+  "factSources": {
+   "founded": "https://www.digitalindia.gov.in/"
+  }
+ },
+ {
+  "slug": "ecgc",
+  "name": "ECGC Limited",
+  "shortName": "ECGC",
+  "kind": "development-bank",
+  "country": "IN",
+  "parent": null,
+  "listedAs": null,
+  "description": "Government-owned export credit agency that provides credit-risk insurance to exporters and export credit insurance to banks.",
+  "website": "https://www.ecgc.in",
+  "wikidata": "Q5421548",
+  "brandColor": "#0E4F92",
+  "logo": "institutions/logos/ecgc.svg",
+  "mark": "institutions/logos/ecgc.mark.svg",
+  "onDark": false,
+  "logoSource": "https://main.ecgc.in/english/wp-content/themes/pcwebecgc/images/pcECGPagePDF/FinancialResult/ECGC%20Annual%20Report%20FY%202024-25.pdf",
+  "logoSourceType": "official-document",
+  "usageNote": null,
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "ECGC",
+   "Export Credit Guarantee Corporation of India",
+   "ईसीजीसी"
+  ],
+  "founded": 1957,
+  "headquarters": "Mumbai, Maharashtra, India",
+  "factSources": {
+   "founded": "https://main.ecgc.in/company-profile/",
+   "headquarters": "https://main.ecgc.in/company-profile/"
+  }
  },
  {
   "slug": "equifax-india",
@@ -417,7 +641,17 @@
   "logoSource": "https://assets.equifax.com/global/images/logos/equifax_150_28.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "Equifax India",
+   "Equifax Credit Information Services Private Limited"
+  ],
+  "founded": 2010,
+  "factSources": {
+   "founded": "https://www.equifax.co.in/about-equifax/who-we-are/",
+   "headquarters": "https://www.equifax.co.in/contact_us/"
+  },
+  "headquarters": "Mumbai, Maharashtra, India"
  },
  {
   "slug": "experian-india",
@@ -437,7 +671,15 @@
   "logoSource": "https://www.experian.in/wp-content/themes/content-hub/images/experian_full_colour.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "Experian India",
+   "Experian Credit Information Company of India Private Limited"
+  ],
+  "headquarters": "Mumbai, Maharashtra, India",
+  "factSources": {
+   "headquarters": "https://www.experian.in/contact-us/"
+  }
  },
  {
   "slug": "fedai",
@@ -457,7 +699,17 @@
   "logoSource": "https://www.fedai.org.in/UploadPopupPageFiles/Circular_Letter_02_2023_Recruitment_of_Sm_Cm.pdf",
   "logoSourceType": "official-document",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "FEDAI",
+   "Foreign Exchange Dealers Association of India"
+  ],
+  "founded": 1958,
+  "factSources": {
+   "founded": "https://www.fedai.org.in/",
+   "legalBasis": "https://www.fedai.org.in/"
+  },
+  "legalBasis": "Incorporated under the Companies Act, 1956 (Section 25)"
  },
  {
   "slug": "ficci",
@@ -477,7 +729,17 @@
   "logoSource": "https://en.wikipedia.org/wiki/File:FICCI_logo.svg",
   "logoSourceType": "wikipedia",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "FICCI",
+   "Federation of Indian Chambers of Commerce and Industry"
+  ],
+  "founded": 1927,
+  "factSources": {
+   "founded": "https://ficci.in/history",
+   "headquarters": "https://ficci.in/history"
+  },
+  "headquarters": "New Delhi, Delhi, India"
  },
  {
   "slug": "fidc",
@@ -497,7 +759,10 @@
   "logoSource": "https://www.fidcindia.org.in/wp-content/uploads/2019/06/fidc_new_logo_1-1.png",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "FIDC"
+  ]
  },
  {
   "slug": "general-insurance-council",
@@ -517,7 +782,19 @@
   "logoSource": "https://www.gicouncil.in/Images/Logo/GIC-Official_Logo.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "GI Council",
+   "साधारण बीमा परिषद"
+  ],
+  "founded": 2001,
+  "factSources": {
+   "founded": "https://www.gicouncil.in/role/",
+   "headquarters": "https://www.gicouncil.in/role/",
+   "legalBasis": "https://www.gicouncil.in/role/"
+  },
+  "headquarters": "Mumbai, Maharashtra, India",
+  "legalBasis": "Section 64C of the Insurance Act, 1938"
  },
  {
   "slug": "ibbi",
@@ -537,7 +814,19 @@
   "logoSource": "https://ibbi.gov.in/img/ibbi-logo.png",
   "logoSourceType": "official-site",
   "usageNote": "Contains the State Emblem of India; use is restricted by the State Emblem of India (Prohibition of Improper Use) Act, 2005.",
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "IBBI",
+   "भारतीय दिवाला और शोधन अक्षमता बोर्ड"
+  ],
+  "founded": 2016,
+  "factSources": {
+   "founded": "https://ibbi.gov.in/en/about",
+   "headquarters": "https://en.wikipedia.org/wiki/Insolvency_and_Bankruptcy_Board_of_India",
+   "legalBasis": "https://ibbi.gov.in/en/about"
+  },
+  "headquarters": "New Delhi, Delhi, India",
+  "legalBasis": "Insolvency and Bankruptcy Code, 2016"
  },
  {
   "slug": "icmai",
@@ -557,7 +846,21 @@
   "logoSource": "https://dwpivt501gtb6.cloudfront.net/upload/images/icmai-logo-icon.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "ICMAI",
+   "ICWAI",
+   "The Institute of Cost and Works Accountants of India",
+   "भारतीय लागत लेखाकार संस्थान"
+  ],
+  "founded": 1944,
+  "factSources": {
+   "founded": "https://icmai.in/ClntAbout/History",
+   "headquarters": "https://icmai.in/ClntAbout/History",
+   "legalBasis": "https://icmai.in/ClntAbout/History"
+  },
+  "headquarters": "New Delhi, Delhi, India",
+  "legalBasis": "Cost and Works Accountants Act, 1959"
  },
  {
   "slug": "iex",
@@ -569,7 +872,7 @@
   "listedAs": "IN:IEX",
   "description": "India's largest power exchange, providing a trading platform for electricity, renewable energy and certificates; regulated by CERC.",
   "website": "https://www.iexindia.com",
-  "wikidata": null,
+  "wikidata": "Q6020258",
   "brandColor": "#24407A",
   "logo": "institutions/logos/iex.svg",
   "mark": "institutions/logos/iex.mark.svg",
@@ -577,7 +880,17 @@
   "logoSource": "https://nsearchives.nseindia.com/annual_reports/AR_30351_IEX_2025_2026_A_25828450_14082026160534.pdf",
   "logoSourceType": "official-document",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "IEX",
+   "Indian Energy Exchange Limited"
+  ],
+  "founded": 2007,
+  "factSources": {
+   "founded": "https://nsearchives.nseindia.com/corporate/xbrl/BRSR_15538_WebXMLFile_20260814_163128966.xml",
+   "headquarters": "https://nsearchives.nseindia.com/corporate/xbrl/BRSR_15538_WebXMLFile_20260814_163128966.xml"
+  },
+  "headquarters": "Noida, Uttar Pradesh, India"
  },
  {
   "slug": "ifsca",
@@ -597,7 +910,19 @@
   "logoSource": "https://ifsca.gov.in/CommonDirect/DownloadFile?id=6b779629d8b45e05fb13e830ae5fc851&fileName=ifsca-annual-report-2023-24-english18122024020157.pdf",
   "logoSourceType": "official-document",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "IFSCA",
+   "अंतर्राष्ट्रीय वित्तीय सेवा केंद्र प्राधिकरण"
+  ],
+  "founded": 2020,
+  "factSources": {
+   "founded": "https://ifsca.gov.in/Pages/Contents/About_Us",
+   "headquarters": "https://ifsca.gov.in/Pages/Contents/About_Us",
+   "legalBasis": "https://ifsca.gov.in/Pages/Contents/About_Us"
+  },
+  "headquarters": "Gandhinagar, Gujarat, India",
+  "legalBasis": "International Financial Services Centres Authority Act, 2019"
  },
  {
   "slug": "igx",
@@ -617,7 +942,15 @@
   "logoSource": "https://testwebcms.igxindia.com/files/annual-report-for-the-fy-2025-2026-with-7th-agm-notice-AsgZmfIvk7P4ptGGN.pdf",
   "logoSourceType": "official-document",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "IGX",
+   "Indian Gas Exchange Limited"
+  ],
+  "headquarters": "Noida, Uttar Pradesh, India",
+  "factSources": {
+   "headquarters": "https://www.igxindia.com/contact-us"
+  }
  },
  {
   "slug": "iibf",
@@ -637,7 +970,19 @@
   "logoSource": "https://www.iibf.org.in/images/img/IIBF-Logo.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "IIBF",
+   "Indian Institute of Bankers"
+  ],
+  "founded": 1928,
+  "factSources": {
+   "founded": "https://www.iibf.org.in/pages/about-us",
+   "headquarters": "https://www.iibf.org.in/pages/about-us",
+   "legalBasis": "https://www.iibf.org.in/pages/about-us"
+  },
+  "headquarters": "Mumbai, Maharashtra, India",
+  "legalBasis": "Incorporated under the Indian Companies Act, 1913"
  },
  {
   "slug": "iifcl",
@@ -657,7 +1002,17 @@
   "logoSource": "https://www.iifcl.in/images/iifcl_logo.png",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "IIFCL",
+   "इंडिया इंफ्रास्ट्रक्चर फाइनेंस कंपनी लिमिटेड"
+  ],
+  "founded": 2006,
+  "factSources": {
+   "founded": "https://www.iifcl.in/setting-up-iifcl",
+   "headquarters": "https://www.iifcl.in/profile"
+  },
+  "headquarters": "New Delhi, Delhi, India"
  },
  {
   "slug": "imps",
@@ -677,7 +1032,16 @@
   "logoSource": "https://www.npci.org.in/uploads/IMPS_03df5522b6.zip",
   "logoSourceType": "press-kit",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "IMPS"
+  ],
+  "founded": 2010,
+  "factSources": {
+   "founded": "https://en.wikipedia.org/wiki/Immediate_Payment_Service",
+   "legalBasis": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=12043"
+  },
+  "legalBasis": "Operated by NPCI under the Payment and Settlement Systems Act, 2007"
  },
  {
   "slug": "income-tax-department",
@@ -697,7 +1061,12 @@
   "logoSource": "https://www.incometax.gov.in/iec/foportal/themes/custom/itdbase/images/mobile-logo.svg",
   "logoSourceType": "official-site",
   "usageNote": "Contains the State Emblem of India; use is restricted by the State Emblem of India (Prohibition of Improper Use) Act, 2005.",
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "ITD",
+   "Income Tax India",
+   "आयकर विभाग"
+  ]
  },
  {
   "slug": "india-exim-bank",
@@ -709,7 +1078,7 @@
   "listedAs": null,
   "description": "India's export-import bank, a statutory institution set up under the Export-Import Bank of India Act to finance and promote India's international trade.",
   "website": "https://www.eximbankindia.in",
-  "wikidata": null,
+  "wikidata": "Q5420326",
   "brandColor": "#095594",
   "logo": "institutions/logos/india-exim-bank.svg",
   "mark": "institutions/logos/india-exim-bank.mark.svg",
@@ -717,7 +1086,20 @@
   "logoSource": "https://www.eximbankindia.in/sites/default/files/2026-07/Annual%20Report%202025-26.pdf",
   "logoSourceType": "official-document",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "Exim Bank",
+   "India Exim Bank",
+   "एक्ज़िम बैंक"
+  ],
+  "founded": 1982,
+  "factSources": {
+   "founded": "https://www.eximbankindia.in/about-us",
+   "headquarters": "https://www.eximbankindia.in/about-us",
+   "legalBasis": "https://indiacode.gov.in/handle/123456789/496270"
+  },
+  "headquarters": "Mumbai, Maharashtra, India",
+  "legalBasis": "Export-Import Bank of India Act, 1981"
  },
  {
   "slug": "india-gov-in",
@@ -737,7 +1119,15 @@
   "logoSource": "https://www.india.gov.in/image/npi_logo_Blue.svg",
   "logoSourceType": "official-site",
   "usageNote": "Contains the State Emblem of India; use is restricted by the State Emblem of India (Prohibition of Improper Use) Act, 2005.",
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "National Portal of India",
+   "भारत का राष्ट्रीय पोर्टल"
+  ],
+  "founded": 2005,
+  "factSources": {
+   "founded": "https://en.wikipedia.org/wiki/National_Portal_of_India"
+  }
  },
  {
   "slug": "invest-india",
@@ -757,7 +1147,16 @@
   "logoSource": "https://static.investindia.gov.in/s3fs-public/2019-10/logo-investindia.png",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "National Investment Promotion and Facilitation Agency"
+  ],
+  "founded": 2009,
+  "factSources": {
+   "founded": "https://www.investindia.gov.in/about",
+   "headquarters": "https://www.investindia.gov.in/contact-us"
+  },
+  "headquarters": "New Delhi, Delhi, India"
  },
  {
   "slug": "irdai",
@@ -777,7 +1176,19 @@
   "logoSource": "https://irdai.gov.in/o/irdai-theme/images/svg/logo/irdai-logo1.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "IRDAI",
+   "IRDA",
+   "Insurance Regulatory and Development Authority",
+   "भारतीय बीमा विनियामक और विकास प्राधिकरण"
+  ],
+  "headquarters": "Hyderabad, Telangana, India",
+  "factSources": {
+   "headquarters": "https://irdai.gov.in/web/guest/contact-us",
+   "legalBasis": "https://indiacode.gov.in/handle/123456789/496324"
+  },
+  "legalBasis": "Insurance Regulatory and Development Authority Act, 1999"
  },
  {
   "slug": "ivca",
@@ -797,7 +1208,16 @@
   "logoSource": "https://www.ivca.in/png/IVCA-Logo.png",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "IVCA"
+  ],
+  "founded": 1993,
+  "factSources": {
+   "founded": "https://www.ivca.in/about-us",
+   "headquarters": "https://www.ivca.in/about-us"
+  },
+  "headquarters": "New Delhi, Delhi, India"
  },
  {
   "slug": "kfintech",
@@ -817,7 +1237,18 @@
   "logoSource": "https://www.kfintech.com/new-assets/images/logo.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "KFintech",
+   "KFin",
+   "Karvy Fintech"
+  ],
+  "founded": 2017,
+  "factSources": {
+   "founded": "https://nsearchives.nseindia.com/corporate/xbrl/BRSR_BRSR_WebXMLFile_20260629_223836527.xml",
+   "headquarters": "https://nsearchives.nseindia.com/corporate/xbrl/BRSR_BRSR_WebXMLFile_20260629_223836527.xml"
+  },
+  "headquarters": "Hyderabad, Telangana, India"
  },
  {
   "slug": "mcx",
@@ -829,7 +1260,7 @@
   "listedAs": "IN:MCX",
   "description": "India's largest commodity derivatives exchange, trading bullion, base metals, energy and agricultural contracts.",
   "website": "https://www.mcxindia.com",
-  "wikidata": null,
+  "wikidata": "Q6934544",
   "brandColor": "#00377B",
   "logo": "institutions/logos/mcx.svg",
   "mark": null,
@@ -837,7 +1268,47 @@
   "logoSource": "https://en.wikipedia.org/wiki/File:Multi_Commodity_Exchange,_India_logo.svg",
   "logoSourceType": "wikipedia",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "MCX",
+   "Multi Commodity Exchange of India Limited"
+  ],
+  "founded": 2002,
+  "factSources": {
+   "founded": "https://www.mcxindia.com/about-us",
+   "headquarters": "https://www.mcxindia.com/about-us"
+  },
+  "headquarters": "Mumbai, Maharashtra, India"
+ },
+ {
+  "slug": "metropolitan-stock-exchange",
+  "name": "Metropolitan Stock Exchange of India Limited",
+  "shortName": "MSE",
+  "kind": "exchange",
+  "country": "IN",
+  "parent": null,
+  "listedAs": null,
+  "description": "SEBI-recognised stock exchange in Mumbai offering equity, equity derivatives, currency derivatives and debt segments.",
+  "website": "https://www.mseindia.com",
+  "wikidata": null,
+  "brandColor": "#03558B",
+  "logo": "institutions/logos/metropolitan-stock-exchange.svg",
+  "mark": null,
+  "onDark": false,
+  "logoSource": "https://mseindia.com/images/header/mseLaunchLogo.svg",
+  "logoSourceType": "official-site",
+  "usageNote": null,
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "MSE",
+   "MSEI",
+   "MCX Stock Exchange",
+   "MCX-SX"
+  ],
+  "headquarters": "Mumbai, Maharashtra, India",
+  "factSources": {
+   "headquarters": "https://mseindia.com/"
+  }
  },
  {
   "slug": "mf-central",
@@ -857,7 +1328,10 @@
   "logoSource": "https://www.mfcentral.com/images/logo.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "MFCentral"
+  ]
  },
  {
   "slug": "mfin",
@@ -877,7 +1351,15 @@
   "logoSource": "https://mfinindia.org/frontend_assets/images/mfin-logo.png",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "MFIN",
+   "Microfinance Institutions Network"
+  ],
+  "founded": 2009,
+  "factSources": {
+   "founded": "https://mfinindia.org/about/history"
+  }
  },
  {
   "slug": "ministry-of-corporate-affairs",
@@ -897,7 +1379,10 @@
   "logoSource": "https://www.mca.gov.in/content/dam/mca/logos/MCA_Logo_3.svg",
   "logoSourceType": "official-site",
   "usageNote": "Contains the State Emblem of India; use is restricted by the State Emblem of India (Prohibition of Improper Use) Act, 2005.",
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "MCA"
+  ]
  },
  {
   "slug": "mufg-intime-india",
@@ -917,7 +1402,12 @@
   "logoSource": "https://www.mpms.mufg.com/media/zqlndmth/mufg-pms-stacked-logo-plus-name.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "MUFG Intime",
+   "Link Intime India",
+   "Link Intime"
+  ]
  },
  {
   "slug": "nach",
@@ -937,7 +1427,14 @@
   "logoSource": "https://www.npci.org.in/uploads/NACH_gray_7f3c61cf56.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "NACH"
+  ],
+  "legalBasis": "Operated by NPCI under the Payment and Settlement Systems Act, 2007",
+  "factSources": {
+   "legalBasis": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=12043"
+  }
  },
  {
   "slug": "nasscom",
@@ -957,7 +1454,15 @@
   "logoSource": "https://nasscom.in/themes/custom/nasscomredesigntheme/images/logo.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "NASSCOM",
+   "National Association of Software and Service Companies"
+  ],
+  "founded": 1988,
+  "factSources": {
+   "founded": "https://nasscom.in/about-us"
+  }
  },
  {
   "slug": "nccl",
@@ -977,7 +1482,10 @@
   "logoSource": "https://www.nccl.co.in/assets/img/NCCL-Logo-Final-1.png",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "NCCL"
+  ]
  },
  {
   "slug": "ncdex",
@@ -989,7 +1497,7 @@
   "listedAs": null,
   "description": "Commodity derivatives exchange focused on agricultural commodities, formerly National Commodity & Derivatives Exchange Limited; based in Mumbai.",
   "website": "https://www.ncdex.com",
-  "wikidata": null,
+  "wikidata": "Q6971712",
   "brandColor": "#0D4689",
   "logo": "institutions/logos/ncdex.svg",
   "mark": "institutions/logos/ncdex.mark.svg",
@@ -997,7 +1505,18 @@
   "logoSource": "https://www.ncdex.com/downloads/About-us/Annual-Reports/Annual%20Report%202025-26.pdf",
   "logoSourceType": "official-document",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "NCDEX",
+   "National Commodity & Derivatives Exchange Limited",
+   "National Commodity and Derivatives Exchange"
+  ],
+  "founded": 2003,
+  "factSources": {
+   "founded": "https://en.wikipedia.org/wiki/National_Commodity_and_Derivatives_Exchange",
+   "headquarters": "https://en.wikipedia.org/wiki/National_Commodity_and_Derivatives_Exchange"
+  },
+  "headquarters": "Mumbai, Maharashtra, India"
  },
  {
   "slug": "netc-fastag",
@@ -1017,7 +1536,16 @@
   "logoSource": "https://www.npci.org.in/uploads/NETC_gray_1896bfe3a3.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "FASTag",
+   "NETC",
+   "National Electronic Toll Collection"
+  ],
+  "legalBasis": "Operated by NPCI under the Payment and Settlement Systems Act, 2007",
+  "factSources": {
+   "legalBasis": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=12043"
+  }
  },
  {
   "slug": "nism",
@@ -1037,7 +1565,14 @@
   "logoSource": "https://www.nism.ac.in/wp-content/uploads/2025/07/Annual-Report-2024-25_compressed.pdf",
   "logoSourceType": "official-document",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "NISM"
+  ],
+  "founded": 2006,
+  "factSources": {
+   "founded": "https://www.nism.ac.in/about-us/"
+  }
  },
  {
   "slug": "niti-aayog",
@@ -1057,7 +1592,17 @@
   "logoSource": "https://www.niti.gov.in/themes/niti/images/logo.svg",
   "logoSourceType": "official-site",
   "usageNote": "Contains the State Emblem of India; use is restricted by the State Emblem of India (Prohibition of Improper Use) Act, 2005.",
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "National Institution for Transforming India",
+   "नीति आयोग"
+  ],
+  "founded": 2015,
+  "factSources": {
+   "founded": "https://www.niti.gov.in/about-us/niti-aayog-constitution/cabinet-secretariat-resolution-dated-01-01-2015",
+   "legalBasis": "https://www.niti.gov.in/about-us/niti-aayog-constitution/cabinet-secretariat-resolution-dated-01-01-2015"
+  },
+  "legalBasis": "Cabinet Secretariat Resolution of 1 January 2015"
  },
  {
   "slug": "npci",
@@ -1077,7 +1622,71 @@
   "logoSource": "https://www.npci.org.in/uploads/NPCI_blue_2_93c21a643a.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "NPCI",
+   "भारतीय राष्ट्रीय भुगतान निगम"
+  ],
+  "founded": 2008,
+  "factSources": {
+   "founded": "https://en.wikipedia.org/wiki/National_Payments_Corporation_of_India",
+   "headquarters": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=12043"
+  },
+  "headquarters": "Mumbai, Maharashtra, India"
+ },
+ {
+  "slug": "npci-international",
+  "name": "NPCI International Payments Limited",
+  "shortName": "NIPL",
+  "kind": "payment-system",
+  "country": "IN",
+  "parent": "npci",
+  "listedAs": null,
+  "description": "NPCI subsidiary that takes UPI and RuPay to markets outside India.",
+  "website": "https://www.nipl.com",
+  "wikidata": null,
+  "brandColor": "#1A3281",
+  "logo": "institutions/logos/npci-international.svg",
+  "mark": null,
+  "onDark": false,
+  "logoSource": "https://www.nipl.com/",
+  "logoSourceType": "official-site",
+  "usageNote": null,
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "NIPL",
+   "NPCI International"
+  ]
+ },
+ {
+  "slug": "nps-trust",
+  "name": "National Pension System Trust",
+  "shortName": "NPS Trust",
+  "kind": "market-infrastructure",
+  "country": "IN",
+  "parent": "pfrda",
+  "listedAs": null,
+  "description": "Trust set up by PFRDA that holds the assets of the National Pension System on behalf of subscribers and oversees pension fund managers.",
+  "website": "https://npstrust.org.in",
+  "wikidata": null,
+  "brandColor": "#B136B5",
+  "logo": "institutions/logos/nps-trust.svg",
+  "mark": null,
+  "onDark": false,
+  "logoSource": "https://npstrust.org.in/sites/default/files/annual-reports-document/v8-Final-Annual-Report-of-NPS_2025.pdf",
+  "logoSourceType": "official-document",
+  "usageNote": null,
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "NPS Trust",
+   "राष्ट्रीय पेंशन प्रणाली न्यास"
+  ],
+  "headquarters": "New Delhi, India",
+  "legalBasis": "Indian Trusts Act, 1882",
+  "factSources": {
+   "headquarters": "https://npstrust.org.in/sites/default/files/annual-reports-document/v8-Final-Annual-Report-of-NPS_2025.pdf",
+   "legalBasis": "https://npstrust.org.in/about-nps-trust"
+  }
  },
  {
   "slug": "nsdl",
@@ -1089,7 +1698,7 @@
   "listedAs": "IN:NSDL",
   "description": "India's first securities depository, set up in 1996; holds securities of investors in dematerialised form.",
   "website": "https://nsdl.com",
-  "wikidata": null,
+  "wikidata": "Q2721407",
   "brandColor": "#8C1E1D",
   "logo": "institutions/logos/nsdl.svg",
   "mark": "institutions/logos/nsdl.mark.svg",
@@ -1097,7 +1706,18 @@
   "logoSource": "https://nsdl.com/nsdl/2026-03/NSDL_Product_Brochure_%E2%80%93_Participant_Services.pdf",
   "logoSourceType": "official-document",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "NSDL"
+  ],
+  "founded": 1996,
+  "factSources": {
+   "founded": "https://nsdl.com/about-us/our-story",
+   "headquarters": "https://nsdl.com/about-us",
+   "legalBasis": "https://nsdl.com/about-us/legal-framework"
+  },
+  "headquarters": "Mumbai, Maharashtra, India",
+  "legalBasis": "Registered as a depository under the Depositories Act, 1996"
  },
  {
   "slug": "nse",
@@ -1109,7 +1729,7 @@
   "listedAs": "IN:NSE",
   "description": "India's largest stock exchange by trading volume, operating equity, derivatives, currency, commodity and debt segments; based in Mumbai.",
   "website": "https://www.nseindia.com",
-  "wikidata": null,
+  "wikidata": "Q638740",
   "brandColor": "#3A2D7D",
   "logo": "institutions/logos/nse.svg",
   "mark": null,
@@ -1117,7 +1737,17 @@
   "logoSource": "https://www.nseindia.com/assets/images/NSE_Logo.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "NSE",
+   "National Stock Exchange of India Limited"
+  ],
+  "founded": 1992,
+  "factSources": {
+   "founded": "https://www.nseindia.com/static/national-stock-exchange/history-milestones",
+   "headquarters": "https://www.nseindia.com/static/contact/contact-us"
+  },
+  "headquarters": "Mumbai, Maharashtra, India"
  },
  {
   "slug": "ondc",
@@ -1129,7 +1759,7 @@
   "listedAs": null,
   "description": "Open, interoperable network for digital commerce, a not-for-profit company backed by the Government of India (DPIIT).",
   "website": "https://ondc.org",
-  "wikidata": null,
+  "wikidata": "Q112190810",
   "brandColor": "#1C75BC",
   "logo": "institutions/logos/ondc.svg",
   "mark": null,
@@ -1137,7 +1767,43 @@
   "logoSource": "https://ondc.org/public/assets/ondc-logo.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "ONDC"
+  ],
+  "founded": 2021,
+  "factSources": {
+   "founded": "https://ondc.org/pages/about-us.html",
+   "legalBasis": "https://ondc.org/pages/about-us.html"
+  },
+  "legalBasis": "Incorporated under the Companies Act, 2013 (Section 8)"
+ },
+ {
+  "slug": "payments-council-of-india",
+  "name": "Payments Council of India",
+  "shortName": "PCI",
+  "kind": "industry-body",
+  "country": "IN",
+  "parent": null,
+  "listedAs": null,
+  "description": "Industry body of India's digital payments companies, formed by IAMAI in 2013.",
+  "website": "https://www.paymentscouncil.in",
+  "wikidata": null,
+  "brandColor": "#637078",
+  "logo": "institutions/logos/payments-council-of-india.svg",
+  "mark": null,
+  "onDark": false,
+  "logoSource": "https://www.paymentscouncil.in/pdf/annual-report-21-22.pdf",
+  "logoSourceType": "official-document",
+  "usageNote": null,
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "PCI"
+  ],
+  "founded": 2013,
+  "factSources": {
+   "founded": "https://www.paymentscouncil.in/about-us.html"
+  }
  },
  {
   "slug": "pfrda",
@@ -1157,7 +1823,19 @@
   "logoSource": "https://www.pfrda.org.in/documents/33652/255956/Logo.svg/c810fda5-f3d8-e688-bb2c-80a2b5e87d93",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "PFRDA",
+   "पेंशन निधि विनियामक और विकास प्राधिकरण"
+  ],
+  "founded": 2003,
+  "factSources": {
+   "founded": "https://www.pfrda.org.in/about-us/history",
+   "headquarters": "https://www.pfrda.org.in/about-us/authority/about-authority",
+   "legalBasis": "https://www.pfrda.org.in/about-us/authority/about-authority"
+  },
+  "headquarters": "New Delhi, Delhi, India",
+  "legalBasis": "Pension Fund Regulatory and Development Authority Act, 2013"
  },
  {
   "slug": "rbi",
@@ -1177,7 +1855,19 @@
   "logoSource": "https://rbidocs.rbi.org.in/rdocs/AnnualReport/PDFs/0AR29052026F5B979AF274E445ABB1593EB226906335.PDF",
   "logoSourceType": "official-document",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "RBI",
+   "भारतीय रिज़र्व बैंक"
+  ],
+  "founded": 1935,
+  "factSources": {
+   "founded": "https://www.rbi.org.in/Scripts/AboutusDisplay.aspx",
+   "headquarters": "https://www.rbi.org.in/Scripts/AboutusDisplay.aspx",
+   "legalBasis": "https://www.rbi.org.in/Scripts/AboutusDisplay.aspx"
+  },
+  "headquarters": "Mumbai, Maharashtra, India",
+  "legalBasis": "Reserve Bank of India Act, 1934"
  },
  {
   "slug": "rupay",
@@ -1197,7 +1887,40 @@
   "logoSource": "https://www.npci.org.in/uploads/rupay_logo_476498c9d6.zip",
   "logoSourceType": "press-kit",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "RuPay card"
+  ],
+  "founded": 2012,
+  "factSources": {
+   "founded": "https://en.wikipedia.org/wiki/RuPay",
+   "legalBasis": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=12043"
+  },
+  "legalBasis": "Operated by NPCI under the Payment and Settlement Systems Act, 2007"
+ },
+ {
+  "slug": "sa-dhan",
+  "name": "Sa-Dhan",
+  "shortName": "Sa-Dhan",
+  "kind": "industry-body",
+  "country": "IN",
+  "parent": null,
+  "listedAs": null,
+  "description": "Association of microfinance and impact-finance institutions, recognised by the RBI as a Self-Regulatory Organisation for microfinance institutions.",
+  "website": "https://www.sa-dhan.net",
+  "wikidata": "Q61934063",
+  "brandColor": "#2A5E7D",
+  "logo": "institutions/logos/sa-dhan.svg",
+  "mark": null,
+  "onDark": false,
+  "logoSource": "https://www.sa-dhan.net/wp-content/uploads/2026/06/Sa-Dhan-Annual-Report-2024-25-NEW.pdf",
+  "logoSourceType": "official-document",
+  "usageNote": null,
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "Sadhan",
+   "Sa Dhan"
+  ]
  },
  {
   "slug": "sahamati",
@@ -1217,7 +1940,14 @@
   "logoSource": "https://sahamati.org.in/sahamati-logos/",
   "logoSourceType": "press-kit",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "Sahamati Foundation"
+  ],
+  "legalBasis": "Incorporated under the Companies Act, 2013 (Section 8)",
+  "factSources": {
+   "legalBasis": "https://sahamati.org.in/aboutus/"
+  }
  },
  {
   "slug": "sebi",
@@ -1237,7 +1967,19 @@
   "logoSource": "https://www.sebi.gov.in/reports-and-statistics/publications/aug-2026/SEBI%20ANNUAL%20REPORT%202025_26.pdf",
   "logoSourceType": "official-document",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "SEBI",
+   "भारतीय प्रतिभूति और विनिमय बोर्ड"
+  ],
+  "founded": 1988,
+  "factSources": {
+   "founded": "https://www.sebi.gov.in/about-sebi.html",
+   "headquarters": "https://www.sebi.gov.in/contact-us.html",
+   "legalBasis": "https://www.sebi.gov.in/about-sebi.html"
+  },
+  "headquarters": "Mumbai, Maharashtra, India",
+  "legalBasis": "Securities and Exchange Board of India Act, 1992"
  },
  {
   "slug": "sidbi",
@@ -1257,7 +1999,19 @@
   "logoSource": "https://www.sidbi.in/annualreport/AnnualReport202425/svg/sidbi-logo.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "SIDBI",
+   "भारतीय लघु उद्योग विकास बैंक"
+  ],
+  "founded": 1990,
+  "factSources": {
+   "founded": "https://www.sidbi.in/en/about",
+   "headquarters": "https://www.sidbi.in/en/about",
+   "legalBasis": "https://indiacode.gov.in/handle/123456789/496258"
+  },
+  "headquarters": "Lucknow, Uttar Pradesh, India",
+  "legalBasis": "Small Industries Development Bank of India Act, 1989"
  },
  {
   "slug": "state-emblem-of-india",
@@ -1277,7 +2031,18 @@
   "logoSource": "https://commerce.gov.in/Emblem_of_India.svg",
   "logoSourceType": "official-site",
   "usageNote": "Contains the State Emblem of India; use is restricted by the State Emblem of India (Prohibition of Improper Use) Act, 2005.",
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "Emblem of India",
+   "National Emblem of India",
+   "भारत का राजचिह्न"
+  ],
+  "founded": 1950,
+  "factSources": {
+   "founded": "https://en.wikipedia.org/wiki/Emblem_of_India",
+   "legalBasis": "https://indiacode.gov.in/handle/123456789/496631"
+  },
+  "legalBasis": "State Emblem of India (Prohibition of Improper Use) Act, 2005"
  },
  {
   "slug": "uidai",
@@ -1289,7 +2054,7 @@
   "listedAs": null,
   "description": "Statutory authority under MeitY, established under the Aadhaar Act, 2016, that issues and manages Aadhaar numbers.",
   "website": "https://uidai.gov.in",
-  "wikidata": null,
+  "wikidata": "Q2003923",
   "brandColor": "#D92132",
   "logo": "institutions/logos/uidai.svg",
   "mark": "institutions/logos/uidai.mark.svg",
@@ -1297,7 +2062,17 @@
   "logoSource": "https://uidai.gov.in/assets/logo/logoWithTitle.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "UIDAI",
+   "भारतीय विशिष्ट पहचान प्राधिकरण"
+  ],
+  "headquarters": "New Delhi, Delhi, India",
+  "factSources": {
+   "headquarters": "https://uidai.gov.in/en/about-uidai",
+   "legalBasis": "https://uidai.gov.in/en/about-uidai"
+  },
+  "legalBasis": "Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act, 2016"
  },
  {
   "slug": "upi",
@@ -1317,7 +2092,16 @@
   "logoSource": "https://www.npci.org.in/uploads/UPI_18c43f674e.svg",
   "logoSourceType": "official-site",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "UPI"
+  ],
+  "founded": 2016,
+  "factSources": {
+   "founded": "https://en.wikipedia.org/wiki/Unified_Payments_Interface",
+   "legalBasis": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=12043"
+  },
+  "legalBasis": "Operated by NPCI under the Payment and Settlement Systems Act, 2007"
  },
  {
   "slug": "upi-123pay",
@@ -1337,7 +2121,14 @@
   "logoSource": "https://www.npci.org.in/uploads/UPI_123_PAY_1b106b8646.zip",
   "logoSourceType": "press-kit",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "aliases": [
+   "UPI123PAY"
+  ],
+  "legalBasis": "Operated by NPCI under the Payment and Settlement Systems Act, 2007",
+  "factSources": {
+   "legalBasis": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=12043"
+  }
  },
  {
   "slug": "upi-lite",
@@ -1357,6 +2148,10 @@
   "logoSource": "https://www.npci.org.in/uploads/UPI_LITE_logo_fd9c97dfbf.zip",
   "logoSourceType": "press-kit",
   "usageNote": null,
-  "checkedAt": "2026-10-23"
+  "checkedAt": "2026-10-23",
+  "legalBasis": "Operated by NPCI under the Payment and Settlement Systems Act, 2007",
+  "factSources": {
+   "legalBasis": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=12043"
+  }
  }
 ]

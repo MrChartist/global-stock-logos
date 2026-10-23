@@ -376,7 +376,7 @@ function renderBrands() {
 }
 function filterBrands() {
   const q = norm($('bq').value.trim());
-  brandState.rows = !q ? brandState.all : brandState.all.filter((b) => norm(`${b.name} ${b.category || ''} ${b.kind} ${b.parent.ticker} ${b.description || ''}`).includes(q));
+  brandState.rows = !q ? brandState.all : brandState.all.filter((b) => norm(`${b.name} ${(b.aliases || []).join(' ')} ${b.category || ''} ${b.kind} ${b.parent.ticker} ${b.description || ''}`).includes(q));
   brandState.shown = 0;
   $('bResults').replaceChildren();
   renderBrands();
@@ -400,7 +400,7 @@ $('bMore').addEventListener('click', renderBrands);
 const instState = { all: null };
 function renderInstitutions() {
   const q = norm($('iq').value.trim());
-  const rows = !q ? instState.all : instState.all.filter((x) => norm(`${x.name} ${x.shortName || ''} ${x.kind} ${x.description || ''}`).includes(q));
+  const rows = !q ? instState.all : instState.all.filter((x) => norm(`${x.name} ${x.shortName || ''} ${(x.aliases || []).join(' ')} ${x.kind} ${x.description || ''}`).includes(q));
   const frag = document.createDocumentFragment();
   for (const x of rows) {
     const sizes = Object.keys(x.logo.png).map(Number).sort((a, b) => b - a);
