@@ -7,6 +7,8 @@
  *   api/v1/companies/<market>/<TICKER>.json    the full profile of one company
  *   api/v1/brands.json                         every brand (consumer brand, sub-brand, subsidiary) with its listed parent
  *   api/v1/brands/<slug>.json                  one brand
+ *   api/v1/institutions.json                   market institutions: regulators, governments, exchanges, depositories, payment systems
+ *   api/v1/institutions/<slug>.json            one institution
  *   api/v1/schema/company.schema.json          JSON Schema of a company
  *   api/v1/openapi.json                        OpenAPI 3.1 description of all of the above
  *
@@ -18,6 +20,7 @@ import path from 'path';
 import { ROOT } from './enrich-store.js';
 import { MARKETS } from './markets.js';
 import { loadBrands, BRAND_PNG_SIZES } from './brands.js';
+import { loadInstitutions, pngSizesOf } from './institutions.js';
 
 export const API_VERSION = 'v1';
 const OUT = path.join(ROOT, 'api', API_VERSION);
@@ -56,6 +59,25 @@ export function toBrand(b) {
         logo: brandUrls(b),
         sources: { logo: b.logoSource, logoType: b.logoSourceType, ownership: b.ownershipSource ?? null, checkedAt: b.checkedAt ?? null },
         links: { self: `${API_BASE}/brands/${b.slug}.json` },
+    };
+}
+
+export function toInstitution(x) {
+    const companyUrl = (key) => { const [mk, t] = key.split(':'); return `${API_BASE}/companies/${mk.toLowerCase()}/${encodeURIComponent(t)}.json`; };
+    const isCompany = (v) => /^[A-Z]+:/.test(v || '');
+    return {
+        slug: x.slug, name: x.name, shortName: x.shortName ?? null, kind: x.kind, country: x.country, description: x.description ?? null,
+        parent: x.parent ? (isCompany(x.parent) ? { company: x.parent, url: companyUrl(x.parent) } : { institution: x.parent, url: `${API_BASE}/institutions/${x.parent}.json` }) : null,
+        listedAs: x.listedAs ? { company: x.listedAs, url: companyUrl(x.listedAs) } : null,
+        website: x.website ?? null, wikidata: x.wikidata ?? null, brandColor: x.brandColor ?? null, onDark: !!x.onDark,
+        logo: {
+            url: `${CDN}/${x.logo}`, format: x.logo.endsWith('.svg') ? 'svg' : 'png',
+            mark: x.mark ? `${CDN}/${x.mark}` : null,
+            png: Object.fromEntries(pngSizesOf(x).map((s) => [s, `${CDN}/institutions/png/${s}/${x.slug}.png`])),
+        },
+        usageNote: x.usageNote ?? null,
+        sources: { logo: x.logoSource, logoType: x.logoSourceType, checkedAt: x.checkedAt ?? null },
+        links: { self: `${API_BASE}/institutions/${x.slug}.json` },
     };
 }
 
@@ -188,13 +210,15 @@ function openapi(counts) {
         },
         servers: [{ url: CDN, description: 'jsDelivr CDN (GitHub main)' }],
         externalDocs: { description: 'Guide and examples', url: 'https://github.com/MrChartist/global-stock-logos/blob/main/docs/API.md' },
-        tags: [{ name: 'Catalogue' }, { name: 'Company' }, { name: 'Brand' }],
+        tags: [{ name: 'Catalogue' }, { name: 'Company' }, { name: 'Brand' }, { name: 'Institution' }],
         paths: {
             [`/api/${API_VERSION}/index.json`]: { get: { tags: ['Catalogue'], operationId: 'getIndex', summary: 'API root', responses: { 200: { description: 'Endpoints, counts and data freshness', content: { 'application/json': { schema: { $ref: '#/components/schemas/Index' } } } } } } },
             [`/api/${API_VERSION}/markets.json`]: { get: { tags: ['Catalogue'], operationId: 'listMarkets', summary: 'All markets', responses: { 200: { description: 'Markets, largest first', content: { 'application/json': { schema: { type: 'array', items: { $ref: '#/components/schemas/Market' } } } } } } } },
             [`/api/${API_VERSION}/markets/{market}.json`]: { get: { tags: ['Catalogue'], operationId: 'getMarket', summary: 'Companies of one market, largest first', parameters: [{ name: 'market', in: 'path', required: true, schema: { type: 'string', examples: ['in', 'us', 'korea'] }, description: 'Lower-case market key from markets.json' }], responses: { 200: { description: 'Slim company rows', content: { 'application/json': { schema: { type: 'array', items: { $ref: '#/components/schemas/CompanyRow' } } } } }, 404: err } } },
             [`/api/${API_VERSION}/companies/{market}/{ticker}.json`]: { get: { tags: ['Company'], operationId: 'getCompany', summary: 'Full profile of one company', parameters: [{ name: 'market', in: 'path', required: true, schema: { type: 'string' } }, { name: 'ticker', in: 'path', required: true, schema: { type: 'string', examples: ['TCS', 'AAPL'] }, description: 'Ticker as in the market list; URL-encode special characters' }], responses: { 200: { description: 'The company', content: { 'application/json': { schema: { $ref: '#/components/schemas/Company' } } } }, 404: err } } },
             [`/api/${API_VERSION}/brands.json`]: { get: { tags: ['Brand'], operationId: 'listBrands', summary: 'Every brand, sub-brand and subsidiary with its listed parent', responses: { 200: { description: 'Brands, by name', content: { 'application/json': { schema: { type: 'array', items: { $ref: '#/components/schemas/Brand' } } } } } } } },
+            [`/api/${API_VERSION}/institutions.json`]: { get: { tags: ['Institution'], operationId: 'listInstitutions', summary: 'Market institutions: regulators, governments, exchanges, depositories, clearing corporations, payment systems, rating agencies, industry bodies', responses: { 200: { description: 'Institutions, by name', content: { 'application/json': { schema: { type: 'array', items: { type: 'object' } } } } } } } },
+            [`/api/${API_VERSION}/institutions/{slug}.json`]: { get: { tags: ['Institution'], operationId: 'getInstitution', summary: 'One institution', parameters: [{ name: 'slug', in: 'path', required: true, schema: { type: 'string', examples: ['sebi', 'rbi', 'upi'] } }], responses: { 200: { description: 'The institution', content: { 'application/json': { schema: { type: 'object' } } } }, 404: err } } },
             [`/api/${API_VERSION}/brands/{slug}.json`]: { get: { tags: ['Brand'], operationId: 'getBrand', summary: 'One brand', parameters: [{ name: 'slug', in: 'path', required: true, schema: { type: 'string', examples: ['jio', 'instagram'] } }], responses: { 200: { description: 'The brand', content: { 'application/json': { schema: { $ref: '#/components/schemas/Brand' } } } }, 404: err } } },
             '/search-index-top.json': { get: { tags: ['Catalogue'], operationId: 'searchIndexTop', summary: 'The 2,000 largest companies in the same format, about 220 KB', description: 'Use it to render a first screen quickly, then load the full index.', responses: { 200: { description: 'The top of the index', content: { 'application/json': { schema: { type: 'array', items: { type: 'array' } } } } } } } },
             '/search-index.json': { get: { tags: ['Catalogue'], operationId: 'searchIndex', summary: 'Compact index of every company, for search boxes', description: 'Array of [ticker, name, market, format, yahooTicker, marketCapUsd]. Largest companies first; home-market listings ahead of depositary receipts.', responses: { 200: { description: 'The index', content: { 'application/json': { schema: { type: 'array', items: { type: 'array', prefixItems: [{ type: 'string' }, { type: 'string' }, { type: 'string' }, { type: 'string' }, { type: 'string' }, { type: ['number', 'null'] }] } } } } } } } },
@@ -253,19 +277,25 @@ if (process.argv[1] && process.argv[1].endsWith('build-api.js')) {
     const brands = BRANDS.map(toBrand).sort((a, b) => a.name.localeCompare(b.name, 'en'));
     for (const b of brands) write(`brands/${b.slug}.json`, b);
     write('brands.json', brands);
+    fs.mkdirSync(path.join(OUT, 'institutions'), { recursive: true });
+    const institutions = loadInstitutions().map(toInstitution).sort((a, b) => a.name.localeCompare(b.name, 'en'));
+    for (const x of institutions) write(`institutions/${x.slug}.json`, x);
+    write('institutions.json', institutions);
     write('markets.json', markets);
     write('schema/company.schema.json', COMPANY_SCHEMA);
     const counts = { companies: total, markets: markets.length };
     write('openapi.json', openapi(counts));
     write('index.json', {
         api: 'Global Stock Logos API', version: API_VERSION, dataVersion: manifest.version,
-        dataRefreshedAt: manifest.dataRefreshedAt, companies: total, aliases: aliasCount, markets: markets.length, brands: brands.length, cdn: CDN,
+        dataRefreshedAt: manifest.dataRefreshedAt, companies: total, aliases: aliasCount, markets: markets.length, brands: brands.length, institutions: institutions.length, cdn: CDN,
         endpoints: {
             markets: `${API_BASE}/markets.json`,
             market: `${API_BASE}/markets/{market}.json`,
             company: `${API_BASE}/companies/{market}/{ticker}.json`,
             brands: `${API_BASE}/brands.json`,
             brand: `${API_BASE}/brands/{slug}.json`,
+            institutions: `${API_BASE}/institutions.json`,
+            institution: `${API_BASE}/institutions/{slug}.json`,
             searchIndex: `${CDN}/search-index.json`,
             searchIndexTop: `${CDN}/search-index-top.json`,
             schema: `${API_BASE}/schema/company.schema.json`,
@@ -273,5 +303,5 @@ if (process.argv[1] && process.argv[1].endsWith('build-api.js')) {
         },
         docs: 'https://github.com/MrChartist/global-stock-logos/blob/main/docs/API.md',
     });
-    console.log(`[api] ${total} companies + ${aliasCount} alias files, ${markets.length} markets, ${brands.length} brands -> api/${API_VERSION}/`);
+    console.log(`[api] ${total} companies + ${aliasCount} alias files, ${markets.length} markets, ${brands.length} brands, ${institutions.length} institutions -> api/${API_VERSION}/`);
 }

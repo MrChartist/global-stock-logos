@@ -81,6 +81,7 @@ run('Name-based matching', 'scripts/enrich-by-name.js', ['--max-age-days', Strin
 run('Brand colours', 'scripts/brand-color.js');
 run('PNG sizes', 'scripts/render-png.js', ['--top', '3000']);
 run('Brands', 'scripts/brands.js');
+run('Institutions', 'scripts/institutions.js');
 run('Manifests', 'scripts/sync.js');
 run('Fix invalid values', 'scripts/validate-data.js', ['--fix']);
 run('Manifests (after fixes)', 'scripts/sync.js');

@@ -40,6 +40,13 @@ export const DEFAULT_BASE_URL = 'https://cdn.jsdelivr.net/gh/MrChartist/global-s
  *   sources: { logo: string, logoType: string, ownership: string | null, checkedAt: string | null },
  *   links: { self: string }
  * }} Brand
+ * @typedef {{
+ *   slug: string, name: string, shortName: string | null, kind: string, country: string, description: string | null,
+ *   parent: { institution?: string, company?: string, url: string } | null, listedAs: { company: string, url: string } | null,
+ *   website: string | null, wikidata: string | null, brandColor: string | null, onDark: boolean,
+ *   logo: { url: string, format: 'svg' | 'png', mark: string | null, png: Record<string, string> },
+ *   usageNote: string | null, sources: { logo: string, logoType: string, checkedAt: string | null }, links: { self: string }
+ * }} Institution
  * @typedef {{ ticker: string, name: string, sector: string | null, marketCapUsd: number | null, url: string }} CompanyRow
  * @typedef {{ key: string, code: string, country: string, companies: number, url: string }} Market
  * @typedef {{ ticker: string, name: string, market: string, format: 'svg' | 'png', marketCapUsd: number | null, yahooTicker: string }} SearchHit
@@ -94,6 +101,12 @@ export class StockLogosClient {
 
     /** One brand by slug, e.g. 'jio' or 'instagram'. @param {string} slug @returns {Promise<Brand>} */
     brand(slug) { return this._json(`api/v1/brands/${encodeURIComponent(slug.toLowerCase())}.json`); }
+
+    /** Market institutions (regulators, governments, exchanges, depositories, payment systems...), by name. @returns {Promise<Institution[]>} */
+    institutions() { return this._json('api/v1/institutions.json'); }
+
+    /** One institution by slug, e.g. 'sebi', 'rbi' or 'upi'. @param {string} slug @returns {Promise<Institution>} */
+    institution(slug) { return this._json(`api/v1/institutions/${encodeURIComponent(slug.toLowerCase())}.json`); }
 
     /** All markets, largest first. @returns {Promise<Market[]>} */
     markets() { return this._json('api/v1/markets.json'); }

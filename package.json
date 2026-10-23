@@ -5,8 +5,8 @@
   "main": "src/client.js",
   "type": "module",
   "scripts": {
-    "test": "node scripts/quality.js --check && node scripts/brands.js --check && node scripts/validate-data.js && node scripts/validate-api.js && npm run typecheck && node scripts/test-client.js",
-    "check": "node scripts/quality.js --check && node scripts/brands.js --check && node scripts/validate-data.js && node scripts/validate-api.js && npm run typecheck && node scripts/test-client.js",
+    "test": "node scripts/quality.js --check && node scripts/brands.js --check && node scripts/institutions.js --check && node scripts/validate-data.js && node scripts/validate-api.js && npm run typecheck && node scripts/test-client.js",
+    "check": "node scripts/quality.js --check && node scripts/brands.js --check && node scripts/institutions.js --check && node scripts/validate-data.js && node scripts/validate-api.js && npm run typecheck && node scripts/test-client.js",
     "test:client": "node scripts/test-client.js",
     "test:frontend": "node scripts/test-frontend.js",
     "typecheck": "tsc -p tsconfig.json",
@@ -27,6 +27,7 @@
     "lighthouse": "node scripts/lighthouse.js",
     "aliases": "node scripts/apply-aliases.js",
     "brands": "node scripts/brands.js",
+    "institutions": "node scripts/institutions.js",
     "aliases:check": "node scripts/apply-aliases.js --check"
   },
   "keywords": [
@@ -81,6 +82,7 @@
     "enrichment",
     "png",
     "brands",
+    "institutions",
     "logos-hd",
     "curated",
     "LICENSE",

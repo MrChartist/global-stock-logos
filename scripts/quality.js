@@ -37,7 +37,7 @@ if (CHECK) {
     }
     // Brand logos and HD full logos are newer and held to the strict rules: pure vector, viewBox, namespaced ids.
     const { problemsOf } = await import('./logo-tool.js');
-    const strictDirs = [path.join(ROOT, 'brands', 'logos'), ...(fs.existsSync(path.join(ROOT, 'logos-hd')) ? fs.readdirSync(path.join(ROOT, 'logos-hd')).map((d) => path.join(ROOT, 'logos-hd', d)) : [])];
+    const strictDirs = [path.join(ROOT, 'brands', 'logos'), path.join(ROOT, 'institutions', 'logos'), ...(fs.existsSync(path.join(ROOT, 'logos-hd')) ? fs.readdirSync(path.join(ROOT, 'logos-hd')).map((d) => path.join(ROOT, 'logos-hd', d)) : [])];
     for (const dir of strictDirs.filter((d) => fs.existsSync(d))) {
         for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.svg')).map((x) => path.join(dir, x))) {
             files.push(f);
