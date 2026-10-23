@@ -5,7 +5,7 @@
  *   node scripts/render-png.js --top 5000
  *   node scripts/render-png.js us AAPL 512 out.png   # one logo, any size, any ticker (on demand)
  *
- * Output: png/<size>/<market>/<TICKER>.png for sizes 64, 128, 256 and 512.
+ * Output: png/<size>/<market>/<TICKER>.png for sizes 64, 128, 256 and 512, for the home listing of the largest companies.
  * Files are re-rendered only when the SVG changes. Requires the dev dependency `sharp`.
  */
 import fs from 'fs';
@@ -13,6 +13,7 @@ import path from 'path';
 import crypto from 'crypto';
 import sharp from 'sharp';
 import { ROOT, loadShard, saveShard } from './enrich-store.js';
+import { MARKETS } from './markets.js';
 
 export const SIZES = [64, 128, 256, 512];
 const render = (svg, size) => sharp(Buffer.from(svg), { density: Math.max(72, size * 6), limitInputPixels: false })
@@ -33,10 +34,12 @@ if (args[0] && !args[0].startsWith('--')) {
 
 const top = parseInt(args.includes('--top') ? args[args.indexOf('--top') + 1] : '3000', 10);
 // Rank by market cap in USD (market caps are reported in each company's own currency).
+// Home listings only: a company listed in many markets (ADRs, GDRs, foreign lines) would otherwise take many slots
+// and push real top-3,000 companies out.
 const ranked = [];
 for (const m of fs.readdirSync(path.join(ROOT, 'enrichment')).map((f) => f.replace('.json', ''))) {
     for (const [sym, rec] of Object.entries(loadShard(m)))
-        if (rec.marketCapUsd > 0 && fs.existsSync(path.join(ROOT, 'logos', m, `${sym}.svg`))) ranked.push([m.toUpperCase(), sym, rec.marketCapUsd]);
+        if (rec.marketCapUsd > 0 && (!rec.country || rec.country === MARKETS[m]?.country) && fs.existsSync(path.join(ROOT, 'logos', m, `${sym}.svg`))) ranked.push([m.toUpperCase(), sym, rec.marketCapUsd]);
 }
 ranked.sort((a, b) => b[2] - a[2]);
 ranked.length = Math.min(ranked.length, top);

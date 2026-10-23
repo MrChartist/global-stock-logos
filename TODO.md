@@ -42,7 +42,7 @@ How to add a source: one adapter file per source in `scripts/adapters/`, followi
 - [ ] **US:EA** was taken private (closed 2026-08-04); retire it.
 - [ ] Officer changes already announced: Hexaware CEO Vivek Jetley (28 Oct 2026), Cummins India MD (1 Nov 2026), Kotak Mahindra Bank MD & CEO Anup Saha (1 Jan 2027), UltraTech MD Jayant Dua (1 Jan 2027), Manappuram MD & CEO Ashish Singh (1 Jan 2027), TVS Motor CEO Peyman Kargar (27 Jan 2027), CME CEO Lynne Fitzpatrick (around Mar 2027). Confirm ICICI Life CEO Sidharatha Mishra's IRDAI approval.
 - [ ] Brand owners to re-check when deals close: Knorr (Unilever to McCormick), Castrol (BP to Stonepeak, 65 %), Kenvue brands (to Kimberly-Clark), NBCUniversal and Sky (Comcast spin-off), Apollo 24|7 (Apollo Healthtech listing, 2027).
-- [ ] PNG sizes cover the top 3,000 by market cap, counted per listing, so the cut-off is about $97B and companies with many cross-listings push others out (ICICI Bank and Airbnb dropped out in October 2026). Count each company once.
+- [x] PNG sizes now cover the 3,000 largest companies by home listing (cut-off about $8B; before, cross-listings filled the list and the cut-off was about $97B).
 
 ## 4. Product and code
 
