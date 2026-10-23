@@ -15,7 +15,7 @@ Open work, in the order to do it. Tick a box when it is done and merged. Last up
 Weakest markets today: India (website 4%, location 21%), Korea (website 8%), Thailand, Brazil (addresses 5%), Argentina.
 
 - [ ] **Korea.** Needs a free DART API key (opendart.fss.or.kr) in an environment variable such as `DART_API_KEY`. DART gives website, CEO, address and founding date. KIND was blocked from the build sandbox: test it from the VPS first.
-- [ ] **India.** The NSE and BSE company APIs returned 403 or 503 from the build sandbox; test from the VPS, with ordinary headers and a polite rate. Needs: website, headquarters, CEO, founding year.
+- [x] **India.** `scripts/adapters/nse-filings.js` reads every NSE company's latest governance filing and BRSR: chairperson, CEO/MD, website, year of incorporation, office address, employees. It runs with `node scripts/enrich-exchanges.js --markets in` and in the monthly pipeline. Still open: BSE-only companies (about 3,000 small companies) have no equivalent yet.
 - [ ] **South-East Asia.** Thailand (SET, behind bot protection in the sandbox), Malaysia, Indonesia, Singapore, Vietnam, Philippines.
 - [ ] **Europe.** Germany and the UK are the largest gaps in website; look at exchange and open company registers (see docs/DATA-COVERAGE.md).
 - [ ] **Rest of the world.** Japan, Taiwan main board (TWSE was blocked), Mexico, Turkey, Israel, the Gulf, South Africa, Argentina, Chile, Colombia, NZ, Pakistan.
