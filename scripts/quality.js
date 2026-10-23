@@ -43,6 +43,12 @@ if (CHECK) {
             files.push(f);
             for (const p of problemsOf(fs.readFileSync(f, 'utf-8'))) problems.push(`${path.relative(ROOT, f)}: ${p}`);
         }
+        // Official rasters are allowed only when no vector exists, and only at 1,000 px or more.
+        for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.png')).map((x) => path.join(dir, x))) {
+            const b = fs.readFileSync(f), w = b.readUInt32BE(16), h = b.readUInt32BE(20);
+            if (b.toString('ascii', 1, 4) !== 'PNG') problems.push(`${path.relative(ROOT, f)}: not a PNG`);
+            else if (Math.max(w, h) < 1000) problems.push(`${path.relative(ROOT, f)}: raster logo is ${w}x${h}, below 1000 px`);
+        }
     }
     for (let k = 0; k < files.length; k += 2000) {
         try { run('xmllint', ['--noout', ...files.slice(k, k + 2000)], { stdio: 'pipe' }); }

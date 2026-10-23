@@ -321,7 +321,7 @@ function detailHtml(c) {
       <section class="group"><h3>Logo</h3><dl class="rows">
         ${row('Brand colour', lg.brandColor ? `<span class="sw"><i style="background:${esc(lg.brandColor)}"></i>${esc(lg.brandColor)}</span><small>From the logo file${lg.brandColorSource === 'neutral-tile' ? ' (black, white or grey logo: low confidence)' : ''}</small>` : na)}
       </dl>
-      <div class="rows" style="margin-top:8px"><div class="files"><a href="${esc(svg)}">${ext === 'png' ? 'PNG (original)' : 'SVG'}</a>${hd ? `<a href="${esc(hd)}">Full logo (HD SVG)</a>` : ''}${sizes}${lg.png ? '' : '<span class="prov">PNG sizes exist for the 3,000 largest companies; other logos are SVG.</span>'}</div></div></section>
+      <div class="rows" style="margin-top:8px"><div class="files"><a href="${esc(svg)}">${ext === 'png' ? 'PNG (original)' : 'SVG'}</a>${hd ? `<a href="${esc(hd)}">Full logo (${hd.endsWith('.svg') ? 'HD SVG' : 'HD PNG'})</a>` : ''}${sizes}${lg.png ? '' : '<span class="prov">PNG sizes exist for the 3,000 largest companies; other logos are SVG.</span>'}</div></div></section>
       ${brands.length ? `<section class="group"><h3>Brands</h3><ul class="brands">${brands.map((b) => `<li><a href="${esc(safeUrl(b.logo) || '')}" rel="noopener noreferrer"><img src="${esc(own(safeUrl(b.logo)) || '')}" data-cdn="${esc(safeUrl(b.logo) || '')}" alt="" loading="lazy" decoding="async"><span>${esc(b.name)}</span></a></li>`).join('')}</ul></section>` : ''}
       <section class="group"><h3>Use it</h3><div class="rows">
         ${embed.map(([k, v]) => `<div class="snip"><span class="k">${esc(k)}</span><code title="${esc(k)}">${esc(v)}</code><button type="button" class="copy" data-copy="${esc(v)}" aria-label="Copy ${esc(k)}"><span>Copy</span></button></div>`).join('')}
@@ -362,10 +362,10 @@ function renderBrands() {
     const el = document.createElement('button');
     el.type = 'button'; el.className = 'card bcard';
     el.setAttribute('aria-label', `${b.name}, owned by ${b.parent.market}:${b.parent.ticker}`);
-    el.innerHTML = `<span class="bl${b.onDark ? ' dark' : ''}"><img width="160" height="64" loading="lazy" decoding="async" alt="" src="${esc(own(safeUrl(b.logo.svg)) || '')}"></span>
+    el.innerHTML = `<span class="bl${b.onDark ? ' dark' : ''}"><img width="160" height="64" loading="lazy" decoding="async" alt="" src="${esc(own(safeUrl(b.logo.svg || b.logo.url)) || '')}"></span>
       <span class="nm">${esc(b.name)}</span>
       <span class="meta"><span class="tag">${esc(b.parent.ticker)}</span><span>${esc(b.category || b.kind)}</span></span>`;
-    fallback(el.querySelector('img'), safeUrl(b.logo.svg));
+    fallback(el.querySelector('img'), safeUrl(b.logo.svg || b.logo.url));
     el.addEventListener('click', () => open(b.parent.market, b.parent.ticker));
     li.appendChild(el);
     frag.appendChild(li);

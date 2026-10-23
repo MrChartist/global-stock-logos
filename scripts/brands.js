@@ -6,12 +6,15 @@
  *
  * brands/brands.json is hand-curated (one record per brand, each with its listed parent and sources).
  * Logos live in brands/logos/<slug>.svg (full logo) and brands/logos/<slug>.mark.svg (optional square mark).
- * PNGs: brands/png/<size>/<slug>.png, rendered from the SVG (full logo, contained in a transparent square).
+ * When a brand publishes no vector logo anywhere, an official raster is accepted instead: brands/logos/<slug>.png, at least
+ * 1,000 px on its long side, from the brand's own site, never upscaled or redrawn.
+ * PNGs: brands/png/<size>/<slug>.png, rendered from the logo (contained in a transparent square; a raster is only downscaled).
  */
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { problemsOf } from './logo-tool.js';
+import { MIN_RASTER } from './institutions.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const BRANDS_DIR = path.join(ROOT, 'brands');
@@ -37,6 +40,13 @@ function catalogueKeys() {
 }
 
 const urlRoot = (u) => { try { const x = new URL(u); return /^https?:$/.test(x.protocol) && `${x.protocol}//${x.hostname}` === u; } catch { return false; } };
+export const pngSize = (fp) => { const b = fs.readFileSync(fp); return b.toString('ascii', 1, 4) === 'PNG' ? [b.readUInt32BE(16), b.readUInt32BE(20)] : null; };
+/** PNG sizes that exist for a brand (a raster original is never upscaled). */
+export function brandPngSizes(b) {
+    if (!b.logo.endsWith('.png')) return BRAND_PNG_SIZES;
+    const s = pngSize(path.join(ROOT, b.logo));
+    return BRAND_PNG_SIZES.filter((n) => s && n <= Math.max(...s));
+}
 const isUrl = (u) => { try { return /^https?:$/.test(new URL(u).protocol); } catch { return false; } };
 
 export function checkBrands(brands = loadBrands()) {
@@ -59,11 +69,12 @@ export function checkBrands(brands = loadBrands()) {
         if (!SOURCE_TYPES.includes(b.logoSourceType)) problems.push(`${at}: logoSourceType must be one of ${SOURCE_TYPES.join(', ')}`);
         for (const [field, rel] of [['logo', b.logo], ['mark', b.mark]]) {
             if (rel == null && field === 'mark') continue;
-            const want = `brands/logos/${b.slug}${field === 'mark' ? '.mark' : ''}.svg`;
-            if (rel !== want) { problems.push(`${at}: ${field} must be ${want}`); continue; }
+            const want = `brands/logos/${b.slug}${field === 'mark' ? '.mark' : ''}`;
+            if (rel !== `${want}.svg` && rel !== `${want}.png`) { problems.push(`${at}: ${field} must be ${want}.svg (or .png)`); continue; }
             const fp = path.join(ROOT, rel);
             if (!fs.existsSync(fp)) { problems.push(`${at}: ${rel} is missing`); continue; }
-            for (const p of problemsOf(fs.readFileSync(fp, 'utf-8'))) problems.push(`${rel}: ${p}`);
+            if (rel.endsWith('.svg')) for (const p of problemsOf(fs.readFileSync(fp, 'utf-8'))) problems.push(`${rel}: ${p}`);
+            else { const s = pngSize(fp); if (!s) problems.push(`${rel}: not a PNG`); else if (Math.max(...s) < MIN_RASTER) problems.push(`${rel}: raster logo is ${s.join('x')}, below ${MIN_RASTER} px`); }
         }
     }
     // Every logo file belongs to a brand.
@@ -80,14 +91,15 @@ async function renderPngs(brands) {
     await Promise.all(Array.from({ length: 6 }, async () => {
         while (i < brands.length) {
             const b = brands[i++];
-            const svg = fs.readFileSync(path.join(ROOT, b.logo));
-            for (const size of BRAND_PNG_SIZES) {
+            const src = fs.readFileSync(path.join(ROOT, b.logo));
+            const isSvg = b.logo.endsWith('.svg');
+            for (const size of brandPngSizes(b)) {
                 const out = path.join(BRANDS_DIR, 'png', String(size), `${b.slug}.png`);
                 want.add(out);
                 fs.mkdirSync(path.dirname(out), { recursive: true });
-                const buf = await sharp(svg, { density: Math.min(2400, Math.max(72, size * 4)), limitInputPixels: false })
-                    .resize(size, size, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
-                    .png({ compressionLevel: 9, palette: true }).toBuffer();
+                const img = isSvg ? sharp(src, { density: Math.min(2400, Math.max(72, size * 4)), limitInputPixels: false }) : sharp(src, { limitInputPixels: false });
+                const buf = await img.resize(size, size, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
+                    .png({ compressionLevel: 9, palette: isSvg }).toBuffer();
                 if (!fs.existsSync(out) || !buf.equals(fs.readFileSync(out))) fs.writeFileSync(out, buf);
             }
         }

@@ -19,7 +19,7 @@ import fs from 'fs';
 import path from 'path';
 import { ROOT } from './enrich-store.js';
 import { MARKETS } from './markets.js';
-import { loadBrands, BRAND_PNG_SIZES } from './brands.js';
+import { loadBrands, brandPngSizes } from './brands.js';
 import { loadInstitutions, pngSizesOf } from './institutions.js';
 
 export const API_VERSION = 'v1';
@@ -43,9 +43,11 @@ for (const b of BRANDS) for (const owner of [b.parent, ...(b.otherListedOwners |
 
 export function brandUrls(b) {
     return {
-        svg: `${CDN}/${b.logo}`,
+        url: `${CDN}/${b.logo}`,
+        format: b.logo.endsWith('.svg') ? 'svg' : 'png',
+        svg: b.logo.endsWith('.svg') ? `${CDN}/${b.logo}` : null,
         mark: b.mark ? `${CDN}/${b.mark}` : null,
-        png: Object.fromEntries(BRAND_PNG_SIZES.map((s) => [s, `${CDN}/brands/png/${s}/${b.slug}.png`])),
+        png: Object.fromEntries(brandPngSizes(b).map((s) => [s, `${CDN}/brands/png/${s}/${b.slug}.png`])),
     };
 }
 
@@ -182,7 +184,7 @@ export const COMPANY_SCHEMA = {
                 png: { type: ['object', 'null'], description: 'PNG URLs by pixel size (64, 128, 256, 512); present for the 3,000 largest companies', additionalProperties: { type: 'string', format: 'uri' } },
                 brandColor: nullable('string', { pattern: '^#[0-9A-F]{6}$', description: 'Taken from the logo file: an approximation, not an official brand colour' }),
                 brandColorSource: nullable('string'), isPlaceholder: { type: 'boolean', description: 'true = generated initials badge, not a real logo' },
-                hd: nullable('string', { format: 'uri', description: 'Official full logo (wordmark or lock-up, original aspect ratio) as vector SVG, when we have one; `svg` is the square icon' }),
+                hd: nullable('string', { format: 'uri', description: 'Official full logo (wordmark or lock-up, original aspect ratio): vector SVG, or an official PNG of at least 1,000 px when the company publishes no vector logo; `svg` is the square icon' }),
             },
             additionalProperties: false,
         },
@@ -238,7 +240,7 @@ function openapi(counts) {
                         otherListedOwners: { type: 'array', items: { type: 'string' }, description: 'Other listed group companies that own or run it, as MARKET:TICKER' },
                         website: { type: ['string', 'null'] }, wikidata: { type: ['string', 'null'] }, brandColor: { type: ['string', 'null'] },
                         onDark: { type: 'boolean', description: 'true = a light logo meant for dark backgrounds' },
-                        logo: { type: 'object', properties: { svg: { type: 'string', format: 'uri' }, mark: { type: ['string', 'null'] }, png: { type: 'object', additionalProperties: { type: 'string', format: 'uri' } } } },
+                        logo: { type: 'object', description: 'url is the original file: vector SVG, or an official PNG of at least 1,000 px when the brand publishes no vector logo (format says which)', properties: { url: { type: 'string', format: 'uri' }, format: { enum: ['svg', 'png'] }, svg: { type: ['string', 'null'] }, mark: { type: ['string', 'null'] }, png: { type: 'object', additionalProperties: { type: 'string', format: 'uri' } } } },
                         sources: { type: 'object', properties: { logo: { type: 'string' }, logoType: { type: 'string' }, ownership: { type: ['string', 'null'] }, checkedAt: { type: ['string', 'null'] } } },
                         links: { type: 'object', properties: { self: { type: 'string', format: 'uri' } } },
                     },
