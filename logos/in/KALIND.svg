@@ -1,41 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
-  <defs>
-    <linearGradient id="grad-KALIND" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d9488" />
-      <stop offset="100%" stop-color="#0f766e" />
-    </linearGradient>
-    <filter id="shadow-KALIND" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.2"/>
-    </filter>
-  </defs>
-  <!-- Background Rounded Canvas -->
-  <rect width="256" height="256" rx="56" fill="url(#grad-KALIND)" filter="url(#shadow-KALIND)"/>
-  <!-- Subtle Internal Border -->
-  <rect x="2" y="2" width="252" height="252" rx="54" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.15"/>
-  <!-- Brand Text -->
-  <text 
-    x="128" 
-    y="142" 
-    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
-    font-size="96" 
-    font-weight="800" 
-    letter-spacing="-1.5"
-    fill="#ffffff" 
-    text-anchor="middle" 
-    dominant-baseline="middle">
-    KA
-  </text>
-  <!-- Micro ticker watermark at bottom -->
-  <text 
-    x="128" 
-    y="218" 
-    font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" 
-    font-size="20" 
-    font-weight="700" 
-    letter-spacing="2"
-    fill="#ffffff" 
-    fill-opacity="0.6"
-    text-anchor="middle">
-    KALIND
-  </text>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1-cbe2a4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 766.1 643.5" enable-background="new 0 0 766.1 643.5" xml:space="preserve">
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#EF7237" d="M229.2,279.7l1,0.3c5.7,6,59.7,106.2,65.7,111.4
+	c8.4-15.1,32.2-49.5,43.4-67.4c7.3-11.8,14.5-22.1,21.7-33.7c3.8-6,18.4-30.1,22.3-33.3l54,84.1l140.9,0l4.1,0.1l-73.9-114.9
+	c-11.9-19.9-37-57.3-49.6-76.6l-12.5-19.3c-2.3-3.8-3.6-5.8-6-9.4l-50.1-77.2c-1.6-2.6-5.3-7.9-6-10.5c-4.2,1.1-8.6,9.7-11,13.7
+	l-69.7,107.9c-3.5,5.3-6.3,10-9.6,15l-65,100.3C226,274.9,228.1,275.1,229.2,279.7L229.2,279.7z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#1E1E1E" d="M470.4,393.2l13.9,20.4c4.3,6.8,8.8,13.6,13.2,20.6
+	c4.1,6.5,24.5,36.9,25.9,41l-106.4,0l-59,124.6l23.1,1.3c8.2,0,16.4,0,24.6,0h294.6c15.7,0,33.9,0.9,49.3-0.1
+	c-0.9-3.5-14.9-23.8-17.9-28.4L604.9,376.2H460.2c0.9,3.5,3,5.5,4.9,8.4C467,387.7,468.4,390.4,470.4,393.2L470.4,393.2z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#1E1E1E" d="M15.7,600.8l303,0.4l51.1-108.2l1-0.9c2.3-9.8,7.4-13.1,6.2-16.9
+	l-135-0.1c2.9-5.5,24.8-40.5,28.2-43.5l1-0.1c0.7-3.1,1.6-3.9,3.1-6.2l-55.9-96c-3-5-10-19.4-13.9-22c-1.1,4-19.4,30.1-23.2,36.4
+	l-71.3,110.4c-4,6-7.6,11.8-11.7,18.1l-35.3,55c-2,3.2-3.6,5.4-5.7,8.6L15.7,600.8L15.7,600.8z"/>
 </svg>

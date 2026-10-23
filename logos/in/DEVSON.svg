@@ -1,41 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
-  <defs>
-    <linearGradient id="grad-DEVSON" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#e11d48" />
-      <stop offset="100%" stop-color="#be123c" />
-    </linearGradient>
-    <filter id="shadow-DEVSON" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.2"/>
-    </filter>
-  </defs>
-  <!-- Background Rounded Canvas -->
-  <rect width="256" height="256" rx="56" fill="url(#grad-DEVSON)" filter="url(#shadow-DEVSON)"/>
-  <!-- Subtle Internal Border -->
-  <rect x="2" y="2" width="252" height="252" rx="54" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.15"/>
-  <!-- Brand Text -->
-  <text 
-    x="128" 
-    y="142" 
-    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
-    font-size="96" 
-    font-weight="800" 
-    letter-spacing="-1.5"
-    fill="#ffffff" 
-    text-anchor="middle" 
-    dominant-baseline="middle">
-    DC
-  </text>
-  <!-- Micro ticker watermark at bottom -->
-  <text 
-    x="128" 
-    y="218" 
-    font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" 
-    font-size="20" 
-    font-weight="700" 
-    letter-spacing="2"
-    fill="#ffffff" 
-    fill-opacity="0.6"
-    text-anchor="middle">
-    DEVSON
-  </text>
+<svg
+   version="1.1"
+  
+  
+   id="svg4-4a63d1"
+   viewBox="-8.16 40.51 544.23 801.63"
+   sodipodi:docname="DC Logo 2025.cdr"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs4-4a63d1" />
+  <sodipodi:namedview
+     id="namedview4-4a63d1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt" />
+  <g
+     id="Layer1000-4a63d1">
+    
+    <path
+       d="m 368.6509,70.7669 h 0.002 l 136.5151,78.8155 v 249.7852 l 0.3468,115.2349 0.1301,-0.0753 -0.0639,21.7663 0.0639,21.764 -0.1301,-0.0753 -0.3468,115.2349 -239.899,138.5051 C -220.5542,592.9228 130.7644,188.2999 368.6509,320.5521 Z M 215.1686,514.0388 c 16.1091,0 30.3377,8.0306 38.9092,20.3081 l 21.2208,-12.4121 c -0.3035,-2.1634 -0.4632,-4.3747 -0.4632,-6.6203 0,-26.1935 21.2346,-47.4303 47.428,-47.4303 26.1958,0 47.4304,21.2368 47.4304,47.4303 0,4.0986 -0.5203,8.0762 -1.4993,11.8736 l 34.2765,31.5084 c 7.1314,-5.1529 15.8923,-8.1926 25.3605,-8.1926 23.9434,0 43.35,19.4089 43.35,43.35 0,23.9388 -19.4066,43.3477 -43.35,43.3477 -23.9388,0 -43.3477,-19.4089 -43.3477,-43.3477 0,-4.8562 0.7987,-9.5253 2.2707,-13.8864 l -32.3734,-29.7603 c -8.4481,7.7818 -19.7261,12.5354 -32.1177,12.5354 -16.0314,0 -30.203,-7.9553 -38.7881,-20.1324 l -21.3076,12.4624 c 0.2807,2.0903 0.429,4.224 0.429,6.3943 0,26.1935 -21.2346,47.428 -47.4281,47.428 -1.2916,0 -2.5718,-0.0524 -3.8384,-0.1529 l -6.7047,21.2666 c 6.8827,5.4153 11.3008,13.8201 11.3008,23.2564 0,16.3373 -13.2428,29.5801 -29.5801,29.5801 -16.335,0 -29.58,-13.2428 -29.58,-29.5801 0,-15.3856 11.7526,-28.0282 26.7685,-29.4454 l 6.8987,-21.8804 c -13.6102,-8.3341 -22.6928,-23.3409 -22.6928,-40.4723 0,-5.8147 1.0475,-11.3829 2.9621,-16.529 l -21.2985,-17.2113 c -4.7672,2.6518 -10.251,4.1625 -16.0908,4.1625 -18.3067,0 -33.1515,-14.8425 -33.1515,-33.1492 0,-18.309 14.8448,-33.1492 33.1515,-33.1492 1.78,0 3.5281,0.1415 5.2328,0.4108 l 2.5582,-8.1128 c -4.7581,-3.9274 -7.791,-9.8721 -7.791,-16.5244 0,-11.8279 9.5892,-21.4171 21.4194,-21.4171 11.828,0 21.4172,9.5892 21.4172,21.4171 0,11.8302 -9.5892,21.4195 -21.4172,21.4195 l -0.5043,-0.007 -2.6221,8.3158 c 8.9525,5.9357 14.8562,16.1023 14.8562,27.6472 0,4.4363 -0.874,8.6673 -2.4555,12.5354 l 18.9936,15.3445 c 8.4528,-7.8092 19.7513,-12.581 32.1679,-12.581 z"
+       style="fill:#e40032;fill-rule:evenodd"
+       id="path2-4a63d1" />
+    
+    
+  </g>
 </svg>
