@@ -151,6 +151,7 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
     const curated = fs.existsSync(curatedFile) ? JSON.parse(fs.readFileSync(curatedFile, 'utf-8')) : {};
     const enrichment = {};
     const foreignListing = new Set();
+    const delisted = new Set();
     for (const [k, item] of Object.entries(logos)) {
         if (!k.includes(':')) continue; // namespaced MARKET:SYM keys only
         const mk = item.market.toLowerCase();
@@ -176,16 +177,20 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
             sources: (e.sources || o.sources) ? { ...e.sources, ...o.sources } : null, checks: e.checks || null,
             slogan: pick('slogan'), brandColor: pick('brandColor'), brandColorSource: pick('brandColorSource'),
             wikidata: pick('wikidata'), pngPaths: pngBase,
+            // Listing status (curated/overrides.json): a delisted, acquired or renamed company keeps its file, marked, with its successor.
+            status: o.status || null, delistedAt: o.delistedAt || null, successor: o.successor || null,
             hdPath: hdRel,   // official full logo (wordmark), when we have one
             freshness: { marketData: e.marketDataAt || null, profile: e.wikidataAt || null },
         };
-        if (!item.logoOf) searchIndex.push([item.symbol, item.company, item.market, item.format, item.yahooTicker, e.marketCapUsd ?? null]);
+        if (o.status === 'delisted') Object.assign(shards[mk][item.symbol], { marketCap: null, capCurrency: null, marketCapUsd: null, marketCapInr: null });   // no longer trades: no market cap
+        if (!item.logoOf) searchIndex.push([item.symbol, item.company, item.market, item.format, item.yahooTicker, o.status === 'delisted' ? null : e.marketCapUsd ?? null]);
+        if (o.status === 'delisted') delisted.add(`${item.market}:${item.symbol}`);
         // A depositary receipt of a foreign company (company country differs from the market's country) ranks below home listings.
         if (e.country && e.country !== item.country) foreignListing.add(`${item.market}:${item.symbol}`);
     }
     // Biggest companies first, so catalogues and search boxes show the most useful entries by default.
     const capOf = (sym, market) => shards[market.toLowerCase()]?.[sym]?.marketCapUsd || 0;
-    const rank = (r) => (foreignListing.has(`${r[2]}:${r[0]}`) ? 0 : 1);
+    const rank = (r) => (delisted.has(`${r[2]}:${r[0]}`) ? -1 : foreignListing.has(`${r[2]}:${r[0]}`) ? 0 : 1);
     searchIndex.sort((a, b) => rank(b) - rank(a) || capOf(b[0], b[2]) - capOf(a[0], a[2]));
     const marketFiles = {};
     for (const [mk, items] of Object.entries(shards)) {

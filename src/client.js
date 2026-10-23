@@ -20,6 +20,7 @@ export const DEFAULT_BASE_URL = 'https://cdn.jsdelivr.net/gh/MrChartist/global-s
  *   country: string | null, countryCode: string | null, flag: string | null, exchange: string | null,
  *   currency: string | null, isin: string | null, lei: string | null, cik: string | null, wikidata: string | null,
  *   classification: { sector: string | null, industry: string | null },
+ *   listing: { status: 'listed' | 'delisted', delistedAt: string | null, successor: { company: string, url: string } | null, source: string | null },
  *   marketCap: { currency: string | null, local: number, usd: number | null, inr: number | null, asOf: string | null } | null,
  *   profile: {
  *     website: string | null, founded: number | null, listingDate: string | null,

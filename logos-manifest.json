@@ -1,7 +1,7 @@
 {
   "name": "Global Stock Logos Catalog (World)",
   "version": "3.0.0",
-  "updatedAt": "2026-10-23T13:34:12.021Z",
+  "updatedAt": "2026-10-23T14:24:30.930Z",
   "totalEquities": 79554,
   "stats": {
     "markets": {
@@ -75,8 +75,8 @@
       "VIETNAM": 1320
     },
     "formats": {
-      "svg": 79526,
-      "png": 28
+      "svg": 79532,
+      "png": 22
     }
   },
   "cdnBase": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos",

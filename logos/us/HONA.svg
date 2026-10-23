@@ -1,41 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+<svg id="Layer_1-148db5" xmlns="http://www.w3.org/2000/svg" width="32" height="32" version="1.1" viewBox="0 0 32 32">
+  
   <defs>
-    <linearGradient id="grad-HONA" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7c3aed" />
-      <stop offset="100%" stop-color="#6d28d9" />
-    </linearGradient>
-    <filter id="shadow-HONA" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.2"/>
-    </filter>
+    <style>
+      .st0 {
+        fill: #f40;
+      }
+    </style>
   </defs>
-  <!-- Background Rounded Canvas -->
-  <rect width="256" height="256" rx="56" fill="url(#grad-HONA)" filter="url(#shadow-HONA)"/>
-  <!-- Subtle Internal Border -->
-  <rect x="2" y="2" width="252" height="252" rx="54" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.15"/>
-  <!-- Brand Text -->
-  <text 
-    x="128" 
-    y="142" 
-    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
-    font-size="96" 
-    font-weight="800" 
-    letter-spacing="-1.5"
-    fill="#ffffff" 
-    text-anchor="middle" 
-    dominant-baseline="middle">
-    HA
-  </text>
-  <!-- Micro ticker watermark at bottom -->
-  <text 
-    x="128" 
-    y="218" 
-    font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" 
-    font-size="20" 
-    font-weight="700" 
-    letter-spacing="2"
-    fill="#ffffff" 
-    fill-opacity="0.6"
-    text-anchor="middle">
-    HONA
-  </text>
+  <path class="st0" d="M3.62772,17.55455l4.94873-8.57136h5.40169l-4.94467,8.56432c-1.63319.00702-3.4288.00702-5.40575.00703h0ZM16.54657,17.39239l4.85512-8.40921h-5.40169l-4.93683,8.55072c2.11937-.02039,3.92924-.06092,5.4834-.14151h0ZM26.12439,13.66113l-2.70084-4.67795-4.76861,8.25937c4.34527-.41165,6.19058-1.3665,7.46944-3.58142h.00001ZM10.59831,18.33907l-2.70072,4.67775h5.40169l2.70072-4.67775h-5.40169ZM15.32113,23.01682h5.40169l2.70072-4.67775h-5.40169c-1.20031,2.07897-2.70072,4.67775-2.70072,4.67775ZM3.17476,18.33907L.47404,23.01682h5.40169l2.70072-4.67775H3.17476ZM28.82524,18.33907h-5.40169l2.70072,4.67775h5.40169l-2.70072-4.67775Z"/>
+  
 </svg>

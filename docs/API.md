@@ -57,6 +57,8 @@ const hul = await api.brandsOf('in', 'HINDUNILVR');   // every brand Hindustan U
 img.src = api.brandLogoUrl('jio', 512);        // no request needed
 ```
 
+**Delisted companies.** A company that was acquired, taken private or renamed to a new ticker keeps its file, with `listing.status: "delisted"`, `listing.delistedAt`, `listing.successor` (the acquirer or the new listing, with its URL) and the source. Its market cap is `null`, and it sorts last in the search index. Show it as "Acquired by …" or follow the successor.
+
 **Links between records.** A company lists its `brands` (and `institution` when the company is also a market institution, such as NSE or CDSL); a brand lists all its listed `owners` (Surf Excel: Unilever as parent, Hindustan Unilever as the Indian listed owner); an institution has its `parent` and `children` (NPCI → UPI, RuPay, IMPS...). Every link carries the `url` of the record it points to.
 
 ## A company

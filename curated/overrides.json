@@ -19,6 +19,234 @@
   "chairman": "Caio Ibrahim David",
   "wikidata": "Q796297"
  },
+ "BRAZIL:DXCO3": {
+  "website": "https://www.dex.co",
+  "sources": {
+   "website": "https://www.dex.co/en/"
+  }
+ },
+ "BRAZIL:USIM5": {
+  "website": "https://www.usiminas.com",
+  "sources": {
+   "website": "https://www.usiminas.com/"
+  }
+ },
+ "CANADA:AEM": {
+  "website": "https://www.agnicoeagle.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Agnico_Eagle_Mines"
+  }
+ },
+ "CANADA:ASTL": {
+  "website": "https://www.algoma.com",
+  "sources": {
+   "website": "https://www.algoma.com/"
+  }
+ },
+ "CANADA:BTE": {
+  "website": "https://www.baytexenergy.com",
+  "sources": {
+   "website": "https://www.baytexenergy.com/"
+  }
+ },
+ "CANADA:FEC": {
+  "website": "https://www.fronteraenergy.ca",
+  "sources": {
+   "website": "https://www.fronteraenergy.ca/"
+  }
+ },
+ "CANADA:FVI": {
+  "website": "https://fortunamining.com",
+  "sources": {
+   "website": "https://fortunamining.com"
+  }
+ },
+ "CANADA:GUD": {
+  "website": "https://knighttx.com",
+  "sources": {
+   "website": "https://knighttx.com/"
+  }
+ },
+ "CANADA:IGM": {
+  "website": "https://www.igmfinancial.com",
+  "sources": {
+   "website": "https://www.igmfinancial.com/en"
+  }
+ },
+ "CANADA:MFC": {
+  "website": "https://www.manulife.com",
+  "sources": {
+   "website": "https://www.manulife.com/"
+  }
+ },
+ "CANADA:MFI": {
+  "website": "https://www.mapleleaffoods.com",
+  "sources": {
+   "website": "https://www.mapleleaffoods.com/"
+  }
+ },
+ "CANADA:NPI": {
+  "website": "https://northlandpower.com",
+  "sources": {
+   "website": "https://northlandpower.com/"
+  }
+ },
+ "CANADA:OBE": {
+  "website": "https://obsidianenergy.com",
+  "sources": {
+   "website": "https://obsidianenergy.com/"
+  }
+ },
+ "CANADA:SLF": {
+  "website": "https://www.sunlife.com",
+  "sources": {
+   "website": "https://www.sunlife.com/en/"
+  }
+ },
+ "CANADA:SSRM": {
+  "website": "https://www.ssrmining.com",
+  "sources": {
+   "website": "https://www.ssrmining.com/"
+  }
+ },
+ "CANADA:VET": {
+  "website": "https://www.vermilionenergy.com",
+  "sources": {
+   "website": "https://www.vermilionenergy.com/"
+  }
+ },
+ "CHINA:000100": {
+  "website": "https://www.tcltech.com",
+  "sources": {
+   "website": "https://www.tcltech.com/en"
+  }
+ },
+ "CHINA:000568": {
+  "website": "https://www.lzlj.com",
+  "sources": {
+   "website": "https://www.lzlj.com/"
+  }
+ },
+ "CHINA:000629": {
+  "website": "https://www.pgvt.cn",
+  "sources": {
+   "website": "https://www.pgvt.cn/"
+  }
+ },
+ "CHINA:002142": {
+  "website": "https://www.nbcb.com.cn",
+  "sources": {
+   "website": "https://www.nbcb.com.cn/"
+  }
+ },
+ "CHINA:002180": {
+  "website": "https://www.pantumtechnology.com.cn",
+  "sources": {
+   "website": "https://www.pantumtechnology.com.cn/"
+  }
+ },
+ "CHINA:300223": {
+  "website": "https://www.ingenic.com.cn",
+  "sources": {
+   "website": "https://www.ingenic.com.cn/"
+  }
+ },
+ "CHINA:300347": {
+  "website": "https://tigermedgrp.com",
+  "sources": {
+   "website": "https://tigermedgrp.com/en/homepage"
+  }
+ },
+ "CHINA:600004": {
+  "website": "https://www.baiyunport.com",
+  "sources": {
+   "website": "https://www.baiyunport.com/"
+  }
+ },
+ "CHINA:600031": {
+  "website": "https://www.sany.com.cn",
+  "sources": {
+   "website": "https://www.sany.com.cn/"
+  }
+ },
+ "CHINA:600048": {
+  "website": "https://www.polycn.com",
+  "sources": {
+   "website": "http://polycn.com/"
+  }
+ },
+ "CHINA:600287": {
+  "website": "https://www.sohofashion.com.cn",
+  "sources": {
+   "website": "https://www.sohofashion.com.cn/"
+  }
+ },
+ "CHINA:600365": {
+  "website": "https://www.tonhwa.com",
+  "sources": {
+   "website": "https://www.tonhwa.com/"
+  }
+ },
+ "CHINA:600690": {
+  "website": "https://smart-home.haier.com",
+  "sources": {
+   "website": "https://smart-home.haier.com/"
+  }
+ },
+ "CHINA:600699": {
+  "website": "https://www.joyson.com",
+  "sources": {
+   "website": "https://www.joyson.com/"
+  }
+ },
+ "CHINA:600717": {
+  "website": "https://www.tianjin-port.com",
+  "sources": {
+   "website": "https://www.tianjin-port.com/"
+  }
+ },
+ "CHINA:600757": {
+  "website": "https://www.600757.com.cn",
+  "sources": {
+   "website": "https://www.600757.com.cn/"
+  }
+ },
+ "CHINA:600999": {
+  "website": "https://www.cmschina.com",
+  "sources": {
+   "website": "https://www.cmschina.com/"
+  }
+ },
+ "CHINA:601229": {
+  "website": "https://www.bosc.cn",
+  "sources": {
+   "website": "https://www.bosc.cn/"
+  }
+ },
+ "CHINA:601628": {
+  "website": "https://www.e-chinalife.com",
+  "sources": {
+   "website": "https://www.e-chinalife.com/"
+  }
+ },
+ "CHINA:601633": {
+  "website": "https://www.gwm.com.cn",
+  "sources": {
+   "website": "https://www.gwm.com.cn/"
+  }
+ },
+ "CHINA:601777": {
+  "website": "https://www.afari.com",
+  "sources": {
+   "website": "https://www.afari.com/en"
+  }
+ },
+ "CHINA:601818": {
+  "website": "https://www.cebbank.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/China_Everbright_Bank"
+  }
+ },
  "FRANCE:ENX": {
   "chairman": "Piero Novelli",
   "sources": {
@@ -31,6 +259,222 @@
    "chairman": "https://www.deutsche-boerse.com/dbg-en/investor-relations/corporate-governance/supervisory-board"
   }
  },
+ "HONGKONG:1024": {
+  "website": "https://www.kuaishou.com",
+  "sources": {
+   "website": "https://www.kuaishou.com/new-reco"
+  }
+ },
+ "HONGKONG:1072": {
+  "website": "https://www.dec-ltd.cn",
+  "sources": {
+   "website": "https://www.dec-ltd.cn/"
+  }
+ },
+ "HONGKONG:1093": {
+  "website": "https://www.cspc.com.hk",
+  "sources": {
+   "website": "https://www.cspc.com.hk/"
+  }
+ },
+ "HONGKONG:1097": {
+  "website": "https://www.ctfme.com",
+  "sources": {
+   "website": "https://www.ctfme.com/en"
+  }
+ },
+ "HONGKONG:1112": {
+  "website": "https://www.hh.global",
+  "sources": {
+   "website": "https://www.hh.global/"
+  }
+ },
+ "HONGKONG:1133": {
+  "website": "https://www.hpec.com",
+  "sources": {
+   "website": "https://www.hpec.com/"
+  }
+ },
+ "HONGKONG:1145": {
+  "website": "https://www.courageinv.com",
+  "sources": {
+   "website": "https://www.courageinv.com/"
+  }
+ },
+ "HONGKONG:1177": {
+  "website": "https://www.sbpgroup.com",
+  "sources": {
+   "website": "https://www.sbpgroup.com/"
+  }
+ },
+ "HONGKONG:1179": {
+  "website": "https://www.hworld.com",
+  "sources": {
+   "website": "https://www.hworld.com/"
+  }
+ },
+ "HONGKONG:1221": {
+  "website": "https://www.sino.com",
+  "sources": {
+   "website": "https://www.sino.com/"
+  }
+ },
+ "HONGKONG:1272": {
+  "website": "https://www.dteg.com.cn",
+  "sources": {
+   "website": "https://www.dteg.com.cn/"
+  }
+ },
+ "HONGKONG:1276": {
+  "website": "https://www.hengrui.com",
+  "sources": {
+   "website": "https://www.hengrui.com/"
+  }
+ },
+ "HONGKONG:1347": {
+  "website": "https://www.huahonggrace.com",
+  "sources": {
+   "website": "https://www.huahonggrace.com/s/index.php"
+  }
+ },
+ "HONGKONG:135": {
+  "website": "https://www.kunlun.com.hk",
+  "sources": {
+   "website": "https://www.kunlun.com.hk/"
+  }
+ },
+ "HONGKONG:144": {
+  "website": "https://www.cmport.com.hk",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/China_Merchants_Port"
+  }
+ },
+ "HONGKONG:1496": {
+  "website": "https://www.apholdingshk.com",
+  "sources": {
+   "website": "https://www.apholdingshk.com/"
+  }
+ },
+ "HONGKONG:1578": {
+  "website": "https://www.bankoftianjin.com",
+  "sources": {
+   "website": "https://www.bankoftianjin.com/"
+  }
+ },
+ "HONGKONG:1623": {
+  "website": "https://www.hilonggroup.com",
+  "sources": {
+   "website": "https://www.hilonggroup.com/"
+  }
+ },
+ "HONGKONG:175": {
+  "website": "https://www.geelyauto.com.hk",
+  "sources": {
+   "website": "https://www.geelyauto.com.hk/"
+  }
+ },
+ "HONGKONG:1846": {
+  "website": "https://euroeyes.com",
+  "sources": {
+   "website": "https://euroeyes.com/"
+  }
+ },
+ "HONGKONG:2068": {
+  "website": "https://zlgj.chinalco.com.cn",
+  "sources": {
+   "website": "https://zlgj.chinalco.com.cn/"
+  }
+ },
+ "HONGKONG:2236": {
+  "website": "https://www.wison-engineering.com",
+  "sources": {
+   "website": "https://www.wison-engineering.com/en"
+  }
+ },
+ "HONGKONG:2238": {
+  "website": "https://www.gacgroup.com",
+  "sources": {
+   "website": "https://www.gacgroup.com/en"
+  }
+ },
+ "HONGKONG:2328": {
+  "website": "https://property.picc.com.cn",
+  "sources": {
+   "website": "https://property.picc.com.cn/"
+  }
+ },
+ "HONGKONG:2333": {
+  "website": "https://www.gwm.com.cn",
+  "sources": {
+   "website": "https://www.gwm.com.cn/"
+  }
+ },
+ "HONGKONG:2589": {
+  "website": "https://www.hsay.com",
+  "sources": {
+   "website": "https://www.hsay.com/"
+  }
+ },
+ "HONGKONG:2607": {
+  "website": "https://www.sphchina.com",
+  "sources": {
+   "website": "https://www.sphchina.com/index/"
+  }
+ },
+ "HONGKONG:2628": {
+  "website": "https://www.e-chinalife.com",
+  "sources": {
+   "website": "https://www.e-chinalife.com/"
+  }
+ },
+ "HONGKONG:2669": {
+  "website": "https://www.copl.com.hk",
+  "sources": {
+   "website": "https://www.copl.com.hk/"
+  }
+ },
+ "HONGKONG:285": {
+  "website": "https://www.byd-electronics.com",
+  "sources": {
+   "website": "https://www.byd-electronics.com/en"
+  }
+ },
+ "HONGKONG:303": {
+  "website": "https://www.vtech.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/VTech"
+  }
+ },
+ "HONGKONG:305": {
+  "website": "https://www.wuling.com.hk",
+  "sources": {
+   "website": "https://www.wuling.com.hk/"
+  }
+ },
+ "HONGKONG:315": {
+  "website": "https://www.smartoneholdings.com",
+  "sources": {
+   "website": "https://www.smartoneholdings.com/"
+  }
+ },
+ "HONGKONG:3377": {
+  "website": "https://www.sinooceangroup.com",
+  "sources": {
+   "website": "https://www.sinooceangroup.com/zh-cn/index.html"
+  }
+ },
+ "HONGKONG:3383": {
+  "website": "https://www.agile.com.cn",
+  "sources": {
+   "website": "https://www.agile.com.cn/"
+  }
+ },
+ "HONGKONG:3800": {
+  "website": "https://www.gcltech.com",
+  "sources": {
+   "website": "https://www.gcltech.com/"
+  }
+ },
  "HONGKONG:388": {
   "ceo": "Bonnie Chan",
   "sources": {
@@ -38,6 +482,114 @@
    "chairman": "https://www.hkexgroup.com/About-HKEX/Organisation/Board-and-Committees?sc_lang=en"
   },
   "chairman": "Carlson Tong"
+ },
+ "HONGKONG:6099": {
+  "website": "https://www.cmschina.com",
+  "sources": {
+   "website": "https://www.cmschina.com/"
+  }
+ },
+ "HONGKONG:666": {
+  "website": "https://www.reptbattero.com",
+  "sources": {
+   "website": "https://www.reptbattero.com/"
+  }
+ },
+ "HONGKONG:6818": {
+  "website": "https://www.cebbank.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/China_Everbright_Bank"
+  }
+ },
+ "HONGKONG:6828": {
+  "website": "https://www.bgbluesky.com",
+  "sources": {
+   "website": "https://www.bgbluesky.com/c/index.php"
+  }
+ },
+ "HONGKONG:6862": {
+  "website": "https://www.haidilao.com",
+  "sources": {
+   "website": "https://www.haidilao.com/"
+  }
+ },
+ "HONGKONG:696": {
+  "website": "https://www.travelsky.cn",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/TravelSky"
+  }
+ },
+ "HONGKONG:762": {
+  "website": "https://www.chinaunicom.com.hk",
+  "sources": {
+   "website": "https://www.chinaunicom.com.hk/"
+  }
+ },
+ "HONGKONG:80175": {
+  "website": "https://www.geelyauto.com.hk",
+  "sources": {
+   "website": "https://www.geelyauto.com.hk/"
+  }
+ },
+ "HONGKONG:8041": {
+  "website": "https://www.intellimarkai.com.hk",
+  "sources": {
+   "website": "https://www.intellimarkai.com.hk/"
+  }
+ },
+ "HONGKONG:80941": {
+  "website": "https://www.chinamobileltd.com",
+  "sources": {
+   "website": "https://www.chinamobileltd.com/en/global/home.php"
+  }
+ },
+ "HONGKONG:8282": {
+  "website": "https://www.hk08282.com",
+  "sources": {
+   "website": "https://www.hk08282.com/"
+  }
+ },
+ "HONGKONG:83": {
+  "website": "https://www.sino.com",
+  "sources": {
+   "website": "https://www.sino.com/"
+  }
+ },
+ "HONGKONG:8326": {
+  "website": "https://www.tonkinggroup.com.hk",
+  "sources": {
+   "website": "https://www.tonkinggroup.com.hk/"
+  }
+ },
+ "HONGKONG:857": {
+  "website": "https://www.petrochina.com.cn",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/PetroChina"
+  }
+ },
+ "HONGKONG:941": {
+  "website": "https://www.chinamobileltd.com",
+  "sources": {
+   "website": "https://www.chinamobileltd.com/en/global/home.php"
+  }
+ },
+ "HONGKONG:945": {
+  "website": "https://www.manulife.com",
+  "sources": {
+   "website": "https://www.manulife.com/"
+  }
+ },
+ "HONGKONG:9660": {
+  "website": "https://www.horizon.auto",
+  "sources": {
+   "website": "https://www.horizon.auto/"
+  }
+ },
+ "HONGKONG:9999": {
+  "website": "https://www.netease.com",
+  "sources": {
+   "website": "https://www.netease.com/"
+  }
  },
  "IN:360ONE": {
   "website": "https://www.360.one",
@@ -743,6 +1295,12 @@
   "founded": 1996,
   "ceo": "Shrikant Badve"
  },
+ "IN:BEML": {
+  "website": "https://www.bemlindia.in",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/BEML"
+  }
+ },
  "IN:BERGEPAINT": {
   "website": "https://www.bergerpaints.com",
   "sources": {
@@ -772,10 +1330,12 @@
   "sources": {
    "founded": "https://en.wikipedia.org/wiki/Bharti_Airtel",
    "ceo": "https://nsearchives.nseindia.com/corporate/BHARTIARTL_18122025180743_BoardManagementChanges.pdf",
-   "chairman": "https://nsearchives.nseindia.com/corporate/BHARTIARTL_13052026201127_DirectorsReappointment.pdf"
+   "chairman": "https://nsearchives.nseindia.com/corporate/BHARTIARTL_13052026201127_DirectorsReappointment.pdf",
+   "website": "https://www.airtel.in/"
   },
   "ceo": "Shashwat Sharma",
-  "chairman": "Sunil Bharti Mittal"
+  "chairman": "Sunil Bharti Mittal",
+  "website": "https://www.airtel.in"
  },
  "IN:BHARTIHEXA": {
   "website": "https://www.bhartihexacom.in",
@@ -998,6 +1558,12 @@
    "chairman": "https://www.cdslindia.com/About/Leadership.html"
   },
   "chairman": "Gurumoorthy Mahalingam"
+ },
+ "IN:CEATLTD": {
+  "website": "https://www.ceat.com",
+  "sources": {
+   "website": "https://www.ceat.com/"
+  }
  },
  "IN:CEMPRO": {
   "website": "https://www.cemindia.co.in",
@@ -1296,6 +1862,18 @@
   },
   "ceo": "Srinivasagopalan Rangarajan",
   "chairman": "Srinivasagopalan Rangarajan"
+ },
+ "IN:DCB": {
+  "website": "https://www.dcb.bank.in",
+  "sources": {
+   "website": "https://www.dcb.bank.in/"
+  }
+ },
+ "IN:DCBBANK": {
+  "website": "https://www.dcb.bank.in",
+  "sources": {
+   "website": "https://www.dcb.bank.in/"
+  }
  },
  "IN:DEEPAKNTR": {
   "website": "https://www.godeepak.com",
@@ -1666,6 +2244,12 @@
   },
   "ceo": "Deepak Gupta",
   "chairman": "Deepak Gupta"
+ },
+ "IN:GATEWAY": {
+  "website": "https://www.gatewaydistriparks.com",
+  "sources": {
+   "website": "https://www.gatewaydistriparks.com/"
+  }
  },
  "IN:GESHIP": {
   "website": "https://www.greatship.com",
@@ -3291,6 +3875,12 @@
   "ceo": "P. Srinivas Reddy",
   "chairman": "B.V.R Subbu"
  },
+ "IN:MTNL": {
+  "website": "https://www.mtnl.in",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Mahanagar_Telephone_Nigam"
+  }
+ },
  "IN:MUTHOOTFIN": {
   "website": "https://www.muthootfinance.com",
   "sources": {
@@ -3341,6 +3931,12 @@
   "ceo": "Sundeep Sikka",
   "chairman": "Upendra Kumar Sinha"
  },
+ "IN:NATCOPHARM": {
+  "website": "https://www.natcopharma.co.in",
+  "sources": {
+   "website": "https://www.natcopharma.co.in/"
+  }
+ },
  "IN:NATIONALUM": {
   "website": "https://nalcoindia.com",
   "sources": {
@@ -3390,6 +3986,12 @@
   "headquarters": "New Delhi, Delhi, India",
   "ceo": "K. P. Mahadevaswamy",
   "chairman": "K. P. Mahadevaswamy"
+ },
+ "IN:NCC": {
+  "website": "https://www.ncclimited.com",
+  "sources": {
+   "website": "https://www.ncclimited.com/"
+  }
  },
  "IN:NESTLEIND": {
   "website": "https://www.nestle.in",
@@ -3660,6 +4262,12 @@
   "headquarters": "Bengaluru, Karnataka, India",
   "ceo": "Karthik Yathindra",
   "chairman": "Sunder Genomal"
+ },
+ "IN:PANACEABIO": {
+  "website": "https://www.panaceabiotec.com",
+  "sources": {
+   "website": "https://www.panaceabiotec.com/"
+  }
  },
  "IN:PATANJALI": {
   "website": "https://www.patanjalifoods.com",
@@ -4313,6 +4921,18 @@
   "ceo": "Bhupender Gupta",
   "chairman": "Bhupender Gupta"
  },
+ "IN:SMLISUZU": {
+  "website": "https://www.smlmahindra.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/SML_Isuzu"
+  }
+ },
+ "IN:SMLMAH": {
+  "website": "https://www.smlmahindra.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/SML_Isuzu"
+  }
+ },
  "IN:SOLARINDS": {
   "website": "https://solargroup.com",
   "sources": {
@@ -4370,6 +4990,12 @@
   },
   "ceo": "Ankit Agarwal",
   "chairman": "Anil Agarwal"
+ },
+ "IN:STRTECH": {
+  "website": "https://stl.tech",
+  "sources": {
+   "website": "https://stl.tech/"
+  }
  },
  "IN:SUMICHEM": {
   "website": "https://www.sumichem.co.in",
@@ -4867,6 +5493,12 @@
   "founded": 2014,
   "ceo": "Abhiraj Singh Bhal"
  },
+ "IN:UTKARSHBNK": {
+  "website": "https://www.utkarsh.bank.in",
+  "sources": {
+   "website": "https://www.utkarsh.bank.in/"
+  }
+ },
  "IN:VAML": {
   "website": "https://www.vedantaaluminium.com",
   "sources": {
@@ -4902,6 +5534,12 @@
   },
   "ceo": "Arun Misra",
   "chairman": "Anil Agarwal"
+ },
+ "IN:VMART": {
+  "website": "https://www.vmart.co.in",
+  "sources": {
+   "website": "https://www.vmart.co.in/"
+  }
  },
  "IN:VMM": {
   "website": "https://www.vishalmegamart.com",
@@ -6235,6 +6873,20 @@
   },
   "wikidata": "Q7833987"
  },
+ "US:AAFRF": {
+  "website": "https://www.airtel.africa",
+  "sources": {
+   "website": "https://www.airtel.africa/"
+  }
+ },
+ "US:AAIGF": {
+  "ceo": "Lee Yuan Siong",
+  "sources": {
+   "ceo": "https://www.aia.com/en/about-aia/overview/leadership-team",
+   "chairman": "https://www.aia.com/en/about-aia/overview/leadership-team"
+  },
+  "chairman": "Mark Tucker"
+ },
  "US:AAPL": {
   "headquarters": "Cupertino, California, United States",
   "sources": {
@@ -6242,6 +6894,38 @@
    "ceo": "https://www.apple.com/leadership/"
   },
   "ceo": "John Ternus"
+ },
+ "US:ABBV": {
+  "ceo": "Robert A. Michael",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1551152/000110465926033387/abbv-20260508xdef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1551152/000110465926033387/abbv-20260508xdef14a.htm"
+  },
+  "chairman": "Robert A. Michael"
+ },
+ "US:ABLZF": {
+  "ceo": "Morten Wierod",
+  "sources": {
+   "ceo": "https://resources.news.e.abb.com/attachments/published/137496/en-US/9123465FF532/ABB_Q2_2026_Press_release_English.pdf",
+   "chairman": "https://resources.news.e.abb.com/attachments/published/133546/en-US/8391113F9F38/Press_release_and_invitation_to_ABB_AGM_2026_-_English_PDF.pdf",
+   "website": "https://www.abb.com/global/en"
+  },
+  "chairman": "Peter Voser",
+  "website": "https://www.abb.com"
+ },
+ "US:ABT": {
+  "ceo": "Robert B. Ford",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1800/000130817926000064/abt-20260311.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1800/000130817926000064/abt-20260311.htm"
+  },
+  "chairman": "Robert B. Ford"
+ },
+ "US:ACAD": {
+  "website": "https://acadia.com",
+  "sources": {
+   "website": "https://acadia.com/en-us"
+  }
  },
  "US:ACGBF": {
   "headquarters": "Beijing, China",
@@ -6269,6 +6953,96 @@
   "chairman": "Gu Shu",
   "wikidata": "Q26298"
  },
+ "US:ACGL": {
+  "website": "https://www.archgroup.com",
+  "sources": {
+   "website": "https://www.archgroup.com/"
+  }
+ },
+ "US:AD": {
+  "website": "https://www.arrayinc.com",
+  "sources": {
+   "website": "https://www.arrayinc.com/"
+  }
+ },
+ "US:ADBE": {
+  "ceo": "Shantanu Narayen",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000144/adbe-20260902.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000144/adbe-20260902.htm"
+  },
+  "chairman": "Shantanu Narayen"
+ },
+ "US:ADI": {
+  "ceo": "Vincent Roche",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/6281/000000628126000010/adi-20260122.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/6281/000000628126000010/adi-20260122.htm"
+  },
+  "chairman": "Vincent Roche"
+ },
+ "US:ADP": {
+  "chairman": "Thomas J. Lynch",
+  "sources": {
+   "chairman": "https://www.sec.gov/Archives/edgar/data/8670/000130817926000409/adp015474-def14a.htm"
+  }
+ },
+ "US:ADTTF": {
+  "ceo": "Douglas Lefever",
+  "sources": {
+   "ceo": "https://www.advantest.com/en/about/management/",
+   "chairman": "https://www.advantest.com/en/about/management/"
+  },
+  "chairman": "Yoshiaki Yoshida"
+ },
+ "US:AEE": {
+  "website": "https://www.ameren.com",
+  "sources": {
+   "website": "https://www.ameren.com/"
+  }
+ },
+ "US:AEIS": {
+  "website": "https://www.advancedenergy.com",
+  "sources": {
+   "website": "https://www.advancedenergy.com/en-us/"
+  }
+ },
+ "US:AEM": {
+  "ceo": "Ammar Al-Joundi",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/2809/000110465926032153/aem-20251231xex99d1.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/2809/000110465926032153/aem-20251231xex99d1.htm",
+   "website": "https://en.wikipedia.org/wiki/Agnico_Eagle_Mines"
+  },
+  "chairman": "Sean Boyd",
+  "website": "https://www.agnicoeagle.com"
+ },
+ "US:AGNT": {
+  "website": "https://www.agnt.inc",
+  "sources": {
+   "website": "https://www.agnt.inc/"
+  }
+ },
+ "US:AIQUF": {
+  "chairman": "Benoît Potier",
+  "sources": {
+   "chairman": "https://www.airliquide.com/group/board-directors"
+  }
+ },
+ "US:ALGIF": {
+  "website": "https://allgeier.com",
+  "sources": {
+   "website": "https://allgeier.com/de/"
+  }
+ },
+ "US:ALIZF": {
+  "ceo": "Oliver Bäte",
+  "sources": {
+   "ceo": "https://www.allianz.com/en/about-us/corporate-management/board-of-management/members.html",
+   "chairman": "https://www.allianz.com/en/about-us/corporate-management/supervisory-board/members.html"
+  },
+  "chairman": "Jörg Schneider"
+ },
  "US:AMAT": {
   "headquarters": "Santa Clara, California, United States",
   "sources": {
@@ -6276,6 +7050,14 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/6951/000119312526027307/d71992ddef14a.htm"
   },
   "ceo": "Gary E. Dickerson"
+ },
+ "US:AMD": {
+  "ceo": "Lisa Su",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/2488/000119312526129057/d85856ddef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/2488/000119312526129057/d85856ddef14a.htm"
+  },
+  "chairman": "Lisa Su"
  },
  "US:AMGN": {
   "headquarters": "Thousand Oaks, California, United States",
@@ -6285,6 +7067,28 @@
   },
   "ceo": "Robert A. Bradway"
  },
+ "US:AMP": {
+  "website": "https://www.ameriprise.com",
+  "sources": {
+   "website": "https://www.ameriprise.com/"
+  }
+ },
+ "US:AMT": {
+  "ceo": "Steven O. Vondran",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000088/amt-20260406.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000088/amt-20260406.htm"
+  },
+  "chairman": "Pamela D. A. Reeve"
+ },
+ "US:AMZN": {
+  "ceo": "Andy Jassy",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926041026/tm261382-1_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926041026/tm261382-1_def14a.htm"
+  },
+  "chairman": "Jeff Bezos"
+ },
  "US:ANET": {
   "headquarters": "Santa Clara, California, United States",
   "sources": {
@@ -6293,6 +7097,32 @@
   },
   "ceo": "Jayshree Ullal"
  },
+ "US:ANGI": {
+  "website": "https://www.angi.com",
+  "sources": {
+   "website": "https://www.angi.com"
+  }
+ },
+ "US:ANZGF": {
+  "ceo": "Nuno Matos",
+  "sources": {
+   "ceo": "https://www.anz.com/shareholder/centre/about/board-of-directors/",
+   "chairman": "https://www.anz.com/shareholder/centre/about/board-of-directors/"
+  },
+  "chairman": "Paul O'Sullivan"
+ },
+ "US:AORT": {
+  "website": "https://artivion.com",
+  "sources": {
+   "website": "https://artivion.com/"
+  }
+ },
+ "US:APA": {
+  "website": "https://www.apacorp.com",
+  "sources": {
+   "website": "https://apacorp.com/"
+  }
+ },
  "US:APH": {
   "headquarters": "Wallingford, Connecticut, United States",
   "sources": {
@@ -6300,6 +7130,36 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/820313/000110465926040688/tm261344-1_def14a.htm"
   },
   "ceo": "R. Adam Norwitt"
+ },
+ "US:APP": {
+  "ceo": "Adam Foroughi",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000028/app-20260420.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000028/app-20260420.htm"
+  },
+  "chairman": "Craig Billings"
+ },
+ "US:ARM": {
+  "ceo": "Rene Haas",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000097/arm-20260331.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000097/arm-20260331.htm"
+  },
+  "chairman": "Masayoshi Son"
+ },
+ "US:ARZGF": {
+  "ceo": "Philippe Donnet",
+  "sources": {
+   "ceo": "https://www.generali.com/governance/board-of-directors",
+   "chairman": "https://www.generali.com/governance/board-of-directors"
+  },
+  "chairman": "Andrea Sironi"
+ },
+ "US:ASBRF": {
+  "website": "https://www.asahigroup-holdings.com",
+  "sources": {
+   "website": "https://www.asahigroup-holdings.com/"
+  }
  },
  "US:ASML": {
   "headquarters": "Veldhoven, North Brabant, Netherlands",
@@ -6310,6 +7170,106 @@
   },
   "ceo": "Christophe Fouquet",
   "chairman": "Nils Andersen"
+ },
+ "US:ASMLF": {
+  "ceo": "Christophe Fouquet",
+  "sources": {
+   "ceo": "https://www.asml.com/en/company/governance/board-of-management",
+   "chairman": "https://www.asml.com/en/company/governance/supervisory-board"
+  },
+  "chairman": "Nils Andersen"
+ },
+ "US:ASTL": {
+  "website": "https://www.algoma.com",
+  "sources": {
+   "website": "https://www.algoma.com/"
+  }
+ },
+ "US:ATLPF": {
+  "ceo": "Vagner Rego",
+  "sources": {
+   "ceo": "https://www.atlascopcogroup.com/en/investors/corporate-governance/board-of-directors",
+   "chairman": "https://www.atlascopcogroup.com/en/investors/corporate-governance/board-of-directors"
+  },
+  "chairman": "Hans Stråberg"
+ },
+ "US:AVGO": {
+  "ceo": "Hock Tan",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526085691/d49254ddef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526085691/d49254ddef14a.htm"
+  },
+  "chairman": "Henry Samueli"
+ },
+ "US:AWI": {
+  "website": "https://www.armstrong.com",
+  "sources": {
+   "website": "https://www.armstrong.com/"
+  }
+ },
+ "US:AX": {
+  "website": "https://www.axosfinancial.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Axos_Bank"
+  }
+ },
+ "US:AXAHF": {
+  "ceo": "Thomas Buberl",
+  "sources": {
+   "ceo": "https://www.axa.com/en/about-us/members-board-of-directors",
+   "chairman": "https://www.axa.com/en/about-us/members-board-of-directors"
+  },
+  "chairman": "Antoine Gosset-Grainville"
+ },
+ "US:AXP": {
+  "ceo": "Stephen J. Squeri",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/4962/000110465926034163/tm2519434-8_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/4962/000110465926034163/tm2519434-8_def14a.htm"
+  },
+  "chairman": "Stephen J. Squeri"
+ },
+ "US:AXTA": {
+  "website": "https://www.axalta.com",
+  "sources": {
+   "website": "https://www.axalta.com/corporate/en_US.html"
+  }
+ },
+ "US:AYI": {
+  "website": "https://www.acuityinc.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Acuity_Brands"
+  }
+ },
+ "US:AZN": {
+  "ceo": "Pascal Soriot",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/901832/000110465926025559/tm268365d1_6k.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/901832/000110465926025559/tm268365d1_6k.htm"
+  },
+  "chairman": "Michel Demaré"
+ },
+ "US:BA": {
+  "chairman": "Steven M. Mollenkopf",
+  "sources": {
+   "chairman": "https://www.sec.gov/Archives/edgar/data/12927/000119312526096787/d39411ddef14a.htm"
+  }
+ },
+ "US:BABAF": {
+  "ceo": "Eddie Wu",
+  "sources": {
+   "ceo": "https://www.alibabagroup.com/en/about/leadership",
+   "chairman": "https://www.alibabagroup.com/en/about/leadership"
+  },
+  "chairman": "Joe Tsai"
+ },
+ "US:BAC": {
+  "ceo": "Brian T. Moynihan",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/70858/000119312526118929/d43888ddef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/70858/000119312526118929/d43888ddef14a.htm"
+  },
+  "chairman": "Brian T. Moynihan"
  },
  "US:BACHF": {
   "headquarters": "Beijing, China",
@@ -6513,6 +7473,72 @@
   "chairman": "Brian Moynihan",
   "wikidata": "Q487907"
  },
+ "US:BAM": {
+  "ceo": "Connor Teskey",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1937926/000162828026013098/bam-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1937926/000162828026013098/bam-20251231.htm"
+  },
+  "chairman": "Bruce Flatt"
+ },
+ "US:BAMXF": {
+  "website": "https://www.bmwgroup.com",
+  "sources": {
+   "website": "https://www.bmwgroup.com/en.html"
+  }
+ },
+ "US:BBVXF": {
+  "website": "https://www.bbva.com",
+  "sources": {
+   "website": "https://www.bbva.com/en/",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/842180/000162828026010001/bbva-20251231.htm"
+  },
+  "ceo": "Onur Genç"
+ },
+ "US:BBW": {
+  "website": "https://www.buildabear.com",
+  "sources": {
+   "website": "https://www.buildabear.com/"
+  }
+ },
+ "US:BCDRF": {
+  "ceo": "Héctor Grisi",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/891478/000089147826000030/san-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/891478/000089147826000030/san-20251231.htm"
+  },
+  "chairman": "Ana Botín"
+ },
+ "US:BCLYF": {
+  "website": "https://home.barclays",
+  "sources": {
+   "website": "https://home.barclays/",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/312069/000165495426009079/a9532z.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/312069/000165495426006931/a0595o.htm"
+  },
+  "ceo": "C. S. Venkatakrishnan",
+  "chairman": "Nigel Higgins"
+ },
+ "US:BDX": {
+  "website": "https://www.bd.com",
+  "sources": {
+   "website": "https://www.bd.com/en-us"
+  }
+ },
+ "US:BE": {
+  "ceo": "K.R. Sridhar",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026024237/be-20260408.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026024237/be-20260408.htm"
+  },
+  "chairman": "K.R. Sridhar"
+ },
+ "US:BEN": {
+  "website": "https://www.franklintempleton.com",
+  "sources": {
+   "website": "https://www.franklintempleton.com/"
+  }
+ },
  "US:BHP": {
   "headquarters": "Melbourne, Victoria, Australia",
   "sources": {
@@ -6522,6 +7548,36 @@
   },
   "ceo": "Brandon Craig",
   "wikidata": "Q625713"
+ },
+ "US:BHPLF": {
+  "ceo": "Brandon Craig",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/811809/000119312526354647/bhp-20260630.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/811809/000119312526354647/bhp-20260630.htm"
+  },
+  "chairman": "Ross McEwan"
+ },
+ "US:BKFCF": {
+  "ceo": "Zhang Baojiang",
+  "sources": {
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0929/2026092900348.pdf",
+   "chairman": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1023/2026102300618.pdf"
+  },
+  "chairman": "Ren Deqi"
+ },
+ "US:BKNG": {
+  "ceo": "Glenn D. Fogel",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1075531/000130817926000310/bkng-20260420.htm"
+  }
+ },
+ "US:BLK": {
+  "ceo": "Laurence D. Fink",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/2012383/000130817926000262/ny-20260410.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/2012383/000130817926000262/ny-20260410.htm"
+  },
+  "chairman": "Laurence D. Fink"
  },
  "US:BMLPG": {
   "website": "https://www.bankofamerica.com",
@@ -6587,25 +7643,173 @@
   "chairman": "Brian Moynihan",
   "wikidata": "Q487907"
  },
+ "US:BMO": {
+  "ceo": "Darryl White",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/927971/000119312526102176/d63354dex991.htm"
+  }
+ },
+ "US:BMY": {
+  "ceo": "Christopher S. Boerner",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000006/bmy-20260325.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000006/bmy-20260325.htm"
+  },
+  "chairman": "Christopher S. Boerner"
+ },
+ "US:BN": {
+  "ceo": "Bruce Flatt",
+  "sources": {
+   "ceo": "https://www.brookfield.com/about-us/leadership",
+   "chairman": "https://bn.brookfield.com/governance/board-of-directors"
+  },
+  "chairman": "Frank J. McKenna"
+ },
+ "US:BNPQF": {
+  "chairman": "Jean Lemierre",
+  "sources": {
+   "chairman": "https://invest.bnpparibas/en/document/agm-2026-information-gender-balance-on-the-bod-post-agm-2026"
+  }
+ },
+ "US:BNS": {
+  "ceo": "L. Scott Thomson",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/9631/000119312526101156/d121533dex991.htm"
+  }
+ },
+ "US:BNY": {
+  "ceo": "Robin Vince",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1390777/000119312526092500/d52987ddef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1390777/000119312526092500/d52987ddef14a.htm"
+  },
+  "chairman": "Robin Vince"
+ },
+ "US:BPAQF": {
+  "chairman": "Albert Manifold",
+  "sources": {
+   "chairman": "https://www.sec.gov/Archives/edgar/data/313807/000031380726000006/bp-20251231.htm"
+  }
+ },
+ "US:BPOP": {
+  "website": "https://www.popular.com",
+  "sources": {
+   "website": "https://www.popular.com/"
+  }
+ },
  "US:BRK.A": {
   "chairman": "Warren Buffett",
   "sources": {
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526106253/d882687ddef14a.htm"
-  }
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526106253/d882687ddef14a.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526106253/d882687ddef14a.htm"
+  },
+  "ceo": "Greg Abel"
  },
  "US:BRK.B": {
   "chairman": "Warren Buffett",
   "sources": {
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526106253/d882687ddef14a.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526106253/d882687ddef14a.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526106253/d882687ddef14a.htm"
+  },
+  "ceo": "Greg Abel"
+ },
+ "US:BRSL": {
+  "website": "https://www.brightstarlottery.com",
+  "sources": {
+   "website": "https://www.brightstarlottery.com/"
   }
+ },
+ "US:BTAFF": {
+  "ceo": "Tadeu Marroco",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1303523/000130352326000017/bti-20251231.htm"
+  }
+ },
+ "US:BTDPF": {
+  "website": "https://www.barrattredrow.co.uk",
+  "sources": {
+   "website": "https://www.barrattredrow.co.uk/"
+  }
+ },
+ "US:BTE": {
+  "website": "https://www.baytexenergy.com",
+  "sources": {
+   "website": "https://www.baytexenergy.com/"
+  }
+ },
+ "US:BVHMF": {
+  "website": "https://www.vistry.co.uk",
+  "sources": {
+   "website": "https://www.vistry.co.uk/"
+  }
+ },
+ "US:BWAGF": {
+  "website": "https://www.bawaggroup.com",
+  "sources": {
+   "website": "https://www.bawaggroup.com/en"
+  }
+ },
+ "US:BYDDF": {
+  "ceo": "Wang Chuan-fu",
+  "sources": {
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0929/2026092901611.pdf",
+   "chairman": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0929/2026092901611.pdf"
+  },
+  "chairman": "Wang Chuan-fu"
  },
  "US:C": {
   "website": "https://www.citigroup.com",
   "sources": {
    "website": "https://www.citigroup.com/global",
-   "headquarters": "https://data.sec.gov/submissions/CIK0000831001.json"
+   "headquarters": "https://data.sec.gov/submissions/CIK0000831001.json",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/831001/000120677426000185/citi4583461-def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/831001/000120677426000185/citi4583461-def14a.htm"
   },
-  "headquarters": "New York, New York, United States"
+  "headquarters": "New York, New York, United States",
+  "ceo": "Jane Fraser",
+  "chairman": "Jane Fraser"
+ },
+ "US:CAIXY": {
+  "ceo": "Gonzalo Gortázar",
+  "sources": {
+   "ceo": "https://www.caixabank.com/en/shareholders-investors/corporate-governance.html",
+   "chairman": "https://www.caixabank.com/en/shareholders-investors/corporate-governance.html"
+  },
+  "chairman": "Tomás Muniesa"
+ },
+ "US:CAL": {
+  "website": "https://www.caleres.com",
+  "sources": {
+   "website": "https://www.caleres.com/"
+  }
+ },
+ "US:CALY": {
+  "website": "https://www.callawaygolf.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Callaway_Golf_Company"
+  }
+ },
+ "US:CAT": {
+  "ceo": "Joseph E. Creed",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/18230/000130817926000358/cat014496-def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/18230/000130817926000358/cat014496-def14a.htm"
+  },
+  "chairman": "Joseph E. Creed"
+ },
+ "US:CB": {
+  "ceo": "Evan G. Greenberg",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/896159/000110465926039513/tm2527783-7_def14a.htm"
+  }
+ },
+ "US:CBAUF": {
+  "ceo": "Matt Comyn",
+  "sources": {
+   "ceo": "https://www.commbank.com.au/content/dam/commbank-assets/investors/2026-10/CBA-2026-Annual-General-Meeting-Chair's-Address.pdf",
+   "chairman": "https://www.commbank.com.au/content/dam/commbank-assets/investors/2026-10/CBA-2026-Annual-General-Meeting-Chair's-Address.pdf"
+  },
+  "chairman": "Paul O'Malley"
  },
  "US:CBOE": {
   "ceo": "Craig Donohue",
@@ -6614,6 +7818,66 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1374310/000162828026022939/cboe-20260401.htm"
   },
   "chairman": "William M. Farrow III"
+ },
+ "US:CBT": {
+  "website": "https://www.cabotcorp.com",
+  "sources": {
+   "website": "https://www.cabotcorp.com/"
+  }
+ },
+ "US:CCPPF": {
+  "website": "https://www.shaftesburycapital.com",
+  "sources": {
+   "website": "https://www.shaftesburycapital.com/"
+  }
+ },
+ "US:CDNS": {
+  "ceo": "Anirudh Devgan",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/813672/000119312526124264/d932644ddef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/813672/000119312526124264/d932644ddef14a.htm"
+  },
+  "chairman": "ML Krakauer"
+ },
+ "US:CEG": {
+  "ceo": "Joseph Dominguez",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000089/ceg-20260804.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000089/ceg-20260804.htm",
+   "website": "https://www.constellationenergy.com/"
+  },
+  "chairman": "Joseph Dominguez",
+  "website": "https://www.constellationenergy.com"
+ },
+ "US:CFRHF": {
+  "ceo": "Nicolas Bos",
+  "sources": {
+   "ceo": "https://www.richemont.com/about-us/corporate-governance/",
+   "chairman": "https://www.richemont.com/about-us/corporate-governance/"
+  },
+  "chairman": "Johann Rupert"
+ },
+ "US:CHDRF": {
+  "ceo": "Antoine Arnault",
+  "sources": {
+   "ceo": "https://www.dior-finance.com/fr/1374-gouvernance.html",
+   "chairman": "https://www.dior-finance.com/fr/1374-gouvernance.html"
+  },
+  "chairman": "Bernard Arnault"
+ },
+ "US:CHRD": {
+  "website": "https://www.chordenergy.com",
+  "sources": {
+   "website": "https://www.chordenergy.com/"
+  }
+ },
+ "US:CI": {
+  "ceo": "Brian C. Evanko",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1739940/000173994026000023/ci-20260312.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1739940/000173994026000023/ci-20260312.htm"
+  },
+  "chairman": "David M. Cordani"
  },
  "US:CICHF": {
   "headquarters": "Beijing, China",
@@ -6641,6 +7905,44 @@
   "chairman": "Zhang Jinliang",
   "wikidata": "Q26299"
  },
+ "US:CIHHF": {
+  "website": "https://www.cmbchina.com",
+  "sources": {
+   "website": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082801289.pdf",
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082801289.pdf",
+   "chairman": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082801289.pdf"
+  },
+  "ceo": "Wang Xiaoqing",
+  "chairman": "Miao Jianmin"
+ },
+ "US:CILJF": {
+  "ceo": "Li Mingguang",
+  "sources": {
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0907/2026090700288.pdf",
+   "chairman": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0907/2026090700288.pdf"
+  },
+  "chairman": "Cai Xiliang"
+ },
+ "US:CLFD": {
+  "website": "https://www.seeclearfield.com",
+  "sources": {
+   "website": "https://www.seeclearfield.com/"
+  }
+ },
+ "US:CM": {
+  "ceo": "Harry Culham",
+  "sources": {
+   "ceo": "https://www.cibc.com/en/about-cibc/corporate-profile/executive-team.html"
+  }
+ },
+ "US:CMCSA": {
+  "ceo": "Brian L. Roberts and Michael J. Cavanagh",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1166691/000119312526177138/cmcsa-20260424.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1166691/000119312526177138/cmcsa-20260424.htm"
+  },
+  "chairman": "Brian L. Roberts"
+ },
  "US:CME": {
   "headquarters": "Chicago, Illinois, United States",
   "sources": {
@@ -6648,6 +7950,62 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/1156375/000162828026020500/cme-20260323.htm"
   },
   "ceo": "Terrence Duffy"
+ },
+ "US:CMHHF": {
+  "website": "https://www.cmport.com.hk",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/China_Merchants_Port"
+  }
+ },
+ "US:CMI": {
+  "ceo": "Jennifer Rumsey",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/26172/000110465926039158/tm261336-2_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/26172/000110465926039158/tm261336-2_def14a.htm"
+  },
+  "chairman": "Jennifer Rumsey"
+ },
+ "US:CNCK": {
+  "website": "https://www.coincheckgroup.com",
+  "sources": {
+   "website": "https://www.coincheckgroup.com/"
+  }
+ },
+ "US:CNI": {
+  "ceo": "Tracy Robinson",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/16868/000110465926010352/tm261145d1_40f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/16868/000110465926010352/tm261145d1_40f.htm"
+  },
+  "chairman": "Shauneen Bruder"
+ },
+ "US:COP": {
+  "ceo": "Andrew M. O'Brien",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1163165/000110465926094062/tm2622739d1_8k.htm"
+  }
+ },
+ "US:COST": {
+  "ceo": "Ron Vachris",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000159/cost-20251204.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000159/cost-20251204.htm"
+  },
+  "chairman": "Hamilton E. James"
+ },
+ "US:CP": {
+  "ceo": "Keith Creel",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/16875/000001687526000008/cp-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/16875/000119312526324144/d112154dex991.htm"
+  },
+  "chairman": "Gordon T. Trafton II"
+ },
+ "US:CPAY": {
+  "website": "https://www.corpay.com",
+  "sources": {
+   "website": "https://www.corpay.com/"
+  }
  },
  "US:CPR": {
   "website": "https://www.citigroup.com",
@@ -6665,6 +8023,20 @@
   "chairman": "Jane Fraser",
   "wikidata": "Q219508"
  },
+ "US:CRM": {
+  "ceo": "Marc Benioff",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000085/crm-20260416.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000085/crm-20260416.htm"
+  },
+  "chairman": "Marc Benioff"
+ },
+ "US:CRS": {
+  "website": "https://www.carpentertechnology.com",
+  "sources": {
+   "website": "https://www.carpentertechnology.com/"
+  }
+ },
  "US:CRWD": {
   "headquarters": "Austin, Texas, United States",
   "sources": {
@@ -6672,6 +8044,356 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/1535527/000110465926055599/tm2532333-4_def14a.htm"
   },
   "ceo": "George Kurtz"
+ },
+ "US:CSCO": {
+  "ceo": "Chuck Robbins",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/858877/000085887725000150/csco-20251027.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/858877/000085887725000150/csco-20251027.htm"
+  },
+  "chairman": "Chuck Robbins"
+ },
+ "US:CSIQ": {
+  "website": "https://www.canadiansolar.com",
+  "sources": {
+   "website": "https://www.canadiansolar.com/"
+  }
+ },
+ "US:CSNVF": {
+  "website": "https://www.corbion.com",
+  "sources": {
+   "website": "https://www.corbion.com/"
+  }
+ },
+ "US:CSX": {
+  "ceo": "Stephen F. Angel",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/277948/000162828026021944/csx-20260326.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/277948/000162828026021944/csx-20260326.htm"
+  },
+  "chairman": "John J. Zillmer"
+ },
+ "US:CTAS": {
+  "ceo": "Todd M. Schneider",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000040/ctas-20260915.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000040/ctas-20260915.htm"
+  },
+  "chairman": "Scott D. Farmer"
+ },
+ "US:CTATF": {
+  "website": "https://www.catl.com",
+  "sources": {
+   "website": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0310/2026031000039.pdf",
+   "ceo": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0310/2026031000039.pdf",
+   "chairman": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0310/2026031000039.pdf"
+  },
+  "ceo": "Zeng Yuqun",
+  "chairman": "Zeng Yuqun"
+ },
+ "US:CUAEF": {
+  "ceo": "Zhang Changyan",
+  "sources": {
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082802662.pdf"
+  }
+ },
+ "US:CUZ": {
+  "website": "https://cousins.com",
+  "sources": {
+   "website": "https://cousins.com/"
+  }
+ },
+ "US:CVS": {
+  "ceo": "J. David Joyner",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/64803/000130817926000201/cvs014969-def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/64803/000130817926000201/cvs014969-def14a.htm"
+  },
+  "chairman": "J. David Joyner"
+ },
+ "US:CVX": {
+  "ceo": "Michael K. Wirth",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/93410/000119312526145617/d77994ddef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/93410/000119312526145617/d77994ddef14a.htm"
+  },
+  "chairman": "Michael K. Wirth"
+ },
+ "US:DAIUF": {
+  "website": "https://www.daifuku.com",
+  "sources": {
+   "website": "https://www.daifuku.com/"
+  }
+ },
+ "US:DASH": {
+  "ceo": "Tony Xu",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1792789/000179278926000018/dash-20260420.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1792789/000179278926000018/dash-20260420.htm"
+  },
+  "chairman": "Tony Xu"
+ },
+ "US:DBSDF": {
+  "ceo": "Tan Su Shan",
+  "sources": {
+   "ceo": "https://www.dbs.com/iwov-resources/images/investors/other-materials/2026/DBSH%20Minutes%20of%202026%20AGM.pdf",
+   "chairman": "https://www.dbs.com/iwov-resources/images/investors/other-materials/2026/DBSH%20Minutes%20of%202026%20AGM.pdf",
+   "website": "https://www.dbs.com/default.page"
+  },
+  "chairman": "Peter Seah",
+  "website": "https://www.dbs.com"
+ },
+ "US:DCH": {
+  "website": "https://www.dauch.com",
+  "sources": {
+   "website": "https://www.dauch.com/"
+  }
+ },
+ "US:DCNSF": {
+  "website": "https://www.daiichilife-group.com",
+  "sources": {
+   "website": "https://www.daiichilife-group.com/"
+  }
+ },
+ "US:DDCCF": {
+  "website": "https://branicks.com",
+  "sources": {
+   "website": "https://branicks.com/"
+  }
+ },
+ "US:DDOG": {
+  "ceo": "Olivier Pomel",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026028118/ddog-20260429.htm"
+  }
+ },
+ "US:DE": {
+  "ceo": "John C. May",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/315189/000110465926003618/de-20260225xdef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/315189/000110465926003618/de-20260225xdef14a.htm"
+  },
+  "chairman": "John C. May"
+ },
+ "US:DELL": {
+  "ceo": "Michael Dell",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1571996/000119312526226734/d132444ddef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1571996/000119312526226734/d132444ddef14a.htm"
+  },
+  "chairman": "Michael Dell"
+ },
+ "US:DFRYF": {
+  "website": "https://www.avoltaworld.com",
+  "sources": {
+   "website": "https://www.avoltaworld.com/en"
+  }
+ },
+ "US:DHR": {
+  "ceo": "Julie Sawyer Montgomery",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/313616/000119312526330652/d161342d8k.htm"
+  }
+ },
+ "US:DIS": {
+  "ceo": "Josh D'Amaro",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000022/dis-20260202.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000013/dis-20260122.htm"
+  },
+  "chairman": "James P. Gorman"
+ },
+ "US:DKILF": {
+  "website": "https://www.daikin.com",
+  "sources": {
+   "website": "https://www.daikin.com/"
+  }
+ },
+ "US:DNOPF": {
+  "website": "https://grupadino.pl",
+  "sources": {
+   "website": "https://grupadino.pl/"
+  }
+ },
+ "US:DOC": {
+  "website": "https://healthpeak.com",
+  "sources": {
+   "website": "https://healthpeak.com/"
+  }
+ },
+ "US:DPSTF": {
+  "website": "https://group.dhl.com",
+  "sources": {
+   "website": "https://group.dhl.com/en.html"
+  }
+ },
+ "US:DTEGF": {
+  "chairman": "Frank Appel",
+  "sources": {
+   "chairman": "https://www.telekom.com/en/sites/dtag-mandatory-disclosures"
+  }
+ },
+ "US:DUK": {
+  "ceo": "Harry K. Sideris",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1326160/000110465926032443/tm261356-4_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1326160/000110465926032443/tm261356-4_def14a.htm"
+  },
+  "chairman": "Theodore F. Craver, Jr."
+ },
+ "US:DXLG": {
+  "website": "https://www.dxl.com",
+  "sources": {
+   "website": "https://www.dxl.com/"
+  }
+ },
+ "US:EA": {
+  "status": "delisted",
+  "delistedAt": "2026-08-04",
+  "successor": null,
+  "sources": {
+   "status": "https://www.ea.com/news/ea-announces-completion-of-acquisition"
+  }
+ },
+ "US:EADSF": {
+  "ceo": "Guillaume Faury",
+  "sources": {
+   "ceo": "https://www.airbus.com/en/about-us/our-governance/guillaume-faury",
+   "chairman": "https://www.airbus.com/en/about-us/our-governance/rene-obermann"
+  },
+  "chairman": "René Obermann"
+ },
+ "US:ECL": {
+  "ceo": "Christophe Beck",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/31462/000110465926032777/tm2530816-3_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/31462/000110465926032777/tm2530816-3_def14a.htm"
+  },
+  "chairman": "Christophe Beck"
+ },
+ "US:ECRAF": {
+  "website": "https://www.ecoraroyalties.com",
+  "sources": {
+   "website": "https://www.ecoraroyalties.com/"
+  }
+ },
+ "US:ED": {
+  "website": "https://www.conedison.com",
+  "sources": {
+   "website": "https://www.conedison.com/en/"
+  }
+ },
+ "US:EIPAF": {
+  "ceo": "Claudio Descalzi",
+  "sources": {
+   "ceo": "https://www.eni.com/en-IT/governance/corporate-bodies/board-directors.html",
+   "chairman": "https://www.eni.com/en-IT/governance/corporate-bodies/board-directors.html"
+  },
+  "chairman": "Giuseppina Di Foggia"
+ },
+ "US:ELV": {
+  "ceo": "Gail Boudreaux",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1156039/000115603926000031/elv-20260326.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1156039/000115603926000031/elv-20260326.htm"
+  },
+  "chairman": "Ramiro G. Peru"
+ },
+ "US:EMR": {
+  "ceo": "Lal Karsanbhai",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/32604/000003260425000103/emr-20251212.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/32604/000003260425000103/emr-20251212.htm"
+  },
+  "chairman": "James S. Turley"
+ },
+ "US:ENAKF": {
+  "website": "https://www.eon.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/E.ON"
+  }
+ },
+ "US:ENB": {
+  "ceo": "Gregory L. Ebel",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/895728/000110465926105899/tm2624881d2_8k.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/895728/000119312526049810/enb-20251231.htm"
+  },
+  "chairman": "Steven W. Williams"
+ },
+ "US:EOG": {
+  "ceo": "Ezra Y. Yacob",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/821189/000110465926036125/eog-20260520xdef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/821189/000110465926036125/eog-20260520xdef14a.htm"
+  },
+  "chairman": "Ezra Y. Yacob"
+ },
+ "US:EPD": {
+  "ceo": "A. James Teague and W. Randall Fowler",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1061219/000119312526291582/d67955d8k.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1061219/000106121926000006/epd-20251231.htm"
+  },
+  "chairman": "Randa Duncan Williams"
+ },
+ "US:EQIX": {
+  "ceo": "Adaire Fox-Martin",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000073/eqix-20260401.htm"
+  }
+ },
+ "US:ESI": {
+  "website": "https://www.elementsolutionsinc.com",
+  "sources": {
+   "website": "https://www.elementsolutionsinc.com"
+  }
+ },
+ "US:ESOCF": {
+  "ceo": "Flavio Cattaneo",
+  "sources": {
+   "ceo": "https://www.enel.com/investors/governance/board-of-directors",
+   "chairman": "https://www.enel.com/investors/governance/board-of-directors"
+  },
+  "chairman": "Paolo Scaroni"
+ },
+ "US:ETN": {
+  "ceo": "Paulo Ruiz",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1551182/000119312526105117/etn-20260312.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1551182/000119312526105117/etn-20260312.htm"
+  },
+  "chairman": "Gregory R. Page"
+ },
+ "US:EW": {
+  "website": "https://www.edwards.com",
+  "sources": {
+   "website": "https://www.edwards.com/"
+  }
+ },
+ "US:EXPGF": {
+  "website": "https://www.experianplc.com",
+  "sources": {
+   "website": "https://www.experianplc.com/"
+  }
+ },
+ "US:EYPT": {
+  "website": "https://eyepoint.bio",
+  "sources": {
+   "website": "https://eyepoint.bio/"
+  }
+ },
+ "US:FANUF": {
+  "website": "https://www.fanuc.co.jp",
+  "sources": {
+   "website": "https://www.fanuc.co.jp/"
+  }
+ },
+ "US:FCX": {
+  "ceo": "Kathleen L. Quirk",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/831259/000119312526173666/d30227ddef14a.htm"
+  }
  },
  "US:FDS": {
   "website": "https://www.factset.com",
@@ -6683,6 +8405,12 @@
   "ceo": "Sanoke Viswanathan",
   "chairman": "Malcolm Frank"
  },
+ "US:FHN": {
+  "website": "https://www.firsthorizon.com",
+  "sources": {
+   "website": "https://www.firsthorizon.com/"
+  }
+ },
  "US:FISV": {
   "headquarters": "Milwaukee, Wisconsin, United States",
   "sources": {
@@ -6693,6 +8421,96 @@
   "ceo": "Takis Georgakopoulos",
   "chairman": "Gordon Nixon"
  },
+ "US:FIZZ": {
+  "website": "https://www.nationalbeverage.com",
+  "sources": {
+   "website": "https://www.nationalbeverage.com/"
+  }
+ },
+ "US:FLMNF": {
+  "website": "https://www.fielmann-group.com",
+  "sources": {
+   "website": "https://www.fielmann-group.com/"
+  }
+ },
+ "US:FLNA": {
+  "website": "https://www.filanatx.com",
+  "sources": {
+   "website": "https://www.filanatx.com/"
+  }
+ },
+ "US:FMCQF": {
+  "website": "https://www.freseniusmedicalcare.com",
+  "sources": {
+   "website": "https://freseniusmedicalcare.com/en/"
+  }
+ },
+ "US:FMS": {
+  "website": "https://www.freseniusmedicalcare.com",
+  "sources": {
+   "website": "https://freseniusmedicalcare.com/en/"
+  }
+ },
+ "US:FRCOF": {
+  "ceo": "Tadashi Yanai",
+  "sources": {
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0409/2026040900429.pdf",
+   "chairman": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0409/2026040900429.pdf"
+  },
+  "chairman": "Tadashi Yanai"
+ },
+ "US:FSM": {
+  "website": "https://fortunamining.com",
+  "sources": {
+   "website": "https://fortunamining.com"
+  }
+ },
+ "US:FTNT": {
+  "ceo": "Ken Xie",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1262039/000207709626000106/ea0287420-01.htm"
+  }
+ },
+ "US:FULT": {
+  "website": "https://www.fultonbank.com",
+  "sources": {
+   "website": "https://www.fultonbank.com/"
+  }
+ },
+ "US:FURCF": {
+  "website": "https://www.forvia.com",
+  "sources": {
+   "website": "https://www.forvia.com/en"
+  }
+ },
+ "US:GCPEF": {
+  "website": "https://www.gcltech.com",
+  "sources": {
+   "website": "https://www.gcltech.com/"
+  }
+ },
+ "US:GD": {
+  "ceo": "Phebe Novakovic",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/40533/000119312526417188/d122892d8k.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/40533/000119312526417188/d122892d8k.htm"
+  },
+  "chairman": "Phebe N. Novakovic"
+ },
+ "US:GE": {
+  "ceo": "H. Lawrence Culp Jr.",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000018/ge-20260312.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000018/ge-20260312.htm"
+  },
+  "chairman": "H. Lawrence Culp Jr."
+ },
+ "US:GELYF": {
+  "website": "https://www.geelyauto.com.hk",
+  "sources": {
+   "website": "https://www.geelyauto.com.hk/"
+  }
+ },
  "US:GEV": {
   "headquarters": "Cambridge, Massachusetts, United States",
   "sources": {
@@ -6702,6 +8520,94 @@
   },
   "ceo": "Scott Strazik",
   "chairman": "Stephen Angel"
+ },
+ "US:GFIOF": {
+  "website": "https://www.goldfields.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Gold_Fields"
+  }
+ },
+ "US:GIGM": {
+  "website": "https://www.gigamedia.com",
+  "sources": {
+   "website": "https://www.gigamedia.com/EN/home/Default.asp"
+  }
+ },
+ "US:GILD": {
+  "ceo": "Daniel O'Day",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/882095/000130817926000106/gild014721-def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/882095/000130817926000106/gild014721-def14a.htm"
+  },
+  "chairman": "Daniel O'Day"
+ },
+ "US:GL": {
+  "website": "https://home.globelifeinsurance.com",
+  "sources": {
+   "website": "https://home.globelifeinsurance.com/"
+  }
+ },
+ "US:GLAXF": {
+  "ceo": "Luke Miels",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1131399/000113139926000004/gsk-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1131399/000113139926000004/gsk-20251231.htm"
+  },
+  "chairman": "Jonathan Symonds"
+ },
+ "US:GLCNF": {
+  "ceo": "Gary Nagle",
+  "sources": {
+   "ceo": "https://www.glencore.com/who-we-are/our-leadership",
+   "chairman": "https://www.glencore.com/.rest/api/v1/documents/static/436918bf-6238-444d-8879-2b171565d6fa/Corporate-Governance-and-Board-Committees-reports-2025.pdf"
+  },
+  "chairman": "Kalidas Madhavpeddi"
+ },
+ "US:GLPGF": {
+  "website": "https://lakefrontbio.com",
+  "sources": {
+   "website": "https://lakefrontbio.com/"
+  }
+ },
+ "US:GLW": {
+  "ceo": "Wendell P. Weeks",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/24741/000120677426000148/glw4500541-def14a.htm"
+  }
+ },
+ "US:GMBXF": {
+  "chairman": "Germán Larrea Mota-Velasco",
+  "sources": {
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1001838/000110465926021492/scco-20251231x10k.htm"
+  }
+ },
+ "US:GOLD": {
+  "website": "https://www.gold.com",
+  "sources": {
+   "website": "https://www.gold.com/"
+  }
+ },
+ "US:GOLF": {
+  "website": "https://www.acushnetholdingscorp.com",
+  "sources": {
+   "website": "https://www.acushnetholdingscorp.com"
+  }
+ },
+ "US:GOOG": {
+  "ceo": "Sundar Pichai",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm"
+  },
+  "chairman": "John L. Hennessy"
+ },
+ "US:GOOGL": {
+  "ceo": "Sundar Pichai",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm"
+  },
+  "chairman": "John L. Hennessy"
  },
  "US:GOOGM": {
   "website": "https://abc.xyz",
@@ -6734,6 +8640,32 @@
   "ceo": "Sundar Pichai",
   "chairman": "John L. Hennessy",
   "wikidata": "Q20800404"
+ },
+ "US:GPI": {
+  "website": "https://www.group1auto.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Group_1_Automotive"
+  }
+ },
+ "US:GRRMF": {
+  "website": "https://www.gerresheimer.com",
+  "sources": {
+   "website": "https://www.gerresheimer.com/en"
+  }
+ },
+ "US:GRSD": {
+  "website": "https://grandstand.com",
+  "sources": {
+   "website": "https://grandstand.com/"
+  }
+ },
+ "US:GS": {
+  "ceo": "David M. Solomon",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/886982/000119312526117433/gs-20260319.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/886982/000119312526117433/gs-20260319.htm"
+  },
+  "chairman": "David M. Solomon"
  },
  "US:GSPA": {
   "website": "https://www.goldmansachs.com",
@@ -6783,6 +8715,104 @@
   "chairman": "David Solomon",
   "wikidata": "Q193326"
  },
+ "US:GTN": {
+  "website": "https://graymedia.com",
+  "sources": {
+   "website": "https://graymedia.com/"
+  }
+ },
+ "US:GZTGF": {
+  "website": "https://g-city.com",
+  "sources": {
+   "website": "https://g-city.com/"
+  }
+ },
+ "US:HAIN": {
+  "website": "https://www.hain.com",
+  "sources": {
+   "website": "https://www.hain.com/"
+  }
+ },
+ "US:HBCYF": {
+  "ceo": "Georges Elhedery",
+  "sources": {
+   "ceo": "https://www.hsbc.com/who-we-are/leadership-and-governance/board-of-directors",
+   "chairman": "https://www.hsbc.com/who-we-are/leadership-and-governance/board-of-directors"
+  },
+  "chairman": "Brendan Nelson"
+ },
+ "US:HCA": {
+  "website": "https://www.hcahealthcare.com",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/860730/000119312526106142/d939252ddef14a.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/860730/000119312526106142/d939252ddef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/860730/000119312526106142/d939252ddef14a.htm"
+  },
+  "ceo": "Samuel N. Hazen",
+  "chairman": "Thomas F. Frist III"
+ },
+ "US:HD": {
+  "ceo": "Edward P. Decker",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000090/hd-20260406.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000090/hd-20260406.htm"
+  },
+  "chairman": "Edward P. Decker"
+ },
+ "US:HDALF": {
+  "website": "https://www.haidilao.com",
+  "sources": {
+   "website": "https://www.haidilao.com/"
+  }
+ },
+ "US:HDB": {
+  "ceo": "Sashidhar Jagdishan",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1144967/000119312526322004/d88195d20f.htm"
+  }
+ },
+ "US:HE": {
+  "website": "https://www.hei.com",
+  "sources": {
+   "website": "https://www.hei.com/home/default.aspx"
+  }
+ },
+ "US:HELKF": {
+  "website": "https://www.henkel.com",
+  "sources": {
+   "website": "https://www.henkel.com/"
+  }
+ },
+ "US:HESAF": {
+  "ceo": "Axel Dumas",
+  "sources": {
+   "ceo": "https://finance.hermes.com/en/group-management/",
+   "chairman": "https://finance.hermes.com/en/ambitious-and-balanced-governance/"
+  },
+  "chairman": "Eric de Seynes"
+ },
+ "US:HHUSF": {
+  "website": "https://www.huahonggrace.com",
+  "sources": {
+   "website": "https://www.huahonggrace.com/s/index.php"
+  }
+ },
+ "US:HLT": {
+  "ceo": "Christopher J. Nassetta",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1585689/000158568926000023/hlt-20260401.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1585689/000158568926000023/hlt-20260401.htm"
+  },
+  "chairman": "Jonathan D. Gray"
+ },
+ "US:HNHPF": {
+  "ceo": "Young Liu",
+  "sources": {
+   "ceo": "https://image.honhai.com/upload/202605/financy_by_year/Two-_Corporate_Governance_Report_20260523_7530.pdf",
+   "chairman": "https://www.honhai.com/s3/upload/202606/global/%E9%B4%BB%E6%B5%B7%E8%82%A1%E6%9D%B1%E5%B8%B8%E6%9C%83%E8%AD%B0%E4%BA%8B%E9%8C%84_E-115%E5%B9%B4_20260623_5534.pdf"
+  },
+  "chairman": "Young Liu"
+ },
  "US:HOOD": {
   "headquarters": "Menlo Park, California, United States",
   "sources": {
@@ -6790,6 +8820,32 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000053/hood-20260422.htm"
   },
   "ceo": "Vladimir Tenev"
+ },
+ "US:HOPE": {
+  "website": "https://www.bankofhope.com",
+  "sources": {
+   "website": "https://www.bankofhope.com/"
+  }
+ },
+ "US:HOS": {
+  "website": "https://www.hornbeckoffshore.com",
+  "sources": {
+   "website": "https://hornbeckoffshore.com/"
+  }
+ },
+ "US:HPE": {
+  "ceo": "Antonio Neri",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000019/hpe-20260210.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000019/hpe-20260210.htm"
+  },
+  "chairman": "Patricia F. Russo"
+ },
+ "US:HRL": {
+  "website": "https://www.hormelfoods.com",
+  "sources": {
+   "website": "https://www.hormelfoods.com/"
+  }
  },
  "US:HSBC": {
   "website": "https://www.hsbc.com",
@@ -6805,17 +8861,57 @@
   "ceo": "Georges Elhedery",
   "wikidata": "Q190464"
  },
+ "US:HTHIF": {
+  "ceo": "Toshiaki Tokunaga",
+  "sources": {
+   "ceo": "https://www.hitachi.com/content/dam/hitachi/global/en/ir/media/corporate/governance/governance.pdf"
+  }
+ },
+ "US:HTHT": {
+  "website": "https://www.hworld.com",
+  "sources": {
+   "website": "https://www.hworld.com/"
+  }
+ },
+ "US:HWM": {
+  "ceo": "John C. Plant",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/4281/000110465926039940/tm261330-1_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/4281/000110465926039940/tm261330-1_def14a.htm"
+  },
+  "chairman": "John C. Plant"
+ },
  "US:IBKR": {
   "ceo": "Milan Galik",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1381197/000138119726000066/ibkr-20260311.htm"
   }
  },
+ "US:IBM": {
+  "ceo": "Arvind Krishna",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000025/ibm-20260306.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000025/ibm-20260306.htm"
+  },
+  "chairman": "Arvind Krishna"
+ },
+ "US:IBN": {
+  "ceo": "Sandeep Bakhshi",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1103838/000095010326010820/dp249803_20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1103838/000095010326010820/dp249803_20f.htm"
+  },
+  "chairman": "Pradeep Kumar Sinha"
+ },
  "US:ICE": {
   "website": "https://www.ice.com",
   "sources": {
-   "website": "https://www.ice.com"
-  }
+   "website": "https://www.ice.com",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1571949/000119312526134700/ice-20260330.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1571949/000119312526134700/ice-20260330.htm"
+  },
+  "ceo": "Jeffrey Sprecher",
+  "chairman": "Jeffrey C. Sprecher"
  },
  "US:IDCBF": {
   "headquarters": "Beijing, China",
@@ -6842,6 +8938,152 @@
   "ceo": "Liu Jun",
   "chairman": "Liao Lin",
   "wikidata": "Q26463"
+ },
+ "US:IDEXF": {
+  "ceo": "Óscar García Maceiras",
+  "sources": {
+   "ceo": "https://www.inditex.com/itxcomweb/us/en/investors/corporate-governance/board-of-directors",
+   "chairman": "https://www.inditex.com/itxcomweb/us/en/investors/corporate-governance/board-of-directors"
+  },
+  "chairman": "Marta Ortega"
+ },
+ "US:IFNNF": {
+  "ceo": "Jochen Hanebeck",
+  "sources": {
+   "ceo": "https://www.infineon.com/about/company/leadership-team",
+   "chairman": "https://www.infineon.com/about/company/leadership-team"
+  },
+  "chairman": "Herbert Diess"
+ },
+ "US:IITSF": {
+  "ceo": "Carlo Messina",
+  "sources": {
+   "ceo": "https://group.intesasanpaolo.com/en/governance/bod",
+   "chairman": "https://group.intesasanpaolo.com/en/governance/bod"
+  },
+  "chairman": "Gian Maria Gros-Pietro"
+ },
+ "US:INGVF": {
+  "ceo": "Steven van Rijswijk",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1039765/000162828026011979/ing-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1039765/000162828026011979/ing-20251231.htm"
+  },
+  "chairman": "Karl Guha"
+ },
+ "US:INTC": {
+  "ceo": "Lip-Bu Tan",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000061/proxy2026.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000061/proxy2026.htm"
+  },
+  "chairman": "Frank D. Yeary"
+ },
+ "US:INTU": {
+  "ceo": "Sasan K. Goodarzi",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/896878/000089687825000057/intu-20251126.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/896878/000089687825000057/intu-20251126.htm"
+  },
+  "chairman": "Sasan K. Goodarzi"
+ },
+ "US:IONQ": {
+  "website": "https://ionq.com",
+  "sources": {
+   "website": "https://ionq.com/"
+  }
+ },
+ "US:IPAR": {
+  "website": "https://www.interparfumsinc.com",
+  "sources": {
+   "website": "https://www.interparfumsinc.com/"
+  }
+ },
+ "US:IPGP": {
+  "website": "https://www.ipgphotonics.com",
+  "sources": {
+   "website": "https://www.ipgphotonics.com/"
+  }
+ },
+ "US:ISRG": {
+  "ceo": "David J. Rosa",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000023/isrg-20260313.htm"
+  }
+ },
+ "US:ITOCF": {
+  "chairman": "Masahiro Okafuji",
+  "sources": {
+   "chairman": "https://www.itochu.co.jp/en/about/officer/index.html"
+  }
+ },
+ "US:ITUB": {
+  "ceo": "Milton Maluhy Filho",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1132597/000113259726000132/itub-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1132597/000113259726000132/itub-20251231.htm"
+  },
+  "chairman": "Pedro Moreira Salles and Roberto Egydio Setubal"
+ },
+ "US:ITW": {
+  "ceo": "Christopher A. O'Herlihy",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/49826/000119312526127599/itw-20260325.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/49826/000119312526127599/itw-20260325.htm"
+  },
+  "chairman": "E. Scott Santi"
+ },
+ "US:IVSBF": {
+  "ceo": "Christian Cederholm",
+  "sources": {
+   "ceo": "https://www.investorab.com/about-investor/board-management/executive-leadership-team",
+   "chairman": "https://www.investorab.com/about-investor/board-management/board-of-directors"
+  },
+  "chairman": "Jacob Wallenberg"
+ },
+ "US:IVSXF": {
+  "ceo": "Christian Cederholm",
+  "sources": {
+   "ceo": "https://www.investorab.com/about-investor/board-management/executive-leadership-team",
+   "chairman": "https://www.investorab.com/about-investor/board-management/board-of-directors"
+  },
+  "chairman": "Jacob Wallenberg"
+ },
+ "US:JCI": {
+  "ceo": "Joakim Weidemanis",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/833444/000110465926004565/tm2524665-5_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/833444/000110465926004565/tm2524665-5_def14a.htm"
+  },
+  "chairman": "Mark P. Vergnano"
+ },
+ "US:JDDSF": {
+  "website": "https://www.jdplc.com",
+  "sources": {
+   "website": "https://www.jdplc.com/"
+  }
+ },
+ "US:JNJ": {
+  "ceo": "Joaquin Duato",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000063/jnj-20260309.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000063/jnj-20260309.htm"
+  },
+  "chairman": "Joaquin Duato"
+ },
+ "US:JOYY": {
+  "website": "https://www.joyy.com",
+  "sources": {
+   "website": "https://www.joyy.com/"
+  }
+ },
+ "US:JPM": {
+  "ceo": "James Dimon",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/19617/000001961726000096/jpm-20260402.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/19617/000001961726000096/jpm-20260402.htm"
+  },
+  "chairman": "James Dimon"
  },
  "US:JPMPC": {
   "website": "https://www.jpmorganchase.com",
@@ -6939,6 +9181,26 @@
   "chairman": "Jamie Dimon",
   "wikidata": "Q192314"
  },
+ "US:JXADF": {
+  "website": "https://www.jx-nmm.com",
+  "sources": {
+   "website": "https://www.jx-nmm.com/"
+  }
+ },
+ "US:KHC": {
+  "exchange": "NYSE",
+  "sources": {
+   "exchange": "https://www.sec.gov/Archives/edgar/data/1637459/000163745926000057/khc-20260824.htm"
+  }
+ },
+ "US:KKR": {
+  "ceo": "Joseph Y. Bae and Scott C. Nuttall",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1404912/000114036126007164/ny20061501x2_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1404912/000114036126007164/ny20061501x2_def14a.htm"
+  },
+  "chairman": "Henry R. Kravis,George R. Roberts"
+ },
  "US:KLAC": {
   "headquarters": "Milpitas, California, United States",
   "sources": {
@@ -6946,6 +9208,58 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/319201/000119312526397898/d83268ddef14a.htm"
   },
   "ceo": "Richard P. Wallace"
+ },
+ "US:KLRGF": {
+  "website": "https://www.keller.com",
+  "sources": {
+   "website": "https://www.keller.com/"
+  }
+ },
+ "US:KO": {
+  "ceo": "Henrique Braun",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/21344/000110465926028215/ko-20260429xdef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/21344/000110465926028215/ko-20260429xdef14a.htm"
+  },
+  "chairman": "James Quincey"
+ },
+ "US:KODK": {
+  "website": "https://www.kodak.com",
+  "sources": {
+   "website": "https://www.kodak.com/en/"
+  }
+ },
+ "US:KXHCF": {
+  "ceo": "Hiroo Ota",
+  "sources": {
+   "ceo": "https://www.kioxia-holdings.com/en-jp/about/company.html",
+   "website": "https://www.kioxia-holdings.com/ja-jp/top.html"
+  },
+  "website": "https://www.kioxia-holdings.com"
+ },
+ "US:KYCCF": {
+  "ceo": "Tetsuya Nakano",
+  "sources": {
+   "ceo": "https://www.keyence.co.jp/investor/en/compliance/officers.jsp"
+  }
+ },
+ "US:KYNB": {
+  "website": "https://www.kyntrabio.com",
+  "sources": {
+   "website": "https://www.kyntrabio.com/"
+  }
+ },
+ "US:KYOCF": {
+  "website": "https://global.kyocera.com",
+  "sources": {
+   "website": "https://global.kyocera.com/"
+  }
+ },
+ "US:LCTX": {
+  "website": "https://lineagecell.com",
+  "sources": {
+   "website": "https://lineagecell.com/"
+  }
  },
  "US:LIN": {
   "headquarters": "Woking, Surrey, United Kingdom",
@@ -6955,6 +9269,34 @@
   },
   "ceo": "Sanjiv Lamba"
  },
+ "US:LITE": {
+  "ceo": "Michael E. Hurlston",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1633978/000130817926000420/lite2026-def14a.htm"
+  }
+ },
+ "US:LLDTF": {
+  "ceo": "Charlie Nunn",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1160106/000165495426006988/a4589o.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1160106/000165495426006988/a4589o.htm"
+  },
+  "chairman": "Robin Budenberg"
+ },
+ "US:LLY": {
+  "ceo": "David A. Ricks",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000029/lly-20260317.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000029/lly-20260317.htm"
+  },
+  "chairman": "David A. Ricks"
+ },
+ "US:LNWO": {
+  "website": "https://www.lnw.com",
+  "sources": {
+   "website": "https://www.lnw.com/about"
+  }
+ },
  "US:LRCX": {
   "headquarters": "Fremont, California, United States",
   "sources": {
@@ -6962,6 +9304,14 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000047/lrcx-20260924.htm"
   },
   "ceo": "Timothy M. Archer"
+ },
+ "US:LRLCF": {
+  "ceo": "Nicolas Hieronimus",
+  "sources": {
+   "ceo": "https://www.loreal-finance.com/eng/gouvernance",
+   "chairman": "https://www.loreal-finance.com/eng/gouvernance"
+  },
+  "chairman": "Jean-Paul Agon"
  },
  "US:LRLCY": {
   "website": "https://www.loreal.com",
@@ -6979,10 +9329,74 @@
   "chairman": "Jean-Paul Agon",
   "slogan": "Create The Beauty That Moves The World"
  },
+ "US:LRN": {
+  "website": "https://www.stridelearning.com",
+  "sources": {
+   "website": "https://www.stridelearning.com/"
+  }
+ },
+ "US:LVMHF": {
+  "ceo": "Bernard Arnault",
+  "sources": {
+   "ceo": "https://www.lvmh.com/en/our-group/governance",
+   "chairman": "https://www.lvmh.com/en/our-group/governance"
+  },
+  "chairman": "Bernard Arnault"
+ },
+ "US:LVS": {
+  "website": "https://www.sands.com",
+  "sources": {
+   "website": "https://www.sands.com/"
+  }
+ },
+ "US:LYSCF": {
+  "website": "https://lynasrareearths.com",
+  "sources": {
+   "website": "https://lynasrareearths.com/"
+  }
+ },
  "US:MA": {
   "chairman": "Merit Janow",
   "sources": {
-   "chairman": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000021/ma-20260427.htm"
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000021/ma-20260427.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000021/ma-20260427.htm"
+  },
+  "ceo": "Michael Miebach"
+ },
+ "US:MAR": {
+  "ceo": "Anthony G. Capuano",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1048286/000114036126011590/ny20062722x771_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1048286/000114036126011590/ny20062722x771_def14a.htm"
+  },
+  "chairman": "David S. Marriott"
+ },
+ "US:MBAI": {
+  "website": "https://mbody.ai",
+  "sources": {
+   "website": "https://mbody.ai/"
+  }
+ },
+ "US:MBFJF": {
+  "ceo": "Junichi Hanzawa",
+  "sources": {
+   "ceo": "https://www.mufg.jp/english/profile/overview/executive_committee/index.html",
+   "chairman": "https://www.mufg.jp/english/profile/overview/executive_committee/index.html"
+  },
+  "chairman": "Hironori Kamezawa"
+ },
+ "US:MCD": {
+  "ceo": "Christopher Kempczinski",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/63908/000119312526145548/mcd-20260407.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/63908/000119312526145548/mcd-20260407.htm"
+  },
+  "chairman": "Christopher Kempczinski"
+ },
+ "US:MCK": {
+  "chairman": "Brian S. Tyler",
+  "sources": {
+   "chairman": "https://www.sec.gov/Archives/edgar/data/927653/000092765326000169/mck-20260612.htm"
   }
  },
  "US:MCO": {
@@ -6991,10 +9405,176 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/1059556/000105955626000019/mco-20260304.htm"
   }
  },
+ "US:MDLZ": {
+  "ceo": "Dirk Van de Put",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026044384/mdlz-20260615.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026044384/mdlz-20260615.htm"
+  },
+  "chairman": "Dirk Van de Put"
+ },
+ "US:MELI": {
+  "ceo": "Ariel Szarfsztejn",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1099590/000109959026000010/meli-20260423.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1099590/000109959026000010/meli-20260423.htm"
+  },
+  "chairman": "Marcos Galperin"
+ },
+ "US:META": {
+  "ceo": "Mark Zuckerberg",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025532/meta-20260416.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025532/meta-20260416.htm"
+  },
+  "chairman": "Mark Zuckerberg"
+ },
+ "US:MFC": {
+  "website": "https://www.manulife.com",
+  "sources": {
+   "website": "https://www.manulife.com/"
+  }
+ },
+ "US:MGCOF": {
+  "ceo": "Fang Hongbo",
+  "sources": {
+   "ceo": "https://www.midea.com.cn/en/Investors/Governance",
+   "chairman": "https://www.midea.com.cn/en/Investors/Governance"
+  },
+  "chairman": "Fang Hongbo"
+ },
+ "US:MGPUF": {
+  "website": "https://group.mandg.com",
+  "sources": {
+   "website": "https://group.mandg.com/"
+  }
+ },
+ "US:MHVYF": {
+  "ceo": "Eisaku Ito",
+  "sources": {
+   "ceo": "https://www.mhi.com/company/overview/officers",
+   "chairman": "https://www.mhi.com/company/overview/officers"
+  },
+  "chairman": "Seiji Izumisawa"
+ },
+ "US:MIAX": {
+  "website": "https://www.miaxglobal.com",
+  "sources": {
+   "website": "https://www.miaxglobal.com/"
+  }
+ },
+ "US:MITSF": {
+  "ceo": "Kenichi Hori",
+  "sources": {
+   "ceo": "https://www.mitsui.com/jp/en/company/outline/officer/index.html",
+   "chairman": "https://www.mitsui.com/jp/en/company/outline/officer/index.html"
+  },
+  "chairman": "Tatsuo Yasunaga"
+ },
+ "US:MKL": {
+  "website": "https://www.mklgroup.com",
+  "sources": {
+   "website": "https://www.mklgroup.com/"
+  }
+ },
+ "US:MLKN": {
+  "website": "https://www.millerknoll.com",
+  "sources": {
+   "website": "https://www.millerknoll.com/"
+  }
+ },
+ "US:MMM": {
+  "ceo": "William M. Brown",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/66740/000006674026000151/mmm-20260324.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/66740/000006674026000151/mmm-20260324.htm"
+  },
+  "chairman": "William M. Brown"
+ },
+ "US:MNST": {
+  "ceo": "Hilton H. Schlosberg",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/865752/000110465926105498/tm2624805d1_8k.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/865752/000110465926035990/tm261427d1_def14a.htm"
+  },
+  "chairman": "Rodney C. Sacks"
+ },
+ "US:MO": {
+  "ceo": "Salvatore Mancuso",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/764180/000076418026000073/mo-20260513.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/764180/000110465926038900/tmb-20260514xdef14a.htm"
+  },
+  "chairman": "Kathryn B. McQuade"
+ },
  "US:MORN": {
   "ceo": "Kunal Kapoor",
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1289419/000119312526129081/d36193ddef14a.htm"
+  }
+ },
+ "US:MPC": {
+  "ceo": "Maryann T. Mannen",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1510295/000151029526000023/mpc-20260316.htm"
+  }
+ },
+ "US:MRAAF": {
+  "ceo": "Norio Nakajima",
+  "sources": {
+   "ceo": "https://corporate.murata.com/en-global/company/corporate_governance/board_of_directors",
+   "chairman": "https://corporate.murata.com/en-global/company/corporate_governance/board_of_directors"
+  },
+  "chairman": "Takashi Nishijima"
+ },
+ "US:MRK": {
+  "website": "https://www.merck.com",
+  "sources": {
+   "website": "https://www.merck.com/",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/310158/000119312526147704/d85708ddef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/310158/000119312526147704/d85708ddef14a.htm"
+  },
+  "ceo": "Robert M. Davis",
+  "chairman": "Robert M. Davis"
+ },
+ "US:MRNA": {
+  "ceo": "Stéphane Bancel",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1682852/000119312526408289/d18337d8k.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1682852/000130817926000081/mrna-20260316.htm"
+  },
+  "chairman": "Noubar B. Afeyan"
+ },
+ "US:MRSH": {
+  "website": "https://www.marsh.com",
+  "sources": {
+   "website": "https://www.marsh.com/en/home.html",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/62709/000119312526133303/d94896ddef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/62709/000119312526133303/d94896ddef14a.htm"
+  },
+  "ceo": "John Q. Doyle",
+  "chairman": "H. Edward Hanway"
+ },
+ "US:MRVL": {
+  "ceo": "Matthew J. Murphy",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1835632/000110465926060253/tm261486-1_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1835632/000110465926060253/tm261486-1_def14a.htm"
+  },
+  "chairman": "Matthew J. Murphy"
+ },
+ "US:MS": {
+  "ceo": "Ted Pick",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/895421/000114036126012975/ny20058185x1_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/895421/000114036126012975/ny20058185x1_def14a.htm"
+  },
+  "chairman": "Ted Pick"
+ },
+ "US:MSADF": {
+  "website": "https://www.ms-ad-hd.com",
+  "sources": {
+   "website": "https://www.ms-ad-hd.com/ja/index.html"
   }
  },
  "US:MSCI": {
@@ -7002,6 +9582,22 @@
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000023/msci-20260310.htm"
   }
+ },
+ "US:MSFT": {
+  "ceo": "Satya Nadella",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/789019/000119312526427849/d61756ddef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/789019/000119312526427849/d61756ddef14a.htm"
+  },
+  "chairman": "Satya Nadella"
+ },
+ "US:MSI": {
+  "ceo": "Greg Brown",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/68505/000119312526139004/d50373ddef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/68505/000119312526139004/d50373ddef14a.htm"
+  },
+  "chairman": "Gregory Q. Brown"
  },
  "US:MSPA": {
   "website": "https://www.morganstanley.com",
@@ -7157,10 +9753,150 @@
   "headquarters": "Boise, Idaho, United States",
   "ceo": "Sanjay Mehrotra"
  },
+ "US:MURGF": {
+  "ceo": "Christoph Jurecka",
+  "sources": {
+   "ceo": "https://www.munichre.com/en/company/about-munich-re/board-of-management/members.html",
+   "chairman": "https://www.munichre.com/en/company/about-munich-re/supervisory-board/members.html"
+  },
+  "chairman": "Nikolaus von Bomhard"
+ },
+ "US:MZHOF": {
+  "ceo": "Masahiro Kihara",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1335730/000119312526283791/d119090d20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1335730/000119312526283791/d119090d20f.htm",
+   "website": "https://www.mizuhogroup.com/"
+  },
+  "chairman": "Takashi Tsukioka",
+  "website": "https://www.mizuhogroup.com"
+ },
+ "US:NAUBF": {
+  "ceo": "Andrew Irvine",
+  "sources": {
+   "ceo": "https://www.nab.com.au/about-us/board-of-directors",
+   "chairman": "https://www.nab.com.au/about-us/board-of-directors"
+  },
+  "chairman": "Philip Chronican"
+ },
+ "US:NBIS": {
+  "website": "https://nebius.com",
+  "sources": {
+   "website": "https://nebius.com/"
+  }
+ },
+ "US:NBNKF": {
+  "website": "https://www.nordea.com",
+  "sources": {
+   "website": "https://www.nordea.com/en"
+  }
+ },
+ "US:NCLH": {
+  "website": "https://www.nclhltd.com",
+  "sources": {
+   "website": "https://www.nclhltd.com/"
+  }
+ },
+ "US:NCMI": {
+  "website": "https://www.ncm.com",
+  "sources": {
+   "website": "https://www.ncm.com/"
+  }
+ },
  "US:NDAQ": {
   "website": "https://www.nasdaq.com",
   "sources": {
    "website": "https://www.nasdaq.com"
+  }
+ },
+ "US:NEE": {
+  "ceo": "John W. Ketchum",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/753308/000110465926038551/tm261592-1_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/753308/000110465926038551/tm261592-1_def14a.htm"
+  },
+  "chairman": "John W. Ketchum"
+ },
+ "US:NEM": {
+  "ceo": "Natascha Viljoen",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1164727/000110465926035211/nem-20260512xdef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1164727/000110465926035211/nem-20260512xdef14a.htm"
+  },
+  "chairman": "Gregory H. Boyce"
+ },
+ "US:NFLX": {
+  "website": "https://www.netflix.com",
+  "sources": {
+   "website": "https://www.netflix.com/",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526159286/d20613ddef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526159286/d20613ddef14a.htm"
+  },
+  "ceo": "Ted Sarandos and Greg Peters",
+  "chairman": "Reed Hastings"
+ },
+ "US:NGGTF": {
+  "ceo": "Zoë Yujnovich",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1004315/000100431526000006/nggtf-20260331.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1004315/000100431526000006/nggtf-20260331.htm"
+  },
+  "chairman": "Paula Rosput Reynolds"
+ },
+ "US:NONOF": {
+  "ceo": "Mike Doustdar",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/353278/000035327826000012/nvo-20251231.htm",
+   "chairman": "https://www.novonordisk.com/about/board-of-directors/lars-rebien-soerensen.html"
+  },
+  "chairman": "Lars Rebien Sørensen"
+ },
+ "US:NOW": {
+  "ceo": "William R. McDermott",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000039/now-20260406.htm"
+  }
+ },
+ "US:NPKI": {
+  "website": "https://www.npki.com",
+  "sources": {
+   "website": "https://npki.com/"
+  }
+ },
+ "US:NPO": {
+  "website": "https://www.enpro.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Enpro_Industries"
+  }
+ },
+ "US:NPPXF": {
+  "ceo": "Akira Shimada",
+  "sources": {
+   "ceo": "https://group.ntt/en/ir/mgt/management/",
+   "chairman": "https://group.ntt/en/ir/mgt/management/"
+  },
+  "chairman": "Jun Sawada"
+ },
+ "US:NSRGF": {
+  "ceo": "Philipp Navratil",
+  "sources": {
+   "ceo": "https://www.nestle.com/about/management",
+   "chairman": "https://www.nestle.com/media/pressreleases/allpressreleases/annual-general-meeting-2026"
+  },
+  "chairman": "Pablo Isla"
+ },
+ "US:NTES": {
+  "ceo": "Ding Lei",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1110646/000110465926043468/ntes-20251231x20f.htm",
+   "website": "https://www.netease.com/"
+  },
+  "website": "https://www.netease.com"
+ },
+ "US:NVDA": {
+  "ceo": "Jensen Huang",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm"
   }
  },
  "US:NVS": {
@@ -7172,6 +9908,74 @@
   },
   "ceo": "Vasant Narasimhan",
   "wikidata": "Q507154"
+ },
+ "US:NVSEF": {
+  "ceo": "Vasant Narasimhan",
+  "sources": {
+   "ceo": "https://www.novartis.com/about/executive-committee",
+   "chairman": "https://www.novartis.com/about/board-directors"
+  },
+  "chairman": "Giovanni Caforio"
+ },
+ "US:NWARF": {
+  "website": "https://www.norwegian.com",
+  "sources": {
+   "website": "https://www.norwegian.com"
+  }
+ },
+ "US:NXH": {
+  "website": "https://www.neighborhoodintelligence.com",
+  "sources": {
+   "website": "https://www.neighborhoodintelligence.com/"
+  }
+ },
+ "US:NXPI": {
+  "website": "https://www.nxp.com",
+  "sources": {
+   "website": "https://www.nxp.com/"
+  }
+ },
+ "US:NXT": {
+  "website": "https://www.nextpower.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Nextracker"
+  }
+ },
+ "US:NZTCF": {
+  "website": "https://www.spark.co.nz",
+  "sources": {
+   "website": "https://www.spark.co.nz/"
+  }
+ },
+ "US:OBE": {
+  "website": "https://obsidianenergy.com",
+  "sources": {
+   "website": "https://obsidianenergy.com/"
+  }
+ },
+ "US:OLED": {
+  "website": "https://oled.com",
+  "sources": {
+   "website": "https://oled.com/"
+  }
+ },
+ "US:OMEX": {
+  "website": "https://www.odysseymarine.com",
+  "sources": {
+   "website": "https://www.odysseymarine.com/"
+  }
+ },
+ "US:ONT": {
+  "website": "https://www.onterris.com",
+  "sources": {
+   "website": "https://www.onterris.com/"
+  }
+ },
+ "US:OPTU": {
+  "website": "https://www.optimum.com",
+  "sources": {
+   "website": "https://www.optimum.com/"
+  }
  },
  "US:ORCL": {
   "headquarters": "Austin, Texas, United States",
@@ -7197,6 +10001,204 @@
   "chairman": "Lawrence Joseph Ellison",
   "wikidata": "Q19900"
  },
+ "US:OTSKF": {
+  "website": "https://www.otsuka.com",
+  "sources": {
+   "website": "https://www.otsuka.com:443/jp/"
+  }
+ },
+ "US:OVCHY": {
+  "ceo": "Tan Teck Long",
+  "sources": {
+   "ceo": "https://www.ocbc.com/group/media/release/2025/ocbc-appoints-tan-teck-long-as-group-chief-executive-officer-succeeding-helen-wong",
+   "chairman": "https://www.ocbc.com/group/about-us/our-leadership/board-of-directors"
+  },
+  "chairman": "Andrew Lee"
+ },
+ "US:OWL": {
+  "website": "https://www.blueowl.com",
+  "sources": {
+   "website": "https://www.blueowl.com/"
+  }
+ },
+ "US:P": {
+  "website": "https://www.everpuredata.com",
+  "sources": {
+   "website": "https://www.everpuredata.com/"
+  }
+ },
+ "US:PANW": {
+  "ceo": "Nikesh Arora",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1327567/000130817925000624/panw-20251107.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1327567/000130817925000624/panw-20251107.htm"
+  },
+  "chairman": "Nikesh Arora"
+ },
+ "US:PBR": {
+  "ceo": "Magda Chambriard",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1119639/000129281426002168/pbrform20f_2025.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1119639/000129281426002388/pbr20260416_6k1.htm"
+  },
+  "chairman": "Guilherme Santos Mello"
+ },
+ "US:PBT": {
+  "website": "https://pbt-permian.com",
+  "sources": {
+   "website": "https://pbt-permian.com/"
+  }
+ },
+ "US:PCCYF": {
+  "website": "https://www.petrochina.com.cn",
+  "sources": {
+   "website": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0830/2026083000017.pdf",
+   "chairman": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0817/2026081700357.pdf"
+  },
+  "chairman": "Dai Houliang"
+ },
+ "US:PCG": {
+  "website": "https://www.pgecorp.com",
+  "sources": {
+   "website": "https://www.pgecorp.com/"
+  }
+ },
+ "US:PDD": {
+  "ceo": "Lei Chen and Jiazhen Zhao",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1737806/000110465926050727/pdd-20251231x20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1737806/000110465926050727/pdd-20251231x20f.htm"
+  },
+  "chairman": "Lei Chen and Jiazhen Zhao"
+ },
+ "US:PENN": {
+  "website": "https://www.pennentertainment.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Penn_Entertainment"
+  }
+ },
+ "US:PEP": {
+  "ceo": "Ramon L. Laguarta",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/77476/000130817926000169/pep015012_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/77476/000130817926000169/pep015012_def14a.htm"
+  },
+  "chairman": "Ramon L. Laguarta"
+ },
+ "US:PFE": {
+  "ceo": "Albert Bourla",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000033/pfe-20260312.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000033/pfe-20260312.htm"
+  },
+  "chairman": "Albert Bourla"
+ },
+ "US:PG": {
+  "ceo": "Shailesh G. Jejurikar",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/80424/000119312526372211/pg-20260826.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/80424/000119312526372211/pg-20260826.htm"
+  },
+  "chairman": "Shailesh G. Jejurikar"
+ },
+ "US:PGR": {
+  "ceo": "Tricia Griffith",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000099/pgr-20260318.htm"
+  }
+ },
+ "US:PH": {
+  "ceo": "Jennifer A. Parmentier",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/76334/000130817926000394/ph-20260915.htm"
+  }
+ },
+ "US:PIAIF": {
+  "ceo": "Xie Yonglin and Michael Guo",
+  "sources": {
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1015/2026101500689.pdf",
+   "chairman": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1015/2026101500689.pdf"
+  },
+  "chairman": "Ma Mingzhe"
+ },
+ "US:PKX": {
+  "website": "https://www.posco-inc.com",
+  "sources": {
+   "website": "https://www.posco-inc.com:443/hs91a1-front/app/index.html"
+  }
+ },
+ "US:PLD": {
+  "ceo": "Daniel S. Letter",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526115132/d36709ddef14a.htm"
+  }
+ },
+ "US:PLTR": {
+  "ceo": "Alexander C. Karp",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000019/pltr-20260423.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000019/pltr-20260423.htm"
+  },
+  "chairman": "Peter Thiel"
+ },
+ "US:PM": {
+  "ceo": "Jacek Olczak",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1413329/000162828026021169/pmi-20260325.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1413329/000162828026021169/pmi-20260325.htm"
+  },
+  "chairman": "André Calantzopoulos"
+ },
+ "US:PNC": {
+  "ceo": "William S. Demchak",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/713676/000119312526102189/d62941ddef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/713676/000119312526102189/d62941ddef14a.htm"
+  },
+  "chairman": "William S. Demchak"
+ },
+ "US:PPC": {
+  "website": "https://www.pilgrims.com",
+  "sources": {
+   "website": "https://www.pilgrims.com/"
+  }
+ },
+ "US:PRDO": {
+  "website": "https://www.perdoceoed.com",
+  "sources": {
+   "website": "https://www.perdoceoed.com/"
+  }
+ },
+ "US:PROSF": {
+  "ceo": "Fabricio Bloisi",
+  "sources": {
+   "ceo": "https://www.prosus.com/leadership",
+   "chairman": "https://www.prosus.com/leadership"
+  },
+  "chairman": "Koos Bekker"
+ },
+ "US:PSKY": {
+  "status": "delisted",
+  "delistedAt": "2026-10-06",
+  "successor": "US:SKYD",
+  "sources": {
+   "status": "https://www.sec.gov/Archives/edgar/data/0002041610/000110465926113913/tm2626659d7_ex99-1.htm"
+  }
+ },
+ "US:PSX": {
+  "website": "https://www.phillips66.com",
+  "sources": {
+   "website": "https://www.phillips66.com/",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1534701/000153470126000010/psx-20260401.htm"
+  },
+  "ceo": "Mark E. Lashier"
+ },
+ "US:PWR": {
+  "ceo": "Earl C. Austin, Jr.",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1050915/000119312526150293/d118470ddef14a.htm"
+  }
+ },
  "US:PYPL": {
   "ceo": "Enrique Lores",
   "sources": {
@@ -7204,6 +10206,48 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1633917/000119312526145721/d59508ddef14a.htm"
   },
   "chairman": "David Dorman"
+ },
+ "US:QCOM": {
+  "website": "https://www.qualcomm.com",
+  "sources": {
+   "website": "https://www.qualcomm.com/",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/804328/000110465926005781/tm2528704-1_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/804328/000110465926005781/tm2528704-1_def14a.htm"
+  },
+  "ceo": "Cristiano Amon",
+  "chairman": "Mark D. McLaughlin"
+ },
+ "US:RACE": {
+  "ceo": "Benedetto Vigna",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1648416/000164841626000024/race-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1648416/000164841626000024/race-20251231.htm"
+  },
+  "chairman": "John Elkann"
+ },
+ "US:RCL": {
+  "ceo": "Jason T. Liberty",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/884887/000088488726000017/rcl-20260417.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/884887/000088488726000017/rcl-20260417.htm"
+  },
+  "chairman": "Jason T. Liberty"
+ },
+ "US:RCRRF": {
+  "ceo": "Hisayuki Idekoba",
+  "sources": {
+   "ceo": "https://recruit-holdings.com/en/about/leadership/",
+   "chairman": "https://recruit-holdings.com/en/about/leadership/"
+  },
+  "chairman": "Masumi Minegishi"
+ },
+ "US:REGN": {
+  "ceo": "Leonard S. Schleifer",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/872589/000110465926112340/tm2626090d1_8k.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/872589/000110465926112340/tm2626090d1_8k.htm"
+  },
+  "chairman": "George D. Yancopoulos,Leonard S. Schleifer"
  },
  "US:RHHBF": {
   "founded": 1896,
@@ -7241,6 +10285,82 @@
   "ceo": "Thomas Schinecker",
   "chairman": "Severin Schwan"
  },
+ "US:ROST": {
+  "ceo": "James G. Conroy",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000013/rost-20260406.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000013/rost-20260406.htm"
+  },
+  "chairman": "K. Gunnar Bjorklund"
+ },
+ "US:RS": {
+  "website": "https://www.reliance.com",
+  "sources": {
+   "website": "https://www.reliance.com/"
+  }
+ },
+ "US:RTNTF": {
+  "ceo": "Simon Trott",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/887028/000162828026009531/rio-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/887028/000162828026009531/rio-20251231.htm"
+  },
+  "chairman": "Dominic Barton"
+ },
+ "US:RTPPF": {
+  "ceo": "Simon Trott",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/863064/000162828026009531/rio-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/863064/000162828026009531/rio-20251231.htm"
+  },
+  "chairman": "Dominic Barton"
+ },
+ "US:RTX": {
+  "ceo": "Christopher T. Calio",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/101829/000130817926000036/rtx014050-def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/101829/000130817926000036/rtx014050-def14a.htm"
+  },
+  "chairman": "Christopher T. Calio"
+ },
+ "US:RVTY": {
+  "website": "https://www.revvity.com",
+  "sources": {
+   "website": "https://www.revvity.com/"
+  }
+ },
+ "US:RY": {
+  "ceo": "David McKay",
+  "sources": {
+   "ceo": "https://www.rbc.com/our-company/our-leadership.html",
+   "chairman": "https://www.rbc.com/our-company/governance/index.html"
+  },
+  "chairman": "Jacynthe Côté"
+ },
+ "US:RYCEF": {
+  "ceo": "Tufan Erginbilgic",
+  "sources": {
+   "ceo": "https://www.rolls-royce.com/about/leadership/board.aspx",
+   "chairman": "https://www.rolls-royce.com/about/leadership/board.aspx"
+  },
+  "chairman": "Anita Frew"
+ },
+ "US:RYDAF": {
+  "ceo": "Wael Sawan",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1306965/000162828026017024/shel-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1306965/000162828026017024/shel-20251231.htm"
+  },
+  "chairman": "Andrew Mackenzie"
+ },
+ "US:SAFRF": {
+  "ceo": "Olivier Andriès",
+  "sources": {
+   "ceo": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2026/07/FCECO082738_20260728.pdf",
+   "chairman": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2026/07/FCECO082738_20260728.pdf"
+  },
+  "chairman": "Ross McInnes"
+ },
  "US:SAP": {
   "headquarters": "Walldorf, Baden-Württemberg, Germany",
   "sources": {
@@ -7253,6 +10373,36 @@
   "chairman": "Pekka Ala-Pietilä",
   "wikidata": "Q552581"
  },
+ "US:SAPGF": {
+  "ceo": "Christian Klein",
+  "sources": {
+   "ceo": "https://www.sap.com/investors/en/governance-and-sustainability/executive-board.html",
+   "chairman": "https://www.sap.com/investors/en/governance-and-sustainability/supervisory-board.html"
+  },
+  "chairman": "Pekka Ala-Pietilä"
+ },
+ "US:SBGSF": {
+  "ceo": "Olivier Blum",
+  "sources": {
+   "ceo": "https://www.se.com/ww/en/about-us/company-profile/corporate-governance/",
+   "chairman": "https://www.se.com/ww/en/about-us/company-profile/corporate-governance/board-of-directors/"
+  },
+  "chairman": "Jean-Pascal Tricoire"
+ },
+ "US:SBMFF": {
+  "website": "https://www.sbpgroup.com",
+  "sources": {
+   "website": "https://www.sbpgroup.com/"
+  }
+ },
+ "US:SCCO": {
+  "ceo": "Leonardo Contreras Lerdo de Tejada",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1001838/000110465926051713/scco-20260423x8k.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1001838/000110465926044982/scco-20260529xdef14a.htm"
+  },
+  "chairman": "Germán Larrea Mota-Velasco"
+ },
  "US:SCHW": {
   "headquarters": "Westlake, Texas, United States",
   "sources": {
@@ -7260,6 +10410,14 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/316709/000119312526142826/d930509ddef14a.htm"
   },
   "ceo": "Rick Wurster"
+ },
+ "US:SFTBF": {
+  "ceo": "Masayoshi Son",
+  "sources": {
+   "ceo": "https://group.softbank/en/about/officer",
+   "chairman": "https://group.softbank/en/about/officer"
+  },
+  "chairman": "Masayoshi Son"
  },
  "US:SFTBY": {
   "website": "https://group.softbank",
@@ -7277,6 +10435,18 @@
   "chairman": "Masayoshi Son",
   "wikidata": "Q201653"
  },
+ "US:SHAK": {
+  "website": "https://shakeshack.com",
+  "sources": {
+   "website": "https://shakeshack.com"
+  }
+ },
+ "US:SHECF": {
+  "ceo": "Yasuhiko Saitoh",
+  "sources": {
+   "ceo": "https://www.shinetsu.co.jp/en/company/profile/"
+  }
+ },
  "US:SHEL": {
   "headquarters": "London, England, United Kingdom",
   "sources": {
@@ -7286,6 +10456,28 @@
   },
   "ceo": "Wael Sawan",
   "wikidata": "Q154950"
+ },
+ "US:SHMDF": {
+  "website": "https://www.shimano.com",
+  "sources": {
+   "website": "https://www.shimano.com/en/"
+  }
+ },
+ "US:SHOP": {
+  "ceo": "Tobias Lütke",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000007/shop-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000030/exhibit991-2026agmresultspr.htm"
+  },
+  "chairman": "Tobias Lütke"
+ },
+ "US:SHW": {
+  "ceo": "Heidi G. Petz",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000025/shw-20260310.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000025/shw-20260310.htm"
+  },
+  "chairman": "Heidi G. Petz"
  },
  "US:SIEGY": {
   "headquarters": "Munich, Bavaria, Germany",
@@ -7299,6 +10491,12 @@
   "chairman": "Jim Hagemann Snabe",
   "wikidata": "Q81230"
  },
+ "US:SIFY": {
+  "website": "https://www.sifytechnologies.com",
+  "sources": {
+   "website": "https://www.sifytechnologies.com/us/"
+  }
+ },
  "US:SKHY": {
   "headquarters": "Icheon, Gyeonggi Province, South Korea",
   "sources": {
@@ -7309,6 +10507,79 @@
   "ceo": "Kwak Noh-jung",
   "wikidata": "Q370719"
  },
+ "US:SKYD": {
+  "exchange": "NYSE",
+  "currency": "USD",
+  "country": "United States",
+  "countryCode": "US",
+  "flag": "🇺🇸",
+  "cik": "0002041610",
+  "legalName": "Skydance Corporation",
+  "aliases": [
+   "Paramount Skydance",
+   "Paramount",
+   "PSKY"
+  ],
+  "sources": {
+   "exchange": "https://www.sec.gov/Archives/edgar/data/2041610/000110465926116333/tm2626659d15_8k.htm",
+   "cik": "https://www.sec.gov/Archives/edgar/data/2041610/000110465926116333/tm2626659d15_8k.htm",
+   "legalName": "https://www.sec.gov/Archives/edgar/data/2041610/000110465926116333/tm2626659d15_8k.htm"
+  }
+ },
+ "US:SLB": {
+  "ceo": "Olivier Le Peuch",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/87347/000130817926000024/slb2026-def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/87347/000130817926000024/slb2026-def14a.htm"
+  },
+  "chairman": "Jim Hackett"
+ },
+ "US:SLF": {
+  "website": "https://www.sunlife.com",
+  "sources": {
+   "website": "https://www.sunlife.com/en/"
+  }
+ },
+ "US:SMAWF": {
+  "ceo": "Roland Busch",
+  "sources": {
+   "ceo": "https://www.siemens.com/global/en/company/about/management.html",
+   "chairman": "https://assets.new.siemens.com/siemens/assets/api/uuid:56b92117-b6e2-49c3-86e4-051cb31831ca/260512-press-release1-en.pdf"
+  },
+  "chairman": "Jim Hagemann Snabe"
+ },
+ "US:SMEGF": {
+  "chairman": "Joe Kaeser",
+  "sources": {
+   "chairman": "https://www.siemens-energy.com/global/en/home/general/corporate-information-se.html"
+  }
+ },
+ "US:SMFNF": {
+  "ceo": "Toru Nakashima",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1022837/000119312526283871/d118844d20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1022837/000119312526283871/d118844d20f.htm"
+  },
+  "chairman": "Makoto Takashima"
+ },
+ "US:SMG": {
+  "website": "https://scottsmiraclegro.com",
+  "sources": {
+   "website": "https://scottsmiraclegro.com/en-us/home"
+  }
+ },
+ "US:SMGKF": {
+  "website": "https://www.smiths.com",
+  "sources": {
+   "website": "https://www.smiths.com/"
+  }
+ },
+ "US:SMTGF": {
+  "website": "https://www.sma.de",
+  "sources": {
+   "website": "https://www.sma.de/"
+  }
+ },
  "US:SNDK": {
   "headquarters": "Milpitas, California, United States",
   "sources": {
@@ -7317,6 +10588,66 @@
   },
   "ceo": "David V. Goeckeler"
  },
+ "US:SNEJF": {
+  "ceo": "Hiroki Totoki",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/313838/000119312526274893/d28719d20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/313838/000119312526274893/d28719d20f.htm"
+  },
+  "chairman": "Wendy Becker"
+ },
+ "US:SNOW": {
+  "ceo": "Sridhar Ramaswamy",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1640147/000162828026048373/snow-20260715.htm"
+  }
+ },
+ "US:SNPMF": {
+  "chairman": "Hou Qijun",
+  "sources": {
+   "chairman": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0821/2025082101015.pdf"
+  }
+ },
+ "US:SNPS": {
+  "ceo": "Sassine Ghazi",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/883241/000088324126000007/snps-20260219.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/883241/000088324126000007/snps-20260219.htm"
+  },
+  "chairman": "Aart J. de Geus"
+ },
+ "US:SNYNF": {
+  "ceo": "Belén Garijo",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1121404/000119312526204946/d123331d6k.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1121404/000162828026008403/sny-20251231.htm"
+  },
+  "chairman": "Frédéric Oudéa"
+ },
+ "US:SO": {
+  "ceo": "Christopher C. Womack",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/92122/000009212226000028/so-20260402.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/92122/000009212226000028/so-20260402.htm"
+  },
+  "chairman": "Christopher C. Womack"
+ },
+ "US:SOBKY": {
+  "ceo": "Junichi Miyakawa",
+  "sources": {
+   "ceo": "https://www.softbank.jp/en/corp/aboutus/governance/corporate-governance/officer/",
+   "chairman": "https://www.softbank.jp/en/corp/aboutus/governance/corporate-governance/officer/"
+  },
+  "chairman": "Jun Shimba"
+ },
+ "US:SPCX": {
+  "ceo": "Elon Musk",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+  },
+  "chairman": "Elon Musk"
+ },
  "US:SPGI": {
   "ceo": "Martina Cheung",
   "sources": {
@@ -7324,6 +10655,104 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/64040/000110465926037380/tm261443-1_def14a.htm"
   },
   "chairman": "Ian Livingston"
+ },
+ "US:SPOT": {
+  "ceo": "Alex Norström and Gustav Söderström",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1639920/000162828026006874/ck0001639920-20251231.htm"
+  }
+ },
+ "US:SSRM": {
+  "website": "https://www.ssrmining.com",
+  "sources": {
+   "website": "https://www.ssrmining.com/"
+  }
+ },
+ "US:STIM": {
+  "website": "https://neurostar.com",
+  "sources": {
+   "website": "https://neurostar.com/"
+  }
+ },
+ "US:STOHF": {
+  "website": "https://www.equinor.com",
+  "sources": {
+   "website": "https://www.equinor.com/",
+   "chairman": "https://www.equinor.com/about-us/board-of-directors"
+  },
+  "chairman": "Jarle Roth"
+ },
+ "US:STX": {
+  "ceo": "William D. Mosley",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000207/stx-20260908.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000207/stx-20260908.htm"
+  },
+  "chairman": "William D. Mosley"
+ },
+ "US:STZ": {
+  "website": "https://www.cbrands.com",
+  "sources": {
+   "website": "https://www.cbrands.com/"
+  }
+ },
+ "US:SU": {
+  "ceo": "Richard M. Kruger",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/311337/000110465926020411/su-20251231xex99d1.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/311337/000110465926020411/su-20251231xex99d1.htm"
+  },
+  "chairman": "Russell (Russ) K. Girling"
+ },
+ "US:SUN": {
+  "website": "https://www.sunocolp.com",
+  "sources": {
+   "website": "https://www.sunocolp.com/"
+  }
+ },
+ "US:SVTRF": {
+  "website": "https://www.severntrent.com",
+  "sources": {
+   "website": "https://www.severntrent.com/"
+  }
+ },
+ "US:SW": {
+  "website": "https://www.smurfitwestrock.com",
+  "sources": {
+   "website": "https://www.smurfitwestrock.com/"
+  }
+ },
+ "US:SWX": {
+  "website": "https://www.swgasholdings.com",
+  "sources": {
+   "website": "https://www.swgasholdings.com/"
+  }
+ },
+ "US:SYF": {
+  "website": "https://www.synchrony.com",
+  "sources": {
+   "website": "https://www.synchrony.com/"
+  }
+ },
+ "US:SYK": {
+  "ceo": "Kevin A. Lobo",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/310764/000119312526414956/d84795d8k.htm"
+  }
+ },
+ "US:T": {
+  "ceo": "John T. Stankey",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/732717/000119312526119888/d919223ddef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/732717/000119312526119888/d919223ddef14a.htm"
+  },
+  "chairman": "John T. Stankey"
+ },
+ "US:TAK": {
+  "website": "https://www.takeda.com",
+  "sources": {
+   "website": "https://www.takeda.com/"
+  }
  },
  "US:TCEHY": {
   "website": "https://www.tencent.com",
@@ -7341,6 +10770,90 @@
   "chairman": "Ma Huateng",
   "wikidata": "Q860580"
  },
+ "US:TCTZF": {
+  "ceo": "Ma Huateng",
+  "sources": {
+   "ceo": "https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf",
+   "chairman": "https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf"
+  },
+  "chairman": "Ma Huateng"
+ },
+ "US:TD": {
+  "ceo": "Raymond Chun",
+  "sources": {
+   "ceo": "https://www.td.com/ca/en/about-td/corporate-profile",
+   "chairman": "https://www.td.com/ca/en/about-td/corporate-profile"
+  },
+  "chairman": "John B. MacIntyre"
+ },
+ "US:TDOC": {
+  "website": "https://www.teladochealth.com",
+  "sources": {
+   "website": "https://www.teladochealth.com/"
+  }
+ },
+ "US:TEAD": {
+  "website": "https://www.teads.com",
+  "sources": {
+   "website": "https://www.teads.com/"
+  }
+ },
+ "US:TEVA": {
+  "website": "https://www.tevapharm.com",
+  "sources": {
+   "website": "https://www.tevapharm.com/"
+  }
+ },
+ "US:TGNOF": {
+  "website": "https://trigano.com",
+  "sources": {
+   "website": "https://trigano.com/en/"
+  }
+ },
+ "US:TIGO": {
+  "website": "https://www.millicom.com",
+  "sources": {
+   "website": "https://www.millicom.com/"
+  }
+ },
+ "US:TILE": {
+  "website": "https://www.interface.com",
+  "sources": {
+   "website": "https://www.interface.com/US/en-US.html"
+  }
+ },
+ "US:TITN": {
+  "website": "https://www.titanmachinery.com",
+  "sources": {
+   "website": "https://www.titanmachinery.com/"
+  }
+ },
+ "US:TJX": {
+  "ceo": "Ernie Herrman",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/109198/000010919826000015/tjx-20260430.htm"
+  }
+ },
+ "US:TKOMF": {
+  "ceo": "Masahiro Koike",
+  "sources": {
+   "ceo": "https://www.tokiomarinehd.com/en/company/officers/",
+   "chairman": "https://www.tokiomarinehd.com/en/company/officers/"
+  },
+  "chairman": "Satoru Komiya"
+ },
+ "US:TKPHF": {
+  "website": "https://www.takeda.com",
+  "sources": {
+   "website": "https://www.takeda.com/"
+  }
+ },
+ "US:TLPFF": {
+  "website": "https://www.tp.com",
+  "sources": {
+   "website": "https://www.tp.com/en-us/"
+  }
+ },
  "US:TMO": {
   "headquarters": "Waltham, Massachusetts, United States",
   "sources": {
@@ -7348,6 +10861,68 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/97745/000119312526144585/d66426ddef14a.htm"
   },
   "ceo": "Marc N. Casper"
+ },
+ "US:TMUS": {
+  "ceo": "Srinivasan Gopalan",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1283699/000119312526181884/d11985ddef14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1283699/000119312526181884/d11985ddef14a.htm"
+  },
+  "chairman": "Timotheus Höttges"
+ },
+ "US:TOELF": {
+  "ceo": "Toshiki Kawai",
+  "sources": {
+   "ceo": "https://www.tel.com/about/leader/",
+   "chairman": "https://www.tel.com/about/leader/"
+  },
+  "chairman": "Kazushi Tahara"
+ },
+ "US:TOYOF": {
+  "ceo": "Kenta Kon",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1094517/000119312526264811/d101983d20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1094517/000119312526264811/d101983d20f.htm"
+  },
+  "chairman": "Akio Toyoda"
+ },
+ "US:TRV": {
+  "ceo": "Alan D. Schnitzer",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/86312/000008631226000103/trv-20260406.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/86312/000008631226000103/trv-20260406.htm"
+  },
+  "chairman": "Alan D. Schnitzer"
+ },
+ "US:TSLA": {
+  "ceo": "Elon Musk",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm"
+  },
+  "chairman": "Robyn Denholm"
+ },
+ "US:TSM": {
+  "ceo": "C. C. Wei",
+  "sources": {
+   "ceo": "https://www.tsmc.com/english/aboutTSMC/executives",
+   "chairman": "https://www.tsmc.com/english/aboutTSMC/executives"
+  },
+  "chairman": "C. C. Wei"
+ },
+ "US:TT": {
+  "ceo": "David S. Regnery",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1466258/000162828026026679/tt-20260421.htm"
+  }
+ },
+ "US:TTE": {
+  "ceo": "Patrick Pouyanné",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/879764/000110465926035876/tot-20251231x20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/879764/000110465926035876/tot-20251231x20f.htm"
+  },
+  "chairman": "Patrick Pouyanné"
  },
  "US:TW": {
   "ceo": "Billy Hult",
@@ -7365,11 +10940,193 @@
   },
   "ceo": "Haviv Ilan"
  },
+ "US:TXRH": {
+  "website": "https://www.texasroadhouse.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Texas_Roadhouse"
+  }
+ },
+ "US:TYOYF": {
+  "website": "https://www.yuden.co.jp",
+  "sources": {
+   "website": "https://www.yuden.co.jp/jp/"
+  }
+ },
+ "US:UNCFF": {
+  "ceo": "Andrea Orcel",
+  "sources": {
+   "ceo": "https://www.unicreditgroup.eu/en/governance/governance-bodies/board-of-directors.html",
+   "chairman": "https://www.unicreditgroup.eu/en/governance/governance-bodies/board-of-directors.html"
+  },
+  "chairman": "Pietro Carlo Padoan"
+ },
+ "US:UNH": {
+  "website": "https://www.unitedhealthgroup.com",
+  "sources": {
+   "website": "https://www.unitedhealthgroup.com/",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/731766/000110465926046125/tm261387-6_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/731766/000110465926046125/tm261387-6_def14a.htm"
+  },
+  "ceo": "Stephen J. Hemsley",
+  "chairman": "Stephen J. Hemsley"
+ },
+ "US:UNP": {
+  "ceo": "V. James Vena",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/100885/000010088526000098/unp-20260324.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/100885/000010088526000098/unp-20260324.htm"
+  },
+  "chairman": "Michael R. McCarthy"
+ },
+ "US:UOVEF": {
+  "website": "https://www.uobgroup.com",
+  "sources": {
+   "website": "https://www.uobgroup.com/"
+  }
+ },
+ "US:UPBD": {
+  "website": "https://www.upbound.com",
+  "sources": {
+   "website": "https://www.upbound.com/"
+  }
+ },
+ "US:UPS": {
+  "ceo": "Carol Tomé",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1090727/000162828026019856/ups-20260319.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1090727/000162828026019856/ups-20260319.htm"
+  },
+  "chairman": "William R. Johnson"
+ },
+ "US:URBN": {
+  "website": "https://www.urbn.com",
+  "sources": {
+   "website": "https://www.urbn.com/"
+  }
+ },
+ "US:USB": {
+  "ceo": "Gunjan Kedia",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/36104/000110465926025844/tm261379-1_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/36104/000110465926025844/tm261379-1_def14a.htm"
+  },
+  "chairman": "Gunjan Kedia"
+ },
+ "US:UTSI": {
+  "website": "https://www.utstar.com",
+  "sources": {
+   "website": "https://www.utstar.com/en"
+  }
+ },
+ "US:V": {
+  "ceo": "Ryan McInerney",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1403161/000130817925000635/v-20251208.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1403161/000130817925000635/v-20251208.htm"
+  },
+  "chairman": "John F. Lundgren"
+ },
+ "US:VATE": {
+  "website": "https://innovatecorp.com",
+  "sources": {
+   "website": "https://innovatecorp.com/"
+  }
+ },
+ "US:VERX": {
+  "website": "https://www.vertexinc.com",
+  "sources": {
+   "website": "https://www.vertexinc.com/"
+  }
+ },
+ "US:VET": {
+  "website": "https://www.vermilionenergy.com",
+  "sources": {
+   "website": "https://www.vermilionenergy.com/"
+  }
+ },
+ "US:VG": {
+  "website": "https://ventureglobal.com",
+  "sources": {
+   "website": "https://ventureglobal.com/"
+  }
+ },
+ "US:VLKAF": {
+  "website": "https://www.volkswagen-group.com",
+  "sources": {
+   "website": "https://www.volkswagen-group.com/en"
+  }
+ },
+ "US:VMRK": {
+  "website": "https://www.vivmarkresidential.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Equity_Residential"
+  }
+ },
+ "US:VNET": {
+  "website": "https://www.vnet.com",
+  "sources": {
+   "website": "https://www.vnet.com/"
+  }
+ },
+ "US:VNNVF": {
+  "website": "https://www.vonovia.com",
+  "sources": {
+   "website": "https://www.vonovia.com/"
+  }
+ },
+ "US:VZ": {
+  "website": "https://www.verizon.com",
+  "sources": {
+   "website": "https://www.verizon.com/",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/732712/000130817926000210/vz014688_def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/732712/000130817926000210/vz014688_def14a.htm"
+  },
+  "ceo": "Daniel H. Schulman",
+  "chairman": "Mark T. Bertolini"
+ },
+ "US:WBD": {
+  "status": "delisted",
+  "delistedAt": "2026-10-06",
+  "successor": "US:SKYD",
+  "sources": {
+   "status": "https://www.sec.gov/Archives/edgar/data/0002041610/000110465926113913/tm2626659d7_ex99-1.htm"
+  }
+ },
+ "US:WDC": {
+  "ceo": "Irving Tan",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/106040/000162828026064909/wdc-20261005.htm"
+  }
+ },
+ "US:WEBNF": {
+  "ceo": "Anthony Miller",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/719245/000110465925105894/webnf-20250930x20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/719245/000110465925105894/webnf-20250930x20f.htm"
+  },
+  "chairman": "Steven Gregg"
+ },
+ "US:WEC": {
+  "website": "https://www.wecenergygroup.com",
+  "sources": {
+   "website": "https://www.wecenergygroup.com/"
+  }
+ },
+ "US:WELL": {
+  "ceo": "Shankh Mitra",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/766704/000076670426000014/well-20260409.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/766704/000076670426000014/well-20260409.htm"
+  },
+  "chairman": "Kenneth J. Bacon"
+ },
  "US:WFC": {
   "chairman": "Charles Scharf",
   "sources": {
-   "chairman": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000200/wfc-20260318.htm"
-  }
+   "chairman": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000200/wfc-20260318.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000200/wfc-20260318.htm"
+  },
+  "ceo": "Charles W. Scharf"
  },
  "US:WFCPA": {
   "website": "https://www.wellsfargo.com",
@@ -7467,10 +11224,120 @@
   "chairman": "Charlie Scharf",
   "wikidata": "Q744149"
  },
+ "US:WLMTF": {
+  "website": "https://www.wuling.com.hk",
+  "sources": {
+   "website": "https://www.wuling.com.hk/"
+  }
+ },
+ "US:WM": {
+  "ceo": "James C. Fish, Jr.",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/823768/000110465926101077/tm2624023d1_8k.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/823768/000110465926037381/tm261369-1_def14a.htm"
+  },
+  "chairman": "Kathleen M. Mazzarella"
+ },
+ "US:WMB": {
+  "ceo": "Chad J. Zamarin",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/107263/000119312526112643/wmb-20260317.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000008/wmb-20260326.htm"
+  },
+  "chairman": "Stephen W. Bergstrom"
+ },
+ "US:WMT": {
+  "ceo": "John Furner",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/104169/000119312526173673/wmt-20260423.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/104169/000119312526173673/wmt-20260423.htm"
+  },
+  "chairman": "Greg Penner"
+ },
+ "US:WOR": {
+  "website": "https://www.worthingtonenterprises.com",
+  "sources": {
+   "website": "https://www.worthingtonenterprises.com/"
+  }
+ },
+ "US:WRB": {
+  "website": "https://www.berkley.com",
+  "sources": {
+   "website": "https://www.berkley.com/"
+  }
+ },
+ "US:WTFC": {
+  "website": "https://www.wintrust.com",
+  "sources": {
+   "website": "https://www.wintrust.com/"
+  }
+ },
+ "US:WUXIF": {
+  "ceo": "Ge Li",
+  "sources": {
+   "ceo": "https://www.wuxiapptec.com/about/leadership",
+   "chairman": "https://www.wuxiapptec.com/about/leadership"
+  },
+  "chairman": "Ge Li"
+ },
+ "US:WVVI": {
+  "website": "https://www.wvv.com",
+  "sources": {
+   "website": "https://www.wvv.com/"
+  }
+ },
+ "US:WWR": {
+  "website": "https://www.westwaterresources.net",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Westwater_Resources"
+  }
+ },
+ "US:XIACF": {
+  "ceo": "Lei Jun",
+  "sources": {
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0818/2026081801014.pdf",
+   "chairman": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1023/2026102301169.pdf"
+  },
+  "chairman": "Lei Jun"
+ },
+ "US:XOM": {
+  "ceo": "Darren W. Woods",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/2115436/000119312526291990/d71068d8k12b.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/2115436/000119312526291990/d71068d8k12b.htm"
+  },
+  "chairman": "Darren W. Woods"
+ },
  "US:XYZ": {
   "headquarters": "Oakland, California, United States",
   "sources": {
    "headquarters": "https://data.sec.gov/submissions/CIK0001512673.json"
   }
+ },
+ "US:YELP": {
+  "website": "https://www.yelp.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Yelp"
+  }
+ },
+ "US:ZBH": {
+  "website": "https://www.zimmerbiomet.com",
+  "sources": {
+   "website": "https://www.zimmerbiomet.com/en"
+  }
+ },
+ "US:ZFSVF": {
+  "chairman": "Michel M. Liès",
+  "sources": {
+   "chairman": "https://edge.sitecorecloud.io/zurichinsur6934-zwpcorp-prod-ae5e/media/project/zurich/dotcom/investor-relations/docs/events/abstimmunsergebnisse-agm-zig-2026.pdf"
+  }
+ },
+ "US:ZIJMF": {
+  "ceo": "Lin Hongfu",
+  "sources": {
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0925/2026092500161.pdf",
+   "chairman": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0925/2026092500161.pdf"
+  },
+  "chairman": "Zou Laichang"
  }
 }

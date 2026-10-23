@@ -133,6 +133,12 @@ export function toCompany(marketKey, ticker, m) {
         cik: m.cik ?? null,
         wikidata: m.wikidata ?? null,
         classification: { sector: m.sector ?? null, industry: m.industry ?? null },
+        listing: {
+            status: m.status || 'listed',
+            delistedAt: m.delistedAt ?? null,
+            successor: m.successor ? { company: m.successor, url: companyUrl(m.successor) } : null,
+            source: m.sources?.status ?? null,
+        },
         marketCap: m.marketCap
             ? { currency: m.capCurrency ?? null, local: m.marketCap, usd: m.marketCapUsd ?? null, inr: m.marketCapInr ?? null, asOf: m.freshness?.marketData ?? null }
             : null,
@@ -182,7 +188,7 @@ export const COMPANY_SCHEMA = {
     title: 'Company',
     description: 'One listed company: identity, classification, market cap, profile and logo. Unknown values are null, never guessed.',
     type: 'object',
-    required: ['ticker', 'market', 'name', 'aliases', 'classification', 'marketCap', 'profile', 'logo', 'links', 'freshness'],
+    required: ['ticker', 'market', 'name', 'aliases', 'classification', 'listing', 'marketCap', 'profile', 'logo', 'links', 'freshness'],
     properties: {
         ticker: { type: 'string', description: 'Ticker as used in the logo file name' },
         market: { type: 'string', description: 'Upper-case market key, for example IN, US, KOREA' },
@@ -194,6 +200,15 @@ export const COMPANY_SCHEMA = {
         isin: nullable('string', { pattern: '^[A-Z]{2}[A-Z0-9]{9}[0-9]$' }),
         lei: nullable('string'), cik: nullable('string'), wikidata: nullable('string', { pattern: '^Q[0-9]+$' }),
         classification: { type: 'object', required: ['sector', 'industry'], properties: { sector: nullable('string'), industry: nullable('string') }, additionalProperties: false },
+        listing: {
+            type: 'object', required: ['status', 'delistedAt', 'successor', 'source'], additionalProperties: false,
+            description: 'Whether the shares still trade. A delisted company (acquired, taken private, renamed to a new ticker) keeps its file; successor is the company that took it over or its new listing.',
+            properties: {
+                status: { enum: ['listed', 'delisted'] }, delistedAt: nullable('string', { format: 'date' }),
+                successor: { type: ['object', 'null'], required: ['company', 'url'], properties: { company: { type: 'string', description: 'MARKET:TICKER' }, url: { type: 'string', format: 'uri' } }, additionalProperties: false },
+                source: nullable('string', { format: 'uri' }),
+            },
+        },
         marketCap: {
             type: ['object', 'null'], required: ['currency', 'local', 'usd', 'inr', 'asOf'],
             properties: { currency: nullable('string', { description: 'Reporting currency of `local`' }), local: { type: 'number' }, usd: nullable('number', { description: 'Approximate: converted at the daily rate in fx-rates.json' }), inr: nullable('number'), asOf: nullable('string') },
