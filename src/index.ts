@@ -1,5 +1,5 @@
 export { StockLogosClient, ApiError, DEFAULT_BASE_URL } from './client.js';
-export type { Company, CompanyRow, Market, SearchHit, ApiIndex, Person } from './client.js';
+export type { Company, CompanyRow, Market, SearchHit, ApiIndex, Person, Brand, BrandRef, BrandKind, Institution, Entity, FindResult, CompanyResult } from './client.js';
 export { StockLogo } from './StockLogo.js';
 export type { StockLogoProps, StockMarket } from './StockLogo.js';
 

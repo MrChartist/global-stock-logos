@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "jsx": "react-jsx", "allowImportingTsExtensions": false },
+  "include": ["src/client.js", "src/index.ts", "src/StockLogo.tsx"]
+}

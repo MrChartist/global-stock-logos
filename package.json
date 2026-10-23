@@ -9,7 +9,7 @@
     "check": "node scripts/quality.js --check && node scripts/brands.js --check && node scripts/institutions.js --check && node scripts/validate-data.js && node scripts/validate-api.js && npm run typecheck && node scripts/test-client.js",
     "test:client": "node scripts/test-client.js",
     "test:frontend": "node scripts/test-frontend.js",
-    "typecheck": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json && tsc -p tsconfig.react.json",
     "types": "tsc -p tsconfig.types.json && cp .types/client.d.ts src/client.d.ts && rm -rf .types",
     "all": "node scripts/run-all.js",
     "sync": "node scripts/sync.js",
@@ -91,6 +91,7 @@
     "docs"
   ],
   "devDependencies": {
+    "@types/react": "^19.3.0",
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
     "lighthouse": "^13.5.0",
