@@ -121,6 +121,14 @@ for (const [label, size] of [['desktop', { width: 1280, height: 900 }], ['phone'
         assert.ok(await page.locator('dialog .brands li').count() > 0, 'the parent sheet lists its brands');
         await page.keyboard.press('Escape');
     });
+    await t(`${label}: institutions load on scroll and filter`, async () => {
+        await page.locator('#institutions').scrollIntoViewIfNeeded();
+        await page.waitForFunction(() => / of \d+ institutions/.test(document.getElementById('iCount').textContent));
+        await page.fill('#iq', 'sebi');
+        await page.waitForFunction(() => /^\d+ of/.test(document.getElementById('iCount').textContent));
+        const card = page.locator('#iResults .bcard', { has: page.locator('.nm', { hasText: /^SEBI$/ }) }).first();
+        assert.match(await card.getAttribute('href'), /institutions\/(logos|png)\/.*sebi/);
+    });
     await t(`${label}: no script errors`, () => assert.deepEqual(errors, []));
     await page.close();
 }

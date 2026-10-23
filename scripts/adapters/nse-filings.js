@@ -133,7 +133,8 @@ export async function run(kit) {
                     const put = (field, value) => { const k = setIfEmpty(rec, field, value, 'nse-filing'); if (k) urls[field] = latest.xbrlFile; filled += k; };
                     put('website', site(tag(xml, 'WebsiteOfCompany')[0]));
                     put('founded', year(tag(xml, 'DateOfIncorporation')[0]));
-                    const office = tag(xml, 'AddressOfCorporateOfficeOfCompany')[0] || tag(xml, 'AddressOfRegisteredOfficeOfCompany')[0];
+                    const real = (v) => (v && !/^\s*(n\.?\s*a\.?|nil|none|-+|same as above)\s*$/i.test(v) ? v : null);   // filings write "NA" for no separate office
+                    const office = real(tag(xml, 'AddressOfCorporateOfficeOfCompany')[0]) || real(tag(xml, 'AddressOfRegisteredOfficeOfCompany')[0]);
                     put('address', office && office.length < 300 ? office : null);
                     put('headquarters', canon(cityOf(office, cityList)));
                     const emp = parseInt(tag(xml, 'NumberOfEmployeesOrWorkersIncludingDifferentlyAbled', 'D_Gender_Employees_TableA')[0], 10);

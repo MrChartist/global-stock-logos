@@ -1,8 +1,8 @@
 {
   "name": "Global Stock Logos Catalog (World)",
   "version": "3.0.0",
-  "updatedAt": "2026-10-23T03:51:15.373Z",
-  "totalEquities": 79392,
+  "updatedAt": "2026-10-23T09:49:26.938Z",
+  "totalEquities": 79391,
   "stats": {
     "markets": {
       "ARGENTINA": 1491,
@@ -28,7 +28,7 @@
       "HONGKONG": 2605,
       "HUNGARY": 76,
       "ICELAND": 30,
-      "IN": 6035,
+      "IN": 6034,
       "INDONESIA": 843,
       "IRELAND": 18,
       "ISRAEL": 534,
@@ -75,8 +75,8 @@
       "VIETNAM": 1317
     },
     "formats": {
-      "svg": 79352,
-      "png": 40
+      "svg": 79363,
+      "png": 28
     }
   },
   "cdnBase": "https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main/logos",

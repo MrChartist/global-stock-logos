@@ -4,13 +4,14 @@ The catalogue covers more than listed companies. People know **Jio, Blinkit, Ins
 
 - **Brands**: consumer brands, sub-brands, products, apps and subsidiaries, each linked to its listed owner.
 - **HD full logos**: the official full logo (wordmark or lock-up, original aspect ratio) of a listed company, next to its square icon.
+- **Market institutions**: regulators, government bodies, exchanges, depositories, clearing corporations, payment systems, rating agencies and industry bodies (SEBI, RBI, NSE, NSDL, NPCI, UPI...).
 - **Hand-checked profile facts**: website, founding year, headquarters, CEO and chairman with a source link for every value.
 
 ## Brands
 
 ```
 brands/brands.json              the registry: one record per brand (hand-curated)
-brands/logos/<slug>.svg         official logo, pure vector, original aspect ratio
+brands/logos/<slug>.svg         official logo, pure vector, original aspect ratio (or <slug>.png, see below)
 brands/logos/<slug>.mark.svg    official square symbol or app icon, when the brand has one
 brands/png/<size>/<slug>.png    256, 512 and 1024 px PNG (transparent, the logo contained in a square)
 ```
@@ -30,7 +31,7 @@ A record:
 }
 ```
 
-**Rules.** The logo is the brand's current official design, as vector paths (no embedded raster), from the brand's own site, press kit, or Wikimedia Commons / Wikipedia. Not from logo aggregator sites, not redrawn. The parent is the **ultimate listed owner** as of `checkedAt`; an Indian listed subsidiary of a foreign group (for example Hindustan Unilever for Surf Excel) is in `otherListedOwners`, so the brand shows on both companies. Licensed or franchised marks (Domino's in India, KFC franchisees) are not attributed to the licensee. Ownership changes (sales, demergers, mergers) are checked before a brand is added.
+**Rules.** The logo is the brand's current official design, as vector paths (no embedded raster), from the brand's own site, press kit, an official document (annual report, brochure: the vector paths are copied, never traced), or Wikimedia Commons / Wikipedia. When a brand publishes no vector anywhere, an official raster is accepted as `<slug>.png`: from the brand's own site or the official App Store listing (app brands), at least 1,000 px on its long side **after trimming empty space**, sharp, and never upscaled, redrawn or recoloured. Such a brand gets only the PNG sizes its original allows. Not from logo aggregator sites, not redrawn. The parent is the **ultimate listed owner** as of `checkedAt`; an Indian listed subsidiary of a foreign group (for example Hindustan Unilever for Surf Excel) is in `otherListedOwners`, so the brand shows on both companies. Licensed or franchised marks (Domino's in India, KFC franchisees) are not attributed to the licensee. Ownership changes (sales, demergers, mergers) are checked before a brand is added.
 
 **API.**
 
@@ -58,9 +59,31 @@ npm run sync && npm run api
 
 `npm test` fails on a brand whose parent is not in the catalogue, whose logo is missing or not pure vector, or a logo file without a record.
 
+## Market institutions
+
+```
+institutions/institutions.json            the registry (hand-curated)
+institutions/logos/<slug>.svg|png         official logo (vector, or an official raster of at least 1,000 px)
+institutions/logos/<slug>.mark.svg|png    separate square emblem, when the institution uses one
+institutions/png/<size>/<slug>.png        256, 512, 1024 and 2048 px PNG (a raster is never upscaled)
+```
+
+A record has `kind` (government, ministry, regulator, central-bank, exchange, depository, clearing-corporation, payment-system, rating-agency, credit-bureau, registrar, index-provider, industry-body, professional-body, development-bank, public-programme, market-infrastructure), `parent` (another institution, e.g. UPI → npci, or a listed company), `listedAs` (the catalogue key when the institution is itself listed: NSE, BSE, CDSL, NSDL, MCX, CRISIL...), `logoSource` and a `usageNote`. **Every logo that contains the State Emblem of India carries a usage note**: its use is restricted by the State Emblem of India (Prohibition of Improper Use) Act, 2005.
+
+| Endpoint | Returns |
+| :--- | :--- |
+| `GET /api/v1/institutions.json` | Every institution |
+| `GET /api/v1/institutions/{slug}.json` | One institution: parent, listing, logo URLs (SVG or PNG, mark, PNG sizes), usage note, sources |
+
+```js
+const sebi = await api.institution('sebi');   // sebi.logo.url, sebi.logo.png['2048'], sebi.usageNote
+```
+
+`npm run institutions` validates the registry and renders the PNG sizes; `npm test` runs the check.
+
 ## HD full logos
 
-`logos-hd/<market>/<TICKER>.svg` is the official full logo of a listed company (for example the TCS wordmark) when we have it. `logos/<market>/<TICKER>.svg` stays the square icon used in lists. The API returns it as `logo.hd`, and the catalogue page links it from each company's sheet.
+`logos-hd/<market>/<TICKER>.svg` (or `.png`, an official raster of at least 1,000 px when no vector exists) is the official full logo of a listed company (for example the TCS wordmark) when we have it. `logos/<market>/<TICKER>.svg` stays the square icon used in lists. The API returns it as `logo.hd`, and the catalogue page links it from each company's sheet.
 
 ## Hand-checked profile facts
 

@@ -15,7 +15,9 @@ Machine-readable: [OpenAPI 3.1](../api/v1/openapi.json) · [JSON Schema of a com
 | `GET /api/v1/markets/{market}.json` | Slim rows of one market, largest first: `ticker`, `name`, `sector`, `marketCapUsd`, `url` |
 | `GET /api/v1/companies/{market}/{ticker}.json` | The full profile of one company, with its `brands` |
 | `GET /api/v1/brands.json` | Every brand, sub-brand and subsidiary with its listed parent (see [BRANDS.md](./BRANDS.md)) |
-| `GET /api/v1/brands/{slug}.json` | One brand: parent, other listed owners, logo URLs (SVG, mark, PNG 256/512/1024), sources |
+| `GET /api/v1/brands/{slug}.json` | One brand: parent, other listed owners, logo URLs (SVG or PNG, mark, PNG 256/512/1024), sources |
+| `GET /api/v1/institutions.json` | Market institutions: regulators, government bodies, exchanges, depositories, payment systems (see [BRANDS.md](./BRANDS.md#market-institutions)) |
+| `GET /api/v1/institutions/{slug}.json` | One institution: kind, parent, listing, logo URLs (SVG or PNG, mark, PNG up to 2048 px), usage note |
 | `GET /search-index-top.json` | The 2,000 largest companies in the same format (about 160 KB): render a first screen quickly, then load the full index |
 | `GET /search-index.json` | Every company as `[ticker, name, market, format, yahooTicker, marketCapUsd]`, for search boxes |
 
@@ -75,6 +77,7 @@ await api.markets();                                       // all markets
 await api.market('korea');                                 // companies of one market, largest first
 await api.company('us', 'AAPL');                           // full profile
 await api.brands();                                        // every brand with its listed parent
+await api.institutions();                                  // SEBI, RBI, NSE, NPCI, UPI... with logos
 await api.brand('instagram');                              // one brand
 await api.search('tata', { market: 'in', limit: 10 });     // ranked: exact ticker, ticker prefix, name prefix, word prefix, contains
 api.logoUrl('us', 'AAPL', { format: 'png', size: 128 });   // 'svg' (default) | 'png' | 'original-png'
