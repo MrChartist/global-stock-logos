@@ -11677,6 +11677,24 @@
   },
   "chairman": "Darren W. Woods"
  },
+ "CHINA:000001": {
+  "founded": 1987,
+  "sources": {
+   "founded": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=000001"
+  }
+ },
+ "CHINA:000063": {
+  "website": "https://www.zte.com.cn",
+  "sources": {
+   "website": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=000063",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=000063",
+   "ceo": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=000063",
+   "chairman": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=000063"
+  },
+  "headquarters": "Shenzhen, China",
+  "ceo": "徐子阳",
+  "chairman": "方榕"
+ },
  "CHINA:000100": {
   "website": "https://www.tcltech.com",
   "sources": {
@@ -11691,6 +11709,12 @@
   },
   "chairman": "Fang Hongbo"
  },
+ "CHINA:000338": {
+  "headquarters": "Weifang, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=000338"
+  }
+ },
  "CHINA:000568": {
   "website": "https://www.lzlj.com",
   "sources": {
@@ -11702,6 +11726,58 @@
   "sources": {
    "website": "https://www.pgvt.cn/"
   }
+ },
+ "CHINA:000651": {
+  "headquarters": "Zhuhai, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=000651"
+  }
+ },
+ "CHINA:000725": {
+  "headquarters": "Beijing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=000725"
+  }
+ },
+ "CHINA:000776": {
+  "headquarters": "Guangzhou, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=000776"
+  }
+ },
+ "CHINA:000858": {
+  "headquarters": "Yibin, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=000858"
+  }
+ },
+ "CHINA:001280": {
+  "headquarters": "Beijing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=001280"
+  }
+ },
+ "CHINA:001399": {
+  "website": "https://www.szhk.com.cn",
+  "sources": {
+   "website": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=001399",
+   "founded": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=001399",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=001399",
+   "ceo": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=001399",
+   "chairman": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=001399"
+  },
+  "founded": 2001,
+  "headquarters": "Shenzhen, China",
+  "ceo": "王智勇",
+  "chairman": "王智勇"
+ },
+ "CHINA:002050": {
+  "headquarters": "Shaoxing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=002050",
+   "ceo": "https://static.cninfo.com.cn/finalpage/2026-03-24/1225026522.PDF"
+  },
+  "ceo": "张亚波"
  },
  "CHINA:002142": {
   "website": "https://www.nbcb.com.cn",
@@ -11715,6 +11791,56 @@
    "website": "https://www.pantumtechnology.com.cn/"
   }
  },
+ "CHINA:002281": {
+  "headquarters": "Wuhan, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=002281"
+  }
+ },
+ "CHINA:002352": {
+  "headquarters": "Shenzhen, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=002352"
+  }
+ },
+ "CHINA:002371": {
+  "headquarters": "Beijing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=002371"
+  }
+ },
+ "CHINA:002379": {
+  "headquarters": "Zouping, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=002379"
+  }
+ },
+ "CHINA:002384": {
+  "headquarters": "Suzhou, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=002384"
+  }
+ },
+ "CHINA:002463": {
+  "headquarters": "Kunshan, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=002463"
+  }
+ },
+ "CHINA:002475": {
+  "headquarters": "Dongguan, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=002475"
+  }
+ },
+ "CHINA:002493": {
+  "ceo": "项炯炯",
+  "sources": {
+   "ceo": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=002493",
+   "chairman": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=002493"
+  },
+  "chairman": "李水荣"
+ },
  "CHINA:002594": {
   "ceo": "Wang Chuan-fu",
   "sources": {
@@ -11723,10 +11849,54 @@
   },
   "chairman": "Wang Chuan-fu"
  },
+ "CHINA:002714": {
+  "headquarters": "Nanyang, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=002714"
+  }
+ },
+ "CHINA:002916": {
+  "website": "https://www.scc.com.cn",
+  "sources": {
+   "website": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=002916",
+   "founded": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=002916",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=002916",
+   "ceo": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=002916",
+   "chairman": "https://static.cninfo.com.cn/finalpage/2026-10-08/1225590927.PDF"
+  },
+  "founded": 1984,
+  "headquarters": "Shenzhen, China",
+  "ceo": "杨智勤",
+  "chairman": "杨智勤"
+ },
+ "CHINA:002938": {
+  "headquarters": "Shenzhen, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=002938"
+  }
+ },
+ "CHINA:003816": {
+  "headquarters": "Shenzhen, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=003816"
+  }
+ },
+ "CHINA:200725": {
+  "headquarters": "Beijing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=000725"
+  }
+ },
  "CHINA:300037": {
   "founded": 1996,
   "sources": {
    "founded": "https://www.capchem.com/Company.html"
+  }
+ },
+ "CHINA:300124": {
+  "headquarters": "Shenzhen, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=300124"
   }
  },
  "CHINA:300223": {
@@ -11741,16 +11911,118 @@
    "founded": "https://www.ewang.com/about/"
   }
  },
+ "CHINA:300274": {
+  "founded": 1997,
+  "sources": {
+   "founded": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=300274",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=300274"
+  },
+  "headquarters": "Hefei, China"
+ },
+ "CHINA:300308": {
+  "headquarters": "Longkou, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=300308"
+  }
+ },
  "CHINA:300347": {
   "website": "https://tigermedgrp.com",
   "sources": {
    "website": "https://tigermedgrp.com/en/homepage"
   }
  },
+ "CHINA:300394": {
+  "headquarters": "Suzhou, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=300394"
+  }
+ },
+ "CHINA:300408": {
+  "headquarters": "Chaozhou, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=300408"
+  }
+ },
+ "CHINA:300433": {
+  "headquarters": "Liuyang, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=300433"
+  }
+ },
+ "CHINA:300476": {
+  "headquarters": "Huizhou, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=300476"
+  }
+ },
+ "CHINA:300502": {
+  "headquarters": "Chengdu, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=300502"
+  }
+ },
+ "CHINA:300604": {
+  "website": "https://www.hzcctech.com",
+  "sources": {
+   "website": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=300604",
+   "founded": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=300604",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=300604",
+   "ceo": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=300604",
+   "chairman": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=300604"
+  },
+  "founded": 2008,
+  "headquarters": "Hangzhou, China",
+  "ceo": "赵轶",
+  "chairman": "赵轶"
+ },
+ "CHINA:300760": {
+  "headquarters": "Shenzhen, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=300760"
+  }
+ },
+ "CHINA:300857": {
+  "headquarters": "Shenzhen, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=300857"
+  }
+ },
+ "CHINA:301666": {
+  "website": "https://www.dapustor.com",
+  "sources": {
+   "website": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=301666",
+   "founded": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=301666",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=301666",
+   "ceo": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=301666",
+   "chairman": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=301666"
+  },
+  "founded": 2016,
+  "headquarters": "Shenzhen, China",
+  "ceo": "杨亚飞",
+  "chairman": "杨亚飞"
+ },
+ "CHINA:302132": {
+  "headquarters": "Chengdu, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=302132"
+  }
+ },
  "CHINA:600004": {
   "website": "https://www.baiyunport.com",
   "sources": {
    "website": "https://www.baiyunport.com/"
+  }
+ },
+ "CHINA:600016": {
+  "headquarters": "Beijing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600016"
+  }
+ },
+ "CHINA:600028": {
+  "headquarters": "Beijing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600028"
   }
  },
  "CHINA:600031": {
@@ -11767,10 +12039,52 @@
    "website": "http://polycn.com/"
   }
  },
+ "CHINA:600050": {
+  "headquarters": "Beijing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600050"
+  }
+ },
  "CHINA:600066": {
   "founded": 1963,
   "sources": {
    "founded": "https://en.yutong.com/about/history/"
+  }
+ },
+ "CHINA:600111": {
+  "headquarters": "Baotou, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600111"
+  }
+ },
+ "CHINA:600150": {
+  "headquarters": "Shanghai, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600150"
+  }
+ },
+ "CHINA:600176": {
+  "headquarters": "Tongxiang, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600176"
+  }
+ },
+ "CHINA:600183": {
+  "headquarters": "Dongguan, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600183"
+  }
+ },
+ "CHINA:600188": {
+  "headquarters": "Zoucheng, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600188"
+  }
+ },
+ "CHINA:600276": {
+  "headquarters": "Lianyungang, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600276"
   }
  },
  "CHINA:600287": {
@@ -11779,17 +12093,43 @@
    "website": "https://www.sohofashion.com.cn/"
   }
  },
+ "CHINA:600362": {
+  "headquarters": "Nanchang, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600362"
+  }
+ },
  "CHINA:600365": {
   "website": "https://www.tonhwa.com",
   "sources": {
    "website": "https://www.tonhwa.com/"
   }
  },
+ "CHINA:600406": {
+  "headquarters": "Nanjing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600406"
+  }
+ },
+ "CHINA:600487": {
+  "headquarters": "Suzhou, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600487"
+  }
+ },
+ "CHINA:600660": {
+  "headquarters": "Fuqing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600660"
+  }
+ },
  "CHINA:600690": {
   "website": "https://smart-home.haier.com",
   "sources": {
-   "website": "https://smart-home.haier.com/"
-  }
+   "website": "https://smart-home.haier.com/",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600690"
+  },
+  "headquarters": "Qingdao, China"
  },
  "CHINA:600699": {
   "website": "https://www.joyson.com",
@@ -11811,16 +12151,74 @@
    "website": "https://www.600757.com.cn/"
   }
  },
+ "CHINA:600760": {
+  "headquarters": "Shenyang, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600760"
+  }
+ },
+ "CHINA:600809": {
+  "headquarters": "Fenyang, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600809"
+  }
+ },
+ "CHINA:600919": {
+  "headquarters": "Nanjing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600919"
+  }
+ },
+ "CHINA:600926": {
+  "headquarters": "Hangzhou, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600926"
+  }
+ },
+ "CHINA:600930": {
+  "headquarters": "Beijing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600930"
+  }
+ },
  "CHINA:600999": {
   "website": "https://www.cmschina.com",
   "sources": {
-   "website": "https://www.cmschina.com/"
-  }
+   "website": "https://www.cmschina.com/",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600999"
+  },
+  "headquarters": "Shenzhen, China"
+ },
+ "CHINA:601066": {
+  "website": "https://www.csc108.com",
+  "sources": {
+   "website": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601066",
+   "founded": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601066",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601066",
+   "ceo": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=601066",
+   "chairman": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=601066"
+  },
+  "founded": 2005,
+  "headquarters": "Beijing, China",
+  "ceo": "金剑华",
+  "chairman": "刘成"
  },
  "CHINA:601088": {
   "founded": 2004,
   "sources": {
    "founded": "http://en.shenhuachina.com/zgshwwEn/gsjj/gsjjList.shtml"
+  }
+ },
+ "CHINA:601138": {
+  "headquarters": "Shenzhen, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601138"
+  }
+ },
+ "CHINA:601211": {
+  "headquarters": "Shanghai, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601211"
   }
  },
  "CHINA:601229": {
@@ -11835,11 +12233,25 @@
    "founded": "https://www.abchina.com/en/aboutus/annual-report/default_1.htm"
   }
  },
+ "CHINA:601318": {
+  "headquarters": "Shenzhen, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601318"
+  }
+ },
+ "CHINA:601319": {
+  "chairman": "谭炯",
+  "sources": {
+   "chairman": "https://static.cninfo.com.cn/finalpage/2026-10-14/1225603437.PDF"
+  }
+ },
  "CHINA:601328": {
   "founded": 1908,
   "sources": {
-   "founded": "https://www.hk.bankcomm.com/hk/shtml/bhk/en/2012886/2012947/list.shtml?channelId=2012886"
-  }
+   "founded": "https://www.hk.bankcomm.com/hk/shtml/bhk/en/2012886/2012947/list.shtml?channelId=2012886",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601328"
+  },
+  "headquarters": "Shanghai, China"
  },
  "CHINA:601628": {
   "website": "https://www.e-chinalife.com",
@@ -11854,6 +12266,40 @@
   "sources": {
    "website": "https://www.gwm.com.cn/"
   }
+ },
+ "CHINA:601658": {
+  "headquarters": "Beijing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601658"
+  }
+ },
+ "CHINA:601688": {
+  "headquarters": "Nanjing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601688"
+  }
+ },
+ "CHINA:601728": {
+  "headquarters": "Beijing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601728",
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1022/2026102201261.pdf"
+  },
+  "ceo": "柯瑞文"
+ },
+ "CHINA:601766": {
+  "website": "https://www.crrcgc.cc",
+  "sources": {
+   "website": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601766",
+   "founded": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601766",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601766",
+   "ceo": "https://static.cninfo.com.cn/finalpage/2026-03-28/1225046479.PDF",
+   "chairman": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=601766"
+  },
+  "founded": 2007,
+  "headquarters": "Beijing, China",
+  "ceo": "王锋",
+  "chairman": "孙永才"
  },
  "CHINA:601777": {
   "website": "https://www.afari.com",
@@ -11871,9 +12317,29 @@
   "website": "https://www.petrochina.com.cn",
   "sources": {
    "website": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0830/2026083000017.pdf",
-   "chairman": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0817/2026081700357.pdf"
+   "chairman": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0817/2026081700357.pdf",
+   "founded": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601857",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601857",
+   "ceo": "https://static.cninfo.com.cn/finalpage/2026-06-10/1225361699.PDF"
   },
-  "chairman": "Dai Houliang"
+  "chairman": "Dai Houliang",
+  "founded": 1999,
+  "headquarters": "Beijing, China",
+  "ceo": "Ren Lixin"
+ },
+ "CHINA:601869": {
+  "headquarters": "Wuhan, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601869"
+  }
+ },
+ "CHINA:601919": {
+  "founded": 2005,
+  "sources": {
+   "founded": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601919",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601919"
+  },
+  "headquarters": "Shanghai, China"
  },
  "CHINA:601939": {
   "founded": 1954,
@@ -11881,16 +12347,148 @@
    "founded": "http://www.ccb.com/en/investor/history.html"
   }
  },
+ "CHINA:601985": {
+  "headquarters": "Beijing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601985"
+  }
+ },
  "CHINA:601988": {
   "founded": 1912,
   "sources": {
-   "founded": "https://www.boc.cn/en/aboutboc/ab7/200809/t20080926_1601882.html"
-  }
+   "founded": "https://www.boc.cn/en/aboutboc/ab7/200809/t20080926_1601882.html",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=601988"
+  },
+  "headquarters": "Beijing, China"
  },
  "CHINA:603259": {
   "website": "http://www.wuxiapptec.com",
   "sources": {
-   "website": "https://www.wuxiapptec.com/about/leadership"
+   "website": "https://www.wuxiapptec.com/about/leadership",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=603259"
+  },
+  "headquarters": "Shanghai, China"
+ },
+ "CHINA:603268": {
+  "headquarters": "Dalian, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=603268"
+  }
+ },
+ "CHINA:603288": {
+  "headquarters": "Foshan, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=603288"
+  }
+ },
+ "CHINA:603986": {
+  "website": "https://www.gigadevice.com",
+  "sources": {
+   "website": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=603986",
+   "founded": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=603986",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=603986",
+   "ceo": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=603986",
+   "chairman": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=603986"
+  },
+  "founded": 2005,
+  "headquarters": "Beijing, China",
+  "ceo": "何卫",
+  "chairman": "朱一明"
+ },
+ "CHINA:603993": {
+  "website": "https://www.cmoc.com",
+  "sources": {
+   "website": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=603993",
+   "founded": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=603993",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=603993",
+   "ceo": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=603993",
+   "chairman": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=603993"
+  },
+  "founded": 1999,
+  "headquarters": "Luoyang, China",
+  "ceo": "彭旭辉",
+  "chairman": "刘建锋"
+ },
+ "CHINA:688008": {
+  "headquarters": "Shanghai, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=688008",
+   "ceo": "https://static.cninfo.com.cn/finalpage/2026-07-17/1225429159.PDF"
+  },
+  "ceo": "杨崇和"
+ },
+ "CHINA:688012": {
+  "headquarters": "Shanghai, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=688012"
+  }
+ },
+ "CHINA:688041": {
+  "headquarters": "Beijing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=688041"
+  }
+ },
+ "CHINA:688072": {
+  "website": "https://www.piotech.cn",
+  "sources": {
+   "website": "https://www.piotech.cn",
+   "founded": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=688072",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=688072",
+   "ceo": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=688072",
+   "chairman": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=688072"
+  },
+  "founded": 2010,
+  "headquarters": "Shenyang, China",
+  "ceo": "刘静",
+  "chairman": "吕光泉"
+ },
+ "CHINA:688082": {
+  "headquarters": "Shanghai, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=688082"
+  }
+ },
+ "CHINA:688256": {
+  "headquarters": "Beijing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=688256"
+  }
+ },
+ "CHINA:688347": {
+  "headquarters": "Shanghai, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=688347"
+  }
+ },
+ "CHINA:688795": {
+  "headquarters": "Beijing, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=688795"
+  }
+ },
+ "CHINA:688802": {
+  "headquarters": "Shanghai, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=688802"
+  }
+ },
+ "CHINA:688808": {
+  "headquarters": "Suzhou, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=688808"
+  }
+ },
+ "CHINA:688820": {
+  "headquarters": "Jiangyin, China",
+  "sources": {
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=688820"
+  }
+ },
+ "CHINA:688981": {
+  "ceo": "赵海军 and 梁孟松",
+  "sources": {
+   "ceo": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=688981"
   }
  },
  "COLOMBIA:AAPL": {
@@ -14975,10 +15573,22 @@
    "chairman": "https://edge.sitecorecloud.io/zurichinsur6934-zwpcorp-prod-ae5e/media/project/zurich/dotcom/investor-relations/docs/events/abstimmunsergebnisse-agm-zig-2026.pdf"
   }
  },
+ "HONGKONG:1": {
+  "headquarters": "Hong Kong",
+  "sources": {
+   "headquarters": "https://www.ckh.com.hk/en/global/contact.php"
+  }
+ },
  "HONGKONG:1024": {
   "website": "https://www.kuaishou.com",
   "sources": {
    "website": "https://www.kuaishou.com/new-reco"
+  }
+ },
+ "HONGKONG:1038": {
+  "headquarters": "Hong Kong",
+  "sources": {
+   "headquarters": "https://www.cki.com.hk/english/contactUs/home/index.htm"
   }
  },
  "HONGKONG:1072": {
@@ -15007,11 +15617,25 @@
    "website": "https://www.ctfme.com/en"
   }
  },
+ "HONGKONG:1109": {
+  "ceo": "徐荣",
+  "sources": {
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0904/2026090400871_c.pdf"
+  }
+ },
  "HONGKONG:1112": {
   "website": "https://www.hh.global",
   "sources": {
    "website": "https://www.hh.global/"
   }
+ },
+ "HONGKONG:1113": {
+  "headquarters": "Hong Kong",
+  "sources": {
+   "headquarters": "https://www.ckah.com/corporate-information",
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2025/1103/2025110300655_c.pdf"
+  },
+  "ceo": "李泽钜"
  },
  "HONGKONG:1133": {
   "website": "https://www.hpec.com",
@@ -15135,6 +15759,12 @@
    "website": "https://www.bankoftianjin.com/"
   }
  },
+ "HONGKONG:16": {
+  "ceo": "Kwok Ping-luen Raymond",
+  "sources": {
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0331/2026033101129.pdf"
+  }
+ },
  "HONGKONG:1623": {
   "website": "https://www.hilonggroup.com",
   "sources": {
@@ -15150,8 +15780,10 @@
  "HONGKONG:175": {
   "website": "https://www.geelyauto.com.hk",
   "sources": {
-   "website": "https://www.geelyauto.com.hk/"
-  }
+   "website": "https://www.geelyauto.com.hk/",
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0818/2026081800008_c.pdf"
+  },
+  "ceo": "淦家阅"
  },
  "HONGKONG:1810": {
   "ceo": "Lei Jun",
@@ -15165,6 +15797,12 @@
    "website": "https://euroeyes.com/"
   }
  },
+ "HONGKONG:1888": {
+  "headquarters": "Hong Kong",
+  "sources": {
+   "headquarters": "https://www.kblaminates.com/list/79.html"
+  }
+ },
  "HONGKONG:1913": {
   "founded": 1913,
   "sources": {
@@ -15175,6 +15813,12 @@
   "founded": 1929,
   "sources": {
    "founded": "https://www.chowtaifook.com/en-hk/house-of-ctf/about-chow-tai-fook"
+  }
+ },
+ "HONGKONG:2": {
+  "ceo": "蒋东强",
+  "sources": {
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1012/2026101200594_c.pdf"
   }
  },
  "HONGKONG:2015": {
@@ -15219,6 +15863,12 @@
    "website": "https://www.gacgroup.com/en"
   }
  },
+ "HONGKONG:2259": {
+  "headquarters": "Hong Kong",
+  "sources": {
+   "headquarters": "https://www.zijingoldintl.com"
+  }
+ },
  "HONGKONG:2318": {
   "ceo": "Xie Yonglin and Michael Guo",
   "sources": {
@@ -15252,7 +15902,15 @@
  "HONGKONG:2378": {
   "founded": 1848,
   "sources": {
-   "founded": "https://www.prudentialplc.com/en/about-us/our-history/serving-our-customers-for-over-178-years/"
+   "founded": "https://www.prudentialplc.com/en/about-us/our-history/serving-our-customers-for-over-178-years/",
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0601/2026060102682.pdf"
+  },
+  "ceo": "Anil Wadhwani"
+ },
+ "HONGKONG:2388": {
+  "ceo": "孙煜",
+  "sources": {
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0625/2026062501469_c.pdf"
   }
  },
  "HONGKONG:2589": {
@@ -15433,6 +16091,12 @@
    "website": "https://www.reptbattero.com/"
   }
  },
+ "HONGKONG:669": {
+  "ceo": "Steven Philip Richman",
+  "sources": {
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0529/2026052901341.pdf"
+  }
+ },
  "HONGKONG:6818": {
   "website": "https://www.cebbank.com",
   "sources": {
@@ -15466,14 +16130,24 @@
  "HONGKONG:762": {
   "website": "https://www.chinaunicom.com.hk",
   "sources": {
-   "website": "https://www.chinaunicom.com.hk/"
+   "website": "https://www.chinaunicom.com.hk/",
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0114/2026011401156_c.pdf"
+  },
+  "ceo": "董昕"
+ },
+ "HONGKONG:80016": {
+  "ceo": "Kwok Ping-luen Raymond",
+  "sources": {
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0331/2026033101129.pdf"
   }
  },
  "HONGKONG:80175": {
   "website": "https://www.geelyauto.com.hk",
   "sources": {
-   "website": "https://www.geelyauto.com.hk/"
-  }
+   "website": "https://www.geelyauto.com.hk/",
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0818/2026081800008_c.pdf"
+  },
+  "ceo": "淦家阅"
  },
  "HONGKONG:80388": {
   "ceo": "Bonnie Chan",
@@ -15493,11 +16167,21 @@
    "ceo": "https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf"
   }
  },
+ "HONGKONG:80883": {
+  "ceo": "黄永章",
+  "sources": {
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0911/2026091100601_c.pdf"
+  }
+ },
  "HONGKONG:80941": {
   "website": "https://www.chinamobileltd.com",
   "sources": {
-   "website": "https://www.chinamobileltd.com/en/global/home.php"
-  }
+   "website": "https://www.chinamobileltd.com/en/global/home.php",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600941",
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0624/2026062400285.pdf ; https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=600941"
+  },
+  "headquarters": "Beijing, China",
+  "ceo": "陈扬帆"
  },
  "HONGKONG:80992": {
   "founded": 1984,
@@ -15549,6 +16233,14 @@
    "founded": "https://www.lining.com/story"
   }
  },
+ "HONGKONG:82388": {
+  "headquarters": "Hong Kong",
+  "sources": {
+   "headquarters": "https://www.bochk.com",
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0625/2026062501469_c.pdf"
+  },
+  "ceo": "孙煜"
+ },
  "HONGKONG:8282": {
   "website": "https://www.hk08282.com",
   "sources": {
@@ -15571,6 +16263,12 @@
   "website": "https://www.petrochina.com.cn",
   "sources": {
    "website": "https://en.wikipedia.org/wiki/PetroChina"
+  }
+ },
+ "HONGKONG:883": {
+  "ceo": "黄永章",
+  "sources": {
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0911/2026091100601_c.pdf"
   }
  },
  "HONGKONG:89988": {
@@ -15596,8 +16294,12 @@
  "HONGKONG:941": {
   "website": "https://www.chinamobileltd.com",
   "sources": {
-   "website": "https://www.chinamobileltd.com/en/global/home.php"
-  }
+   "website": "https://www.chinamobileltd.com/en/global/home.php",
+   "headquarters": "https://www.cninfo.com.cn/data20/companyOverview/getCompanyIntroduction?scode=600941",
+   "ceo": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0624/2026062400285.pdf ; https://www.cninfo.com.cn/data20/companyOverview/getCompanyExecutives?scode=600941"
+  },
+  "headquarters": "Beijing, China",
+  "ceo": "陈扬帆"
  },
  "HONGKONG:945": {
   "website": "https://www.manulife.com",
