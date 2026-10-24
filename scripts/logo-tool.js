@@ -13,7 +13,7 @@ import fs from 'fs';
 import path from 'path';
 import { execFileSync } from 'child_process';
 import { fileURLToPath } from 'url';
-import { namespaceIds, idsNamespaced } from './svg-quality.js';
+import { namespaceIds, idsNamespaced, activeContent } from './svg-quality.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const MAX_BYTES = 300 * 1024;
@@ -21,7 +21,8 @@ const MAX_BYTES = 300 * 1024;
 export function problemsOf(svg) {
     const p = [];
     if (!/<svg[\s>]/.test(svg)) p.push('not an SVG');
-    if (/<script|<foreignObject|\son\w+\s*=|(?:xlink:)?href="(?:https?:)?\/\//i.test(svg)) p.push('active content or external link');
+    const bad = activeContent(svg);
+    if (bad) p.push(bad);
     if (/<image\b/i.test(svg) || /data:image\/(png|jpe?g|gif|webp)/i.test(svg)) p.push('embedded raster image (must be pure vector)');
     if (!/<svg[^>]*\bviewBox=/i.test(svg)) p.push('no viewBox');
     // One compound path is a valid logo here (hasVisibleArt expects a tile plus art, as in the TradingView icons).

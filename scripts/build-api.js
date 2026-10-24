@@ -5,8 +5,10 @@
  *   api/v1/markets.json                        every market with country, currency, company count
  *   api/v1/markets/<market>.json               slim list of the market's companies, largest first
  *   api/v1/companies/<market>/<TICKER>.json    the full profile of one company
- *   api/v1/isin/<ISIN>.json                    pointer from an ISIN to its primary listing (home market first) and the other lines that share it
- *   api/v1/lookup/<EXCHANGE>-<TICKER>.json     pointer from an exchange code and ticker (NASDAQ-AAPL, NSE-TCS) to the company
+ *   api/v1/isin/<PREFIX>.json                  shard: ISIN -> {name, primary, others} for the ISINs that start with the 3-character PREFIX
+ *                                              (a prefix over ISIN_SHARD_MAX bytes holds {"$split":4} and is sharded on 4 characters instead)
+ *   api/v1/lookup/<EXCHANGE>.json              shard: TICKER -> [market, name, isin, status] for one exchange code (NASDAQ, NSE...)
+ *   Lines are compact tuples [market, ticker, exchange, "L"|"D"]; the client builds company URLs from market and ticker.
  *   api/v1/brands.json                         every brand (consumer brand, sub-brand, subsidiary) with its listed parent
  *   api/v1/brands/<slug>.json                  one brand
  *   api/v1/institutions.json                   market institutions: regulators, governments, exchanges, depositories, payment systems
@@ -31,11 +33,14 @@ const OUT = path.join(ROOT, 'api', API_VERSION);
 const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'logos-manifest.json'), 'utf-8'));
 const CDN = manifest.cdnBase.replace(/\/logos$/, '');
 const API_BASE = `${CDN}/api/${API_VERSION}`;
+export const ISIN_SHARD_PREFIX = 3;      // characters of the ISIN in a shard name
+export const ISIN_SHARD_MAX = 500_000;   // bytes; a bigger prefix is split on ISIN_SHARD_PREFIX + 1 characters
 
 /** Wikidata officers can be years out of date; exchange and registry officers are kept by a vendor;
  *  a URL is a hand check against the company's own page or filing (curated/overrides.json). */
 const confidence = (source) => (source === 'wikidata' || source === 'wikidata-name' ? 'low' : /^https?:\/\//.test(source || '') ? 'high' : 'medium');
 const person = (name, source, asOf) => (name ? { name, source: source || 'unknown', confidence: confidence(source), asOf: asOf || null } : null);
+const cmp = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
 const clean = (o) => (o && Object.keys(o).length ? o : null);
 
 /** Where a company's square icon (logos/<market>/<TICKER>.svg) comes from.
@@ -209,6 +214,7 @@ export function toCompany(marketKey, ticker, m) {
     };
 }
 
+const ISIN_RE = '^[A-Z]{2}[A-Z0-9]{9}[0-9]$';
 const nullable = (t, extra = {}) => ({ type: [t, 'null'], ...extra });
 const INK = { type: ['object', 'null'], required: ['color', 'theme', 'contrast'], additionalProperties: false, description: 'A readable text colour for brandColor: WCAG AA (contrast >= 4.5) for normal text. theme is the theme of the tile that brandColor forms: dark = a dark tile with light ink, light = a light tile with dark ink. null when there is no brandColor.', properties: { color: { type: 'string', pattern: '^#[0-9A-F]{6}$' }, theme: { enum: ['light', 'dark'] }, contrast: { type: 'number', minimum: 4.5 } } };
 const person_ = { type: ['object', 'null'], required: ['name', 'source', 'confidence', 'asOf'], properties: { name: { type: 'string' }, source: { type: 'string' }, asOf: nullable('string', { format: 'date', description: 'Date this name was last checked by hand against the source; null when no check date is recorded (never guessed)' }), confidence: { enum: ['low', 'medium', 'high'], description: 'low = community data that may be out of date (Wikidata); medium = exchange or registry data; high = checked by hand against the company\'s own page or filing (source is that URL)' } }, additionalProperties: false };
@@ -227,7 +233,7 @@ export const COMPANY_SCHEMA = {
         aliases: { type: 'array', items: { type: 'string' } },
         country: nullable('string'), countryCode: nullable('string', { pattern: '^[A-Z]{2}$' }), flag: nullable('string'),
         exchange: nullable('string'), currency: nullable('string', { description: 'Price currency; minor units such as GBX can differ from marketCap.currency' }),
-        isin: nullable('string', { pattern: '^[A-Z]{2}[A-Z0-9]{9}[0-9]$' }),
+        isin: nullable('string', { pattern: ISIN_RE }),
         lei: nullable('string'), cik: nullable('string'), wikidata: nullable('string', { pattern: '^Q[0-9]+$' }),
         classification: { type: 'object', required: ['sector', 'industry'], properties: { sector: nullable('string'), industry: nullable('string') }, additionalProperties: false },
         listing: {
@@ -340,24 +346,26 @@ export const INSTITUTION_SCHEMA = {
     },
     additionalProperties: false,
 };
-const listingRef_ = { type: 'object', required: ['market', 'ticker', 'exchange', 'status', 'url'], additionalProperties: false, properties: { market: { type: 'string' }, ticker: { type: 'string' }, exchange: nullable('string'), status: { enum: ['listed', 'delisted'] }, url: uri } };
+const status_ = { enum: ['L', 'D'], description: 'L listed, D delisted' };
+const listingRef_ = { type: 'array', description: '[market, ticker, exchange, status]: market is the market code (US, IN...); its company file is companies/{market lower-case}/{ticker}.json', prefixItems: [{ type: 'string' }, { type: 'string' }, nullable('string'), status_], items: false, minItems: 4 };
 export const ISIN_SCHEMA = {
     $schema: 'https://json-schema.org/draft/2020-12/schema',
     $id: `${API_BASE}/schema/isin.schema.json`,
-    title: 'ISIN pointer',
-    description: 'Points an ISIN to the company file of its primary listing. Several lines can share an ISIN (a share and its depositary receipts or cross-listings in other markets): primary is the home-market listing that is still listed, then the largest by market cap; the rest are in others, in the same order.',
-    type: 'object', required: ['isin', 'name', 'primary', 'others'],
-    properties: { isin: { type: 'string', pattern: '^[A-Z]{2}[A-Z0-9]{9}[0-9]$' }, name: { type: 'string', description: 'Name of the primary listing' }, primary: listingRef_, others: { type: 'array', items: listingRef_ } },
-    additionalProperties: false,
+    title: 'ISIN shard',
+    description: 'One file of api/v1/isin/: a map from ISIN to the company lines that carry it, for all ISINs that start with the 3-character file name. Several lines can share an ISIN (a share and its depositary receipts or cross-listings in other markets): primary is the home-market listing that is still listed, then the largest by market cap; the rest are in others, in the same order. A prefix that would exceed 500 KB holds only {"$split": 4}: look in the shard named by the first 4 characters instead.',
+    oneOf: [
+        { type: 'object', propertyNames: { pattern: ISIN_RE }, additionalProperties: { type: 'object', required: ['name', 'primary', 'others'], properties: { name: { type: 'string', description: 'Name of the primary listing' }, primary: { $ref: '#/$defs/line' }, others: { type: 'array', items: { $ref: '#/$defs/line' } } }, additionalProperties: false } },
+        { type: 'object', required: ['$split'], properties: { $split: { type: 'integer', minimum: 4, maximum: 12 } }, additionalProperties: false },
+    ],
+    $defs: { line: listingRef_ },
 };
 export const LOOKUP_SCHEMA = {
     $schema: 'https://json-schema.org/draft/2020-12/schema',
     $id: `${API_BASE}/schema/lookup.schema.json`,
-    title: 'Exchange lookup pointer',
-    description: 'Points an exchange code and ticker, as in the file name (NASDAQ-AAPL, NSE-TCS, LSE-VOD), to the company file.',
-    type: 'object', required: ['key', 'exchange', 'ticker', 'market', 'name', 'isin', 'status', 'url'],
-    properties: { key: { type: 'string', description: 'EXCHANGE-TICKER, the file name without .json' }, exchange: { type: 'string' }, ticker: { type: 'string' }, market: { type: 'string' }, name: { type: 'string' }, isin: nullable('string', { pattern: '^[A-Z]{2}[A-Z0-9]{9}[0-9]$' }), status: { enum: ['listed', 'delisted'] }, url: uri },
-    additionalProperties: false,
+    title: 'Exchange lookup shard',
+    description: 'One file of api/v1/lookup/<EXCHANGE>.json (NASDAQ.json, NSE.json, LSE.json): a map from ticker, as in the market list, to [market, name, isin, status]. The company file is companies/{market lower-case}/{ticker}.json.',
+    type: 'object',
+    additionalProperties: { type: 'array', prefixItems: [{ type: 'string', description: 'market code' }, { type: 'string', description: 'company name' }, nullable('string', { pattern: ISIN_RE }), status_], items: false, minItems: 4 },
 };
 const ENTITY_SCHEMA = {
     type: 'object', required: ['type', 'id', 'name', 'shortName', 'aliases', 'kind', 'owner', 'country', 'logo', 'onDark', 'url'],
@@ -388,8 +396,8 @@ function openapi(counts) {
             [`/api/${API_VERSION}/markets.json`]: { get: { tags: ['Catalogue'], operationId: 'listMarkets', summary: 'All markets', responses: { 200: { description: 'Markets, largest first', content: { 'application/json': { schema: { type: 'array', items: { $ref: '#/components/schemas/Market' } } } } } } } },
             [`/api/${API_VERSION}/markets/{market}.json`]: { get: { tags: ['Catalogue'], operationId: 'getMarket', summary: 'Companies of one market, largest first', parameters: [{ name: 'market', in: 'path', required: true, schema: { type: 'string', examples: ['in', 'us', 'korea'] }, description: 'Lower-case market key from markets.json' }], responses: { 200: { description: 'Slim company rows', content: { 'application/json': { schema: { type: 'array', items: { $ref: '#/components/schemas/CompanyRow' } } } } }, 404: err } } },
             [`/api/${API_VERSION}/companies/{market}/{ticker}.json`]: { get: { tags: ['Company'], operationId: 'getCompany', summary: 'Full profile of one company', parameters: [{ name: 'market', in: 'path', required: true, schema: { type: 'string' } }, { name: 'ticker', in: 'path', required: true, schema: { type: 'string', examples: ['TCS', 'AAPL'] }, description: 'Ticker as in the market list; URL-encode special characters' }], responses: { 200: { description: 'The company', content: { 'application/json': { schema: { $ref: '#/components/schemas/Company' } } } }, 404: err } } },
-            [`/api/${API_VERSION}/isin/{isin}.json`]: { get: { tags: ['Lookup'], operationId: 'getIsin', summary: 'Find a company by ISIN', description: 'A pointer to the primary listing (home market, still listed, largest) and the other lines that share the ISIN. Follow primary.url for the full profile.', parameters: [{ name: 'isin', in: 'path', required: true, schema: { type: 'string', examples: ['US0378331005', 'INE467B01029'] }, description: 'Upper-case ISIN' }], responses: { 200: { description: 'The pointer', content: { 'application/json': { schema: { $ref: '#/components/schemas/IsinPointer' } } } }, 404: err } } },
-            [`/api/${API_VERSION}/lookup/{key}.json`]: { get: { tags: ['Lookup'], operationId: 'getLookup', summary: 'Find a company by exchange code and ticker', description: 'The key is EXCHANGE-TICKER with the exchange code from the company file (NASDAQ-AAPL, NSE-TCS). Companies without an exchange code have no lookup file; use /companies/{market}/{ticker}.json.', parameters: [{ name: 'key', in: 'path', required: true, schema: { type: 'string', examples: ['NASDAQ-AAPL', 'NSE-TCS'] }, description: 'Upper-case exchange code, a hyphen, then the ticker as in the market list' }], responses: { 200: { description: 'The pointer', content: { 'application/json': { schema: { $ref: '#/components/schemas/LookupPointer' } } } }, 404: err } } },
+            [`/api/${API_VERSION}/isin/{prefix}.json`]: { get: { tags: ['Lookup'], operationId: 'getIsinShard', summary: 'Find companies by ISIN: the shard for an ISIN prefix', description: 'A map from ISIN to {name, primary, others} for every ISIN that starts with the prefix. Lines are [market, ticker, exchange, status]; the company file is companies/{market lower-case}/{ticker}.json. The prefix is the first 3 characters of the ISIN; a prefix whose shard would exceed 500 KB (INE, CNE) holds {"$split": 4} and the shard is named by the first 4 characters instead. primary is the home-market line that is still listed, then the largest by market cap.', parameters: [{ name: 'prefix', in: 'path', required: true, schema: { type: 'string', examples: ['US0', 'INE', 'INE4'] }, description: 'First 3 (or 4, after a $split) characters of the upper-case ISIN' }], responses: { 200: { description: 'The shard', content: { 'application/json': { schema: { $ref: '#/components/schemas/IsinShard' } } } }, 404: err } } },
+            [`/api/${API_VERSION}/lookup/{exchange}.json`]: { get: { tags: ['Lookup'], operationId: 'getLookupShard', summary: 'Find companies by ticker: the shard for an exchange code', description: 'A map from ticker (as in the market list) to [market, name, isin, status] for one exchange code from the company files (NASDAQ, NSE, LSE...). Companies without an exchange code are not listed; use /companies/{market}/{ticker}.json.', parameters: [{ name: 'exchange', in: 'path', required: true, schema: { type: 'string', examples: ['NASDAQ', 'NSE'] }, description: 'Upper-case exchange code' }], responses: { 200: { description: 'The shard', content: { 'application/json': { schema: { $ref: '#/components/schemas/LookupShard' } } } }, 404: err } } },
             [`/api/${API_VERSION}/brands.json`]: { get: { tags: ['Brand'], operationId: 'listBrands', summary: 'Every brand, sub-brand and subsidiary with its listed parent', responses: { 200: { description: 'Brands, by name', content: { 'application/json': { schema: { type: 'array', items: { $ref: '#/components/schemas/Brand' } } } } } } } },
             [`/api/${API_VERSION}/institutions.json`]: { get: { tags: ['Institution'], operationId: 'listInstitutions', summary: 'Market institutions: regulators, governments, exchanges, depositories, clearing corporations, payment systems, rating agencies, industry bodies', responses: { 200: { description: 'Institutions, by name', content: { 'application/json': { schema: { type: 'array', items: { $ref: '#/components/schemas/Institution' } } } } } } } },
             [`/api/${API_VERSION}/entities.json`]: { get: { tags: ['Catalogue'], operationId: 'listEntities', summary: 'Every brand and institution in one small index, for a search box', description: 'Companies are in /search-index.json; together the two cover everything with a logo.', responses: { 200: { description: 'Brands and institutions', content: { 'application/json': { schema: { type: 'array', items: { $ref: '#/components/schemas/Entity' } } } } } } } },
@@ -407,8 +415,8 @@ function openapi(counts) {
                 Brand: { ...BRAND_SCHEMA, $schema: undefined, $id: undefined },
                 Institution: { ...INSTITUTION_SCHEMA, $schema: undefined, $id: undefined },
                 Entity: ENTITY_SCHEMA,
-                IsinPointer: { ...ISIN_SCHEMA, $schema: undefined, $id: undefined },
-                LookupPointer: { ...LOOKUP_SCHEMA, $schema: undefined, $id: undefined },
+                IsinShard: { ...ISIN_SCHEMA, $schema: undefined, $id: undefined },
+                LookupShard: { ...LOOKUP_SCHEMA, $schema: undefined, $id: undefined },
             },
         },
     };
@@ -422,8 +430,8 @@ if (process.argv[1] && process.argv[1].endsWith('build-api.js')) {
     const markets = [];
     let total = 0;       // real companies
     const provenanceTotals = {};
-    const byIsin = new Map(), lookups = [];
-    let aliasCount = 0;  // renamed / special-character tickers that reuse another company's logo (see curated/aliases.json)
+    const byIsin = new Map(), lookups = new Map();   // lookups: exchange -> Map(ticker -> row)
+    let lookupCount = 0, aliasCount = 0;  // renamed / special-character tickers that reuse another company's logo (see curated/aliases.json)
     for (const f of fs.readdirSync(path.join(ROOT, 'manifests')).sort()) {
         const key = f.replace('.json', '');
         const items = JSON.parse(fs.readFileSync(path.join(ROOT, 'manifests', f), 'utf-8'));
@@ -433,12 +441,13 @@ if (process.argv[1] && process.argv[1].endsWith('build-api.js')) {
             const c = toCompany(key, ticker, m);
             fs.writeFileSync(path.join(OUT, 'companies', key, `${ticker}.json`), JSON.stringify(c));
             if (m.logoOf) { aliasCount++; continue; }   // an alias has its own company file but is not listed or counted as another company
-            const ref = { market: c.market, ticker, exchange: c.exchange, status: c.listing.status, url: c.links.self };
+            const st = c.listing.status === 'listed' ? 'L' : 'D';
+            const ref = [c.market, ticker, c.exchange, st];
             if (c.isin) {
                 if (!byIsin.has(c.isin)) byIsin.set(c.isin, []);
-                byIsin.get(c.isin).push({ ref, name: c.name, home: !!c.country && c.country === MARKETS[key]?.country, listed: c.listing.status === 'listed', cap: c.marketCap?.usd || 0 });
+                byIsin.get(c.isin).push({ ref, name: c.name, home: !!c.country && c.country === MARKETS[key]?.country, listed: st === 'L', cap: c.marketCap?.usd || 0 });
             }
-            if (c.exchange) lookups.push({ key: `${c.exchange}-${ticker}`, exchange: c.exchange, ticker, market: c.market, name: c.name, isin: c.isin, status: c.listing.status, url: c.links.self });
+            if (c.exchange) { if (!lookups.has(c.exchange)) lookups.set(c.exchange, new Map()); lookups.get(c.exchange).set(ticker, [c.market, c.name, c.isin, st]); lookupCount++; }
             provenanceTotals[c.logo.provenance] = (provenanceTotals[c.logo.provenance] || 0) + 1;
             rows.push({ ticker, name: c.name, sector: c.classification.sector, marketCapUsd: c.marketCap?.usd ?? null, url: c.links.self });
             total++;
@@ -450,10 +459,27 @@ if (process.argv[1] && process.argv[1].endsWith('build-api.js')) {
     markets.sort((a, b) => b.companies - a.companies);
     // ISIN pointers. Duplicates are ordered deterministically: still listed, home market, larger market cap, then market and ticker.
     for (const [isin, list] of byIsin) {
-        list.sort((a, b) => b.listed - a.listed || b.home - a.home || b.cap - a.cap || (a.ref.market < b.ref.market ? -1 : a.ref.market > b.ref.market ? 1 : 0) || (a.ref.ticker < b.ref.ticker ? -1 : a.ref.ticker > b.ref.ticker ? 1 : 0));
-        write(`isin/${isin}.json`, { isin, name: list[0].name, primary: list[0].ref, others: list.slice(1).map((x) => x.ref) });
+        list.sort((a, b) => b.listed - a.listed || b.home - a.home || b.cap - a.cap || cmp(a.ref[0], b.ref[0]) || cmp(a.ref[1], b.ref[1]));
     }
-    for (const l of lookups) write(`lookup/${l.key}.json`, l);
+    // Shards: ISINs by their first ISIN_SHARD_PREFIX characters; a shard over ISIN_SHARD_MAX bytes becomes a {"$split"} stub and is sharded again on one more character.
+    const shardIsins = (prefixLen, isins) => {
+        const groups = new Map();
+        for (const isin of isins) { const p = isin.slice(0, prefixLen); if (!groups.has(p)) groups.set(p, {}); }
+        for (const isin of isins) { const list = byIsin.get(isin); Object.defineProperty(groups.get(isin.slice(0, prefixLen)), isin, { value: { name: list[0].name, primary: list[0].ref, others: list.slice(1).map((x) => x.ref) }, enumerable: true }); }
+        for (const p of [...groups.keys()].sort()) {
+            const json = JSON.stringify(groups.get(p));
+            if (Buffer.byteLength(json) > ISIN_SHARD_MAX) {
+                write(`isin/${p}.json`, { $split: prefixLen + 1 });
+                shardIsins(prefixLen + 1, Object.keys(groups.get(p)));
+            } else fs.writeFileSync(path.join(OUT, `isin/${p}.json`), json);
+        }
+    };
+    shardIsins(ISIN_SHARD_PREFIX, [...byIsin.keys()].sort());
+    for (const [exchange, rows] of [...lookups].sort((a, b) => cmp(a[0], b[0]))) {
+        const o = {};
+        for (const t of [...rows.keys()].sort(cmp)) Object.defineProperty(o, t, { value: rows.get(t), enumerable: true });
+        write(`lookup/${exchange}.json`, o);
+    }
     fs.mkdirSync(path.join(OUT, 'brands'), { recursive: true });
     const brands = BRANDS.map(toBrand).sort((a, b) => a.name.localeCompare(b.name, 'en'));
     for (const b of brands) write(`brands/${b.slug}.json`, b);
@@ -474,13 +500,13 @@ if (process.argv[1] && process.argv[1].endsWith('build-api.js')) {
     write('openapi.json', openapi(counts));
     write('index.json', {
         api: 'Global Stock Logos API', version: API_VERSION, dataVersion: manifest.version,
-        dataRefreshedAt: manifest.dataRefreshedAt, companies: total, logoProvenance: logoProvenanceCounts, aliases: aliasCount, isins: byIsin.size, lookups: lookups.length, markets: markets.length, brands: brands.length, institutions: institutions.length, cdn: CDN,
+        dataRefreshedAt: manifest.dataRefreshedAt, companies: total, logoProvenance: logoProvenanceCounts, aliases: aliasCount, isins: byIsin.size, lookups: lookupCount, markets: markets.length, brands: brands.length, institutions: institutions.length, cdn: CDN,
         endpoints: {
             markets: `${API_BASE}/markets.json`,
             market: `${API_BASE}/markets/{market}.json`,
             company: `${API_BASE}/companies/{market}/{ticker}.json`,
-            isin: `${API_BASE}/isin/{isin}.json`,
-            lookup: `${API_BASE}/lookup/{exchange}-{ticker}.json`,
+            isin: `${API_BASE}/isin/{prefix}.json`,
+            lookup: `${API_BASE}/lookup/{exchange}.json`,
             brands: `${API_BASE}/brands.json`,
             brand: `${API_BASE}/brands/{slug}.json`,
             institutions: `${API_BASE}/institutions.json`,

@@ -15,7 +15,7 @@ import path from 'path';
 import { execFileSync } from 'child_process';
 import { fileURLToPath } from 'url';
 import { generateProceduralSvg } from './generator.js';
-import { isProcedural, hasVisibleArt, namespaceIds, idsNamespaced, fetchRealSvg } from './svg-quality.js';
+import { activeContent, isProcedural, hasVisibleArt, namespaceIds, idsNamespaced, fetchRealSvg } from './svg-quality.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const LOGOS = path.join(ROOT, 'logos');
@@ -28,10 +28,16 @@ if (CHECK) {
     const markets = fs.readdirSync(LOGOS).filter((d) => fs.statSync(path.join(LOGOS, d)).isDirectory());
     const files = markets.flatMap((d) => fs.readdirSync(path.join(LOGOS, d)).filter((f) => f.endsWith('.svg')).map((f) => path.join(LOGOS, d, f)));
     const problems = [];
+    // Legacy root copies (logos/<TICKER>.svg): only the active-content rule applies.
+    for (const f of fs.readdirSync(LOGOS).filter((x) => x.endsWith('.svg')).map((x) => path.join(LOGOS, x))) {
+        const bad = activeContent(fs.readFileSync(f, 'utf-8'));
+        if (bad) problems.push(`${path.relative(ROOT, f)}: ${bad}`);
+    }
     for (const f of files) {
         const svg = fs.readFileSync(f, 'utf-8');
         const rel = path.relative(ROOT, f);
-        if (/<script|<foreignObject|\son\w+\s*=|(?:xlink:)?href="(?:https?:)?\/\//i.test(svg)) problems.push(`${rel}: active content or external link`);
+        const bad = activeContent(svg);
+        if (bad) problems.push(`${rel}: ${bad}`);
         if (!isProcedural(svg) && !hasVisibleArt(svg)) problems.push(`${rel}: empty logo`);
         if (!isProcedural(svg) && !idsNamespaced(svg)) problems.push(`${rel}: ids not unique (run npm run quality:fix)`);
     }

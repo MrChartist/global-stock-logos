@@ -97,6 +97,22 @@ await t('lookup by exchange and ticker', async () => {
     assert.equal((await api.lookup('NSE', 'TCS')).market, 'IN');
     assert.equal((await api.company(l.market, l.ticker)).name, l.name);
 });
+await t('byIsin follows a $split stub (INE) and caches shards', async () => {
+    const stub = JSON.parse(fs.readFileSync(path.join(ROOT, 'api/v1/isin/INE.json'), 'utf-8'));
+    assert.equal(stub.$split, 4);
+    let calls = 0;
+    const counting = new StockLogosClient({ baseUrl: base, fetch: (u) => { calls++; return fetch(u); } });
+    const p = await counting.byIsin('INE467B01029');
+    assert.equal(p.primary.ticker, 'TCS'); assert.equal(calls, 2);
+    await counting.byIsin('INE467B01029'); assert.equal(calls, 2);
+    assert.match(p.primary.url, /\/api\/v1\/companies\/in\/TCS\.json$/);
+});
+await t('lookup fetches one exchange shard once', async () => {
+    let calls = 0;
+    const counting = new StockLogosClient({ baseUrl: base, fetch: (u) => { calls++; return fetch(u); } });
+    await counting.lookup('NSE', 'TCS'); await counting.lookup('nse', 'INFY');
+    assert.equal(calls, 1);
+});
 await t('unknown ISIN and lookup are typed 404s', async () => {
     await assert.rejects(() => api.byIsin('XX0000000000'), (e) => e instanceof ApiError && e.status === 404);
     await assert.rejects(() => api.lookup('NASDAQ', 'NOSUCHTICKER'), (e) => e instanceof ApiError && e.status === 404);

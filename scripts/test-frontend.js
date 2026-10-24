@@ -34,6 +34,11 @@ for (const [label, size] of [['desktop', { width: 1280, height: 900 }], ['phone'
     const errors = [];
     page.on('pageerror', (e) => errors.push(e.message));
     page.on('console', (m) => { if (m.type() === 'error' && !/Failed to load resource/.test(m.text())) errors.push(m.text()); });
+    // Content-Security-Policy violations of any kind (inline script or style, blocked host, blocked image) are collected here.
+    await page.addInitScript(() => {
+        window.__csp = [];
+        document.addEventListener('securitypolicyviolation', (e) => window.__csp.push(`${e.violatedDirective}: ${e.blockedURI || e.sample}`));
+    });
     await page.goto(base, { waitUntil: 'networkidle' });
 
     await t(`${label}: catalogue loads and is sorted largest first`, async () => {
@@ -77,12 +82,15 @@ for (const [label, size] of [['desktop', { width: 1280, height: 900 }], ['phone'
         await page.route('**/api/v1/companies/us/AAPL.json', async (route) => {
             const res = await route.fetch(); const c = await res.json();
             c.profile.website = 'javascript:alert(1)'; c.links.yahoo = 'javascript:alert(2)'; c.name = '<img src=x onerror=alert(3)>';
+            c.logo.brandColor = 'red;background:url(https://evil.example/x)'; c.logo.png = { '<i onclick=alert(5)>': 'https://x.example/a.png' };
+            if (c.marketCap) { c.marketCap.currency = '<img src=x onerror=alert(4)>'; c.marketCap.local = 1e9; }
             await route.fulfill({ response: res, json: c });
         });
         await page.goto(`${base}/#/US/AAPL`, { waitUntil: 'networkidle' });
         await page.waitForSelector('dialog[open] .kv');
         assert.equal(await page.locator('dialog a[href^="javascript:"]').count(), 0);
-        assert.equal(await page.locator('dialog img[onerror]').count(), 0);
+        assert.equal(await page.locator('dialog img[onerror], dialog [onclick]').count(), 0);
+        assert.equal(await page.locator('dialog [data-color], dialog [style*="evil"]').count(), 0, 'a non-hex colour is dropped');
         await page.unroute('**/api/v1/companies/us/AAPL.json');
     });
     await t(`${label}: light and dark themes both apply, and the toggle works`, async () => {
@@ -130,6 +138,12 @@ for (const [label, size] of [['desktop', { width: 1280, height: 900 }], ['phone'
         await page.waitForFunction(() => /^\d+ of/.test(document.getElementById('iCount').textContent));
         const card = page.locator('#iResults .bcard', { has: page.locator('.nm', { hasText: /^SEBI$/ }) }).first();
         assert.match(await card.getAttribute('href'), /institutions\/(logos|png)\/.*sebi/);
+    });
+    await t(`${label}: Content-Security-Policy is set and nothing violated it`, async () => {
+        const csp = await page.getAttribute('meta[http-equiv="Content-Security-Policy"]', 'content');
+        assert.match(csp, /default-src 'none'/); assert.ok(!/unsafe-/.test(csp), 'no unsafe-inline or unsafe-eval');
+        assert.equal(await page.locator('[onclick], [onload], [onerror]').count(), 0, 'no inline handler attributes in the markup');
+        assert.deepEqual(await page.evaluate(() => window.__csp), []);
     });
     await t(`${label}: no script errors`, () => assert.deepEqual(errors, []));
     await page.close();

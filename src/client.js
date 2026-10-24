@@ -13,6 +13,10 @@
  * Every method reads a static JSON file (see docs/API.md). Results are cached in memory.
  */
 
+/** @param {string} market @param {string} ticker */
+const companyUrl = (market, ticker) => `${DEFAULT_BASE_URL}/api/v1/companies/${market.toLowerCase()}/${encodeURIComponent(ticker)}.json`;
+/** @param {[string, string, string | null, string]} l @returns {ListingRef} */
+const listingRef = (l) => ({ market: l[0], ticker: l[1], exchange: l[2], status: l[3] === 'L' ? 'listed' : 'delisted', url: companyUrl(l[0], l[1]) });
 export const DEFAULT_BASE_URL = 'https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main';
 
 /**
@@ -131,18 +135,40 @@ export class StockLogosClient {
     /**
      * Find a company by ISIN. Returns a pointer: `primary` is the line to use (still listed, home market, then largest market cap),
      * `others` are the other lines that share the ISIN (depositary receipts, cross-listings), in the same order; follow `primary.url` or call company().
-     * A 404 ApiError means no company in the catalogue carries that ISIN.
+     * Fetches one shard (the ISIN's first 3 characters, 4 for INE and CNE) and caches it. A 404 ApiError means no company in the catalogue carries that ISIN.
      * @param {string} isin @returns {Promise<IsinPointer>}
      */
-    byIsin(isin) { return this._json(`api/v1/isin/${encodeURIComponent(String(isin).trim().toUpperCase())}.json`); }
+    async byIsin(isin) {
+        const id = String(isin).trim().toUpperCase();
+        // One shard holds every ISIN with the same first 3 characters; a busy prefix (INE, CNE) holds {"$split": n} and is sharded on n characters.
+        let n = 3, path = '';
+        for (let hops = 0; hops < 4; hops++) {
+            path = `api/v1/isin/${encodeURIComponent(id.slice(0, n))}.json`;
+            if (id.length < n) break;
+            const shard = await this._json(path);
+            if (typeof shard.$split === 'number' && shard.$split > n) { n = shard.$split; continue; }
+            const e = Object.hasOwn(shard, id) ? shard[id] : null;
+            if (e) return { isin: id, name: e.name, primary: listingRef(e.primary), others: e.others.map((/** @type {[string, string, string | null, string]} */ l) => listingRef(l)) };
+            break;
+        }
+        const url = `${this.baseUrl}/${path}`;
+        throw new ApiError(`404 for ISIN ${id} (${url})`, 404, url);
+    }
 
     /**
      * Find a company by exchange code and ticker, e.g. lookup('NASDAQ', 'AAPL') or lookup('NSE', 'TCS'): the exchange codes are the `exchange`
-     * values in company files. Returns a pointer with the market, name, ISIN and the company's `url`. Companies with no exchange code have no
-     * lookup file (use company()). A 404 ApiError means no such listing.
+     * values in company files. Returns a pointer with the market, name, ISIN and the company's `url`. Fetches one shard per exchange and caches it. Companies with no exchange code are not
+     * listed (use company()). A 404 ApiError means no such listing.
      * @param {string} exchange @param {string} ticker @returns {Promise<LookupPointer>}
      */
-    lookup(exchange, ticker) { return this._json(`api/v1/lookup/${encodeURIComponent(`${String(exchange).trim().toUpperCase()}-${ticker}`)}.json`); }
+    async lookup(exchange, ticker) {
+        const ex = String(exchange).trim().toUpperCase(), t = String(ticker);
+        const path = `api/v1/lookup/${encodeURIComponent(ex)}.json`;
+        const shard = await this._json(path);   // one file per exchange code, cached after the first call
+        const r = Object.hasOwn(shard, t) ? shard[t] : null;
+        if (!r) { const url = `${this.baseUrl}/${path}`; throw new ApiError(`404 for ${ex}-${t} (${url})`, 404, url); }
+        return { key: `${ex}-${t}`, exchange: ex, ticker: t, market: r[0], name: r[1], isin: r[2], status: r[3] === 'L' ? 'listed' : 'delisted', url: companyUrl(r[0], t) };
+    }
 
     /** Every brand and institution as one small search index (companies are in searchRows()). @returns {Promise<Entity[]>} */
     entities() { return this._json('api/v1/entities.json'); }

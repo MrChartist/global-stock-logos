@@ -28,11 +28,13 @@ function fmtInr(v) {
 function fmtLocal(v, currency) {
   if (v == null) return '—';
   try { return new Intl.NumberFormat('en-US', { style: 'currency', currency, notation: 'compact', maximumFractionDigits: 2 }).format(v); }
-  catch { return `${new Intl.NumberFormat('en-US', { notation: 'compact', maximumFractionDigits: 2 }).format(v)} ${currency || ''}`.trim(); }
+  catch { return esc(`${new Intl.NumberFormat('en-US', { notation: 'compact', maximumFractionDigits: 2 }).format(v)} ${currency || ''}`.trim()); }
 }
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 // Only http(s) links are ever put in an href, whatever the data contains.
 const safeUrl = (u) => { try { const x = new URL(u); return x.protocol === 'https:' || x.protocol === 'http:' ? x.href : null; } catch { return null; } };
+// A colour from data is used only when it is a plain hex value (it ends up in CSS).
+const hexColor = (c) => (/^#[0-9a-f]{3,8}$/i.test(c || '') ? c : null);
 const na = '<span class="na">Not available</span>';
 const val = (v) => (v == null || v === '' ? na : esc(v));
 
@@ -64,10 +66,11 @@ matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', (e) => {
 
 // ---------------------------------------------------------------- data
 async function load() {
-  let index;
-  try { index = await api.index(); }
-  catch { api = CDN; index = await api.index(); } // not hosted with its own api/ folder: use the CDN copy
-  const [markets, top] = await Promise.all([api.markets(), api.topRows()]);
+  // One round trip, not two: the three small files are requested together.
+  const get = (c) => Promise.all([c.index(), c.markets(), c.topRows()]);
+  let index, markets, top;
+  try { [index, markets, top] = await get(api); }
+  catch { api = CDN; [index, markets, top] = await get(api); } // not hosted with its own api/ folder: use the CDN copy
   state.all = top; // raw rows: [ticker, name, market, format, yahooTicker, marketCapUsd]; objects are built only for what is shown
   state.total = index.companies;
   state.marketNames = Object.fromEntries(markets.map((m) => [m.code, m.country]));
@@ -241,13 +244,14 @@ async function showDetail(market, ticker) {
   if (!dlg.open) dlg.showModal();
   try {
     const c = await api.company(market, ticker);
-    if (c.logo.brandColor && c.logo.brandColorSource !== 'neutral-tile') sheet.style.setProperty('--brand', c.logo.brandColor);
+    if (hexColor(c.logo.brandColor) && c.logo.brandColorSource !== 'neutral-tile') sheet.style.setProperty('--brand', c.logo.brandColor);
     $('dBody').innerHTML = detailHtml(c);
     $('dBody').querySelectorAll('[data-copy]').forEach((b) => b.addEventListener('click', async () => {
       const label = b.querySelector('span');
       try { await navigator.clipboard.writeText(b.dataset.copy); label.textContent = 'Copied'; b.classList.add('done'); } catch { label.textContent = 'Press Ctrl+C'; }
       setTimeout(() => { label.textContent = 'Copy'; b.classList.remove('done'); }, 1600);
     }));
+    $('dBody').querySelectorAll('[data-color]').forEach((i) => { i.style.background = i.dataset.color; });
     $('dBody').querySelectorAll('.brands img').forEach((i) => fallback(i, i.dataset.cdn));
     const img = $('dBody').querySelector('img.logo');
     img.addEventListener('error', () => { if (!img.dataset.fb) { img.dataset.fb = '1'; img.src = c.logo.file.url; } });
@@ -273,7 +277,7 @@ function detailHtml(c) {
   const hd = safeUrl(lg.hd);
   const brands = c.brands || [];
   const srcText = (k, v) => { const u = safeUrl(v); return u ? `<a href="${esc(u)}" rel="noopener noreferrer">${esc(k)}</a>` : `${esc(k)} (${esc(v)})`; };
-  const sizes = lg.png ? Object.keys(lg.png).sort((a, b) => a - b).map((s) => `<a href="${esc(lg.png[s])}">${s} px PNG</a>`).join('') : '';
+  const sizes = lg.png ? Object.keys(lg.png).sort((a, b) => a - b).map((s) => `<a href="${esc(lg.png[s])}">${esc(s)} px PNG</a>`).join('') : '';
   const embed = [
     ['HTML', `<img src="${cdnSvg}" width="32" height="32" alt="${c.name} logo">`],
     ['Markdown', `![${c.name}](${cdnSvg})`],
@@ -319,9 +323,9 @@ function detailHtml(c) {
         ${c.wikidata ? row('Wikidata', `<a href="https://www.wikidata.org/wiki/${esc(c.wikidata)}" rel="noopener noreferrer">${esc(c.wikidata)}</a>`) : ''}
       </dl></section>
       <section class="group"><h3>Logo</h3><dl class="rows">
-        ${row('Brand colour', lg.brandColor ? `<span class="sw"><i style="background:${esc(lg.brandColor)}"></i>${esc(lg.brandColor)}</span><small>From the logo file${lg.brandColorSource === 'neutral-tile' ? ' (black, white or grey logo: low confidence)' : ''}</small>` : na)}
+        ${row('Brand colour', hexColor(lg.brandColor) ? `<span class="sw"><i data-color="${esc(lg.brandColor)}"></i>${esc(lg.brandColor)}</span><small>From the logo file${lg.brandColorSource === 'neutral-tile' ? ' (black, white or grey logo: low confidence)' : ''}</small>` : na)}
       </dl>
-      <div class="rows" style="margin-top:8px"><div class="files"><a href="${esc(svg)}">${ext === 'png' ? 'PNG (original)' : 'SVG'}</a>${hd ? `<a href="${esc(hd)}">Full logo (${hd.endsWith('.svg') ? 'HD SVG' : 'HD PNG'})</a>` : ''}${sizes}${lg.png ? '' : '<span class="prov">PNG sizes exist for the 3,000 largest companies; other logos are SVG.</span>'}</div></div></section>
+      <div class="rows tight"><div class="files"><a href="${esc(svg)}">${ext === 'png' ? 'PNG (original)' : 'SVG'}</a>${hd ? `<a href="${esc(hd)}">Full logo (${hd.endsWith('.svg') ? 'HD SVG' : 'HD PNG'})</a>` : ''}${sizes}${lg.png ? '' : '<span class="prov">PNG sizes exist for the 3,000 largest companies; other logos are SVG.</span>'}</div></div></section>
       ${brands.length ? `<section class="group"><h3>Brands</h3><ul class="brands">${brands.map((b) => `<li><a href="${esc(safeUrl(b.logo) || '')}" rel="noopener noreferrer"><img src="${esc(own(safeUrl(/\.svg$/.test(b.logo) ? b.logo : b.png || b.logo)) || '')}" data-cdn="${esc(safeUrl(/\.svg$/.test(b.logo) ? b.logo : b.png || b.logo) || '')}" alt="" loading="lazy" decoding="async"><span>${esc(b.name)}</span></a></li>`).join('')}</ul></section>` : ''}
       <section class="group"><h3>Use it</h3><div class="rows">
         ${embed.map(([k, v]) => `<div class="snip"><span class="k">${esc(k)}</span><code title="${esc(k)}">${esc(v)}</code><button type="button" class="copy" data-copy="${esc(v)}" aria-label="Copy ${esc(k)}"><span>Copy</span></button></div>`).join('')}
@@ -407,7 +411,7 @@ function renderInstitutions() {
     const best = safeUrl(x.logo.format === 'svg' ? x.logo.url : (x.logo.png[sizes[0]] || x.logo.url));
     const li = document.createElement('li');
     const a = document.createElement('a');
-    a.className = 'card bcard'; a.href = best || '#'; a.target = '_blank'; a.rel = 'noopener';
+    a.className = 'card bcard'; a.href = best || '#'; a.target = '_blank'; a.rel = 'noopener noreferrer';
     a.setAttribute('aria-label', `${x.name}: open the ${x.logo.format === 'svg' ? 'vector' : `${sizes[0]} px`} logo`);
     a.innerHTML = `<span class="bl${x.onDark ? ' dark' : ''}"><img width="160" height="64" loading="lazy" decoding="async" alt="" src="${esc(own(safeUrl(x.logo.svg || x.logo.png['256'] || x.logo.url)) || '')}"></span>
       <span class="nm">${esc(x.shortName || x.name)}</span>

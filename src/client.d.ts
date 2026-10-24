@@ -378,14 +378,14 @@ export declare class StockLogosClient {
     /**
      * Find a company by ISIN. Returns a pointer: `primary` is the line to use (still listed, home market, then largest market cap),
      * `others` are the other lines that share the ISIN (depositary receipts, cross-listings), in the same order; follow `primary.url` or call company().
-     * A 404 ApiError means no company in the catalogue carries that ISIN.
+     * Fetches one shard (the ISIN's first 3 characters, 4 for INE and CNE) and caches it. A 404 ApiError means no company in the catalogue carries that ISIN.
      * @param {string} isin @returns {Promise<IsinPointer>}
      */
     byIsin(isin: string): Promise<IsinPointer>;
     /**
      * Find a company by exchange code and ticker, e.g. lookup('NASDAQ', 'AAPL') or lookup('NSE', 'TCS'): the exchange codes are the `exchange`
-     * values in company files. Returns a pointer with the market, name, ISIN and the company's `url`. Companies with no exchange code have no
-     * lookup file (use company()). A 404 ApiError means no such listing.
+     * values in company files. Returns a pointer with the market, name, ISIN and the company's `url`. Fetches one shard per exchange and caches it. Companies with no exchange code are not
+     * listed (use company()). A 404 ApiError means no such listing.
      * @param {string} exchange @param {string} ticker @returns {Promise<LookupPointer>}
      */
     lookup(exchange: string, ticker: string): Promise<LookupPointer>;

@@ -6,6 +6,24 @@ import crypto from 'crypto';
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
 
+/**
+ * Active or external content in an SVG (it must be safe even when inlined or opened directly).
+ * Returns a short reason, or null. Allowed: local #refs, data:image/png|jpeg|gif|webp hrefs (rasters are
+ * rejected separately for vector-only folders).
+ */
+const ACTIVE_RE = /<\s*(script|foreignObject|iframe|embed|object|set|handler|listener)\b|\son[a-z]+\s*=|javascript:|vbscript:|<!ENTITY|@import|<\?xml-stylesheet/i;
+export function activeContent(svg) {
+    const m = ACTIVE_RE.exec(svg);
+    if (m) return `active content (${m[0].trim().slice(0, 20)})`;
+    for (const h of svg.matchAll(/(?:xlink:)?href\s*=\s*(["'])\s*(.*?)\1/gis)) {
+        const v = h[2].trim();
+        if (v.startsWith('#') || /^data:image\/(png|jpe?g|gif|webp);base64,/i.test(v)) continue;
+        return `external or unsafe href (${v.slice(0, 30)})`;
+    }
+    if (/url\(\s*["']?\s*(?!#)[a-z]/i.test(svg)) return 'external url()';
+    return null;
+}
+
 /** Generated initials badge from generator.js (not a real company logo). */
 export function isProcedural(svg) {
     return /id="grad-[^"]*"/.test(svg.slice(0, 800)) && /id="shadow-/.test(svg.slice(0, 1200));

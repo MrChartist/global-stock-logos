@@ -14,8 +14,8 @@ Machine-readable: [OpenAPI 3.1](../api/v1/openapi.json) · JSON Schemas of a [co
 | `GET /api/v1/markets.json` | All markets: `key`, `code`, `country`, `companies`, `url` |
 | `GET /api/v1/markets/{market}.json` | Slim rows of one market, largest first: `ticker`, `name`, `sector`, `marketCapUsd`, `url` |
 | `GET /api/v1/companies/{market}/{ticker}.json` | The full profile of one company, with its `brands` |
-| `GET /api/v1/isin/{isin}.json` | Find a company by ISIN: a small pointer to the `primary` listing and the `others` that share the ISIN (see [Lookup by ISIN or exchange ticker](#lookup-by-isin-or-exchange-ticker)) |
-| `GET /api/v1/lookup/{exchange}-{ticker}.json` | Find a company by exchange code and ticker (`NASDAQ-AAPL`, `NSE-TCS`): a small pointer with the company `url` |
+| `GET /api/v1/isin/{prefix}.json` | Find a company by ISIN: a shard (map ISIN to `primary` listing and the `others` that share it) for the ISIN's first 3 characters (see [Lookup by ISIN or exchange ticker](#lookup-by-isin-or-exchange-ticker)) |
+| `GET /api/v1/lookup/{exchange}.json` | Find a company by exchange code and ticker: a map from ticker to `[market, name, isin, status]` for one exchange (`NASDAQ.json`, `NSE.json`) |
 | `GET /api/v1/brands.json` | Every brand, sub-brand and subsidiary with its listed parent (see [BRANDS.md](./BRANDS.md)) |
 | `GET /api/v1/brands/{slug}.json` | One brand: aliases, founded, country, parent and all listed `owners`, `markets`, logo URLs (SVG or PNG, mark, PNG 256/512/1024), sources |
 | `GET /api/v1/institutions.json` | Market institutions: regulators, government bodies, exchanges, depositories, payment systems (see [BRANDS.md](./BRANDS.md#market-institutions)) |
@@ -91,20 +91,22 @@ img.src = api.brandLogoUrl('jio', 512);        // no request needed
 
 ### Lookup by ISIN or exchange ticker
 
-If you hold an ISIN or an exchange code and ticker, you do not need to search. Both endpoints return a small pointer (about 300 bytes to 3 KB); follow its `url` for the full profile.
+If you hold an ISIN or an exchange code and ticker, you do not need to search. Both indexes are **sharded** so the repository holds a few hundred files, not tens of thousands: fetch the one shard that holds your key (the [client](#javascript-client) does this and caches it), then follow the company file.
 
 ```bash
-curl -s .../api/v1/isin/US0378331005.json
-# { "isin": "US0378331005", "name": "Apple Inc.",
-#   "primary": { "market": "US", "ticker": "AAPL", "exchange": "NASDAQ", "status": "listed", "url": ".../companies/us/AAPL.json" },
-#   "others": [ { "market": "MEXICO", "ticker": "AAPL", "exchange": "BMV", ... }, ... ] }
-curl -s .../api/v1/lookup/NASDAQ-AAPL.json
-# { "key": "NASDAQ-AAPL", "exchange": "NASDAQ", "ticker": "AAPL", "market": "US", "name": "Apple Inc.", "isin": "US0378331005", "status": "listed", "url": ".../companies/us/AAPL.json" }
+# ISIN: the shard is named by the first 3 characters (431 shards, none over 500 KB)
+curl -s .../api/v1/isin/US0.json | jq '.US0378331005'
+# { "name": "Apple Inc.", "primary": ["US", "AAPL", "NASDAQ", "L"], "others": [["MEXICO", "AAPL", "BMV", "L"], ...] }
+# Exchange code: one shard per exchange, ticker -> [market, name, isin, status]
+curl -s .../api/v1/lookup/NASDAQ.json | jq '.AAPL'
+# ["US", "Apple Inc.", "US0378331005", "L"]
 ```
 
+- **Compact lines.** A listing is `[market, ticker, exchange, status]`: `market` is the market code (`US`, `IN`), `status` is `"L"` (listed) or `"D"` (delisted). Its company file is `/api/v1/companies/{market lower-case}/{ticker}.json` (URL-encode special characters in the ticker).
+- **Big prefixes.** A prefix whose shard would pass 500 KB (`INE`, `CNE`) holds only `{"$split": 4}`: read the shard named by the first 4 characters instead (`INE4.json`). The client follows this for you.
 - **One ISIN, several lines.** A share and its depositary receipts or cross-listings carry the same ISIN (Apple has 16 lines). `primary` is chosen the same way every build: still listed first, then the home market (the company's country is the market's country), then the larger market cap, then market and ticker in alphabetical order. `others` holds every other line in that order. A line never appears twice.
-- **Lookup keys.** `{exchange}` is the upper-case `exchange` value of the company file (`NASDAQ`, `NYSE`, `NSE`, `BSE`, `LSE`, `XETR`, `HKEX`, `TSE`...), then a hyphen, then the ticker as in the market list (URL-encode special characters). Exchange codes are unique per market, so a key never points at two companies. About 5,000 companies have no exchange code yet and no lookup file; use `/companies/{market}/{ticker}.json` for them. Renamed-ticker aliases are not listed.
-- A missing ISIN or lookup key returns **404**. Counts are in `index.json` (`isins`, `lookups`). Schemas: [isin](../api/v1/schema/isin.schema.json), [lookup](../api/v1/schema/lookup.schema.json).
+- **Lookup keys.** The file name is the upper-case `exchange` value of the company file (`NASDAQ`, `NYSE`, `NSE`, `BSE`, `LSE`, `XETR`, `HKEX`, `TSE`...); inside it the key is the ticker as in the market list. Exchange codes are unique per market, so an exchange and ticker never point at two companies. About 5,000 companies have no exchange code yet and are not in a lookup shard; use `/companies/{market}/{ticker}.json` for them. Renamed-ticker aliases are not listed.
+- A missing shard or key means no such ISIN or listing (the client throws a 404 `ApiError`). Counts are in `index.json` (`isins`, `lookups`). Schemas: [isin](../api/v1/schema/isin.schema.json), [lookup](../api/v1/schema/lookup.schema.json).
 
 ### How to read it
 
@@ -131,7 +133,7 @@ await api.market('korea');                                 // companies of one m
 await api.company('us', 'AAPL');                           // full profile
 await api.brands();                                        // every brand with its listed parent
 await api.institutions();                                  // SEBI, RBI, NSE, NPCI, UPI... with logos
-await api.byIsin('US0378331005');                          // pointer: primary listing and the other lines
+await api.byIsin('US0378331005');                          // primary listing and the other lines (one cached shard fetch)
 await api.lookup('NSE', 'TCS');                            // pointer from exchange code and ticker
 await api.entities();                                      // brands and institutions in one small index
 await api.find('upi');                                     // companies, brands and institutions together
