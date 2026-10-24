@@ -25051,6 +25051,110 @@
   },
   "chairman": "Carlo Cimbri"
  },
+ "JAPAN:1605": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.inpex.com/english/company/profile.html",
+   "ceo": "https://www.inpex.com/english/company/officer/"
+  },
+  "ceo": "Takayuki Ueda"
+ },
+ "JAPAN:1801": {
+  "website": "https://www.taisei.co.jp",
+  "sources": {
+   "website": "https://www.taisei.co.jp/english/profile/data/",
+   "headquarters": "https://www.taisei.co.jp/english/profile/data/"
+  },
+  "headquarters": "Tokyo, Japan"
+ },
+ "JAPAN:1802": {
+  "website": "https://www.obayashi.co.jp",
+  "sources": {
+   "website": "https://www.obayashi.co.jp/en/company/profile.html",
+   "headquarters": "https://www.obayashi.co.jp/en/company/profile.html",
+   "ceo": "https://www.obayashi.co.jp/en/company/directors_officers.html",
+   "chairman": "https://www.obayashi.co.jp/en/company/directors_officers.html"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Toshimi Sato",
+  "chairman": "Takeo Obayashi"
+ },
+ "JAPAN:1803": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.shimz.co.jp/en/company/about/outline/",
+   "ceo": "https://www.shimz.co.jp/en/company/about/officer/",
+   "chairman": "https://www.shimz.co.jp/en/company/about/officer/"
+  },
+  "ceo": "Tatsuya Shimmura",
+  "chairman": "Kazuyuki Inoue"
+ },
+ "JAPAN:1812": {
+  "website": "https://www.kajima.co.jp",
+  "sources": {
+   "website": "https://www.kajima.co.jp/english/prof/outline/index.html",
+   "headquarters": "https://www.kajima.co.jp/english/prof/outline/index.html",
+   "ceo": "https://www.kajima.co.jp/english/prof/officers/index.html",
+   "chairman": "https://www.kajima.co.jp/english/prof/officers/index.html"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Masafumi Kiryu",
+  "chairman": "Yoshikazu Oshimi"
+ },
+ "JAPAN:1925": {
+  "headquarters": "Osaka, Japan",
+  "sources": {
+   "headquarters": "https://www.daiwahouse.com/English/company/outline/index.html",
+   "ceo": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YAZ5.pdf",
+   "chairman": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100YAZ5.pdf"
+  },
+  "ceo": "Keiichi Yoshii",
+  "chairman": "Keiichi Yoshii"
+ },
+ "JAPAN:2502": {
+  "website": "https://www.asahigroup-holdings.com",
+  "sources": {
+   "website": "https://www.asahigroup-holdings.com/en/company/profile/",
+   "headquarters": "https://www.asahigroup-holdings.com/en/company/profile/",
+   "ceo": "https://www.asahigroup-holdings.com/en/company/board/",
+   "chairman": "https://www.asahigroup-holdings.com/en/company/board/"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Atsushi Katsuki",
+  "chairman": "Shigeo Ohyagi"
+ },
+ "JAPAN:2503": {
+  "website": "https://www.kirinholdings.com",
+  "sources": {
+   "website": "https://www.kirinholdings.com/en/company/overview/",
+   "headquarters": "https://www.kirinholdings.com/en/company/overview/",
+   "ceo": "https://www.kirinholdings.com/en/company/governance/provisions/"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Yoshinori Isozaki"
+ },
+ "JAPAN:2801": {
+  "headquarters": "Noda, Chiba, Japan",
+  "sources": {
+   "headquarters": "https://www.kikkoman.com/en/corporate/about/profile/",
+   "ceo": "https://www.kikkoman.com/en/corporate/about/officer/",
+   "chairman": "https://www.kikkoman.com/en/corporate/about/officer/"
+  },
+  "ceo": "Shozaburo Nakano",
+  "chairman": "Yuzaburo Mogi"
+ },
+ "JAPAN:2802": {
+  "website": "https://www.ajinomoto.com",
+  "sources": {
+   "website": "https://www.ajinomoto.com/aboutus/overview",
+   "founded": "https://www.ajinomoto.com/aboutus/overview",
+   "headquarters": "https://www.ajinomoto.com/aboutus/overview",
+   "ceo": "https://www.ajinomoto.com/aboutus/officers"
+  },
+  "founded": 1909,
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Shigeo Nakamura"
+ },
  "JAPAN:285A": {
   "website": "https://www.kioxia-holdings.com",
   "sources": {
@@ -25059,11 +25163,335 @@
   },
   "ceo": "Hiroo Ota"
  },
+ "JAPAN:3382": {
+  "website": "https://www.7andi.com",
+  "sources": {
+   "website": "https://www.7andi.com/en/company/profile.html",
+   "headquarters": "https://www.7andi.com/en/company/profile.html",
+   "ceo": "https://www.7andi.com/en/company/officer.html"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Steve Dacus"
+ },
+ "JAPAN:3407": {
+  "website": "https://www.asahi-kasei.com",
+  "sources": {
+   "website": "https://www.asahi-kasei.com/company/profile",
+   "headquarters": "https://www.asahi-kasei.com/company/profile",
+   "ceo": "https://www.asahi-kasei.com/company/officer",
+   "chairman": "https://www.asahi-kasei.com/company/officer"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Koshiro Kudo",
+  "chairman": "Hideki Kobori"
+ },
+ "JAPAN:4004": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.resonac.com/corporate/outline.html",
+   "ceo": "https://www.resonac.com/corporate/exec",
+   "chairman": "https://www.resonac.com/corporate/exec"
+  },
+  "ceo": "Hidehito Takahashi",
+  "chairman": "Kohei Morikawa"
+ },
+ "JAPAN:4062": {
+  "website": "https://www.ibiden.com",
+  "sources": {
+   "website": "https://www.ibiden.com/company/profile/info/index.html",
+   "headquarters": "https://www.ibiden.com/company/profile/info/index.html",
+   "ceo": "https://www.ibiden.com/company/profile/executives/index.html",
+   "chairman": "https://www.ibiden.com/company/profile/executives/index.html"
+  },
+  "headquarters": "Ogaki, Gifu, Japan",
+  "ceo": "Koji Kawashima",
+  "chairman": "Takeshi Aoki"
+ },
  "JAPAN:4063": {
   "ceo": "Yasuhiko Saitoh",
   "sources": {
    "ceo": "https://www.shinetsu.co.jp/en/company/profile/"
   }
+ },
+ "JAPAN:4091": {
+  "website": "https://www.nipponsanso-hd.co.jp",
+  "sources": {
+   "website": "https://www.nipponsanso-hd.co.jp/en/company/profile.html",
+   "founded": "https://www.nipponsanso-hd.co.jp/en/company/profile.html",
+   "headquarters": "https://www.nipponsanso-hd.co.jp/en/company/profile.html",
+   "ceo": "https://www.nipponsanso-hd.co.jp/en/company/profile.html"
+  },
+  "founded": 1910,
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Toshihiko Hamada"
+ },
+ "JAPAN:4188": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.mcgc.com/english/group/outline/index.html",
+   "ceo": "https://www.mcgc.com/english/group/outline/index.html",
+   "chairman": "https://www.mcgc.com/english/group/leadership/index.html"
+  },
+  "ceo": "Manabu Chikumoto",
+  "chairman": "Nobuo Fukuda"
+ },
+ "JAPAN:4307": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.nri.com/en/company/info.html",
+   "ceo": "https://www.nri.com/en/company/profile.html",
+   "chairman": "https://www.nri.com/en/company/profile.html"
+  },
+  "ceo": "Kaga Yanagisawa",
+  "chairman": "Shingo Konomoto"
+ },
+ "JAPAN:4452": {
+  "founded": 1887,
+  "sources": {
+   "founded": "https://www.kao.com/global/en/corporate/outline/profile/",
+   "headquarters": "https://www.kao.com/global/en/corporate/outline/profile/",
+   "ceo": "https://www.kao.com/global/en/corporate/outline/officers/",
+   "chairman": "https://www.kao.com/global/en/corporate/outline/officers/"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Yoshihiro Hasebe",
+  "chairman": "Eriko Sakurai"
+ },
+ "JAPAN:4502": {
+  "website": "https://www.takeda.com",
+  "sources": {
+   "website": "https://www.takeda.com/about/our-company/",
+   "headquarters": "https://www.takeda.com/about/our-company/",
+   "ceo": "https://www.takeda.com/about/leadership",
+   "chairman": "https://www.takeda.com/about/board-of-directors/"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Julie Kim",
+  "chairman": "Masami Iijima"
+ },
+ "JAPAN:4503": {
+  "ceo": "Naoki Okamura",
+  "sources": {
+   "ceo": "https://www.astellas.com/en/about/leadership",
+   "chairman": "https://www.astellas.com/en/about/leadership"
+  },
+  "chairman": "Kenji Yasukawa"
+ },
+ "JAPAN:4507": {
+  "ceo": "Isao Teshirogi",
+  "sources": {
+   "ceo": "https://www.shionogi.com/global/en/company/outline/officer.html"
+  }
+ },
+ "JAPAN:4523": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.eisai.com/company/profile/index.html",
+   "ceo": "https://www.eisai.com/company/profile/officer/index.html",
+   "chairman": "https://www.eisai.com/company/profile/officer/index.html"
+  },
+  "ceo": "Haruo Naito",
+  "chairman": "Fumihiko Ike"
+ },
+ "JAPAN:4568": {
+  "website": "https://www.daiichisankyo.com",
+  "sources": {
+   "website": "https://www.daiichisankyo.com/about_us/mission-strength/leadership/",
+   "ceo": "https://www.daiichisankyo.com/about_us/mission-strength/leadership/",
+   "chairman": "https://www.daiichisankyo.com/about_us/mission-strength/leadership/"
+  },
+  "ceo": "Hiroyuki Okuzawa",
+  "chairman": "Takaaki Nishii"
+ },
+ "JAPAN:4578": {
+  "website": "https://www.otsuka.com",
+  "sources": {
+   "website": "https://www.otsuka.com/en/company/overview/",
+   "headquarters": "https://www.otsuka.com/en/company/overview/",
+   "ceo": "https://www.otsuka.com/en/company/overview/",
+   "chairman": "https://www.otsuka.com/en/company/overview/officer.html"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Makoto Inoue",
+  "chairman": "Ichiro Otsuka"
+ },
+ "JAPAN:4612": {
+  "website": "https://www.nipponpaint-holdings.com",
+  "sources": {
+   "website": "https://www.nipponpaint-holdings.com/en/sustainability/governance/board/",
+   "ceo": "https://www.nipponpaint-holdings.com/en/sustainability/governance/board/",
+   "chairman": "https://www.nipponpaint-holdings.com/en/sustainability/governance/board/"
+  },
+  "ceo": "Yuichiro Wakatsuki and Wee Siew Kim",
+  "chairman": "Goh Hup Jin"
+ },
+ "JAPAN:4684": {
+  "website": "https://www.obic.co.jp",
+  "sources": {
+   "website": "https://www.obic.co.jp/company/about.html",
+   "founded": "https://www.obic.co.jp/company/about.html",
+   "headquarters": "https://www.obic.co.jp/company/about.html",
+   "ceo": "https://www.obic.co.jp/company/about.html",
+   "chairman": "https://www.obic.co.jp/company/about.html"
+  },
+  "founded": 1968,
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Shoichi Tachibana",
+  "chairman": "Masahiro Noda"
+ },
+ "JAPAN:4689": {
+  "ceo": "Takeshi Idezawa",
+  "sources": {
+   "ceo": "https://www.lycorp.co.jp/en/company/officers/"
+  }
+ },
+ "JAPAN:4755": {
+  "ceo": "Hiroshi Mikitani",
+  "sources": {
+   "ceo": "https://global.rakuten.com/corp/about/management.html",
+   "chairman": "https://global.rakuten.com/corp/about/management.html"
+  },
+  "chairman": "Hiroshi Mikitani"
+ },
+ "JAPAN:4768": {
+  "website": "https://www.otsuka-shokai.co.jp",
+  "sources": {
+   "website": "https://www.otsuka-shokai.co.jp/corporate/about/outline/",
+   "founded": "https://www.otsuka-shokai.co.jp/corporate/about/outline/",
+   "headquarters": "https://www.otsuka-shokai.co.jp/corporate/about/outline/",
+   "ceo": "https://www.otsuka-shokai.co.jp/corporate/about/outline/"
+  },
+  "founded": 1961,
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Yuji Otsuka"
+ },
+ "JAPAN:4901": {
+  "website": "https://holdings.fujifilm.com",
+  "sources": {
+   "website": "https://holdings.fujifilm.com/en/about/companyprofile",
+   "headquarters": "https://holdings.fujifilm.com/en/about/companyprofile",
+   "ceo": "https://holdings.fujifilm.com/en/about/executives",
+   "chairman": "https://holdings.fujifilm.com/en/about/executives"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Teiichi Goto",
+  "chairman": "Kenji Sukeno"
+ },
+ "JAPAN:5016": {
+  "website": "https://www.jx-nmm.com",
+  "sources": {
+   "website": "https://www.jx-nmm.com/english/company/about.html",
+   "headquarters": "https://www.jx-nmm.com/english/company/about.html",
+   "ceo": "https://www.jx-nmm.com/english/ir/executive.html",
+   "chairman": "https://www.jx-nmm.com/english/ir/executive.html"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Yoichi Hayashi",
+  "chairman": "Shizuo Sugawara"
+ },
+ "JAPAN:5019": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.idemitsu.com/en/company/profile/",
+   "ceo": "https://www.idemitsu.com/en/company/profile/"
+  },
+  "ceo": "Noriaki Sakai"
+ },
+ "JAPAN:5020": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.hd.eneos.co.jp/english/about/corporate_profile.html",
+   "ceo": "https://www.hd.eneos.co.jp/english/about/executives/"
+  },
+  "ceo": "Tomohide Miyata"
+ },
+ "JAPAN:5108": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.bridgestone.com/corporate/profile/index.html",
+   "ceo": "https://www.bridgestone.com/corporate/profile/executives/index.html"
+  },
+  "ceo": "Yasuhiro Morita"
+ },
+ "JAPAN:5401": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.nipponsteel.com/en/company/about/",
+   "ceo": "https://www.nipponsteel.com/en/company/executives.html",
+   "chairman": "https://www.nipponsteel.com/en/company/executives.html"
+  },
+  "ceo": "Eiji Hashimoto",
+  "chairman": "Eiji Hashimoto"
+ },
+ "JAPAN:5706": {
+  "ceo": "Seiji Ikenobu",
+  "sources": {
+   "ceo": "https://www.mitsui-kinzoku.com/en/company/c_yakuin/",
+   "chairman": "https://www.mitsui-kinzoku.com/en/company/c_yakuin/"
+  },
+  "chairman": "Takeshi Nou"
+ },
+ "JAPAN:5713": {
+  "website": "https://www.smm.co.jp",
+  "sources": {
+   "website": "https://www.smm.co.jp/en/corp_info/about/outline/",
+   "headquarters": "https://www.smm.co.jp/en/corp_info/about/outline/",
+   "ceo": "https://www.smm.co.jp/en/corp_info/about/executive/",
+   "chairman": "https://www.smm.co.jp/en/corp_info/about/executive/"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Nobuhiro Matsumoto",
+  "chairman": "Akira Nozaki"
+ },
+ "JAPAN:5801": {
+  "website": "https://www.furukawa.co.jp",
+  "sources": {
+   "website": "https://www.furukawa.co.jp/en/company/outline.html",
+   "headquarters": "https://www.furukawa.co.jp/en/company/outline.html",
+   "ceo": "https://www.furukawa.co.jp/en/company/executive/"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Hideya Moridaira"
+ },
+ "JAPAN:5802": {
+  "headquarters": "Osaka, Japan",
+  "sources": {
+   "headquarters": "https://sumitomoelectric.com/company/profile",
+   "ceo": "https://sumitomoelectric.com/company/management",
+   "chairman": "https://sumitomoelectric.com/company/management"
+  },
+  "ceo": "Masayoshi Matsumoto",
+  "chairman": "Masayoshi Matsumoto"
+ },
+ "JAPAN:5803": {
+  "founded": 1885,
+  "sources": {
+   "founded": "https://www.fujikura.co.jp/en/company/company-profile/",
+   "headquarters": "https://www.fujikura.co.jp/en/company/company-profile/",
+   "ceo": "https://www.fujikura.co.jp/en/company/officers/"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Naoki Okada"
+ },
+ "JAPAN:5831": {
+  "headquarters": "Shizuoka, Japan",
+  "sources": {
+   "headquarters": "https://www.shizuoka-fg.co.jp/english/company/corporate-data.html",
+   "ceo": "https://www.shizuoka-fg.co.jp/english/company/board-members.html"
+  },
+  "ceo": "Hisashi Shibata"
+ },
+ "JAPAN:5844": {
+  "website": "https://www.kyoto-fg.co.jp",
+  "sources": {
+   "website": "https://www.kyoto-fg.co.jp/company/about/",
+   "founded": "https://www.kyoto-fg.co.jp/company/about/",
+   "headquarters": "https://www.kyoto-fg.co.jp/company/about/",
+   "ceo": "https://www.kyoto-fg.co.jp/en/company/about/"
+  },
+  "founded": 2023,
+  "headquarters": "Kyoto, Japan",
+  "ceo": "Nobuhiro Doi"
  },
  "JAPAN:6098": {
   "ceo": "Hisayuki Idekoba",
@@ -25073,11 +25501,135 @@
   },
   "chairman": "Masumi Minegishi"
  },
+ "JAPAN:6146": {
+  "website": "https://www.disco.co.jp",
+  "sources": {
+   "website": "https://www.disco.co.jp/eg/corporate/outline/index.html",
+   "ceo": "https://www.disco.co.jp/eg/corporate/outline/index.html"
+  },
+  "ceo": "Kazuma Sekiya"
+ },
+ "JAPAN:6178": {
+  "ceo": "Kazuyuki Negishi",
+  "sources": {
+   "ceo": "https://www.japanpost.jp/en/corporate/officers/"
+  }
+ },
+ "JAPAN:6301": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.komatsu.jp/en/aboutus/profile",
+   "ceo": "https://www.komatsu.jp/en/aboutus/management-team",
+   "chairman": "https://www.komatsu.jp/en/aboutus/management-team"
+  },
+  "ceo": "Takuya Imayoshi",
+  "chairman": "Hiroyuki Ogawa"
+ },
+ "JAPAN:6326": {
+  "ceo": "Shingo Hanada",
+  "sources": {
+   "ceo": "https://www.kubota.com/corporate/board/index.html",
+   "chairman": "https://www.kubota.com/corporate/board/index.html"
+  },
+  "chairman": "Yuichi Kitao"
+ },
+ "JAPAN:6367": {
+  "website": "https://www.daikin.com",
+  "sources": {
+   "website": "https://www.daikin.com/corporate/overview/summary/data",
+   "headquarters": "https://www.daikin.com/corporate/overview/summary/data",
+   "ceo": "https://www.daikin.com/corporate/overview/summary/directors",
+   "chairman": "https://www.daikin.com/corporate/overview/summary/directors"
+  },
+  "headquarters": "Osaka, Japan",
+  "ceo": "Masanori Togawa",
+  "chairman": "Masanori Togawa"
+ },
+ "JAPAN:6383": {
+  "website": "https://www.daifuku.com",
+  "sources": {
+   "website": "https://www.daifuku.com/company/summary/",
+   "founded": "https://www.daifuku.com/company/summary/",
+   "headquarters": "https://www.daifuku.com/company/summary/",
+   "ceo": "https://www.daifuku.com/company/management/",
+   "chairman": "https://www.daifuku.com/company/management/"
+  },
+  "founded": 1937,
+  "headquarters": "Osaka, Japan",
+  "ceo": "Tomoaki Terai",
+  "chairman": "Hiroshi Geshiro"
+ },
+ "JAPAN:6479": {
+  "ceo": "Yoshihisa Kainuma",
+  "sources": {
+   "ceo": "https://www.minebeamitsumi.com/english/corp/company/aboutus/profile/index.html",
+   "chairman": "https://www.minebeamitsumi.com/english/corp/company/aboutus/profile/index.html"
+  },
+  "chairman": "Yoshihisa Kainuma"
+ },
  "JAPAN:6501": {
   "ceo": "Toshiaki Tokunaga",
   "sources": {
    "ceo": "https://www.hitachi.com/content/dam/hitachi/global/en/ir/media/corporate/governance/governance.pdf"
   }
+ },
+ "JAPAN:6503": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.mitsubishielectric.com/en/about/corporate-data/",
+   "ceo": "https://www.mitsubishielectric.com/en/about/management/",
+   "chairman": "https://www.mitsubishielectric.com/en/about/management/"
+  },
+  "ceo": "Kei Uruma",
+  "chairman": "Hiroyuki Yanagi"
+ },
+ "JAPAN:6504": {
+  "website": "https://www.fujielectric.com",
+  "sources": {
+   "website": "https://www.fujielectric.com/about/company/data.html",
+   "headquarters": "https://www.fujielectric.com/about/company/data.html",
+   "ceo": "https://www.fujielectric.com/about/officer_introduction/management.html",
+   "chairman": "https://www.fujielectric.com/about/officer_introduction/management.html"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Michihiro Kitazawa",
+  "chairman": "Michihiro Kitazawa"
+ },
+ "JAPAN:6525": {
+  "website": "https://www.kokusai-electric.com",
+  "sources": {
+   "website": "https://www.kokusai-electric.com/en/company/outline",
+   "headquarters": "https://www.kokusai-electric.com/en/company/outline",
+   "ceo": "https://www.kokusai-electric.com/en/company/outline"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Kazunori Tsukada"
+ },
+ "JAPAN:6586": {
+  "website": "https://www.makita.biz",
+  "sources": {
+   "website": "https://www.makita.biz/company/about/data/",
+   "headquarters": "https://www.makita.biz/company/about/data/",
+   "ceo": "https://www.makita.biz/company/about/director/"
+  },
+  "headquarters": "Anjo, Aichi, Japan",
+  "ceo": "Munetoshi Goto"
+ },
+ "JAPAN:6594": {
+  "headquarters": "Kyoto, Japan",
+  "sources": {
+   "headquarters": "https://www.nidec.com/en/corporate/about/outline/",
+   "ceo": "https://www.nidec.com/en/corporate/about/board/"
+  },
+  "ceo": "Michio Kaida"
+ },
+ "JAPAN:6723": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.renesas.com/en/about/profile",
+   "ceo": "https://www.renesas.com/en/about/executive-team"
+  },
+  "ceo": "Hidetoshi Shibata"
  },
  "JAPAN:6758": {
   "ceo": "Hiroki Totoki",
@@ -25101,6 +25653,58 @@
    "ceo": "https://www.keyence.co.jp/investor/en/compliance/officers.jsp"
   }
  },
+ "JAPAN:6920": {
+  "founded": 1960,
+  "sources": {
+   "founded": "https://www.lasertec.co.jp/en/company/profile/",
+   "headquarters": "https://www.lasertec.co.jp/en/company/profile/",
+   "ceo": "https://www.lasertec.co.jp/en/company/officer/index.html"
+  },
+  "headquarters": "Yokohama, Japan",
+  "ceo": "Tetsuya Sendoda"
+ },
+ "JAPAN:6954": {
+  "website": "https://www.fanuc.co.jp",
+  "sources": {
+   "website": "https://www.fanuc.co.jp/en/ir/corporategovernancereport/pdf/corporategovernancereport.pdf",
+   "headquarters": "https://www.fanuc.co.jp/en/profile/outline.html",
+   "ceo": "https://www.fanuc.co.jp/en/ir/corporategovernancereport/pdf/corporategovernancereport.pdf"
+  },
+  "headquarters": "Oshino, Yamanashi, Japan",
+  "ceo": "Kenji Yamaguchi"
+ },
+ "JAPAN:6963": {
+  "website": "https://www.rohm.com",
+  "sources": {
+   "website": "https://www.rohm.com/company/about/profile",
+   "headquarters": "https://www.rohm.com/company/about/profile",
+   "ceo": "https://www.rohm.com/company/about/profile"
+  },
+  "headquarters": "Kyoto, Japan",
+  "ceo": "Katsumi Azuma"
+ },
+ "JAPAN:6971": {
+  "website": "https://global.kyocera.com",
+  "sources": {
+   "website": "https://global.kyocera.com/company/company_profile.html",
+   "headquarters": "https://global.kyocera.com/company/company_profile.html",
+   "ceo": "https://global.kyocera.com/company/directors.html",
+   "chairman": "https://global.kyocera.com/company/directors.html"
+  },
+  "headquarters": "Kyoto, Japan",
+  "ceo": "Shiro Sakushima",
+  "chairman": "Goro Yamaguchi"
+ },
+ "JAPAN:6976": {
+  "website": "https://www.yuden.co.jp",
+  "sources": {
+   "website": "https://www.yuden.co.jp/en/company/information/",
+   "headquarters": "https://www.yuden.co.jp/en/company/information/",
+   "ceo": "https://www.yuden.co.jp/en/company/officer/"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Katsuya Sase"
+ },
  "JAPAN:6981": {
   "ceo": "Norio Nakajima",
   "sources": {
@@ -25117,6 +25721,72 @@
   },
   "chairman": "Seiji Izumisawa"
  },
+ "JAPAN:7012": {
+  "headquarters": "Kobe, Japan",
+  "sources": {
+   "headquarters": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100Y99Z.pdf",
+   "ceo": "https://global.kawasaki.com/en/corp/profile/executives/index.html",
+   "chairman": "https://global.kawasaki.com/en/corp/profile/executives/index.html"
+  },
+  "ceo": "Yasuhiko Hashimoto",
+  "chairman": "Yoshinori Kanehana"
+ },
+ "JAPAN:7013": {
+  "website": "https://www.ihi.co.jp",
+  "sources": {
+   "website": "https://www.ihi.co.jp/en/company/outline/",
+   "headquarters": "https://www.ihi.co.jp/en/company/outline/",
+   "ceo": "https://www.ihi.co.jp/en/company/executivelist/"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Hiroshi Ide"
+ },
+ "JAPAN:7167": {
+  "website": "https://www.mebuki-fg.co.jp",
+  "sources": {
+   "website": "https://www.mebuki-fg.co.jp/company/summary/",
+   "ceo": "https://www.mebuki-fg.co.jp/eng/pdf/release/20260831.pdf"
+  },
+  "ceo": "Tetsuya Akino"
+ },
+ "JAPAN:7181": {
+  "website": "https://www.jp-life.japanpost.jp",
+  "sources": {
+   "website": "https://www.jp-life.japanpost.jp/english/aboutus/company/en_abt_cmp_prf.html",
+   "headquarters": "https://www.jp-life.japanpost.jp/english/aboutus/company/en_abt_cmp_prf.html",
+   "ceo": "https://www.jp-life.japanpost.jp/english/aboutus/company/en_abt_cmp_drt.html"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Toru Onishi"
+ },
+ "JAPAN:7182": {
+  "ceo": "Takayuki Kasama",
+  "sources": {
+   "ceo": "https://www.jp-bank.japanpost.jp/en/aboutus/company/en_abt_cmp_executives.html"
+  }
+ },
+ "JAPAN:7186": {
+  "website": "https://www.yokohamafg.co.jp",
+  "sources": {
+   "website": "https://www.yokohamafg.co.jp/company/summary/",
+   "founded": "https://www.yokohamafg.co.jp/company/summary/",
+   "headquarters": "https://www.yokohamafg.co.jp/company/summary/",
+   "ceo": "https://www.yokohamafg.co.jp/company/summary/list/"
+  },
+  "founded": 2016,
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Tatsuya Kataoka"
+ },
+ "JAPAN:7202": {
+  "founded": 1916,
+  "sources": {
+   "founded": "https://www.isuzu-global.com/en/company/profile.html",
+   "headquarters": "https://www.isuzu-global.com/en/company/profile.html",
+   "ceo": "https://www.isuzu-global.com/en/company/profile.html"
+  },
+  "headquarters": "Yokohama, Japan",
+  "ceo": "Naohiro Yamaguchi"
+ },
  "JAPAN:7203": {
   "ceo": "Kenta Kon",
   "sources": {
@@ -25125,11 +25795,161 @@
   },
   "chairman": "Akio Toyoda"
  },
+ "JAPAN:7259": {
+  "ceo": "Moritaka Yoshida",
+  "sources": {
+   "ceo": "https://www.aisin.com/en/profile/officer/"
+  }
+ },
+ "JAPAN:7267": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://global.honda/en/about/overview.html",
+   "ceo": "https://global.honda/en/about/overview.html"
+  },
+  "ceo": "Toshihiro Mibe"
+ },
+ "JAPAN:7269": {
+  "headquarters": "Hamamatsu, Shizuoka, Japan",
+  "sources": {
+   "headquarters": "https://www.globalsuzuki.com/corporate/outline/index.html",
+   "ceo": "https://www.globalsuzuki.com/corporate/outline/index.html"
+  },
+  "ceo": "Toshihiro Suzuki"
+ },
+ "JAPAN:7270": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.subaru.co.jp/en/outline/profile.html",
+   "ceo": "https://www.subaru.co.jp/en/outline/profile.html",
+   "chairman": "https://www.subaru.co.jp/en/outline/profile.html"
+  },
+  "ceo": "Atsushi Osaki",
+  "chairman": "Fumiaki Hayata"
+ },
+ "JAPAN:7272": {
+  "headquarters": "Iwata, Shizuoka, Japan",
+  "sources": {
+   "headquarters": "https://global.yamaha-motor.com/about/overview/",
+   "ceo": "https://global.yamaha-motor.com/about/overview/"
+  },
+  "ceo": "Motofumi Shitara"
+ },
+ "JAPAN:7532": {
+  "ceo": "Hideki Moriya",
+  "sources": {
+   "ceo": "https://ppih.co.jp/en/corp/leadership/",
+   "chairman": "https://ppih.co.jp/en/corp/leadership/"
+  },
+  "chairman": "Naoki Yoshida"
+ },
+ "JAPAN:7550": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.zensho.co.jp/en/company/outline/",
+   "ceo": "https://www.zensho.co.jp/en/company/directors/"
+  },
+  "ceo": "Yohei Ogawa"
+ },
+ "JAPAN:7733": {
+  "website": "https://www.olympus-global.com",
+  "sources": {
+   "website": "https://www.olympus-global.com/company/profile/top.html?page=company",
+   "headquarters": "https://www.olympus-global.com/company/profile/top.html?page=company",
+   "ceo": "https://www.olympus-global.com/company/profile/officer/?page=company",
+   "chairman": "https://www.olympus-global.com/company/governance/board.html?page=company"
+  },
+  "headquarters": "Hachioji, Tokyo, Japan",
+  "ceo": "Bob White",
+  "chairman": "Masato Iwasaki"
+ },
+ "JAPAN:7735": {
+  "website": "https://www.screen.co.jp",
+  "sources": {
+   "website": "https://www.screen.co.jp/en/about/outline",
+   "headquarters": "https://www.screen.co.jp/en/about/outline",
+   "ceo": "https://www.screen.co.jp/en/about/directors",
+   "chairman": "https://www.screen.co.jp/en/about/directors"
+  },
+  "headquarters": "Kyoto, Japan",
+  "ceo": "Masato Goto",
+  "chairman": "Toshio Hiroe"
+ },
+ "JAPAN:7741": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.hoya.com/en/company/profile/",
+   "ceo": "https://www.hoya.com/en/company/directors/"
+  },
+  "ceo": "Eiichiro Ikeda"
+ },
+ "JAPAN:7832": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.bandainamco.co.jp/en/about/profile.html",
+   "ceo": "https://www.bandainamco.co.jp/en/about/profile.html"
+  },
+  "ceo": "Yuji Asako"
+ },
+ "JAPAN:7911": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.holdings.toppan.com/en/about-us/company-profile.html",
+   "ceo": "https://www.holdings.toppan.com/en/about-us/officer.html",
+   "chairman": "https://www.holdings.toppan.com/en/about-us/officer.html"
+  },
+  "ceo": "Hideharu Maro",
+  "chairman": "Hideharu Maro"
+ },
+ "JAPAN:7936": {
+  "headquarters": "Kobe, Japan",
+  "sources": {
+   "headquarters": "https://corp.asics.com/en/about_asics/practical_information",
+   "ceo": "https://corp.asics.com/en/about_asics/executives",
+   "chairman": "https://corp.asics.com/en/about_asics/executives"
+  },
+  "ceo": "Yasuhito Hirota",
+  "chairman": "Yasuhito Hirota"
+ },
+ "JAPAN:7974": {
+  "headquarters": "Kyoto, Japan",
+  "sources": {
+   "headquarters": "https://www.nintendo.co.jp/corporate/en/outline/index.html"
+  }
+ },
  "JAPAN:8001": {
   "chairman": "Masahiro Okafuji",
   "sources": {
-   "chairman": "https://www.itochu.co.jp/en/about/officer/index.html"
-  }
+   "chairman": "https://www.itochu.co.jp/en/about/officer/index.html",
+   "founded": "https://www.itochu.co.jp/en/about/profile/index.html",
+   "headquarters": "https://www.itochu.co.jp/ja/files/security_101.pdf",
+   "ceo": "https://www.itochu.co.jp/en/about/officer/index.html"
+  },
+  "founded": 1858,
+  "headquarters": "Osaka, Japan",
+  "ceo": "Masahiro Okafuji"
+ },
+ "JAPAN:8002": {
+  "founded": 1858,
+  "sources": {
+   "founded": "https://www.marubeni.com/en/company/profile/",
+   "headquarters": "https://www.marubeni.com/en/company/profile/",
+   "ceo": "https://www.marubeni.com/en/company/officer/",
+   "chairman": "https://www.marubeni.com/en/company/officer/"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Masayuki Omoto",
+  "chairman": "Masumi Kakinoki"
+ },
+ "JAPAN:8015": {
+  "headquarters": "Nagoya, Japan",
+  "sources": {
+   "headquarters": "https://www.toyota-tsusho.com/english/company/profile.html",
+   "ceo": "https://www.toyota-tsusho.com/english/company/officer.html",
+   "chairman": "https://www.toyota-tsusho.com/english/company/officer.html"
+  },
+  "ceo": "Toshimitsu Imai",
+  "chairman": "Nobuhiko Murakami"
  },
  "JAPAN:8031": {
   "ceo": "Kenichi Hori",
@@ -25147,6 +25967,40 @@
   },
   "chairman": "Kazushi Tahara"
  },
+ "JAPAN:8053": {
+  "website": "https://www.sumitomocorp.com",
+  "sources": {
+   "website": "https://www.sumitomocorp.com/en/jp/about/company/profile",
+   "headquarters": "https://www.sumitomocorp.com/en/jp/about/company/profile",
+   "ceo": "https://www.sumitomocorp.com/en/jp/about/company/officer",
+   "chairman": "https://www.sumitomocorp.com/en/jp/about/company/officer"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Shingo Ueno",
+  "chairman": "Masayuki Hyodo"
+ },
+ "JAPAN:8113": {
+  "website": "https://www.unicharm.co.jp",
+  "sources": {
+   "website": "https://www.unicharm.co.jp/en/company/overview.html",
+   "headquarters": "https://www.unicharm.co.jp/en/company/overview.html",
+   "ceo": "https://www.unicharm.co.jp/en/company/overview.html"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Takahisa Takahara"
+ },
+ "JAPAN:8267": {
+  "website": "https://www.aeon.info",
+  "sources": {
+   "website": "https://www.aeon.info/company/overview/",
+   "headquarters": "https://www.aeon.info/company/overview/",
+   "ceo": "https://www.aeon.info/ir/policy/executives/",
+   "chairman": "https://www.aeon.info/ir/policy/executives/"
+  },
+  "headquarters": "Chiba, Japan",
+  "ceo": "Akio Yoshida",
+  "chairman": "Motoya Okada"
+ },
  "JAPAN:8306": {
   "ceo": "Junichi Hanzawa",
   "sources": {
@@ -25155,6 +26009,18 @@
   },
   "chairman": "Hironori Kamezawa"
  },
+ "JAPAN:8309": {
+  "website": "https://www.smtg.jp",
+  "sources": {
+   "website": "https://www.smtg.jp/english/about_us/profile",
+   "headquarters": "https://www.smtg.jp/english/about_us/profile",
+   "ceo": "https://www.smtg.jp/english/about_us/officer",
+   "chairman": "https://www.smtg.jp/english/about_us/officer"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Kazuya Oyama",
+  "chairman": "Hideki Kobori"
+ },
  "JAPAN:8316": {
   "ceo": "Toru Nakashima",
   "sources": {
@@ -25162,6 +26028,16 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1022837/000119312526283871/d118844d20f.htm"
   },
   "chairman": "Makoto Takashima"
+ },
+ "JAPAN:8331": {
+  "website": "https://www.chibabank.co.jp",
+  "sources": {
+   "website": "https://www.chibabank.co.jp/en/company/profile",
+   "headquarters": "https://www.chibabank.co.jp/en/company/profile",
+   "ceo": "https://www.chibabank.co.jp/en/company/profile"
+  },
+  "headquarters": "Chiba, Japan",
+  "ceo": "Tsutomu Yonemoto"
  },
  "JAPAN:8411": {
   "website": "https://www.mizuhogroup.com",
@@ -25173,11 +26049,73 @@
   "ceo": "Masahiro Kihara",
   "chairman": "Takashi Tsukioka"
  },
+ "JAPAN:8421": {
+  "website": "https://www.shinkin-central-bank.jp",
+  "sources": {
+   "website": "https://www.shinkin-central-bank.jp/about/profile/company.html",
+   "headquarters": "https://www.shinkin-central-bank.jp/about/profile/company.html"
+  },
+  "headquarters": "Tokyo, Japan"
+ },
+ "JAPAN:8591": {
+  "website": "https://www.orix.co.jp",
+  "sources": {
+   "website": "https://www.orix.co.jp/grp/en/about/summary/",
+   "headquarters": "https://www.orix.co.jp/grp/en/about/summary/",
+   "ceo": "https://www.orix.co.jp/grp/en/about/ourleadership/officer/"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Hidetake Takahashi"
+ },
+ "JAPAN:8593": {
+  "website": "https://www.mitsubishi-hc-capital.com",
+  "sources": {
+   "website": "https://www.mitsubishi-hc-capital.com/english/corporate/overview.html",
+   "headquarters": "https://www.mitsubishi-hc-capital.com/english/corporate/overview.html",
+   "ceo": "https://www.mitsubishi-hc-capital.com/english/corporate/officer.html",
+   "chairman": "https://www.mitsubishi-hc-capital.com/english/corporate/officer.html"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Taiju Hisai",
+  "chairman": "Takahiro Yanai"
+ },
+ "JAPAN:8601": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.daiwa-grp.jp/english/about/profile.html",
+   "ceo": "https://www.daiwa-grp.jp/english/about/profile.html"
+  },
+  "ceo": "Akihiko Ogino"
+ },
+ "JAPAN:8630": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.sompo-hd.com/en/company/summary/",
+   "ceo": "https://www.sompo-hd.com/en/company/summary/directors/",
+   "chairman": "https://www.sompo-hd.com/en/company/summary/directors/"
+  },
+  "ceo": "Mikio Okumura",
+  "chairman": "Kazuhiro Higashi"
+ },
  "JAPAN:8697": {
   "headquarters": "Chuo-ku, Tokyo, Japan",
   "sources": {
-   "headquarters": "https://www.jpx.co.jp/english/corporate/about-jpx/profile/index.html"
-  }
+   "headquarters": "https://www.jpx.co.jp/english/corporate/about-jpx/profile/index.html",
+   "chairman": "https://www.jpx.co.jp/english/corporate/about-jpx/officer/index.html"
+  },
+  "chairman": "Yasushi Kinoshita"
+ },
+ "JAPAN:8750": {
+  "website": "https://www.daiichilife-group.com",
+  "sources": {
+   "website": "https://www.daiichilife-group.com/en/",
+   "headquarters": "https://www.daiichilife-group.com/en/about/outline.html",
+   "ceo": "https://www.daiichilife-group.com/en/about/executives.html",
+   "chairman": "https://www.daiichilife-group.com/en/about/executives.html"
+  },
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Tetsuya Kikuta",
+  "chairman": "Seiji Inagaki"
  },
  "JAPAN:8766": {
   "ceo": "Masahiro Koike",
@@ -25187,6 +26125,106 @@
   },
   "chairman": "Satoru Komiya"
  },
+ "JAPAN:8795": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.td-holdings.co.jp/en/company/profile.html",
+   "ceo": "https://www.td-holdings.co.jp/en/company/profile.html"
+  },
+  "ceo": "Masahiko Moriyama"
+ },
+ "JAPAN:8801": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.mitsuifudosan.co.jp/english/corporate/about_us/",
+   "ceo": "https://www.mitsuifudosan.co.jp/english/corporate/officer/",
+   "chairman": "https://www.mitsuifudosan.co.jp/english/corporate/officer/"
+  },
+  "ceo": "Takashi Ueda",
+  "chairman": "Masanobu Komoda"
+ },
+ "JAPAN:8802": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.mec.co.jp/en/company/about/",
+   "ceo": "https://www.mec.co.jp/en/company/director/",
+   "chairman": "https://www.mec.co.jp/en/company/director/"
+  },
+  "ceo": "Atsushi Nakajima",
+  "chairman": "Junichi Yoshida"
+ },
+ "JAPAN:8830": {
+  "ceo": "Kojun Nishima",
+  "sources": {
+   "ceo": "https://www.sumitomo-rd.co.jp/en/corporate/management/",
+   "chairman": "https://www.sumitomo-rd.co.jp/en/corporate/management/"
+  },
+  "chairman": "Kenichi Onodera"
+ },
+ "JAPAN:9021": {
+  "headquarters": "Osaka, Japan",
+  "sources": {
+   "headquarters": "https://www.westjr.co.jp/global/en/about-us/overview/",
+   "ceo": "https://www.westjr.co.jp/company/info/officer/",
+   "chairman": "https://www.westjr.co.jp/company/info/officer/"
+  },
+  "ceo": "Shoji Kurasaka",
+  "chairman": "Kazuaki Hasegawa"
+ },
+ "JAPAN:9022": {
+  "chairman": "Shin Kaneko",
+  "sources": {
+   "chairman": "https://global.jr-central.co.jp/en/company/about/executives.html"
+  }
+ },
+ "JAPAN:9101": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.nyk.com/english/profile/profile/",
+   "ceo": "https://www.nyk.com/english/profile/directors/",
+   "chairman": "https://www.nyk.com/english/profile/directors/"
+  },
+  "ceo": "Takaya Soga",
+  "chairman": "Hitoshi Nagasawa"
+ },
+ "JAPAN:9104": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.mol.co.jp/en/corporate/profile/",
+   "ceo": "https://www.mol.co.jp/en/corporate/executive/",
+   "chairman": "https://www.mol.co.jp/en/corporate/executive/"
+  },
+  "ceo": "Jotaro Tamura",
+  "chairman": "Takeshi Hashimoto"
+ },
+ "JAPAN:9107": {
+  "ceo": "Takenori Igarashi",
+  "sources": {
+   "ceo": "https://www.kline.co.jp/en/corporate/profile/board.html",
+   "chairman": "https://www.kline.co.jp/en/corporate/profile/board.html"
+  },
+  "chairman": "Yukikazu Myochin"
+ },
+ "JAPAN:9147": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.nipponexpress-holdings.com/en/about/profile/",
+   "ceo": "https://www.nipponexpress-holdings.com/en/about/executives/",
+   "chairman": "https://www.nipponexpress-holdings.com/en/about/executives/"
+  },
+  "ceo": "Satoshi Horikiri",
+  "chairman": "Mitsuru Saito"
+ },
+ "JAPAN:9202": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.ana.co.jp/group/en/about-us/profile/",
+   "ceo": "https://www.ana.co.jp/group/en/about-us/profile/",
+   "chairman": "https://www.ana.co.jp/group/en/about-us/officer/"
+  },
+  "ceo": "Koji Shibata",
+  "chairman": "Shinya Katanozaka"
+ },
  "JAPAN:9432": {
   "ceo": "Akira Shimada",
   "sources": {
@@ -25195,6 +26233,16 @@
   },
   "chairman": "Jun Sawada"
  },
+ "JAPAN:9433": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.kddi.com/english/corporate/kddi/profile/",
+   "ceo": "https://www.kddi.com/english/corporate/ir/governance/board/",
+   "chairman": "https://www.kddi.com/english/corporate/ir/governance/board/"
+  },
+  "ceo": "Hiromichi Matsuda",
+  "chairman": "Makoto Takahashi"
+ },
  "JAPAN:9434": {
   "ceo": "Junichi Miyakawa",
   "sources": {
@@ -25202,6 +26250,80 @@
    "chairman": "https://www.softbank.jp/en/corp/aboutus/governance/corporate-governance/officer/"
   },
   "chairman": "Jun Shimba"
+ },
+ "JAPAN:9435": {
+  "website": "https://www.hikari.co.jp",
+  "sources": {
+   "website": "https://www.hikari.co.jp/outline/",
+   "founded": "https://www.hikari.co.jp/outline/",
+   "headquarters": "https://www.hikari.co.jp/outline/",
+   "ceo": "https://www.hikari.co.jp/outline/",
+   "chairman": "https://www.hikari.co.jp/outline/"
+  },
+  "founded": 1988,
+  "headquarters": "Tokyo, Japan",
+  "ceo": "Yasumitsu Shigeta",
+  "chairman": "Yasumitsu Shigeta"
+ },
+ "JAPAN:9502": {
+  "headquarters": "Nagoya, Japan",
+  "sources": {
+   "headquarters": "https://www.chuden.co.jp/english/corporate/outline/",
+   "ceo": "https://www.chuden.co.jp/english/corporate/outline/"
+  },
+  "ceo": "Minoru Yasui"
+ },
+ "JAPAN:9531": {
+  "ceo": "Shinichi Sasayama",
+  "sources": {
+   "ceo": "https://www.tokyo-gas.co.jp/about/officer/index.html",
+   "chairman": "https://www.tokyo-gas.co.jp/about/officer/index.html"
+  },
+  "chairman": "Takashi Uchida"
+ },
+ "JAPAN:9602": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.toho.co.jp/en/company/profile/",
+   "ceo": "https://www.toho.co.jp/en/company/directors/"
+  },
+  "ceo": "Hiroyasu Matsuoka"
+ },
+ "JAPAN:9697": {
+  "headquarters": "Osaka, Japan",
+  "sources": {
+   "headquarters": "https://www.capcom.co.jp/ir/english/company/info.html",
+   "ceo": "https://www.capcom.co.jp/ir/english/company/officer01.html",
+   "chairman": "https://www.capcom.co.jp/ir/english/company/officer01.html"
+  },
+  "ceo": "Kenzo Tsujimoto",
+  "chairman": "Kenzo Tsujimoto"
+ },
+ "JAPAN:9735": {
+  "headquarters": "Tokyo, Japan",
+  "sources": {
+   "headquarters": "https://www.secom.co.jp/english/about-us/outline/",
+   "ceo": "https://www.secom.co.jp/english/about-us/outline/"
+  },
+  "ceo": "Yasuyuki Yoshida"
+ },
+ "JAPAN:9766": {
+  "ceo": "Kimihiko Higashio",
+  "sources": {
+   "ceo": "https://www.konami.com/corporate/en/data/",
+   "chairman": "https://www.konami.com/corporate/en/data/"
+  },
+  "chairman": "Kagemasa Kozuki"
+ },
+ "JAPAN:9843": {
+  "founded": 1967,
+  "sources": {
+   "founded": "https://www.nitorihd.co.jp/en/about_us/corporate_data.html",
+   "headquarters": "https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/S100W5DK.pdf",
+   "chairman": "https://www.nitorihd.co.jp/en/about_us/corporate_data.html"
+  },
+  "headquarters": "Sapporo, Japan",
+  "chairman": "Akio Nitori"
  },
  "JAPAN:9983": {
   "ceo": "Tadashi Yanai",
