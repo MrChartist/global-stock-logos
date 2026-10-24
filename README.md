@@ -65,6 +65,7 @@ const hits = await api.search('samsung', { limit: 5 });
 | [docs/BRANDS.md](./docs/BRANDS.md) | Brands and sub-brands, HD full logos, hand-checked profile facts, and how to add them |
 | [docs/DESIGN.md](./docs/DESIGN.md) | The design system of the catalogue page: colour, type, motion, behaviour, quality bar |
 | [docs/ADAPTERS.md](./docs/ADAPTERS.md) | How to add a verified data source for a market |
+| [docs/ROADMAP.md](./docs/ROADMAP.md) | Audit of where the project stands, and the phased plan to make it ready for production websites |
 | [TODO.md](./TODO.md) | Open work: owner settings, data coverage, data quality, product, and how to work from a server |
 | [DATA-SOURCES.md](./DATA-SOURCES.md) | Sources, terms and how to ask for a logo to be removed |
 

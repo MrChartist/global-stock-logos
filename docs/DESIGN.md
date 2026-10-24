@@ -44,4 +44,4 @@ Pill radius (999px) for the navigation, buttons, chips and inputs; 20 to 28px fo
 
 ## Quality bar
 
-`npm run lighthouse` runs Lighthouse on mobile and desktop in light and dark. Today: accessibility, best practices, SEO and agentic browsing 100 in all four; performance 100 on desktop and 99 on mobile (the brand fonts cost about half a second on the simulated slow 4G link). CI fails below 95. `npm run test:frontend` runs 18 browser checks, including hostile-data and overflow tests.
+`npm run lighthouse` runs Lighthouse on mobile and desktop in light and dark. Today: accessibility, best practices, SEO and agentic browsing 100 in all four; performance 100 on desktop and 99 on mobile (the brand fonts cost about half a second on the simulated slow 4G link). CI fails below 95. `npm run test:frontend` runs 22 browser checks, including hostile-data and overflow tests.

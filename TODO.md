@@ -1,6 +1,6 @@
 # TODO
 
-Open work, in the order to do it. Tick a box when it is done and merged. Last updated 2026-10-24.
+Open work, in the order to do it. The plan behind it, with measured coverage, is in [docs/ROADMAP.md](./docs/ROADMAP.md). Tick a box when it is done and merged. Last updated 2026-10-24.
 
 ## 0. Start here (hand-over of 2026-10-24)
 
