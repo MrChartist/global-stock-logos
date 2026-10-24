@@ -4495,6 +4495,16 @@
   },
   "chairman": "K.R. Sridhar"
  },
+ "AUSTRIA:BG": {
+  "website": "https://www.bawaggroup.com",
+  "sources": {
+   "website": "https://www.bawaggroup.com/en",
+   "ceo": "https://www.bawaggroup.com/en/about-us/corporate-governance",
+   "chairman": "https://www.bawaggroup.com/en/about-us/corporate-governance"
+  },
+  "ceo": "Anas Abuzaakouk",
+  "chairman": "Kim Fennebresque"
+ },
  "AUSTRIA:BLK2": {
   "ceo": "Laurence D. Fink",
   "sources": {
@@ -4824,6 +4834,14 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1326160/000110465926032443/tm261356-4_def14a.htm"
   },
   "chairman": "Theodore F. Craver, Jr."
+ },
+ "AUSTRIA:EBS": {
+  "ceo": "Peter Bosek",
+  "sources": {
+   "ceo": "https://www.erstegroup.com/en/legal-information/imprint",
+   "chairman": "https://www.erstegroup.com/en/legal-information/imprint"
+  },
+  "chairman": "Gottfried Haber"
  },
  "AUSTRIA:ECL": {
   "ceo": "Christophe Beck",
@@ -5459,6 +5477,14 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm"
   }
  },
+ "AUSTRIA:OMV": {
+  "ceo": "Emma Delaney",
+  "sources": {
+   "ceo": "https://www.omv.com/en/company/leadership/executive-board",
+   "chairman": "https://www.omv.com/en/company/leadership/supervisory-board"
+  },
+  "chairman": "Lutz Feldmann"
+ },
  "AUSTRIA:OR": {
   "ceo": "Nicolas Hieronimus",
   "sources": {
@@ -5612,6 +5638,14 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1648416/000164841626000024/race-20251231.htm"
   },
   "chairman": "John Elkann"
+ },
+ "AUSTRIA:RBI": {
+  "ceo": "Michael Höllerer",
+  "sources": {
+   "ceo": "https://www.rbinternational.com/en/raiffeisen/rbi-group/leadership-governance/management-board.html",
+   "chairman": "https://www.rbinternational.com/en/raiffeisen/rbi-group/leadership-governance/management-board.html"
+  },
+  "chairman": "Erwin Hameseder"
  },
  "AUSTRIA:REGN": {
   "ceo": "Leonard S. Schleifer",
@@ -5976,6 +6010,34 @@
   "sources": {
    "chairman": "https://edge.sitecorecloud.io/zurichinsur6934-zwpcorp-prod-ae5e/media/project/zurich/dotcom/investor-relations/docs/events/abstimmunsergebnisse-agm-zig-2026.pdf"
   }
+ },
+ "BELGIUM:ABI": {
+  "ceo": "Michel Doukeris",
+  "sources": {
+   "ceo": "https://www.ab-inbev.com/about-us-our-leaders",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1668717/000119312526272577/d127875dex991.htm"
+  },
+  "chairman": "Dirk Van de Put"
+ },
+ "BELGIUM:KBC": {
+  "ceo": "Johan Thijs",
+  "sources": {
+   "ceo": "https://www.kbc.com/en/corporate-governance/leadership/executive-committee--members.html",
+   "chairman": "https://www.kbc.com/en/corporate-governance/leadership/board-of-directors--members.html"
+  },
+  "chairman": "Koenraad Debackere"
+ },
+ "BELGIUM:UCB": {
+  "website": "https://www.ucb.com",
+  "sources": {
+   "website": "https://www.ucb.com/",
+   "headquarters": "https://en.wikipedia.org/wiki/UCB_(company)",
+   "ceo": "https://www.ucb.com/about-ucb/management",
+   "chairman": "https://www.ucb.com/investors/corporate-governance"
+  },
+  "headquarters": "Brussels, Belgium",
+  "ceo": "Jean-Christophe Tellier",
+  "chairman": "Jonathan Peacock"
  },
  "BRAZIL:A1DI34": {
   "ceo": "Vincent Roche",
@@ -12037,6 +12099,74 @@
   },
   "chairman": "Andrew Mackenzie"
  },
+ "DENMARK:CARL_A": {
+  "ceo": "Jacob Aarup-Andersen",
+  "sources": {
+   "ceo": "https://mfn.se/nir/a/carlsberg/notification-and-public-disclosure-of-acquisition-of-carlsberg-a-s-shares-by-group-ceo-9f1d103d",
+   "chairman": "https://mfn.se/nir/a/carlsberg/annual-general-meeting-9e23e6da"
+  },
+  "chairman": "Henrik Poulsen"
+ },
+ "DENMARK:CARL_B": {
+  "ceo": "Jacob Aarup-Andersen",
+  "sources": {
+   "ceo": "https://mfn.se/nir/a/carlsberg/notification-and-public-disclosure-of-acquisition-of-carlsberg-a-s-shares-by-group-ceo-9f1d103d",
+   "chairman": "https://mfn.se/nir/a/carlsberg/annual-general-meeting-9e23e6da"
+  },
+  "chairman": "Henrik Poulsen"
+ },
+ "DENMARK:COLO_B": {
+  "ceo": "Gavin Wood",
+  "sources": {
+   "ceo": "https://mfn.se/one/a/coloplast/coloplast-appoints-gavin-wood-as-new-ceo-3fa5df1a"
+  }
+ },
+ "DENMARK:DANSKE": {
+  "ceo": "Carsten Egeriis",
+  "sources": {
+   "ceo": "https://danskebank.com/about-us/management",
+   "chairman": "https://danskebank.com/news-and-insights/news-archive/company-announcements/2026/ca26032026"
+  },
+  "chairman": "Martin Blessing"
+ },
+ "DENMARK:DSV": {
+  "website": "https://www.dsv.com",
+  "sources": {
+   "website": "https://www.dsv.com/en/about-dsv",
+   "founded": "https://en.wikipedia.org/wiki/DSV_(company)",
+   "ceo": "https://www.dsv.com/en/about-dsv/management/executive-board",
+   "chairman": "https://www.dsv.com/en/about-dsv/management/board-of-directors"
+  },
+  "founded": 1976,
+  "ceo": "Jens H. Lund",
+  "chairman": "Thomas Plenborg"
+ },
+ "DENMARK:GMAB": {
+  "website": "https://www.genmab.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Genmab",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1434265/000143426526000138/gmab_20261023xex99d1.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1434265/000143426526000044/gmab_20260319xex99d1x1.htm"
+  },
+  "ceo": "Jan van de Winkel",
+  "chairman": "Deirdre P. Connelly"
+ },
+ "DENMARK:MAERSK_A": {
+  "ceo": "Vincent Clerc",
+  "sources": {
+   "ceo": "https://www.maersk.com/about/executive-leadership-team",
+   "chairman": "https://www.maersk.com/about/executive-leadership-team/robert-maersk-uggla"
+  },
+  "chairman": "Robert Mærsk Uggla"
+ },
+ "DENMARK:MAERSK_B": {
+  "ceo": "Vincent Clerc",
+  "sources": {
+   "ceo": "https://www.maersk.com/about/executive-leadership-team",
+   "chairman": "https://www.maersk.com/about/executive-leadership-team/robert-maersk-uggla"
+  },
+  "chairman": "Robert Mærsk Uggla"
+ },
  "DENMARK:NOVO_B": {
   "ceo": "Mike Doustdar",
   "sources": {
@@ -12045,11 +12175,115 @@
   },
   "chairman": "Lars Rebien Sørensen"
  },
+ "DENMARK:NSIS_B": {
+  "website": "https://www.novonesis.com",
+  "sources": {
+   "website": "https://www.novonesis.com/en/about-us",
+   "headquarters": "https://en.wikipedia.org/wiki/Novonesis",
+   "ceo": "https://www.novonesis.com/en/about-us/leadership",
+   "chairman": "https://www.novonesis.com/en/about-us/leadership"
+  },
+  "headquarters": "Lyngby, Denmark",
+  "ceo": "Ester Baiget",
+  "chairman": "Cees de Jong"
+ },
+ "DENMARK:ORSTED": {
+  "ceo": "Rasmus Errboe",
+  "sources": {
+   "ceo": "https://cdn.orsted.com/-/media/annual-2025/annual-report-2025.pdf?rev=34ff0f324dc1429bac1bc84382c30a9d",
+   "chairman": "https://orsted.com/en/company-announcement-list/2026/04/resolutions-of-the-2026-annual-general-meeting-of--148681901"
+  },
+  "chairman": "Lene Skole"
+ },
+ "DENMARK:VWS": {
+  "website": "https://www.vestas.com",
+  "sources": {
+   "website": "https://www.vestas.com/en/about/this-is-vestas",
+   "founded": "https://en.wikipedia.org/wiki/Vestas",
+   "ceo": "https://www.vestas.com/en/about/our-governance/our-management",
+   "chairman": "https://www.vestas.com/en/about/our-governance/board-of-directors"
+  },
+  "founded": 1945,
+  "ceo": "Henrik Andersen",
+  "chairman": "Anders Runevad"
+ },
+ "FINLAND:FORTUM": {
+  "headquarters": "Espoo, Finland",
+  "sources": {
+   "headquarters": "https://en.wikipedia.org/wiki/Fortum",
+   "ceo": "https://www.fortum.com/investors/corporate-governance/leadership-team",
+   "chairman": "https://www.fortum.com/investors/corporate-governance/board-directors"
+  },
+  "ceo": "Markus Rauramo",
+  "chairman": "Mikael Silvennoinen"
+ },
+ "FINLAND:KNEBV": {
+  "website": "https://www.kone.com",
+  "sources": {
+   "website": "https://www.kone.com/global/en/company.html",
+   "founded": "https://en.wikipedia.org/wiki/KONE",
+   "headquarters": "https://en.wikipedia.org/wiki/KONE",
+   "ceo": "https://www.kone.com/global/en/company/organization-and-management/Executive-Board.html",
+   "chairman": "https://www.kone.com/global/en/company/organization-and-management/board-of-directors.html"
+  },
+  "founded": 1910,
+  "headquarters": "Espoo, Finland",
+  "ceo": "Philippe Delorme",
+  "chairman": "Antti Herlin"
+ },
+ "FINLAND:NDA_FI": {
+  "website": "https://www.nordea.com",
+  "sources": {
+   "website": "https://www.nordea.com/en/about-us",
+   "ceo": "https://www.nordea.com/en/about-us/corporate-governance/ceo-and-leadership-team",
+   "chairman": "https://www.nordea.com/en/about-us/corporate-governance/board-of-directors/members-of-the-board"
+  },
+  "ceo": "Frank Vang-Jensen",
+  "chairman": "Stephen Hester"
+ },
+ "FINLAND:NESTE": {
+  "ceo": "Heikki Malinen",
+  "sources": {
+   "ceo": "https://mfn.se/cis/a/neste/nestes-half-year-financial-report-for-january-june-2026-0f4d57cc",
+   "chairman": "https://mfn.se/cis/a/neste/decisions-taken-by-nestes-annual-general-meeting-1b66150e"
+  },
+  "chairman": "Pasi Laine"
+ },
+ "FINLAND:NOKIA": {
+  "ceo": "Justin Hotard",
+  "sources": {
+   "ceo": "https://www.nokia.com/we-are-nokia/leadership-and-governance/",
+   "chairman": "https://www.nokia.com/we-are-nokia/leadership-and-governance/"
+  },
+  "chairman": "Timo Ihamuotila"
+ },
+ "FINLAND:WRT1V": {
+  "ceo": "Håkan Agnevall",
+  "sources": {
+   "ceo": "https://mfn.se/cis/a/wartsila/wartsila-corporation-wartsilas-half-year-financial-report-january-june-2026-86d3f255",
+   "chairman": "https://mfn.se/cis/a/wartsila/wartsila-corporation-decisions-taken-by-wartsilas-annual-general-meeting-and-board-of-directors-1306ce1c"
+  },
+  "chairman": "Tom Johnstone"
+ },
+ "FRANCE:ACA": {
+  "headquarters": "Montrouge, France",
+  "sources": {
+   "headquarters": "https://en.wikipedia.org/wiki/Crédit_Agricole",
+   "ceo": "https://www.credit-agricole.com/en/group/governance",
+   "chairman": "https://www.credit-agricole.com/en/group/governance"
+  },
+  "ceo": "Olivier Gavalda",
+  "chairman": "Éric Vial"
+ },
  "FRANCE:AI": {
   "chairman": "Benoît Potier",
   "sources": {
-   "chairman": "https://www.airliquide.com/group/board-directors"
-  }
+   "chairman": "https://www.airliquide.com/group/board-directors",
+   "headquarters": "https://en.wikipedia.org/wiki/Air_Liquide",
+   "ceo": "https://www.airliquide.com/group/executive-committee"
+  },
+  "headquarters": "Paris, France",
+  "ceo": "François Jackow"
  },
  "FRANCE:AIR": {
   "ceo": "Guillaume Faury",
@@ -12059,11 +12293,37 @@
   },
   "chairman": "René Obermann"
  },
+ "FRANCE:BN": {
+  "ceo": "Antoine de Saint-Affrique",
+  "sources": {
+   "ceo": "https://www.danone.com/group/about-us/governance.html",
+   "chairman": "https://www.danone.com/group/about-us/governance/gilles-schnepp.html"
+  },
+  "chairman": "Gilles Schnepp"
+ },
  "FRANCE:BNP": {
   "chairman": "Jean Lemierre",
   "sources": {
    "chairman": "https://invest.bnpparibas/en/document/agm-2026-information-gender-balance-on-the-bod-post-agm-2026"
   }
+ },
+ "FRANCE:BVI": {
+  "website": "https://group.bureauveritas.com",
+  "sources": {
+   "website": "https://group.bureauveritas.com/about-us/our-governance",
+   "headquarters": "https://en.wikipedia.org/wiki/Bureau_Veritas",
+   "ceo": "https://group.bureauveritas.com/about-us/governance/our-executive-committee"
+  },
+  "headquarters": "Neuilly-sur-Seine, France",
+  "ceo": "Hinda Gharbi"
+ },
+ "FRANCE:CAP": {
+  "ceo": "Aiman Ezzat",
+  "sources": {
+   "ceo": "https://www.capgemini.com/about-us/management-and-governance/management-team/",
+   "chairman": "https://www.capgemini.com/about-us/management-and-governance/board-of-directors/"
+  },
+  "chairman": "Paul Hermelin"
  },
  "FRANCE:CDI": {
   "ceo": "Antoine Arnault",
@@ -12081,11 +12341,55 @@
   },
   "chairman": "Antoine Gosset-Grainville"
  },
+ "FRANCE:DG": {
+  "ceo": "Pierre Anjolras",
+  "sources": {
+   "ceo": "https://www.vinci.com/en/group/governance/management-team",
+   "chairman": "https://www.vinci.com/en/group/governance/board-directors"
+  },
+  "chairman": "Xavier Huillard"
+ },
+ "FRANCE:DSY": {
+  "ceo": "Pascal Daloz",
+  "sources": {
+   "ceo": "https://www.3ds.com/about/company/leadership",
+   "chairman": "https://www.3ds.com/about/company/leadership"
+  },
+  "chairman": "Pascal Daloz"
+ },
+ "FRANCE:EL": {
+  "ceo": "Francesco Milleri",
+  "sources": {
+   "ceo": "https://www.essilorluxottica.com/en/governance/board-directors/",
+   "chairman": "https://www.essilorluxottica.com/en/governance/"
+  },
+  "chairman": "Francesco Milleri"
+ },
+ "FRANCE:ENGI": {
+  "headquarters": "Courbevoie, France",
+  "sources": {
+   "headquarters": "https://en.wikipedia.org/wiki/Engie",
+   "ceo": "https://www.engie.com/en/about-engie/governance/",
+   "chairman": "https://www.engie.com/en/about-engie/governance/board-of-directors/"
+  },
+  "ceo": "Catherine MacGregor",
+  "chairman": "Jean-Pierre Clamadieu"
+ },
  "FRANCE:ENX": {
   "chairman": "Piero Novelli",
   "sources": {
    "chairman": "https://www.euronext.com/en/investor-relations/corporate-governance/supervisory-board"
   }
+ },
+ "FRANCE:LR": {
+  "website": "https://www.legrand.com",
+  "sources": {
+   "website": "https://www.legrand.com/en/group/management",
+   "ceo": "https://www.legrand.com/en/group/management",
+   "chairman": "https://www.legrand.com/en/investors-and-shareholders/corporate-governance/board-directors"
+  },
+  "ceo": "Benoît Coquart",
+  "chairman": "Angeles Garcia-Poveda"
  },
  "FRANCE:MC": {
   "ceo": "Bernard Arnault",
@@ -12102,6 +12406,32 @@
    "chairman": "https://www.loreal-finance.com/eng/gouvernance"
   },
   "chairman": "Jean-Paul Agon"
+ },
+ "FRANCE:ORA": {
+  "ceo": "Christel Heydemann",
+  "sources": {
+   "ceo": "https://www.orange.com/en/our-group/our-governance/our-board-of-directors",
+   "chairman": "https://www.orange.com/en/our-group/our-governance/our-board-of-directors"
+  },
+  "chairman": "Frédéric Sanchez"
+ },
+ "FRANCE:PUB": {
+  "ceo": "Arthur Sadoun",
+  "sources": {
+   "ceo": "https://www.publicisgroupe.com/en/the-groupe/governance",
+   "chairman": "https://www.publicisgroupe.com/en/the-groupe/governance"
+  },
+  "chairman": "Arthur Sadoun"
+ },
+ "FRANCE:RI": {
+  "website": "https://www.pernod-ricard.com",
+  "sources": {
+   "website": "https://www.pernod-ricard.com/en/our-group",
+   "ceo": "https://www.pernod-ricard.com/en/our-group/our-governance",
+   "chairman": "https://www.pernod-ricard.com/en/our-group/our-governance"
+  },
+  "ceo": "Alexandre Ricard",
+  "chairman": "Alexandre Ricard"
  },
  "FRANCE:RMS": {
   "ceo": "Axel Dumas",
@@ -12143,6 +12473,18 @@
   },
   "chairman": "Patrick Pouyanné"
  },
+ "FRANCE:VIE": {
+  "website": "https://www.veolia.com",
+  "sources": {
+   "website": "https://www.veolia.com/en/veolia-group/governance/board-directors",
+   "headquarters": "https://en.wikipedia.org/wiki/Veolia",
+   "ceo": "https://www.veolia.com/en/veolia-group/governance/veolia-executive-committee",
+   "chairman": "https://www.veolia.com/en/veolia-group/governance/board-directors"
+  },
+  "headquarters": "Aubervilliers, France",
+  "ceo": "Estelle Brachlianoff",
+  "chairman": "Antoine Frérot"
+ },
  "GERMANY:0QF": {
   "ceo": "Stéphane Bancel",
   "sources": {
@@ -12172,6 +12514,12 @@
    "chairman": "https://www.midea.com.cn/en/Investors/Governance"
   },
   "chairman": "Fang Hongbo"
+ },
+ "GERMANY:1COV": {
+  "ceo": "Markus Steilemann",
+  "sources": {
+   "ceo": "https://www.covestro.com/en/company/management/board-of-management"
+  }
  },
  "GERMANY:1N8": {
   "ceo": "Pieter van der Does, Ingo Uytdehaage",
@@ -12487,6 +12835,16 @@
   },
   "chairman": "Shauneen Bruder"
  },
+ "GERMANY:8TRA": {
+  "founded": 2013,
+  "sources": {
+   "founded": "https://en.wikipedia.org/wiki/Traton",
+   "ceo": "https://traton.com/en/company/executive-board.html",
+   "chairman": "https://traton.com/en/company/supervisory-board.html"
+  },
+  "ceo": "Christian Levin",
+  "chairman": "Hans Dieter Pötsch"
+ },
  "GERMANY:912294": {
   "ceo": "Earl C. Austin, Jr.",
   "sources": {
@@ -12773,6 +13131,14 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/8670/000130817926000409/adp015474-def14a.htm"
   }
  },
+ "GERMANY:ADS": {
+  "ceo": "Bjørn Gulden",
+  "sources": {
+   "ceo": "https://www.adidas-group.com/en/about/executive-board",
+   "chairman": "https://www.adidas-group.com/en/about/supervisory-board"
+  },
+  "chairman": "Nassef Sawiris"
+ },
  "GERMANY:AE9": {
   "website": "https://www.agnicoeagle.com",
   "sources": {
@@ -12911,6 +13277,14 @@
   "ceo": "Daniel H. Schulman",
   "chairman": "Mark T. Bertolini"
  },
+ "GERMANY:BAS": {
+  "ceo": "Markus Kamieth",
+  "sources": {
+   "ceo": "https://www.basf.com/global/en/who-we-are/organization/management/board-of-executive-directors",
+   "chairman": "https://www.basf.com/global/en/who-we-are/organization/management/supervisory-board"
+  },
+  "chairman": "Kurt Bock"
+ },
  "GERMANY:BCO": {
   "chairman": "Steven M. Mollenkopf",
   "sources": {
@@ -12927,6 +13301,14 @@
   "ceo": "C. S. Venkatakrishnan",
   "chairman": "Nigel Higgins"
  },
+ "GERMANY:BEI": {
+  "ceo": "Vincent Warnery",
+  "sources": {
+   "ceo": "https://www.beiersdorf.com/about-us/our-profile/our-leadership-team",
+   "chairman": "https://www.beiersdorf.com/about-us/our-profile/supervisory-board"
+  },
+  "chairman": "Reinhard Pöllath"
+ },
  "GERMANY:BKN": {
   "ceo": "L. Scott Thomson",
   "sources": {
@@ -12938,6 +13320,14 @@
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/1303523/000130352326000017/bti-20251231.htm"
   }
+ },
+ "GERMANY:BMW": {
+  "ceo": "Milan Nedeljković",
+  "sources": {
+   "ceo": "https://www.bmwgroup.com/en/company/leadership-and-governance.html",
+   "chairman": "https://www.bmwgroup.com/en/company/leadership-and-governance.html"
+  },
+  "chairman": "Nicolas Peter"
  },
  "GERMANY:BN9": {
   "ceo": "Robin Vince",
@@ -13027,6 +13417,14 @@
   },
   "chairman": "Joseph E. Creed"
  },
+ "GERMANY:CBK": {
+  "ceo": "Bettina Orlopp",
+  "sources": {
+   "ceo": "https://www.commerzbank.de/group/newsroom/press-releases/start-annual-general-meeting-2026.html",
+   "chairman": "https://www.commerzbank.de/group/newsroom/press-releases/start-annual-general-meeting-2026.html"
+  },
+  "chairman": "Jens Weidmann"
+ },
  "GERMANY:CCC3": {
   "ceo": "Henrique Braun",
   "sources": {
@@ -13090,6 +13488,14 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/19617/000001961726000096/jpm-20260402.htm"
   },
   "chairman": "James Dimon"
+ },
+ "GERMANY:CON": {
+  "ceo": "Christian Kötz",
+  "sources": {
+   "ceo": "https://www.continental.com/en/company/corporate-governance/executive-board/christian-koetz/",
+   "chairman": "https://www.continental.com/en/company/corporate-governance/supervisory-board-1/"
+  },
+  "chairman": "Sabrina Soussan"
  },
  "GERMANY:CRIN": {
   "ceo": "Andrea Orcel",
@@ -13156,8 +13562,18 @@
  "GERMANY:DB1": {
   "chairman": "Clara-Christina Streit",
   "sources": {
-   "chairman": "https://www.deutsche-boerse.com/dbg-en/investor-relations/corporate-governance/supervisory-board"
-  }
+   "chairman": "https://www.deutsche-boerse.com/dbg-en/investor-relations/corporate-governance/supervisory-board",
+   "ceo": "https://www.deutsche-boerse.com/dbg-en/about-us/deutsche-boerse-group/executive-board"
+  },
+  "ceo": "Stephan Leithner"
+ },
+ "GERMANY:DBK": {
+  "ceo": "Christian Sewing",
+  "sources": {
+   "ceo": "https://www.db.com/who-we-are/boards-and-committees/management-board",
+   "chairman": "https://investor-relations.db.com/corporate-governance/organizational-structure/supervisory-board?language_id=1"
+  },
+  "chairman": "Alexander Wynaendts"
  },
  "GERMANY:DCO": {
   "ceo": "John C. May",
@@ -13204,8 +13620,18 @@
  "GERMANY:DTE": {
   "chairman": "Frank Appel",
   "sources": {
-   "chairman": "https://www.telekom.com/en/sites/dtag-mandatory-disclosures"
-  }
+   "chairman": "https://www.telekom.com/en/about-us/corporate-governance/supervisory-board",
+   "ceo": "https://www.telekom.com/en/about-us/corporate-governance/board-of-management"
+  },
+  "ceo": "Timotheus Höttges"
+ },
+ "GERMANY:DTG": {
+  "ceo": "Karin Rådström",
+  "sources": {
+   "ceo": "https://www.daimlertruck.com/en/company/corporate-governance/board-of-management",
+   "chairman": "https://www.daimlertruck.com/en/company/corporate-governance/supervisory-board"
+  },
+  "chairman": "Joe Kaeser"
  },
  "GERMANY:DUT": {
   "ceo": "Robert Fauber",
@@ -13282,8 +13708,10 @@
  "GERMANY:ENR": {
   "chairman": "Joe Kaeser",
   "sources": {
-   "chairman": "https://www.siemens-energy.com/global/en/home/general/corporate-information-se.html"
-  }
+   "chairman": "https://www.siemens-energy.com/global/en/home/company/supervisory-board.html",
+   "ceo": "https://www.siemens-energy.com/global/en/home/company/executive-board.html"
+  },
+  "ceo": "Christian Bruch"
  },
  "GERMANY:ENXB": {
   "chairman": "Piero Novelli",
@@ -13357,6 +13785,16 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/831259/000119312526173666/d30227ddef14a.htm"
   }
  },
+ "GERMANY:FRE": {
+  "website": "https://www.fresenius.com",
+  "sources": {
+   "website": "https://www.fresenius.com/management-board",
+   "ceo": "https://www.fresenius.com/management-board",
+   "chairman": "https://www.fresenius.com/supervisory-board"
+  },
+  "ceo": "Michael Sen",
+  "chairman": "Wolfgang Kirsch"
+ },
  "GERMANY:GCP": {
   "ceo": "H. Lawrence Culp Jr.",
   "sources": {
@@ -13425,6 +13863,24 @@
   },
   "chairman": "Edward P. Decker"
  },
+ "GERMANY:HEI": {
+  "ceo": "Dominik von Achten",
+  "sources": {
+   "ceo": "https://www.heidelbergmaterials.com/en/company/managing-board",
+   "chairman": "https://www.heidelbergmaterials.com/en/company/supervisory-board"
+  },
+  "chairman": "Bernd Scheifele"
+ },
+ "GERMANY:HEN": {
+  "website": "https://www.henkel.com",
+  "sources": {
+   "website": "https://www.henkel.com/company",
+   "ceo": "https://www.henkel.com/company/management-corporate-boards/management-board",
+   "chairman": "https://www.henkel.com/company/management-corporate-boards/supervisory-board"
+  },
+  "ceo": "Carsten Knobel",
+  "chairman": "Simone Bagel-Trah"
+ },
  "GERMANY:HI91": {
   "ceo": "Christopher J. Nassetta",
   "sources": {
@@ -13440,6 +13896,24 @@
    "chairman": "https://finance.hermes.com/en/ambitious-and-balanced-governance/"
   },
   "chairman": "Eric de Seynes"
+ },
+ "GERMANY:HNR1": {
+  "website": "https://www.hannover-re.com",
+  "sources": {
+   "website": "https://www.hannover-re.com/en",
+   "ceo": "https://www.hannover-re.com/en/group/executive-board/clemens-jungsthoefel/",
+   "chairman": "https://www.hannover-re.com/en/group/supervisory-board"
+  },
+  "ceo": "Clemens Jungsthöfel",
+  "chairman": "Torsten Leue"
+ },
+ "GERMANY:HOT": {
+  "ceo": "Juan Santamaría Cases",
+  "sources": {
+   "ceo": "https://www.hochtief.com/about-hochtief/executive-board",
+   "chairman": "https://www.hochtief.com/about-hochtief/supervisory-board"
+  },
+  "chairman": "Pedro López Jiménez"
  },
  "GERMANY:IBM": {
   "ceo": "Arvind Krishna",
@@ -13556,6 +14030,16 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000063/jnj-20260309.htm"
   },
   "chairman": "Joaquin Duato"
+ },
+ "GERMANY:KBX": {
+  "website": "https://www.knorr-bremse.com",
+  "sources": {
+   "website": "https://www.knorr-bremse.com/en/",
+   "headquarters": "https://en.wikipedia.org/wiki/Knorr-Bremse",
+   "ceo": "https://www.knorr-bremse.com/en/company/management/"
+  },
+  "headquarters": "Munich, Germany",
+  "ceo": "Marc Llistosella"
  },
  "GERMANY:KEE": {
   "ceo": "Tetsuya Nakano",
@@ -13775,6 +14259,14 @@
   },
   "chairman": "Tatsuo Yasunaga"
  },
+ "GERMANY:MTX": {
+  "ceo": "Johannes Bussmann",
+  "sources": {
+   "ceo": "https://www.mtu.de/about-us/corporate-governance/executive-board/",
+   "chairman": "https://www.mtu.de/about-us/corporate-governance/supervisory-board/"
+  },
+  "chairman": "Gordon Riske"
+ },
  "GERMANY:MUR1": {
   "ceo": "Norio Nakajima",
   "sources": {
@@ -13903,6 +14395,12 @@
   },
   "chairman": "Lawrence Joseph Ellison"
  },
+ "GERMANY:P911": {
+  "ceo": "Michael Leiters",
+  "sources": {
+   "ceo": "https://newsroom.porsche.com/en/company/executive-board-porsche-ag.html"
+  }
+ },
  "GERMANY:PA9": {
   "ceo": "Alan D. Schnitzer",
   "sources": {
@@ -14027,6 +14525,12 @@
   },
   "chairman": "George D. Yancopoulos,Leonard S. Schleifer"
  },
+ "GERMANY:RHM": {
+  "ceo": "Armin Papperger",
+  "sources": {
+   "ceo": "https://www.rheinmetall.com/en/company/about-rheinmetall"
+  }
+ },
  "GERMANY:RHO": {
   "ceo": "Thomas Schinecker",
   "sources": {
@@ -14066,6 +14570,14 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000013/rost-20260406.htm"
   },
   "chairman": "K. Gunnar Bjorklund"
+ },
+ "GERMANY:RWE": {
+  "ceo": "Markus Krebber",
+  "sources": {
+   "ceo": "https://www.rwe.com/en/investor-relations/corporate-governance/management-board-and-supervisory-board/",
+   "chairman": "https://www.rwe.com/en/investor-relations/corporate-governance/management-board-and-supervisory-board/"
+  },
+  "chairman": "Frank Appel"
  },
  "GERMANY:RYC": {
   "ceo": "David McKay",
@@ -14112,6 +14624,14 @@
    "chairman": "https://group.softbank/en/about/officer"
   },
   "chairman": "Masayoshi Son"
+ },
+ "GERMANY:SHL": {
+  "ceo": "Bernd Montag",
+  "sources": {
+   "ceo": "https://www.siemens-healthineers.com/company/management",
+   "chairman": "https://www.siemens-healthineers.com/investor-relations/supervisory-board"
+  },
+  "chairman": "Ralf Thomas"
  },
  "GERMANY:SIE": {
   "ceo": "Roland Busch",
@@ -14191,6 +14711,12 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/316709/000119312526142826/d930509ddef14a.htm"
   }
  },
+ "GERMANY:SY1": {
+  "ceo": "Jean-Yves Parisot",
+  "sources": {
+   "ceo": "https://www.symrise.com/our-company/management-and-supervisory-board/"
+  }
+ },
  "GERMANY:SYK": {
   "ceo": "Kevin A. Lobo",
   "sources": {
@@ -14232,6 +14758,14 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm"
   },
   "chairman": "Robyn Denholm"
+ },
+ "GERMANY:TLX": {
+  "ceo": "Torsten Leue",
+  "sources": {
+   "ceo": "https://www.talanx.com/en/talanx-group/group/board_of_management",
+   "chairman": "https://www.talanx.com/en/talanx-group/group/supervisory_board"
+  },
+  "chairman": "Herbert K. Haas"
  },
  "GERMANY:TM5": {
   "ceo": "Srinivasan Gopalan",
@@ -14338,6 +14872,20 @@
    "chairman": "https://www.advantest.com/en/about/management/"
   },
   "chairman": "Yoshiaki Yoshida"
+ },
+ "GERMANY:VNA": {
+  "ceo": "Luka Mucic",
+  "sources": {
+   "ceo": "https://www.vonovia.com/en/about-us/corporate-management/management-board",
+   "chairman": "https://www.vonovia.com/en/about-us/corporate-management/supervisory-board"
+  },
+  "chairman": "Clara C. Streit"
+ },
+ "GERMANY:VTWR": {
+  "ceo": "Martin Bouchard",
+  "sources": {
+   "ceo": "https://www.vantagetowers.com/en/about-us/our-leadership"
+  }
  },
  "GERMANY:WBC": {
   "ceo": "Anthony Miller",
@@ -21863,6 +22411,32 @@
   },
   "chairman": "Angga Raka Prabowo"
  },
+ "IRELAND:BIRG": {
+  "ceo": "Myles O'Grady",
+  "sources": {
+   "ceo": "https://www.bankofireland.com/about-bank-of-ireland/about-the-group/management-structure/directors/",
+   "chairman": "https://www.bankofireland.com/about-bank-of-ireland/about-the-group/management-structure/directors/"
+  },
+  "chairman": "Akshaya Bhargava"
+ },
+ "IRELAND:KRZ": {
+  "website": "https://www.kerry.com",
+  "sources": {
+   "website": "https://www.kerry.com/about/leadership",
+   "ceo": "https://www.kerry.com/about/leadership",
+   "chairman": "https://www.kerry.com/about/leadership"
+  },
+  "ceo": "Edmond Scanlon",
+  "chairman": "Fiona Dawson"
+ },
+ "IRELAND:RYA": {
+  "ceo": "Michael O'Leary",
+  "sources": {
+   "ceo": "https://investor.ryanair.com/sustainability/governance/executive-officers/",
+   "chairman": "https://investor.ryanair.com/sustainability/governance/corporate-governance/"
+  },
+  "chairman": "Stan McCarthy"
+ },
  "ISRAEL:CYBR": {
   "ceo": "Nikesh Arora",
   "sources": {
@@ -24357,6 +24931,38 @@
   },
   "chairman": "Darren W. Woods"
  },
+ "ITALY:BAMI": {
+  "website": "https://gruppo.bancobpm.it",
+  "sources": {
+   "website": "https://gruppo.bancobpm.it/en/",
+   "ceo": "https://gruppo.bancobpm.it/en/corporate-governance/corporate-bodies/",
+   "chairman": "https://gruppo.bancobpm.it/en/corporate-governance/corporate-bodies/"
+  },
+  "ceo": "Giuseppe Castagna",
+  "chairman": "Massimo Tononi"
+ },
+ "ITALY:BMPS": {
+  "website": "https://www.gruppomps.it",
+  "sources": {
+   "website": "https://www.gruppomps.it/en/",
+   "founded": "https://en.wikipedia.org/wiki/Banca_Monte_dei_Paschi_di_Siena_S.p.A.",
+   "headquarters": "https://en.wikipedia.org/wiki/Banca_Monte_dei_Paschi_di_Siena_S.p.A.",
+   "ceo": "https://www.gruppomps.it/en/corporate-governance/board-of-directors/board-of-directors.html",
+   "chairman": "https://www.gruppomps.it/en/corporate-governance/board-of-directors/board-of-directors.html"
+  },
+  "founded": 1472,
+  "headquarters": "Siena, Italy",
+  "ceo": "Luigi Lovaglio",
+  "chairman": "Cesare Bisoni"
+ },
+ "ITALY:BPE": {
+  "ceo": "Gianni Franco Papa",
+  "sources": {
+   "ceo": "https://group.bper.it/en/governance/corporate-bodies/board-of-directors",
+   "chairman": "https://group.bper.it/en/governance/corporate-bodies/board-of-directors"
+  },
+  "chairman": "Fabio Cerchiai"
+ },
  "ITALY:ENEL": {
   "ceo": "Flavio Cattaneo",
   "sources": {
@@ -24389,6 +24995,38 @@
   },
   "chairman": "Gian Maria Gros-Pietro"
  },
+ "ITALY:LDO": {
+  "ceo": "Lorenzo Mariani",
+  "sources": {
+   "ceo": "https://www.leonardo.com/en/about/management",
+   "chairman": "https://www.leonardo.com/en/about/management"
+  },
+  "chairman": "Francesco Macrì"
+ },
+ "ITALY:MB": {
+  "ceo": "Alessandro Melzi d'Eril",
+  "sources": {
+   "ceo": "https://www.mediobanca.com/en/corporate-governance/board-of-directors.html",
+   "chairman": "https://www.mediobanca.com/en/corporate-governance/board-of-directors.html"
+  },
+  "chairman": "Vittorio Grilli"
+ },
+ "ITALY:PRY": {
+  "ceo": "Massimo Battaini",
+  "sources": {
+   "ceo": "https://www.prysmian.com/en/company/governance/corporate-bodies",
+   "chairman": "https://www.prysmian.com/en/company/governance/corporate-bodies"
+  },
+  "chairman": "Francesco Gori"
+ },
+ "ITALY:PST": {
+  "ceo": "Matteo Del Fante",
+  "sources": {
+   "ceo": "https://www.posteitaliane.it/en/governance/board-of-directors",
+   "chairman": "https://www.posteitaliane.it/en/governance/board-of-directors"
+  },
+  "chairman": "Silvia Maria Rovere"
+ },
  "ITALY:RACE": {
   "ceo": "Benedetto Vigna",
   "sources": {
@@ -24404,6 +25042,14 @@
    "chairman": "https://www.unicreditgroup.eu/en/governance/governance-bodies/board-of-directors.html"
   },
   "chairman": "Pietro Carlo Padoan"
+ },
+ "ITALY:UNI": {
+  "ceo": "Matteo Laterza",
+  "sources": {
+   "ceo": "https://www.unipol.com/en/governance/boards-and-officials/board-directors",
+   "chairman": "https://www.unipol.com/en/governance/boards-and-officials/board-directors"
+  },
+  "chairman": "Carlo Cimbri"
  },
  "JAPAN:285A": {
   "website": "https://www.kioxia-holdings.com",
@@ -28333,6 +28979,14 @@
   },
   "chairman": "Darren W. Woods"
  },
+ "NETHERLANDS:AD": {
+  "ceo": "Frans Muller",
+  "sources": {
+   "ceo": "https://aholddelhaize.com/about/leadership/",
+   "chairman": "https://aholddelhaize.com/about/leadership/"
+  },
+  "chairman": "Wiebe Draijer"
+ },
  "NETHERLANDS:ADYEN": {
   "ceo": "Pieter van der Does, Ingo Uytdehaage",
   "sources": {
@@ -28341,6 +28995,14 @@
   },
   "chairman": "Piero Overmars"
  },
+ "NETHERLANDS:ASM": {
+  "ceo": "Hichem M'Saad",
+  "sources": {
+   "ceo": "https://www.asm.com/investors/corporate-governance-principles/management-and-supervision",
+   "chairman": "https://www.asm.com/investors/corporate-governance-principles/management-and-supervision"
+  },
+  "chairman": "Pauline van der Meer Mohr"
+ },
  "NETHERLANDS:ASML": {
   "ceo": "Christophe Fouquet",
   "sources": {
@@ -28348,6 +29010,30 @@
    "chairman": "https://www.asml.com/en/company/governance/supervisory-board"
   },
   "chairman": "Nils Andersen"
+ },
+ "NETHERLANDS:BESI": {
+  "ceo": "Richard Blickman",
+  "sources": {
+   "ceo": "https://www.besi.com/company/organization/executive-management/",
+   "chairman": "https://www.besi.com/company/organization/supervisory-board/"
+  },
+  "chairman": "Richard Norbruis"
+ },
+ "NETHERLANDS:EXO": {
+  "ceo": "John Elkann",
+  "sources": {
+   "ceo": "https://www.exor.com/pages/exor/governance/board-directors",
+   "chairman": "https://www.exor.com/pages/exor/governance/board-directors"
+  },
+  "chairman": "Nitin Nohria"
+ },
+ "NETHERLANDS:HEIA": {
+  "ceo": "Rafa Oliveira",
+  "sources": {
+   "ceo": "https://www.theheinekencompany.com/investors/governance/executive-board",
+   "chairman": "https://www.theheinekencompany.com/investors/governance/supervisory-board"
+  },
+  "chairman": "Peter Wennink"
  },
  "NETHERLANDS:INGA": {
   "ceo": "Steven van Rijswijk",
@@ -28362,6 +29048,22 @@
   "sources": {
    "name": "https://www.sec.gov/Archives/edgar/data/1421876/000117184326003080/exh_991.htm"
   }
+ },
+ "NETHERLANDS:NN": {
+  "ceo": "David Knibbe",
+  "sources": {
+   "ceo": "https://www.nn-group.com/our-company/our-boards",
+   "chairman": "https://www.nn-group.com/our-company/our-boards"
+  },
+  "chairman": "David Cole"
+ },
+ "NETHERLANDS:PHIA": {
+  "ceo": "Roy Jakobs",
+  "sources": {
+   "ceo": "https://www.philips.com/a-w/about/executive-committee.html",
+   "chairman": "https://www.philips.com/a-w/about/supervisory-board.html"
+  },
+  "chairman": "Feike Sijbesma"
  },
  "NETHERLANDS:PRX": {
   "ceo": "Fabricio Bloisi",
@@ -28395,13 +29097,55 @@
   },
   "chairman": "Steven Gregg"
  },
+ "NORWAY:AKRBP": {
+  "website": "https://akerbp.com",
+  "sources": {
+   "website": "https://akerbp.com/en/about-us/",
+   "ceo": "https://akerbp.com/en/management-team/",
+   "chairman": "https://akerbp.com/en/board-of-directors/"
+  },
+  "ceo": "Karl Johnny Hersvik",
+  "chairman": "Øyvind Eriksen"
+ },
+ "NORWAY:DNB": {
+  "ceo": "Kjerstin Braathen",
+  "sources": {
+   "ceo": "https://www.dnb.no/en/about-us/organisation/group-management",
+   "chairman": "https://www.dnb.no/en/about-us/organisation/board-of-directors"
+  },
+  "chairman": "Eimund Nygaard"
+ },
  "NORWAY:EQNR": {
   "website": "https://www.equinor.com",
   "sources": {
    "website": "https://www.equinor.com/",
-   "chairman": "https://www.equinor.com/about-us/board-of-directors"
+   "chairman": "https://www.equinor.com/about-us/board-of-directors",
+   "ceo": "https://www.equinor.com/about-us/corporate-executive-committee"
   },
-  "chairman": "Jarle Roth"
+  "chairman": "Jarle Roth",
+  "ceo": "Anders Opedal"
+ },
+ "NORWAY:GJF": {
+  "website": "https://www.gjensidige.com",
+  "sources": {
+   "website": "https://www.gjensidige.com/operations/group-management",
+   "ceo": "https://www.gjensidige.com/operations/group-management"
+  },
+  "ceo": "Geir Holmgren"
+ },
+ "NORWAY:KOG": {
+  "website": "https://www.kongsberg.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Kongsberg_Gruppen",
+   "ceo": "https://mfn.se/ob/a/kongsberg-gruppen/q2-2026-kongsberg-delivers-a-strong-second-quarter-with-increased-revenue-and-solid-profitability-02033be0"
+  },
+  "ceo": "Eirik Lie"
+ },
+ "NORWAY:NHY": {
+  "ceo": "Eivind Kallevik",
+  "sources": {
+   "ceo": "https://mfn.se/ob/a/norsk-hydro/norsk-hydro-invitation-to-hydros-third-quarter-results-2026-7c18d4c8"
+  }
  },
  "PERU:AAPLUS": {
   "ceo": "John Ternus",
@@ -29239,6 +29983,14 @@
   },
   "chairman": "James Dimon"
  },
+ "POLAND:KGH": {
+  "ceo": "Remigiusz Paszkiewicz",
+  "sources": {
+   "ceo": "https://kghm.com/en/about-us/leadership",
+   "chairman": "https://kghm.com/en/about-us/leadership"
+  },
+  "chairman": "Zbigniew Ćwiąkalski"
+ },
  "POLAND:LILY": {
   "ceo": "David A. Ricks",
   "sources": {
@@ -29318,6 +30070,24 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/80424/000119312526372211/pg-20260826.htm"
   },
   "chairman": "Shailesh G. Jejurikar"
+ },
+ "POLAND:PKN": {
+  "ceo": "Ireneusz Fąfara",
+  "sources": {
+   "ceo": "https://www.orlen.pl/en/about-the-company/company/bodies-and-structure/management-board",
+   "chairman": "https://www.orlen.pl/en/about-the-company/company/bodies-and-structure/supervisory-board"
+  },
+  "chairman": "Przemysław Ciszak"
+ },
+ "POLAND:PKO": {
+  "website": "https://www.pkobp.pl",
+  "sources": {
+   "website": "https://www.pkobp.pl/en",
+   "ceo": "https://www.pkobp.pl/en/authorities",
+   "chairman": "https://www.pkobp.pl/en/authorities"
+  },
+  "ceo": "Szymon Midera",
+  "chairman": "Tomasz Siemiątkowski"
  },
  "POLAND:PLTR": {
   "ceo": "Alexander C. Karp",
@@ -29701,6 +30471,32 @@
    "chairman": "https://www.vodacom.com/board-of-directors.php"
   }
  },
+ "SPAIN:ACS": {
+  "website": "https://www.grupoacs.com",
+  "sources": {
+   "website": "https://www.grupoacs.com/en",
+   "headquarters": "https://en.wikipedia.org/wiki/ACS_Group",
+   "ceo": "https://www.grupoacs.com/en/about-acs/management-bodies/board-of-directors",
+   "chairman": "https://www.grupoacs.com/en/about-acs/management-bodies/board-of-directors"
+  },
+  "headquarters": "Madrid, Spain",
+  "ceo": "Juan Santamaría Cases",
+  "chairman": "Florentino Pérez"
+ },
+ "SPAIN:AENA": {
+  "website": "https://www.aena.es",
+  "sources": {
+   "website": "https://www.aena.es/en/shareholders-and-investors.html",
+   "founded": "https://en.wikipedia.org/wiki/Aena",
+   "headquarters": "https://en.wikipedia.org/wiki/Aena",
+   "ceo": "https://www.aena.es/en/shareholders-and-investors/corporate-governance/board-of-directors.html",
+   "chairman": "https://www.aena.es/en/shareholders-and-investors/corporate-governance/board-of-directors.html"
+  },
+  "founded": 1991,
+  "headquarters": "Madrid, Spain",
+  "ceo": "Maurici Lucena",
+  "chairman": "Maurici Lucena"
+ },
  "SPAIN:AIR": {
   "ceo": "Guillaume Faury",
   "sources": {
@@ -29708,6 +30504,14 @@
    "chairman": "https://www.airbus.com/en/about-us/our-governance/rene-obermann"
   },
   "chairman": "René Obermann"
+ },
+ "SPAIN:AMS": {
+  "ceo": "Luis Maroto",
+  "sources": {
+   "ceo": "https://amadeus.com/en/about/leadership",
+   "chairman": "https://amadeus.com/en/corporate-governance/board-of-directors"
+  },
+  "chairman": "William Connelly"
  },
  "SPAIN:BBVA": {
   "website": "https://www.bbva.com",
@@ -29725,6 +30529,14 @@
   },
   "chairman": "Tomás Muniesa"
  },
+ "SPAIN:ELE": {
+  "ceo": "Gianni Vittorio Armani",
+  "sources": {
+   "ceo": "https://www.endesa.com/en/shareholders-and-investors/corporate-governance/board-directors",
+   "chairman": "https://www.endesa.com/en/shareholders-and-investors/corporate-governance/board-directors"
+  },
+  "chairman": "Juan Sánchez-Calero Guilarte"
+ },
  "SPAIN:ITX": {
   "ceo": "Óscar García Maceiras",
   "sources": {
@@ -29733,6 +30545,32 @@
   },
   "chairman": "Marta Ortega"
  },
+ "SPAIN:NTGY": {
+  "ceo": "Francisco Reynés",
+  "sources": {
+   "ceo": "https://www.naturgy.com/en/shareholders-and-investors/corporate-governance/francisco-reynes-massanet/",
+   "chairman": "https://www.naturgy.com/en/shareholders-and-investors/corporate-governance/francisco-reynes-massanet/"
+  },
+  "chairman": "Francisco Reynés"
+ },
+ "SPAIN:REP": {
+  "headquarters": "Madrid, Spain",
+  "sources": {
+   "headquarters": "https://en.wikipedia.org/wiki/Repsol",
+   "ceo": "https://www.repsol.com/en/shareholders-and-investors/corporate-governance/board-of-directors/index.cshtml",
+   "chairman": "https://www.repsol.com/en/shareholders-and-investors/corporate-governance/board-of-directors/index.cshtml"
+  },
+  "ceo": "Josu Jon Imaz",
+  "chairman": "Antonio Brufau"
+ },
+ "SPAIN:SAB": {
+  "ceo": "Marc Armengol Dulcet",
+  "sources": {
+   "ceo": "https://www.grupbancsabadell.com/corp/en/corporate-governance-and-remuneration-policy/board-of-directors.html",
+   "chairman": "https://www.grupbancsabadell.com/corp/en/corporate-governance-and-remuneration-policy/board-of-directors.html"
+  },
+  "chairman": "Josep Oliu Creus"
+ },
  "SPAIN:SAN": {
   "ceo": "Héctor Grisi",
   "sources": {
@@ -29740,6 +30578,14 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/891478/000089147826000030/san-20251231.htm"
   },
   "chairman": "Ana Botín"
+ },
+ "SPAIN:TEF": {
+  "ceo": "Marc Murtra",
+  "sources": {
+   "ceo": "https://www.telefonica.com/en/about-us/main-data/executive-team/",
+   "chairman": "https://www.telefonica.com/en/about-us/main-data/executive-team/"
+  },
+  "chairman": "Marc Murtra"
  },
  "SPAIN:XPBR": {
   "ceo": "Magda Chambriard",
@@ -29767,6 +30613,24 @@
   "ceo": "Morten Wierod",
   "chairman": "Peter Voser"
  },
+ "SWEDEN:ALFA": {
+  "headquarters": "Lund, Sweden",
+  "sources": {
+   "headquarters": "https://en.wikipedia.org/wiki/Alfa_Laval",
+   "ceo": "https://mfn.se/cis/a/alfa-laval/bulletin-from-the-annual-general-meeting-of-alfa-laval-ab-publ-5979b5d8",
+   "chairman": "https://mfn.se/cis/a/alfa-laval/bulletin-from-the-annual-general-meeting-of-alfa-laval-ab-publ-5979b5d8"
+  },
+  "ceo": "Tom Erixon",
+  "chairman": "Dennis Jönsson"
+ },
+ "SWEDEN:ASSA_B": {
+  "ceo": "Nico Delvaux",
+  "sources": {
+   "ceo": "https://www.assaabloy.com/group/en/documents/investors/interim-reports/2026/Q2%20Report%202026.pdf",
+   "chairman": "https://www.assaabloy.com/group/en/documents/investors/interim-reports/2026/Q2%20Report%202026.pdf"
+  },
+  "chairman": "Johan Hjertonsson"
+ },
  "SWEDEN:ATCO_A": {
   "ceo": "Vagner Rego",
   "sources": {
@@ -29791,6 +30655,38 @@
   },
   "chairman": "Michel Demaré"
  },
+ "SWEDEN:BOL": {
+  "website": "https://www.boliden.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Boliden_AB",
+   "headquarters": "https://en.wikipedia.org/wiki/Boliden_AB",
+   "ceo": "https://mfn.se/cis/a/boliden/invitation-presentation-of-bolidens-q3-2026-report-d42028dd"
+  },
+  "headquarters": "Stockholm, Sweden",
+  "ceo": "Mikael Staffas"
+ },
+ "SWEDEN:EPI_A": {
+  "website": "https://www.epiroc.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Epiroc",
+   "headquarters": "https://en.wikipedia.org/wiki/Epiroc",
+   "ceo": "https://mfn.se/cis/a/epiroc/invitation-to-epirocs-results-presentation-for-q3-2026-on-october-28-dd1d0755",
+   "chairman": "https://mfn.se/cis/a/epiroc/report-from-epirocs-annual-general-meeting-2026-19e7fc31"
+  },
+  "headquarters": "Nacka, Sweden",
+  "ceo": "Helena Hedblom",
+  "chairman": "Ronnie Leten"
+ },
+ "SWEDEN:EPI_B": {
+  "headquarters": "Nacka, Sweden",
+  "sources": {
+   "headquarters": "https://en.wikipedia.org/wiki/Epiroc",
+   "ceo": "https://mfn.se/cis/a/epiroc/invitation-to-epirocs-results-presentation-for-q3-2026-on-october-28-dd1d0755",
+   "chairman": "https://mfn.se/cis/a/epiroc/report-from-epirocs-annual-general-meeting-2026-19e7fc31"
+  },
+  "ceo": "Helena Hedblom",
+  "chairman": "Ronnie Leten"
+ },
  "SWEDEN:EQNRO": {
   "website": "https://www.equinor.com",
   "sources": {
@@ -29798,6 +30694,78 @@
    "chairman": "https://www.equinor.com/about-us/board-of-directors"
   },
   "chairman": "Jarle Roth"
+ },
+ "SWEDEN:EQT": {
+  "website": "https://eqtgroup.com",
+  "sources": {
+   "website": "https://eqtgroup.com/about",
+   "ceo": "https://eqtgroup.com/news/eqt-ab-publ-half-year-report-2026-2026-07-17",
+   "chairman": "https://eqtgroup.com/shareholders/corporate-governance"
+  },
+  "ceo": "Per Franzén",
+  "chairman": "Jean Eric Salata"
+ },
+ "SWEDEN:ERIC_A": {
+  "ceo": "Per Narvinger",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/717826/000162828026065962/a2026q3forfiling.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/717826/000119312526135591/d95718d6k.htm"
+  },
+  "chairman": "Jan Carlson"
+ },
+ "SWEDEN:ERIC_B": {
+  "ceo": "Per Narvinger",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/717826/000162828026065962/a2026q3forfiling.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/717826/000119312526135591/d95718d6k.htm"
+  },
+  "chairman": "Jan Carlson"
+ },
+ "SWEDEN:ESSITY_A": {
+  "website": "https://www.essity.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Essity",
+   "founded": "https://en.wikipedia.org/wiki/Essity",
+   "headquarters": "https://en.wikipedia.org/wiki/Essity",
+   "ceo": "https://mfn.se/cis/a/essity/essity-interim-report-quarter-3-2026-b76c26f1"
+  },
+  "founded": 2017,
+  "headquarters": "Stockholm, Sweden",
+  "ceo": "Ulrika Kolsrud"
+ },
+ "SWEDEN:ESSITY_B": {
+  "ceo": "Ulrika Kolsrud",
+  "sources": {
+   "ceo": "https://mfn.se/cis/a/essity/essity-interim-report-quarter-3-2026-b76c26f1"
+  }
+ },
+ "SWEDEN:EVO": {
+  "ceo": "Martin Carlesund",
+  "sources": {
+   "ceo": "https://mfn.se/a/evolution/evolution-interim-report-january-september-2026"
+  }
+ },
+ "SWEDEN:HM_B": {
+  "website": "https://hmgroup.com",
+  "sources": {
+   "website": "https://hmgroup.com/about-us/",
+   "ceo": "https://hmgroup.com/about-us/corporate-governance/ceo/",
+   "chairman": "https://hmgroup.com/about-us/corporate-governance/board-of-directors/"
+  },
+  "ceo": "Daniel Ervér",
+  "chairman": "Karl-Johan Persson"
+ },
+ "SWEDEN:INDU_A": {
+  "chairman": "Fredrik Lundberg",
+  "sources": {
+   "chairman": "https://mfn.se/a/industrivarden/communique-from-industrivardens-2026-annual-general-meeting"
+  }
+ },
+ "SWEDEN:INDU_C": {
+  "chairman": "Fredrik Lundberg",
+  "sources": {
+   "chairman": "https://mfn.se/a/industrivarden/communique-from-industrivardens-2026-annual-general-meeting"
+  }
  },
  "SWEDEN:INVE_A": {
   "ceo": "Christian Cederholm",
@@ -29814,6 +30782,128 @@
    "chairman": "https://www.investorab.com/about-investor/board-management/board-of-directors"
   },
   "chairman": "Jacob Wallenberg"
+ },
+ "SWEDEN:LIFCO_B": {
+  "ceo": "Per Waldemarson",
+  "sources": {
+   "ceo": "https://mfn.se/a/lifco/interim-report-january-september-2026",
+   "chairman": "https://mfn.se/a/lifco/resolutions-at-lifcos-annual-general-meeting-2026"
+  },
+  "chairman": "Carl Bennet"
+ },
+ "SWEDEN:LUND_B": {
+  "ceo": "Fredrik Lundberg",
+  "sources": {
+   "ceo": "https://mfn.se/cis/a/lundbergforetagen/lundbergs-interim-report-january-june-2026-98d0886c",
+   "chairman": "https://mfn.se/cis/a/lundbergforetagen/l-e-lundbergforetagen-ab-publ-lundbergs-annual-general-meeting-a5d7c554"
+  },
+  "chairman": "Bo Selling"
+ },
+ "SWEDEN:SAAB_B": {
+  "website": "https://www.saab.com",
+  "sources": {
+   "website": "https://www.saab.com/about",
+   "founded": "https://en.wikipedia.org/wiki/Saab_AB",
+   "headquarters": "https://en.wikipedia.org/wiki/Saab_AB",
+   "ceo": "https://www.saab.com/about/corporate-governance/board-of-directors/micael-johansson",
+   "chairman": "https://www.saab.com/about/corporate-governance/board-of-directors"
+  },
+  "founded": 1937,
+  "headquarters": "Stockholm, Sweden",
+  "ceo": "Micael Johansson",
+  "chairman": "Marcus Wallenberg"
+ },
+ "SWEDEN:SAND": {
+  "ceo": "Stefan Widing",
+  "sources": {
+   "ceo": "https://www.home.sandvik/en/investors/corporate-governance/group-executive-management/",
+   "chairman": "https://www.home.sandvik/en/investors/corporate-governance/board-of-directors/"
+  },
+  "chairman": "Johan Molin"
+ },
+ "SWEDEN:SEB_A": {
+  "ceo": "Jonas Ahlström",
+  "sources": {
+   "ceo": "https://sebgroup.com/about-us/corporate-governance/sebs-president-and-group-executive-committee",
+   "chairman": "https://sebgroup.com/about-us/corporate-governance/board-of-directors"
+  },
+  "chairman": "Marcus Wallenberg"
+ },
+ "SWEDEN:SEB_C": {
+  "website": "https://sebgroup.com",
+  "sources": {
+   "website": "https://sebgroup.com/about-us",
+   "founded": "https://en.wikipedia.org/wiki/Skandinaviska_Enskilda_Banken",
+   "headquarters": "https://en.wikipedia.org/wiki/Skandinaviska_Enskilda_Banken",
+   "ceo": "https://sebgroup.com/about-us/corporate-governance/sebs-president-and-group-executive-committee",
+   "chairman": "https://sebgroup.com/about-us/corporate-governance/board-of-directors"
+  },
+  "founded": 1972,
+  "headquarters": "Stockholm, Sweden",
+  "ceo": "Jonas Ahlström",
+  "chairman": "Marcus Wallenberg"
+ },
+ "SWEDEN:SHB_A": {
+  "website": "https://www.handelsbanken.com",
+  "sources": {
+   "website": "https://www.handelsbanken.com/en/about-the-group/organisation",
+   "founded": "https://en.wikipedia.org/wiki/Handelsbanken",
+   "headquarters": "https://en.wikipedia.org/wiki/Handelsbanken",
+   "ceo": "https://www.handelsbanken.com/en/about-the-group/organisation/executive-team",
+   "chairman": "https://www.handelsbanken.com/en/about-the-group/organisation/the-board"
+  },
+  "founded": 1871,
+  "headquarters": "Stockholm, Sweden",
+  "ceo": "Michael Green",
+  "chairman": "Pär Boman"
+ },
+ "SWEDEN:SHB_B": {
+  "website": "https://www.handelsbanken.com",
+  "sources": {
+   "website": "https://www.handelsbanken.com/en/about-the-group/organisation",
+   "founded": "https://en.wikipedia.org/wiki/Handelsbanken",
+   "headquarters": "https://en.wikipedia.org/wiki/Handelsbanken",
+   "ceo": "https://www.handelsbanken.com/en/about-the-group/organisation/executive-team",
+   "chairman": "https://www.handelsbanken.com/en/about-the-group/organisation/the-board"
+  },
+  "founded": 1871,
+  "headquarters": "Stockholm, Sweden",
+  "ceo": "Michael Green",
+  "chairman": "Pär Boman"
+ },
+ "SWEDEN:SWED_A": {
+  "headquarters": "Sundbyberg, Sweden",
+  "sources": {
+   "headquarters": "https://en.wikipedia.org/wiki/Swedbank",
+   "ceo": "https://www.swedbank.com/about-swedbank/management-and-corporate-governance/ceo-and-group-executive-management/photos-and-cvs.html",
+   "chairman": "https://www.swedbank.com/about-swedbank/management-and-corporate-governance/the-board-of-directors/photos-and-cvs.html"
+  },
+  "ceo": "Jens Henriksson",
+  "chairman": "Göran Persson"
+ },
+ "SWEDEN:TELIA": {
+  "ceo": "Patrik Hofbauer",
+  "sources": {
+   "ceo": "https://mfn.se/cis/a/telia-company/telia-company-interim-report-january-september-2026-4102945b",
+   "chairman": "https://mfn.se/cis/a/telia-company/telia-companys-annual-general-meeting-2026-d307d7e4"
+  },
+  "chairman": "Lars-Johan Jarnheimer"
+ },
+ "SWEDEN:VOLV_A": {
+  "ceo": "Martin Lundstedt",
+  "sources": {
+   "ceo": "https://www.volvogroup.com/en/investors/corporate-governance/ceo-and-group-executive-board.html",
+   "chairman": "https://www.volvogroup.com/en/investors/corporate-governance/board-of-directors.html"
+  },
+  "chairman": "Pär Boman"
+ },
+ "SWEDEN:VOLV_B": {
+  "ceo": "Martin Lundstedt",
+  "sources": {
+   "ceo": "https://www.volvogroup.com/en/investors/corporate-governance/ceo-and-group-executive-board.html",
+   "chairman": "https://www.volvogroup.com/en/investors/corporate-governance/board-of-directors.html"
+  },
+  "chairman": "Pär Boman"
  },
  "SWITZERLAND:0700": {
   "ceo": "Ma Huateng",
@@ -30043,6 +31133,18 @@
   "ceo": "Morten Wierod",
   "chairman": "Peter Voser"
  },
+ "SWITZERLAND:ABBNE": {
+  "website": "https://www.abb.com",
+  "sources": {
+   "website": "https://www.abb.com/global/en",
+   "founded": "https://en.wikipedia.org/wiki/ABB",
+   "headquarters": "https://en.wikipedia.org/wiki/ABB",
+   "ceo": "https://www.abb.com/global/en/company/about"
+  },
+  "founded": 1988,
+  "headquarters": "Zurich, Switzerland",
+  "ceo": "Morten Wierod"
+ },
  "SWITZERLAND:ABBV": {
   "ceo": "Robert A. Michael",
   "sources": {
@@ -30200,6 +31302,16 @@
    "chairman": "https://www.airbus.com/en/about-us/our-governance/rene-obermann"
   },
   "chairman": "René Obermann"
+ },
+ "SWITZERLAND:ALC": {
+  "website": "https://www.alcon.com",
+  "sources": {
+   "website": "https://www.alcon.com/about-us/",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1167379/000116737926000030/q22026pressrelease.htm",
+   "chairman": "https://www.alcon.com/media-release/alcon-announces-results-2026-annual-general-meeting/"
+  },
+  "ceo": "David Endicott",
+  "chairman": "Michael Ball"
  },
  "SWITZERLAND:ALV": {
   "ceo": "Oliver Bäte",
@@ -30673,6 +31785,14 @@
   },
   "chairman": "Jarle Roth"
  },
+ "SWITZERLAND:DSFIR": {
+  "ceo": "Dimitri de Vreeze",
+  "sources": {
+   "ceo": "https://our-company.dsm-firmenich.com/en/our-company/leadership/executive-committee.html",
+   "chairman": "https://our-company.dsm-firmenich.com/en/our-company/leadership/board-of-directors.html"
+  },
+  "chairman": "Richard Ridinger"
+ },
  "SWITZERLAND:DTE": {
   "chairman": "Frank Appel",
   "sources": {
@@ -30696,6 +31816,16 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/31462/000110465926032777/tm2530816-3_def14a.htm"
   },
   "chairman": "Christophe Beck"
+ },
+ "SWITZERLAND:EMSN": {
+  "website": "https://www.ems-group.com",
+  "sources": {
+   "website": "https://www.ems-group.com/en/",
+   "ceo": "https://www.ems-group.com/en/about-ems/corporate-governance/executive-management/",
+   "chairman": "https://www.ems-group.com/en/about-ems/corporate-governance/board-of-directors/"
+  },
+  "ceo": "Magdalena Martullo-Blocher",
+  "chairman": "Bernhard Merki"
  },
  "SWITZERLAND:ENEL": {
   "website": "https://www.enel.com",
@@ -30777,6 +31907,20 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/831259/000119312526173666/d30227ddef14a.htm"
   }
  },
+ "SWITZERLAND:GALD": {
+  "website": "https://www.galderma.com",
+  "sources": {
+   "website": "https://www.galderma.com/about-us",
+   "founded": "https://en.wikipedia.org/wiki/Galderma",
+   "headquarters": "https://en.wikipedia.org/wiki/Galderma",
+   "ceo": "https://www.galderma.com/executive-committee",
+   "chairman": "https://www.galderma.com/governance"
+  },
+  "founded": 1981,
+  "headquarters": "Zug, Switzerland",
+  "ceo": "Flemming Ørnskov",
+  "chairman": "Thomas Ebeling"
+ },
  "SWITZERLAND:GDX": {
   "ceo": "Phebe Novakovic",
   "sources": {
@@ -30817,6 +31961,18 @@
   },
   "chairman": "Stephen Angel"
  },
+ "SWITZERLAND:GEY": {
+  "website": "https://www.garmin.com",
+  "sources": {
+   "website": "https://www.garmin.com/en-US/company/about-garmin/",
+   "founded": "https://en.wikipedia.org/wiki/Garmin",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1121788/000130817926000318/grmn015328-def14a.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1121788/000119312526261987/grmn-20260605.htm"
+  },
+  "founded": 1989,
+  "ceo": "Clifton Pemble",
+  "chairman": "Min Kao"
+ },
  "SWITZERLAND:GILD.USD": {
   "ceo": "Daniel O'Day",
   "sources": {
@@ -30832,6 +31988,16 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/882095/000130817926000106/gild014721-def14a.htm"
   },
   "chairman": "Daniel O'Day"
+ },
+ "SWITZERLAND:GIVN": {
+  "website": "https://www.givaudan.com",
+  "sources": {
+   "website": "https://www.givaudan.com/our-company",
+   "ceo": "https://www.givaudan.com/media/media-releases/2026/annual-general-meeting",
+   "chairman": "https://www.givaudan.com/media/media-releases/2026/annual-general-meeting"
+  },
+  "ceo": "Christian Stammkoetter",
+  "chairman": "Gilles Andrier"
  },
  "SWITZERLAND:GLW": {
   "ceo": "Wendell P. Weeks",
@@ -30940,6 +32106,14 @@
    "chairman": "https://finance.hermes.com/en/ambitious-and-balanced-governance/"
   },
   "chairman": "Eric de Seynes"
+ },
+ "SWITZERLAND:HOLN": {
+  "ceo": "Miljan Gutovic",
+  "sources": {
+   "ceo": "https://www.holcim.com/who-we-are/governance/leadership",
+   "chairman": "https://www.holcim.com/who-we-are/governance/board-of-directors"
+  },
+  "chairman": "Kim Fausing"
  },
  "SWITZERLAND:HOOD": {
   "ceo": "Vladimir Tenev",
@@ -31089,6 +32263,16 @@
   },
   "chairman": "Henry R. Kravis,George R. Roberts"
  },
+ "SWITZERLAND:KNIN": {
+  "website": "https://www.kuehne-nagel.com",
+  "sources": {
+   "website": "https://www.kuehne-nagel.com/company/corporate-governance",
+   "ceo": "https://www.kuehne-nagel.com/company/corporate-governance",
+   "chairman": "https://www.kuehne-nagel.com/company/corporate-governance"
+  },
+  "ceo": "Stefan Paul",
+  "chairman": "Jörg Wolle"
+ },
  "SWITZERLAND:KO.USD": {
   "ceo": "Henrique Braun",
   "sources": {
@@ -31111,6 +32295,22 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/1381197/000138119726000066/ibkr-20260311.htm"
   }
  },
+ "SWITZERLAND:LISN": {
+  "ceo": "Dieter Weisskopf",
+  "sources": {
+   "ceo": "https://www.lindt-spruengli.com/company/group-management/",
+   "chairman": "https://www.lindt-spruengli.com/company/board-of-directors/"
+  },
+  "chairman": "Ernst Tanner"
+ },
+ "SWITZERLAND:LISNE": {
+  "ceo": "Dieter Weisskopf",
+  "sources": {
+   "ceo": "https://www.lindt-spruengli.com/company/group-management/",
+   "chairman": "https://www.lindt-spruengli.com/company/board-of-directors/"
+  },
+  "chairman": "Ernst Tanner"
+ },
  "SWITZERLAND:LLD": {
   "ceo": "Charlie Nunn",
   "sources": {
@@ -31126,6 +32326,22 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000029/lly-20260317.htm"
   },
   "chairman": "David A. Ricks"
+ },
+ "SWITZERLAND:LOGN": {
+  "ceo": "Hanneke Faber",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1032975/000103297526000056/logi-20261012.htm",
+   "chairman": "https://www.logitech.com/en-us/about/board-of-directors"
+  },
+  "chairman": "Guy Gecht"
+ },
+ "SWITZERLAND:LOGNE": {
+  "ceo": "Hanneke Faber",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1032975/000103297526000056/logi-20261012.htm",
+   "chairman": "https://www.logitech.com/en-us/about/board-of-directors"
+  },
+  "chairman": "Guy Gecht"
  },
  "SWITZERLAND:LRCX": {
   "ceo": "Timothy M. Archer",
@@ -31148,6 +32364,14 @@
   },
   "ceo": "David Schwimmer",
   "chairman": "Don Robert"
+ },
+ "SWITZERLAND:LSPN": {
+  "ceo": "Dieter Weisskopf",
+  "sources": {
+   "ceo": "https://www.lindt-spruengli.com/company/group-management/",
+   "chairman": "https://www.lindt-spruengli.com/company/board-of-directors/"
+  },
+  "chairman": "Ernst Tanner"
  },
  "SWITZERLAND:LTO": {
   "ceo": "S. N. Subrahmanyan",
@@ -31527,6 +32751,20 @@
   },
   "chairman": "Giovanni Caforio"
  },
+ "SWITZERLAND:NOVNEE": {
+  "website": "https://www.novartis.com",
+  "sources": {
+   "website": "https://en.wikipedia.org/wiki/Novartis",
+   "founded": "https://en.wikipedia.org/wiki/Novartis",
+   "headquarters": "https://en.wikipedia.org/wiki/Novartis",
+   "ceo": "https://www.novartis.com/about/executive-committee",
+   "chairman": "https://www.novartis.com/about/board-directors"
+  },
+  "founded": 1996,
+  "headquarters": "Basel, Switzerland",
+  "ceo": "Vas Narasimhan",
+  "chairman": "Giovanni Caforio"
+ },
  "SWITZERLAND:NOW.USD": {
   "ceo": "William R. McDermott",
   "sources": {
@@ -31849,6 +33087,26 @@
   },
   "chairman": "Pekka Ala-Pietilä"
  },
+ "SWITZERLAND:SCHN": {
+  "website": "https://group.schindler.com",
+  "sources": {
+   "website": "https://group.schindler.com/en/company/corporate-governance.html",
+   "ceo": "https://group.schindler.com/en/company/corporate-governance/group-executive-committee.html",
+   "chairman": "https://group.schindler.com/en/company/corporate-governance/board-of-directors.html"
+  },
+  "ceo": "Paolo Compagna",
+  "chairman": "Josef Ming"
+ },
+ "SWITZERLAND:SCHNE": {
+  "website": "https://group.schindler.com",
+  "sources": {
+   "website": "https://group.schindler.com/en/company/corporate-governance.html",
+   "ceo": "https://group.schindler.com/en/company/corporate-governance/group-executive-committee.html",
+   "chairman": "https://group.schindler.com/en/company/corporate-governance/board-of-directors.html"
+  },
+  "ceo": "Paolo Compagna",
+  "chairman": "Josef Ming"
+ },
  "SWITZERLAND:SCL": {
   "ceo": "Olivier Le Peuch",
   "sources": {
@@ -31857,6 +33115,20 @@
   },
   "chairman": "Jim Hackett"
  },
+ "SWITZERLAND:SCMN": {
+  "ceo": "Christoph Aeschlimann",
+  "sources": {
+   "ceo": "https://www.swisscom.ch/en/about.html"
+  }
+ },
+ "SWITZERLAND:SDZ": {
+  "ceo": "Richard Saynor",
+  "sources": {
+   "ceo": "https://www.sandoz.com/people-culture/sandoz-leadership/richard-saynor/",
+   "chairman": "https://www.sandoz.com/people-culture/board-directors/gilbert-ghostine/"
+  },
+  "chairman": "Gilbert Ghostine"
+ },
  "SWITZERLAND:SEJ1": {
   "ceo": "Olivier Andriès",
   "sources": {
@@ -31864,6 +33136,26 @@
    "chairman": "https://echanges.dila.gouv.fr/OPENDATA/AMF/ECO/2026/07/FCECO082738_20260728.pdf"
   },
   "chairman": "Ross McInnes"
+ },
+ "SWITZERLAND:SGM": {
+  "ceo": "Jean-Marc Chéry",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/932787/000093278726000069/stm_sarxmaster-semiannual2.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/932787/000093278726000069/stm_sarxmaster-semiannual2.htm"
+  },
+  "chairman": "Armando Varricchio"
+ },
+ "SWITZERLAND:SGSN": {
+  "website": "https://www.sgs.com",
+  "sources": {
+   "website": "https://www.sgs.com/en/our-company/about-sgs",
+   "founded": "https://en.wikipedia.org/wiki/SGS_S.A.",
+   "ceo": "https://www.sgs.com/en/our-company/about-sgs/executive-committee",
+   "chairman": "https://www.sgs.com/en/news/2026/03/sgs-shareholders-approve-all-resolutions-at-the-annual-general-meeting"
+  },
+  "founded": 1878,
+  "ceo": "Géraldine Picaud",
+  "chairman": "Gilbert Ghostine"
  },
  "SWITZERLAND:SHOP": {
   "ceo": "Tobias Lütke",
@@ -31880,6 +33172,14 @@
    "chairman": "https://assets.new.siemens.com/siemens/assets/api/uuid:56b92117-b6e2-49c3-86e4-051cb31831ca/260512-press-release1-en.pdf"
   },
   "chairman": "Jim Hagemann Snabe"
+ },
+ "SWITZERLAND:SIKA": {
+  "ceo": "Thomas Hasler",
+  "sources": {
+   "ceo": "https://www.sika.com/en/about-us/organization/group-management.html",
+   "chairman": "https://www.sika.com/en/about-us/organization/board-of-directors.html"
+  },
+  "chairman": "Thierry Vanlancker"
  },
  "SWITZERLAND:SKHY": {
   "website": "https://www.skhynix.com",
@@ -31934,6 +33234,16 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/732717/000119312526119888/d919223ddef14a.htm"
   },
   "chairman": "John T. Stankey"
+ },
+ "SWITZERLAND:SOON": {
+  "website": "https://www.sonova.com",
+  "sources": {
+   "website": "https://www.sonova.com/",
+   "ceo": "https://www.sonova.com/group-executives/",
+   "chairman": "https://www.sonova.com/board-directors/"
+  },
+  "ceo": "Eric Bernard",
+  "chairman": "Gilbert Achermann"
  },
  "SWITZERLAND:SPCX": {
   "ceo": "Elon Musk",
@@ -32115,6 +33425,22 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/97476/000009747626000078/txn-20260303.htm"
   }
  },
+ "SWITZERLAND:UBSG": {
+  "ceo": "Sergio Ermotti",
+  "sources": {
+   "ceo": "https://www.ubs.com/global/en/about_ubs/corporate-governance/group-executive-board.html",
+   "chairman": "https://www.ubs.com/global/en/about_ubs/corporate-governance/board-of-directors.html"
+  },
+  "chairman": "Colm Kelleher"
+ },
+ "SWITZERLAND:UBSGE": {
+  "ceo": "Sergio Ermotti",
+  "sources": {
+   "ceo": "https://www.ubs.com/global/en/about_ubs/corporate-governance/group-executive-board.html",
+   "chairman": "https://www.ubs.com/global/en/about_ubs/corporate-governance/board-of-directors.html"
+  },
+  "chairman": "Colm Kelleher"
+ },
  "SWITZERLAND:UCG": {
   "ceo": "Andrea Orcel",
   "sources": {
@@ -32164,6 +33490,16 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1403161/000130817925000635/v-20251208.htm"
   },
   "chairman": "John F. Lundgren"
+ },
+ "SWITZERLAND:VACN": {
+  "website": "https://www.vatgroup.com",
+  "sources": {
+   "website": "https://www.vatgroup.com/",
+   "ceo": "https://www.vatgroup.com/investor-relations/corporate-governance",
+   "chairman": "https://www.vatgroup.com/investor-relations/corporate-governance"
+  },
+  "ceo": "Urs Gantner",
+  "chairman": "Martin Komischke"
  },
  "SWITZERLAND:VZ.USD": {
   "website": "https://www.verizon.com",
