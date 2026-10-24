@@ -44,10 +44,17 @@ export function parseBoard(html) {
     return null;
 }
 
-/** Chairperson and CEO from the board table. CEO = the director titled CEO; else the only managing director. */
-export function officers(board) {
+/** "Whether the listed entity has a Regular Chairperson": true, false, or null when the filing does not say. */
+export function regularChair(html) {
+    const m = text(html).match(/Whether the listed entity has a Regular Chairperson\s+(Yes|No)\b/i);
+    return m ? m[1].toLowerCase() === 'yes' : null;
+}
+
+/** Chairperson and CEO from the board table. CEO = the director titled CEO; else the only managing director.
+ *  A company without a regular chairperson (a director is elected to chair each meeting) has no chairman. */
+export function officers(board, regular = null) {
     const active = (board || []).filter((d) => d.name && !d.ceased);
-    const chair = active.filter((d) => /chair/i.test(d.cat2));
+    const chair = regular === false ? [] : active.filter((d) => /chair/i.test(d.cat2));
     const ceo = active.filter((d) => /\bCEO\b|Chief Executive/i.test(d.cat3));
     const md = active.filter((d) => /\bMD\b|Managing Director/i.test(d.cat3));
     return {
@@ -110,7 +117,9 @@ export async function run(kit) {
             .sort((a, b) => Date.parse(b.broadcast_Date || 0) - Date.parse(a.broadcast_Date || 0));
         if (filings[0]) {
             const html = await getDoc(filings[0].ixbrl);
-            const o = html ? officers(parseBoard(html)) : {};
+            const o = html ? officers(parseBoard(html), regularChair(html)) : {};
+            // No regular chairperson: drop a chairman this adapter set earlier from the meeting chair.
+            if (html && regularChair(html) === false && rec.sources?.chairman === 'nse-filing') { rec.chairman = null; delete rec.sources.chairman; delete urls.chairman; }
             for (const f of ['ceo', 'chairman']) {
                 if (!o[f]) continue;
                 const src = rec.sources?.[f];

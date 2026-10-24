@@ -13297,6 +13297,14 @@
   "ceo": "Rishi Anand",
   "chairman": "Deo Shankar Tripathi"
  },
+ "IN:AARTIPHARM": {
+  "ceo": "Rashesh Chandrakant Gogri",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/AARTIPHARMA_23092026185218_SE_Intimation_Updatessigned.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1744417_23102026124858_WEB.xml"
+  },
+  "chairman": "Rashesh Chandrakant Gogri"
+ },
  "IN:ABB": {
   "founded": 1949,
   "sources": {
@@ -13347,6 +13355,20 @@
   "ceo": "Amar Sinha",
   "chairman": "Kishore Rajaram Chhabria"
  },
+ "IN:ABLBL": {
+  "ceo": "Harihara Vishak Kumar",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29991_ABLBL_2025_2026_A_17699003_24072026192216.pdf"
+  }
+ },
+ "IN:ABREL": {
+  "ceo": "Rajendra Kumar Dalmia",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29523_ABREL_2025_2026_A_14069417_01072026190940.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1701270_24072026081719_WEB.xml"
+  },
+  "chairman": "Kumar Mangalam Birla"
+ },
  "IN:ABSLAMC": {
   "website": "https://mutualfund.adityabirlacapital.com",
   "sources": {
@@ -13366,6 +13388,14 @@
   "headquarters": "Ahmedabad, Gujarat, India",
   "ceo": "Vinod Bahety",
   "chairman": "Karan Adani"
+ },
+ "IN:ACI": {
+  "ceo": "Rampraveen Swaminathan",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29270_ACI_2025_2026_A_17400704_21052026210127.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1741645_19102026045338_WEB.xml"
+  },
+  "chairman": "Padma Chandrasekaran"
  },
  "IN:ACMESOLAR": {
   "website": "https://www.acmesolar.in",
@@ -13549,6 +13579,14 @@
   "headquarters": "Mumbai, Maharashtra, India",
   "ceo": "Akash Suri"
  },
+ "IN:AIMTRON": {
+  "ceo": "Mukesh Jeram Vasani",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/AIMTRON_18082026154416_Intimation_Reg_30_Updates_18-08-2026.pdf",
+   "chairman": "https://nsearchives.nseindia.com/annual_reports/SME_AR_29986_AIMTRON_2025_2026_A_15217082_24072026172456.pdf"
+  },
+  "chairman": "Mukesh Jeram Vasani"
+ },
  "IN:AJANTPHARM": {
   "website": "https://www.ajantapharma.com",
   "sources": {
@@ -13560,6 +13598,12 @@
   "headquarters": "Mumbai, Maharashtra, India",
   "ceo": "Yogesh Agrawal",
   "chairman": "Mannalal Agrawal"
+ },
+ "IN:AKUMS": {
+  "chairman": null,
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_203144_22102026172327_iXBRL_WEB.html"
+  }
  },
  "IN:ALKEM": {
   "ceo": "Sandeep Singh",
@@ -13677,6 +13721,12 @@
   "ceo": "Sanjay Gupta",
   "chairman": "Sanjay Gupta"
  },
+ "IN:APLLTD": {
+  "chairman": "Chirayu Ramanbhai Amin",
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1693484_15072026060734_WEB.xml"
+  }
+ },
  "IN:APOLLOHOSP": {
   "website": "https://www.apollohospitals.com",
   "sources": {
@@ -13701,6 +13751,22 @@
   "ceo": "Neeraj Kanwar",
   "chairman": "Onkar Kanwar"
  },
+ "IN:ARCIL": {
+  "ceo": "Phanindranath Kakarla",
+  "sources": {
+   "ceo": "https://www.arcil.co.in/about-us/board-members",
+   "chairman": "https://www.arcil.co.in/about-us/board-members"
+  },
+  "chairman": "Narayanan Subramaniam"
+ },
+ "IN:AREM": {
+  "ceo": "Jayadev Galla",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29850_ARE&M_2025_2026_A_21670690_17072026153325.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1742738_21102026023649_WEB.xml"
+  },
+  "chairman": "Jayadev Galla"
+ },
  "IN:AREVAT&D": {
   "ceo": "Sandeep Zanzaria",
   "sources": {
@@ -13708,6 +13774,14 @@
    "chairman": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_202942_22102026110613_iXBRL_WEB.html"
   },
   "chairman": "Rathindra Nath Basu"
+ },
+ "IN:ARE_M": {
+  "ceo": "Jayadev Galla",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29850_ARE&M_2025_2026_A_21670690_17072026153325.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1742738_21102026023649_WEB.xml"
+  },
+  "chairman": "Jayadev Galla"
  },
  "IN:ASAHIINDIA": {
   "website": "https://www.aisglass.com",
@@ -13718,6 +13792,12 @@
   },
   "ceo": "Sanjay Labroo",
   "chairman": "Sanjay Labroo"
+ },
+ "IN:ASHIANA": {
+  "ceo": "Vishal Gupta",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_32215_ASHIANA_2025_2026_A_16964154_23102026200016.pdf"
+  }
  },
  "IN:ASHOKLEY": {
   "headquarters": "Chennai, Tamil Nadu, India",
@@ -13743,6 +13823,22 @@
   "chairman": "R Seshasayee",
   "founded": 1942
  },
+ "IN:ASKAUTOLTD": {
+  "ceo": "Kuldip Singh Rathee",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29726_ASKAUTOLTD_2025_2026_A_16577974_10072026210405.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1742455_21102026110413_WEB.xml"
+  },
+  "chairman": "Kuldip Singh Rathee"
+ },
+ "IN:ASMTEC": {
+  "ceo": "Rabindra Srikantan",
+  "sources": {
+   "ceo": "https://asmltd.com/about-us/",
+   "chairman": "https://asmltd.com/about-us/"
+  },
+  "chairman": "M R Vikram"
+ },
  "IN:ASTERDM": {
   "website": "https://www.asterqualitycare.com",
   "sources": {
@@ -13765,6 +13861,22 @@
   "ceo": "Sandeep Engineer",
   "chairman": "Sandeep Engineer"
  },
+ "IN:ASTRAMICRO": {
+  "ceo": "M. V. Reddy",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/ASTRAMICRO_10082026132949_OutcomeofBoardMeeting.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1734225_08102026023610_WEB.xml"
+  },
+  "chairman": "Avinash Chander"
+ },
+ "IN:ASTRAZEN": {
+  "ceo": "Praveen Rao Akkinepally",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29896_ASTRAZEN_2025_2026_A_8674819_18072026191602.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1704505_29072026075539_WEB.xml"
+  },
+  "chairman": "Shilpa Divekar Nirula"
+ },
  "IN:ATGL": {
   "website": "https://www.adanigas.com",
   "sources": {
@@ -13784,6 +13896,14 @@
   },
   "ceo": "Tarun Mehta",
   "chairman": "Neelam Dhawan"
+ },
+ "IN:ATUL": {
+  "ceo": "Sunil Siddharth Lalbhai",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29866_ATUL_2025_2026_U_14177964_17072026184203.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1737732_14102026035951_WEB.xml"
+  },
+  "chairman": "Sunil Siddharth Lalbhai"
  },
  "IN:AUBANK": {
   "website": "https://www.au.bank.in",
@@ -13810,6 +13930,14 @@
   "headquarters": "Hyderabad, Telangana, India",
   "ceo": "K. Nithyananda Reddy",
   "chairman": "Mangalam Ramasubramanian Kumar"
+ },
+ "IN:AVANTIFEED": {
+  "ceo": "A. Indra Kumar",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30167_AVANTIFEED_2025_2026_A_13562225_04082026112624.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703654_29072026122256_WEB.xml"
+  },
+  "chairman": "Jasthi Venkata Ramudu"
  },
  "IN:AWL": {
   "headquarters": "Ahmedabad, Gujarat, India",
@@ -13953,6 +14081,20 @@
   "ceo": "Arvind Poddar",
   "chairman": "Arvind Poddar"
  },
+ "IN:BANARISUG": {
+  "ceo": "B Saravanan",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_27137_BANARISUG_2024_2025_A_28072025181605.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1733880_07102026052227_WEB.xml"
+  },
+  "chairman": "S V Balasubramaniam"
+ },
+ "IN:BANCOINDIA": {
+  "chairman": "Mehul Kanubhai Patel",
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1735417_10102026040856_WEB.xml"
+  }
+ },
  "IN:BANDHANBNK": {
   "headquarters": "Kolkata, West Bengal, India",
   "sources": {
@@ -13978,6 +14120,22 @@
   "sources": {
    "ceo": "https://nsearchives.nseindia.com/corporate/BANKINDIA6_30072026181621_Transcriptjune2026.pdf"
   }
+ },
+ "IN:BANSALWIRE": {
+  "ceo": "Pranav Bansal",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30490_BANSALWIRE_2025_2026_A_8929659_21082026161251.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703267_28072026060942_WEB.xml"
+  },
+  "chairman": "Arun Gupta"
+ },
+ "IN:BBOX": {
+  "ceo": "Sanjeev Verma",
+  "sources": {
+   "ceo": "https://www.blackbox.com/discover-bb/global-management",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1744426_23102026125228_WEB.xml"
+  },
+  "chairman": "Dilip Thakkar"
  },
  "IN:BDL": {
   "headquarters": "Hyderabad, Telangana, India",
@@ -14009,6 +14167,12 @@
   "website": "https://www.bemlindia.in",
   "sources": {
    "website": "https://en.wikipedia.org/wiki/BEML"
+  }
+ },
+ "IN:BENGALASM": {
+  "chairman": "Bharat Hari Singhania",
+  "sources": {
+   "chairman": "https://bengalassam.com/wp-content/uploads/2026/04/Brief-Profile-of-Directors-as-on-31.3.26.pdf"
   }
  },
  "IN:BERGEPAINT": {
@@ -14099,6 +14263,14 @@
   "ceo": "Shashank Jain",
   "chairman": "Ankur Gupta"
  },
+ "IN:BLS": {
+  "ceo": "Nikhil Gupta",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_32031_BLS_2025_2026_U_24007853_11092026191456.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1705285_30072026051900_WEB.xml"
+  },
+  "chairman": "Diwakar Aggarwal"
+ },
  "IN:BLUESTARCO": {
   "founded": 1943,
   "sources": {
@@ -14122,6 +14294,14 @@
   },
   "ceo": "Milan Sadhukhan",
   "chairman": "Michael James Devine"
+ },
+ "IN:BORORENEW": {
+  "ceo": "David Melwyn Moses",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30072_BORORENEW_2025_2026_A_14536348_30072026152935.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1737720_14102026035020_WEB.xml"
+  },
+  "chairman": "Pradeep Kumar Kheruka"
  },
  "IN:BOSCHLTD": {
   "website": "https://www.bosch.in",
@@ -14217,6 +14397,12 @@
   },
   "ceo": "Brajesh Kumar Singh"
  },
+ "IN:CANHLIFE": {
+  "ceo": "Anuj Mathur",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_32179_CANHLIFE_2025_2026_A_21511374_06102026172834.pdf"
+  }
+ },
  "IN:CAPLIPOINT": {
   "website": "https://www.caplinpoint.net",
   "sources": {
@@ -14273,6 +14459,14 @@
   "ceo": "Saugata Basuray",
   "chairman": "Rakesh Makhija"
  },
+ "IN:CCAVENUE": {
+  "ceo": "Vishwas Ambalal Patel",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31219_CCAVENUE_2025_2026_A_5907902_03092026151424.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1704190_29072026054322_WEB.xml"
+  },
+  "chairman": "Vishal Ajitbhai Mehta"
+ },
  "IN:CDSL": {
   "ceo": "Nehal Vora",
   "sources": {
@@ -14286,6 +14480,14 @@
   "sources": {
    "website": "https://www.ceat.com/"
   }
+ },
+ "IN:CELLO": {
+  "ceo": "Pradeep Ghisulal Rathod",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29838_CELLO_2025_2026_A_26868812_16072026223626.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1744830_23102026060623_WEB.xml"
+  },
+  "chairman": "Pradeep Ghisulal Rathod"
  },
  "IN:CEMPRO": {
   "website": "https://www.cemindia.co.in",
@@ -14308,6 +14510,28 @@
    "ceo": "https://centralbank.bank.in/en/about-us/board-of-director"
   },
   "ceo": "Kalyan Kumar"
+ },
+ "IN:CENTUM": {
+  "ceo": "Mallavarapu Venkata Apparao",
+  "sources": {
+   "ceo": "https://www.centumelectronics.com/board-of-directors/",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1702211_27072026055004_WEB.xml"
+  },
+  "chairman": "Mallavarapu Venkata Apparao"
+ },
+ "IN:CERA": {
+  "ceo": "Vikram Somany",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29479_CERA_2025_2026_A_3839462_29062026153621.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703518_28072026102530_WEB.xml"
+  },
+  "chairman": "Vikram Somany"
+ },
+ "IN:CESC": {
+  "chairman": "Sanjiv Goenka",
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1716691_21082026122526_WEB.xml"
+  }
  },
  "IN:CGCL": {
   "website": "https://www.capriloans.in",
@@ -14332,6 +14556,14 @@
   },
   "ceo": "Amar Kaul",
   "chairman": "Vellayan Subbiah"
+ },
+ "IN:CHALET": {
+  "ceo": "Shwetank Singh",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30840_CHALET_2025_2026_U_10720742_29082026191129.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1705473_30072026063350_WEB.xml"
+  },
+  "chairman": "Hetal Madhukant Gandhi"
  },
  "IN:CHENNPETRO": {
   "headquarters": "Chennai, Tamil Nadu, India",
@@ -14370,6 +14602,14 @@
   "founded": 1949,
   "headquarters": "Chennai, Tamil Nadu, India",
   "chairman": "M M Murugappan"
+ },
+ "IN:CIEINDIA": {
+  "ceo": "Manoj Mullassery Menon",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29241_CIEINDIA_2025_2025_A_7469959_02042026182856.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1741379_19102026025038_WEB.xml"
+  },
+  "chairman": "Shriprakash Shukla"
  },
  "IN:CIGNITITEC": {
   "status": "delisted",
@@ -14428,6 +14668,14 @@
   "headquarters": "Noida, Uttar Pradesh, India",
   "ceo": "Sudhir Singh",
   "chairman": "Akhil Gupta"
+ },
+ "IN:COHANCE": {
+  "ceo": "Umang Vohra",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30685_COHANCE_2025_2026_A_19070825_26082026195427.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1705206_30072026044502_WEB.xml"
+  },
+  "chairman": "Umang Vohra"
  },
  "IN:COLPAL": {
   "headquarters": "Mumbai, Maharashtra, India",
@@ -14490,6 +14738,14 @@
   "headquarters": "Coimbatore, Tamil Nadu, India",
   "ceo": "Srinivasan Ravi",
   "chairman": "Srinivasan Ravi"
+ },
+ "IN:CRAMC": {
+  "ceo": "Rajnish Narula",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29453_CRAMC_2025_2026_A_11291852_25062026213512.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1734278_08102026033551_WEB.xml"
+  },
+  "chairman": "Santanu Kumar Majumdar"
  },
  "IN:CREDITACC": {
   "website": "https://www.creditaccessgrameen.in",
@@ -14603,6 +14859,14 @@
   "ceo": "Srinivasagopalan Rangarajan",
   "chairman": "Srinivasagopalan Rangarajan"
  },
+ "IN:DBREALTY": {
+  "ceo": "Vinod Kumar Goenka",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31928_DBREALTY_2025_2026_A_5334195_08092026193302.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1704919_30072026014957_WEB.xml"
+  },
+  "chairman": "Vinod Kumar Goenka"
+ },
  "IN:DCB": {
   "website": "https://www.dcb.bank.in",
   "sources": {
@@ -14628,6 +14892,14 @@
   "headquarters": "Vadodara, Gujarat, India",
   "ceo": "Deepak C. Mehta",
   "chairman": "Deepak C. Mehta"
+ },
+ "IN:DEEPINDS": {
+  "ceo": "Paras Shantilal Savla",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30236_DEEPINDS_2025_2026_A_5017630_07082026130743.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1697861_21072026122656_WEB.xml"
+  },
+  "chairman": "Paras Shantilal Savla"
  },
  "IN:DELHIVERY": {
   "website": "https://www.delhivery.com",
@@ -14723,6 +14995,14 @@
   "ceo": "Anshul Asawa",
   "chairman": "Kalpana Unadkat"
  },
+ "IN:DODLA": {
+  "ceo": "Busireddy Venkat Krishna Reddy",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_32109_DODLA_2025_2026_A_11863299_05102026181826.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1736225_12102026045748_WEB.xml"
+  },
+  "chairman": "Dodla Sesha Reddy"
+ },
  "IN:DRREDDY": {
   "website": "https://www.drreddys.com",
   "sources": {
@@ -14765,6 +15045,12 @@
   "ceo": "Vikramjit Singh Oberoi",
   "chairman": "Arjun Singh Oberoi"
  },
+ "IN:ELEVATE": {
+  "ceo": "Jayakumar Narasimha Raghavan",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/ELEVATE_01102026201225_Reg_30_Materiality_of_event.pdf"
+  }
+ },
  "IN:ELGIEQUIP": {
   "website": "https://www.elgi.com",
   "sources": {
@@ -14778,6 +15064,14 @@
   "headquarters": "Coimbatore, Tamil Nadu, India",
   "ceo": "Jairam Varadaraj",
   "slogan": "Always Better"
+ },
+ "IN:ELLEN": {
+  "ceo": "Padam Kumar Agarwala",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31133_ELLEN_2025_2026_A_11363265_02092026182040.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703965_29072026040542_WEB.xml"
+  },
+  "chairman": "Padam Kumar Agarwala"
  },
  "IN:EMBASSY": {
   "website": "https://www.embassyofficeparks.com",
@@ -14831,6 +15125,12 @@
   "ceo": "Suhas Donthi Manjunatha",
   "chairman": "Manjunatha Donthi Venkatarathnaiah"
  },
+ "IN:EMUDHRA": {
+  "chairman": "Venkatraman Srinivasan",
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1743846_22102026030656_WEB.xml"
+  }
+ },
  "IN:ENDURANCE": {
   "website": "https://www.endurancegroup.com",
   "sources": {
@@ -14872,6 +15172,14 @@
   "headquarters": "Faridabad, Haryana, India",
   "ceo": "Nikhil Nanda",
   "chairman": "Nikhil Nanda"
+ },
+ "IN:ESDS": {
+  "ceo": "Piyush Somani",
+  "sources": {
+   "ceo": "https://www.esds.co.in/leadership.php",
+   "chairman": "https://www.esds.co.in/leadership.php"
+  },
+  "chairman": "Piyush Somani"
  },
  "IN:ETERNAL": {
   "website": "https://www.eternal.com",
@@ -14927,6 +15235,14 @@
   "ceo": "KVS Manian",
   "chairman": "Elias George"
  },
+ "IN:FILATEX": {
+  "ceo": "Kapil Kumra",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30898_FILATEX_2025_2026_A_22782400_31082026173301.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1705365_30072026055334_WEB.xml"
+  },
+  "chairman": "Madhu Sudhan Bhageria"
+ },
  "IN:FINCABLES": {
   "headquarters": "Pune, Maharashtra, India",
   "sources": {
@@ -14972,6 +15288,22 @@
   "headquarters": "Gurugram, Haryana, India",
   "ceo": "Ashutosh Raghuvanshi",
   "chairman": "Leo Puri"
+ },
+ "IN:FOSECOIND": {
+  "ceo": "Prasad Madhukar Chavare",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29267_FOSECOIND_2025_2025_A_6815932_19052026231310.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1701965_27072026034056_WEB.xml"
+  },
+  "chairman": "Ravi Moti Kirpalani"
+ },
+ "IN:FRACTAL": {
+  "ceo": "Srikanth Velamakanni",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30533_FRACTAL_2025_2026_A_7535390_24082026124254.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/FRACTAL_09102026213524_NSEBSE.pdf"
+  },
+  "chairman": "Vivek Mohan"
  },
  "IN:GABRIEL": {
   "ceo": "Mahendra Goyal",
@@ -15095,6 +15427,22 @@
   },
   "chairman": "G. M. Rao"
  },
+ "IN:GMRPUI": {
+  "ceo": "Srinivas Bommidala",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_28664_GMRP&UI_2024_2025_A_8453323_05092025193923.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1704783_30072026120051_WEB.xml"
+  },
+  "chairman": "Grandhi Mallikarjuna Rao"
+ },
+ "IN:GMRP_UI": {
+  "ceo": "Srinivas Bommidala",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_28664_GMRP&UI_2024_2025_A_8453323_05092025193923.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1704783_30072026120051_WEB.xml"
+  },
+  "chairman": "Grandhi Mallikarjuna Rao"
+ },
  "IN:GODFRYPHLP": {
   "website": "https://www.godfreyphillips.co.in",
   "sources": {
@@ -15159,6 +15507,22 @@
   "ceo": "Gaurav Pandey",
   "chairman": "Pirojsha Godrej"
  },
+ "IN:GOLDIAM": {
+  "ceo": "Anmol Rashesh Bhansali",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31370_GOLDIAM_2025_2026_A_3509114_04092026152516.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1735361_10102026023316_WEB.xml"
+  },
+  "chairman": "Rashesh Manharbhai Bhansali"
+ },
+ "IN:GOODLUCK": {
+  "ceo": "Mahesh Chandra Garg",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31924_GOODLUCK_2025_2026_A_44010483_08092026192504.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1699883_23072026023144_WEB.xml"
+  },
+  "chairman": "Mahesh Chandra Garg"
+ },
  "IN:GRANULES": {
   "headquarters": "Hyderabad, Telangana, India",
   "sources": {
@@ -15168,6 +15532,12 @@
   },
   "ceo": "Krishna Prasad Chigurupati",
   "chairman": "Krishna Prasad Chigurupati"
+ },
+ "IN:GRAPHITE": {
+  "chairman": "Krishna Kumar Bangur",
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703695_29072026125202_WEB.xml"
+  }
  },
  "IN:GRASIM": {
   "website": "https://www.grasim.com",
@@ -15182,6 +15552,14 @@
   "headquarters": "Mumbai, Maharashtra, India",
   "ceo": "Himanshu Kapania",
   "chairman": "Kumar Mangalam Birla"
+ },
+ "IN:GREENPLY": {
+  "ceo": "Rajesh Mittal",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30089_GREENPLY_2025_2026_A_8713143_31072026132349.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1705170_30072026043042_WEB.xml"
+  },
+  "chairman": "Rajesh Mittal"
  },
  "IN:GRINDWELL": {
   "website": "https://www.grindwellnorton.co.in",
@@ -15222,6 +15600,22 @@
   "headquarters": "Kolkata, West Bengal, India",
   "ceo": "P R Hari",
   "chairman": "P R Hari"
+ },
+ "IN:GRWRHITECH": {
+  "ceo": "Shashikant Bhalchandra Garware",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30922_GRWRHITECH_2025_2026_A_13935251_31082026185037.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1741841_19102026061016_WEB.xml"
+  },
+  "chairman": "Shashikant Bhalchandra Garware"
+ },
+ "IN:GSFC": {
+  "ceo": "Rajender Kumar",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31410_GSFC_2025_2026_A_10118243_04092026181805.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703090_28072026045830_WEB.xml"
+  },
+  "chairman": "Manoj Kumar Das"
  },
  "IN:GUJENERGY": {
   "website": "https://www.gujarat-energy.com",
@@ -15322,6 +15716,14 @@
   },
   "ceo": "Anil Rai Gupta",
   "chairman": "Anil Rai Gupta"
+ },
+ "IN:HAWKINCOOK": {
+  "ceo": "Subhadip Dutta Choudhury",
+  "sources": {
+   "ceo": "https://www.hawkinscookers.com/download/Authorized_Personnel_for_Disclosure_under_Reg30(5).pdf",
+   "chairman": "https://www.hawkinscookers.com/download/Authorized_Personnel_for_Disclosure_under_Reg30(5).pdf"
+  },
+  "chairman": "Subhadip Dutta Choudhury"
  },
  "IN:HBLENGINE": {
   "website": "https://www.hbl.in",
@@ -15429,6 +15831,14 @@
   "ceo": "Harshavardhan Chitale",
   "chairman": "Pawan Munjal"
  },
+ "IN:HEROMOTORS": {
+  "ceo": "Amit Gupta",
+  "sources": {
+   "ceo": "https://www.heromotors.com/leadership",
+   "chairman": "https://www.heromotors.com/leadership"
+  },
+  "chairman": "Pankaj Munjal"
+ },
  "IN:HEXT": {
   "website": "https://www.hexaware.com",
   "sources": {
@@ -15525,6 +15935,12 @@
   "ceo": "Atul Vinayak Pai",
   "chairman": "Ganesh Natarajan"
  },
+ "IN:HORIZONIND": {
+  "ceo": "Urvish Rambhia",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/HORIZON_24082026161816_HIPLIntitoSEsReg30_5_.pdf"
+  }
+ },
  "IN:HSCL": {
   "website": "https://www.himadri.com",
   "sources": {
@@ -15617,6 +16033,12 @@
   "ceo": "Sidharatha Mishra",
   "chairman": "Sandeep Batra"
  },
+ "IN:ICIL": {
+  "chairman": "Anil Kumar Jain",
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1705169_30072026042939_WEB.xml"
+  }
+ },
  "IN:ICRA": {
   "website": "https://www.icra.in",
   "sources": {
@@ -15650,6 +16072,14 @@
   "headquarters": "Gandhinagar, Gujarat, India",
   "ceo": "Abhijit Kishore",
   "chairman": "Kumar Mangalam Birla"
+ },
+ "IN:IDEAFORGE": {
+  "ceo": "Ankit Mehta",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29766_IDEAFORGE_2025_2026_A_13663131_13072026185156.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1737625_14102026024836_WEB.xml"
+  },
+  "chairman": "Srikanth Velamakanni"
  },
  "IN:IDFCBANK": {
   "chairman": "Sanjeeb Chaudhuri",
@@ -15695,6 +16125,14 @@
   "ceo": "Nirmal Jain",
   "chairman": "B. P. Kanungo"
  },
+ "IN:IIFLCAPS": {
+  "ceo": "R. Venkataraman",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30381_IIFLCAPS_2025_2026_A_7267820_17082026172135.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703278_28072026061218_WEB.xml"
+  },
+  "chairman": "Rekha Gopal Warriar"
+ },
  "IN:IKS": {
   "website": "https://www.ikshealth.com",
   "sources": {
@@ -15721,6 +16159,14 @@
   "ceo": "Puneet Chhatwal",
   "chairman": "N. Chandrasekaran"
  },
+ "IN:INDIACEM": {
+  "chairman": null,
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_177436_23072026175859_iXBRL_WEB.html",
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29876_INDIACEM_2025_2026_A_2407224_17072026210449.pdf"
+  },
+  "ceo": "Suresh Vasant Patil"
+ },
  "IN:INDIAINFO": {
   "website": "https://www.iifl.com",
   "sources": {
@@ -15730,6 +16176,12 @@
   },
   "ceo": "Nirmal Jain",
   "chairman": "B. P. Kanungo"
+ },
+ "IN:INDIAMART": {
+  "ceo": "Dinesh Chandra Agarwal",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29327_INDIAMART_2025_2026_A_18518017_02062026161513.pdf"
+  }
  },
  "IN:INDIANB": {
   "headquarters": "Chennai, Tamil Nadu, India",
@@ -15807,6 +16259,22 @@
   "chairman": "Nandan Nilekani",
   "slogan": "Navigate your next"
  },
+ "IN:INGERRAND": {
+  "ceo": "Sunil Khanduja",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29904_INGERRAND_2025_2026_A_2730182_20072026171612.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/INGERRAND1_21072026175618_OutcomeOfBoardMeeting21072026.pdf"
+  },
+  "chairman": "Sunil Khanduja"
+ },
+ "IN:INOXGREEN": {
+  "chairman": null,
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_175392_17072026153941_iXBRL_WEB.html",
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31327_INOXGREEN_2025_2026_A_9619385_03092026214831.pdf"
+  },
+  "ceo": "S. K. Mathusudhana"
+ },
  "IN:INOXINDIA": {
   "website": "https://www.inoxcva.com",
   "sources": {
@@ -15820,6 +16288,14 @@
   "headquarters": "Vadodara, Gujarat, India",
   "ceo": "Deepak Acharya",
   "chairman": "Pavan Jain"
+ },
+ "IN:INOXWIND": {
+  "chairman": null,
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_175533_17072026174856_iXBRL_WEB.html",
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31331_INOXWIND_2025_2026_A_8279078_03092026221810.pdf"
+  },
+  "ceo": "Sanjeev Agarwal"
  },
  "IN:IOB": {
   "ceo": "Ajay Kumar Srivastava",
@@ -15951,6 +16427,14 @@
   "ceo": "Rajesh Rai",
   "chairman": "Rajesh Rai"
  },
+ "IN:JAINREC": {
+  "ceo": "Kamlesh Jain",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30218_JAINREC_2025_2026_A_13856134_05082026215725.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1718013_26082026032410_WEB.xml"
+  },
+  "chairman": "Kamlesh Jain"
+ },
  "IN:JINDALSTEL": {
   "headquarters": "New Delhi, Delhi, India",
   "sources": {
@@ -15975,6 +16459,14 @@
   "ceo": "Hitesh Kumar Sethia",
   "chairman": "K. V. Kamath"
  },
+ "IN:JKBANK": {
+  "ceo": "Amitava Chatterjee",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/TUFAIL_25122024165024_Changes_Directorships.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1744340_23102026111608_WEB.xml"
+  },
+  "chairman": "Sankarasubramanian Krishnan"
+ },
  "IN:JKCEMENT": {
   "website": "https://www.jkcement.com",
   "sources": {
@@ -15987,6 +16479,28 @@
   "ceo": "Madhavkrishna Singhania",
   "chairman": "Sushila Devi Singhania"
  },
+ "IN:JMFINANCIL": {
+  "ceo": "Vishal Kampani",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29733_JMFINANCIL_2025_2026_A_15110568_10072026230703.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1744985_23102026071939_WEB.xml"
+  },
+  "chairman": "Nimesh N Kampani"
+ },
+ "IN:JNPR": {
+  "ceo": "Ankush Malik",
+  "sources": {
+   "ceo": "https://www.junipergreenenergy.com/about-us",
+   "chairman": "https://www.junipergreenenergy.com/about-us"
+  },
+  "chairman": "Arvind Tiku"
+ },
+ "IN:JPPOWER": {
+  "chairman": null,
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/JPPOWER_06072026152143_Disclosure-Resignation_of_Sh_Manoj_Gaur.pdf"
+  }
+ },
  "IN:JSL": {
   "website": "https://www.jindalstainless.com",
   "sources": {
@@ -15998,6 +16512,14 @@
   "founded": 1970,
   "ceo": "Tarun Kumar Khulbe",
   "chairman": "Ratan Jindal"
+ },
+ "IN:JSWDULUX": {
+  "ceo": "Rajiv Rajgopal",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/AKZOINDIA_09012026201954_AkzoIndiaBoardMeetingOutcome9Jan26.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1713219_13082026091049_WEB.xml"
+  },
+  "chairman": "Parth Sajjan Jindal"
  },
  "IN:JSWENERGY": {
   "website": "https://www.jswenergy.in",
@@ -16053,6 +16575,14 @@
   "ceo": "Sameer Khetarpal",
   "chairman": "Shyam S. Bhartia"
  },
+ "IN:JUBLPHARMA": {
+  "ceo": "Priyavrat Bhartia",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30137_JUBLPHARMA_2025_2026_A_10572064_01082026223305.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1698811_21072026073353_WEB.xml"
+  },
+  "chairman": "Shyam Sunder Bhartia"
+ },
  "IN:JYOTICNC": {
   "website": "https://jyoti.co.in",
   "sources": {
@@ -16064,6 +16594,14 @@
   "headquarters": "Rajkot, Gujarat, India",
   "ceo": "P. G. Jadeja",
   "chairman": "P. G. Jadeja"
+ },
+ "IN:J_KBANK": {
+  "ceo": "Amitava Chatterjee",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/TUFAIL_25122024165024_Changes_Directorships.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1744340_23102026111608_WEB.xml"
+  },
+  "chairman": "Sankarasubramanian Krishnan"
  },
  "IN:KAJARIACER": {
   "website": "https://www.kajariaceramics.com",
@@ -16101,6 +16639,26 @@
   "ceo": "T. S. Kalyanaraman",
   "chairman": "Vinod Rai"
  },
+ "IN:KAMAHOLD": {
+  "chairman": "Kartik Bharat Ram",
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1659272_27042026030830_WEB.xml"
+  }
+ },
+ "IN:KANOHAR": {
+  "ceo": "Dinesh Singhal",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/KANOHARNSE2026_07102026222320_Intimation_under_30_5_-updated_contacts.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/KANOHARNSE2026_07102026222320_Intimation_under_30_5_-updated_contacts.pdf"
+  },
+  "chairman": "Dinesh Singhal"
+ },
+ "IN:KARAMTARA": {
+  "ceo": "Sunil Rustagi",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/9833315135_17092026212115_Intimation_of_Authorised_KMPs_to_determine_material_events.pdf"
+  }
+ },
  "IN:KARURVYSYA": {
   "website": "https://www.kvb.bank.in",
   "sources": {
@@ -16126,6 +16684,14 @@
   "headquarters": "Mysuru, Karnataka, India",
   "ceo": "Muthukumar Narayanaswamy",
   "chairman": "Savitha Ramesh"
+ },
+ "IN:KDDL": {
+  "ceo": "Yashovardhan Saboo",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30577_KDDL_2025_2026_A_8323327_24082026231124.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1691107_12072026052132_WEB.xml"
+  },
+  "chairman": "Yashovardhan Saboo"
  },
  "IN:KEI": {
   "website": "https://www.kei-ind.com",
@@ -16173,6 +16739,14 @@
   "ceo": "Ganti Venkat Kiran",
   "chairman": "Ganti Venkat Kiran"
  },
+ "IN:KIRLOSBROS": {
+  "ceo": "Sanjay Chandrakant Kirloskar",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29628_KIRLOSBROS_2025_2026_A_18508375_07072026173254.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1699580_22072026071850_WEB.xml"
+  },
+  "chairman": "Sanjay Chandrakant Kirloskar"
+ },
  "IN:KIRLOSENG": {
   "website": "https://www.kirloskaroilengines.com",
   "sources": {
@@ -16185,6 +16759,14 @@
   "ceo": "Rahul Sahai",
   "chairman": "Rahul Kirloskar"
  },
+ "IN:KIRLOSIND": {
+  "ceo": "George Verghese",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29966_KIRLOSIND_2025_2026_A_12021106_23072026173601.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1704504_29072026075532_WEB.xml"
+  },
+  "chairman": "Atul C Kirloskar"
+ },
  "IN:KOTAKBANK": {
   "headquarters": "Mumbai, Maharashtra, India",
   "sources": {
@@ -16194,6 +16776,14 @@
   },
   "ceo": "Ashok Vaswani",
   "chairman": "C S Rajan"
+ },
+ "IN:KOVAI": {
+  "ceo": "Nalla G Palaniswami",
+  "sources": {
+   "ceo": "https://kmchhospitals.com/about-overview/",
+   "chairman": "https://kmchhospitals.com/about-overview/"
+  },
+  "chairman": "Nalla G Palaniswami"
  },
  "IN:KPIL": {
   "website": "https://www.kalpataruprojects.com",
@@ -16207,6 +16797,12 @@
   "ceo": "Manish Mohnot",
   "chairman": "Mofatraj P. Munot"
  },
+ "IN:KPL": {
+  "ceo": "Ramesh Arora",
+  "sources": {
+   "ceo": "https://www.kwalitypharma.com/about-us.php"
+  }
+ },
  "IN:KPRMILL": {
   "website": "https://www.kprmilllimited.com",
   "sources": {
@@ -16216,6 +16812,14 @@
   },
   "headquarters": "Coimbatore, Tamil Nadu, India",
   "chairman": "K.P. Ramasamy"
+ },
+ "IN:KRBL": {
+  "ceo": "Anil Kumar Mittal",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31156_KRBL_2025_2026_A_16641611_02092026194830.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1738037_14102026061846_WEB.xml"
+  },
+  "chairman": "Anil Kumar Mittal"
  },
  "IN:KRT": {
   "website": "https://www.knowledgerealtytrust.com",
@@ -16232,6 +16836,30 @@
    "ceo": "https://nsearchives.nseindia.com/corporate/KRT_30072026170026_Transcript_of_Earnings_Call.pdf"
   },
   "ceo": "Shirish Godbole"
+ },
+ "IN:KSCL": {
+  "ceo": "G.V. Bhaskar Rao",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31400_KSCL_2025_2026_A_14046739_04092026174427.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1736917_13102026035923_WEB.xml"
+  },
+  "chairman": "G.V. Bhaskar Rao"
+ },
+ "IN:KSL": {
+  "ceo": "R. K. Goyal",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_27094_KSL_2024_2025_A_24072025161915.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1743712_22102026115717_WEB.xml"
+  },
+  "chairman": "Babasaheb Neelkanth Kalyani"
+ },
+ "IN:KUSUMGAR": {
+  "ceo": "Ankur Kothari",
+  "sources": {
+   "ceo": "https://www.kusumgar.com/investor-relations/board-of-directors/",
+   "chairman": "https://www.kusumgar.com/investor-relations/board-of-directors/"
+  },
+  "chairman": "Siddharth Yogesh Kusumgar"
  },
  "IN:L&TFH": {
   "ceo": "Sudipta Roy",
@@ -16265,6 +16893,22 @@
   "ceo": "Shankha Banerjee",
   "chairman": "Arvind Lal"
  },
+ "IN:LASERPOWER": {
+  "ceo": "Devesh Goel",
+  "sources": {
+   "ceo": "https://laserpowerinfra.com/about-us/",
+   "chairman": "https://laserpowerinfra.com/about-us/"
+  },
+  "chairman": "Deepak Goel"
+ },
+ "IN:LATENTVIEW": {
+  "ceo": "Sonal Ramrakhiani",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/LATENTVIEW_01082026155237_Appointment_of_Sonal_Signed.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703223_28072026055459_WEB.xml"
+  },
+  "chairman": "Adugudi Viswanathan Venkatraman"
+ },
  "IN:LAURUSLABS": {
   "website": "https://www.lauruslabs.com",
   "sources": {
@@ -16279,6 +16923,14 @@
   "ceo": "Satyanarayana Chava",
   "chairman": "Ravindranath Kancherla"
  },
+ "IN:LCCPROJECT": {
+  "ceo": "Arjan S. Rabari",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/LCCPROJECTS_17092026180338_Intimation_Reg30_5__SIGNED.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/LCCPROJECTS_17092026180338_Intimation_Reg30_5__SIGNED.pdf"
+  },
+  "chairman": "Arjan S. Rabari"
+ },
  "IN:LENSKART": {
   "website": "https://www.lenskart.com",
   "sources": {
@@ -16292,6 +16944,14 @@
   "headquarters": "Gurugram, Haryana, India",
   "ceo": "Peyush Bansal",
   "chairman": "Peyush Bansal"
+ },
+ "IN:LGBBROSLTD": {
+  "ceo": "P. Prabakaran",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30073_LGBBROSLTD_2025_2026_A_7864587_30072026161714.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1742181_20102026111417_WEB.xml"
+  },
+  "chairman": "Balakrishnan Vijayakumar"
  },
  "IN:LGEINDIA": {
   "founded": 1997,
@@ -16338,6 +16998,12 @@
   "headquarters": "Kolkata, West Bengal, India",
   "ceo": "Milan Sadhukhan",
   "chairman": "Michael James Devine"
+ },
+ "IN:LLOYDSENGG": {
+  "chairman": "Mukesh R Gupta",
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1698651_21072026062505_WEB.xml"
+  }
  },
  "IN:LLOYDSME": {
   "website": "https://lloyds.in",
@@ -16487,6 +17153,20 @@
    "ceo": "https://bankofmaharashtra.bank.in/board-of-directors"
   }
  },
+ "IN:MAHSCOOTER": {
+  "chairman": "Sanjivnayan Rahulkumar Bajaj",
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1741766_19102026054232_WEB.xml"
+  }
+ },
+ "IN:MAHSEAMLES": {
+  "ceo": "Saket Jindal",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30960_MAHSEAMLES_2025_2026_U_4614371_01092026122703.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1702589_28072026090624_WEB.xml"
+  },
+  "chairman": "Dharam Pal Jindal"
+ },
  "IN:MANAPPURAM": {
   "website": "https://www.manappuram.com",
   "sources": {
@@ -16500,6 +17180,14 @@
   "headquarters": "Thrissur, Kerala, India",
   "ceo": "Deepak Reddy",
   "chairman": "V. P. Nandakumar"
+ },
+ "IN:MANINFRA": {
+  "ceo": "Manan P. Shah",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29840_MANINFRA_2025_2026_A_9348968_17072026092647.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1737788_14102026042438_WEB.xml"
+  },
+  "chairman": "Parag Kishorchandra Shah"
  },
  "IN:MANIPALHOS": {
   "website": "https://www.manipalhospitals.com",
@@ -16722,6 +17410,34 @@
   "headquarters": "Mumbai, Maharashtra, India",
   "ceo": "Raul Rebello",
   "chairman": "Anish Shah"
+ },
+ "IN:MOLBIO": {
+  "ceo": "Sriram Natarajan",
+  "sources": {
+   "ceo": "https://www.molbiodiagnostics.com/governance/"
+  }
+ },
+ "IN:MONEYVIEW": {
+  "ceo": "Puneet Agarwal",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/9916600823_01102026134731_SE_Intimation_Disclosure_Under_Regulation_30_5__of_SEBI_LODR.pdf"
+  }
+ },
+ "IN:MOREPENLAB": {
+  "ceo": "Sushil Suri",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31081_MOREPENLAB_2025_2026_A_7425141_02092026134748.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1741923_19102026064810_WEB.xml"
+  },
+  "chairman": "Sushil Suri"
+ },
+ "IN:MOSCHIP": {
+  "ceo": "Srinivasa Rao Kakumanu",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/MOSCHIP_29092026201739_CEO_Presentation_to_Stock_exchanges.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1716491_20082026061449_WEB.xml"
+  },
+  "chairman": "Pradeep Chandra Kathi"
  },
  "IN:MOTHERSON": {
   "website": "https://www.motherson.com",
@@ -17059,6 +17775,28 @@
   "ceo": "Amitava Mukherjee",
   "chairman": "Amitava Mukherjee"
  },
+ "IN:NORTHARC": {
+  "ceo": "Ashish Mehrotra",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30006_NORTHARC_2025_2026_A_25936563_25072026184449.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1744133_22102026061413_WEB.xml"
+  },
+  "chairman": "Palamadai Sundararajan Jayakumar"
+ },
+ "IN:NOVARTIND": {
+  "chairman": "Christopher David Snook",
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1661186_29042026045500_WEB.xml"
+  }
+ },
+ "IN:NPST": {
+  "ceo": "Deepak Chand Thakur",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31369_NPST_2025_2026_U_7805503_04092026152415.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1716683_21082026120421_WEB.xml"
+  },
+  "chairman": "Deepak Chand Thakur"
+ },
  "IN:NSDL": {
   "website": "https://nsdl.co.in",
   "sources": {
@@ -17197,6 +17935,14 @@
   "ceo": "Ranjit Rath",
   "chairman": "Ranjit Rath"
  },
+ "IN:OMNI": {
+  "ceo": "Udaykumar Arunkumar Parekh",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31159_OMNI_2025_2026_A_6301799_02092026200238.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1736907_13102026034754_WEB.xml"
+  },
+  "chairman": "Udaykumar Arunkumar Parekh"
+ },
  "IN:ONGC": {
   "headquarters": "New Delhi, Delhi, India",
   "sources": {
@@ -17206,6 +17952,12 @@
   },
   "ceo": "Arun Kumar Singh",
   "chairman": "Arun Kumar Singh"
+ },
+ "IN:OPTIEMUS": {
+  "chairman": "Ashok Gupta",
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1741783_19102026054809_WEB.xml"
+  }
  },
  "IN:PAGEIND": {
   "website": "https://pageind.com",
@@ -17250,6 +18002,20 @@
   "headquarters": "Noida, Uttar Pradesh, India",
   "ceo": "Vijay Shekhar Sharma",
   "chairman": "Vijay Shekhar Sharma"
+ },
+ "IN:PDSL": {
+  "ceo": "Sanjay Jain",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29616_PDSL_2025_2026_A_9731415_07072026161546.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1693808_16072026113509_WEB.xml"
+  },
+  "chairman": "Deepak Kumar Seth"
+ },
+ "IN:PERNIASPOP": {
+  "ceo": "Abhishek Agarwal",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/PURPLESTYLE_07092026202229_Reg_30_5.pdf"
+  }
  },
  "IN:PERSISTENT": {
   "website": "https://www.persistent.com",
@@ -17298,6 +18064,12 @@
   },
   "founded": 1997,
   "chairman": "Naresh Malhotra"
+ },
+ "IN:PGEL": {
+  "chairman": "Anurag Gupta",
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1737874_14102026050416_WEB.xml"
+  }
  },
  "IN:PGHH": {
   "website": "https://in.pg.com",
@@ -17352,6 +18124,14 @@
   "headquarters": "Udaipur, Rajasthan, India",
   "ceo": "Mayank Singhal",
   "chairman": "Narayan K. Seshadri"
+ },
+ "IN:PILANIINVS": {
+  "ceo": "R. P. Pansari",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29412_PILANIINVS_2025_2026_A_2000107_19062026145050.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1743705_22102026114414_WEB.xml"
+  },
+  "chairman": "Rajashree Birla"
  },
  "IN:PINELABS": {
   "website": "https://www.pinelabs.com",
@@ -17463,6 +18243,30 @@
   "ceo": "Peter DeYoung",
   "chairman": "Nandini Piramal"
  },
+ "IN:PRAJIND": {
+  "ceo": "Ashish Gaikwad",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29924_PRAJIND_2025_2026_A_22680585_21072026130416.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1737490_14102026124214_WEB.xml"
+  },
+  "chairman": "Chaudhari Pramod Madhukar"
+ },
+ "IN:PRASOLCHEM": {
+  "ceo": "Gaurang Natwarlal Parikh",
+  "sources": {
+   "ceo": "https://www.prasolchem.com/leadership-team/",
+   "chairman": "https://www.prasolchem.com/leadership-team/"
+  },
+  "chairman": "Nishith Rajnikant Shah"
+ },
+ "IN:PREMEXPLN": {
+  "ceo": "T. V. Chowdary",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31261_PREMEXPLN_2025_2026_A_3065990_03092026174917.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1704743_30072026112204_WEB.xml"
+  },
+  "chairman": "Amarnath Gupta"
+ },
  "IN:PREMIERENE": {
   "website": "https://www.premierenergies.com",
   "sources": {
@@ -17525,6 +18329,14 @@
   "ceo": "Alakh Pandey",
   "chairman": "Deepak Amitabh"
  },
+ "IN:QPOWER": {
+  "ceo": "Sanjog Mhatre",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/QPOWER1234_04022026192421_Outcome_signed_final.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1737722_14102026035130_WEB.xml"
+  },
+  "chairman": "Thalavaidurai Pandyan"
+ },
  "IN:RADICO": {
   "website": "https://www.radicokhaitan.com",
   "sources": {
@@ -17550,6 +18362,14 @@
   "headquarters": "Chennai, Tamil Nadu, India",
   "ceo": "A. V. Dharmakrishnan",
   "chairman": "M. F. Farooqui"
+ },
+ "IN:RAMRAT": {
+  "ceo": "Mahendrakumar Kabra",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29738_RAMRAT_2025_2026_A_18182789_11072026100606.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1742712_21102026021243_WEB.xml"
+  },
+  "chairman": "Tribhuvanprasad Rameshwarlal Kabra"
  },
  "IN:RATNAMANI": {
   "website": "https://www.ratnamani.com",
@@ -17617,6 +18437,14 @@
   "slogan": "Growth is Life",
   "founded": 1958
  },
+ "IN:RELIGARE": {
+  "ceo": "Arjun Lamba",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/RELIGARE_25092026170226_REL25092026.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1713589_13082026051923_WEB.xml"
+  },
+  "chairman": "Rajender Mohan Malla"
+ },
  "IN:RNAM": {
   "website": "https://mf.nipponindiaim.com",
   "sources": {
@@ -17626,6 +18454,14 @@
   },
   "ceo": "Sundeep Sikka",
   "chairman": "Upendra Kumar Sinha"
+ },
+ "IN:RPOWER": {
+  "chairman": null,
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_175580_17072026190642_iXBRL_WEB.html",
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29973_RPOWER_2025_2026_A_4586202_23072026223331.pdf"
+  },
+  "ceo": "Neeraj Parakh"
  },
  "IN:RRKABEL": {
   "website": "https://www.rrkabel.com",
@@ -17659,6 +18495,14 @@
   },
   "chairman": "Acharya Balkrishna"
  },
+ "IN:RUSTOMJEE": {
+  "ceo": "Boman Rustom Irani",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30605_RUSTOMJEE_2025_2026_A_14615724_25082026175040.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1740830_17102026043258_WEB.xml"
+  },
+  "chairman": "Boman Rustom Irani"
+ },
  "IN:RVNL": {
   "website": "https://www.rvnl.org",
   "sources": {
@@ -17672,6 +18516,14 @@
   "headquarters": "New Delhi, Delhi, India",
   "ceo": "Saleem Ahmad",
   "chairman": "Saleem Ahmad"
+ },
+ "IN:SAATVIKGL": {
+  "ceo": "Prashant Mathur",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31182_SAATVIKGL_2025_2026_A_20143921_02092026222000.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1700767_24072026040355_WEB.xml"
+  },
+  "chairman": "Neelesh Garg"
  },
  "IN:SAGILITY": {
   "website": "https://www.sagility.com",
@@ -17712,6 +18564,14 @@
   "headquarters": "Hyderabad, Telangana, India",
   "ceo": "Krishna Kanumuri",
   "chairman": "K. Ranga Raju"
+ },
+ "IN:SANATHAN": {
+  "ceo": "Paresh Vrajlal Dattani",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30432_SANATHAN_2025_2026_A_24640989_19082026181043.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1742996_21102026042548_WEB.xml"
+  },
+  "chairman": "Paresh Vrajlal Dattani"
  },
  "IN:SANSERA": {
   "website": "https://www.sansera.in",
@@ -17797,6 +18657,12 @@
   "ceo": "Udai Singh",
   "chairman": "Pravin K. Purang"
  },
+ "IN:SEAMECLTD": {
+  "chairman": "Sanjeev Agrawal",
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1744577_23102026033325_WEB.xml"
+  }
+ },
  "IN:SESAGOA": {
   "ceo": "Arun Misra",
   "sources": {
@@ -17804,6 +18670,30 @@
    "chairman": "https://vedantalimited.com/vedantaFY26/corporate-governance.html"
   },
   "chairman": "Anil Agarwal"
+ },
+ "IN:SFL": {
+  "ceo": "Rahul Gautam",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29810_SFL_2025_2026_U_13294644_15072026174804.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1744567_23102026032710_WEB.xml"
+  },
+  "chairman": "Rahul Gautam"
+ },
+ "IN:SGFIN": {
+  "ceo": "Vinay Gupta",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29356_SGFIN_2025_2026_A_11694471_05062026200127.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1737123_13102026053257_WEB.xml"
+  },
+  "chairman": "Deepak Kumar"
+ },
+ "IN:SHARDAMOTR": {
+  "ceo": "Aashim Relan",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30994_SHARDAMOTR_2025_2026_A_5153637_01092026163032.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1742456_21102026110549_WEB.xml"
+  },
+  "chairman": "Ajay Relan"
  },
  "IN:SHILPAMED": {
   "website": "https://vbshilpa.com",
@@ -17819,6 +18709,12 @@
   "ceo": "Vishnukant C. Bhutada",
   "chairman": "Omprakash Inani"
  },
+ "IN:SHIPROCKET": {
+  "ceo": "Saahil Goel",
+  "sources": {
+   "ceo": "https://www.shiprocket.in/about-us/"
+  }
+ },
  "IN:SHREECEM": {
   "website": "https://www.shreecement.com",
   "sources": {
@@ -17832,6 +18728,14 @@
   "headquarters": "Kolkata, West Bengal, India",
   "ceo": "Neeraj Akhoury",
   "chairman": "Hari Mohan Bangur"
+ },
+ "IN:SHREEJISPG": {
+  "ceo": "Ashokkumar Haridas Lal",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31760_SHREEJISPG_2025_2026_A_21282634_07092026185545.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1698355_21072026044354_WEB.xml"
+  },
+  "chairman": "Ashokkumar Haridas Lal"
  },
  "IN:SHRIPISTON": {
   "website": "https://shrirampistons.com",
@@ -17897,6 +18801,14 @@
   "headquarters": "Hyderabad, Telangana, India",
   "ceo": "Sunil Kumar Kalidindi"
  },
+ "IN:SINDHUTRAD": {
+  "ceo": "Vikas Singh Hooda",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/SINDHUTRAD_13082026182727_Regulation30Signed.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703807_29072026024131_WEB.xml"
+  },
+  "chairman": "Rudra Sen Sindhu"
+ },
  "IN:SJVN": {
   "founded": 1988,
   "sources": {
@@ -17908,6 +18820,22 @@
   "headquarters": "Shimla, Himachal Pradesh, India",
   "ceo": "Bhupender Gupta",
   "chairman": "Bhupender Gupta"
+ },
+ "IN:SKFINDIA": {
+  "ceo": "Shailesh Kumar Sharma",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29829_SKFINDIA_2025_2026_A_9285389_16072026181251.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1737609_14102026024052_WEB.xml"
+  },
+  "chairman": "Gopal Subramanyam"
+ },
+ "IN:SMARTWORKS": {
+  "ceo": "Neetish Sarda",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31688_SMARTWORKS_2025_2026_A_18887547_07092026161734.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703128_28072026051402_WEB.xml"
+  },
+  "chairman": "Atul Gautam"
  },
  "IN:SMLISUZU": {
   "website": "https://www.smlmahindra.com",
@@ -17922,8 +18850,10 @@
  "IN:SMLMAH": {
   "website": "https://www.smlmahindra.com",
   "sources": {
-   "website": "https://en.wikipedia.org/wiki/SML_Isuzu"
-  }
+   "website": "https://en.wikipedia.org/wiki/SML_Isuzu",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1701172_24072026070732_WEB.xml"
+  },
+  "chairman": "Vinod Kumar Sahay"
  },
  "IN:SOLARINDS": {
   "website": "https://solargroup.com",
@@ -17944,6 +18874,30 @@
   },
   "founded": 1995,
   "ceo": "Vivek Vikram Singh"
+ },
+ "IN:SONATSOFTW": {
+  "ceo": "Rajsekhar Datta Roy",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/SONATSOFTW_25042026200425_outcomeofbm250426.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1694490_16072026061916_WEB.xml"
+  },
+  "chairman": "Sanjay Khatau Asher"
+ },
+ "IN:SPARC": {
+  "ceo": "Anil Raghavan",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/SPARC_13072026173744_Reg30Intimation13072026.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1696897_20072026042439_WEB.xml"
+  },
+  "chairman": "Dilip Shantilal Shanghvi"
+ },
+ "IN:SPLPETRO": {
+  "ceo": "N. Gopal",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29402_SPLPETRO_2025_2026_A_2812940_17062026175220.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1701422_25072026123628_WEB.xml"
+  },
+  "chairman": "Mahavirprasad S Taparia"
  },
  "IN:SRF": {
   "website": "https://www.srf.com",
@@ -17966,6 +18920,14 @@
    "chairman": "https://vedantalimited.com/vedantaFY26/corporate-governance.html"
   },
   "chairman": "Anil Agarwal"
+ },
+ "IN:SSRETAIL": {
+  "ceo": "Siddharth Shah",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/SSRETAIL_14102026085716_mediarelease141012026v1.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/SSRETAIL_14102026085716_mediarelease141012026v1.pdf"
+  },
+  "chairman": "Siddharth Shah"
  },
  "IN:STARHEALTH": {
   "website": "https://www.starhealth.in",
@@ -18000,6 +18962,14 @@
   },
   "ceo": "Ankit Agarwal",
   "chairman": "Anil Agarwal"
+ },
+ "IN:SUDEEPPHRM": {
+  "ceo": "Bhayani Sujit Jaysukh",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29699_SUDEEPPHRM_2025_2026_A_4442698_10072026133953.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1736084_12102026034250_WEB.xml"
+  },
+  "chairman": "Bhayani Sujit Jaysukh"
  },
  "IN:SUMICHEM": {
   "website": "https://www.sumichem.co.in",
@@ -18081,6 +19051,20 @@
   "ceo": "M. P. Taparia",
   "chairman": "M. P. Taparia"
  },
+ "IN:SUPRIYA": {
+  "ceo": "Saloni Satish Wagh",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31035_SUPRIYA_2025_2026_A_13601073_01092026195017.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1700563_24072026123838_WEB.xml"
+  },
+  "chairman": "Satish Waman Wagh"
+ },
+ "IN:SURYAROSNI": {
+  "chairman": "Jai Prakash Agarwal",
+  "sources": {
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1737760_14102026041156_WEB.xml"
+  }
+ },
  "IN:SUZLON": {
   "ceo": "Ajay Kapur",
   "sources": {
@@ -18101,6 +19085,30 @@
   "ceo": "Sriharsha Majety",
   "chairman": "Anand Kripalu"
  },
+ "IN:SWSOLAR": {
+  "ceo": "Chandra Kishore Thakur",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29374_SWSOLAR_2025_2026_A_9841651_09062026225210.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1705521_30072026065203_WEB.xml"
+  },
+  "chairman": "Khurshed Yazdi Daruvala"
+ },
+ "IN:SYMBIOTEC": {
+  "ceo": "Anil Satwani",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/SYMBIOTEC_01092026163543_Reg_30_5_.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/SYMBIOTEC_01092026163543_Reg_30_5_.pdf"
+  },
+  "chairman": "Anil Satwani"
+ },
+ "IN:SYMPHONY": {
+  "ceo": "Achal Anil Bakeri",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29742_SYMPHONY_2025_2026_A_4453216_11072026142456.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1739135_15102026053915_WEB.xml"
+  },
+  "chairman": "Achal Anil Bakeri"
+ },
  "IN:SYRMA": {
   "website": "https://www.syrmasgs.com",
   "sources": {
@@ -18112,6 +19120,14 @@
   "headquarters": "Mumbai, Maharashtra, India",
   "ceo": "Jaidit Singh Brar",
   "chairman": "Sandeep Tandon"
+ },
+ "IN:TANFACIND": {
+  "ceo": "Hemango Gupta",
+  "sources": {
+   "ceo": "https://tanfac.com/leadership",
+   "chairman": "https://tanfac.com/leadership"
+  },
+  "chairman": "D. Karthikeyan"
  },
  "IN:TATACAP": {
   "website": "https://www.tatacapital.com",
@@ -18241,6 +19257,14 @@
   "headquarters": "Gurugram, Haryana, India",
   "chairman": "Ravindra Dhariwal"
  },
+ "IN:TCI": {
+  "ceo": "Vineet Agarwal",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29848_TCI_2025_2026_U_9742506_17072026131440.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1706532_01082026014809_WEB.xml"
+  },
+  "chairman": "Dharmpal Agarwal"
+ },
  "IN:TCS": {
   "headquarters": "Mumbai, Maharashtra, India",
   "sources": {
@@ -18280,6 +19304,14 @@
   "ceo": "Mohit Joshi",
   "chairman": "Anand Mahindra",
   "slogan": "Scale at Speed"
+ },
+ "IN:TEMPSENS": {
+  "ceo": "Vinay Rathi",
+  "sources": {
+   "ceo": "https://tempsens.com/board-of-directors/",
+   "chairman": "https://tempsens.com/board-of-directors/"
+  },
+  "chairman": "Virendra Prakash Rathi"
  },
  "IN:TENNIND": {
   "website": "https://www.tennecoindia.com",
@@ -18423,6 +19455,22 @@
   "chairman": "Noel Tata",
   "founded": 1952
  },
+ "IN:TRITURBINE": {
+  "ceo": "S. N. Prasad",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30349_TRITURBINE_2025_2026_A_12500916_14082026150941.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1699820_23072026011128_WEB.xml"
+  },
+  "chairman": "Dhruv Manmohan Sawhney"
+ },
+ "IN:TRIVENI": {
+  "ceo": "Dhruv Manmohan Sawhney",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30323_TRIVENI_2025_2026_A_10284825_13082026163344.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1708142_05082026123346_WEB.xml"
+  },
+  "chairman": "Dhruv Manmohan Sawhney"
+ },
  "IN:TVSHLTD": {
   "website": "https://www.tvsholdings.com",
   "sources": {
@@ -18444,6 +19492,14 @@
   },
   "ceo": "K N Radhakrishnan",
   "chairman": "Sudarshan Venu"
+ },
+ "IN:TVSSCS": {
+  "ceo": "Vikas Chadha",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/CSCOMPLIANCE_01072026181103_SE___GCEO___General_Disclosure_sd.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1704226_29072026055320_WEB.xml"
+  },
+  "chairman": "R Dinesh"
  },
  "IN:UBL": {
   "website": "https://www.unitedbreweries.com",
@@ -18549,6 +19605,14 @@
    "website": "https://www.utkarsh.bank.in/"
   }
  },
+ "IN:VADILALIND": {
+  "ceo": "Himanshu Kanwar",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30375_VADILALIND_2025_2026_A_5270425_17082026160740.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1701926_27072026031220_WEB.xml"
+  },
+  "chairman": "Nagarajan Sivaramakrishnan"
+ },
  "IN:VAML": {
   "website": "https://www.vedantaaluminium.com",
   "sources": {
@@ -18585,6 +19649,38 @@
   "ceo": "Arun Misra",
   "chairman": "Anil Agarwal"
  },
+ "IN:VENTIVE": {
+  "ceo": "Ranjit Batra",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30161_VENTIVE_2025_2026_A_20627672_03082026194446.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1743909_22102026035836_WEB.xml"
+  },
+  "chairman": "Atul Ishwardas Chordia"
+ },
+ "IN:VISHNU": {
+  "ceo": "Krishna Murthy Cherukuri",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30226_VISHNU_2025_2026_A_10751400_06082026154018.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1698297_21072026042328_WEB.xml"
+  },
+  "chairman": "Krishna Murthy Cherukuri"
+ },
+ "IN:VISL": {
+  "ceo": "Pankaj Kumar Sharma",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/corporate/VEDANTAIRONSTEEL_16062026183530_VISLSEIntimationReg30_5_LODR.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1697551_20072026082118_WEB.xml"
+  },
+  "chairman": "Anil Kumar Agarwal"
+ },
+ "IN:VMARCIND": {
+  "ceo": "Vikas Garg",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/SME_AR_30907_VMARCIND_2025_2026_A_34714847_31082026180152.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1740569_17102026114221_WEB.xml"
+  },
+  "chairman": "Vikas Garg"
+ },
  "IN:VMART": {
   "website": "https://www.vmart.co.in",
   "sources": {
@@ -18601,6 +19697,14 @@
   "headquarters": "Gurugram, Haryana, India",
   "ceo": "Gunender Kapur"
  },
+ "IN:VOLTAMP": {
+  "ceo": "Kanubhai S Patel",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29614_VOLTAMP_2025_2026_A_15766160_07072026160905.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1744689_23102026043837_WEB.xml"
+  },
+  "chairman": "Kanubhai S Patel"
+ },
  "IN:VOLTAS": {
   "website": "https://www.voltas.com",
   "sources": {
@@ -18612,6 +19716,30 @@
   "headquarters": "Mumbai, Maharashtra, India",
   "ceo": "Mukundan Menon C P",
   "chairman": "Noel Tata"
+ },
+ "IN:VRLLOG": {
+  "ceo": "Vijay Basavanneppa Sankeshwar",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29751_VRLLOG_2025_2026_U_7445116_12072026115210.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1736530_13102026104511_WEB.xml"
+  },
+  "chairman": "Vijay Basavanneppa Sankeshwar"
+ },
+ "IN:VSTTILLERS": {
+  "ceo": "Antony Cherukara",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31054_VSTTILLERS_2025_2026_A_10626776_01092026221742.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703857_29072026030455_WEB.xml"
+  },
+  "chairman": "Arun Vellore Surendra"
+ },
+ "IN:VTL": {
+  "ceo": "Paul Oswal",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30621_VTL_2025_2026_A_14906861_25082026194556.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1735436_10102026043450_WEB.xml"
+  },
+  "chairman": "Paul Oswal"
  },
  "IN:WAAREEENER": {
   "website": "https://www.waaree.com",
@@ -18692,6 +19820,22 @@
    "chairman": "https://www.yes.bank.in/sites/web/content/published/api/v1.1/assets/CONTF66305937A32460E83F78ABC385AF369/native/press_release_vinay_tonse_to_yes_bank.pdf?download=false"
   },
   "chairman": "Rama Subramaniam Gandhi"
+ },
+ "IN:ZEEL": {
+  "ceo": "Punit Goenka",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_32158_ZEEL_2025_2026_A_8509312_06102026132016.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1700788_24072026041853_WEB.xml"
+  },
+  "chairman": "R Gopalan"
+ },
+ "IN:ZENTEC": {
+  "ceo": "Ashok Atluri",
+  "sources": {
+   "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_27214_ZENTEC_2024_2025_A_31072025233538.pdf",
+   "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1698459_21072026052325_WEB.xml"
+  },
+  "chairman": "Ashok Atluri"
  },
  "IN:ZFCVINDIA": {
   "website": "https://www.zf.com",
