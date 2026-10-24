@@ -4019,6 +4019,78 @@
   },
   "chairman": "Darren W. Woods"
  },
+ "ARGENTINA:YPDDB": {
+  "website": "https://www.ypf.com",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm"
+  },
+  "headquarters": "Buenos Aires, Argentina",
+  "ceo": "Horacio Daniel Marín",
+  "chairman": "Horacio Daniel Marín"
+ },
+ "ARGENTINA:YPFD": {
+  "website": "https://www.ypf.com",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm"
+  },
+  "headquarters": "Buenos Aires, Argentina",
+  "ceo": "Horacio Daniel Marín",
+  "chairman": "Horacio Daniel Marín"
+ },
+ "ARGENTINA:YPFD.CI": {
+  "website": "https://www.ypf.com",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm"
+  },
+  "headquarters": "Buenos Aires, Argentina",
+  "ceo": "Horacio Daniel Marín",
+  "chairman": "Horacio Daniel Marín"
+ },
+ "ARGENTINA:YPFDB": {
+  "website": "https://www.ypf.com",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm"
+  },
+  "headquarters": "Buenos Aires, Argentina",
+  "ceo": "Horacio Daniel Marín",
+  "chairman": "Horacio Daniel Marín"
+ },
+ "ARGENTINA:YPFDC": {
+  "website": "https://www.ypf.com",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm"
+  },
+  "headquarters": "Buenos Aires, Argentina",
+  "ceo": "Horacio Daniel Marín",
+  "chairman": "Horacio Daniel Marín"
+ },
+ "ARGENTINA:YPFDD": {
+  "website": "https://www.ypf.com",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/904851/000119312526126363/d95578d20f.htm"
+  },
+  "headquarters": "Buenos Aires, Argentina",
+  "ceo": "Horacio Daniel Marín",
+  "chairman": "Horacio Daniel Marín"
+ },
  "AUSTRALIA:ALL": {
   "website": "https://www.aristocrat.com",
   "sources": {
@@ -5965,6 +6037,22 @@
   },
   "chairman": "Robert A. Michael"
  },
+ "BRAZIL:ABEV3": {
+  "ceo": "Carlos Eduardo Klutzenschell Lisboa",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1565025/000129281426003235/abev20260526_6k.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1565025/000129281426003235/abev20260526_6k.htm"
+  },
+  "chairman": "Michel Dimitrios Doukeris"
+ },
+ "BRAZIL:ABEV3F": {
+  "ceo": "Carlos Eduardo Klutzenschell Lisboa",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1565025/000129281426003235/abev20260526_6k.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1565025/000129281426003235/abev20260526_6k.htm"
+  },
+  "chairman": "Michel Dimitrios Doukeris"
+ },
  "BRAZIL:ABTT34": {
   "ceo": "Robert B. Ford",
   "sources": {
@@ -6034,6 +6122,50 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1730168/000119312526085691/d49254ddef14a.htm"
   },
   "chairman": "Henry Samueli"
+ },
+ "BRAZIL:AXIA3": {
+  "ceo": "Ivan de Souza Monteiro",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1439124/000143912426000013/ebr-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1439124/000143912426000013/ebr-20251231.htm"
+  },
+  "chairman": "Vicente Falconi Campos"
+ },
+ "BRAZIL:AXIA3F": {
+  "website": "https://www.axia.com.br",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/1439124/000143912426000013/ebr-20251231.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/1439124/000143912426000013/ebr-20251231.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1439124/000143912426000013/ebr-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1439124/000143912426000013/ebr-20251231.htm"
+  },
+  "headquarters": "Rio de Janeiro, Brazil",
+  "ceo": "Ivan de Souza Monteiro",
+  "chairman": "Vicente Falconi Campos"
+ },
+ "BRAZIL:AXIA7": {
+  "website": "https://www.axia.com.br",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/1439124/000143912426000013/ebr-20251231.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/1439124/000143912426000013/ebr-20251231.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1439124/000143912426000013/ebr-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1439124/000143912426000013/ebr-20251231.htm"
+  },
+  "headquarters": "Rio de Janeiro, Brazil",
+  "ceo": "Ivan de Souza Monteiro",
+  "chairman": "Vicente Falconi Campos"
+ },
+ "BRAZIL:AXIA7F": {
+  "website": "https://www.axia.com.br",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/1439124/000143912426000013/ebr-20251231.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/1439124/000143912426000013/ebr-20251231.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1439124/000143912426000013/ebr-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1439124/000143912426000013/ebr-20251231.htm"
+  },
+  "headquarters": "Rio de Janeiro, Brazil",
+  "ceo": "Ivan de Souza Monteiro",
+  "chairman": "Vicente Falconi Campos"
  },
  "BRAZIL:AXPB34": {
   "ceo": "Stephen J. Squeri",
@@ -6107,6 +6239,82 @@
   "ceo": "Eddie Wu",
   "chairman": "Joe Tsai"
  },
+ "BRAZIL:BBAS3": {
+  "ceo": "Tarciana Paula Gomes Medeiros",
+  "sources": {
+   "ceo": "https://ri.bb.com.br/en/corporate-governance-and-sustainability/board-of-directors/",
+   "chairman": "https://ri.bb.com.br/en/corporate-governance-and-sustainability/board-of-directors/"
+  },
+  "chairman": "Anelize Lenzi Ruas de Almeida"
+ },
+ "BRAZIL:BBAS3F": {
+  "ceo": "Tarciana Paula Gomes Medeiros",
+  "sources": {
+   "ceo": "https://ri.bb.com.br/en/corporate-governance-and-sustainability/board-of-directors/",
+   "chairman": "https://ri.bb.com.br/en/corporate-governance-and-sustainability/board-of-directors/"
+  },
+  "chairman": "Anelize Lenzi Ruas de Almeida"
+ },
+ "BRAZIL:BBDC3": {
+  "founded": 1943,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426001753/bbdform20f_2025.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426001753/bbdform20f_2025.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426001753/bbdform20f_2025.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426001753/bbdform20f_2025.htm"
+  },
+  "headquarters": "Osasco, São Paulo, Brazil",
+  "ceo": "Marcelo de Araújo Noronha",
+  "chairman": "Luiz Carlos Trabuco Cappi"
+ },
+ "BRAZIL:BBDC3F": {
+  "founded": 1943,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426001753/bbdform20f_2025.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426001753/bbdform20f_2025.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426001753/bbdform20f_2025.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426001753/bbdform20f_2025.htm"
+  },
+  "headquarters": "Osasco, São Paulo, Brazil",
+  "ceo": "Marcelo de Araújo Noronha",
+  "chairman": "Luiz Carlos Trabuco Cappi"
+ },
+ "BRAZIL:BBDC4": {
+  "headquarters": "Osasco, São Paulo, Brazil",
+  "sources": {
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426001753/bbdform20f_2025.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426001753/bbdform20f_2025.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426001753/bbdform20f_2025.htm"
+  },
+  "ceo": "Marcelo de Araújo Noronha",
+  "chairman": "Luiz Carlos Trabuco Cappi"
+ },
+ "BRAZIL:BBDC4F": {
+  "headquarters": "Osasco, São Paulo, Brazil",
+  "sources": {
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426001753/bbdform20f_2025.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426001753/bbdform20f_2025.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1160330/000129281426001753/bbdform20f_2025.htm"
+  },
+  "ceo": "Marcelo de Araújo Noronha",
+  "chairman": "Luiz Carlos Trabuco Cappi"
+ },
+ "BRAZIL:BBSE3": {
+  "ceo": "Delano Valentim de Andrade",
+  "sources": {
+   "ceo": "https://www.bbseguridaderi.com.br/en/sustainability-and-corporate-governance/management-and-committees",
+   "chairman": "https://www.bbseguridaderi.com.br/en/sustainability-and-corporate-governance/management-and-committees"
+  },
+  "chairman": "Kamillo Tononi Oliveira Silva"
+ },
+ "BRAZIL:BBSE3F": {
+  "ceo": "Delano Valentim de Andrade",
+  "sources": {
+   "ceo": "https://www.bbseguridaderi.com.br/en/sustainability-and-corporate-governance/management-and-committees",
+   "chairman": "https://www.bbseguridaderi.com.br/en/sustainability-and-corporate-governance/management-and-committees"
+  },
+  "chairman": "Kamillo Tononi Oliveira Silva"
+ },
  "BRAZIL:BCSA34": {
   "ceo": "Héctor Grisi",
   "sources": {
@@ -6168,6 +6376,42 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1390777/000119312526092500/d52987ddef14a.htm"
   },
   "chairman": "Robin Vince"
+ },
+ "BRAZIL:BPAC3": {
+  "ceo": "Roberto Balls Sallouti",
+  "sources": {
+   "ceo": "https://institucional.btgpactual.com/en/governance",
+   "chairman": "https://institucional.btgpactual.com/en/governance"
+  },
+  "chairman": "André Santos Esteves"
+ },
+ "BRAZIL:BPAC3F": {
+  "website": "https://www.btgpactual.com",
+  "sources": {
+   "website": "https://institucional.btgpactual.com/en/governance",
+   "ceo": "https://institucional.btgpactual.com/en/governance",
+   "chairman": "https://institucional.btgpactual.com/en/governance"
+  },
+  "ceo": "Roberto Balls Sallouti",
+  "chairman": "André Santos Esteves"
+ },
+ "BRAZIL:BPAC5": {
+  "ceo": "Roberto Balls Sallouti",
+  "sources": {
+   "ceo": "https://institucional.btgpactual.com/en/governance",
+   "chairman": "https://institucional.btgpactual.com/en/governance"
+  },
+  "chairman": "André Santos Esteves"
+ },
+ "BRAZIL:BPAC5F": {
+  "website": "https://www.btgpactual.com",
+  "sources": {
+   "website": "https://institucional.btgpactual.com/en/governance",
+   "ceo": "https://institucional.btgpactual.com/en/governance",
+   "chairman": "https://institucional.btgpactual.com/en/governance"
+  },
+  "ceo": "Roberto Balls Sallouti",
+  "chairman": "André Santos Esteves"
  },
  "BRAZIL:C1BL34": {
   "ceo": "Evan G. Greenberg",
@@ -6421,6 +6665,22 @@
   },
   "chairman": "Gregory R. Page"
  },
+ "BRAZIL:EMBJ3": {
+  "ceo": "Francisco Gomes Neto",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1355444/000162828026021824/erj-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1355444/000162828026021824/erj-20251231.htm"
+  },
+  "chairman": "Raul Calfat"
+ },
+ "BRAZIL:EMBJ3F": {
+  "ceo": "Francisco Gomes Neto",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1355444/000162828026021824/erj-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1355444/000162828026021824/erj-20251231.htm"
+  },
+  "chairman": "Raul Calfat"
+ },
  "BRAZIL:EQIX34": {
   "ceo": "Adaire Fox-Martin",
   "sources": {
@@ -6658,6 +6918,38 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000061/proxy2026.htm"
   },
   "chairman": "Frank D. Yeary"
+ },
+ "BRAZIL:ITSA3": {
+  "ceo": "Alfredo Egydio Setubal",
+  "sources": {
+   "ceo": "https://ri.itausa.com.br/en/corporate-governance/board-of-officers-boards-and-committees/",
+   "chairman": "https://ri.itausa.com.br/en/corporate-governance/board-of-officers-boards-and-committees/"
+  },
+  "chairman": "Raul Calfat"
+ },
+ "BRAZIL:ITSA3F": {
+  "ceo": "Alfredo Egydio Setubal",
+  "sources": {
+   "ceo": "https://ri.itausa.com.br/en/corporate-governance/board-of-officers-boards-and-committees/",
+   "chairman": "https://ri.itausa.com.br/en/corporate-governance/board-of-officers-boards-and-committees/"
+  },
+  "chairman": "Raul Calfat"
+ },
+ "BRAZIL:ITSA4": {
+  "ceo": "Alfredo Egydio Setubal",
+  "sources": {
+   "ceo": "https://ri.itausa.com.br/en/corporate-governance/board-of-officers-boards-and-committees/",
+   "chairman": "https://ri.itausa.com.br/en/corporate-governance/board-of-officers-boards-and-committees/"
+  },
+  "chairman": "Raul Calfat"
+ },
+ "BRAZIL:ITSA4F": {
+  "ceo": "Alfredo Egydio Setubal",
+  "sources": {
+   "ceo": "https://ri.itausa.com.br/en/corporate-governance/board-of-officers-boards-and-committees/",
+   "chairman": "https://ri.itausa.com.br/en/corporate-governance/board-of-officers-boards-and-committees/"
+  },
+  "chairman": "Raul Calfat"
  },
  "BRAZIL:ITUB3": {
   "ceo": "Milton Maluhy Filho",
@@ -7183,6 +7475,26 @@
   "ceo": "Erez Israeli",
   "chairman": "K. Satish Reddy"
  },
+ "BRAZIL:RDOR3": {
+  "website": "https://www.rededorsaoluiz.com.br",
+  "sources": {
+   "website": "https://ri.rededorsaoluiz.com.br/en/board-and-council/",
+   "ceo": "https://ri.rededorsaoluiz.com.br/en/board-and-council/",
+   "chairman": "https://ri.rededorsaoluiz.com.br/en/board-and-council/"
+  },
+  "ceo": "Paulo Junqueira Moll",
+  "chairman": "Jorge Neval Moll Filho"
+ },
+ "BRAZIL:RDOR3F": {
+  "website": "https://www.rededorsaoluiz.com.br",
+  "sources": {
+   "website": "https://ri.rededorsaoluiz.com.br/en/board-and-council/",
+   "ceo": "https://ri.rededorsaoluiz.com.br/en/board-and-council/",
+   "chairman": "https://ri.rededorsaoluiz.com.br/en/board-and-council/"
+  },
+  "ceo": "Paulo Junqueira Moll",
+  "chairman": "Jorge Neval Moll Filho"
+ },
  "BRAZIL:RIOT34": {
   "ceo": "Simon Trott",
   "sources": {
@@ -7271,6 +7583,38 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/1640147/000162828026048373/snow-20260715.htm"
   }
  },
+ "BRAZIL:SANB3": {
+  "ceo": "Gilson Finkelsztain",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1471055/000162828026059844/a6k-2t26.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1471055/000162828026059844/a6k-2t26.htm"
+  },
+  "chairman": "Deborah Stern Vieitas"
+ },
+ "BRAZIL:SANB3F": {
+  "ceo": "Gilson Finkelsztain",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1471055/000162828026059844/a6k-2t26.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1471055/000162828026059844/a6k-2t26.htm"
+  },
+  "chairman": "Deborah Stern Vieitas"
+ },
+ "BRAZIL:SANB4": {
+  "ceo": "Gilson Finkelsztain",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1471055/000162828026059844/a6k-2t26.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1471055/000162828026059844/a6k-2t26.htm"
+  },
+  "chairman": "Deborah Stern Vieitas"
+ },
+ "BRAZIL:SANB4F": {
+  "ceo": "Gilson Finkelsztain",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1471055/000162828026059844/a6k-2t26.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1471055/000162828026059844/a6k-2t26.htm"
+  },
+  "chairman": "Deborah Stern Vieitas"
+ },
  "BRAZIL:SAPP34": {
   "website": "https://www.sap.com",
   "sources": {
@@ -7280,6 +7624,22 @@
   },
   "ceo": "Christian Klein",
   "chairman": "Pekka Ala-Pietilä"
+ },
+ "BRAZIL:SBSP3": {
+  "ceo": "Carlos Augusto Leone Piani",
+  "sources": {
+   "ceo": "https://ri.sabesp.com.br/en/corporate-governance/executive-board-board-of-directors-and-committees/",
+   "chairman": "https://ri.sabesp.com.br/en/corporate-governance/executive-board-board-of-directors-and-committees/"
+  },
+  "chairman": "Alexandre Gonçalves Silva"
+ },
+ "BRAZIL:SBSP3F": {
+  "ceo": "Carlos Augusto Leone Piani",
+  "sources": {
+   "ceo": "https://ri.sabesp.com.br/en/corporate-governance/executive-board-board-of-directors-and-committees/",
+   "chairman": "https://ri.sabesp.com.br/en/corporate-governance/executive-board-board-of-directors-and-committees/"
+  },
+  "chairman": "Alexandre Gonçalves Silva"
  },
  "BRAZIL:SCHW34": {
   "ceo": "Rick Wurster",
@@ -7437,6 +7797,22 @@
    "website": "https://www.usiminas.com/"
   }
  },
+ "BRAZIL:VALE3": {
+  "ceo": "Gustavo Duarte Pimenta",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/917851/000129281426001844/valeform20f_2025.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/917851/000129281426003848/vale20260722_6k.htm"
+  },
+  "chairman": "Manuel Lino Silva de Sousa Oliveira"
+ },
+ "BRAZIL:VALE3F": {
+  "ceo": "Gustavo Duarte Pimenta",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/917851/000129281426001844/valeform20f_2025.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/917851/000129281426003848/vale20260722_6k.htm"
+  },
+  "chairman": "Manuel Lino Silva de Sousa Oliveira"
+ },
  "BRAZIL:VERZ34": {
   "website": "https://www.verizon.com",
   "sources": {
@@ -7454,6 +7830,30 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1403161/000130817925000635/v-20251208.htm"
   },
   "chairman": "John F. Lundgren"
+ },
+ "BRAZIL:VIVT3": {
+  "founded": 1998,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1066119/000207097926000018/viv-20251231.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/1066119/000207097926000018/viv-20251231.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1066119/000207097926000018/viv-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1066119/000207097926000018/viv-20251231.htm"
+  },
+  "headquarters": "São Paulo, Brazil",
+  "ceo": "Christian Mauad Gebara",
+  "chairman": "Eduardo Navarro de Carvalho"
+ },
+ "BRAZIL:VIVT3F": {
+  "founded": 1998,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1066119/000207097926000018/viv-20251231.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/1066119/000207097926000018/viv-20251231.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1066119/000207097926000018/viv-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1066119/000207097926000018/viv-20251231.htm"
+  },
+  "headquarters": "São Paulo, Brazil",
+  "ceo": "Christian Mauad Gebara",
+  "chairman": "Eduardo Navarro de Carvalho"
  },
  "BRAZIL:W1DC34": {
   "ceo": "Irving Tan",
@@ -7484,6 +7884,22 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/104169/000119312526173673/wmt-20260423.htm"
   },
   "chairman": "Greg Penner"
+ },
+ "BRAZIL:WEGE3": {
+  "ceo": "Alberto Yoshikazu Kuba",
+  "sources": {
+   "ceo": "https://ri.weg.net/en/corporate-governance/executive-officers/",
+   "chairman": "https://ri.weg.net/en/corporate-governance/councils-and-committees/"
+  },
+  "chairman": "Décio da Silva"
+ },
+ "BRAZIL:WEGE3F": {
+  "ceo": "Alberto Yoshikazu Kuba",
+  "sources": {
+   "ceo": "https://ri.weg.net/en/corporate-governance/executive-officers/",
+   "chairman": "https://ri.weg.net/en/corporate-governance/councils-and-committees/"
+  },
+  "chairman": "Décio da Silva"
  },
  "BRAZIL:WFCO34": {
   "website": "https://www.wellsfargo.com",
@@ -10483,6 +10899,24 @@
   },
   "chairman": "Warren Buffett"
  },
+ "CHILE:BSANTANDER": {
+  "ceo": "Andrés Trautmann Buc",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1027552/000102755226000038/bsac-20251231.htm"
+  }
+ },
+ "CHILE:BSANTANDER0": {
+  "ceo": "Andrés Trautmann Buc",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1027552/000102755226000038/bsac-20251231.htm"
+  }
+ },
+ "CHILE:BSANTANDER1": {
+  "ceo": "Andrés Trautmann Buc",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1027552/000102755226000038/bsac-20251231.htm"
+  }
+ },
  "CHILE:CATCL": {
   "ceo": "Joseph E. Creed",
   "sources": {
@@ -10490,6 +10924,30 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/18230/000130817926000358/cat014496-def14a.htm"
   },
   "chairman": "Joseph E. Creed"
+ },
+ "CHILE:CHILE": {
+  "ceo": "Eduardo Ebensperger Orrego",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1161125/000121390026050243/ea0283244-20f_bancode.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1161125/000121390026050243/ea0283244-20f_bancode.htm"
+  },
+  "chairman": "Pablo Granifo Lavín"
+ },
+ "CHILE:CHILE0": {
+  "ceo": "Eduardo Ebensperger Orrego",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1161125/000121390026050243/ea0283244-20f_bancode.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1161125/000121390026050243/ea0283244-20f_bancode.htm"
+  },
+  "chairman": "Pablo Granifo Lavín"
+ },
+ "CHILE:CHILE1": {
+  "ceo": "Eduardo Ebensperger Orrego",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1161125/000121390026050243/ea0283244-20f_bancode.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1161125/000121390026050243/ea0283244-20f_bancode.htm"
+  },
+  "chairman": "Pablo Granifo Lavín"
  },
  "CHILE:CMCSACL": {
   "ceo": "Brian L. Roberts and Michael J. Cavanagh",
@@ -10538,6 +10996,24 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000013/dis-20260122.htm"
   },
   "chairman": "James P. Gorman"
+ },
+ "CHILE:FALABELLA": {
+  "chairman": "Fernando de Peña Iver",
+  "sources": {
+   "chairman": "https://investors.grupofalabella.com/nosotros/gobierno-corporativo/"
+  }
+ },
+ "CHILE:FALABELLA0": {
+  "chairman": "Fernando de Peña Iver",
+  "sources": {
+   "chairman": "https://investors.grupofalabella.com/nosotros/gobierno-corporativo/"
+  }
+ },
+ "CHILE:FALABELLA1": {
+  "chairman": "Fernando de Peña Iver",
+  "sources": {
+   "chairman": "https://investors.grupofalabella.com/nosotros/gobierno-corporativo/"
+  }
  },
  "CHILE:FCX1": {
   "ceo": "Kathleen L. Quirk",
@@ -10688,6 +11164,24 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000029/lly-20260317.htm"
   },
   "chairman": "David A. Ricks"
+ },
+ "CHILE:LTM": {
+  "ceo": "Roberto Alvo",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1047716/000104771626000046/ltm-20251231.htm"
+  }
+ },
+ "CHILE:LTM0": {
+  "ceo": "Roberto Alvo",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1047716/000104771626000046/ltm-20251231.htm"
+  }
+ },
+ "CHILE:LTM1": {
+  "ceo": "Roberto Alvo",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1047716/000104771626000046/ltm-20251231.htm"
+  }
  },
  "CHILE:MACL": {
   "ceo": "Michael Miebach",
@@ -10966,6 +11460,54 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/101829/000130817926000036/rtx014050-def14a.htm"
   },
   "chairman": "Christopher T. Calio"
+ },
+ "CHILE:SQM_A": {
+  "website": "https://www.sqm.com",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm"
+  },
+  "headquarters": "Santiago, Chile",
+  "ceo": "Ricardo Ramos",
+  "chairman": "Gina Ocqueteau"
+ },
+ "CHILE:SQM_B": {
+  "website": "https://www.sqm.com",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm"
+  },
+  "headquarters": "Santiago, Chile",
+  "ceo": "Ricardo Ramos",
+  "chairman": "Gina Ocqueteau"
+ },
+ "CHILE:SQM_B0": {
+  "website": "https://www.sqm.com",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm"
+  },
+  "headquarters": "Santiago, Chile",
+  "ceo": "Ricardo Ramos",
+  "chairman": "Gina Ocqueteau"
+ },
+ "CHILE:SQM_B1": {
+  "website": "https://www.sqm.com",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/909037/000090903726000023/sqm-20251231.htm"
+  },
+  "headquarters": "Santiago, Chile",
+  "ceo": "Ricardo Ramos",
+  "chairman": "Gina Ocqueteau"
  },
  "CHILE:TSLA1": {
   "ceo": "Elon Musk",
@@ -11309,6 +11851,32 @@
   "ceo": "Jane Fraser",
   "chairman": "Jane Fraser"
  },
+ "COLOMBIA:CIBEST": {
+  "website": "https://www.grupocibest.com",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/2058897/000205889726000125/cib-20251231.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/2058897/000205889726000125/cib-20251231.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/2058897/000205889726000125/cib-20251231.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/2058897/000205889726000125/cib-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/2058897/000205889726000125/cib-20251231.htm"
+  },
+  "founded": 2024,
+  "headquarters": "Medellín, Colombia",
+  "ceo": "Juan Carlos Mora Uribe",
+  "chairman": "Luis Fernando Restrepo Echavarría"
+ },
+ "COLOMBIA:ECOPETROL": {
+  "website": "https://www.ecopetrol.com.co",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/1444406/000110465926053172/ec-20251231x20f.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/1444406/000110465926053172/ec-20251231x20f.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/1444406/000110465926053172/ec-20251231x20f.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1444406/000129281426004689/ex99-1.htm"
+  },
+  "founded": 1951,
+  "headquarters": "Bogotá, Colombia",
+  "ceo": "Joaquín Gutiérrez Caballero"
+ },
  "COLOMBIA:GE": {
   "ceo": "H. Lawrence Culp Jr.",
   "sources": {
@@ -11373,6 +11941,16 @@
   },
   "chairman": "Satya Nadella"
  },
+ "COLOMBIA:NUTRESA": {
+  "website": "https://gruponutresa.com",
+  "sources": {
+   "website": "https://gruponutresa.com/en/corporate-governance/board-of-directors/",
+   "ceo": "https://gruponutresa.com/en/corporate-governance/senior-management-team/",
+   "chairman": "https://gruponutresa.com/en/corporate-governance/board-of-directors/"
+  },
+  "ceo": "Jaime Gilinski Bacal",
+  "chairman": "Gabriel Gilinski"
+ },
  "COLOMBIA:NVDA": {
   "ceo": "Jensen Huang",
   "sources": {
@@ -11386,6 +11964,20 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1119639/000129281426002388/pbr20260416_6k1.htm"
   },
   "chairman": "Guilherme Santos Mello"
+ },
+ "COLOMBIA:PFCIBEST": {
+  "website": "https://www.grupocibest.com",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/2058897/000205889726000125/cib-20251231.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/2058897/000205889726000125/cib-20251231.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/2058897/000205889726000125/cib-20251231.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/2058897/000205889726000125/cib-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/2058897/000205889726000125/cib-20251231.htm"
+  },
+  "founded": 2024,
+  "headquarters": "Medellín, Colombia",
+  "ceo": "Juan Carlos Mora Uribe",
+  "chairman": "Luis Fernando Restrepo Echavarría"
  },
  "COLOMBIA:PFE": {
   "ceo": "Albert Bourla",
@@ -21171,6 +21763,36 @@
   },
   "chairman": "Nikesh Arora"
  },
+ "ISRAEL:ESLT": {
+  "ceo": "Bezhalel Machlis",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1027664/000102766426000005/eslt-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1027664/000102766426000005/eslt-20251231.htm"
+  },
+  "chairman": "David Federmann"
+ },
+ "ISRAEL:NVMI": {
+  "ceo": "Gabriel Waisman",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1109345/000117891326000504/zk2634307.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1109345/000117891326000504/zk2634307.htm"
+  },
+  "chairman": "Eitan Oppenhaim"
+ },
+ "ISRAEL:TEVA": {
+  "chairman": "Sol J. Barer",
+  "sources": {
+   "chairman": "https://www.sec.gov/Archives/edgar/data/818686/000119312526134756/d11977ddef14a.htm"
+  }
+ },
+ "ISRAEL:TSEM": {
+  "ceo": "Russell C. Ellwanger",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/928876/000117891326002318/zk2635149.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/928876/000117891326002318/zk2635149.htm"
+  },
+  "chairman": "Amir Elstein"
+ },
  "ITALY:19MW": {
   "ceo": "Matthew J. Murphy",
   "sources": {
@@ -25017,6 +25639,94 @@
   "ceo": "Sung Joon Kim",
   "chairman": "Hyun Cheul Yoon"
  },
+ "KSA:1010": {
+  "ceo": "Nadir S Al-Koraya",
+  "sources": {
+   "ceo": "https://www.riyadbank.com/investor-relations/executive-management/nadir-s-al-koraya",
+   "chairman": "https://www.riyadbank.com/investor-relations/board-of-directors"
+  },
+  "chairman": "Abdullah Mohammed Al-Issa"
+ },
+ "KSA:1120": {
+  "ceo": "Waleed bin Abdullah Al Mogbel",
+  "sources": {
+   "ceo": "https://www.alrajhibank.com.sa/ir25/corporate_governance/board_of_directors.html",
+   "chairman": "https://www.alrajhibank.com.sa/ir25/corporate_governance/board_of_directors.html"
+  },
+  "chairman": "Abdullah bin Sulaiman Al Rajhi"
+ },
+ "KSA:1150": {
+  "ceo": "Abdullah Ali AlKhalifa",
+  "sources": {
+   "ceo": "https://alinma.com/en/About-the-Bank/Corporate-Governance/Executive-Management",
+   "chairman": "https://alinma.com/en/About-the-Bank/The-Bank/News/2026/7/Net-Profits-of-Q2"
+  },
+  "chairman": "Abdulmalik Al-Hogail"
+ },
+ "KSA:1211": {
+  "website": "https://www.maaden.com",
+  "sources": {
+   "website": "https://www.maaden.com/discover-us/about-maaden",
+   "ceo": "https://www.maaden.com/discover-us/leadership"
+  },
+  "ceo": "Bob Wilt"
+ },
+ "KSA:2010": {
+  "ceo": "Faisal Mohammed Alfaqeer",
+  "sources": {
+   "ceo": "https://www.sabic.com/en/about/corporate-profile/board-of-directors-and-executive-management",
+   "chairman": "https://www.sabic.com/en/about/corporate-profile/board-of-directors-and-executive-management"
+  },
+  "chairman": "Khalid Hashim Aldabbagh"
+ },
+ "KSA:2082": {
+  "website": "https://www.acwapower.com",
+  "sources": {
+   "website": "https://acwapower.com/en/who-we-are/about-us/",
+   "founded": "https://acwapower.com/en/who-we-are/about-us/",
+   "headquarters": "https://acwapower.com/en/who-we-are/about-us/",
+   "ceo": "https://acwapower.com/en/who-we-are/management/",
+   "chairman": "https://acwapower.com/en/who-we-are/board-of-directors/"
+  },
+  "founded": 2004,
+  "headquarters": "Riyadh, Saudi Arabia",
+  "ceo": "Samir J Serhan",
+  "chairman": "Mohammad Abunayyan"
+ },
+ "KSA:2222": {
+  "ceo": "Amin H. Nasser",
+  "sources": {
+   "ceo": "https://www.aramco.com/en/about-us/our-leadership",
+   "chairman": "https://www.aramco.com/en/about-us/our-leadership/board-of-directors"
+  },
+  "chairman": "Yasir O. Al-Rumayyan"
+ },
+ "KSA:7010": {
+  "ceo": "Olayan Mohammed Alwetaid",
+  "sources": {
+   "ceo": "https://www.stc.com/en/who-we-are/board-of-directors-and-executive-management.html"
+  }
+ },
+ "KUWAIT:KFH": {
+  "website": "https://www.kfh.com",
+  "sources": {
+   "website": "https://www.kfh.com/en/home/Personal/news/2026/endorseBoardDirectors.html",
+   "ceo": "https://www.kfh.com/en/home/Personal/news/2026/endorseBoardDirectors.html",
+   "chairman": "https://www.kfh.com/en/home/Personal/news/2026/endorseBoardDirectors.html"
+  },
+  "ceo": "Khaled Yousef Al-Shamlan",
+  "chairman": "Hamad Abdulmohsen Al Marzouq"
+ },
+ "KUWAIT:NBK": {
+  "website": "https://www.nbk.com",
+  "sources": {
+   "website": "https://www.nbk.com/about-nbk-group/corporate-governance/board-directors.html",
+   "ceo": "https://www.nbk.com/about-nbk-group/corporate-governance/board-directors.html",
+   "chairman": "https://www.nbk.com/about-nbk-group/corporate-governance/board-directors.html"
+  },
+  "ceo": "Isam Jasem A. Al-Sager",
+  "chairman": "Hamad Mohamed Al-Bahar"
+ },
  "LUXEMBOURG:AMCEM": {
   "website": "https://www.ambujacement.com",
   "sources": {
@@ -25447,6 +26157,14 @@
   },
   "chairman": "Robert B. Ford"
  },
+ "MEXICO:AC": {
+  "ceo": "Arturo Gutiérrez Hernández",
+  "sources": {
+   "ceo": "https://www.arcacontal.com/es/acerca-de-nosotros/gobierno-corporativo/equipo-directivo",
+   "chairman": "https://www.arcacontal.com/es/acerca-de-nosotros/gobierno-corporativo/consejo-de-administracion"
+  },
+  "chairman": "Jorge Humberto Santos Reyna"
+ },
  "MEXICO:ACOFN": {
   "ceo": "Vagner Rego",
   "sources": {
@@ -25544,6 +26262,20 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000088/amt-20260406.htm"
   },
   "chairman": "Pamela D. A. Reeve"
+ },
+ "MEXICO:AMXB": {
+  "website": "https://www.americamovil.com",
+  "sources": {
+   "website": "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm",
+   "founded": "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1129137/000114036126017486/ef20060642_20f.htm"
+  },
+  "founded": 2000,
+  "headquarters": "Mexico City, Mexico",
+  "ceo": "Daniel Hajj Aboumrad",
+  "chairman": "Carlos Slim Domit"
  },
  "MEXICO:AMZN": {
   "ceo": "Andy Jassy",
@@ -25705,6 +26437,12 @@
   },
   "chairman": "Ross McEwan"
  },
+ "MEXICO:BIMBOA": {
+  "chairman": "Daniel Javier Servitje Montull",
+  "sources": {
+   "chairman": "https://www.grupobimbo.com/en/investors/governance/board-directors"
+  }
+ },
  "MEXICO:BKNG": {
   "ceo": "Glenn D. Fogel",
   "sources": {
@@ -25832,6 +26570,14 @@
   },
   "ceo": "Joseph Dominguez",
   "chairman": "Joseph Dominguez"
+ },
+ "MEXICO:CEMEXCPO": {
+  "ceo": "Jaime Muguiro Domínguez",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1076378/000119312526177605/d120395d20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1076378/000119312526177605/d120395d20f.htm"
+  },
+  "chairman": "Rogelio Zambrano Lozano"
  },
  "MEXICO:CFRIN": {
   "ceo": "Nicolas Bos",
@@ -26101,6 +26847,22 @@
   },
   "chairman": "Malcolm Frank"
  },
+ "MEXICO:FEMSAUB": {
+  "ceo": "José Antonio Fernández Garza Lagüera",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1061736/000162828026027231/fmx-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1061736/000162828026027231/fmx-20251231.htm"
+  },
+  "chairman": "José Antonio Fernández Carbajal"
+ },
+ "MEXICO:FEMSAUBD": {
+  "ceo": "José Antonio Fernández Garza Lagüera",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1061736/000162828026027231/fmx-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1061736/000162828026027231/fmx-20251231.htm"
+  },
+  "chairman": "José Antonio Fernández Carbajal"
+ },
  "MEXICO:FISV": {
   "ceo": "Takis Georgakopoulos",
   "sources": {
@@ -26108,6 +26870,12 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/798354/000114036126013003/ny20062579x1_def14a.htm"
   },
   "chairman": "Gordon Nixon"
+ },
+ "MEXICO:FRES": {
+  "chairman": "Alejandro Baillères",
+  "sources": {
+   "chairman": "https://www.fresnilloplc.com/media/nggfhnkr/170426-fresnillo-notice-of-2026-annual-general-meeting.pdf"
+  }
  },
  "MEXICO:FTNT": {
   "ceo": "Ken Xie",
@@ -26138,6 +26906,14 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000049/gev-20260402.htm"
   },
   "chairman": "Stephen Angel"
+ },
+ "MEXICO:GFNORTEO": {
+  "ceo": "José Marcos Ramírez Miguel",
+  "sources": {
+   "ceo": "https://investors.banorte.com/~/media/Files/B/Banorte-IR/financial-information/financial-statements/es/grupo-financiero-banorte/2026/1T/gfnorte_Mzo26_balance.pdf",
+   "chairman": "https://investors.banorte.com/~/media/Files/B/Banorte-IR/shareholders-meeting/es/2026/23abril/Gfnorte%20AGOAA%2023abr26%20Resumen%20de%20Acuerdos%20v2%20espaol.pdf"
+  },
+  "chairman": "Carlos Hank González"
  },
  "MEXICO:GILD": {
   "ceo": "Daniel O'Day",
@@ -27375,6 +28151,16 @@
   "ceo": "Daniel H. Schulman",
   "chairman": "Mark T. Bertolini"
  },
+ "MEXICO:WALMEX": {
+  "website": "https://www.walmex.mx",
+  "sources": {
+   "website": "https://www.walmex.mx/asg/gobierno-corporativo.html",
+   "ceo": "https://www.walmex.mx/asg/gobierno-corporativo.html",
+   "chairman": "https://www.walmex.mx/asg/gobierno-corporativo.html"
+  },
+  "ceo": "Cristian Barrientos Pozo",
+  "chairman": "Kyle Kinnard"
+ },
  "MEXICO:WDC": {
   "ceo": "Irving Tan",
   "sources": {
@@ -27611,6 +28397,14 @@
   },
   "chairman": "Brian T. Moynihan"
  },
+ "PERU:BAP": {
+  "ceo": "Gianfranco Ferrari",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1001290/000100129026000008/bap-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1001290/000100129026000008/bap-20251231.htm"
+  },
+  "chairman": "Luis Enrique Romero Belismelis"
+ },
  "PERU:BAUS": {
   "chairman": "Steven M. Mollenkopf",
   "sources": {
@@ -27676,6 +28470,14 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/909832/000090983225000159/cost-20251204.htm"
   },
   "chairman": "Hamilton E. James"
+ },
+ "PERU:CREDITC1": {
+  "ceo": "Diego Cavero",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1001290/000100129026000008/bap-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1001290/000100129026000008/bap-20251231.htm"
+  },
+  "chairman": "Luis Enrique Romero Belismelis"
  },
  "PERU:CRMUS": {
   "ceo": "Marc Benioff",
@@ -28701,6 +29503,30 @@
   },
   "chairman": "Johann Rupert"
  },
+ "SOUTHAFRICA:CPI": {
+  "ceo": "Graham Lee",
+  "sources": {
+   "ceo": "https://www.capitecbank.co.za/globalassets/pages/investor-relations/financial-results/2027/interim-results/cpihy27.pdf",
+   "chairman": "https://www.capitecbank.co.za/globalassets/pages/investor-relations/financial-results/2027/interim-results/cpihy27.pdf"
+  },
+  "chairman": "Santie Botha"
+ },
+ "SOUTHAFRICA:FSR": {
+  "ceo": "Mary Vilakazi",
+  "sources": {
+   "ceo": "https://www.firstrand.co.za/the-group/management-and-board/",
+   "chairman": "https://www.firstrand.co.za/the-group/management-and-board/"
+  },
+  "chairman": "Johan Petrus Burger"
+ },
+ "SOUTHAFRICA:GFI": {
+  "ceo": "Mike Fraser",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1172724/000162828026040040/sens3june2026.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1172724/000162828026021904/gfi-20251231.htm"
+  },
+  "chairman": "John MacKenzie"
+ },
  "SOUTHAFRICA:GLN": {
   "ceo": "Gary Nagle",
   "sources": {
@@ -28715,6 +29541,24 @@
    "wikidata": "https://en.wikipedia.org/wiki/JSE_Limited"
   }
  },
+ "SOUTHAFRICA:MTN": {
+  "chairman": "Mcebisi Jonas",
+  "sources": {
+   "chairman": "https://www.mtn.com/leadership/?tablink=board"
+  }
+ },
+ "SOUTHAFRICA:NPN": {
+  "website": "https://www.naspers.com",
+  "sources": {
+   "website": "https://www.naspers.com/~/media/Files/N/Naspers-Corp-V2/results-reports-and-events-archive/latest-results/fy-2026/fy2026-short-form-release.pdf",
+   "headquarters": "https://www.naspers.com/~/media/Files/N/Naspers-Corp-V2/results-reports-and-events-archive/latest-results/fy-2026/fy2026-short-form-release.pdf",
+   "ceo": "https://www.naspers.com/~/media/Files/N/Naspers-Corp-V2/results-reports-and-events-archive/latest-results/fy-2026/fy2026-short-form-release.pdf",
+   "chairman": "https://www.naspers.com/~/media/Files/N/Naspers-Corp-V2/results-reports-and-events-archive/latest-results/fy-2026/fy2026-short-form-release.pdf"
+  },
+  "headquarters": "Cape Town, South Africa",
+  "ceo": "Fabricio Bloisi",
+  "chairman": "Koos Bekker"
+ },
  "SOUTHAFRICA:PRX": {
   "ceo": "Fabricio Bloisi",
   "sources": {
@@ -28722,6 +29566,32 @@
    "chairman": "https://www.prosus.com/leadership"
   },
   "chairman": "Koos Bekker"
+ },
+ "SOUTHAFRICA:SBK": {
+  "headquarters": "Johannesburg, South Africa",
+  "sources": {
+   "headquarters": "https://reporting.standardbank.com/static_file/Investor%20Relations/Documents/Financial-results/Interim-Results/SBG-2026-Interim-Results-SENS-Short-Form-and-Dividend-Declaration.pdf",
+   "ceo": "https://www.standardbank.com/sbg/standard-bank-group/our-group/about-us/leadership",
+   "chairman": "https://www.standardbank.com/sbg/standard-bank-group/our-group/about-us/leadership"
+  },
+  "ceo": "Sim Tshabalala",
+  "chairman": "Nonkululeko Nyembezi"
+ },
+ "SOUTHAFRICA:VAL": {
+  "website": "https://www.valterraplatinum.com",
+  "sources": {
+   "website": "https://www.valterraplatinum.com/wp-content/uploads/2026/07/Valterra_Platinum_H1-2026-_short-form-announcement.pdf",
+   "ceo": "https://www.valterraplatinum.com/wp-content/uploads/2026/07/Valterra_Platinum_H1-2026-_short-form-announcement.pdf",
+   "chairman": "https://www.valterraplatinum.com/about-us/leadership-and-governance/"
+  },
+  "ceo": "Craig Miller",
+  "chairman": "Norman Mbazima"
+ },
+ "SOUTHAFRICA:VOD": {
+  "chairman": "Sakumzi Justice Macozoma",
+  "sources": {
+   "chairman": "https://www.vodacom.com/board-of-directors.php"
+  }
  },
  "SPAIN:AIR": {
   "ceo": "Guillaume Faury",
@@ -34178,6 +35048,96 @@
    "chairman": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0925/2026092500161.pdf"
   },
   "chairman": "Zou Laichang"
+ },
+ "TURKEY:ASELS": {
+  "ceo": "Ahmet Akyol",
+  "sources": {
+   "ceo": "https://cdn.aselsan.com/aselsanweb-prod/documents/investor-relations/reports/bilgi-notu/en/report-bilgi-notu-2026-06-earnings-release-2026-en.pdf"
+  }
+ },
+ "TURKEY:TUPRS": {
+  "ceo": "İbrahim Yelmenoğlu",
+  "sources": {
+   "ceo": "https://www.tupras.com.tr/en/management",
+   "chairman": "https://www.tupras.com.tr/en/management"
+  },
+  "chairman": "Ömer M. Koç"
+ },
+ "UAE:ADIB": {
+  "website": "https://www.adib.ae",
+  "sources": {
+   "website": "https://www.adib.ae/-/media/project/adib/adibsite/docs/investor-relations/quarterly-results/mda/2026/mda-h1-en.pdf",
+   "ceo": "https://www.adib.ae/-/media/project/adib/adibsite/docs/investor-relations/quarterly-results/mda/2026/mda-h1-en.pdf",
+   "chairman": "https://www.adib.ae/-/media/Project/ADIB/ADIBSite/docs/Investor-Relations/Quarterly-results/Financial-statements/2026/ADIB-FS-Q2-EN.pdf"
+  },
+  "ceo": "Mohamed Abdelbary",
+  "chairman": "Jawaan Awaidha Suhail Al Khaili"
+ },
+ "UAE:ADNOCDRILL": {
+  "website": "https://adnocdrilling.ae",
+  "sources": {
+   "website": "https://adnocdrilling.ae/en/news-and-media/news-releases/2026/1h-2026-results/",
+   "ceo": "https://adnocdrilling.ae/en/news-and-media/news-releases/2026/1h-2026-results/"
+  },
+  "ceo": "Abdulla Ateya Al Messabi"
+ },
+ "UAE:ADNOCGAS": {
+  "website": "https://www.adnocgas.ae",
+  "sources": {
+   "website": "https://adnocgas.ae/en/news-and-media/press-releases/2026/agm-2025",
+   "ceo": "https://adnocgas.ae/en/our-company/executive-management",
+   "chairman": "https://adnocgas.ae/en/news-and-media/press-releases/2026/agm-2025"
+  },
+  "ceo": "Fatema Mohamed Al Nuaimi",
+  "chairman": "Sultan Ahmed Al Jaber"
+ },
+ "UAE:DIB": {
+  "chairman": "Fadhel Abdulbaqi Al Ali",
+  "sources": {
+   "chairman": "https://www.dib.ae/about-us/news/2026/09/30/dib-welcomes-mr-fadhel-abdulbaqi-alali-as-new-chairman-of-the-board-of-directors?type=news"
+  }
+ },
+ "UAE:EAND": {
+  "website": "https://www.eand.com",
+  "sources": {
+   "website": "https://www.eand.com/en/news/24-feb-26-eand-delivers-record-revenue-and-net-profit-in-FY-2025.html",
+   "ceo": "https://www.eand.com/en/news/24-feb-26-eand-delivers-record-revenue-and-net-profit-in-FY-2025.html",
+   "chairman": "https://www.eand.com/en/news/24-feb-26-eand-delivers-record-revenue-and-net-profit-in-FY-2025.html"
+  },
+  "ceo": "Masood M. Sharif Mahmood",
+  "chairman": "Jassem Mohamed Bu Ataba Alzaabi"
+ },
+ "UAE:EMIRATESNBD": {
+  "website": "https://www.emiratesnbd.com",
+  "sources": {
+   "website": "https://www.emiratesnbd.com/en/about-emirates-nbd/corporate-governance/board-of-directors",
+   "ceo": "https://www.emiratesnbd.com/en/media-center/emirates-nbd-h1-2026-results-announcement",
+   "chairman": "https://www.emiratesnbd.com/en/about-emirates-nbd/corporate-governance/board-of-directors"
+  },
+  "ceo": "Shayne Nelson",
+  "chairman": "Ahmed Bin Saeed Al Maktoum"
+ },
+ "UAE:FAB": {
+  "website": "https://www.bankfab.com",
+  "sources": {
+   "website": "https://www.bankfab.com/en-ae/about-fab/group/in-the-media/fab-shareholders-approve-record-dividend-agm",
+   "ceo": "https://www.bankfab.com/en-ae/about-fab/group/in-the-media/fab-shareholders-approve-record-dividend-agm",
+   "chairman": "https://www.bankfab.com/en-ae/about-fab/group/in-the-media/fab-shareholders-approve-record-dividend-agm"
+  },
+  "ceo": "Hana Al Rostamani",
+  "chairman": "Tahnoon bin Zayed Al Nahyan"
+ },
+ "UAE:IHC": {
+  "website": "https://www.ihcuae.com",
+  "sources": {
+   "website": "https://www.ihcuae.com/",
+   "headquarters": "https://www.ihcuae.com/contact",
+   "ceo": "https://www.ihcuae.com/media-centre/press-releases/ihc-reports-strong-h1-2026-performance-with-revenue-rising-345-to-aed-649-billion-and-profit-after-tax-reaching-aed-262-billion",
+   "chairman": "https://www.ihcuae.com/"
+  },
+  "headquarters": "Abu Dhabi, United Arab Emirates",
+  "ceo": "Syed Basar Shueb",
+  "chairman": "Tahnoon bin Zayed Al Nahyan"
  },
  "UK:0A28": {
   "ceo": "Fabricio Bloisi",
