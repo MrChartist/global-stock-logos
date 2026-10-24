@@ -4019,6 +4019,16 @@
   },
   "chairman": "Darren W. Woods"
  },
+ "AUSTRALIA:ALL": {
+  "website": "https://www.aristocrat.com",
+  "sources": {
+   "website": "https://www.aristocrat.com/about/",
+   "ceo": "https://asx.api.markitdigital.com/asx-research/1.0/companies/ALL/about",
+   "chairman": "https://asx.api.markitdigital.com/asx-research/1.0/companies/ALL/about"
+  },
+  "ceo": "Trevor Croker",
+  "chairman": "Neil Chatfield"
+ },
  "AUSTRALIA:ANZ": {
   "ceo": "Nuno Matos",
   "sources": {
@@ -4051,6 +4061,60 @@
   },
   "chairman": "Paul O'Malley"
  },
+ "AUSTRALIA:COL": {
+  "website": "https://www.colesgroup.com.au",
+  "sources": {
+   "website": "https://www.colesgroup.com.au/about-us/?page=board-of-directors",
+   "ceo": "https://www.colesgroup.com.au/about-us/?page=executive-leadership-team",
+   "chairman": "https://www.colesgroup.com.au/about-us/?page=board-of-directors"
+  },
+  "ceo": "Leah Weckert",
+  "chairman": "Peter Allen"
+ },
+ "AUSTRALIA:CSL": {
+  "ceo": "Gordon Naylor",
+  "sources": {
+   "ceo": "https://investors.csl.com/annualreport/2026/48/",
+   "chairman": "https://investors.csl.com/annualreport/2026/44/"
+  },
+  "chairman": "Brian McNamee"
+ },
+ "AUSTRALIA:EVN": {
+  "website": "https://evolutionmining.com",
+  "sources": {
+   "website": "https://evolutionmining.com/about-us/our-leadership/",
+   "ceo": "https://evolutionmining.com/about-us/our-leadership/",
+   "chairman": "https://evolutionmining.com/about-us/our-leadership/"
+  },
+  "ceo": "Lawrie Conway",
+  "chairman": "Jake Klein"
+ },
+ "AUSTRALIA:FMG": {
+  "ceo": null,
+  "sources": {
+   "ceo": "https://www.fortescue.com/en/about-fortescue/board-and-leadership-team",
+   "website": "https://www.fortescue.com/en/about-fortescue/board-and-leadership-team",
+   "chairman": "https://www.fortescue.com/en/about-fortescue/board-and-leadership-team"
+  },
+  "website": "https://www.fortescue.com",
+  "chairman": "Andrew Forrest"
+ },
+ "AUSTRALIA:GMG": {
+  "ceo": "Gregory Goodman",
+  "sources": {
+   "ceo": "https://asx.api.markitdigital.com/asx-research/1.0/companies/GMG/about",
+   "chairman": "https://asx.api.markitdigital.com/asx-research/1.0/companies/GMG/about"
+  },
+  "chairman": "Stephen Johns"
+ },
+ "AUSTRALIA:MQG": {
+  "headquarters": "Sydney, New South Wales, Australia",
+  "sources": {
+   "headquarters": "https://www.macquarie.com/au/en/investors/contacts.html",
+   "chairman": "https://www.macquarie.com/au/en/about/company/board-of-directors.html"
+  },
+  "chairman": "Glenn Stevens"
+ },
  "AUSTRALIA:NAB": {
   "ceo": "Andrew Irvine",
   "sources": {
@@ -4067,6 +4131,22 @@
   },
   "chairman": "Gregory H. Boyce"
  },
+ "AUSTRALIA:NST": {
+  "ceo": "Suresh Vadnagra",
+  "sources": {
+   "ceo": "https://www.nsrltd.com/about-us/our-board-and-management/",
+   "chairman": "https://www.nsrltd.com/about-us/our-board-and-management/"
+  },
+  "chairman": "Michael Chaney"
+ },
+ "AUSTRALIA:QBE": {
+  "ceo": "Andrew Horton",
+  "sources": {
+   "ceo": "https://asx.api.markitdigital.com/asx-research/1.0/companies/QBE/about",
+   "chairman": "https://announcements.asx.com.au/asxpdf/20260611/pdf/070hzby5lgp6f2.pdf"
+  },
+  "chairman": "Yasmin Allen"
+ },
  "AUSTRALIA:RIO": {
   "ceo": "Simon Trott",
   "sources": {
@@ -4075,6 +4155,40 @@
   },
   "chairman": "Dominic Barton"
  },
+ "AUSTRALIA:SIG": {
+  "website": "https://sigmahealthcare.com.au",
+  "sources": {
+   "website": "https://sigmahealthcare.com.au/about-us/",
+   "ceo": "https://asx.api.markitdigital.com/asx-research/1.0/companies/SIG/about",
+   "chairman": "https://asx.api.markitdigital.com/asx-research/1.0/companies/SIG/about"
+  },
+  "ceo": "Vikesh Ramsunder",
+  "chairman": "Michael Sammells"
+ },
+ "AUSTRALIA:STO": {
+  "ceo": "Kevin Gallagher",
+  "sources": {
+   "ceo": "https://www.santos.com/about-us/our-leadership/",
+   "chairman": "https://www.santos.com/about-us/our-board/"
+  },
+  "chairman": "Keith Spence"
+ },
+ "AUSTRALIA:TCL": {
+  "ceo": "Michelle Jablko",
+  "sources": {
+   "ceo": "https://asx.api.markitdigital.com/asx-research/1.0/companies/TCL/about",
+   "chairman": "https://asx.api.markitdigital.com/asx-research/1.0/companies/TCL/about"
+  },
+  "chairman": "Craig Drummond"
+ },
+ "AUSTRALIA:TLS": {
+  "ceo": "Vicki Brady",
+  "sources": {
+   "ceo": "https://asx.api.markitdigital.com/asx-research/1.0/companies/TLS/about",
+   "chairman": "https://asx.api.markitdigital.com/asx-research/1.0/companies/TLS/about"
+  },
+  "chairman": "Craig Dunn"
+ },
  "AUSTRALIA:WBC": {
   "ceo": "Anthony Miller",
   "sources": {
@@ -4082,6 +4196,30 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/719245/000110465925105894/webnf-20250930x20f.htm"
   },
   "chairman": "Steven Gregg"
+ },
+ "AUSTRALIA:WDS": {
+  "ceo": "Liz Westcott",
+  "sources": {
+   "ceo": "https://announcements.asx.com.au/asxpdf/20260318/pdf/06xk3xl93vbvm7.pdf",
+   "chairman": "https://announcements.asx.com.au/asxpdf/20260318/pdf/06xk3xl93vbvm7.pdf"
+  },
+  "chairman": "Richard Goyder"
+ },
+ "AUSTRALIA:WES": {
+  "ceo": "Rob Scott",
+  "sources": {
+   "ceo": "https://www.wesfarmers.com.au/who-we-are/directors",
+   "chairman": "https://www.wesfarmers.com.au/who-we-are/directors"
+  },
+  "chairman": "Michael Chaney"
+ },
+ "AUSTRALIA:WOW": {
+  "ceo": "Amanda Bardwell",
+  "sources": {
+   "ceo": "https://www.woolworthsgroup.com.au/au/en/who-we-are/our-leadership-team/board-of-directors.html",
+   "chairman": "https://www.woolworthsgroup.com.au/au/en/who-we-are/our-leadership-team/board-of-directors.html"
+  },
+  "chairman": "Scott Perkins"
  },
  "AUSTRIA:AAPL": {
   "ceo": "John Ternus",
@@ -7391,6 +7529,14 @@
   },
   "chairman": "Robert B. Ford"
  },
+ "CANADA:ABX": {
+  "ceo": "Mark Hill",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/756894/000119312526343857/d67611dex991.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/756894/000119312526148005/d858698dex991.htm"
+  },
+  "chairman": "John L. Thornton"
+ },
  "CANADA:ADBE": {
   "ceo": "Shantanu Narayen",
   "sources": {
@@ -7475,6 +7621,14 @@
    "website": "https://www.algoma.com/"
   }
  },
+ "CANADA:ATD": {
+  "ceo": "Alex Miller",
+  "sources": {
+   "ceo": "https://corporate.couche-tard.com/executive-management",
+   "chairman": "https://corporate.couche-tard.com/board-of-directors"
+  },
+  "chairman": "Alain Bouchard"
+ },
  "CANADA:AXA": {
   "website": "https://www.axa.com",
   "sources": {
@@ -7507,6 +7661,46 @@
   },
   "chairman": "Bruce Flatt"
  },
+ "CANADA:BBD.A": {
+  "ceo": "Éric Martel",
+  "sources": {
+   "ceo": "https://bombardier.com/en/about/our-leadership",
+   "chairman": "https://bombardier.com/en/about/our-governance/board-directors"
+  },
+  "chairman": "Pierre Beaudoin"
+ },
+ "CANADA:BBD.B": {
+  "ceo": "Éric Martel",
+  "sources": {
+   "ceo": "https://bombardier.com/en/about/our-leadership",
+   "chairman": "https://bombardier.com/en/about/our-governance/board-directors"
+  },
+  "chairman": "Pierre Beaudoin"
+ },
+ "CANADA:BBD.PR.B": {
+  "ceo": "Éric Martel",
+  "sources": {
+   "ceo": "https://bombardier.com/en/about/our-leadership",
+   "chairman": "https://bombardier.com/en/about/our-governance/board-directors"
+  },
+  "chairman": "Pierre Beaudoin"
+ },
+ "CANADA:BBD.PR.C": {
+  "ceo": "Éric Martel",
+  "sources": {
+   "ceo": "https://bombardier.com/en/about/our-leadership",
+   "chairman": "https://bombardier.com/en/about/our-governance/board-directors"
+  },
+  "chairman": "Pierre Beaudoin"
+ },
+ "CANADA:BBD.PR.D": {
+  "ceo": "Éric Martel",
+  "sources": {
+   "ceo": "https://bombardier.com/en/about/our-leadership",
+   "chairman": "https://bombardier.com/en/about/our-governance/board-directors"
+  },
+  "chairman": "Pierre Beaudoin"
+ },
  "CANADA:BBVA": {
   "website": "https://www.bbva.com",
   "sources": {
@@ -7514,6 +7708,126 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/842180/000162828026010001/bbva-20251231.htm"
   },
   "ceo": "Onur Genç"
+ },
+ "CANADA:BCE.PR.A": {
+  "ceo": "Mirko Bibic",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/718940/000071894026000011/a2026-codexofxbusinessxcon.htm",
+   "chairman": "https://www.bce.ca/about-bce/leadership-team/board-of-directors"
+  },
+  "chairman": "Louis Vachon"
+ },
+ "CANADA:BCE.PR.B": {
+  "ceo": "Mirko Bibic",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/718940/000071894026000011/a2026-codexofxbusinessxcon.htm",
+   "chairman": "https://www.bce.ca/about-bce/leadership-team/board-of-directors"
+  },
+  "chairman": "Louis Vachon"
+ },
+ "CANADA:BCE.PR.C": {
+  "ceo": "Mirko Bibic",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/718940/000071894026000011/a2026-codexofxbusinessxcon.htm",
+   "chairman": "https://www.bce.ca/about-bce/leadership-team/board-of-directors"
+  },
+  "chairman": "Louis Vachon"
+ },
+ "CANADA:BCE.PR.D": {
+  "ceo": "Mirko Bibic",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/718940/000071894026000011/a2026-codexofxbusinessxcon.htm",
+   "chairman": "https://www.bce.ca/about-bce/leadership-team/board-of-directors"
+  },
+  "chairman": "Louis Vachon"
+ },
+ "CANADA:BCE.PR.E": {
+  "ceo": "Mirko Bibic",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/718940/000071894026000011/a2026-codexofxbusinessxcon.htm",
+   "chairman": "https://www.bce.ca/about-bce/leadership-team/board-of-directors"
+  },
+  "chairman": "Louis Vachon"
+ },
+ "CANADA:BCE.PR.F": {
+  "ceo": "Mirko Bibic",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/718940/000071894026000011/a2026-codexofxbusinessxcon.htm",
+   "chairman": "https://www.bce.ca/about-bce/leadership-team/board-of-directors"
+  },
+  "chairman": "Louis Vachon"
+ },
+ "CANADA:BCE.PR.G": {
+  "ceo": "Mirko Bibic",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/718940/000071894026000011/a2026-codexofxbusinessxcon.htm",
+   "chairman": "https://www.bce.ca/about-bce/leadership-team/board-of-directors"
+  },
+  "chairman": "Louis Vachon"
+ },
+ "CANADA:BCE.PR.H": {
+  "ceo": "Mirko Bibic",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/718940/000071894026000011/a2026-codexofxbusinessxcon.htm",
+   "chairman": "https://www.bce.ca/about-bce/leadership-team/board-of-directors"
+  },
+  "chairman": "Louis Vachon"
+ },
+ "CANADA:BCE.PR.I": {
+  "ceo": "Mirko Bibic",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/718940/000071894026000011/a2026-codexofxbusinessxcon.htm",
+   "chairman": "https://www.bce.ca/about-bce/leadership-team/board-of-directors"
+  },
+  "chairman": "Louis Vachon"
+ },
+ "CANADA:BCE.PR.K": {
+  "ceo": "Mirko Bibic",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/718940/000071894026000011/a2026-codexofxbusinessxcon.htm",
+   "chairman": "https://www.bce.ca/about-bce/leadership-team/board-of-directors"
+  },
+  "chairman": "Louis Vachon"
+ },
+ "CANADA:BCE.PR.L": {
+  "ceo": "Mirko Bibic",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/718940/000071894026000011/a2026-codexofxbusinessxcon.htm",
+   "chairman": "https://www.bce.ca/about-bce/leadership-team/board-of-directors"
+  },
+  "chairman": "Louis Vachon"
+ },
+ "CANADA:BCE.PR.M": {
+  "ceo": "Mirko Bibic",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/718940/000071894026000011/a2026-codexofxbusinessxcon.htm",
+   "chairman": "https://www.bce.ca/about-bce/leadership-team/board-of-directors"
+  },
+  "chairman": "Louis Vachon"
+ },
+ "CANADA:BCE.PR.Q": {
+  "ceo": "Mirko Bibic",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/718940/000071894026000011/a2026-codexofxbusinessxcon.htm",
+   "chairman": "https://www.bce.ca/about-bce/leadership-team/board-of-directors"
+  },
+  "chairman": "Louis Vachon"
+ },
+ "CANADA:BCE.PR.R": {
+  "ceo": "Mirko Bibic",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/718940/000071894026000011/a2026-codexofxbusinessxcon.htm",
+   "chairman": "https://www.bce.ca/about-bce/leadership-team/board-of-directors"
+  },
+  "chairman": "Louis Vachon"
+ },
+ "CANADA:BCE.PR.S": {
+  "ceo": "Mirko Bibic",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/718940/000071894026000011/a2026-codexofxbusinessxcon.htm",
+   "chairman": "https://www.bce.ca/about-bce/leadership-team/board-of-directors"
+  },
+  "chairman": "Louis Vachon"
  },
  "CANADA:BKNG": {
   "ceo": "Glenn D. Fogel",
@@ -7803,6 +8117,14 @@
    "website": "https://www.baytexenergy.com/"
   }
  },
+ "CANADA:CCO": {
+  "ceo": "Tim Gitzel",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1009001/000119312526326768/d125942dex994.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1009001/000119312526139305/d852335dex993.htm"
+  },
+  "chairman": "Catherine Gignac"
+ },
  "CANADA:CEGS": {
   "website": "https://www.constellationenergy.com",
   "sources": {
@@ -7823,6 +8145,14 @@
   "ceo": "Jane Fraser",
   "chairman": "Jane Fraser"
  },
+ "CANADA:CLS": {
+  "ceo": "Rob Mionis",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1030894/000110465926107079/tm2625204d1_ex99-1.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1030894/000110465926107079/tm2625204d1_ex99-1.htm"
+  },
+  "chairman": "Rob Mionis"
+ },
  "CANADA:CM": {
   "ceo": "Harry Culham",
   "sources": {
@@ -7836,6 +8166,12 @@
    "ceo": "https://www.cibc.com/en/about-cibc/corporate-profile/executive-team.html"
   },
   "ceo": "Harry Culham"
+ },
+ "CANADA:CNQ": {
+  "chairman": "N. Murray Edwards",
+  "sources": {
+   "chairman": "https://www.cnrl.com/about-us/management/"
+  }
  },
  "CANADA:CNR": {
   "ceo": "Tracy Robinson",
@@ -7891,6 +8227,20 @@
   },
   "chairman": "Chuck Robbins"
  },
+ "CANADA:CSU": {
+  "chairman": "John Billowits",
+  "sources": {
+   "chairman": "https://www.csisoftware.com/leadership-team/"
+  }
+ },
+ "CANADA:CVE": {
+  "ceo": "Jon McKenzie",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1475260/000119312526413353/d124794dex991.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1475260/000119312526138208/d909324dex991.htm"
+  },
+  "chairman": "Alexander J. Pourbaix"
+ },
  "CANADA:CVS": {
   "ceo": "J. David Joyner",
   "sources": {
@@ -7914,6 +8264,12 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000013/dis-20260122.htm"
   },
   "chairman": "James P. Gorman"
+ },
+ "CANADA:DOL": {
+  "chairman": "Stephen Gunn",
+  "sources": {
+   "chairman": "https://www.dollarama.com/en-CA/corp/corporate-governance-and-responsibility"
+  }
  },
  "CANADA:DTEL": {
   "website": "https://www.telekom.com",
@@ -8111,6 +8467,26 @@
    "website": "https://www.fronteraenergy.ca/"
   }
  },
+ "CANADA:FFH": {
+  "chairman": "Prem Watsa",
+  "sources": {
+   "chairman": "https://www.fairfax.ca/about-fairfax/"
+  }
+ },
+ "CANADA:FFH.PR.K": {
+  "ceo": "Prem Watsa",
+  "sources": {
+   "ceo": "https://www.fairfax.ca/about-fairfax/",
+   "chairman": "https://www.fairfax.ca/about-fairfax/"
+  },
+  "chairman": "Prem Watsa"
+ },
+ "CANADA:FFH.U": {
+  "chairman": "Prem Watsa",
+  "sources": {
+   "chairman": "https://www.fairfax.ca/about-fairfax/"
+  }
+ },
  "CANADA:FISV": {
   "ceo": "Takis Georgakopoulos",
   "sources": {
@@ -8118,6 +8494,86 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/798354/000114036126013003/ny20062579x1_def14a.htm"
   },
   "chairman": "Gordon Nixon"
+ },
+ "CANADA:FM": {
+  "ceo": "Tristan Pascall",
+  "sources": {
+   "ceo": "https://www.first-quantum.com/about-us/leadership/",
+   "chairman": "https://www.first-quantum.com/about-us/leadership/"
+  },
+  "chairman": "Kevin McArthur"
+ },
+ "CANADA:FNV": {
+  "ceo": "Paul Brink",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1456346/000110465926107272/fnv-20260914xex99d1.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1456346/000110465926082701/tm2619862d1_f10.htm"
+  },
+  "chairman": "Tom Albanese"
+ },
+ "CANADA:FTS": {
+  "ceo": "David Hutchens",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1666175/000117184326006410/exh_991.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1666175/000110465926036461/fts-20260330xex99d1.htm"
+  },
+  "chairman": "Jo Mark Zurel"
+ },
+ "CANADA:FTS.PR.F": {
+  "ceo": "David Hutchens",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1666175/000117184326006410/exh_991.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1666175/000110465926036461/fts-20260330xex99d1.htm"
+  },
+  "chairman": "Jo Mark Zurel"
+ },
+ "CANADA:FTS.PR.G": {
+  "ceo": "David Hutchens",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1666175/000117184326006410/exh_991.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1666175/000110465926036461/fts-20260330xex99d1.htm"
+  },
+  "chairman": "Jo Mark Zurel"
+ },
+ "CANADA:FTS.PR.H": {
+  "ceo": "David Hutchens",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1666175/000117184326006410/exh_991.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1666175/000110465926036461/fts-20260330xex99d1.htm"
+  },
+  "chairman": "Jo Mark Zurel"
+ },
+ "CANADA:FTS.PR.I": {
+  "ceo": "David Hutchens",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1666175/000117184326006410/exh_991.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1666175/000110465926036461/fts-20260330xex99d1.htm"
+  },
+  "chairman": "Jo Mark Zurel"
+ },
+ "CANADA:FTS.PR.J": {
+  "ceo": "David Hutchens",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1666175/000117184326006410/exh_991.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1666175/000110465926036461/fts-20260330xex99d1.htm"
+  },
+  "chairman": "Jo Mark Zurel"
+ },
+ "CANADA:FTS.PR.K": {
+  "ceo": "David Hutchens",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1666175/000117184326006410/exh_991.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1666175/000110465926036461/fts-20260330xex99d1.htm"
+  },
+  "chairman": "Jo Mark Zurel"
+ },
+ "CANADA:FTS.PR.M": {
+  "ceo": "David Hutchens",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1666175/000117184326006410/exh_991.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1666175/000110465926036461/fts-20260330xex99d1.htm"
+  },
+  "chairman": "Jo Mark Zurel"
  },
  "CANADA:FVI": {
   "website": "https://fortunamining.com",
@@ -8173,6 +8629,126 @@
    "website": "https://knighttx.com/"
   }
  },
+ "CANADA:GWO": {
+  "ceo": "David Harney",
+  "sources": {
+   "ceo": "https://www.greatwestlifeco.com/who-we-are/leadership.html",
+   "chairman": "https://www.greatwestlifeco.com/who-we-are/leadership.html"
+  },
+  "chairman": "James P. O'Sullivan"
+ },
+ "CANADA:GWO.PR.G": {
+  "ceo": "David Harney",
+  "sources": {
+   "ceo": "https://www.greatwestlifeco.com/who-we-are/leadership.html",
+   "chairman": "https://www.greatwestlifeco.com/who-we-are/leadership.html"
+  },
+  "chairman": "James P. O'Sullivan"
+ },
+ "CANADA:GWO.PR.H": {
+  "ceo": "David Harney",
+  "sources": {
+   "ceo": "https://www.greatwestlifeco.com/who-we-are/leadership.html",
+   "chairman": "https://www.greatwestlifeco.com/who-we-are/leadership.html"
+  },
+  "chairman": "James P. O'Sullivan"
+ },
+ "CANADA:GWO.PR.I": {
+  "ceo": "David Harney",
+  "sources": {
+   "ceo": "https://www.greatwestlifeco.com/who-we-are/leadership.html",
+   "chairman": "https://www.greatwestlifeco.com/who-we-are/leadership.html"
+  },
+  "chairman": "James P. O'Sullivan"
+ },
+ "CANADA:GWO.PR.L": {
+  "ceo": "David Harney",
+  "sources": {
+   "ceo": "https://www.greatwestlifeco.com/who-we-are/leadership.html",
+   "chairman": "https://www.greatwestlifeco.com/who-we-are/leadership.html"
+  },
+  "chairman": "James P. O'Sullivan"
+ },
+ "CANADA:GWO.PR.M": {
+  "ceo": "David Harney",
+  "sources": {
+   "ceo": "https://www.greatwestlifeco.com/who-we-are/leadership.html",
+   "chairman": "https://www.greatwestlifeco.com/who-we-are/leadership.html"
+  },
+  "chairman": "James P. O'Sullivan"
+ },
+ "CANADA:GWO.PR.N": {
+  "ceo": "David Harney",
+  "sources": {
+   "ceo": "https://www.greatwestlifeco.com/who-we-are/leadership.html",
+   "chairman": "https://www.greatwestlifeco.com/who-we-are/leadership.html"
+  },
+  "chairman": "James P. O'Sullivan"
+ },
+ "CANADA:GWO.PR.P": {
+  "ceo": "David Harney",
+  "sources": {
+   "ceo": "https://www.greatwestlifeco.com/who-we-are/leadership.html",
+   "chairman": "https://www.greatwestlifeco.com/who-we-are/leadership.html"
+  },
+  "chairman": "James P. O'Sullivan"
+ },
+ "CANADA:GWO.PR.Q": {
+  "ceo": "David Harney",
+  "sources": {
+   "ceo": "https://www.greatwestlifeco.com/who-we-are/leadership.html",
+   "chairman": "https://www.greatwestlifeco.com/who-we-are/leadership.html"
+  },
+  "chairman": "James P. O'Sullivan"
+ },
+ "CANADA:GWO.PR.R": {
+  "ceo": "David Harney",
+  "sources": {
+   "ceo": "https://www.greatwestlifeco.com/who-we-are/leadership.html",
+   "chairman": "https://www.greatwestlifeco.com/who-we-are/leadership.html"
+  },
+  "chairman": "James P. O'Sullivan"
+ },
+ "CANADA:GWO.PR.S": {
+  "ceo": "David Harney",
+  "sources": {
+   "ceo": "https://www.greatwestlifeco.com/who-we-are/leadership.html",
+   "chairman": "https://www.greatwestlifeco.com/who-we-are/leadership.html"
+  },
+  "chairman": "James P. O'Sullivan"
+ },
+ "CANADA:GWO.PR.T": {
+  "ceo": "David Harney",
+  "sources": {
+   "ceo": "https://www.greatwestlifeco.com/who-we-are/leadership.html",
+   "chairman": "https://www.greatwestlifeco.com/who-we-are/leadership.html"
+  },
+  "chairman": "James P. O'Sullivan"
+ },
+ "CANADA:GWO.PR.Y": {
+  "ceo": "David Harney",
+  "sources": {
+   "ceo": "https://www.greatwestlifeco.com/who-we-are/leadership.html",
+   "chairman": "https://www.greatwestlifeco.com/who-we-are/leadership.html"
+  },
+  "chairman": "James P. O'Sullivan"
+ },
+ "CANADA:GWO.PR.Z": {
+  "ceo": "David Harney",
+  "sources": {
+   "ceo": "https://www.greatwestlifeco.com/who-we-are/leadership.html",
+   "chairman": "https://www.greatwestlifeco.com/who-we-are/leadership.html"
+  },
+  "chairman": "James P. O'Sullivan"
+ },
+ "CANADA:H": {
+  "ceo": "Megan Telford",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1712356/000171235626000024/a2026q2holpr.htm",
+   "chairman": "https://hydroone.mediaroom.com/2026-06-09-C-O-R-R-E-C-T-I-O-N-Hydro-One-Limited"
+  },
+  "chairman": "Melissa Sonberg"
+ },
  "CANADA:HD": {
   "ceo": "Edward P. Decker",
   "sources": {
@@ -8203,11 +8779,83 @@
   },
   "chairman": "Arvind Krishna"
  },
+ "CANADA:IFC": {
+  "ceo": "Charles Brindamour",
+  "sources": {
+   "ceo": "https://www.intactfc.com/corporate-governance/board-and-leadership",
+   "chairman": "https://www.intactfc.com/corporate-governance/board-and-leadership"
+  },
+  "chairman": "William L. Young"
+ },
+ "CANADA:IFC.PR.A": {
+  "ceo": "Charles Brindamour",
+  "sources": {
+   "ceo": "https://www.intactfc.com/corporate-governance/board-and-leadership",
+   "chairman": "https://www.intactfc.com/corporate-governance/board-and-leadership"
+  },
+  "chairman": "William L. Young"
+ },
+ "CANADA:IFC.PR.E": {
+  "ceo": "Charles Brindamour",
+  "sources": {
+   "ceo": "https://www.intactfc.com/corporate-governance/board-and-leadership",
+   "chairman": "https://www.intactfc.com/corporate-governance/board-and-leadership"
+  },
+  "chairman": "William L. Young"
+ },
+ "CANADA:IFC.PR.F": {
+  "ceo": "Charles Brindamour",
+  "sources": {
+   "ceo": "https://www.intactfc.com/corporate-governance/board-and-leadership",
+   "chairman": "https://www.intactfc.com/corporate-governance/board-and-leadership"
+  },
+  "chairman": "William L. Young"
+ },
+ "CANADA:IFC.PR.G": {
+  "ceo": "Charles Brindamour",
+  "sources": {
+   "ceo": "https://www.intactfc.com/corporate-governance/board-and-leadership",
+   "chairman": "https://www.intactfc.com/corporate-governance/board-and-leadership"
+  },
+  "chairman": "William L. Young"
+ },
+ "CANADA:IFC.PR.I": {
+  "ceo": "Charles Brindamour",
+  "sources": {
+   "ceo": "https://www.intactfc.com/corporate-governance/board-and-leadership",
+   "chairman": "https://www.intactfc.com/corporate-governance/board-and-leadership"
+  },
+  "chairman": "William L. Young"
+ },
+ "CANADA:IFC.PR.K": {
+  "ceo": "Charles Brindamour",
+  "sources": {
+   "ceo": "https://www.intactfc.com/corporate-governance/board-and-leadership",
+   "chairman": "https://www.intactfc.com/corporate-governance/board-and-leadership"
+  },
+  "chairman": "William L. Young"
+ },
+ "CANADA:IFC.PR.M": {
+  "ceo": "Charles Brindamour",
+  "sources": {
+   "ceo": "https://www.intactfc.com/corporate-governance/board-and-leadership",
+   "chairman": "https://www.intactfc.com/corporate-governance/board-and-leadership"
+  },
+  "chairman": "William L. Young"
+ },
  "CANADA:IGM": {
   "website": "https://www.igmfinancial.com",
   "sources": {
    "website": "https://www.igmfinancial.com/en"
   }
+ },
+ "CANADA:IMO": {
+  "ceo": "John Whelan",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/49938/000004993826000045/q32026earningscall8-kex.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/49938/000004993826000045/q32026earningscall8-kex.htm"
+  },
+  "chairman": "John Whelan"
  },
  "CANADA:INGG": {
   "ceo": "Steven van Rijswijk",
@@ -8257,6 +8905,14 @@
   "ceo": "James Dimon",
   "chairman": "James Dimon"
  },
+ "CANADA:K": {
+  "ceo": "J. Paul Rollinson",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/701818/000110465926088237/tm2621038d1_ex99-2.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/701818/000110465926036623/tm261274d2_ex99-3circularxa.htm"
+  },
+  "chairman": "Kelly J. Osborne"
+ },
  "CANADA:KKR": {
   "ceo": "Joseph Y. Bae and Scott C. Nuttall",
   "sources": {
@@ -8270,6 +8926,14 @@
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/319201/000119312526397898/d83268ddef14a.htm"
   }
+ },
+ "CANADA:L": {
+  "ceo": "Per Bank",
+  "sources": {
+   "ceo": "https://www.loblaw.ca/en/loblaw-reports-second-quarter-revenue-growth-of-41-and-adjusted-diluted-net-earnings-per-common-share-growth-of-119/",
+   "chairman": "https://dis-prod.assetful.loblaw.ca/content/dam/loblaw-companies-limited/creative-assets/loblaw-ca/investor-relations-reports/annual/2026/2026%20Loblaw%20Management%20Proxy%20Circular_EN.pdf"
+  },
+  "chairman": "Galen G. Weston"
  },
  "CANADA:LOR": {
   "ceo": "Nicolas Hieronimus",
@@ -8292,6 +8956,14 @@
   "sources": {
    "ceo": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000047/lrcx-20260924.htm"
   }
+ },
+ "CANADA:LUN": {
+  "ceo": "Jack Lundin",
+  "sources": {
+   "ceo": "https://www.lundinmining.com/about/leadership/",
+   "chairman": "https://www.lundinmining.com/about/leadership/"
+  },
+  "chairman": "Adam Lundin"
  },
  "CANADA:LV": {
   "website": "https://www.lvmh.com",
@@ -8340,8 +9012,92 @@
  "CANADA:MFC": {
   "website": "https://www.manulife.com",
   "sources": {
-   "website": "https://www.manulife.com/"
-  }
+   "website": "https://www.manulife.com/",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm"
+  },
+  "ceo": "Phil Witherington",
+  "chairman": "Don Lindsay"
+ },
+ "CANADA:MFC.PR.B": {
+  "ceo": "Phil Witherington",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm"
+  },
+  "chairman": "Don Lindsay"
+ },
+ "CANADA:MFC.PR.C": {
+  "ceo": "Phil Witherington",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm"
+  },
+  "chairman": "Don Lindsay"
+ },
+ "CANADA:MFC.PR.F": {
+  "ceo": "Phil Witherington",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm"
+  },
+  "chairman": "Don Lindsay"
+ },
+ "CANADA:MFC.PR.I": {
+  "ceo": "Phil Witherington",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm"
+  },
+  "chairman": "Don Lindsay"
+ },
+ "CANADA:MFC.PR.J": {
+  "ceo": "Phil Witherington",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm"
+  },
+  "chairman": "Don Lindsay"
+ },
+ "CANADA:MFC.PR.K": {
+  "ceo": "Phil Witherington",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm"
+  },
+  "chairman": "Don Lindsay"
+ },
+ "CANADA:MFC.PR.L": {
+  "ceo": "Phil Witherington",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm"
+  },
+  "chairman": "Don Lindsay"
+ },
+ "CANADA:MFC.PR.M": {
+  "ceo": "Phil Witherington",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm"
+  },
+  "chairman": "Don Lindsay"
+ },
+ "CANADA:MFC.PR.N": {
+  "ceo": "Phil Witherington",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm"
+  },
+  "chairman": "Don Lindsay"
+ },
+ "CANADA:MFC.PR.Q": {
+  "ceo": "Phil Witherington",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1086888/000108688826000081/q22026reporttoshareholderl.htm"
+  },
+  "chairman": "Don Lindsay"
  },
  "CANADA:MFI": {
   "website": "https://www.mapleleaffoods.com",
@@ -8411,6 +9167,62 @@
   "ceo": "Junichi Hanzawa",
   "chairman": "Hironori Kamezawa"
  },
+ "CANADA:NA": {
+  "ceo": "Laurent Ferreira",
+  "sources": {
+   "ceo": "https://www.nbc.ca/about-us/governance/board-directors.html",
+   "chairman": "https://www.nbc.ca/about-us/governance/board-directors.html"
+  },
+  "chairman": "Robert Paré"
+ },
+ "CANADA:NA.PR.C": {
+  "ceo": "Laurent Ferreira",
+  "sources": {
+   "ceo": "https://www.nbc.ca/about-us/governance/board-directors.html",
+   "chairman": "https://www.nbc.ca/about-us/governance/board-directors.html"
+  },
+  "chairman": "Robert Paré"
+ },
+ "CANADA:NA.PR.E": {
+  "ceo": "Laurent Ferreira",
+  "sources": {
+   "ceo": "https://www.nbc.ca/about-us/governance/board-directors.html",
+   "chairman": "https://www.nbc.ca/about-us/governance/board-directors.html"
+  },
+  "chairman": "Robert Paré"
+ },
+ "CANADA:NA.PR.G": {
+  "ceo": "Laurent Ferreira",
+  "sources": {
+   "ceo": "https://www.nbc.ca/about-us/governance/board-directors.html",
+   "chairman": "https://www.nbc.ca/about-us/governance/board-directors.html"
+  },
+  "chairman": "Robert Paré"
+ },
+ "CANADA:NA.PR.I": {
+  "ceo": "Laurent Ferreira",
+  "sources": {
+   "ceo": "https://www.nbc.ca/about-us/governance/board-directors.html",
+   "chairman": "https://www.nbc.ca/about-us/governance/board-directors.html"
+  },
+  "chairman": "Robert Paré"
+ },
+ "CANADA:NA.PR.K": {
+  "ceo": "Laurent Ferreira",
+  "sources": {
+   "ceo": "https://www.nbc.ca/about-us/governance/board-directors.html",
+   "chairman": "https://www.nbc.ca/about-us/governance/board-directors.html"
+  },
+  "chairman": "Robert Paré"
+ },
+ "CANADA:NA.PR.S": {
+  "ceo": "Laurent Ferreira",
+  "sources": {
+   "ceo": "https://www.nbc.ca/about-us/governance/board-directors.html",
+   "chairman": "https://www.nbc.ca/about-us/governance/board-directors.html"
+  },
+  "chairman": "Robert Paré"
+ },
  "CANADA:NEE": {
   "ceo": "John W. Ketchum",
   "sources": {
@@ -8471,6 +9283,14 @@
    "website": "https://northlandpower.com/"
   }
  },
+ "CANADA:NTR": {
+  "ceo": "Ken Seitz",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1725964/000119312526302188/d37681dex991.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1725964/000119312526133922/d160534dex993.htm"
+  },
+  "chairman": "Russell Girling"
+ },
  "CANADA:NVDA": {
   "ceo": "Jensen Huang",
   "sources": {
@@ -8502,6 +9322,14 @@
   },
   "ceo": "Clay Magouyrk and Mike Sicilia",
   "chairman": "Lawrence Joseph Ellison"
+ },
+ "CANADA:PAAS": {
+  "ceo": "Michael Steinmann",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/771992/000077199226000071/nr_jeannesresignation.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/771992/000077199226000071/nr_jeannesresignation.htm"
+  },
+  "chairman": "Gillian Winckler"
  },
  "CANADA:PANW": {
   "ceo": "Nikesh Arora",
@@ -8542,6 +9370,150 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000019/pltr-20260423.htm"
   },
   "chairman": "Peter Thiel"
+ },
+ "CANADA:POW": {
+  "ceo": "James O'Sullivan",
+  "sources": {
+   "ceo": "https://www.newswire.ca/news-releases/power-corporation-announces-president-and-ceo-transition-847725821.html",
+   "chairman": "https://www.powercorporation.com/en/governance/leadership/"
+  },
+  "chairman": "Paul Desmarais Jr."
+ },
+ "CANADA:POW.PR.A": {
+  "ceo": "James O'Sullivan",
+  "sources": {
+   "ceo": "https://www.newswire.ca/news-releases/power-corporation-announces-president-and-ceo-transition-847725821.html",
+   "chairman": "https://www.powercorporation.com/en/governance/leadership/"
+  },
+  "chairman": "Paul Desmarais Jr."
+ },
+ "CANADA:POW.PR.B": {
+  "ceo": "James O'Sullivan",
+  "sources": {
+   "ceo": "https://www.newswire.ca/news-releases/power-corporation-announces-president-and-ceo-transition-847725821.html",
+   "chairman": "https://www.powercorporation.com/en/governance/leadership/"
+  },
+  "chairman": "Paul Desmarais Jr."
+ },
+ "CANADA:POW.PR.C": {
+  "ceo": "James O'Sullivan",
+  "sources": {
+   "ceo": "https://www.newswire.ca/news-releases/power-corporation-announces-president-and-ceo-transition-847725821.html",
+   "chairman": "https://www.powercorporation.com/en/governance/leadership/"
+  },
+  "chairman": "Paul Desmarais Jr."
+ },
+ "CANADA:POW.PR.D": {
+  "ceo": "James O'Sullivan",
+  "sources": {
+   "ceo": "https://www.newswire.ca/news-releases/power-corporation-announces-president-and-ceo-transition-847725821.html",
+   "chairman": "https://www.powercorporation.com/en/governance/leadership/"
+  },
+  "chairman": "Paul Desmarais Jr."
+ },
+ "CANADA:POW.PR.E": {
+  "ceo": "James O'Sullivan",
+  "sources": {
+   "ceo": "https://www.newswire.ca/news-releases/power-corporation-announces-president-and-ceo-transition-847725821.html",
+   "chairman": "https://www.powercorporation.com/en/governance/leadership/"
+  },
+  "chairman": "Paul Desmarais Jr."
+ },
+ "CANADA:POW.PR.G": {
+  "ceo": "James O'Sullivan",
+  "sources": {
+   "ceo": "https://www.newswire.ca/news-releases/power-corporation-announces-president-and-ceo-transition-847725821.html",
+   "chairman": "https://www.powercorporation.com/en/governance/leadership/"
+  },
+  "chairman": "Paul Desmarais Jr."
+ },
+ "CANADA:POW.PR.H": {
+  "ceo": "James O'Sullivan",
+  "sources": {
+   "ceo": "https://www.newswire.ca/news-releases/power-corporation-announces-president-and-ceo-transition-847725821.html",
+   "chairman": "https://www.powercorporation.com/en/governance/leadership/"
+  },
+  "chairman": "Paul Desmarais Jr."
+ },
+ "CANADA:POW.PR.I": {
+  "ceo": "James O'Sullivan",
+  "sources": {
+   "ceo": "https://www.newswire.ca/news-releases/power-corporation-announces-president-and-ceo-transition-847725821.html",
+   "chairman": "https://www.powercorporation.com/en/governance/leadership/"
+  },
+  "chairman": "Paul Desmarais Jr."
+ },
+ "CANADA:PPL": {
+  "ceo": "Scott Burrows",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1546066/000154606626000070/october12026pressrelease.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1546066/000119312526135996/d270056dex991.htm"
+  },
+  "chairman": "Henry W. Sykes"
+ },
+ "CANADA:PPL.PF.A": {
+  "ceo": "Scott Burrows",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1546066/000154606626000070/october12026pressrelease.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1546066/000119312526135996/d270056dex991.htm"
+  },
+  "chairman": "Henry W. Sykes"
+ },
+ "CANADA:PPL.PF.E": {
+  "ceo": "Scott Burrows",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1546066/000154606626000070/october12026pressrelease.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1546066/000119312526135996/d270056dex991.htm"
+  },
+  "chairman": "Henry W. Sykes"
+ },
+ "CANADA:PPL.PR.A": {
+  "ceo": "Scott Burrows",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1546066/000154606626000070/october12026pressrelease.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1546066/000119312526135996/d270056dex991.htm"
+  },
+  "chairman": "Henry W. Sykes"
+ },
+ "CANADA:PPL.PR.C": {
+  "ceo": "Scott Burrows",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1546066/000154606626000070/october12026pressrelease.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1546066/000119312526135996/d270056dex991.htm"
+  },
+  "chairman": "Henry W. Sykes"
+ },
+ "CANADA:PPL.PR.E": {
+  "ceo": "Scott Burrows",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1546066/000154606626000070/october12026pressrelease.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1546066/000119312526135996/d270056dex991.htm"
+  },
+  "chairman": "Henry W. Sykes"
+ },
+ "CANADA:PPL.PR.G": {
+  "ceo": "Scott Burrows",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1546066/000154606626000070/october12026pressrelease.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1546066/000119312526135996/d270056dex991.htm"
+  },
+  "chairman": "Henry W. Sykes"
+ },
+ "CANADA:PPL.PR.O": {
+  "ceo": "Scott Burrows",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1546066/000154606626000070/october12026pressrelease.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1546066/000119312526135996/d270056dex991.htm"
+  },
+  "chairman": "Henry W. Sykes"
+ },
+ "CANADA:PPL.PR.Q": {
+  "ceo": "Scott Burrows",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1546066/000154606626000070/october12026pressrelease.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1546066/000119312526135996/d270056dex991.htm"
+  },
+  "chairman": "Henry W. Sykes"
  },
  "CANADA:PWRS": {
   "ceo": "Earl C. Austin, Jr.",
@@ -8678,8 +9650,60 @@
  "CANADA:SLF": {
   "website": "https://www.sunlife.com",
   "sources": {
-   "website": "https://www.sunlife.com/en/"
-  }
+   "website": "https://www.sunlife.com/en/",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1097362/000109736226000025/q22026shareholdersreport.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1097362/000127956926000755/ex991.htm"
+  },
+  "ceo": "Kevin Strain",
+  "chairman": "Scott F. Powers"
+ },
+ "CANADA:SLF.PR.C": {
+  "ceo": "Kevin Strain",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1097362/000109736226000025/q22026shareholdersreport.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1097362/000127956926000755/ex991.htm"
+  },
+  "chairman": "Scott F. Powers"
+ },
+ "CANADA:SLF.PR.D": {
+  "ceo": "Kevin Strain",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1097362/000109736226000025/q22026shareholdersreport.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1097362/000127956926000755/ex991.htm"
+  },
+  "chairman": "Scott F. Powers"
+ },
+ "CANADA:SLF.PR.E": {
+  "ceo": "Kevin Strain",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1097362/000109736226000025/q22026shareholdersreport.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1097362/000127956926000755/ex991.htm"
+  },
+  "chairman": "Scott F. Powers"
+ },
+ "CANADA:SLF.PR.G": {
+  "ceo": "Kevin Strain",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1097362/000109736226000025/q22026shareholdersreport.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1097362/000127956926000755/ex991.htm"
+  },
+  "chairman": "Scott F. Powers"
+ },
+ "CANADA:SLF.PR.H": {
+  "ceo": "Kevin Strain",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1097362/000109736226000025/q22026shareholdersreport.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1097362/000127956926000755/ex991.htm"
+  },
+  "chairman": "Scott F. Powers"
+ },
+ "CANADA:SLF.PR.J": {
+  "ceo": "Kevin Strain",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1097362/000109736226000025/q22026shareholdersreport.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1097362/000127956926000755/ex991.htm"
+  },
+  "chairman": "Scott F. Powers"
  },
  "CANADA:SNDK": {
   "ceo": "David V. Goeckeler",
@@ -8777,6 +9801,22 @@
   "ceo": "Raymond Chun",
   "chairman": "John B. MacIntyre"
  },
+ "CANADA:TECK.A": {
+  "ceo": "Jonathan Price",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/886986/000095014226002704/eh260840501_ex9901.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/886986/000095014226000799/eh260751855_ex9901.htm"
+  },
+  "chairman": "Sheila A. Murray"
+ },
+ "CANADA:TECK.B": {
+  "ceo": "Jonathan Price",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/886986/000095014226002704/eh260840501_ex9901.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/886986/000095014226000799/eh260751855_ex9901.htm"
+  },
+  "chairman": "Sheila A. Murray"
+ },
  "CANADA:TJX": {
   "ceo": "Ernie Herrman",
   "sources": {
@@ -8804,6 +9844,92 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1094517/000119312526264811/d101983d20f.htm"
   },
   "chairman": "Akio Toyoda"
+ },
+ "CANADA:TRI": {
+  "chairman": "David Thomson",
+  "sources": {
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1075124/000119312526157451/d100511dex991.htm"
+  }
+ },
+ "CANADA:TRI.PR.B": {
+  "ceo": "Steve Hasker",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1075124/000119312526338256/tri-ex99_5.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1075124/000119312526157451/d100511dex991.htm"
+  },
+  "chairman": "David Thomson"
+ },
+ "CANADA:TRP": {
+  "ceo": "François Poirier",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000057/a10-16x2026xtcenergytoho.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000023/ex991-tcenergy2026micengli.htm"
+  },
+  "chairman": "John E. Lowe"
+ },
+ "CANADA:TRP.PR.A": {
+  "ceo": "François Poirier",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000057/a10-16x2026xtcenergytoho.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000023/ex991-tcenergy2026micengli.htm"
+  },
+  "chairman": "John E. Lowe"
+ },
+ "CANADA:TRP.PR.B": {
+  "ceo": "François Poirier",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000057/a10-16x2026xtcenergytoho.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000023/ex991-tcenergy2026micengli.htm"
+  },
+  "chairman": "John E. Lowe"
+ },
+ "CANADA:TRP.PR.C": {
+  "ceo": "François Poirier",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000057/a10-16x2026xtcenergytoho.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000023/ex991-tcenergy2026micengli.htm"
+  },
+  "chairman": "John E. Lowe"
+ },
+ "CANADA:TRP.PR.D": {
+  "ceo": "François Poirier",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000057/a10-16x2026xtcenergytoho.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000023/ex991-tcenergy2026micengli.htm"
+  },
+  "chairman": "John E. Lowe"
+ },
+ "CANADA:TRP.PR.E": {
+  "ceo": "François Poirier",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000057/a10-16x2026xtcenergytoho.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000023/ex991-tcenergy2026micengli.htm"
+  },
+  "chairman": "John E. Lowe"
+ },
+ "CANADA:TRP.PR.F": {
+  "ceo": "François Poirier",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000057/a10-16x2026xtcenergytoho.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000023/ex991-tcenergy2026micengli.htm"
+  },
+  "chairman": "John E. Lowe"
+ },
+ "CANADA:TRP.PR.H": {
+  "ceo": "François Poirier",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000057/a10-16x2026xtcenergytoho.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000023/ex991-tcenergy2026micengli.htm"
+  },
+  "chairman": "John E. Lowe"
+ },
+ "CANADA:TRP.PR.L": {
+  "ceo": "François Poirier",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000057/a10-16x2026xtcenergytoho.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1232384/000123238426000023/ex991-tcenergy2026micengli.htm"
+  },
+  "chairman": "John E. Lowe"
  },
  "CANADA:TSLA": {
   "ceo": "Elon Musk",
@@ -8885,6 +10011,14 @@
   "ceo": "Daniel H. Schulman",
   "chairman": "Mark T. Bertolini"
  },
+ "CANADA:WCN": {
+  "ceo": "Ronald J. Mittelstaedt",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1318220/000110465926117943/wcn-ex32d1.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1318220/000110465926047686/tm2612534d1_defa14a.htm"
+  },
+  "chairman": "Michael W. Harlan"
+ },
  "CANADA:WDC": {
   "ceo": "Irving Tan",
   "sources": {
@@ -8908,6 +10042,54 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/104169/000119312526173673/wmt-20260423.htm"
   },
   "chairman": "Greg Penner"
+ },
+ "CANADA:WN": {
+  "ceo": "Galen G. Weston",
+  "sources": {
+   "ceo": "https://dis-prod.assetful.loblaw.ca/content/dam/loblaw-companies-limited/creative-assets/loblaw-ca/investor-relations-reports/annual/2026/2026%20Loblaw%20Management%20Proxy%20Circular_EN.pdf",
+   "chairman": "https://dis-prod.assetful.loblaw.ca/content/dam/loblaw-companies-limited/creative-assets/loblaw-ca/investor-relations-reports/annual/2026/2026%20Loblaw%20Management%20Proxy%20Circular_EN.pdf"
+  },
+  "chairman": "Galen G. Weston"
+ },
+ "CANADA:WN.PR.A": {
+  "ceo": "Galen G. Weston",
+  "sources": {
+   "ceo": "https://dis-prod.assetful.loblaw.ca/content/dam/loblaw-companies-limited/creative-assets/loblaw-ca/investor-relations-reports/annual/2026/2026%20Loblaw%20Management%20Proxy%20Circular_EN.pdf",
+   "chairman": "https://dis-prod.assetful.loblaw.ca/content/dam/loblaw-companies-limited/creative-assets/loblaw-ca/investor-relations-reports/annual/2026/2026%20Loblaw%20Management%20Proxy%20Circular_EN.pdf"
+  },
+  "chairman": "Galen G. Weston"
+ },
+ "CANADA:WN.PR.C": {
+  "ceo": "Galen G. Weston",
+  "sources": {
+   "ceo": "https://dis-prod.assetful.loblaw.ca/content/dam/loblaw-companies-limited/creative-assets/loblaw-ca/investor-relations-reports/annual/2026/2026%20Loblaw%20Management%20Proxy%20Circular_EN.pdf",
+   "chairman": "https://dis-prod.assetful.loblaw.ca/content/dam/loblaw-companies-limited/creative-assets/loblaw-ca/investor-relations-reports/annual/2026/2026%20Loblaw%20Management%20Proxy%20Circular_EN.pdf"
+  },
+  "chairman": "Galen G. Weston"
+ },
+ "CANADA:WN.PR.D": {
+  "ceo": "Galen G. Weston",
+  "sources": {
+   "ceo": "https://dis-prod.assetful.loblaw.ca/content/dam/loblaw-companies-limited/creative-assets/loblaw-ca/investor-relations-reports/annual/2026/2026%20Loblaw%20Management%20Proxy%20Circular_EN.pdf",
+   "chairman": "https://dis-prod.assetful.loblaw.ca/content/dam/loblaw-companies-limited/creative-assets/loblaw-ca/investor-relations-reports/annual/2026/2026%20Loblaw%20Management%20Proxy%20Circular_EN.pdf"
+  },
+  "chairman": "Galen G. Weston"
+ },
+ "CANADA:WN.PR.E": {
+  "ceo": "Galen G. Weston",
+  "sources": {
+   "ceo": "https://dis-prod.assetful.loblaw.ca/content/dam/loblaw-companies-limited/creative-assets/loblaw-ca/investor-relations-reports/annual/2026/2026%20Loblaw%20Management%20Proxy%20Circular_EN.pdf",
+   "chairman": "https://dis-prod.assetful.loblaw.ca/content/dam/loblaw-companies-limited/creative-assets/loblaw-ca/investor-relations-reports/annual/2026/2026%20Loblaw%20Management%20Proxy%20Circular_EN.pdf"
+  },
+  "chairman": "Galen G. Weston"
+ },
+ "CANADA:WPM": {
+  "ceo": "Haytham Hodaly",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1323404/000127956926000844/ex991.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1323404/000127956926000418/ex991.htm"
+  },
+  "chairman": "Randy Smallwood"
  },
  "CANADA:XOM": {
   "ceo": "Darren W. Woods",
@@ -14941,6 +16123,14 @@
   "headquarters": "Ahmedabad, Gujarat, India",
   "chairman": "Maheswar Sahu"
  },
+ "IN:DIRL": {
+  "name": "Dhanuka Infra Realty Limited",
+  "isin": "INE704V01015",
+  "sources": {
+   "name": "https://nsearchives.nseindia.com/content/equities/namechange.csv",
+   "isin": "https://nsearchives.nseindia.com/emerge/corporates/content/SME_EQUITY_L.csv"
+  }
+ },
  "IN:DIVISLAB": {
   "website": "https://www.divislabs.com",
   "sources": {
@@ -15327,6 +16517,12 @@
    "website": "https://www.gatewaydistriparks.com/"
   }
  },
+ "IN:GBGLOBAL": {
+  "name": "GB Global Limited",
+  "sources": {
+   "name": "https://nsearchives.nseindia.com/content/equities/namechange.csv"
+  }
+ },
  "IN:GESHIP": {
   "website": "https://www.greatship.com",
   "sources": {
@@ -15348,6 +16544,16 @@
    "chairman": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_202942_22102026110613_iXBRL_WEB.html"
   },
   "chairman": "Rathindra Nath Basu"
+ },
+ "IN:GFSTEELS": {
+  "status": "delisted",
+  "delistedAt": "2026-10-15",
+  "successor": "IN:TIKONA",
+  "sources": {
+   "status": "https://nsearchives.nseindia.com/corporate/nsalvi_09102026174312_CML76829.pdf",
+   "delistedAt": "https://nsearchives.nseindia.com/corporate/nsalvi_09102026174312_CML76829.pdf",
+   "successor": "https://nsearchives.nseindia.com/content/equities/symbolchange.csv"
+  }
  },
  "IN:GICRE": {
   "website": "https://www.gicre.in",
@@ -18456,6 +19662,12 @@
   },
   "ceo": "Sundeep Sikka",
   "chairman": "Upendra Kumar Sinha"
+ },
+ "IN:RNAVAL": {
+  "name": "Reliance Naval and Engineering Limited",
+  "sources": {
+   "name": "https://nsearchives.nseindia.com/content/equities/namechange.csv"
+  }
  },
  "IN:RPOWER": {
   "chairman": null,
@@ -40208,6 +41420,12 @@
    "website": "https://www.vonovia.com/"
   }
  },
+ "US:VTAK": {
+  "name": "Flyte Aviation, Inc.",
+  "sources": {
+   "name": "https://www.sec.gov/Archives/edgar/data/1716621/000143774926031895/vtak20261002_8k.htm"
+  }
+ },
  "US:VZ": {
   "website": "https://www.verizon.com",
   "sources": {
@@ -40550,42 +41768,6 @@
   "chairman": "Michel M. Liès",
   "sources": {
    "chairman": "https://edge.sitecorecloud.io/zurichinsur6934-zwpcorp-prod-ae5e/media/project/zurich/dotcom/investor-relations/docs/events/abstimmunsergebnisse-agm-zig-2026.pdf"
-  }
- },
- "IN:GFSTEELS": {
-  "status": "delisted",
-  "delistedAt": "2026-10-15",
-  "successor": "IN:TIKONA",
-  "sources": {
-   "status": "https://nsearchives.nseindia.com/corporate/nsalvi_09102026174312_CML76829.pdf",
-   "delistedAt": "https://nsearchives.nseindia.com/corporate/nsalvi_09102026174312_CML76829.pdf",
-   "successor": "https://nsearchives.nseindia.com/content/equities/symbolchange.csv"
-  }
- },
- "US:VTAK": {
-  "name": "Flyte Aviation, Inc.",
-  "sources": {
-   "name": "https://www.sec.gov/Archives/edgar/data/1716621/000143774926031895/vtak20261002_8k.htm"
-  }
- },
- "IN:DIRL": {
-  "name": "Dhanuka Infra Realty Limited",
-  "isin": "INE704V01015",
-  "sources": {
-   "name": "https://nsearchives.nseindia.com/content/equities/namechange.csv",
-   "isin": "https://nsearchives.nseindia.com/emerge/corporates/content/SME_EQUITY_L.csv"
-  }
- },
- "IN:GBGLOBAL": {
-  "name": "GB Global Limited",
-  "sources": {
-   "name": "https://nsearchives.nseindia.com/content/equities/namechange.csv"
-  }
- },
- "IN:RNAVAL": {
-  "name": "Reliance Naval and Engineering Limited",
-  "sources": {
-   "name": "https://nsearchives.nseindia.com/content/equities/namechange.csv"
   }
  }
 }
