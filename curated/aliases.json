@@ -504,11 +504,6 @@
   "logoOf": "DMCC",
   "reason": "company renamed or re-listed under a new ticker"
  },
- "IN:DIRL": {
-  "isin": "INE704V01015",
-  "logoOf": "DRL",
-  "reason": "company renamed or re-listed under a new ticker"
- },
  "IN:DOLAT": {
   "isin": "INE966A01022",
   "logoOf": "DOLATALGO",
@@ -612,11 +607,6 @@
  "IN:GARWALLROP": {
   "isin": "INE276A01018",
   "logoOf": "GARFIBRES",
-  "reason": "company renamed or re-listed under a new ticker"
- },
- "IN:GBGLOBAL": {
-  "isin": "INE087J01028",
-  "logoOf": "MIL",
   "reason": "company renamed or re-listed under a new ticker"
  },
  "IN:GCKL": {
@@ -1562,11 +1552,6 @@
  "IN:RNAM": {
   "isin": "INE298J01013",
   "logoOf": "NAM_INDIA",
-  "reason": "company renamed or re-listed under a new ticker"
- },
- "IN:RNAVAL": {
-  "isin": "INE542F01012",
-  "logoOf": "RDEL",
   "reason": "company renamed or re-listed under a new ticker"
  },
  "IN:ROCKPP": {

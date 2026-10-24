@@ -16026,12 +16026,14 @@
    "founded": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/36a5e188-9a6e-4278-b7c0-324dd9476085.pdf",
    "headquarters": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/df72b9e1-64fc-44cc-b70a-859d96626e25.pdf",
    "ceo": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/8c02582b-56b4-41ff-975c-66e065a33a3a.pdf",
-   "chairman": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/df72b9e1-64fc-44cc-b70a-859d96626e25.pdf"
+   "chairman": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/df72b9e1-64fc-44cc-b70a-859d96626e25.pdf",
+   "name": "https://nsearchives.nseindia.com/corporate/cdaga_16102026173713_CML76967.pdf"
   },
   "founded": 2000,
   "headquarters": "Mumbai, Maharashtra, India",
   "ceo": "Sidharatha Mishra",
-  "chairman": "Sandeep Batra"
+  "chairman": "Sandeep Batra",
+  "name": "ICICI Life Insurance Limited"
  },
  "IN:ICIL": {
   "chairman": "Anil Kumar Jain",
@@ -40548,6 +40550,42 @@
   "chairman": "Michel M. Liès",
   "sources": {
    "chairman": "https://edge.sitecorecloud.io/zurichinsur6934-zwpcorp-prod-ae5e/media/project/zurich/dotcom/investor-relations/docs/events/abstimmunsergebnisse-agm-zig-2026.pdf"
+  }
+ },
+ "IN:GFSTEELS": {
+  "status": "delisted",
+  "delistedAt": "2026-10-15",
+  "successor": "IN:TIKONA",
+  "sources": {
+   "status": "https://nsearchives.nseindia.com/corporate/nsalvi_09102026174312_CML76829.pdf",
+   "delistedAt": "https://nsearchives.nseindia.com/corporate/nsalvi_09102026174312_CML76829.pdf",
+   "successor": "https://nsearchives.nseindia.com/content/equities/symbolchange.csv"
+  }
+ },
+ "US:VTAK": {
+  "name": "Flyte Aviation, Inc.",
+  "sources": {
+   "name": "https://www.sec.gov/Archives/edgar/data/1716621/000143774926031895/vtak20261002_8k.htm"
+  }
+ },
+ "IN:DIRL": {
+  "name": "Dhanuka Infra Realty Limited",
+  "isin": "INE704V01015",
+  "sources": {
+   "name": "https://nsearchives.nseindia.com/content/equities/namechange.csv",
+   "isin": "https://nsearchives.nseindia.com/emerge/corporates/content/SME_EQUITY_L.csv"
+  }
+ },
+ "IN:GBGLOBAL": {
+  "name": "GB Global Limited",
+  "sources": {
+   "name": "https://nsearchives.nseindia.com/content/equities/namechange.csv"
+  }
+ },
+ "IN:RNAVAL": {
+  "name": "Reliance Naval and Engineering Limited",
+  "sources": {
+   "name": "https://nsearchives.nseindia.com/content/equities/namechange.csv"
   }
  }
 }

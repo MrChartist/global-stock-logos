@@ -1,1 +1,41 @@
-<!-- by TradingView --><svg width="56" height="56" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"><path fill="#F0F3FA" d="M0 0h56v56H0z"/><path d="M35.9 16 28 30l-7.9-14h15.8ZM12 16h8.1L12 29.6V16Zm32 0h-8.1L44 29.6V16Z" fill="#DB3832"/><path d="m27.62 39 .38.66.38-.66h15.04l.58 1H12l.58-1h15.04Zm1.34-1h13.88l-1.15-2H30.12l-1.16 2Zm-3.08-2 1.16 2H13.16l1.15-2h11.57Zm4.81-1h10.42l-1.16-2h-8.1l-1.16 2Zm-6.54-2 1.16 2H14.89l1.16-2h8.1Zm8.28-1h6.94l-1.15-2h-4.63l-1.16 2Zm-10.02-2 1.16 2h-6.94l1.15-2h4.63Zm11.76-1h3.47l-1.74-3-1.73 3Zm-12.34 0h-3.47l1.74-3 1.73 3Z" fill="#254698"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="grad-GBGLOBAL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+    <filter id="shadow-GBGLOBAL" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <!-- Background Rounded Canvas -->
+  <rect width="256" height="256" rx="56" fill="url(#grad-GBGLOBAL)" filter="url(#shadow-GBGLOBAL)"/>
+  <!-- Subtle Internal Border -->
+  <rect x="2" y="2" width="252" height="252" rx="54" fill="none" stroke="#ffffff" stroke-width="3" stroke-opacity="0.15"/>
+  <!-- Brand Text -->
+  <text 
+    x="128" 
+    y="142" 
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+    font-size="96" 
+    font-weight="800" 
+    letter-spacing="-1.5"
+    fill="#ffffff" 
+    text-anchor="middle" 
+    dominant-baseline="middle">
+    GG
+  </text>
+  <!-- Micro ticker watermark at bottom -->
+  <text 
+    x="128" 
+    y="218" 
+    font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" 
+    font-size="20" 
+    font-weight="700" 
+    letter-spacing="2"
+    fill="#ffffff" 
+    fill-opacity="0.6"
+    text-anchor="middle">
+    GBGLOBAL
+  </text>
+</svg>
