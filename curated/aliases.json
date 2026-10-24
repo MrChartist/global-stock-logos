@@ -126,7 +126,7 @@
  },
  "IN:AMARAJABAT": {
   "isin": "INE885A01032",
-  "logoOf": "ARE_M",
+  "logoOf": "AREM",
   "reason": "company renamed or re-listed under a new ticker"
  },
  "IN:AMBANIORG": {
@@ -144,9 +144,14 @@
   "logoOf": "AEROPLANE",
   "reason": "company renamed or re-listed under a new ticker"
  },
+ "IN:ARE_M": {
+  "isin": "INE885A01032",
+  "logoOf": "AREM",
+  "reason": "same security: the NSE symbol written two ways (special character or series suffix)"
+ },
  "IN:ARE&M": {
   "isin": "INE885A01032",
-  "logoOf": "ARE_M",
+  "logoOf": "AREM",
   "reason": "ticker contains a special character"
  },
  "IN:AREVAT&D": {
@@ -214,6 +219,11 @@
   "logoOf": "AXISCADES",
   "reason": "ticker contains a special character"
  },
+ "IN:BAGMANE.RR": {
+  "isin": "INE2OVN25015",
+  "logoOf": "BAGMANE",
+  "reason": "same security: the NSE symbol written two ways (special character or series suffix)"
+ },
  "IN:BAJAJ-AUTO": {
   "isin": "INE917I01010",
   "logoOf": "BAJAJ_AUTO",
@@ -273,6 +283,11 @@
   "isin": "INE143A01010",
   "logoOf": "OSWALGREEN",
   "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:BIRET.RR": {
+  "isin": "INE0FDU25010",
+  "logoOf": "BIRET",
+  "reason": "same security: the NSE symbol written two ways (special character or series suffix)"
  },
  "IN:BIRLAERIC": {
   "isin": "INE800A01015",
@@ -539,6 +554,11 @@
   "logoOf": "EMAMIREAL",
   "reason": "company renamed or re-listed under a new ticker"
  },
+ "IN:EMBASSY.RR": {
+  "isin": "INE041025011",
+  "logoOf": "EMBASSY",
+  "reason": "same security: the NSE symbol written two ways (special character or series suffix)"
+ },
  "IN:ESSELPACK": {
   "isin": "INE255A01020",
   "logoOf": "EPL",
@@ -649,9 +669,14 @@
   "logoOf": "GMRAIRPORT",
   "reason": "company renamed or re-listed under a new ticker"
  },
+ "IN:GMRP_UI": {
+  "isin": "INE0CU601026",
+  "logoOf": "GMRPUI",
+  "reason": "same security: the NSE symbol written two ways (special character or series suffix)"
+ },
  "IN:GMRP&UI": {
   "isin": "INE0CU601026",
-  "logoOf": "GMRP_UI",
+  "logoOf": "GMRPUI",
   "reason": "ticker contains a special character"
  },
  "IN:GOGIACAP": {
@@ -703,6 +728,11 @@
   "isin": "INE077F01035",
   "logoOf": "GOCLCORP",
   "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:GVT_D": {
+  "isin": "INE200A01026",
+  "logoOf": "GVTD",
+  "reason": "same security: the NSE symbol written two ways (special character or series suffix)"
  },
  "IN:GVT&D": {
   "isin": "INE200A01026",
@@ -859,14 +889,24 @@
   "logoOf": "IIFLCAPS",
   "reason": "company renamed or re-listed under a new ticker"
  },
+ "IN:IL_FSENGG": {
+  "isin": "INE369I01014",
+  "logoOf": "ILFSENGG",
+  "reason": "same security: the NSE symbol written two ways (special character or series suffix)"
+ },
+ "IN:IL_FSTRANS": {
+  "isin": "INE975G01012",
+  "logoOf": "ILFSTRANS",
+  "reason": "same security: the NSE symbol written two ways (special character or series suffix)"
+ },
  "IN:IL&FSENGG": {
   "isin": "INE369I01014",
-  "logoOf": "IL_FSENGG",
+  "logoOf": "ILFSENGG",
   "reason": "ticker contains a special character"
  },
  "IN:IL&FSTRANS": {
   "isin": "INE975G01012",
-  "logoOf": "IL_FSTRANS",
+  "logoOf": "ILFSTRANS",
   "reason": "ticker contains a special character"
  },
  "IN:INDIAINFO": {
@@ -923,6 +963,11 @@
   "isin": "INE686A01026",
   "logoOf": "CEMPRO",
   "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:J_KBANK": {
+  "isin": "INE168A01041",
+  "logoOf": "JKBANK",
+  "reason": "same security: the NSE symbol written two ways (special character or series suffix)"
  },
  "IN:JAGSONFI": {
   "isin": "INE582C01015",
@@ -1034,6 +1079,11 @@
   "logoOf": "KRITI",
   "reason": "company renamed or re-listed under a new ticker"
  },
+ "IN:KRT.RR": {
+  "isin": "INE1JAR25012",
+  "logoOf": "KRT",
+  "reason": "same security: the NSE symbol written two ways (special character or series suffix)"
+ },
  "IN:L&TFH": {
   "isin": "INE498L01015",
   "logoOf": "LTF",
@@ -1109,14 +1159,24 @@
   "logoOf": "AURUS",
   "reason": "company renamed or re-listed under a new ticker"
  },
+ "IN:M_M": {
+  "isin": "INE101A01026",
+  "logoOf": "MM",
+  "reason": "same security: the NSE symbol written two ways (special character or series suffix)"
+ },
+ "IN:M_MFIN": {
+  "isin": "INE774D01024",
+  "logoOf": "MMFIN",
+  "reason": "same security: the NSE symbol written two ways (special character or series suffix)"
+ },
  "IN:M&M": {
   "isin": "INE101A01026",
-  "logoOf": "M_M",
+  "logoOf": "MM",
   "reason": "ticker contains a special character"
  },
  "IN:M&MFIN": {
   "isin": "INE774D01024",
-  "logoOf": "M_MFIN",
+  "logoOf": "MMFIN",
   "reason": "ticker contains a special character"
  },
  "IN:MADHUSE": {
@@ -1219,6 +1279,11 @@
   "logoOf": "HEALTHX",
   "reason": "company renamed or re-listed under a new ticker"
  },
+ "IN:MINDSPACE.RR": {
+  "isin": "INE0CCU25019",
+  "logoOf": "MINDSPACE",
+  "reason": "same security: the NSE symbol written two ways (special character or series suffix)"
+ },
  "IN:MINFY": {
   "isin": "INE019D01016",
   "logoOf": "MAHAVEER",
@@ -1318,6 +1383,11 @@
   "isin": "INE409B01013",
   "logoOf": "SWELECTES",
   "reason": "company renamed or re-listed under a new ticker"
+ },
+ "IN:NXST.RR": {
+  "isin": "INE0NDH25011",
+  "logoOf": "NXST",
+  "reason": "same security: the NSE symbol written two ways (special character or series suffix)"
  },
  "IN:NXTDIGITAL": {
   "isin": "INE353A01023",
@@ -1574,9 +1644,14 @@
   "logoOf": "PATANJALI",
   "reason": "company renamed or re-listed under a new ticker"
  },
+ "IN:S_SPOWER": {
+  "isin": "INE902B01017",
+  "logoOf": "SSPOWER",
+  "reason": "same security: the NSE symbol written two ways (special character or series suffix)"
+ },
  "IN:S&SPOWER": {
   "isin": "INE902B01017",
-  "logoOf": "S_SPOWER",
+  "logoOf": "SSPOWER",
   "reason": "ticker contains a special character"
  },
  "IN:SADHNA": {
@@ -1884,9 +1959,14 @@
   "logoOf": "TSFINV",
   "reason": "company renamed or re-listed under a new ticker"
  },
+ "IN:SURANAT_P": {
+  "isin": "INE130B01031",
+  "logoOf": "SURANATP",
+  "reason": "same security: the NSE symbol written two ways (special character or series suffix)"
+ },
  "IN:SURANAT&P": {
   "isin": "INE130B01031",
-  "logoOf": "SURANAT_P",
+  "logoOf": "SURANATP",
   "reason": "ticker contains a special character"
  },
  "IN:SUREVIN": {

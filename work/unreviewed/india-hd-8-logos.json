@@ -1,0 +1,357 @@
+[
+  {
+    "key": "IN:PRIVISCL",
+    "file": "logos-hd/in/PRIVISCL.png",
+    "kind": "hd",
+    "source": "https://privi.com/images/temp_logo_updated.png",
+    "sourceType": "official-site",
+    "reason": "hd",
+    "format": "png"
+  },
+  {
+    "key": "IN:LTFOODS",
+    "file": "logos-hd/in/LTFOODS.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_31819_LTFOODS_2025_2026_A_23957481_07092026230355.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:PGEL",
+    "file": "logos-hd/in/PGEL.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_31482_PGEL_2025_2026_A_3779732_05092026124515.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:ARE_M",
+    "file": "logos-hd/in/ARE_M.png",
+    "kind": "hd",
+    "source": "https://www.amararajaeandm.com/images1/The%20New%20logo.png",
+    "sourceType": "official-site",
+    "reason": "hd",
+    "format": "png"
+  },
+  {
+    "key": "IN:CARTRADE",
+    "file": "logos-hd/in/CARTRADE.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_31325_CARTRADE_2025_2026_A_8433951_03092026213615.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:NIVABUPA",
+    "file": "logos-hd/in/NIVABUPA.svg",
+    "kind": "hd",
+    "source": "https://www.nivabupa.com/svgs/niva-bupa-logo.svg",
+    "sourceType": "official-site",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:IGIL",
+    "file": "logos-hd/in/IGIL.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_29969_IGIL_2025_2026_A_18695851_23072026182421.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:EDELWEISS",
+    "file": "logos-hd/in/EDELWEISS.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_31259_EDELWEISS_2025_2026_A_21481305_03092026174154.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:RAINBOW",
+    "file": "logos-hd/in/RAINBOW.svg",
+    "kind": "hd",
+    "source": "https://www.rainbowhospitals.in/images/rainbow-logo-2.svg",
+    "sourceType": "official-site",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:JBMA",
+    "file": "logos-hd/in/JBMA.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_30629_JBMA_2025_2026_A_3358403_25082026221226.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:AKUMS",
+    "file": "logos-hd/in/AKUMS.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_29407_AKUMS_2025_2026_A_12534185_18062026174836.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:UJJIVANSFB",
+    "file": "logos-hd/in/UJJIVANSFB.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_29498_UJJIVANSFB_2025_2026_A_7943947_30062026182621.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:PCBL",
+    "file": "logos-hd/in/PCBL.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_30637_PCBL_2025_2026_A_29180145_26082026113034.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:MANYAVAR",
+    "file": "logos-hd/in/MANYAVAR.svg",
+    "kind": "hd",
+    "source": "https://www.vedantfashions.com/",
+    "sourceType": "official-site",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:WABAG",
+    "file": "logos-hd/in/WABAG.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_29921_WABAG_2025_2026_A_21500249_20072026224940.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:SOUTHBANK",
+    "file": "logos-hd/in/SOUTHBANK.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_30026_SOUTHBANK_2025_2026_A_6412651_27072026204452.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:UTLSOLAR",
+    "file": "logos-hd/in/UTLSOLAR.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_31130_UTLSOLAR_2025_2026_A_7690740_02092026180532.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:ASKAUTOLTD",
+    "file": "logos-hd/in/ASKAUTOLTD.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_29726_ASKAUTOLTD_2025_2026_A_16577974_10072026210405.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:QPOWER",
+    "file": "logos-hd/in/QPOWER.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_31601_QPOWER_2025_2026_A_6849227_05092026192718.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:PVRINOX",
+    "file": "logos-hd/in/PVRINOX.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_30437_PVRINOX_2025_2026_A_14932952_19082026192316.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:MANORAMA",
+    "file": "logos-hd/in/MANORAMA.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_30746_MANORAMA_2025_2026_A_14950176_27082026194419.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:CYIENT",
+    "file": "logos-hd/in/CYIENT.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_29375_CYIENT_2025_2026_A_10062585_09062026231701.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:UTIAMC",
+    "file": "logos-hd/in/UTIAMC.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_29440_UTIAMC_2025_2026_A_14754909_24062026232811.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:TRIDENT",
+    "file": "logos-hd/in/TRIDENT.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_29690_TRIDENT_2025_2026_A_13875098_09072026214902.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:BLUEJET",
+    "file": "logos-hd/in/BLUEJET.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_30401_BLUEJET_2025_2026_A_7366578_18082026134049.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:ELANTAS",
+    "file": "logos-hd/in/ELANTAS.svg",
+    "kind": "hd",
+    "source": "https://www.elantas.com/_assets/1e38a30f47c9bb7518c714af85719fcc/Icons/logo-elantas.svg",
+    "sourceType": "official-site",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:JPPOWER",
+    "file": "logos-hd/in/JPPOWER.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_29568_JPPOWER_2025_2026_A_3800670_04072026150528.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:WELENT",
+    "file": "logos-hd/in/WELENT.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_30062_WELENT_2025_2026_A_20867931_29072026222135.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:HCG",
+    "file": "logos-hd/in/HCG.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_30761_HCG_2025_2026_A_12502559_27082026215027.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:ZENSARTECH",
+    "file": "logos-hd/in/ZENSARTECH.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_29989_ZENSARTECH_2025_2026_U_11681593_24072026185834.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:AVANTIFEED",
+    "file": "logos-hd/in/AVANTIFEED.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_30167_AVANTIFEED_2025_2026_A_13562225_04082026112624.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:IEX",
+    "file": "logos-hd/in/IEX.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_30351_IEX_2025_2026_A_25828450_14082026160534.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:SBFC",
+    "file": "logos-hd/in/SBFC.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_32164_SBFC_2025_2026_A_10702202_06102026143228.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:MAXESTATES",
+    "file": "logos-hd/in/MAXESTATES.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_30044_MAXESTATES_2025_2026_A_9961886_28072026214254.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:WESTLIFE",
+    "file": "logos-hd/in/WESTLIFE.png",
+    "kind": "hd",
+    "source": "https://www.westlife.co.in/wp-content/uploads/2024/07/Westlife-Logo-New-2-4.png",
+    "sourceType": "official-site",
+    "reason": "hd",
+    "format": "png"
+  },
+  {
+    "key": "IN:WEWORK",
+    "file": "logos-hd/in/WEWORK.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_30101_WEWORK_2025_2026_A_16542982_31072026164554.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:KINGFA",
+    "file": "logos-hd/in/KINGFA.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_31637_KINGFA_2025_2026_A_19570123_06092026000305.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:BLS",
+    "file": "logos-hd/in/BLS.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_32031_BLS_2025_2026_U_24007853_11092026191456.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:AARTIPHARM",
+    "file": "logos-hd/in/AARTIPHARM.svg",
+    "kind": "hd",
+    "source": "https://www.aartipharmalabs.com/assets/images/logo.svg",
+    "sourceType": "official-site",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:SANOFICONR",
+    "file": "logos-hd/in/SANOFICONR.svg",
+    "kind": "hd",
+    "source": "https://www.sanofi.com/en",
+    "sourceType": "official-site",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:INTELLECT",
+    "file": "logos-hd/in/INTELLECT.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_29583_INTELLECT_2025_2026_A_18009306_06072026171928.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:GENUSPOWER",
+    "file": "logos-hd/in/GENUSPOWER.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_31250_GENUSPOWER_2025_2026_A_7862122_03092026171428.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:THYROCARE",
+    "file": "logos-hd/in/THYROCARE.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_29346_THYROCARE_2025_2026_A_17664323_04062026215131.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:WAAREERTL",
+    "file": "logos-hd/in/WAAREERTL.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_30942_WAAREERTL_2025_2026_A_8829723_31082026212354.pdf",
+    "sourceType": "official-document",
+    "reason": "hd"
+  }
+]

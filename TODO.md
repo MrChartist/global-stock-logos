@@ -1,10 +1,22 @@
 # TODO
 
-Open work, in the order to do it. Tick a box when it is done and merged. Last updated 2026-10-22.
+Open work, in the order to do it. Tick a box when it is done and merged. Last updated 2026-10-24.
+
+## 0. Start here (hand-over of 2026-10-24)
+
+Everything that was reviewed is merged on `main`. Material from the agent rounds (the briefs, the merge tool, the PDF vector extractor, unfinished job lists and unreviewed drafts) is in [`work/`](./work/README.md).
+
+- [ ] **India HD logos, batches 5–8** (300 companies, lists in `work/jobs/india-hd-5..8.tsv`). These jobs were stopped before review. 107 draft files are in `work/unreviewed/hd/`; each needs a review under `work/briefs/VERIFY.md` before merging. Batch 9 is done: 54 HD logos were merged after review removed CROMPTON (old design) and PARKHOSPS (icon cut off). `logos-hd/in/MAHLIFE.svg` must stay out: it is the pre-2021 design.
+- [ ] **India officers, ranks 1,000–2,000** (mostly BSE-only companies with no NSE governance filing). Lists: `work/jobs/india-officers-3/4.tsv`; partial unreviewed output is in `work/unreviewed/india-officers-3-profiles.json`.
+- [ ] Gland Pharma: the new CEO, Deepak Sapra, starts on 16 Nov 2026. Set it on that date, with the filing as source.
+- [ ] IN:ICICIPRULI: retire it once IN:ICICILIFE carries market data. Its facts and ISIN already sit on ICICILIFE.
+- [x] 16 Indian duplicate pairs are now aliases of one key each: M_M→MM, M_MFIN, J_KBANK, GVT_D, ARE_M, GMRP_UI, IL_FSENGG, IL_FSTRANS, S_SPOWER, SURANAT_P, and the REIT/InvIT `.RR` lines of BAGMANE, BIRET, EMBASSY, KRT, MINDSPACE and NXST. Their facts were moved to the main line.
+- [x] BIRET: employees corrected from 250,000 (Brookfield's global headcount) to 153 permanent employees of the REIT group, per the FY2025-26 annual report.
+- Facts checked on October 24, with no errors found: India top-500 gaps (6 chairs, 18 websites, 41 founding years, 6 headquarters).
 
 ## 1. Settings only the owner can change (GitHub)
 
-- [ ] Delete the old merged branch `claude/affectionate-wozniak-viz7s4` (`git push origin --delete claude/affectionate-wozniak-viz7s4`), then turn on **Settings, General, Automatically delete head branches**.
+- [ ] Turn on **Settings, General, Automatically delete head branches** (the old merged branches were deleted on 2026-10-24).
 - [ ] Update the repository description. It still says "1,180+ equities"; it should say 75,000+ listed companies in 68 markets, with a static JSON API.
 - [ ] Enable GitHub Pages (deploy from `main`, root). The catalogue page, `index.html`, is ready to serve; `.nojekyll` is in place.
 - [ ] Watch the first runs of the three workflows. None has run yet except the old daily sync: `ci.yml` (including the page test and Lighthouse job, which fails below 95), `daily-sync.yml`, `monthly-refresh.yml`.
@@ -45,7 +57,7 @@ How to add a source: one adapter file per source in `scripts/adapters/`, followi
 
 - [ ] HONGKONG:2378 Prudential: the chairman 范智廉 is stale; HKEX's director list of 2026-06-01 names Douglas Flint as Chair (link the filing, then set it).
 - [x] **Officers outside India and the US** (October 24): CEO and chair (plus website, founding year, headquarters where checked) for the largest companies of the UK (145), Japan (116), Continental Europe (153 lines), China and Hong Kong (108), Canada and Australia (149 lines), Taiwan and South-East Asia (132) and Latin America and the Middle East (107), each value with a source and reviewed. Gaps are companies whose sites block automated access (e.g. Iberdrola, BNP Paribas, Mitsubishi Corp, Panasonic, Saudi National Bank, QNB).
-- [ ] **Re-key lines whose ticker changed** (needs a pipeline change; the old line now carries the new name): IN:ICICIPRULI → IN:ICICILIFE (ICICI Life Insurance, 2026-10-23; logo may be pre-rename), US:VTAK → US:VJET (Flyte Aviation, 2026-10-05; new logo needed). Key collisions: US:TPC is AT&T's Series C preferred (T-PC) but TPC trades as Tutor Perini; US:INNPF is Summit Hotel's Series F preferred (INN-PF) but INNPF is InnoCan Pharma; US:TPA is AT&T Series A (T-PA). IN:TIKONA needs its ISIN (INE534A01028). 17 Indian pairs are the same symbol written two ways (M&M as MM and M_M, GVT&D) or REIT ".RR"/partly-paid duplicates: merge them into one key each.
+- [ ] **Re-key lines whose ticker changed** (needs a pipeline change; the old line now carries the new name): IN:ICICIPRULI → IN:ICICILIFE (ICICI Life Insurance, 2026-10-23; logo may be pre-rename), US:VTAK → US:VJET (Flyte Aviation, 2026-10-05; new logo needed). Key collisions: US:TPC is AT&T's Series C preferred (T-PC) but TPC trades as Tutor Perini; US:INNPF is Summit Hotel's Series F preferred (INN-PF) but INNPF is InnoCan Pharma; US:TPA is AT&T Series A (T-PA). IN:TIKONA needs its ISIN (INE534A01028). The 16 Indian same-symbol duplicates were aliased on October 24 (see section 0).
 ## 3c. Corporate actions to apply (checked 2026-10-22)
 
 - [x] **Delistings** (October 23): US:WBD (acquired by Skydance, 2026-10-06), US:EA (taken private, 2026-08-04) and US:PSKY (renamed Skydance Corporation, now US:SKYD on NYSE) are marked `listing.status: "delisted"` with their successor; SKYD has the Skydance logo. The catalogue now supports this for any company (`status`, `delistedAt`, `successor` in `curated/overrides.json`).

@@ -1,0 +1,1505 @@
+{
+  "IN:JASH": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30982_JASH_2025_2026_A_18469880_01092026152206.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703618_29072026115425_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30982_JASH_2025_2026_A_18469880_01092026152206.pdf"
+    },
+    "ceo": "Pratik Patel",
+    "chairman": "Pratik Patel",
+    "website": "https://www.jashindia.com"
+  },
+  "IN:RTNPOWER": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1743334_21102026061713_WEB.xml",
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_32148_RTNPOWER_2025_2026_A_7060696_06102026113909.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_32148_RTNPOWER_2025_2026_A_7060696_06102026113909.pdf"
+    },
+    "chairman": "Rajiv Rattan",
+    "ceo": "Rajiv Rattan",
+    "website": "https://www.rattanindiapower.com"
+  },
+  "IN:PACEDIGITK": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30766_PACEDIGITK_2025_2026_A_16948828_27082026234734.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1716416_20082026051401_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30766_PACEDIGITK_2025_2026_A_16948828_27082026234734.pdf"
+    },
+    "ceo": "Venugopal Rao Maddisetty",
+    "chairman": "Venugopal Rao Maddisetty",
+    "website": "https://www.pacedigitek.com"
+  },
+  "IN:STEELCAS": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29595_STEELCAS_2025_2026_A_12521172_06072026192948.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1745029_23102026081315_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29595_STEELCAS_2025_2026_A_12521172_06072026192948.pdf"
+    },
+    "ceo": "Chetan M Tamboli",
+    "chairman": "Chetan M Tamboli",
+    "website": "https://www.steelcast.net"
+  },
+  "IN:STYRENIX": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30211_STYRENIX_2025_2026_A_14027946_05082026183701.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1705112_30072026040341_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30211_STYRENIX_2025_2026_A_14027946_05082026183701.pdf"
+    },
+    "ceo": "Rahul Rakesh Agrawal",
+    "chairman": "Rakesh Shiwebhagwan Agrawal",
+    "website": "https://www.styrenix.com"
+  },
+  "IN:TCPLPACK": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29897_TCPLPACK_2025_2026_A_15995384_20072026110312.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1740135_16102026051406_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29897_TCPLPACK_2025_2026_A_15995384_20072026110312.pdf"
+    },
+    "ceo": "Saket Kanoria",
+    "chairman": "Saket Kanoria",
+    "website": "https://www.tcpl.in"
+  },
+  "IN:INDOTECH": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30731_INDOTECH_2025_2026_A_6071822_27082026181338.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1737029_13102026045338_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30731_INDOTECH_2025_2026_A_6071822_27082026181338.pdf"
+    },
+    "ceo": "Manohar Purushothaman",
+    "chairman": "Ajay Kumar Dhagat",
+    "website": "https://www.indo-tech.com"
+  },
+  "IN:KIRIINDUS": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31258_KIRIINDUS_2025_2026_A_7450108_03092026173121.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1690900_11072026122352_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31258_KIRIINDUS_2025_2026_A_7450108_03092026173121.pdf"
+    },
+    "ceo": "Manish Kiri",
+    "chairman": "Manish Kiri",
+    "website": "https://www.kiriindustries.com"
+  },
+  "IN:PNCINFRA": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31677_PNCINFRA_2025_2026_A_8159096_07092026144000.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1717753_25082026055050_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31677_PNCINFRA_2025_2026_A_8159096_07092026144000.pdf"
+    },
+    "ceo": "Pradeep Kumar Jain",
+    "chairman": "Pradeep Kumar Jain",
+    "website": "https://www.pncinfratech.com"
+  },
+  "IN:CMSINFO": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30753_CMSINFO_2025_2026_A_8261846_27082026202233.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1742594_21102026124122_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30753_CMSINFO_2025_2026_A_8261846_27082026202233.pdf"
+    },
+    "ceo": "Rajiv Kaul",
+    "chairman": "Shyamala Gopinath",
+    "website": "https://www.cms.com"
+  },
+  "IN:ALOKINDS": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703263_28072026060840_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29475_ALOKINDS_2025_2026_A_21005951_29062026122850.pdf"
+    },
+    "chairman": "Achuthan Siddharth",
+    "website": "https://www.alokind.com"
+  },
+  "IN:RTNINDIA": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1742618_21102026125534_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_32145_RTNINDIA_2025_2026_A_12104074_06102026112911.pdf"
+    },
+    "chairman": "Rajiv Rattan",
+    "website": "https://www.rattanindia.com"
+  },
+  "IN:WELSPLSOL": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1659517_27042026054356_WEB.xml",
+      "ceo": "https://www.welspunspecialty.com/about-us.php",
+      "website": "https://www.welspunspecialty.com/about-us.php"
+    },
+    "chairman": "Balkrishan Gopiram Goenka",
+    "ceo": "Anuj Burakia",
+    "website": "https://www.welspunspecialty.com"
+  },
+  "IN:DIVGIITTS": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1742370_20102026073805_WEB.xml"
+    },
+    "chairman": "Praveen Purushottam Kadle"
+  },
+  "IN:JKIL": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1744138_22102026061819_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30723_JKIL_2025_2026_A_6763816_27082026171759.pdf"
+    },
+    "chairman": "Jagdishkumar M. Gupta",
+    "website": "https://www.jkumar.com"
+  },
+  "IN:BAJAJELEC": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29705_BAJAJELEC_2025_2026_A_5023392_10072026152552.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703532_28072026113718_WEB.xml"
+    },
+    "ceo": "Sanjay Sachdeva",
+    "chairman": "Shekhar Bajaj"
+  },
+  "IN:SOLARA": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30611_SOLARA_2025_2026_A_6241924_25082026182726.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1704922_30072026015332_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30611_SOLARA_2025_2026_A_6241924_25082026182726.pdf"
+    },
+    "ceo": "Sandeep Shashikantha Rao",
+    "chairman": "Ramakrishnan Rajagopal",
+    "website": "https://www.solara.co.in"
+  },
+  "IN:INDSWFTLAB": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1705655_30072026081526_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31616_INDSWFTLAB_2025_2026_A_20816395_05092026205233.pdf"
+    },
+    "chairman": "Navrattan Munjal",
+    "website": "https://www.indswiftgroup.com"
+  },
+  "IN:SAMHI": {
+    "_sources": {
+      "ceo": "https://samhi.co.in/leadership/",
+      "website": "https://samhi.co.in/leadership/",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1745015_23102026081111_WEB.xml"
+    },
+    "ceo": "Ashish Jakhanwala",
+    "website": "https://samhi.co.in",
+    "chairman": "Ashish Jakhanwala"
+  },
+  "IN:VAIBHAVGBL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29761_VAIBHAVGBL_2025_2026_A_14062946_13072026180322.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1740186_16102026053544_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29761_VAIBHAVGBL_2025_2026_A_14062946_13072026180322.pdf"
+    },
+    "ceo": "Sunil Agrawal",
+    "chairman": "Harsh Bahadur",
+    "website": "https://www.vaibhavglobal.com"
+  },
+  "IN:KESAR": {
+    "_sources": {
+      "ceo": "https://kesarlands.com/about-us/",
+      "chairman": "https://kesarlands.com/about-us/",
+      "website": "https://kesarlands.com/about-us/"
+    },
+    "ceo": "Sachin Gopal Gupta",
+    "chairman": "Yash Gopal Gupta",
+    "website": "https://kesarlands.com"
+  },
+  "IN:CMLL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31664_CMLL_2025_2026_A_6628086_07092026121019.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1704965_30072026022413_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31664_CMLL_2025_2026_A_6628086_07092026121019.pdf"
+    },
+    "ceo": "Mohit Chadda",
+    "chairman": "Mohit Chadda",
+    "website": "https://www.cmll.in"
+  },
+  "IN:VSTIND": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29584_VSTIND_2025_2026_A_5377026_06072026172655.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1736759_13102026015233_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29584_VSTIND_2025_2026_A_5377026_06072026172655.pdf"
+    },
+    "ceo": "Piyush Srivastava",
+    "chairman": "Naresh Kumar Sethi",
+    "website": "https://www.vsthyd.com"
+  },
+  "IN:SANDHAR": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30620_SANDHAR_2025_2026_A_8751164_25082026191557.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1704823_30072026123415_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30620_SANDHAR_2025_2026_A_8751164_25082026191557.pdf"
+    },
+    "ceo": "Jayant Davar",
+    "chairman": "Jayant Davar",
+    "website": "https://www.sandhargroup.com"
+  },
+  "IN:JTLIND": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31139_JTLIND_2025_2026_A_10221796_02092026183521.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1692574_14072026063631_WEB.xml"
+    },
+    "ceo": "Madan Mohan",
+    "chairman": "Sukhdev Raj Sharma"
+  },
+  "IN:AURIONPRO": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31479_AURIONPRO_2025_2026_A_26673886_05092026122608.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1702687_28072026122040_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31479_AURIONPRO_2025_2026_A_26673886_05092026122608.pdf"
+    },
+    "ceo": "Ashish Rai",
+    "chairman": "Paresh Zaveri",
+    "website": "https://www.aurionpro.com"
+  },
+  "IN:BOROLTD": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1743818_22102026024204_WEB.xml",
+      "ceo": "https://nsearchives.nseindia.com/corporate/BOROSIL_20052026203337_SEINTIMATION__1_.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30873_BOROLTD_2025_2026_A_8705473_31082026154052.pdf"
+    },
+    "chairman": "Pradeep Kumar Kheruka",
+    "ceo": "Rituraj Sharma",
+    "website": "https://www.borosil.com"
+  },
+  "IN:NITINSPIN": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30581_NITINSPIN_2025_2026_A_6586616_25082026122655.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1734339_08102026042343_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30581_NITINSPIN_2025_2026_A_6586616_25082026122655.pdf"
+    },
+    "ceo": "Dinesh Nolkha",
+    "chairman": "Dinesh Nolkha",
+    "website": "https://www.nitinspinners.com"
+  },
+  "IN:ASHIKAG": {
+    "_sources": {
+      "ceo": "https://www.ashikagroup.com/accl/",
+      "chairman": "https://www.ashikagroup.com/accl/",
+      "website": "https://www.ashikagroup.com/accl/"
+    },
+    "ceo": "Chirag Jain",
+    "chairman": "Pawan Jain",
+    "website": "https://www.ashikagroup.com"
+  },
+  "IN:TVSSRICHAK": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31010_TVSSRICHAK_2025_2026_A_3840479_01092026174558.pdf"
+    },
+    "ceo": "Arvind Singh"
+  },
+  "IN:YASHHV": {
+    "_sources": {
+      "ceo": "https://www.yashhv.com/about/our-team",
+      "chairman": "https://www.yashhv.com/about/our-team",
+      "website": "https://www.yashhv.com/about/our-team"
+    },
+    "ceo": "Keyur Shah",
+    "chairman": "Keyur Shah",
+    "website": "https://www.yashhv.com"
+  },
+  "IN:MIDWESTLTD": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31655_MIDWESTLTD_2025_2026_A_10733787_07092026003501.pdf"
+    },
+    "ceo": "Kollareddy Ramachandra"
+  },
+  "IN:BEPL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29461_BEPL_2025_2026_A_2209754_26062026174640.pdf"
+    },
+    "ceo": "Babulal Mishrimal Bhansali"
+  },
+  "IN:ADVENZYMES": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29655_ADVENZYMES_2025_2026_A_17554597_08072026162711.pdf"
+    },
+    "ceo": "Mukund Kabra"
+  },
+  "IN:JAYKAY": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31838_JAYKAY_2025_2026_A_12757396_08092026110706.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31838_JAYKAY_2025_2026_A_12757396_08092026110706.pdf"
+    },
+    "ceo": "Abhishek Singhania",
+    "website": "https://www.jaykayenterprises.com"
+  },
+  "IN:WINDMACHIN": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/corporate/WINDMACHIN_05102026191022_Covering_Letter_for_Appointment_of_WTD_Mr_MR.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31149_WINDMACHIN_2025_2026_A_32282062_02092026191454.pdf"
+    },
+    "ceo": "Mohan Ramachandran",
+    "website": "https://www.windsormachines.com",
+    "_corrects": {
+      "ceo": "Vinay Girdhar Bansod"
+    }
+  },
+  "IN:CHEMPLASTS": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29784_CHEMPLASTS_2025_2026_A_6188554_14072026163357.pdf"
+    },
+    "ceo": "S. Ganeshkumar"
+  },
+  "IN:BUILDPRO": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1744428_23102026125316_WEB.xml"
+    },
+    "chairman": "B Jayaraman"
+  },
+  "IN:BONDADA": {
+    "_sources": {
+      "ceo": "https://www.pv-magazine-india.com/press-releases/bondada-engineering-limited-delivers-robust-fy26-performance-with-81-revenue-growth-and-positive-operating-cash-flow/",
+      "chairman": "https://www.pv-magazine-india.com/press-releases/bondada-engineering-limited-delivers-robust-fy26-performance-with-81-revenue-growth-and-positive-operating-cash-flow/"
+    },
+    "ceo": "Bondada Raghavendra Rao",
+    "chairman": "Bondada Raghavendra Rao"
+  },
+  "IN:MUTHOOTMF": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29814_MUTHOOTMF_2025_2026_A_16644001_15072026205306.pdf"
+    },
+    "ceo": "Sadaf Sayeed"
+  },
+  "IN:ASHOKA": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_32087_ASHOKA_2025_2026_U_13065693_26092026160724.pdf"
+    },
+    "ceo": "Satish Parakh"
+  },
+  "IN:KKCL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31097_KKCL_2025_2026_A_8848803_02092026154203.pdf"
+    },
+    "ceo": "Kewalchand Pukhraj Jain"
+  },
+  "IN:KLBRENG_B": {
+    "_sources": {
+      "ceo": "https://www.kilburnengg.com/investor-relations/board-of-directors/",
+      "chairman": "https://www.kilburnengg.com/investor-relations/board-of-directors/",
+      "website": "https://www.kilburnengg.com/investor-relations/board-of-directors/"
+    },
+    "ceo": "Ranjit Pamo Lala",
+    "chairman": "Amritanshu Khaitan",
+    "website": "https://www.kilburnengg.com"
+  },
+  "IN:BLSE": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703383_28072026070736_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30507_BLSE_2025_2026_A_19949989_21082026190358.pdf"
+    },
+    "chairman": "Shikhar Aggarwal",
+    "website": "https://www.blseservices.com"
+  },
+  "IN:CIANAGRO": {
+    "_sources": {
+      "ceo": "https://www.cianindustries.com/leadership/",
+      "website": "https://www.cianindustries.com/leadership/"
+    },
+    "ceo": "Nikhil Gadkari",
+    "website": "https://www.cianindustries.com"
+  },
+  "IN:KMCSHIL": {
+    "_sources": {
+      "ceo": "https://www.kauveryhospital.com/Investors/",
+      "chairman": "https://www.kauveryhospital.com/Investors/",
+      "website": "https://www.kauveryhospital.com/Investors/"
+    },
+    "ceo": "S. Manivannan",
+    "chairman": "S. Chandrakumar",
+    "website": "https://www.kauveryhospital.com"
+  },
+  "IN:NILKAMAL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29419_NILKAMAL_2025_2026_A_2328198_22062026114946.pdf"
+    },
+    "ceo": "Hiten V. Parekh"
+  },
+  "IN:SBC": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31577_SBC_2025_2026_A_10954878_05092026181801.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31577_SBC_2025_2026_A_10954878_05092026181801.pdf"
+    },
+    "ceo": "Govind Ji Gupta",
+    "website": "https://www.sbcexportslimited.com"
+  },
+  "IN:GANDHAR": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30438_GANDHAR_2025_2026_A_10163810_19082026202450.pdf"
+    },
+    "ceo": "Ramesh Babulal Parekh"
+  },
+  "IN:NAVNETEDUL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_28399_NAVNETEDUL_2024_2025_A_12540984_04092025132740.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_28399_NAVNETEDUL_2024_2025_A_12540984_04092025132740.pdf"
+    },
+    "ceo": "Gnanesh D. Gala",
+    "website": "https://www.navneet.com"
+  },
+  "IN:MONOLITH": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/SME_AR_32103_MONOLITH_2025_2026_A_26216422_05102026181231.pdf",
+      "chairman": "https://nsearchives.nseindia.com/annual_reports/SME_AR_32103_MONOLITH_2025_2026_A_26216422_05102026181231.pdf"
+    },
+    "ceo": "Harsh Tekriwal",
+    "chairman": "Prabhat Tekriwal"
+  },
+  "IN:MANGLMCEM": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30060_MANGLMCEM_2025_2026_A_9907055_29072026214941.pdf"
+    },
+    "ceo": "Anshuman Vikram Jalan"
+  },
+  "IN:AMIC": {
+    "_sources": {
+      "ceo": "https://www.amicforgings.com/bord_of_directors.html",
+      "website": "https://www.amicforgings.com/bord_of_directors.html"
+    },
+    "ceo": "Girdhari Lal Chamaria",
+    "website": "https://www.amicforgings.com"
+  },
+  "IN:NIITMTS": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_32191_NIITMTS_2025_2026_A_20791814_07102026110056.pdf"
+    },
+    "ceo": "Sapnesh Kumar Lalla"
+  },
+  "IN:MUFIN": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31605_MUFIN_2025_2026_A_15794128_05092026194837.pdf"
+    },
+    "ceo": "Kapil Garg"
+  },
+  "IN:GATEWAY": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31241_GATEWAY_2025_2026_A_14449948_03092026170033.pdf"
+    },
+    "ceo": "Prem Kishan Dass Gupta"
+  },
+  "IN:TALBROAUTO": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30834_TALBROAUTO_2025_2026_A_6504479_29082026182127.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30834_TALBROAUTO_2025_2026_A_6504479_29082026182127.pdf"
+    },
+    "ceo": "Ashish Gupta",
+    "website": "https://www.talbros.com"
+  },
+  "IN:AUTOAXLES": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29891_AUTOAXLES_2025_2026_A_16112201_18072026164730.pdf"
+    },
+    "ceo": "Nagaraja Gargeshwari"
+  },
+  "IN:GNA": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29358_GNA_2025_2026_A_11082331_06062026130708.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29358_GNA_2025_2026_A_11082331_06062026130708.pdf"
+    },
+    "ceo": "Ranbir Singh",
+    "website": "https://www.gnaaxles.in"
+  },
+  "IN:MUKANDLTD": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29912_MUKANDLTD_2025_2026_A_8882928_20072026190039.pdf"
+    },
+    "ceo": "Niraj Bajaj"
+  },
+  "IN:TASTYBITE": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29956_TASTYBITE_2025_2026_A_10266747_22072026230148.pdf"
+    },
+    "ceo": "Dilen Gandhi"
+  },
+  "IN:SPAL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30797_SPAL_2025_2026_A_4033266_28082026183710.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30797_SPAL_2025_2026_A_4033266_28082026183710.pdf"
+    },
+    "ceo": "P. Sundararajan",
+    "website": "https://www.s-p-apparels.com"
+  },
+  "IN:VEEDOL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30108_VEEDOL_2025_2026_A_9895516_31072026190142.pdf"
+    },
+    "ceo": "Rajendra Nath Ghosal"
+  },
+  "IN:SAKAR": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30702_SAKAR_2025_2026_A_18392815_27082026132704.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30702_SAKAR_2025_2026_A_18392815_27082026132704.pdf"
+    },
+    "ceo": "Sanjay S Shah",
+    "website": "https://www.sakarhealthcare.com"
+  },
+  "IN:AJMERA": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30650_AJMERA_2025_2026_A_7055250_26082026150456.pdf"
+    },
+    "ceo": "Rajnikant Shamalji Ajmera"
+  },
+  "IN:INDOCO": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30481_INDOCO_2025_2026_A_11792035_21082026144635.pdf"
+    },
+    "ceo": "Aditi Panandikar"
+  },
+  "IN:OBSCP": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1701751_27072026113657_WEB.xml"
+    },
+    "chairman": "Asha Narang"
+  },
+  "IN:TIL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29554_TIL_2025_2026_A_5947184_03072026144528.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29554_TIL_2025_2026_A_5947184_03072026144528.pdf"
+    },
+    "ceo": "Sunil Kumar Chaturvedi",
+    "website": "https://www.tilindia.in"
+  },
+  "IN:EVEREADY": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29844_EVEREADY_2025_2026_A_12565643_17072026114104.pdf"
+    },
+    "ceo": "Anirban Banerjee"
+  },
+  "IN:BETA": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31535_BETA_2025_2026_A_10632227_05092026162411.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31535_BETA_2025_2026_A_10632227_05092026162411.pdf"
+    },
+    "ceo": "Rahul Batra",
+    "website": "https://www.betadrugslimited.com"
+  },
+  "IN:APOLLOPIPE": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/corporate/APOLLOPIPE_07052026153150_OutcomeBMAPL07052026signed.pdf"
+    },
+    "ceo": "Sameer Gupta"
+  },
+  "IN:WINDLAS": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29524_WINDLAS_2025_2026_A_11157243_01072026193114.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29524_WINDLAS_2025_2026_A_11157243_01072026193114.pdf"
+    },
+    "ceo": "Hitesh Windlass",
+    "website": "https://www.windlas.com"
+  },
+  "IN:ZELIO": {
+    "_sources": {
+      "ceo": "https://www.zelioebikes.com/our-management/",
+      "chairman": "https://www.zelioebikes.com/our-management/",
+      "website": "https://www.zelioebikes.com/our-management/"
+    },
+    "ceo": "Kunal Arya",
+    "chairman": "Niraj Arya",
+    "website": "https://www.zelioebikes.com"
+  },
+  "IN:POKARNA": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29516_POKARNA_2025_2026_A_8122238_01072026153402.pdf"
+    },
+    "ceo": "Gautam Chand Jain"
+  },
+  "IN:RANEHOLDIN": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29884_RANEHOLDIN_2025_2026_A_6449934_18072026090038.pdf"
+    },
+    "ceo": "Ganesh Lakshminarayan"
+  },
+  "IN:PRAKASH": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31695_PRAKASH_2025_2026_A_3947868_07092026164933.pdf"
+    },
+    "ceo": "Vikram Agarwal"
+  },
+  "IN:ALPEXSOLAR": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/SME_AR_31691_ALPEXSOLAR_2025_2026_A_9447626_07092026164001.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/SME_AR_31691_ALPEXSOLAR_2025_2026_A_9447626_07092026164001.pdf"
+    },
+    "ceo": "Ashwani Sehgal",
+    "website": "https://www.alpexsolar.com"
+  },
+  "IN:VERANDA": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30081_VERANDA_2025_2026_U_10613623_30072026202943.pdf"
+    },
+    "ceo": "Kalpathi S Suresh"
+  },
+  "IN:ANONDITA": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/SME_AR_32081_ANONDITA_2025_2026_U_6410215_25092026183608.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/SME_AR_32081_ANONDITA_2025_2026_U_6410215_25092026183608.pdf"
+    },
+    "ceo": "Anupam Ghosh",
+    "website": "https://www.anonditamedicare.com"
+  },
+  "IN:MOTISONS": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31412_MOTISONS_2025_2026_A_11547456_04092026182211.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31412_MOTISONS_2025_2026_A_11547456_04092026182211.pdf"
+    },
+    "ceo": "Sanjay Chhabra",
+    "website": "https://www.motisonsjewellers.com"
+  },
+  "IN:MODINSU": {
+    "_sources": {
+      "ceo": "https://www.moderninsulators.com/bod-new/",
+      "chairman": "https://www.moderninsulators.com/bod-new/",
+      "website": "https://www.moderninsulators.com/bod-new/"
+    },
+    "ceo": "Sachin Ranka",
+    "chairman": "Sachin Ranka",
+    "website": "https://www.moderninsulators.com"
+  },
+  "IN:SIMPLEXINF": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30817_SIMPLEXINF_2025_2026_A_4809049_29082026144849.pdf"
+    },
+    "website": "https://www.simplexinfra.com"
+  },
+  "IN:DELTACORP": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30400_DELTACORP_2025_2026_A_13583940_18082026130218.pdf"
+    },
+    "ceo": "Ashish Kapadia"
+  },
+  "IN:ONEPOINT": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31152_ONEPOINT_2025_2026_A_11269346_02092026192617.pdf"
+    },
+    "website": "https://www.1point1.com"
+  },
+  "IN:MAHASTEEL": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30857_MAHASTEEL_2025_2026_A_6252295_31082026125840.pdf"
+    },
+    "website": "https://www.mahamayagroup.in"
+  },
+  "IN:KODYTECH": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/SME_AR_31908_KODYTECH_2025_2026_A_156910731_08092026184413.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/SME_AR_31908_KODYTECH_2025_2026_A_156910731_08092026184413.pdf"
+    },
+    "ceo": "Sanjaykumar Kidecha",
+    "website": "https://www.kodytechnolab.com"
+  },
+  "IN:GHVINFRA": {
+    "_sources": {
+      "ceo": "https://ghvinfra.com/key-management-personnel/",
+      "website": "https://ghvinfra.com/directors/"
+    },
+    "ceo": "Ajay Hans",
+    "website": "https://ghvinfra.com"
+  },
+  "IN:ALGOQUANT": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31239_ALGOQUANT_2025_2026_A_24264723_03092026165911.pdf"
+    },
+    "website": "https://www.algoquantfintech.com"
+  },
+  "IN:DANISH": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/SME_AR_32198_DANISH_2025_2026_A_4141276_07102026152650.pdf",
+      "chairman": "https://nsearchives.nseindia.com/annual_reports/SME_AR_32198_DANISH_2025_2026_A_4141276_07102026152650.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/SME_AR_32198_DANISH_2025_2026_A_4141276_07102026152650.pdf"
+    },
+    "ceo": "Shivam Talwar",
+    "chairman": "Dinesh Talwar",
+    "website": "https://www.danish.co.in"
+  },
+  "IN:MSPL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31764_MSPL_2025_2026_A_8707133_07092026191123.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31764_MSPL_2025_2026_A_8707133_07092026191123.pdf"
+    },
+    "ceo": "Saket Agrawal",
+    "website": "https://www.mspsteel.com"
+  },
+  "IN:UTSSAV": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/SME_AR_30872_UTSSAV_2025_2026_A_5334735_31082026153838.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/SME_AR_30872_UTSSAV_2025_2026_A_5334735_31082026153838.pdf"
+    },
+    "ceo": "Pankaj Kumar Jagawat",
+    "website": "https://www.utssavjewels.com"
+  },
+  "IN:VIDHIING": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30883_VIDHIING_2025_2026_A_30280349_31082026161816.pdf"
+    },
+    "ceo": "Bipin Madhavji Manek"
+  },
+  "IN:CAMLINFINE": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29888_CAMLINFINE_2025_2026_A_20915394_18072026162219.pdf"
+    },
+    "ceo": "Ashish Dandekar"
+  },
+  "IN:VINYAS": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/SME_AR_30897_VINYAS_2025_2026_A_4018107_31082026173022.pdf",
+      "chairman": "https://nsearchives.nseindia.com/annual_reports/SME_AR_30897_VINYAS_2025_2026_A_4018107_31082026173022.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/SME_AR_30897_VINYAS_2025_2026_A_4018107_31082026173022.pdf"
+    },
+    "ceo": "Narendra Narayanan",
+    "chairman": "Narendra Narayanan",
+    "website": "https://www.vinyasit.com"
+  },
+  "IN:HGS": {
+    "_sources": {
+      "ceo": "https://hgs.com/about-us/leadership/"
+    },
+    "ceo": "Venkatesh Korla"
+  },
+  "IN:NDRAUTO": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29535_NDRAUTO_2025_2026_A_1713515_02072026171048.pdf"
+    },
+    "website": "https://www.ndrauto.com"
+  },
+  "IN:TINNARUBR": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30557_TINNARUBR_2025_2026_A_23395184_24082026174526.pdf"
+    },
+    "ceo": "Bhupinder Kumar Sekhri"
+  },
+  "IN:INDOKEM": {
+    "_sources": {
+      "ceo": "https://www.indokem.co.in/about-us.php",
+      "chairman": "https://www.indokem.co.in/about-us.php",
+      "website": "https://www.indokem.co.in/about-us.php"
+    },
+    "ceo": "Mahendra Khatau",
+    "chairman": "Mahendra Khatau",
+    "website": "https://www.indokem.co.in"
+  },
+  "IN:HATHWAY": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29985_HATHWAY_2025_2026_A_8166107_24072026172219.pdf"
+    },
+    "ceo": "Tavinderjit Singh Panesar"
+  },
+  "IN:ACCELYA": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_32093_ACCELYA_2025_2026_A_7030824_30092026115537.pdf"
+    },
+    "ceo": "Gurudas Shenoy"
+  },
+  "IN:TITANBIO": {
+    "_sources": {
+      "chairman": "https://titanbiotechltd.com/company-profile/"
+    },
+    "chairman": "Rohit Jain"
+  },
+  "IN:BFINVEST": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29607_BFINVEST_2025_2026_A_3531699_07072026115632.pdf"
+    },
+    "ceo": "Akshay Jagtap"
+  },
+  "IN:GRMOVER": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31643_GRMOVER_2025_2026_A_18011979_06092026151133.pdf"
+    },
+    "ceo": "Atul Garg"
+  },
+  "IN:ACCENTMIC": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/SME_AR_29644_ACCENTMIC_2025_2026_A_5826821_08072026112035.pdf",
+      "chairman": "https://nsearchives.nseindia.com/annual_reports/SME_AR_29644_ACCENTMIC_2025_2026_A_5826821_08072026112035.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/SME_AR_29644_ACCENTMIC_2025_2026_A_5826821_08072026112035.pdf"
+    },
+    "ceo": "Ghanshyam Arjanbhai Patel",
+    "chairman": "Vasant Vadilal Patel",
+    "website": "https://www.accentmicrocell.com"
+  },
+  "IN:SHREEPUSHK": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31439_SHREEPUSHK_2025_2026_A_14231010_04092026195752.pdf"
+    },
+    "ceo": "Punit Gopikishan Makharia"
+  },
+  "IN:MODISONLTD": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29483_MODISONLTD_2025_2026_A_1588041_29062026165429.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29483_MODISONLTD_2025_2026_A_1588041_29062026165429.pdf"
+    },
+    "ceo": "Murlidhar Narayan Nikam",
+    "website": "https://www.modisonltd.com"
+  },
+  "IN:STUDDS": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30313_STUDDS_2025_2026_A_12605974_12082026203127.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30313_STUDDS_2025_2026_A_12605974_12082026203127.pdf"
+    },
+    "ceo": "Madhu Bhushan Khurana",
+    "website": "https://www.studds.com"
+  },
+  "IN:SERVOTECH": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31110_SERVOTECH_2025_2026_A_20307146_02092026164654.pdf"
+    },
+    "ceo": "Raman Bhatia"
+  },
+  "IN:VIVIDEL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/SME_AR_30168_VIVIDEL_2025_2026_A_4771671_04082026113830.pdf",
+      "chairman": "https://nsearchives.nseindia.com/annual_reports/SME_AR_30168_VIVIDEL_2025_2026_A_4771671_04082026113830.pdf"
+    },
+    "ceo": "Sameer Vishvanath Attavar",
+    "chairman": "Sameer Vishvanath Attavar"
+  },
+  "IN:YATRA": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30523_YATRA_2025_2026_A_8381336_24082026113054.pdf"
+    },
+    "ceo": "Siddhartha Gupta"
+  },
+  "IN:QLINE": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/SME_AR_31716_QLINE_2025_2026_A_26003711_07092026174445.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/SME_AR_31716_QLINE_2025_2026_A_26003711_07092026174445.pdf"
+    },
+    "ceo": "Saurabh Garg",
+    "website": "https://www.qlinebiotech.com"
+  },
+  "IN:SESHAPAPER": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29277_SESHAPAPER_2025_2026_A_5488331_26052026173343.pdf"
+    },
+    "website": "https://www.spbltd.com"
+  },
+  "IN:GPTINFRA": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29698_GPTINFRA_2025_2026_A_7948140_10072026125817.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29698_GPTINFRA_2025_2026_A_7948140_10072026125817.pdf"
+    },
+    "ceo": "Shree Gopal Tantia",
+    "website": "https://www.gptinfra.in"
+  },
+  "IN:ARFIN": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30565_ARFIN_2025_2026_A_14612487_24082026190119.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1743296_21102026061050_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30565_ARFIN_2025_2026_A_14612487_24082026190119.pdf"
+    },
+    "ceo": "Jatin M. Shah",
+    "chairman": "Mahendrakumar Shah",
+    "website": "https://www.arfin.co.in"
+  },
+  "IN:INOVSYNTH": {
+    "_sources": {
+      "ceo": "https://www.innovassynth.com/about-us/",
+      "website": "https://www.innovassynth.com/about-us/"
+    },
+    "ceo": "Hardik Joshipura",
+    "website": "https://www.innovassynth.com"
+  },
+  "IN:RSL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30929_RSL_2025_2026_A_2416270_31082026192616.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1715581_18082026123218_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30929_RSL_2025_2026_A_2416270_31082026192616.pdf"
+    },
+    "ceo": "Yashkumar Shankarlal Mehta",
+    "chairman": "Shankarlal Deepchand Mehta",
+    "website": "https://www.rajputanastainless.com"
+  },
+  "IN:HITECH": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_32039_HITECH_2025_2026_U_19711362_15092026182102.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703227_28072026055801_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_32039_HITECH_2025_2026_U_19711362_15092026182102.pdf"
+    },
+    "ceo": "Ajay Kumar Bansal",
+    "chairman": "Ajay Kumar Bansal",
+    "website": "https://www.hitechpipes.in"
+  },
+  "IN:SHALBY": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30383_SHALBY_2025_2026_A_7152802_17082026174305.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1744358_23102026113647_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30383_SHALBY_2025_2026_A_7152802_17082026174305.pdf"
+    },
+    "ceo": "Vikram Shah",
+    "chairman": "Vikram Shah",
+    "website": "https://www.shalby.org"
+  },
+  "IN:DLINKINDIA": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29827_DLINKINDIA_2025_2026_A_5825928_16072026172849.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1737585_14102026021843_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29827_DLINKINDIA_2025_2026_A_5825928_16072026172849.pdf"
+    },
+    "ceo": "Tushar Sighat",
+    "chairman": "Hung Yi Kao",
+    "website": "https://www.dlink.co.in"
+  },
+  "IN:BLIL": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1658743_24042026084136_WEB.xml"
+    },
+    "chairman": "Saurav Dutta"
+  },
+  "IN:ALICON": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31352_ALICON_2025_2026_A_4279698_04092026122215.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1745216_24102026115122_WEB.xml",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31352_ALICON_2025_2026_A_4279698_04092026122215.pdf"
+    },
+    "ceo": "Sumit Bhatnagar",
+    "chairman": "Ajay Nanavati",
+    "website": "https://www.alicongroup.co.in"
+  },
+  "IN:MBEL": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30593_MBEL_2025_2026_A_16850153_25082026161813.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1744652_23102026041823_WEB.xml"
+    },
+    "website": "https://www.mbel.in",
+    "chairman": "Hemant Ishwarlal Modi"
+  },
+  "IN:TTKHLTCARE": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29465_TTKHLTCARE_2025_2026_A_15082647_27062026143437.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1706144_31072026054717_WEB.xml"
+    },
+    "website": "https://www.ttkhealthcare.com",
+    "chairman": "T. T. Raghunathan"
+  },
+  "IN:STEELXIND": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30074_STEELXIND_2025_2026_A_21632826_30072026171800.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30074_STEELXIND_2025_2026_A_21632826_30072026171800.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1702737_28072026125148_WEB.xml"
+    },
+    "ceo": "Bandi Satish Kumar",
+    "website": "https://www.seil.co.in",
+    "chairman": "Bandi Satish Kumar"
+  },
+  "IN:MCLOUD": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31866_MCLOUD_2025_2026_A_7820740_08092026161118.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31866_MCLOUD_2025_2026_A_7820740_08092026161118.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1714013_13082026074944_WEB.xml"
+    },
+    "ceo": "Joseph Sudheer Reddy Thumma",
+    "website": "https://www.magellanic-cloud.com",
+    "chairman": "Joseph Sudheer Reddy Thumma"
+  },
+  "IN:SUMMITSEC": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29532_SUMMITSEC_2025_2026_A_1924637_02072026160729.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1735906_12102026125819_WEB.xml"
+    },
+    "website": "https://www.summitsecurities.net",
+    "chairman": "Ramesh Chandak"
+  },
+  "IN:SALSTEEL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30992_SALSTEEL_2025_2026_A_3902826_01092026161739.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30992_SALSTEEL_2025_2026_A_3902826_01092026161739.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1693818_16072026114458_WEB.xml"
+    },
+    "ceo": "Mahesh Kumar Agarwal",
+    "website": "https://www.salsteel.co.in",
+    "chairman": "Mahesh Kumar Agarwal"
+  },
+  "IN:HINDWAREAP": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30004_HINDWAREAP_2025_2026_A_11507255_25072026182220.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30004_HINDWAREAP_2025_2026_A_11507255_25072026182220.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1700817_24072026043409_WEB.xml"
+    },
+    "ceo": "Naveen Malik",
+    "website": "https://www.hindwarehomes.com",
+    "chairman": "Sandip Somany"
+  },
+  "IN:ASIANTILES": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30350_ASIANTILES_2025_2026_A_9700504_14082026151744.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30350_ASIANTILES_2025_2026_A_9700504_14082026151744.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1737655_14102026030953_WEB.xml"
+    },
+    "ceo": "Kamleshkumar Bhagubhai Patel",
+    "website": "https://www.aglasiangranito.com",
+    "chairman": "Kamleshkumar Bhagubhai Patel"
+  },
+  "IN:3BBLACKBIO": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1661159_29042026044110_WEB.xml"
+    },
+    "chairman": "Dhirendra Dubey"
+  },
+  "IN:JAYBARMARU": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1700236_23072026060530_WEB.xml"
+    },
+    "chairman": "Surendra Kumar Arya"
+  },
+  "IN:SPICEJET": {
+    "_sources": {
+      "ceo": "https://corporate.spicejet.com/InvestorsCorporateGovernance.aspx",
+      "chairman": "https://corporate.spicejet.com/InvestorsCorporateGovernance.aspx"
+    },
+    "ceo": "Ajay Singh",
+    "chairman": "Ajay Singh"
+  },
+  "IN:ANDHRAPAP": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29901_ANDHRAPAP_2025_2026_A_12830670_20072026164927.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29901_ANDHRAPAP_2025_2026_A_12830670_20072026164927.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1741444_19102026032947_WEB.xml"
+    },
+    "ceo": "Saurabh Bangur",
+    "website": "https://www.andhrapaper.com",
+    "chairman": "Shree Kumar Bangur"
+  },
+  "IN:KPGEL": {
+    "_sources": {
+      "chairman": "https://kpgreenengineering.com/about-us",
+      "website": "https://kpgreenengineering.com/about-us"
+    },
+    "chairman": "Faruk G. Patel",
+    "website": "https://kpgreenengineering.com"
+  },
+  "IN:MOL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30348_MOL_2025_2026_A_16204994_14082026144356.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30348_MOL_2025_2026_A_16204994_14082026144356.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1702038_27072026042150_WEB.xml"
+    },
+    "ceo": "Ankit Patel",
+    "website": "https://www.meghmani.com",
+    "chairman": "Ankit Patel"
+  },
+  "IN:RIR": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31489_RIR_2025_2026_A_7355067_05092026132517.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31489_RIR_2025_2026_A_7355067_05092026132517.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1739001_15102026044755_WEB.xml"
+    },
+    "ceo": "Ramesh Kumar Narasinghbhan",
+    "website": "https://www.rirpowersemi.com",
+    "chairman": "Harshad Mehta"
+  },
+  "IN:SIGNPOST": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30807_SIGNPOST_2025_2026_A_7116247_29082026052731.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30807_SIGNPOST_2025_2026_A_7116247_29082026052731.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1737194_13102026061248_WEB.xml"
+    },
+    "ceo": "Shripad Ashtekar",
+    "website": "https://www.signpostindia.com",
+    "chairman": "Girish Pandurang Kulkarni"
+  },
+  "IN:CLSEL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31603_CLSEL_2025_2026_A_4398357_05092026193443.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31603_CLSEL_2025_2026_A_4398357_05092026193443.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703853_29072026030416_WEB.xml"
+    },
+    "ceo": "Vijay Kumar Setia",
+    "website": "https://www.clsel.in",
+    "chairman": "Vijay Kumar Setia"
+  },
+  "IN:UDS": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30142_UDS_2025_2026_A_9619706_03082026130739.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30142_UDS_2025_2026_A_9619706_03082026130739.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1742303_20102026041324_WEB.xml"
+    },
+    "ceo": "Raghunandana Tangirala",
+    "website": "https://www.uds.in",
+    "chairman": "Raghunandana Tangirala"
+  },
+  "IN:INFOBEAN": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1701928_27072026031352_WEB.xml"
+    },
+    "chairman": "Siddharth Sethi"
+  },
+  "IN:GTLINFRA": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31907_GTLINFRA_2025_2026_A_4943021_08092026184409.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1702509_27072026083734_WEB.xml"
+    },
+    "website": "https://www.gtlinfra.com",
+    "chairman": "Charudatta Kashinath Naik"
+  },
+  "IN:CEINSYS": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1699379_22072026051713_WEB.xml"
+    },
+    "chairman": "Sagar Dattatraya Meghe"
+  },
+  "IN:IFGLEXPOR": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29799_IFGLEXPOR_2025_2026_A_14916152_14072026215057.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1705013_30072026025658_WEB.xml"
+    },
+    "website": "https://www.ifglgroup.com",
+    "chairman": "Shishir Kumar Bajoria"
+  },
+  "IN:KOPRAN": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30005_KOPRAN_2025_2026_A_24065684_25072026183119.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30005_KOPRAN_2025_2026_A_24065684_25072026183119.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1741229_19102026123538_WEB.xml"
+    },
+    "ceo": "Surendra Somani",
+    "website": "https://www.kopran.com",
+    "chairman": "Surendra Somani"
+  },
+  "IN:SPMLINFRA": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31069_SPMLINFRA_2025_2026_A_4337986_02092026123252.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31069_SPMLINFRA_2025_2026_A_4337986_02092026123252.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1704713_30072026104939_WEB.xml"
+    },
+    "ceo": "Abhinandan Sethi",
+    "website": "https://www.spml.co.in",
+    "chairman": "Subhash Chand Sethi"
+  },
+  "IN:MANAKCOAT": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30306_MANAKCOAT_2025_2026_A_10367644_12082026180751.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30306_MANAKCOAT_2025_2026_A_10367644_12082026180751.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1689165_08072026012244_WEB.xml"
+    },
+    "ceo": "Sushil Kumar Agrawal",
+    "website": "https://www.manaksiacoatedmetals.com",
+    "chairman": "Siddhartha Shankar Roy"
+  },
+  "IN:BHAGYANGR": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31669_BHAGYANGR_2025_2026_A_5478820_07092026123212.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31669_BHAGYANGR_2025_2026_A_5478820_07092026123212.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1702892_28072026031220_WEB.xml"
+    },
+    "ceo": "Devendra Surana",
+    "website": "https://www.bhagyanagarindia.com",
+    "chairman": "Devendra Surana"
+  },
+  "IN:MANALIPETC": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31401_MANALIPETC_2025_2026_A_4733132_04092026174734.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31401_MANALIPETC_2025_2026_A_4733132_04092026174734.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703092_28072026045854_WEB.xml"
+    },
+    "ceo": "R Chandrasekar",
+    "website": "https://www.manalipetro.com",
+    "chairman": "Ashwin C Muthiah"
+  },
+  "IN:VALIANTORG": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31589_VALIANTORG_2025_2026_A_12918836_05092026184905.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1700476_24072026105757_WEB.xml"
+    },
+    "website": "https://www.valiantorganics.com",
+    "chairman": "Navin Chapshi Shah"
+  },
+  "IN:AVTNPL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29983_AVTNPL_2025_2026_A_1760394_24072026161119.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29983_AVTNPL_2025_2026_A_1760394_24072026161119.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1735169_09102026065003_WEB.xml"
+    },
+    "ceo": "K Nandakumar",
+    "website": "https://www.avtnatural.com",
+    "chairman": "Ajit Thomas"
+  },
+  "IN:JAGRAN": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1736732_13102026012100_WEB.xml"
+    },
+    "chairman": "Mahendra Mohan Gupta"
+  },
+  "IN:WALCHANNAG": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29813_WALCHANNAG_2025_2026_A_3204058_15072026204804.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29813_WALCHANNAG_2025_2026_A_3204058_15072026204804.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1741137_19102026105625_WEB.xml"
+    },
+    "ceo": "Chirag C. Doshi",
+    "website": "https://www.walchand.com",
+    "chairman": "Chakor Lalchand Doshi"
+  },
+  "IN:BENARAS": {
+    "_sources": {
+      "chairman": "https://www.benareshotelslimited.com/management/board-of-directors/",
+      "website": "https://www.benareshotelslimited.com/management/board-of-directors/"
+    },
+    "chairman": "Anant Narain Singh",
+    "website": "https://www.benareshotelslimited.com"
+  },
+  "IN:DPEL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/SME_AR_29335_DPEL_2025_2026_A_70671247_03062026193752.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/SME_AR_29335_DPEL_2025_2026_A_70671247_03062026193752.pdf"
+    },
+    "ceo": "Rajesh Giri",
+    "website": "https://www.dpel.in"
+  },
+  "IN:RHETAN": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30598_RHETAN_2025_2026_A_3668272_25082026165812.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30598_RHETAN_2025_2026_A_3668272_25082026165812.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1743716_22102026120409_WEB.xml"
+    },
+    "ceo": "Shalin Ashok Shah",
+    "website": "https://www.rhetan.com",
+    "chairman": "Ashok Chinubhai Shah"
+  },
+  "IN:BIL": {
+    "_sources": {
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1744495_23102026023336_WEB.xml"
+    },
+    "chairman": "Snehdeep Aggarwal"
+  },
+  "IN:RAJESH": {
+    "_sources": {
+      "ceo": "https://www.rajeshpower.com/leadership.php",
+      "chairman": "https://www.rajeshpower.com/leadership.php",
+      "website": "https://www.rajeshpower.com/leadership.php"
+    },
+    "ceo": "Utsav Panchal",
+    "chairman": "Kurang Ramchandra Panchal",
+    "website": "https://www.rajeshpower.com"
+  },
+  "IN:DCW": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31458_DCW_2025_2026_A_22632254_04092026213534.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31458_DCW_2025_2026_A_22632254_04092026213534.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703030_28072026042002_WEB.xml"
+    },
+    "ceo": "Sudarshan Ganapathy",
+    "website": "https://www.dcwltd.com",
+    "chairman": "Bakul Premchand Jain"
+  },
+  "IN:PVP": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_32180_PVP_2025_2026_A_6763929_06102026174908.pdf",
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_32180_PVP_2025_2026_A_6763929_06102026174908.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1704125_29072026051912_WEB.xml"
+    },
+    "website": "https://www.pvpglobal.com",
+    "ceo": "Veera Prasad Potluri",
+    "chairman": "Veera Prasad Potluri"
+  },
+  "IN:EXPLEOSOL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30070_EXPLEOSOL_2025_2026_A_2607872_30072026140755.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1703713_29072026010712_WEB.xml"
+    },
+    "ceo": "Phani Tangirala",
+    "chairman": "Ralph Gillessen"
+  },
+  "IN:ARROWGREEN": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_32171_ARROWGREEN_2025_2026_A_3323749_06102026154402.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_32171_ARROWGREEN_2025_2026_A_3323749_06102026154402.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1702961_28072026034914_WEB.xml"
+    },
+    "ceo": "Shilpan Patel",
+    "website": "https://www.arrowgreentech.com",
+    "chairman": "Shilpan Patel"
+  },
+  "IN:EIMCOELECO": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29328_EIMCOELECO_2025_2026_A_9681388_02062026183800.pdf",
+      "chairman": "https://nsearchives.nseindia.com/corporate/xbrl/INTEGRATED_FILING_GOVERNANCE_1734779_09102026022320_WEB.xml"
+    },
+    "website": "https://www.eimcoelecon.in",
+    "chairman": "Pradip Manubhai Patel"
+  },
+  "IN:NAVKARCORP": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29758_NAVKARCORP_2025_2026_A_8436808_13072026160740.pdf"
+    },
+    "website": "https://www.navkarcorp.com"
+  },
+  "IN:PRIZOR": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/SME_AR_30990_PRIZOR_2025_2026_A_37417758_01092026155710.pdf",
+      "chairman": "https://nsearchives.nseindia.com/annual_reports/SME_AR_30990_PRIZOR_2025_2026_A_37417758_01092026155710.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/SME_AR_30990_PRIZOR_2025_2026_A_37417758_01092026155710.pdf"
+    },
+    "ceo": "Mitali Dasharathbharthi Gauswami",
+    "chairman": "Mitali Dasharathbharthi Gauswami",
+    "website": "https://www.prizor.in"
+  },
+  "IN:VIKRAMTH": {
+    "_sources": {
+      "ceo": "https://www.vikramthermo.com/our-team",
+      "chairman": "https://www.vikramthermo.com/our-team",
+      "website": "https://www.vikramthermo.com/our-team"
+    },
+    "ceo": "Dhiraj Patel",
+    "chairman": "Dhiraj Patel",
+    "website": "https://www.vikramthermo.com"
+  },
+  "IN:IMPAL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_32127_IMPAL_2025_2026_A_23683093_06102026094607.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_32127_IMPAL_2025_2026_A_23683093_06102026094607.pdf"
+    },
+    "ceo": "Mukund S Raghavan",
+    "website": "https://www.impal.net"
+  },
+  "IN:GHCLTEXTIL": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29334_GHCLTEXTIL_2025_2026_A_2202858_03062026192010.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29334_GHCLTEXTIL_2025_2026_A_2202858_03062026192010.pdf"
+    },
+    "ceo": "Marshal R. Sonavane",
+    "website": "https://www.ghcltextiles.co.in"
+  },
+  "IN:ANDREWYU": {
+    "_sources": {
+      "ceo": "https://www.andrewyule.com/board-of-directors.php",
+      "chairman": "https://www.andrewyule.com/board-of-directors.php",
+      "website": "https://www.andrewyule.com/board-of-directors.php"
+    },
+    "ceo": "Ananta Mohan Singh",
+    "chairman": "Ananta Mohan Singh",
+    "website": "https://www.andrewyule.com"
+  },
+  "IN:DEN": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30293_DEN_2025_2026_A_2200160_11082026173220.pdf"
+    },
+    "ceo": "Shailender Nath Sharma"
+  },
+  "IN:BMW": {
+    "_sources": {
+      "chairman": "https://www.bmwil.co.in/our-leadership/",
+      "website": "https://www.bmwil.co.in/our-leadership/"
+    },
+    "chairman": "Ram Gopal Bansal",
+    "website": "https://www.bmwil.co.in"
+  },
+  "IN:SAHASRA": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/SME_AR_32181_SAHASRA_2025_2026_A_121438785_06102026175116.pdf",
+      "chairman": "https://nsearchives.nseindia.com/annual_reports/SME_AR_32181_SAHASRA_2025_2026_A_121438785_06102026175116.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/SME_AR_32181_SAHASRA_2025_2026_A_121438785_06102026175116.pdf"
+    },
+    "ceo": "Amrit Lal Manwani",
+    "chairman": "Amrit Lal Manwani",
+    "website": "https://www.seslimited.in"
+  },
+  "IN:ATULAUTO": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30667_ATULAUTO_2025_2026_A_8002740_26082026171657.pdf"
+    },
+    "website": "https://www.atulauto.co.in"
+  },
+  "IN:ONIDA": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/corporate/MIRCELECTR_03072026230442_OutcomeofBM03072026.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29046_MIRCELECTR_2024_2025_A_7132863_15092025204434.pdf"
+    },
+    "ceo": "Gunjan Srivastava",
+    "website": "https://www.onida.com"
+  },
+  "IN:ALLDIGI": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29831_ALLDIGI_2025_2026_A_18693753_16072026183342.pdf"
+    },
+    "ceo": "Natarajan Laxsmanan"
+  },
+  "IN:SAFEENTP": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/SME_AR_30436_SAFEENTP_2025_2026_A_112713006_19082026192113.pdf",
+      "chairman": "https://nsearchives.nseindia.com/annual_reports/SME_AR_30436_SAFEENTP_2025_2026_A_112713006_19082026192113.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/SME_AR_30436_SAFEENTP_2025_2026_A_112713006_19082026192113.pdf"
+    },
+    "ceo": "Saleem Shabbir Merchant",
+    "chairman": "Saleem Shabbir Merchant",
+    "website": "https://www.safeenterprises.com"
+  },
+  "IN:BIRLACABLE": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_29712_BIRLACABLE_2025_2026_A_5652951_10072026162428.pdf"
+    },
+    "website": "https://www.birlacable.com"
+  },
+  "IN:IRISDOREME": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30776_IRISDOREME_2025_2026_A_23954538_28082026142659.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_30776_IRISDOREME_2025_2026_A_23954538_28082026142659.pdf"
+    },
+    "ceo": "Santosh Ladha",
+    "website": "https://www.irisclothings.in"
+  },
+  "IN:KALAMANDIR": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/corporate/SSKL_12052026184326_Outcome120526.pdf"
+    },
+    "ceo": "Bharadwaj Rachamadugu"
+  },
+  "IN:ICEMAKE": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31878_ICEMAKE_2025_2026_A_8183364_08092026165929.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31878_ICEMAKE_2025_2026_A_8183364_08092026165929.pdf"
+    },
+    "ceo": "Chandrakantbhai Patel",
+    "website": "https://www.icemakeindia.com"
+  },
+  "IN:SACHEEROME": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/SME_AR_31017_SACHEEROME_2025_2026_A_7447167_01092026180954.pdf",
+      "chairman": "https://nsearchives.nseindia.com/annual_reports/SME_AR_31017_SACHEEROME_2025_2026_A_7447167_01092026180954.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/SME_AR_31017_SACHEEROME_2025_2026_A_7447167_01092026180954.pdf"
+    },
+    "ceo": "Manoj Arora",
+    "chairman": "Manoj Arora",
+    "website": "https://www.sacheerome.com"
+  },
+  "IN:TNPETRO": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30991_TNPETRO_2025_2026_A_1772817_01092026155955.pdf"
+    },
+    "ceo": "D Senthi Kumar"
+  },
+  "IN:BHARATWIRE": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31038_BHARATWIRE_2025_2026_A_8077365_01092026200237.pdf"
+    },
+    "ceo": "Mahender Singh Arora"
+  },
+  "IN:BALAJITELE": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31508_BALAJITELE_2025_2026_A_10891311_05092026150815.pdf",
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31508_BALAJITELE_2025_2026_A_10891311_05092026150815.pdf"
+    },
+    "ceo": "Sanjay Dwivedi",
+    "website": "https://www.balajitelefilms.com"
+  },
+  "IN:BAJAJHCARE": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_30821_BAJAJHCARE_2025_2026_A_5160681_29082026155518.pdf"
+    },
+    "ceo": "Sajankumar Rameshwarlal Bajaj"
+  },
+  "IN:TSFINV": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_29494_TSFINV_2025_2026_A_2708538_30062026170530.pdf"
+    },
+    "ceo": "S. Ravi"
+  },
+  "IN:FINOPB": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/corporate/FINOPB_26082026163517_Cover_CEO_Extension.pdf"
+    },
+    "ceo": "Ketan Merchant"
+  },
+  "IN:STEL": {
+    "_sources": {
+      "website": "https://nsearchives.nseindia.com/annual_reports/AR_31044_STEL_2025_2026_A_1707787_01092026201911.pdf"
+    },
+    "website": "https://www.stelholdings.com"
+  },
+  "IN:IRMENERGY": {
+    "_sources": {
+      "ceo": "https://nsearchives.nseindia.com/annual_reports/AR_31405_IRMENERGY_2025_2026_A_56952685_04092026180051.pdf"
+    },
+    "ceo": "M. K. Sharma"
+  }
+}

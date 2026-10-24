@@ -1,0 +1,90 @@
+[
+  {
+    "key": "IN:ARVIND",
+    "file": "logos-hd/in/ARVIND.svg",
+    "kind": "hd",
+    "source": "https://www.arvind.com/sites/default/files/inline-images/Arvind-logo-updated.svg",
+    "sourceType": "official-site",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:AARTIIND",
+    "file": "logos-hd/in/AARTIIND.png",
+    "kind": "hd",
+    "source": "https://d9bnjb3uan3b2.cloudfront.net/a45ef588cd2a8c79ccc39b1d6a6d53ce8137d798_ad599fcfb6.png",
+    "sourceType": "official-site",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:CHAMBLFERT",
+    "file": "logos-hd/in/CHAMBLFERT.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_30210_CHAMBLFERT_2025_2026_A_3218276_05082026183449.pdf#page=17",
+    "sourceType": "annual-report",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:CHOICEIN",
+    "file": "logos-hd/in/CHOICEIN.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_31423_CHOICEIN_2025_2026_A_19975927_04092026190139.pdf#page=3",
+    "sourceType": "annual-report",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:COHANCE",
+    "file": "logos-hd/in/COHANCE.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_30685_COHANCE_2025_2026_A_19070825_26082026195427.pdf#page=4",
+    "sourceType": "annual-report",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:DCMSHRIRAM",
+    "file": "logos-hd/in/DCMSHRIRAM.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_29929_DCMSHRIRAM_2025_2026_A_8994610_21072026153801.pdf#page=3",
+    "sourceType": "annual-report",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:ELGIEQUIP",
+    "file": "logos-hd/in/ELGIEQUIP.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/corporate/ELGIEQUIP_14082026110133_IntimationPresentation14082026.pdf#page=3",
+    "sourceType": "investor-presentation",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:JUBLPHARMA",
+    "file": "logos-hd/in/JUBLPHARMA.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_30137_JUBLPHARMA_2025_2026_A_10572064_01082026223305.pdf#page=66",
+    "sourceType": "annual-report",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:KANSAINER",
+    "file": "logos-hd/in/KANSAINER.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_29384_KANSAINER_2025_2026_A_16838966_11062026200548.pdf#page=3",
+    "sourceType": "annual-report",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:NAZARA",
+    "file": "logos-hd/in/NAZARA.svg",
+    "kind": "hd",
+    "source": "https://nsearchives.nseindia.com/annual_reports/AR_31324_NAZARA_2025_2026_A_21385699_03092026212047.pdf#page=12",
+    "sourceType": "annual-report",
+    "reason": "hd"
+  },
+  {
+    "key": "IN:MARKSANS",
+    "file": "logos-hd/in/MARKSANS.svg",
+    "kind": "hd",
+    "source": "https://www.marksanspharma.com/assets/img/marksans-logo.svg",
+    "sourceType": "official-site",
+    "reason": "hd"
+  }
+]
