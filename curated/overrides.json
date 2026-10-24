@@ -38601,6 +38601,16 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/12927/000119312526096787/d39411ddef14a.htm"
   }
  },
+ "UK:0EDD": {
+  "website": "https://www.lyondellbasell.com",
+  "sources": {
+   "website": "https://www.lyondellbasell.com/en/who-we-are/leadership/",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1489393/000130817926000250/lyb014791-def14a.htm",
+   "chairman": "https://www.lyondellbasell.com/en/who-we-are/leadership/"
+  },
+  "ceo": "Peter Vanacker",
+  "chairman": "Jacques Aigrain"
+ },
  "UK:0H3T": {
   "chairman": "Clara-Christina Streit",
   "sources": {
@@ -39547,6 +39557,14 @@
   },
   "chairman": "Robert A. Michael"
  },
+ "UK:0QGU": {
+  "ceo": "Gerrit Marx",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1567094/000119312526124227/cnh-20260325.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1567094/000119312526124227/cnh-20260325.htm"
+  },
+  "chairman": "Suzanne Heywood"
+ },
  "UK:0QIU": {
   "ceo": "Mike Doustdar",
   "sources": {
@@ -40123,6 +40141,16 @@
   },
   "chairman": "John Elkann"
  },
+ "UK:0RG4": {
+  "founded": 1889,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1655891/000162828026011954/trmd-20251231.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1655891/000162828026011954/trmd-20251231.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1655891/000091957426006837/p15110413exh99-2.htm"
+  },
+  "ceo": "Jacob Meldgaard",
+  "chairman": "Simon Mackenzie Smith"
+ },
  "UK:0RIC": {
   "ceo": "Steven van Rijswijk",
   "sources": {
@@ -40305,6 +40333,24 @@
   },
   "chairman": "Gregory R. Page"
  },
+ "UK:0Y4Q": {
+  "ceo": "Carl Hess",
+  "sources": {
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1140536/000119312526127613/wtw-20260327.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1140536/000119312526127613/wtw-20260327.htm"
+  },
+  "chairman": "Paul Reilly"
+ },
+ "UK:0Y5X": {
+  "headquarters": "London",
+  "sources": {
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000045/pnr-20260630.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000014/pnr-20260317.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000014/pnr-20260317.htm"
+  },
+  "ceo": "John L. Stauch",
+  "chairman": "T. Michael Glenn"
+ },
  "UK:0Y7S": {
   "ceo": "Joakim Weidemanis",
   "sources": {
@@ -40329,6 +40375,18 @@
   },
   "chairman": "Henry Samueli"
  },
+ "UK:0Z1Q": {
+  "founded": 1878,
+  "sources": {
+   "founded": "https://www.sec.gov/Archives/edgar/data/1549107/000110465926110384/manu-20260630x20f.htm",
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/1549107/000110465926110384/manu-20260630x20f.htm",
+   "ceo": "https://www.sec.gov/Archives/edgar/data/1549107/000110465926110384/manu-20260630x20f.htm",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/1549107/000110465926110384/manu-20260630x20f.htm"
+  },
+  "headquarters": "Manchester",
+  "ceo": "Omar Berrada",
+  "chairman": "Avram Glazer and Joel Glazer"
+ },
  "UK:0Z1W": {
   "ceo": "Joseph Y. Bae and Scott C. Nuttall",
   "sources": {
@@ -40344,6 +40402,80 @@
    "chairman": "https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf"
   },
   "chairman": "Ma Huateng"
+ },
+ "UK:AAF": {
+  "website": "https://www.airtel.africa",
+  "sources": {
+   "website": "https://www.airtel.africa/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/airtel-africa--aaf/q1-results/9682984",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/airtel-africa--aaf/directorate-change/9682721"
+  },
+  "ceo": "Sunil Taldar",
+  "chairman": "Gopal Vittal"
+ },
+ "UK:AAL": {
+  "ceo": "Duncan Wanblad",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/anglo-american--aal/anglo-american-production-report-q3-2026/9830639",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/anglo-american--aal/anglo-american-change-to-board-responsibilities/9836105"
+  },
+  "chairman": "Stuart Chambers"
+ },
+ "UK:ABDN": {
+  "ceo": "Jason Windsor",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/aberdeen-group-plc--abdn/q3-2026-auma-flows-trading-update/9832775",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/aberdeen-group-plc--abdn/directorate-change/9761849"
+  },
+  "chairman": "Jonathan Asquith"
+ },
+ "UK:ABF": {
+  "ceo": "George Weston",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/associated-british-foods--abf/trading-statement/9764278",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/associated-british-foods--abf/interim-results-announcements/9529235"
+  },
+  "chairman": "Michael McLintock"
+ },
+ "UK:ADM": {
+  "ceo": "Milena Mondini de Focatiis",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/gnw/admiral-group--adm/admiral-group-plc-full-year-2025-results-/9459033",
+   "chairman": "https://www.investegate.co.uk/announcement/gnw/admiral-group--adm/admiral-group-plc-full-year-2025-results-/9459033"
+  },
+  "chairman": "Mike Rogers"
+ },
+ "UK:AJB": {
+  "ceo": "Michael Summersgill",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/aj-bell--ajb/year-end-trading-update/9835250",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/aj-bell--ajb/board-changes/9751533"
+  },
+  "chairman": "Fiona Clutterbuck"
+ },
+ "UK:ANTO": {
+  "ceo": "Iván Arriagada",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/antofagasta--anto/q3-2026-production-report/9823600",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/antofagasta--anto/board-changes/9825698"
+  },
+  "chairman": "Jean-Paul Luksic"
+ },
+ "UK:AUTO": {
+  "ceo": "Nathan Coe",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/autotrader-group-plc--auto/full-year-results-for-the-year-ended-31-march-2026/9578760",
+   "chairman": "https://plc.autotrader.co.uk/about/board-of-directors"
+  },
+  "chairman": "Matt Davies"
+ },
+ "UK:AV.": {
+  "ceo": "Amanda Blanc",
+  "sources": {
+   "ceo": "https://www.aviva.com/about-us/our-board-and-executives-overview/our-board/",
+   "chairman": "https://www.aviva.com/about-us/our-board-and-executives-overview/our-board/"
+  },
+  "chairman": "George Culmer"
  },
  "UK:AXB": {
   "website": "https://www.axis.bank.in",
@@ -40363,6 +40495,22 @@
   },
   "chairman": "Michel Demaré"
  },
+ "UK:BA.": {
+  "ceo": "Charles Woodburn",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/bae-systems--ba./half-year-financial-report/9694659",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/bae-systems--ba./half-year-financial-report/9694659"
+  },
+  "chairman": "Cressida Hogg"
+ },
+ "UK:BAB": {
+  "ceo": "Harry Holt",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/babcock-international-group--bab/directorate-change/9652657",
+   "chairman": "https://www.babcockinternational.com/who-we-are/leadership-and-governance/"
+  },
+  "chairman": "Ruth Cairnie"
+ },
  "UK:BARC": {
   "website": "https://home.barclays",
   "sources": {
@@ -40379,6 +40527,22 @@
    "ceo": "https://www.sec.gov/Archives/edgar/data/1303523/000130352326000017/bti-20251231.htm"
   }
  },
+ "UK:BBOX": {
+  "ceo": "Colin Godfrey",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/tritax-big-box-reit--bbox/half-year-report/9707045",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/tritax-big-box-reit--bbox/chair-update/9811677"
+  },
+  "chairman": "Aubrey Adams"
+ },
+ "UK:BBY": {
+  "ceo": "Philip Hoare",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/balfour-beatty--bby/balfour-beatty-2026-half-year-results/9716718",
+   "chairman": "https://www.balfourbeatty.com/about-us/leadership"
+  },
+  "chairman": "Charles Allen"
+ },
  "UK:BC94": {
   "website": "https://www.samsung.com",
   "sources": {
@@ -40389,6 +40553,14 @@
   "ceo": "Young-Hyun Jun and Tae-Moon Roh",
   "chairman": "Je-Yoon Shin"
  },
+ "UK:BGEO": {
+  "ceo": "Archil Gachechiladze",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/lion-finance-group-plc--bgeo/2q26-and-1h26-results-report/9714358",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/lion-finance-group-plc--bgeo/2q26-and-1h26-results-report/9714358"
+  },
+  "chairman": "Mel Carvill"
+ },
  "UK:BHP": {
   "ceo": "Brandon Craig",
   "sources": {
@@ -40396,6 +40568,32 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/811809/000119312526354647/bhp-20260630.htm"
   },
   "chairman": "Ross McEwan"
+ },
+ "UK:BKG": {
+  "ceo": "Richard Stearn",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/berkeley-group-holdings-the---bkg/final-results/9633027",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/berkeley-group-holdings-the---bkg/final-results/9633027"
+  },
+  "chairman": "Rob Perrins"
+ },
+ "UK:BLND": {
+  "ceo": "Joanne McNamara",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/british-land-company--blnd/ceo-start-date/9648448",
+   "chairman": "https://www.britishland.com/about-us/board-and-leadership/"
+  },
+  "chairman": "William Rucker"
+ },
+ "UK:BME": {
+  "website": "https://www.bandmretail.com",
+  "sources": {
+   "website": "https://www.bandmretail.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/b-m-european-value-retail-s-a-di---bme/board-retirement/9625417",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/b-m-european-value-retail-s-a-di---bme/appointment-of-a-non-executive-director/9786774"
+  },
+  "ceo": "Tjeerd Jegen",
+  "chairman": "Tiffany Hall"
  },
  "UK:BNC": {
   "ceo": "Héctor Grisi",
@@ -40405,11 +40603,63 @@
   },
   "chairman": "Ana Botín"
  },
- "UK:BP.": {
-  "chairman": "Albert Manifold",
+ "UK:BNZL": {
+  "ceo": "Frank van Zanten",
   "sources": {
-   "chairman": "https://www.sec.gov/Archives/edgar/data/313807/000031380726000006/bp-20251231.htm"
+   "ceo": "https://www.investegate.co.uk/announcement/rns/bunzl--bnzl/trading-statement/9830624",
+   "chairman": "https://www.bunzl.com/about-us/our-leadership"
+  },
+  "chairman": "Peter Ventress"
+ },
+ "UK:BOY": {
+  "ceo": "Jim Fairbairn",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/prn/bodycote--boy/result-of-meeting/9834604"
   }
+ },
+ "UK:BP.": {
+  "chairman": "Ian Tyler",
+  "sources": {
+   "chairman": "https://www.investegate.co.uk/announcement/rns/bp--bp./ian-tyler-appointed-bp-chair/9750417",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/bp--bp./2q26-bp-plc-sea/9702420"
+  },
+  "ceo": "Meg O'Neill"
+ },
+ "UK:BPT": {
+  "website": "https://www.bridgepointgroup.com",
+  "sources": {
+   "website": "https://www.bridgepointgroup.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/bridgepoint-group-reg-s---bpt/director-pdmr-shareholding/9835265",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/bridgepoint-group-reg-s---bpt/acquisition-of-kane-anderson-real-estate-/9640400"
+  },
+  "ceo": "Raoul Hughes",
+  "chairman": "Tim Score"
+ },
+ "UK:BRBY": {
+  "ceo": "Joshua Schulman",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/burberry-group--brby/director-pdmr-shareholding/9696792",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/burberry-group--brby/directorate-change/9696345"
+  },
+  "chairman": "Gerry Murphy"
+ },
+ "UK:BT.A": {
+  "ceo": "Allison Kirkby",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/bt-group--bt.a/trading-statement/9682961",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/bt-group--bt.a/director-declaration/9530302"
+  },
+  "chairman": "Adam Crozier"
+ },
+ "UK:BTRW": {
+  "website": "https://www.barrattredrow.co.uk",
+  "sources": {
+   "website": "https://www.barrattredrow.co.uk/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/barratt-redrow--btrw/director-pdmr-shareholding/9807672",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/barratt-redrow--btrw/appointment-of-chief-financial-officer-/9626442"
+  },
+  "ceo": "Dean Banks",
+  "chairman": "Caroline Silver"
  },
  "UK:BVA": {
   "website": "https://www.bbva.com",
@@ -40419,6 +40669,24 @@
   },
   "ceo": "Onur Genç"
  },
+ "UK:BWY": {
+  "ceo": "Jason Honeyman",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/bellway--bwy/full-year-results/9819158",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/bellway--bwy/full-year-results/9819158"
+  },
+  "chairman": "John Tutte"
+ },
+ "UK:BYG": {
+  "website": "https://corporate.bigyellow.co.uk",
+  "sources": {
+   "website": "https://corporate.bigyellow.co.uk/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/big-yellow-group--byg/response-to-media-coverage/9823573",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/big-yellow-group--byg/q1-trading-statement/9675717"
+  },
+  "ceo": "John Hunter",
+  "chairman": "Nicholas Vetch"
+ },
  "UK:CAGP": {
   "ceo": "Charlie Nunn",
   "sources": {
@@ -40426,6 +40694,184 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1160106/000165495426006988/a4589o.htm"
   },
   "chairman": "Robin Budenberg"
+ },
+ "UK:CCC": {
+  "ceo": "Mike Norris",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/computacenter--ccc/2026-half-year-results/9759847",
+   "chairman": "https://www.computacenter.com/who-we-are/leadership"
+  },
+  "chairman": "Pauline Campbell"
+ },
+ "UK:CCEP": {
+  "ceo": "Damian Gammell",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/coca-cola-europacific-partners-di---ccep/results-for-the-six-months-ended-3-july-2026/9702424",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/coca-cola-europacific-partners-di---ccep/directorate-change/9772962"
+  },
+  "chairman": "Sol Daurella"
+ },
+ "UK:CKN": {
+  "ceo": "Andi Case",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/clarkson--ckn/director-pdmr-shareholding/9569421",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/clarkson--ckn/directorate-change/9800249"
+  },
+  "chairman": "Laurence Hollingworth"
+ },
+ "UK:CLDN": {
+  "website": "https://www.caledonia.com",
+  "sources": {
+   "website": "https://www.caledonia.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/caledonia-investments--cldn/final-results/9574219",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/caledonia-investments--cldn/board-changes/9574262"
+  },
+  "ceo": "Mat Masters",
+  "chairman": "Will Wyatt"
+ },
+ "UK:CMCX": {
+  "website": "https://www.cmcmarkets.com",
+  "sources": {
+   "website": "https://www.cmcmarkets.com/group",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/cmc-markets--cmcx/director-pdmr-shareholding/9808841",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/cmc-markets--cmcx/directorate-change/9600960"
+  },
+  "ceo": "Peter Cruddas",
+  "chairman": "Paul Wainscott"
+ },
+ "UK:CNA": {
+  "ceo": "Chris O'Shea",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/centrica--cna/sizewell-b-life-extension-and-regulated-returns/9659737",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/centrica--cna/directorate-change/9563096"
+  },
+  "chairman": "Kevin O'Byrne"
+ },
+ "UK:COA": {
+  "website": "https://www.coats.com",
+  "sources": {
+   "website": "https://www.coats.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/coats-group--coa/director-pdmr-shareholding/9498321",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/coats-group--coa/board-changes-and-committee-membership-updates/9793763"
+  },
+  "ceo": "David Paja",
+  "chairman": "Tim Cobbold"
+ },
+ "UK:CPG": {
+  "ceo": "Dominic Blakemore",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/compass-group--cpg/q3-trading-update-/9678390",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/compass-group--cpg/directorate-change/9839479"
+  },
+  "chairman": "Ian Meakins"
+ },
+ "UK:CRDA": {
+  "ceo": "Steve Foots",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/croda-international--crda/results-for-the-six-months-ended-30-june-2026/9689897",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/croda-international--crda/results-for-the-six-months-ended-30-june-2026/9689897"
+  },
+  "chairman": "Danuta Gray"
+ },
+ "UK:CTEC": {
+  "ceo": "Jonny Mason",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/convatec-group--ctec/interim-results-for-6-months-ended-30-june-2026/9702429",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/convatec-group--ctec/ceo-and-cfo-appointments/9215615"
+  },
+  "chairman": "John McAdam"
+ },
+ "UK:CURY": {
+  "website": "https://www.currysplc.com",
+  "sources": {
+   "website": "https://www.currysplc.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/currys--cury/director-pdmr-shareholding/9704533",
+   "chairman": "https://www.currysplc.com/about-us/leadership/board-of-directors/"
+  },
+  "ceo": "Fredrik Tønnesen",
+  "chairman": "Ian Dyson"
+ },
+ "UK:CWK": {
+  "ceo": "Adam Couch",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/cranswick--cwk/preliminary-results/9574274",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/cranswick--cwk/preliminary-results/9574274"
+  },
+  "chairman": "Tim Smith"
+ },
+ "UK:DGE": {
+  "ceo": "Dave Lewis",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/diageo--dge/diageo-preliminary-results-2026/9708735",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/diageo--dge/directorate-change/9785633"
+  },
+  "chairman": "John Manzoni"
+ },
+ "UK:DLN": {
+  "ceo": "Jonathan Murphy",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/derwent-london--dln/director-pdmr-shareholding/9773128",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/derwent-london--dln/directorate-change/9612452"
+  },
+  "chairman": "Mark Breuer"
+ },
+ "UK:DNLM": {
+  "website": "https://corporate.dunelm.com",
+  "sources": {
+   "website": "https://corporate.dunelm.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/dunelm-group--dnlm/director-pdmr-shareholding/9796511",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/dunelm-group--dnlm/director-pdmr-shareholding/9764315"
+  },
+  "ceo": "Clodagh Moriarty",
+  "chairman": "Alison Brittain"
+ },
+ "UK:DPLM": {
+  "ceo": "Johnny Thomson",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/diploma--dplm/half-year-results-/9574224",
+   "chairman": "https://www.diplomaplc.com/about-us/leadership"
+  },
+  "chairman": "David Lowden"
+ },
+ "UK:DRX": {
+  "website": "https://www.drax.com",
+  "sources": {
+   "website": "https://www.drax.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/drax-group--drx/2026-half-year-results/9694684",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/drax-group--drx/annual-financial-report/9447667"
+  },
+  "ceo": "Will Gardiner",
+  "chairman": "Andrea Bertone"
+ },
+ "UK:EDV": {
+  "ceo": "Ian Cockerill",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/gnw/endeavour-mining--edv/endeavour-reports-strong-h1-2026-results/9694634",
+   "chairman": "https://www.endeavourmining.com/about-us/our-leadership/"
+  },
+  "chairman": "Srinivasan Venkatakrishnan"
+ },
+ "UK:EMG": {
+  "ceo": "Robyn Grew",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/man-group--emg/half-year-results-for-the-period-ended-30-june/9689873",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/man-group--emg/half-year-results-for-the-period-ended-30-june/9689873"
+  },
+  "chairman": "Anne Wade"
+ },
+ "UK:ENT": {
+  "ceo": "Stella David",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/entain--ent/q3-trading-update/9823596",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/entain--ent/directorate-changes/9689263"
+  },
+  "chairman": "Pierre Bouchut"
+ },
+ "UK:EZJ": {
+  "ceo": "Kenton Jarvis",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/mfn/easyjet--ezj/director-pdmr-shareholding/9820797"
+  }
  },
  "UK:FEDS": {
   "website": "https://www.federal.bank.in",
@@ -40437,6 +40883,16 @@
   "ceo": "KVS Manian",
   "chairman": "Elias George"
  },
+ "UK:FRAS": {
+  "website": "https://www.frasers.group",
+  "sources": {
+   "website": "https://www.frasers.group/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/frasers-group--fras/final-results/9671279",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/frasers-group--fras/frasers-group-announces-board-changes/9079497"
+  },
+  "ceo": "Michael Murray",
+  "chairman": "Jon Thompson"
+ },
  "UK:GAID": {
   "ceo": "Deepak Gupta",
   "sources": {
@@ -40444,6 +40900,14 @@
    "chairman": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_GOVERNANCE_202678_21102026155119_iXBRL_WEB.html"
   },
   "chairman": "Deepak Gupta"
+ },
+ "UK:GAW": {
+  "ceo": "Kevin Rountree",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/games-workshop-group--gaw/results-for-the-52-week-period-ended-31-may-2026/9689924",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/games-workshop-group--gaw/director-pdmr-shareholding/9469919"
+  },
+  "chairman": "Mark Lam"
  },
  "UK:GLEN": {
   "ceo": "Gary Nagle",
@@ -40453,6 +40917,14 @@
   },
   "chairman": "Kalidas Madhavpeddi"
  },
+ "UK:GRG": {
+  "ceo": "Roisin Currie",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/greggs--grg/interim-results/9692273",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/greggs--grg/cfo-retirement-and-succession/9645676"
+  },
+  "chairman": "Matt Davies"
+ },
  "UK:GSK": {
   "ceo": "Luke Miels",
   "sources": {
@@ -40460,6 +40932,14 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1131399/000113139926000004/gsk-20251231.htm"
   },
   "chairman": "Jonathan Symonds"
+ },
+ "UK:HBR": {
+  "ceo": "Linda Z. Cook",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/harbour-energy--hbr/2026-half-year-results/9707304",
+   "chairman": "https://www.harbourenergy.com/who-we-are/leadership/our-senior-team/"
+  },
+  "chairman": "R. Blair Thomas"
  },
  "UK:HHPD": {
   "ceo": "Young Liu",
@@ -40469,6 +40949,58 @@
   },
   "chairman": "Young Liu"
  },
+ "UK:HIK": {
+  "ceo": "Said Darwazah",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/hikma-pharmaceuticals--hik/half-year-financial-report/9707292",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/hikma-pharmaceuticals--hik/hikma-appoints-rebecca-hall-as-cfo-/9787973"
+  },
+  "chairman": "Victoria Hull"
+ },
+ "UK:HILS": {
+  "website": "https://hsgroup.com",
+  "sources": {
+   "website": "https://hsgroup.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/hill-and-smith--hils/half-year-results/9716717",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/hill-and-smith--hils/half-year-results/9716717"
+  },
+  "ceo": "Rutger Helbing",
+  "chairman": "Nick Anderson"
+ },
+ "UK:HLMA": {
+  "ceo": "Marc Ronchetti",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/halma--hlma/trading-update/9787947",
+   "chairman": "https://www.halma.com/who-we-are/our-leadership"
+  },
+  "chairman": "Louise Makin"
+ },
+ "UK:HLN": {
+  "ceo": "Brian McNamara",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/haleon--hln/2026-half-year-results/9694642",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/haleon--hln/appointment-of-vindi-banga-as-chair/9222249"
+  },
+  "chairman": "Vindi Banga"
+ },
+ "UK:HMSO": {
+  "website": "https://www.hammerson.com",
+  "sources": {
+   "website": "https://www.hammerson.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/hammerson--hmso/results-of-placing-/9696822",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/hammerson--hmso/appointment-of-gina-szymanski-as-cfo/9805318"
+  },
+  "ceo": "Rob Wilkinson",
+  "chairman": "Robert Noel"
+ },
+ "UK:HOC": {
+  "ceo": "Eduardo Landin",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/hochschild-mining--hoc/director-pdmr-shareholding/9568778",
+   "chairman": "https://www.hochschildmining.com/about-us/leadership/"
+  },
+  "chairman": "Eduardo Hochschild"
+ },
  "UK:HSBA": {
   "ceo": "Georges Elhedery",
   "sources": {
@@ -40476,6 +41008,168 @@
    "chairman": "https://www.hsbc.com/who-we-are/our-people/board-of-directors"
   },
   "chairman": "Brendan Nelson"
+ },
+ "UK:HTWS": {
+  "ceo": "Tom Greenwood",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/helios-towers--htws/director-pdmr-shareholding/9571371",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/helios-towers--htws/directorate-change/9465488"
+  },
+  "chairman": "Sam Jonah"
+ },
+ "UK:HWDN": {
+  "ceo": "Andrew Livingston",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/howden-joinery-group--hwdn/half-year-report/9682948",
+   "chairman": "https://www.howdenjoinerygroupplc.com/about/our-leadership/board.asp"
+  },
+  "chairman": "Peter Ventress"
+ },
+ "UK:IAG": {
+  "ceo": "Luis Gallego",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/international-consolidated-airlines-group-sa-cdi---iag/iag-half-year-financial-report/9696992"
+  }
+ },
+ "UK:ICG": {
+  "ceo": "Benoît Durteste",
+  "sources": {
+   "ceo": "https://www.icgam.com/who-we-are/leadership-governance/",
+   "chairman": "https://www.icgam.com/who-we-are/leadership-governance/"
+  },
+  "chairman": "William Rucker"
+ },
+ "UK:IGG": {
+  "ceo": "Breon Corcoran",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/ig-group-holdings--igg/q3-trading-update-/9803001",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/ig-group-holdings--igg/appointment-of-board-chair/9499233"
+  },
+  "chairman": "Andrew Barron"
+ },
+ "UK:IHG": {
+  "ceo": "Elie Maalouf",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/intercontinental-hotels-group--ihg/2026-third-quarter-trading-update/9835243",
+   "chairman": "https://www.ihgplc.com/en/about-us/our-leadership/our-board"
+  },
+  "chairman": "Deanna Oppenheimer"
+ },
+ "UK:III": {
+  "ceo": "Simon Borrows",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/3i-group--iii/fy2027-q1-performance-update-/9682970",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/3i-group--iii/results-for-the-year-to-31-march-2026/9567567"
+  },
+  "chairman": "David Hutchison"
+ },
+ "UK:IMB": {
+  "ceo": "Lukas Paravicini",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/imperial-brands--imb/half-year-financial-report/9562894",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/imperial-brands--imb/director-declaration/9522248"
+  },
+  "chairman": "Thérèse Esperdy"
+ },
+ "UK:IMI": {
+  "ceo": "Roy Twite",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/imi--imi/half-year-results/9697072",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/imi--imi/appointment-of-non-executive-director/9763857"
+  },
+  "chairman": "Jamie Pike"
+ },
+ "UK:INCH": {
+  "ceo": "Duncan Tait",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/inchcape--inch/q3-2026-trading-update/9835173",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/inchcape--inch/directorate-change/9485178"
+  },
+  "chairman": "Jerry Buhlmann"
+ },
+ "UK:INF": {
+  "ceo": "Stephen Carter",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/informa--inf/2026-half-year-results/9694686",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/informa--inf/appointment-of-informa-plc-chair-elect/9659710"
+  },
+  "chairman": "John Rishton"
+ },
+ "UK:INVP": {
+  "ceo": "Fani Titi",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/investec--invp/pre-close-trading-statement/9778512",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/investec--invp/pre-close-trading-statement/9778512"
+  },
+  "chairman": "Henrietta Baldock"
+ },
+ "UK:ITH": {
+  "ceo": "Luciano Vasques",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/ithaca-energy--ith/chief-executive-officer-succession/9825991",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/ithaca-energy--ith/chief-executive-officer-succession/9825991"
+  },
+  "chairman": "Yaniv Friedman"
+ },
+ "UK:ITV": {
+  "ceo": "Carolyn McCall",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/itv--itv/itv-plc-interim-results-to-30-june-2026/9697040",
+   "chairman": "https://www.itvplc.com/about-itv/board-of-directors"
+  },
+  "chairman": "Andrew Cosslett"
+ },
+ "UK:JD.": {
+  "website": "https://www.jdplc.com",
+  "sources": {
+   "website": "https://www.jdplc.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/jd-sports-fashion--jd./half-year-results-2026-27-/9785582",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/jd-sports-fashion--jd./resignation-of-non-executive-director-kath-smith/9825954"
+  },
+  "ceo": "Régis Schultz",
+  "chairman": "Peter Agnefjäll"
+ },
+ "UK:JET2": {
+  "website": "https://www.jet2plc.com",
+  "sources": {
+   "website": "https://www.jet2plc.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/jet2--jet2/final-results/9657191",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/jet2--jet2/final-results/9657191"
+  },
+  "ceo": "Steve Heapy",
+  "chairman": "Robin Terrell"
+ },
+ "UK:KGF": {
+  "ceo": "Thierry Garnier",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/kingfisher--kgf/kingfisher-appoints-new-ceo/9819911",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/kingfisher--kgf/kingfisher-appoints-new-ceo/9819911"
+  },
+  "chairman": "Claudia Arney"
+ },
+ "UK:KLR": {
+  "ceo": "James Wroath",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/keller-group--klr/interim-results-for-the-half-year-ended-30-june-26/9702412"
+  }
+ },
+ "UK:LAND": {
+  "website": "https://www.landsec.com",
+  "sources": {
+   "website": "https://www.landsec.com/en",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/land-securities-group--land/landsec-results-of-placing/9802506",
+   "chairman": "https://www.landsec.com/en/about/about-landsec/our-leadership"
+  },
+  "ceo": "Mark Allan",
+  "chairman": "Ian Cheshire"
+ },
+ "UK:LGEN": {
+  "ceo": "António Simões",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/legal-general-group--lgen/l-g-half-year-results-2026/9704858",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/legal-general-group--lgen/scott-wheway-appointed-legal-general-chair/9166029"
+  },
+  "chairman": "Scott Wheway"
  },
  "UK:LGLD": {
   "ceo": "Jae-cheol Lyu",
@@ -40492,6 +41186,14 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1160106/000165495426006988/a4589o.htm"
   },
   "chairman": "Robin Budenberg"
+ },
+ "UK:LMP": {
+  "ceo": "Andrew Jones",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/londonmetric-property--lmp/trading-update/9828217",
+   "chairman": "https://www.londonmetric.com/about-us/the-board-and-senior-leadership"
+  },
+  "chairman": "Alistair Elliott"
  },
  "UK:LSEG": {
   "website": "https://www.lseg.com",
@@ -40511,6 +41213,22 @@
   },
   "chairman": "S. N. Subrahmanyan"
  },
+ "UK:MAB": {
+  "ceo": "Phil Urban",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/mitchells-butlers--mab/pre-close-trading-update/9787935"
+  }
+ },
+ "UK:MGNS": {
+  "website": "https://www.morgansindall.com",
+  "sources": {
+   "website": "https://www.morgansindall.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/morgan-sindall-group--mgns/results-for-the-half-year-hy-ended-30-june-2026/9682975",
+   "chairman": "https://www.morgansindall.com/about/leadership"
+  },
+  "ceo": "John Morgan",
+  "chairman": "Peter Harrison"
+ },
  "UK:MHID": {
   "ceo": "Anish Shah",
   "sources": {
@@ -40519,6 +41237,56 @@
   },
   "chairman": "Anand Mahindra"
  },
+ "UK:MKS": {
+  "ceo": "Stuart Machin",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/marks-spencer-group--mks/director-pdmr-shareholding/9663289",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/marks-spencer-group--mks/marks-and-spencer-chairmanship-/9169750"
+  },
+  "chairman": "Archie Norman"
+ },
+ "UK:MNDI": {
+  "ceo": "Andrew King",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/prn/mondi--mndi/half-year-financial-report/9694958",
+   "chairman": "https://www.mondigroup.com/about-mondi/our-leadership/"
+  },
+  "chairman": "Philip Yea"
+ },
+ "UK:MNG": {
+  "website": "https://www.mandg.com",
+  "sources": {
+   "website": "https://www.mandg.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/m-g--mng/m-g-plc-q1-2026-trading-update/9555892",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/m-g--mng/directorate-change/9729353"
+  },
+  "ceo": "Andrea Rossi",
+  "chairman": "Edward Braham"
+ },
+ "UK:MRO": {
+  "ceo": "Peter Dilnot",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/melrose-industries--mro/melrose-half-year-financial-results/9697077",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/melrose-industries--mro/mary-petryszyn-appointed-as-non-executive-director/9387528"
+  },
+  "chairman": "Chris Grigg"
+ },
+ "UK:MTO": {
+  "website": "https://www.mitie.com",
+  "sources": {
+   "website": "https://www.mitie.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/mitie-group--mto/director-pdmr-shareholding/9825696",
+   "chairman": "https://www.mitie.com/about-us/leadership-team-and-board/"
+  },
+  "ceo": "Phil Bentley",
+  "chairman": "Chris Rogers"
+ },
+ "UK:N91": {
+  "ceo": "Hendrik du Toit",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/ninety-one--n91/final-results/9598377"
+  }
+ },
  "UK:NG.": {
   "ceo": "Zoë Yujnovich",
   "sources": {
@@ -40526,6 +41294,126 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1004315/000100431526000006/nggtf-20260331.htm"
   },
   "chairman": "Paula Rosput Reynolds"
+ },
+ "UK:NWG": {
+  "ceo": "Paul Thwaite",
+  "sources": {
+   "ceo": "https://www.natwestgroup.com/who-we-are/board-and-governance/group-board.html",
+   "chairman": "https://www.natwestgroup.com/who-we-are/board-and-governance/group-board.html"
+  },
+  "chairman": "Rick Haythornthwaite"
+ },
+ "UK:NXT": {
+  "ceo": "Simon Wolfson",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/next--nxt/results-for-the-half-year-2026-27/9776230",
+   "chairman": "https://www.nextplc.co.uk/about-next/our-board"
+  },
+  "chairman": "Michael Roney"
+ },
+ "UK:OCDO": {
+  "ceo": "Tim Steiner",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/ocado-group--ocdo/leadership-transition-update/9652933",
+   "chairman": "https://www.ocadogroup.com/about-us/our-board-and-leadership"
+  },
+  "chairman": "Adam Warby"
+ },
+ "UK:ONT": {
+  "ceo": "Francis Van Parys",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/oxford-nanopore-technologies--ont/interim-results-for-the-6-months-ended-30-june-26/9728523",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/oxford-nanopore-technologies--ont/annual-results-for-the-year-ended-31-december-2025/9452172"
+  },
+  "chairman": "Duncan Tatton-Brown"
+ },
+ "UK:OSB": {
+  "ceo": "Enrique Alvarez Labiano",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/gnw/osb-group--osb/director-pdmr-shareholding/9794381",
+   "chairman": "https://www.investegate.co.uk/announcement/gnw/osb-group--osb/appointment-of-ceo/9441042"
+  },
+  "chairman": "David Weymouth"
+ },
+ "UK:OXIG": {
+  "ceo": "Richard Tyson",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/oxford-instruments--oxig/interim-trading-update/9819106"
+  }
+ },
+ "UK:PFD": {
+  "ceo": "Alex Whitehouse",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/premier-foods--pfd/quarter-1-trading-update/9671261",
+   "chairman": "https://www.premierfoods.co.uk/board-of-directors/"
+  },
+  "chairman": "Colin Day"
+ },
+ "UK:PHP": {
+  "ceo": "Mark Davies",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/primary-health-properties--php/interim-results-replacement/9698194",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/primary-health-properties--php/interim-results-replacement/9698194"
+  },
+  "chairman": "Harry Hyman"
+ },
+ "UK:PNN": {
+  "ceo": "Keith Haslett",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/pennon-group--pnn/full-year-results-2025-26/9610051",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/pennon-group--pnn/confirmation-of-chief-executive-officer-start-date/9422669"
+  },
+  "chairman": "David Sproul"
+ },
+ "UK:PSN": {
+  "website": "https://www.persimmonhomes.com",
+  "sources": {
+   "website": "https://www.persimmonhomes.com/corporate/about-us/board-of-directors/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/persimmon--psn/director-pdmr-shareholding/9592456",
+   "chairman": "https://www.persimmonhomes.com/corporate/about-us/board-of-directors/"
+  },
+  "ceo": "Dean Finch",
+  "chairman": "Roger Devlin"
+ },
+ "UK:PSON": {
+  "ceo": "Omar Abbosh",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/pearson--pson/pearson-2026-interim-results/9697078",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/pearson--pson/directorate-change/9785631"
+  },
+  "chairman": "Omid Kordestani"
+ },
+ "UK:QLT": {
+  "ceo": "Steven Levin",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/quilter--qlt/quilter-plc-third-quarter-2026-trading-statement/9832783",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/quilter--qlt/directorate-changes/9679763"
+  },
+  "chairman": "Ruth Markland"
+ },
+ "UK:QQ.": {
+  "ceo": "Steve Wadey",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/qinetiq-group--qq./q1-trading-update/9671259",
+   "chairman": "https://www.qinetiq.com/en/who-we-are/board-of-directors"
+  },
+  "chairman": "Neil Johnson"
+ },
+ "UK:RAT": {
+  "ceo": "Jonathan Sorrell",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/rathbones-group--rat/third-quarter-trading-update-/9835232",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/rathbones-group--rat/directorate-change/9837021"
+  },
+  "chairman": "Clive Bannister"
+ },
+ "UK:REL": {
+  "ceo": "Erik Engström",
+  "sources": {
+   "ceo": "https://www.relx.com/investors/corporate-governance/board-of-directors",
+   "chairman": "https://www.relx.com/investors/corporate-governance/board-of-directors"
+  },
+  "chairman": "Paul Walker"
  },
  "UK:RIGD": {
   "website": "https://www.ril.com",
@@ -40543,6 +41431,40 @@
   },
   "chairman": "Dominic Barton"
  },
+ "UK:RKT": {
+  "ceo": "Kris Licht",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/reckitt-benckiser-group--rkt/director-pdmr-shareholding/9785345",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/reckitt-benckiser-group--rkt/director-pdmr-shareholding/9597773"
+  },
+  "chairman": "Jeremy Darroch"
+ },
+ "UK:RMV": {
+  "ceo": "Johan Svanstrom",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/rightmove--rmv/half-year-financial-report/9697048",
+   "chairman": "https://www.investegate.co.uk/announcement/prn/rightmove--rmv/directorate-change/9781080"
+  },
+  "chairman": "Andrew Fisher"
+ },
+ "UK:ROR": {
+  "ceo": "Kiet Huynh",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/rotork--ror/2026-interim-results/9702405",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/rotork--ror/offer-for-rotork-plc/9671294"
+  },
+  "chairman": "Dorothy Thompson"
+ },
+ "UK:ROSE": {
+  "website": "https://www.rosebankindustries.com",
+  "sources": {
+   "website": "https://www.rosebankindustries.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/rosebank-industries-plc--rose/unaudited-results-six-months-ended-30-june-2026/9752870",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/rosebank-industries-plc--rose/appointment-of-non-executive-director-/9659713"
+  },
+  "ceo": "Simon Peckham",
+  "chairman": "Justin Dowley"
+ },
  "UK:RR.": {
   "ceo": "Tufan Erginbilgic",
   "sources": {
@@ -40551,11 +41473,95 @@
   },
   "chairman": "Anita Frew"
  },
+ "UK:RS1": {
+  "ceo": "Simon Pryce",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/rs-group--rs1/director-pdmr-shareholding/9599756",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/rs-group--rs1/directorate-change/9294062"
+  },
+  "chairman": "Rona Fairhead"
+ },
+ "UK:RSW": {
+  "ceo": "Will Lee",
+  "sources": {
+   "ceo": "https://www.renishaw.com/en/board-of-directors-and-company-secretary--21878",
+   "chairman": "https://www.renishaw.com/en/board-of-directors-and-company-secretary--21878"
+  },
+  "chairman": "David Grant"
+ },
+ "UK:RTO": {
+  "ceo": "Mike Duffy",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/rentokil-initial--rto/q3-trading-update/9835249",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/rentokil-initial--rto/directorate-change/9835268"
+  },
+  "chairman": "Thérèse Esperdy"
+ },
  "UK:SBID": {
   "chairman": "Challa Sreenivasulu Setty",
   "sources": {
    "chairman": "https://sbi.bank.in/web/about-us/board-of-directors"
   }
+ },
+ "UK:SBRY": {
+  "ceo": "Simon Roberts",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/sainsbury-j---sbry/half-year-financial-report/9835251",
+   "chairman": "https://corporate.sainsburys.co.uk/about-us/our-leadership/"
+  },
+  "chairman": "Martin Scicluna"
+ },
+ "UK:SCT": {
+  "ceo": "Graham Charlton",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/softcat--sct/preliminary-results-/9821343",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/softcat--sct/extension-of-chairman-s-tenure/9641906"
+  },
+  "chairman": "Graeme Watt"
+ },
+ "UK:SDLF": {
+  "website": "https://www.standardlifeplc.com",
+  "sources": {
+   "website": "https://www.standardlifeplc.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/standard-life-plc--sdlf/interim-results-announcement/9757554",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/standard-life-plc--sdlf/board-changes/9571037"
+  },
+  "ceo": "Andy Briggs",
+  "chairman": "Nicholas Lyons"
+ },
+ "UK:SGE": {
+  "ceo": "Steve Hare",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/sage-group--sge/trading-update-for-nine-months-ended-30-june-2026/9692278"
+  }
+ },
+ "UK:SGRO": {
+  "ceo": "David Sleath",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/segro--sgro/trading-update/9832822",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/segro--sgro/directorate-change/9421982"
+  },
+  "chairman": "Andy Harrison"
+ },
+ "UK:SHAW": {
+  "website": "https://www.shawbrook.co.uk",
+  "sources": {
+   "website": "https://www.shawbrook.co.uk/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/shawbrook-group-plc--shaw/interim-report-for-the-period-ended-30-june-2026/9704867",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/shawbrook-group-plc--shaw/appointment-of-independent-non-executive-director/9659420"
+  },
+  "ceo": "Marcelino Castrillo",
+  "chairman": "John Callender"
+ },
+ "UK:SHC": {
+  "website": "https://www.shaftesburycapital.com",
+  "sources": {
+   "website": "https://www.shaftesburycapital.com/who-we-are/leadership",
+   "ceo": "https://www.shaftesburycapital.com/who-we-are/leadership",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/shaftesbury-capital--shc/director-pdmr-shareholding/9570735"
+  },
+  "ceo": "Ian Hawksworth",
+  "chairman": "Jonathan Nicholls"
  },
  "UK:SHEL": {
   "ceo": "Wael Sawan",
@@ -40564,6 +41570,16 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1306965/000162828026017024/shel-20251231.htm"
   },
   "chairman": "Andrew Mackenzie"
+ },
+ "UK:SMIN": {
+  "website": "https://www.smiths.com",
+  "sources": {
+   "website": "https://www.smiths.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/smiths-group--smin/smiths-group-plc-fy26-results-statement/9783206",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/smiths-group--smin/directorate-change/9737684"
+  },
+  "ceo": "Roland Carter",
+  "chairman": "Steve Williams"
  },
  "UK:SMSD": {
   "website": "https://www.samsung.com",
@@ -40585,6 +41601,106 @@
   "ceo": "Young-Hyun Jun and Tae-Moon Roh",
   "chairman": "Je-Yoon Shin"
  },
+ "UK:SN.": {
+  "ceo": "Deepak Nath",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/smith-nephew--sn./half-year-report/9702432",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/smith-nephew--sn./directorate-change/9215766"
+  },
+  "chairman": "Rupert Soames"
+ },
+ "UK:SPX": {
+  "ceo": "Nimesh Patel",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/spirax-group-plc--spx/2026-half-year-results/9714307",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/spirax-group-plc--spx/external-directorships-held-by-company-directors/9569275"
+  },
+  "chairman": "Tim Cobbold"
+ },
+ "UK:SRP": {
+  "ceo": "Anthony Kirby",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/serco-group--srp/2026-half-year-results/9707272",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/serco-group--srp/directorate-change/9707476"
+  },
+  "chairman": "Keith Williams"
+ },
+ "UK:SSE": {
+  "ceo": "Martin Pibworth",
+  "sources": {
+   "ceo": "https://www.sse.com/about-us/leadership-and-governance",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/sse--sse/directorate-change/9671304"
+  },
+  "chairman": "John Manzoni"
+ },
+ "UK:STAN": {
+  "ceo": "Bill Winters",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/standard-chartered--stan/directorate-and-group-management-team-changes/9572041",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/standard-chartered--stan/scplc-half-year-results-2026-part-2/9692378"
+  },
+  "chairman": "Maria Ramos"
+ },
+ "UK:STJ": {
+  "website": "https://www.sjp.co.uk",
+  "sources": {
+   "website": "https://www.sjp.co.uk/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/st-james-s-place--stj/half-year-financial-report/9692276",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/st-james-s-place--stj/directorate-change/9411581"
+  },
+  "ceo": "Mark FitzPatrick",
+  "chairman": "Paul Manduca"
+ },
+ "UK:SVS": {
+  "ceo": "Simon Shaw",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/savills--svs/half-year-report/9718994",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/savills--svs/non-executive-director-appointment/9777862"
+  },
+  "chairman": "Stacey Cartwright"
+ },
+ "UK:SVT": {
+  "ceo": "James Jesic",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/severn-trent--svt/annual-results-for-the-year-ended-31-march-2026/9576496",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/severn-trent--svt/severn-trent-plc-board-changes/9780471"
+  },
+  "chairman": "Christine Hodgson"
+ },
+ "UK:TATE": {
+  "website": "https://www.tateandlyle.com",
+  "sources": {
+   "website": "https://www.tateandlyle.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/tate-lyle--tate/recommended-cash-acquisition-of-tate-lyle-plc/9605356",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/tate-lyle--tate/recommended-cash-acquisition-of-tate-lyle-plc/9605356"
+  },
+  "ceo": "Nick Hampton",
+  "chairman": "David Hearn"
+ },
+ "UK:TBCG": {
+  "website": "https://www.tbcbankgroup.com",
+  "sources": {
+   "website": "https://www.tbcbankgroup.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/tbc-bank-group--tbcg/2q-and-1h-2026-results-report/9707288",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/tbc-bank-group--tbcg/2q-and-1h-2026-results-report/9707288"
+  },
+  "ceo": "Vakhtang Butskhrikidze",
+  "chairman": "Arne Berggren"
+ },
+ "UK:TCAP": {
+  "chairman": "Richard Berliand",
+  "sources": {
+   "chairman": "https://www.investegate.co.uk/announcement/rns/tp-icap-group--tcap/directorate-change/9783234"
+  }
+ },
+ "UK:TSCO": {
+  "ceo": "Ken Murphy",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/tesco--tsco/interim-results-2026-27/9812184",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/tesco--tsco/interim-results-2026-27/9812184"
+  },
+  "chairman": "Gerry Murphy"
+ },
  "UK:TTE": {
   "ceo": "Patrick Pouyanné",
   "sources": {
@@ -40603,6 +41719,14 @@
   "ceo": "T. V. Narendran",
   "chairman": "Natarajan Chandrasekaran"
  },
+ "UK:TW.": {
+  "ceo": "Jennie Daly",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./half-year-results-2026/9697075",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/taylor-wimpey--tw./half-year-results-2026/9697075"
+  },
+  "chairman": "Robert Noel"
+ },
  "UK:TYT": {
   "ceo": "Kenta Kon",
   "sources": {
@@ -40610,6 +41734,16 @@
    "chairman": "https://www.sec.gov/Archives/edgar/data/1094517/000119312526264811/d101983d20f.htm"
   },
   "chairman": "Akio Toyoda"
+ },
+ "UK:ULVR": {
+  "headquarters": "London",
+  "sources": {
+   "headquarters": "https://www.sec.gov/Archives/edgar/data/217410/000021741026000007/ul-20251231.htm",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/unilever--ulvr/directorate-change/9109735",
+   "chairman": "https://www.sec.gov/Archives/edgar/data/217410/000021741026000007/ul-20251231.htm"
+  },
+  "ceo": "Fernando Fernández",
+  "chairman": "Ian Meakins"
  },
  "UK:UPLL": {
   "website": "https://www.upl-ltd.com",
@@ -40621,13 +41755,83 @@
   "ceo": "Jai Shroff",
   "chairman": "Jai Shroff"
  },
+ "UK:UTG": {
+  "website": "https://www.unitegroup.com",
+  "sources": {
+   "website": "https://www.unitegroup.com/",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/unite-group--utg/q3-trading-update/9812185",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/unite-group--utg/board-update-/9630877"
+  },
+  "ceo": "Joe Lister",
+  "chairman": "Richard Huntingford"
+ },
+ "UK:UU.": {
+  "ceo": "Louise Beardmore",
+  "sources": {
+   "ceo": "https://www.unitedutilities.com/corporate/about-us/governance/our-board/",
+   "chairman": "https://www.unitedutilities.com/corporate/about-us/governance/our-board/"
+  },
+  "chairman": "David Higgins"
+ },
+ "UK:VOD": {
+  "ceo": "Margherita Della Valle",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/vodafone-group--vod/vodafone-q1-fy27-trading-update/9687628",
+   "chairman": "https://www.vodafone.com/our-company/leadership/board-of-directors"
+  },
+  "chairman": "Jean-François van Boxmeer"
+ },
+ "UK:WEIR": {
+  "ceo": "Andrew Neilson",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/weir-group--weir/marc-cameron-to-join-weir/9833945",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/weir-group--weir/ceo-succession-announcement/9545485"
+  },
+  "chairman": "Barbara Jeremiah"
+ },
  "UK:WISE": {
   "website": "https://wise.com",
   "sources": {
    "website": "https://wise.com",
-   "wikidata": "https://en.wikipedia.org/wiki/Wise_(company)"
+   "wikidata": "https://en.wikipedia.org/wiki/Wise_(company)",
+   "ceo": "https://www.investegate.co.uk/announcement/rns/wise-class-a--wise/q2-fy27-trading-statement/9825934",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/wise-class-a--wise/directorate-change/9820596"
   },
-  "wikidata": "Q7833987"
+  "wikidata": "Q7833987",
+  "ceo": "Kristo Käärmann",
+  "chairman": "David Wells"
+ },
+ "UK:WOSG": {
+  "ceo": "Brian Duffy",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/watches-of-switzerland-group--wosg/fy26-results/9666649",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/watches-of-switzerland-group--wosg/appointment-of-non-executive-director/9438852"
+  },
+  "chairman": "Ian Carter"
+ },
+ "UK:WPP": {
+  "ceo": "Cindy Rose",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/wpp--wpp/2026-interim-results/9707289",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/wpp--wpp/wpp-appoints-peter-agnefj-ll-to-the-board-/9544184"
+  },
+  "chairman": "Philip Jansen"
+ },
+ "UK:WTB": {
+  "ceo": "Dominic Paul",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/whitbread--wtb/whitbread-interim-results/9819127",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/whitbread--wtb/directorate-change/9683974"
+  },
+  "chairman": "Christine Hodgson"
+ },
+ "UK:ZEG": {
+  "ceo": "Eamonn O'Hare",
+  "sources": {
+   "ceo": "https://www.investegate.co.uk/announcement/rns/zegona-communications--zeg/passing-of-robert-samuelson/9830671",
+   "chairman": "https://www.investegate.co.uk/announcement/rns/zegona-communications--zeg/passing-of-robert-samuelson/9830671"
+  },
+  "chairman": "Eamonn O'Hare"
  },
  "US:AACAF": {
   "founded": 1996,
