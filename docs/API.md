@@ -79,7 +79,7 @@ img.src = api.brandLogoUrl('jio', 512);        // no request needed
   },
   "logo": {
     "svg": "https://…/logos/in/TCS.svg", "file": { "url": "https://…/logos/in/TCS.svg", "format": "svg" },
-    "png": null, "brandColor": "#2E7DE1", "brandColorSource": "logo-tile", "isPlaceholder": false
+    "png": null, "brandColor": "#2E7DE1", "brandColorSource": "logo-tile", "isPlaceholder": false, "provenance": "crawled", "provenanceSource": null
   },
   "links": { "self": "https://…", "yahoo": "https://finance.yahoo.com/quote/TCS.NS", "website": "https://www.tcs.com" },
   "sources": { "listingDate": "nse-archive" }, "checks": null,
@@ -92,7 +92,7 @@ img.src = api.brandLogoUrl('jio', 512);        // no request needed
 - **Unknown is `null`.** We never guess. Coverage per field is in [DATA.md](./DATA.md).
 - **Market cap.** `local` is in the company's reporting currency (`marketCap.currency`). `usd` and `inr` are converted at the daily rate in [`fx-rates.json`](../fx-rates.json) and are approximate. `currency` (price currency) can differ: UK shares are priced in pence (`GBX`) but their market cap is in `GBP`.
 - **Officers carry a source and a confidence.** `confidence: "low"` means community data (Wikidata) that may be years out of date; `"medium"` means exchange or registry data; `"high"` means checked by hand against the company's own page or a filing, and `source` is that URL. Check before you rely on a name.
-- **Logo.** `logo.svg` is the vector file; it is `null` for 107 older companies that only have a PNG, so use `logo.file.url`, which always exists. `logo.png` lists rendered sizes (64, 128, 256, 512) and exists for the 3,000 largest companies. `isPlaceholder: true` means a generated initials badge, not the real logo. `logo.hd`, when present, is the official full logo (wordmark or lock-up) as vector SVG; `logo.svg` is the square icon. `brandColor` is taken from the logo file: an approximation, not an official brand colour.
+- **Logo.** `logo.svg` is the vector file; it is `null` for 107 older companies that only have a PNG, so use `logo.file.url`, which always exists. `logo.png` lists rendered sizes (64, 128, 256, 512) and exists for the 3,000 largest companies. `isPlaceholder: true` means a generated initials badge, not the real logo. `logo.provenance` says where the square icon comes from: `official` (the owner's site, press kit or an official document), `commons` (Wikimedia Commons), `crawled` (TradingView's symbol-logo service, not checked file by file) or `generated` (the initials badge); `logo.provenanceSource` is the page it was taken from, or `null`. A logo is `official` or `commons` only when a source is recorded in [`curated/logo-provenance.json`](../curated/logo-provenance.json) or [`logo-sources.json`](../logo-sources.json), so `crawled` means "not yet verified", not "wrong". The counts are in `index.json` under `logoProvenance`. `logo.hd`, when present, is the official full logo (wordmark or lock-up) as vector SVG; `logo.svg` is the square icon. `brandColor` is taken from the logo file: an approximation, not an official brand colour.
 - **`listingDate`** is the first listing on an exchange, not the founding date.
 - **`sources`** says where each value came from; **`checks`** records a second source that disagreed.
 - **`freshness`** gives the dates of the last market-data and profile refresh. Data is refreshed monthly.

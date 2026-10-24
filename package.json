@@ -28,6 +28,8 @@
     "aliases": "node scripts/apply-aliases.js",
     "brands": "node scripts/brands.js",
     "institutions": "node scripts/institutions.js",
+    "coverage": "node scripts/coverage.js",
+    "tiers": "node scripts/tier-report.js",
     "aliases:check": "node scripts/apply-aliases.js --check"
   },
   "keywords": [
