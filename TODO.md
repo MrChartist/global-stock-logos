@@ -71,6 +71,9 @@ How to add a source: one adapter file per source in `scripts/adapters/`, followi
 
 ## 4. Product and code
 
+- [x] Roadmap round of 2026-10-24: ISIN and exchange-ticker lookup (`api/v1/isin`, `api/v1/lookup`), officer `asOf` and `npm run officers:stale`, `brandInk`, `<stock-logo>` web component, design tokens, takedown page, changelog and diff report, headline-number check, logo-source PR guard, weekly report. Open from it: backfill `asOf` for hand-checked officers (no dates were recorded), and the owner sets a takedown address and confirms the 7-day target.
+- [ ] `api/` now has about 212,000 files (854 MB on disk). Confirm jsDelivr and repository limits; if needed, drop `others` from ISIN pointers or skip lookup files where exchange equals market.
+
 - [ ] Run the full pipeline on a schedule from the VPS: `npm run all` (resumable; exit 0 complete, 2 run again, 1 a check failed). Under `tmux` or `cron`; it takes hours.
 - [x] `CLAUDE.md` with the commands, layout and rules, so Claude sessions start with the context.
 - [ ] Re-measure Lighthouse on the real host after Pages is on (`npm run lighthouse` measures a local server). Mobile performance is 99; the brand fonts cost about half a second on the simulated slow 4G link.

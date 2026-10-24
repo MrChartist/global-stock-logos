@@ -2,11 +2,11 @@
 
 <div align="center">
 
-**Free, open-source company logos and profiles for 75,000+ listed stocks in 68 markets, with a static JSON API.**
+**Free, open-source company logos and profiles for 80,000+ listed stocks in 68 markets, with a static JSON API.**
 
 A project by **[@MrChartist](https://mrchartist.com)** · [mrchartist.com](https://mrchartist.com)
 
-![Companies](https://img.shields.io/badge/companies-75%2C000%2B-2563eb?style=for-the-badge)
+![Companies](https://img.shields.io/badge/companies-80%2C000%2B-2563eb?style=for-the-badge)
 ![Markets](https://img.shields.io/badge/markets-68-7c3aed?style=for-the-badge)
 ![API](https://img.shields.io/badge/API-static%20JSON-0ea5e9?style=for-the-badge)
 ![Licence](https://img.shields.io/badge/code-MIT-16a34a?style=for-the-badge)
@@ -16,6 +16,25 @@ A project by **[@MrChartist](https://mrchartist.com)** · [mrchartist.com](https
 </div>
 
 ---
+
+## Logo provenance and rights
+
+Read this before you put the logos on a website. It states facts about where the files come from; it is not legal advice and makes no claim about whether any use is lawful.
+
+- **Most logos were crawled.** The square icons were collected from TradingView's public symbol-logo service, not from each owner's own site. They have not been checked file by file against the owner's current design. Not verified, not known to be wrong.
+- **Every company file says which kind of logo it has.** `logo.provenance` in `api/v1/companies/<market>/<TICKER>.json` (and `logo.provenanceSource`, the page the file came from):
+
+| `logo.provenance` | Meaning | Count |
+| :--- | :--- | ---: |
+| `official` | Checked against the owner's site, press kit or an official document | 0 |
+| `commons` | Wikimedia Commons; the file keeps its own licence | 3 |
+| `crawled` | TradingView symbol-logo service, not checked file by file | 80,256 |
+| `generated` | An initials badge drawn by this project, not a real logo (`isPlaceholder: true`) | 180 |
+
+  Counts are from `api/v1/index.json` (`logoProvenance`, 80,439 listings) as of 2026-10-24 and change when the data is rebuilt. Brands, HD logos and institutions are separate: they are taken from the owner's site, an official document or Wikimedia Commons, with the source recorded per entry in `brands/brands.json` and `institutions/institutions.json`.
+- **What a site should show.** If you need every logo to have a known source (a paid product, an app-store listing, a legal review), show only `official` and `commons` and use your own fallback for the rest. That is 3 logos today, so most sites will not do this yet. If you accept the position described here, you may show `crawled` logos as well, but keep a takedown contact visible on your site, never show `generated` badges as if they were logos, and do not use a logo to suggest endorsement. [docs/PRODUCTION.md](./docs/PRODUCTION.md#2-decide-which-logos-you-show) has the filter code and checklist.
+- **Taking a logo down.** Rights holders, and anyone who sees a wrong logo, can ask for a file to be removed or replaced: open an issue with the [removal request form](https://github.com/MrChartist/global-stock-logos/issues/new?template=removal-request.yml), or use the contact in [SECURITY.md](./SECURITY.md). The process, the proposed 7-day response target and the log of requests are in [docs/TAKEDOWN.md](./docs/TAKEDOWN.md). A dedicated takedown address is still to be set by the repository owner.
+- **Where the files come from, in full:** [DATA-SOURCES.md](./DATA-SOURCES.md). Code is MIT; logos and brand names belong to their owners (see [Licence and trademarks](#licence-and-trademarks)).
 
 ## What you get
 
@@ -68,6 +87,8 @@ const hits = await api.search('samsung', { limit: 5 });
 | [docs/PRODUCTION.md](./docs/PRODUCTION.md) | Before you use it on a live website: pin a version, choose which logos to show, fallbacks, confidence |
 | [docs/ROADMAP.md](./docs/ROADMAP.md) | Audit of where the project stands, and the phased plan to make it ready for production websites |
 | [TODO.md](./TODO.md) | Open work: owner settings, data coverage, data quality, product, and how to work from a server |
+| [docs/TAKEDOWN.md](./docs/TAKEDOWN.md) | How to ask for a logo to be removed or corrected, response target, request log |
+| [CHANGELOG.md](./CHANGELOG.md) | What changed, release by release |
 | [DATA-SOURCES.md](./DATA-SOURCES.md) | Sources, terms and how to ask for a logo to be removed |
 
 ## Repository layout
@@ -92,7 +113,7 @@ curated/overrides.json          Hand-checked facts that always win, each with it
 src/                            API client (client.js, client.d.ts) and a React component
 scripts/                        The pipeline, checks and generators (run-all.js runs it all)
 docs/                           Documentation
-.github/workflows/              ci.yml, daily-sync.yml, monthly-refresh.yml
+.github/workflows/              ci.yml, daily-sync.yml, monthly-refresh.yml, weekly-report.yml
 ```
 
 Files marked generated are rebuilt by the pipeline; please do not edit them by hand.
@@ -110,6 +131,10 @@ npm run institutions     # check institutions/institutions.json and render insti
 npm run test:frontend    # browser test of the catalogue page (needs Chromium)
 npm run lighthouse       # Lighthouse scores of the page: mobile, desktop, light, dark
 npm run typecheck        # type-check the client
+npm run numbers          # headline numbers; `-- --check` verifies the texts (part of npm test)
+npm run diff-report -- <old> <new>   # markdown diff of two manifests or API snapshots
+npm run check-logo-sources -- --base origin/main   # PR guard: forbidden logo sources
+npm run weekly-report    # stale data, placeholders and warnings
 ```
 
 Other steps, one at a time: `bulk`, `refresh`, `enrich`, `registries`, `colors`, `png`, `quality`, `quality:fix`, `validate`.
@@ -145,8 +170,8 @@ To report a wrong or missing logo, open an issue with the ticker and market.
 
 - Code, scripts and workflows are released under the [MIT License](./LICENSE).
 - All logos, brand names and emblems belong to their respective owners. They are included for editorial and informational use, such as stock identification in charts, research and learning material. Inclusion does not mean endorsement by, or affiliation with, any company.
-- Logos from Wikimedia Commons keep their own licences; see `logo-sources.json`. If you are a rights holder and want a logo removed, write to [contact@mrchartist.com](mailto:contact@mrchartist.com).
-- Logo data comes from TradingView's public symbol-logo service and Wikidata. Please check their terms before heavy commercial use. Full details are in [DATA-SOURCES.md](./DATA-SOURCES.md).
+- Logos from Wikimedia Commons keep their own licences; see `logo-sources.json`. If you are a rights holder and want a logo removed, follow [docs/TAKEDOWN.md](./docs/TAKEDOWN.md).
+- Most logos come from TradingView's public symbol-logo service (see [Logo provenance and rights](#logo-provenance-and-rights)); facts come from Wikidata and the sources in [DATA-SOURCES.md](./DATA-SOURCES.md). Please check their terms before heavy commercial use.
 - Security issues: see [SECURITY.md](./SECURITY.md).
 
 ## Disclaimer

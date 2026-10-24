@@ -79,5 +79,39 @@ await t('brand and institution logo urls exist for every record at 256 and 512',
         assert.ok(fs.existsSync(path.join(ROOT, new URL(url).pathname)), url);
     }
 });
+await t('byIsin points to the home listing and lists the other lines', async () => {
+    const p = await api.byIsin('us0378331005');
+    assert.equal(p.isin, 'US0378331005'); assert.deepEqual([p.primary.market, p.primary.ticker, p.primary.exchange], ['US', 'AAPL', 'NASDAQ']);
+    assert.ok(p.others.length > 3 && p.others.every((o) => o.market !== 'US' || o.ticker !== 'AAPL'));
+    const c = await fetch(p.primary.url.replace(/^.*\/api\//, `${base}/api/`)).then((r) => r.json());
+    assert.equal(c.isin, p.isin);
+    assert.deepEqual(await api.byIsin('US0378331005'), p);
+});
+await t('byIsin: a delisted or foreign line never beats a listed home line', async () => {
+    for (const isin of ['INE467B01029', 'GB00BH4HKS39']) { const p = await api.byIsin(isin); assert.equal(p.primary.status, 'listed'); }
+    assert.equal((await api.byIsin('INE467B01029')).primary.market, 'IN');
+});
+await t('lookup by exchange and ticker', async () => {
+    const l = await api.lookup('nasdaq', 'AAPL');
+    assert.equal(l.key, 'NASDAQ-AAPL'); assert.equal(l.market, 'US'); assert.equal(l.isin, 'US0378331005');
+    assert.equal((await api.lookup('NSE', 'TCS')).market, 'IN');
+    assert.equal((await api.company(l.market, l.ticker)).name, l.name);
+});
+await t('unknown ISIN and lookup are typed 404s', async () => {
+    await assert.rejects(() => api.byIsin('XX0000000000'), (e) => e instanceof ApiError && e.status === 404);
+    await assert.rejects(() => api.lookup('NASDAQ', 'NOSUCHTICKER'), (e) => e instanceof ApiError && e.status === 404);
+});
+await t('officers carry asOf (null unless a check date is recorded)', async () => {
+    const c = await api.company('us', 'AAPL');
+    assert.ok(c.profile.ceo && 'asOf' in c.profile.ceo);
+    assert.ok(c.profile.ceo.asOf === null || /^\d{4}-\d{2}-\d{2}$/.test(c.profile.ceo.asOf));
+});
+await t('brandInk is readable on every brandColor', async () => {
+    const c = await api.company('in', 'TCS');
+    assert.ok(c.logo.brandInk); assert.ok(c.logo.brandInk.contrast >= 4.5); assert.match(c.logo.brandInk.color, /^#[0-9A-F]{6}$/);
+    const none = await api.company('in', '07ADD');
+    assert.equal(none.logo.brandColor === null, none.logo.brandInk === null);
+    for (const b of (await api.brands()).slice(0, 50)) assert.equal(b.brandColor === null, b.brandInk === null);
+});
 server.close();
 console.log(`Client check: ${passed} passed${process.exitCode ? ', some FAILED' : ''}.`);

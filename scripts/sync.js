@@ -185,6 +185,8 @@ export function syncGlobalCatalog(repoName = 'MrChartist/global-stock-logos') {
             // Listing status (curated/overrides.json): a delisted, acquired or renamed company keeps its file, marked, with its successor.
             status: o.status || null, delistedAt: o.delistedAt || null, successor: o.successor || null,
             hdPath: hdRel,   // official full logo (wordmark), when we have one
+            // Date a hand check of the CEO / chairman was made (curated/overrides.json "asOf": { "ceo": "YYYY-MM-DD", "chairman": ... }); only for a value the override itself sets.
+            ...(o.asOf ? { officersAsOf: Object.fromEntries(['ceo', 'chairman'].filter((f) => o[f] !== undefined && /^\d{4}-\d{2}-\d{2}$/.test(o.asOf[f] || '')).map((f) => [f, o.asOf[f]])) } : {}),
             freshness: { marketData: e.marketDataAt || null, profile: e.wikidataAt || null },
         };
         if (o.status === 'delisted') Object.assign(shards[mk][item.symbol], { marketCap: null, capCurrency: null, marketCapUsd: null, marketCapInr: null });   // no longer trades: no market cap

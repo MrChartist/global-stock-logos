@@ -6,6 +6,28 @@ on:
     branches: [main]
 
 jobs:
+  logo-sources:
+    name: Logo sources (pull requests only)
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - name: Install xmllint
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+      - name: Reject forbidden logo sources and logos that fail logo-tool check
+        run: node scripts/check-logo-sources.js --base "origin/${BASE_REF}"
+        env:
+          BASE_REF: ${{ github.base_ref }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+
   quality:
     name: Logo quality check
     runs-on: ubuntu-latest

@@ -1,0 +1,23 @@
+name: Weekly data report
+
+# Writes a data-health report to the job summary (Actions tab, this run). It reads the committed
+# reports and manifests, changes nothing, opens no issue, and does not fail on stale data.
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    name: Report
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Market data age, placeholders and validation warnings
+        run: node scripts/weekly-report.js

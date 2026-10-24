@@ -97,6 +97,18 @@ for (const f of fs.readdirSync(manifestDir)) {
         for (const p of Object.values(v.pngPaths || {})) if (!fs.existsSync(path.join(ROOT, p))) bump(errors, 'manifestMissingPng');
     }
 }
+// curated/overrides.json "asOf": { "ceo": "YYYY-MM-DD", "chairman": ... } is the date the value was checked by hand; it needs a value and a sourced, real, non-future date.
+try {
+    const overrides = JSON.parse(fs.readFileSync(path.join(ROOT, 'curated', 'overrides.json'), 'utf-8'));
+    const todayIso = new Date().toISOString().slice(0, 10);
+    for (const [key, o] of Object.entries(overrides)) {
+        if (o.asOf === undefined) continue;
+        for (const [f, d] of Object.entries(o.asOf || {})) {
+            const real = /^\d{4}-\d{2}-\d{2}$/.test(d) && !Number.isNaN(Date.parse(d)) && new Date(d).toISOString().slice(0, 10) === d && d >= '2000-01-01' && d <= todayIso;
+            if (!['ceo', 'chairman'].includes(f) || !real || o[f] === undefined || !o.sources?.[f]) { bump(errors, 'overrideAsOf'); if (sample.length < 40) sample.push(`${key} asOf.${f}=${JSON.stringify(d)} (needs ceo or chairman, a real past date, and the value plus its source in the same override)`); }
+        }
+    }
+} catch { /* no overrides file */ }
 const total = Object.values(errors).reduce((a, b) => a + b, 0);
 const report = { checkedAt: new Date().toISOString().slice(0, 10), enrichmentRecords: records, manifestEntries, errors, warnings, fixed, sample };
 fs.writeFileSync(path.join(ROOT, 'data-quality-report.json'), JSON.stringify(report, null, 2));

@@ -19,7 +19,7 @@ All logos and brand names belong to their owners. They are shown for identificat
 
 ## Removal requests
 
-Rights holders can ask for a logo to be removed by writing to [contact@mrchartist.com](mailto:contact@mrchartist.com) or opening an issue. We will act promptly.
+Rights holders can ask for a logo to be removed by opening an issue or writing to [contact@mrchartist.com](mailto:contact@mrchartist.com). The process and target response time are in [docs/TAKEDOWN.md](./docs/TAKEDOWN.md).
 
 ## Not investment advice
 

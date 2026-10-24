@@ -1,12 +1,12 @@
 {
   "name": "@mrchartist/global-stock-logos",
   "version": "3.0.0",
-  "description": "Free open-source logos and company profiles for 75,000+ listed stocks in 68 markets: SVG and PNG logos, a static JSON API (OpenAPI), a typed client and a catalogue page.",
+  "description": "Free open-source logos and company profiles for 80,000+ listed stocks in 68 markets: SVG and PNG logos, a static JSON API (OpenAPI), a typed client and a catalogue page.",
   "main": "src/client.js",
   "type": "module",
   "scripts": {
-    "test": "node scripts/quality.js --check && node scripts/brands.js --check && node scripts/institutions.js --check && node scripts/validate-data.js && node scripts/validate-api.js && npm run typecheck && node scripts/test-client.js",
-    "check": "node scripts/quality.js --check && node scripts/brands.js --check && node scripts/institutions.js --check && node scripts/validate-data.js && node scripts/validate-api.js && npm run typecheck && node scripts/test-client.js",
+    "test": "node scripts/numbers.js --check && node scripts/quality.js --check && node scripts/brands.js --check && node scripts/institutions.js --check && node scripts/build-tokens.js --check && node scripts/validate-data.js && node scripts/validate-api.js && npm run typecheck && node scripts/test-client.js",
+    "check": "node scripts/numbers.js --check && node scripts/quality.js --check && node scripts/brands.js --check && node scripts/institutions.js --check && node scripts/build-tokens.js --check && node scripts/validate-data.js && node scripts/validate-api.js && npm run typecheck && node scripts/test-client.js",
     "test:client": "node scripts/test-client.js",
     "test:frontend": "node scripts/test-frontend.js",
     "typecheck": "tsc -p tsconfig.json && tsc -p tsconfig.react.json",
@@ -28,8 +28,14 @@
     "aliases": "node scripts/apply-aliases.js",
     "brands": "node scripts/brands.js",
     "institutions": "node scripts/institutions.js",
+    "tokens": "node scripts/build-tokens.js",
     "coverage": "node scripts/coverage.js",
     "tiers": "node scripts/tier-report.js",
+    "officers:stale": "node scripts/stale-officers.js",
+    "numbers": "node scripts/numbers.js",
+    "diff-report": "node scripts/diff-report.js",
+    "check-logo-sources": "node scripts/check-logo-sources.js",
+    "weekly-report": "node scripts/weekly-report.js",
     "aliases:check": "node scripts/apply-aliases.js --check"
   },
   "keywords": [
@@ -107,6 +113,12 @@
       "types": "./src/client.d.ts",
       "default": "./src/client.js"
     },
+    "./stock-logo": {
+      "types": "./src/stock-logo.d.ts",
+      "default": "./src/stock-logo.js"
+    },
+    "./tokens.css": "./assets/tokens.css",
+    "./tokens.json": "./assets/tokens.json",
     "./manifest": "./logos-manifest.json"
   }
 }

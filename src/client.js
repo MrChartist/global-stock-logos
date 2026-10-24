@@ -5,6 +5,8 @@
  *   const api = new StockLogosClient();                 // jsDelivr CDN by default
  *   const tcs = await api.company('in', 'TCS');
  *   const hits = await api.search('tata', { market: 'in', limit: 10 });
+ *   const apple = await api.byIsin('US0378331005');    // pointer to the primary listing and the other lines
+ *   const tcs2 = await api.lookup('NSE', 'TCS');        // pointer from an exchange code and ticker
  *   const all = await api.find('surf');                 // companies, brands and institutions together
  *   img.src = api.brandLogoUrl('jio', 512);             // no fetch needed
  *
@@ -14,7 +16,8 @@
 export const DEFAULT_BASE_URL = 'https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main';
 
 /**
- * @typedef {{ name: string, source: string, confidence: 'low' | 'medium' | 'high' }} Person
+ * @typedef {{ name: string, source: string, confidence: 'low' | 'medium' | 'high', asOf: string | null }} Person
+ * @typedef {{ color: string, theme: 'light' | 'dark', contrast: number }} BrandInk
  * @typedef {{
  *   ticker: string, market: string, name: string, legalName: string | null, aliases: string[],
  *   country: string | null, countryCode: string | null, flag: string | null, exchange: string | null,
@@ -27,7 +30,7 @@ export const DEFAULT_BASE_URL = 'https://cdn.jsdelivr.net/gh/MrChartist/global-s
  *     headquarters: string | null, headquartersLocal: string | null, address: string | null, addressLocal: string | null,
  *     employees: number | null, ceo: Person | null, chairman: Person | null, slogan: string | null
  *   },
- *   logo: { svg: string | null, file: { url: string, format: 'svg' | 'png' }, png: Record<string, string> | null, brandColor: string | null, brandColorSource: string | null, isPlaceholder: boolean, provenance: 'official' | 'commons' | 'crawled' | 'generated', provenanceSource: string | null, hd?: string | null },
+ *   logo: { svg: string | null, file: { url: string, format: 'svg' | 'png' }, png: Record<string, string> | null, brandColor: string | null, brandInk: BrandInk | null, brandColorSource: string | null, isPlaceholder: boolean, provenance: 'official' | 'commons' | 'crawled' | 'generated', provenanceSource: string | null, hd?: string | null },
  *   brands?: BrandRef[], institution?: { slug: string, name: string, url: string } | null,
  *   links: { self: string, yahoo: string | null, website: string | null },
  *   sources: Record<string, string> | null, checks: Record<string, unknown> | null,
@@ -40,7 +43,7 @@ export const DEFAULT_BASE_URL = 'https://cdn.jsdelivr.net/gh/MrChartist/global-s
  *   founded: number | null, country: string | null,
  *   parent: { market: string, ticker: string, url: string }, otherListedOwners: string[],
  *   owners: { market: string, ticker: string, role: 'parent' | 'listed', url: string }[], markets: string[],
- *   website: string | null, wikidata: string | null, brandColor: string | null, onDark: boolean,
+ *   website: string | null, wikidata: string | null, brandColor: string | null, brandInk: BrandInk | null, onDark: boolean,
  *   logo: { url: string, format: 'svg' | 'png', svg: string | null, mark: string | null, png: Record<string, string> },
  *   sources: { logo: string, logoType: string, ownership: string | null, facts: Record<string, string> | null, checkedAt: string | null },
  *   links: { self: string }
@@ -50,7 +53,7 @@ export const DEFAULT_BASE_URL = 'https://cdn.jsdelivr.net/gh/MrChartist/global-s
  *   founded: number | null, headquarters: string | null, legalBasis: string | null,
  *   parent: { institution?: string, company?: string, url: string } | null,
  *   children: { slug: string, name: string, url: string }[], listedAs: { company: string, url: string } | null,
- *   website: string | null, wikidata: string | null, brandColor: string | null, onDark: boolean,
+ *   website: string | null, wikidata: string | null, brandColor: string | null, brandInk: BrandInk | null, onDark: boolean,
  *   logo: { url: string, format: 'svg' | 'png', svg: string | null, mark: string | null, png: Record<string, string> },
  *   usageNote: string | null, sources: { logo: string, logoType: string, facts: Record<string, string> | null, checkedAt: string | null },
  *   links: { self: string }
@@ -59,6 +62,9 @@ export const DEFAULT_BASE_URL = 'https://cdn.jsdelivr.net/gh/MrChartist/global-s
  *   type: 'brand' | 'institution', id: string, name: string, shortName: string | null, aliases: string[], kind: string,
  *   owner: string | null, country: string | null, logo: string, onDark: boolean, url: string
  * }} Entity
+ * @typedef {{ market: string, ticker: string, exchange: string | null, status: 'listed' | 'delisted', url: string }} ListingRef
+ * @typedef {{ isin: string, name: string, primary: ListingRef, others: ListingRef[] }} IsinPointer
+ * @typedef {{ key: string, exchange: string, ticker: string, market: string, name: string, isin: string | null, status: 'listed' | 'delisted', url: string }} LookupPointer
  * @typedef {{ type: 'company', id: string, name: string, market: string, ticker: string, logo: string, url: string, hit: SearchHit }} CompanyResult
  * @typedef {CompanyResult | Entity} FindResult
  * @typedef {{ ticker: string, name: string, sector: string | null, marketCapUsd: number | null, url: string }} CompanyRow
@@ -121,6 +127,22 @@ export class StockLogosClient {
 
     /** One institution by slug, e.g. 'sebi', 'rbi' or 'upi'. @param {string} slug @returns {Promise<Institution>} */
     institution(slug) { return this._json(`api/v1/institutions/${encodeURIComponent(slug.toLowerCase())}.json`); }
+
+    /**
+     * Find a company by ISIN. Returns a pointer: `primary` is the line to use (still listed, home market, then largest market cap),
+     * `others` are the other lines that share the ISIN (depositary receipts, cross-listings), in the same order; follow `primary.url` or call company().
+     * A 404 ApiError means no company in the catalogue carries that ISIN.
+     * @param {string} isin @returns {Promise<IsinPointer>}
+     */
+    byIsin(isin) { return this._json(`api/v1/isin/${encodeURIComponent(String(isin).trim().toUpperCase())}.json`); }
+
+    /**
+     * Find a company by exchange code and ticker, e.g. lookup('NASDAQ', 'AAPL') or lookup('NSE', 'TCS'): the exchange codes are the `exchange`
+     * values in company files. Returns a pointer with the market, name, ISIN and the company's `url`. Companies with no exchange code have no
+     * lookup file (use company()). A 404 ApiError means no such listing.
+     * @param {string} exchange @param {string} ticker @returns {Promise<LookupPointer>}
+     */
+    lookup(exchange, ticker) { return this._json(`api/v1/lookup/${encodeURIComponent(`${String(exchange).trim().toUpperCase()}-${ticker}`)}.json`); }
 
     /** Every brand and institution as one small search index (companies are in searchRows()). @returns {Promise<Entity[]>} */
     entities() { return this._json('api/v1/entities.json'); }

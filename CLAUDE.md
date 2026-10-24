@@ -1,6 +1,6 @@
 # Global Stock Logos
 
-Logos and profiles for 79,000+ listed companies in 68 markets, plus brands and market institutions, served as plain files by jsDelivr: a static JSON API (`api/v1/`), SVG/PNG logos, a catalogue page (`index.html`) and a zero-dependency JS client (`src/client.js`). Read `README.md`, `docs/API.md` and `docs/BRANDS.md` for the data model; `TODO.md` is the work list.
+Logos and profiles for 80,000+ listed companies in 68 markets, plus brands and market institutions, served as plain files by jsDelivr: a static JSON API (`api/v1/`), SVG/PNG logos, a catalogue page (`index.html`) and a zero-dependency JS client (`src/client.js`). Read `README.md`, `docs/API.md` and `docs/BRANDS.md` for the data model; `TODO.md` is the work list.
 
 ## Commands
 

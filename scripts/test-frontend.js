@@ -10,7 +10,9 @@ import path from 'path';
 import { chromium } from 'playwright-core';
 import { ROOT } from './enrich-store.js';
 
-const candidates = [process.env.CHROME_PATH, '/opt/pw-browsers/chromium-1194/chrome-linux/chrome', '/usr/bin/chromium', '/usr/bin/chromium-browser', '/usr/bin/google-chrome'].filter(Boolean);
+const pw = process.env.PLAYWRIGHT_BROWSERS_PATH || '/opt/pw-browsers';
+const installed = fs.existsSync(pw) ? fs.readdirSync(pw).filter((d) => /^chromium-\d+$/.test(d)).sort().reverse().flatMap((d) => [`${pw}/${d}/chrome-linux64/chrome`, `${pw}/${d}/chrome-linux/chrome`]) : [];
+const candidates = [process.env.CHROME_PATH, ...installed, '/opt/pw-browsers/chromium-1194/chrome-linux/chrome', '/usr/bin/chromium', '/usr/bin/chromium-browser', '/usr/bin/google-chrome'].filter(Boolean);
 const exe = candidates.find((p) => fs.existsSync(p));
 if (!exe) { console.log('Frontend check skipped: no Chromium found (set CHROME_PATH).'); process.exit(0); }
 
@@ -130,6 +132,125 @@ for (const [label, size] of [['desktop', { width: 1280, height: 900 }], ['phone'
         assert.match(await card.getAttribute('href'), /institutions\/(logos|png)\/.*sebi/);
     });
     await t(`${label}: no script errors`, () => assert.deepEqual(errors, []));
+    await page.close();
+}
+
+// ---------- web component, tokens and the recipes in docs/INTEGRATIONS.md ----------
+{
+    const page = await browser.newPage({ viewport: { width: 800, height: 700 } });
+    const errors = [];
+    page.on('pageerror', (e) => errors.push(e.message));
+    const CDN = 'https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main';
+    // The component's default base is the CDN: answer it from the local files so the test needs no network.
+    await page.route(`${CDN}/**`, (route) => {
+        const f = path.join(ROOT, decodeURIComponent(new URL(route.request().url()).pathname.replace(/^\/gh\/[^/]+\/[^/@]+@main/, '')));
+        if (!f.startsWith(ROOT) || !fs.existsSync(f) || fs.statSync(f).isDirectory()) return route.fulfill({ status: 404 });
+        return route.fulfill({ contentType: TYPES[path.extname(f)] || 'application/octet-stream', body: fs.readFileSync(f) });
+    });
+    /** Serve an HTML snippet from the local server, with the CDN address swapped for the local one. */
+    const show = async (html) => {
+        await page.route(`${base}/__recipe`, (route) => route.fulfill({ contentType: 'text/html', body: `<!doctype html><meta charset="utf-8">${html.split(CDN).join(base)}` }));
+        await page.goto(`${base}/__recipe`, { waitUntil: 'networkidle' });
+        await page.unroute(`${base}/__recipe`);
+    };
+    const loaded = (sel) => page.evaluate((s) => { const i = document.querySelector(s).shadowRoot.querySelector('img'); return !!i && i.complete && i.naturalWidth > 0; }, sel);
+
+    await t('stock-logo: loads the SVG, sets size and an accessible name', async () => {
+        await show(`<script type="module" src="${base}/src/stock-logo.js"></script>
+            <stock-logo id="a" symbol="in:TCS" size="48" name="Tata Consultancy Services" loading="eager"></stock-logo>
+            <stock-logo id="b" symbol="TCS" market="IN" loading="eager" label=""></stock-logo>`);
+        await page.waitForFunction(() => document.querySelector('#a').shadowRoot.querySelector('img'));
+        await page.waitForFunction(() => { const i = document.querySelector('#a').shadowRoot.querySelector('img'); return i.complete && i.naturalWidth > 0; });
+        assert.match(await page.evaluate(() => document.querySelector('#a').shadowRoot.querySelector('img').src), /\/logos\/in\/TCS\.svg$/);
+        assert.deepEqual(await page.evaluate(() => { const r = document.querySelector('#a').getBoundingClientRect(); return [r.width, r.height]; }), [48, 48]);
+        assert.equal(await page.getAttribute('#a', 'aria-label'), 'Tata Consultancy Services logo');
+        assert.equal(await page.getAttribute('#a', 'role'), 'img');
+        assert.equal(await page.getAttribute('#b', 'role'), 'presentation', 'label="" is decorative');
+        assert.ok(await loaded('#b'), 'bare ticker plus market attribute loads');
+    });
+    await t('stock-logo: falls back SVG, then PNG, then initials', async () => {
+        await page.route('**/logos/us/ZZPNG.svg', (r) => r.fulfill({ status: 404 }));
+        await page.route('**/logos/us/ZZPNG.png', (r) => r.fulfill({ contentType: 'image/png', body: fs.readFileSync(path.join(ROOT, 'png/64/in/TCS.png')) }));
+        await show(`<script type="module" src="${base}/src/stock-logo.js"></script>
+            <stock-logo id="p" symbol="us:ZZPNG" loading="eager"></stock-logo>
+            <stock-logo id="n" symbol="us:NOSUCHCO" name="No Such Company" loading="eager"></stock-logo>
+            <stock-logo id="x" symbol="nonsense"></stock-logo>`);
+        await page.waitForFunction(() => /ZZPNG\.png$/.test(document.querySelector('#p').shadowRoot.querySelector('img')?.src || ''));
+        await page.waitForFunction(() => document.querySelector('#n').shadowRoot.querySelector('.badge')?.textContent === 'NS');
+        assert.equal(await page.evaluate(() => document.querySelector('#x').shadowRoot.querySelector('.badge').textContent), 'NO');
+        assert.equal(await page.getAttribute('#n', 'aria-label'), 'No Such Company logo');
+        await page.unroute('**/logos/us/ZZPNG.svg'); await page.unroute('**/logos/us/ZZPNG.png');
+    });
+    await t('stock-logo: lazy until near the viewport, then loads; baseUrl and attribute changes apply', async () => {
+        await show(`<script type="module" src="${base}/src/stock-logo.js"></script>
+            <div style="height:3000px"></div><stock-logo id="l" symbol="us:AAPL"></stock-logo>`);
+        await page.waitForFunction(() => document.querySelector('#l').shadowRoot.querySelector('.badge'));
+        assert.equal(await page.evaluate(() => !!document.querySelector('#l').shadowRoot.querySelector('img')), false, 'not loaded while far off screen');
+        await page.locator('#l').scrollIntoViewIfNeeded();
+        await page.waitForFunction(() => document.querySelector('#l').shadowRoot.querySelector('img'));
+        await page.evaluate(() => document.querySelector('#l').setAttribute('symbol', 'us:MSFT'));
+        await page.waitForFunction(() => /MSFT\.svg$/.test(document.querySelector('#l').shadowRoot.querySelector('img')?.src || ''));
+        const req = page.waitForRequest('http://127.0.0.1:1/x/logos/us/MSFT.svg');
+        await page.evaluate(() => document.querySelector('#l').setAttribute('baseUrl', 'http://127.0.0.1:1/x/'));
+        await req;
+    });
+    await t('stock-logo: theme sets the tile (light, dark, auto follows the system)', async () => {
+        await show(`<script type="module" src="${base}/src/stock-logo.js"></script>
+            <stock-logo id="l" symbol="in:TCS" theme="light" loading="eager"></stock-logo>
+            <stock-logo id="d" symbol="in:TCS" theme="dark" loading="eager"></stock-logo>
+            <stock-logo id="a" symbol="in:TCS" loading="eager"></stock-logo>`);
+        const tile = (id) => page.evaluate((i) => getComputedStyle(document.querySelector(i).shadowRoot.querySelector('.box')).backgroundColor, id);
+        await page.waitForFunction(() => document.querySelector('#a').shadowRoot.querySelector('.box'));
+        assert.equal(await tile('#l'), 'rgb(255, 255, 255)');
+        assert.equal(await tile('#d'), 'rgb(15, 14, 13)');
+        assert.equal(await tile('#a'), 'rgb(255, 255, 255)');
+        await page.emulateMedia({ colorScheme: 'dark' });
+        assert.equal(await tile('#a'), 'rgb(15, 14, 13)');
+        assert.equal(await tile('#l'), 'rgb(255, 255, 255)');
+        await page.emulateMedia({ colorScheme: 'light' });
+    });
+    await t('tokens.css: light, forced dark and system dark values match the page', async () => {
+        const html = '<link rel="stylesheet" href="/assets/tokens.css"><body style="background:var(--bg)">';
+        const bg = () => page.evaluate(() => getComputedStyle(document.body).backgroundColor);
+        await show(html);
+        assert.equal(await bg(), 'rgb(249, 248, 245)');
+        await page.emulateMedia({ colorScheme: 'dark' });
+        assert.equal(await bg(), 'rgb(15, 14, 13)');
+        await page.evaluate(() => document.documentElement.dataset.theme = 'light');
+        assert.equal(await bg(), 'rgb(249, 248, 245)');
+        await page.emulateMedia({ colorScheme: 'light' });
+        await page.evaluate(() => document.documentElement.dataset.theme = 'dark');
+        assert.equal(await bg(), 'rgb(15, 14, 13)');
+    });
+
+    // Every recipe in docs/INTEGRATIONS.md renders, loads its logos, and does not overflow.
+    const md = fs.readFileSync(path.join(ROOT, 'docs/INTEGRATIONS.md'), 'utf8');
+    const recipes = [...md.matchAll(/<!-- recipe: ([\w-]+) -->\n```html\n([\s\S]*?)```/g)].map((m) => ({ name: m[1], html: m[2] }));
+    await t('docs: the five recipes are present', () => assert.deepEqual(recipes.map((r) => r.name), ['web-component', 'tokens', 'company-card', 'logo-grid', 'search-box']));
+    for (const r of recipes) {
+        await t(`docs recipe "${r.name}" renders`, async () => {
+            await show(r.html);
+            await page.waitForTimeout(300);
+            if (r.name === 'web-component') {
+                await page.waitForFunction(() => [...document.querySelectorAll('stock-logo')].every((e) => e.shadowRoot.querySelector('img')));
+                assert.equal(await page.locator('stock-logo').count(), 3);
+            } else if (r.name === 'tokens') {
+                assert.equal(await page.evaluate(() => getComputedStyle(document.body).backgroundColor), 'rgb(249, 248, 245)');
+                assert.equal(await page.evaluate(() => getComputedStyle(document.querySelector('.note')).borderRadius), '22px');
+            } else if (r.name === 'search-box') {
+                await page.fill('input', 'tata consultancy');
+                await page.waitForSelector('#hits .card .tick');
+                assert.equal(await page.locator('#hits .card .tick').first().textContent(), 'TCS');
+            }
+            if (['company-card', 'logo-grid', 'search-box'].includes(r.name)) {
+                await page.waitForFunction(() => [...document.querySelectorAll('img.logo')].every((i) => i.complete && i.naturalWidth > 0));
+                assert.ok(await page.locator('img.logo').count() > 0);
+                assert.equal(await page.evaluate(() => getComputedStyle(document.querySelector('.card')).borderRadius), '22px', 'style.css classes apply');
+            }
+            assert.ok((await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)) <= 0, 'no horizontal overflow');
+        });
+    }
+    await t('components: no script errors', () => assert.deepEqual(errors, []));
     await page.close();
 }
 await browser.close();

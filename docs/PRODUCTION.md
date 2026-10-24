@@ -57,7 +57,7 @@ Cache responses on your side. Fetch `search-index.json` (about 5 MB) once and se
 
 ## 7. Corrections and removals
 
-A wrong value, a wrong logo or a rights holder's request: write to [contact@mrchartist.com](mailto:contact@mrchartist.com). Logo removals are handled as described in [DATA-SOURCES.md](../DATA-SOURCES.md).
+A wrong value, a wrong logo or a rights holder's request: write to [contact@mrchartist.com](mailto:contact@mrchartist.com). Logo removals follow [TAKEDOWN.md](./TAKEDOWN.md) (process, proposed 7-day target, request log); sources are in [DATA-SOURCES.md](../DATA-SOURCES.md).
 
 ## Checklist
 

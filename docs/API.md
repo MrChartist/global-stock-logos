@@ -1,6 +1,6 @@
 # API
 
-A static JSON API for 75,000+ listed companies in 68 markets: logo, identity, market cap in local currency, USD and INR, and a company profile. Every endpoint is a plain file served by the [jsDelivr](https://www.jsdelivr.com/) CDN, so there is **no key, no sign-up and no server to go down**. Responses send permissive CORS headers, so browsers can call them directly.
+A static JSON API for 80,000+ listed companies in 68 markets: logo, identity, market cap in local currency, USD and INR, and a company profile. Every endpoint is a plain file served by the [jsDelivr](https://www.jsdelivr.com/) CDN, so there is **no key, no sign-up and no server to go down**. Responses send permissive CORS headers, so browsers can call them directly.
 
 Base URL: `https://cdn.jsdelivr.net/gh/MrChartist/global-stock-logos@main`
 
@@ -14,6 +14,8 @@ Machine-readable: [OpenAPI 3.1](../api/v1/openapi.json) · JSON Schemas of a [co
 | `GET /api/v1/markets.json` | All markets: `key`, `code`, `country`, `companies`, `url` |
 | `GET /api/v1/markets/{market}.json` | Slim rows of one market, largest first: `ticker`, `name`, `sector`, `marketCapUsd`, `url` |
 | `GET /api/v1/companies/{market}/{ticker}.json` | The full profile of one company, with its `brands` |
+| `GET /api/v1/isin/{isin}.json` | Find a company by ISIN: a small pointer to the `primary` listing and the `others` that share the ISIN (see [Lookup by ISIN or exchange ticker](#lookup-by-isin-or-exchange-ticker)) |
+| `GET /api/v1/lookup/{exchange}-{ticker}.json` | Find a company by exchange code and ticker (`NASDAQ-AAPL`, `NSE-TCS`): a small pointer with the company `url` |
 | `GET /api/v1/brands.json` | Every brand, sub-brand and subsidiary with its listed parent (see [BRANDS.md](./BRANDS.md)) |
 | `GET /api/v1/brands/{slug}.json` | One brand: aliases, founded, country, parent and all listed `owners`, `markets`, logo URLs (SVG or PNG, mark, PNG 256/512/1024), sources |
 | `GET /api/v1/institutions.json` | Market institutions: regulators, government bodies, exchanges, depositories, payment systems (see [BRANDS.md](./BRANDS.md#market-institutions)) |
@@ -87,12 +89,29 @@ img.src = api.brandLogoUrl('jio', 512);        // no request needed
 }
 ```
 
+### Lookup by ISIN or exchange ticker
+
+If you hold an ISIN or an exchange code and ticker, you do not need to search. Both endpoints return a small pointer (about 300 bytes to 3 KB); follow its `url` for the full profile.
+
+```bash
+curl -s .../api/v1/isin/US0378331005.json
+# { "isin": "US0378331005", "name": "Apple Inc.",
+#   "primary": { "market": "US", "ticker": "AAPL", "exchange": "NASDAQ", "status": "listed", "url": ".../companies/us/AAPL.json" },
+#   "others": [ { "market": "MEXICO", "ticker": "AAPL", "exchange": "BMV", ... }, ... ] }
+curl -s .../api/v1/lookup/NASDAQ-AAPL.json
+# { "key": "NASDAQ-AAPL", "exchange": "NASDAQ", "ticker": "AAPL", "market": "US", "name": "Apple Inc.", "isin": "US0378331005", "status": "listed", "url": ".../companies/us/AAPL.json" }
+```
+
+- **One ISIN, several lines.** A share and its depositary receipts or cross-listings carry the same ISIN (Apple has 16 lines). `primary` is chosen the same way every build: still listed first, then the home market (the company's country is the market's country), then the larger market cap, then market and ticker in alphabetical order. `others` holds every other line in that order. A line never appears twice.
+- **Lookup keys.** `{exchange}` is the upper-case `exchange` value of the company file (`NASDAQ`, `NYSE`, `NSE`, `BSE`, `LSE`, `XETR`, `HKEX`, `TSE`...), then a hyphen, then the ticker as in the market list (URL-encode special characters). Exchange codes are unique per market, so a key never points at two companies. About 5,000 companies have no exchange code yet and no lookup file; use `/companies/{market}/{ticker}.json` for them. Renamed-ticker aliases are not listed.
+- A missing ISIN or lookup key returns **404**. Counts are in `index.json` (`isins`, `lookups`). Schemas: [isin](../api/v1/schema/isin.schema.json), [lookup](../api/v1/schema/lookup.schema.json).
+
 ### How to read it
 
 - **Unknown is `null`.** We never guess. Coverage per field is in [DATA.md](./DATA.md).
 - **Market cap.** `local` is in the company's reporting currency (`marketCap.currency`). `usd` and `inr` are converted at the daily rate in [`fx-rates.json`](../fx-rates.json) and are approximate. `currency` (price currency) can differ: UK shares are priced in pence (`GBX`) but their market cap is in `GBP`.
-- **Officers carry a source and a confidence.** `confidence: "low"` means community data (Wikidata) that may be years out of date; `"medium"` means exchange or registry data; `"high"` means checked by hand against the company's own page or a filing, and `source` is that URL. Check before you rely on a name.
-- **Logo.** `logo.svg` is the vector file; it is `null` for 107 older companies that only have a PNG, so use `logo.file.url`, which always exists. `logo.png` lists rendered sizes (64, 128, 256, 512) and exists for the 3,000 largest companies. `isPlaceholder: true` means a generated initials badge, not the real logo. `logo.provenance` says where the square icon comes from: `official` (the owner's site, press kit or an official document), `commons` (Wikimedia Commons), `crawled` (TradingView's symbol-logo service, not checked file by file) or `generated` (the initials badge); `logo.provenanceSource` is the page it was taken from, or `null`. A logo is `official` or `commons` only when a source is recorded in [`curated/logo-provenance.json`](../curated/logo-provenance.json) or [`logo-sources.json`](../logo-sources.json), so `crawled` means "not yet verified", not "wrong". The counts are in `index.json` under `logoProvenance`. `logo.hd`, when present, is the official full logo (wordmark or lock-up) as vector SVG; `logo.svg` is the square icon. `brandColor` is taken from the logo file: an approximation, not an official brand colour.
+- **Officers carry a source and a confidence.** `confidence: "low"` means community data (Wikidata) that may be years out of date; `"medium"` means exchange or registry data; `"high"` means checked by hand against the company's own page or a filing, and `source` is that URL. Check before you rely on a name. **`asOf`** is the date that name was last checked by hand (`YYYY-MM-DD`), so a site can say "as of Oct 2026". It comes from a check date recorded in [`curated/overrides.json`](../curated/README.md) and is `null` when none is recorded; we never infer one, so `null` means "date unknown", not "old". `npm run officers:stale` lists hand-checked names whose `asOf` is more than 12 months old (`--undated` adds those with no date).
+- **Logo.** `logo.svg` is the vector file; it is `null` for 107 older companies that only have a PNG, so use `logo.file.url`, which always exists. `logo.png` lists rendered sizes (64, 128, 256, 512) and exists for the 3,000 largest companies. `isPlaceholder: true` means a generated initials badge, not the real logo. `logo.provenance` says where the square icon comes from: `official` (the owner's site, press kit or an official document), `commons` (Wikimedia Commons), `crawled` (TradingView's symbol-logo service, not checked file by file) or `generated` (the initials badge); `logo.provenanceSource` is the page it was taken from, or `null`. A logo is `official` or `commons` only when a source is recorded in [`curated/logo-provenance.json`](../curated/logo-provenance.json) or [`logo-sources.json`](../logo-sources.json), so `crawled` means "not yet verified", not "wrong". The counts are in `index.json` under `logoProvenance`. `logo.hd`, when present, is the official full logo (wordmark or lock-up) as vector SVG; `logo.svg` is the square icon. `brandColor` is taken from the logo file: an approximation, not an official brand colour. **`brandInk`** (next to every `brandColor`, also on brands and institutions; `null` when there is no colour) is a readable text colour for a badge or chip filled with it: `{ "color": "#FFFFFF", "theme": "dark", "contrast": 4.72 }`. `contrast` is the WCAG ratio of `color` on `brandColor` and is always at least 4.5 (AA for normal text). `theme` is the theme of the tile the colour forms: `dark` = a dark tile with light ink (`#FFFFFF`), `light` = a light tile with dark ink (`#111111`, or `#000000` for mid-tones where `#111111` falls short). Use it as `background: brandColor; color: brandInk.color`. Checked on the colour alone, not on the logo drawn over it.
 - **`listingDate`** is the first listing on an exchange, not the founding date.
 - **`sources`** says where each value came from; **`checks`** records a second source that disagreed.
 - **`freshness`** gives the dates of the last market-data and profile refresh. Data is refreshed monthly.
@@ -112,6 +131,8 @@ await api.market('korea');                                 // companies of one m
 await api.company('us', 'AAPL');                           // full profile
 await api.brands();                                        // every brand with its listed parent
 await api.institutions();                                  // SEBI, RBI, NSE, NPCI, UPI... with logos
+await api.byIsin('US0378331005');                          // pointer: primary listing and the other lines
+await api.lookup('NSE', 'TCS');                            // pointer from exchange code and ticker
 await api.entities();                                      // brands and institutions in one small index
 await api.find('upi');                                     // companies, brands and institutions together
 api.brandLogoUrl('jio', 512); api.institutionLogoUrl('sebi', 256);   // URLs without a request

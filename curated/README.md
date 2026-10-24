@@ -10,7 +10,9 @@ Add hand-checked facts here. They always win over automatic data and are never o
 }
 ```
 
-Allowed fields: `name` (the current name after a rename, until the exchange data catches up), `status`/`delistedAt`/`successor` (a company that was acquired, taken private or moved to a new ticker: `"status": "delisted"`, `"successor": "US:SKYD"`), and any profile field (`website`, `founded`, `headquarters`, `ceo`, `employees`, `slogan`, `brandColor`, `aliases`, ...). Add a source link in your pull request. Do not add slogans you cannot source.
+Allowed fields: `name` (the current name after a rename, until the exchange data catches up), `status`/`delistedAt`/`successor` (a company that was acquired, taken private or moved to a new ticker: `"status": "delisted"`, `"successor": "US:SKYD"`), and any profile field (`website`, `founded`, `headquarters`, `ceo`, `employees`, `slogan`, `brandColor`, `aliases`, ...). Add a source link in your pull request.
+
+To date a hand check of the CEO or chairman, add `asOf` next to the value, the value's own `sources` URL and the day you checked it (`YYYY-MM-DD`): `{ "ceo": "Jane Doe", "sources": { "ceo": "https://…" }, "asOf": { "ceo": "2026-10-24" } }`. It is published as `profile.ceo.asOf` (and `chairman`) in the API, and `npm run officers:stale` lists values checked more than 12 months ago. Never guess a date: no `asOf` means `null`. `node scripts/validate-data.js` (part of `npm test`) rejects a date in the future, a field other than `ceo` or `chairman`, or an `asOf` without the value and its source in the same entry. Do not add slogans you cannot source.
 
 ## aliases.json
 
