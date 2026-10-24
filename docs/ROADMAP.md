@@ -32,7 +32,7 @@ Owner-only steps are marked (owner).
 
 - [ ] **Tag a release** and publish the `data-YYYY-MM` tag from the monthly workflow, so sites pin a version instead of `@main`. Document the pin in `docs/API.md`.
 - [ ] (owner) Enable GitHub Pages, fix the repository description, delete merged branches automatically, watch the first runs of the three workflows.
-- [ ] **A "using this in production" page**: pin a version, cache headers, fallback image, attribution and takedown contact, what `confidence` means, what `isPlaceholder` means, how fresh market data is.
+- [x] **A "using this in production" page** ([PRODUCTION.md](./PRODUCTION.md)): pin a version, cache headers, fallback image, attribution and takedown contact, what `confidence` means, what `isPlaceholder` means, how fresh market data is.
 - [ ] **Decide the rights position for crawled logos** (see Phase 1). Until then, document it plainly in the README instead of one sentence at the end.
 - [ ] Keep numbers consistent: README says 75,000+, `CLAUDE.md` 79,000+, the manifest 80,439 listings. Pick one definition (listings with a logo) and generate it.
 
@@ -40,8 +40,8 @@ Owner-only steps are marked (owner).
 
 Goal: for the logos a website actually shows, every one is official and labelled as such.
 
-- [ ] **Provenance field.** Add `logo.provenance` to the API: `official-vector`, `official-raster`, `commons`, `crawled` (TradingView), `generated`. Record it per logo in a generated table (extend `logo-sources.json`; today it has 3 entries). Sites can then show only `official-*` and `commons`, and fall back for the rest.
-- [ ] **Replace crawled logos by official ones, largest first.** Same rules as `CLAUDE.md`: owner's own site, official document or Wikimedia Commons, looked at one by one. Tiers: top 500 by market cap, then 3,000, then each market's index constituents (Nifty 500, S&P 500, FTSE 350, DAX, CAC, Nikkei 225, KOSPI 200, TOPIX 100…). Track progress as a percentage per tier in `npm run coverage`.
+- [x] **Provenance field** (done: `logo.provenance` and `logo.provenanceSource` in the API, `logoProvenance` counts in `index.json`, sourced entries in `curated/logo-provenance.json`; today 0 official, 3 commons, 80,256 crawled, 180 generated — the work now is moving logos out of `crawled` with evidence). Add `logo.provenance` to the API: `official-vector`, `official-raster`, `commons`, `crawled` (TradingView), `generated`. Record it per logo in a generated table (extend `logo-sources.json`; today it has 3 entries). Sites can then show only `official-*` and `commons`, and fall back for the rest.
+- [ ] **Replace crawled logos by official ones, largest first.** Same rules as `CLAUDE.md`: owner's own site, official document or Wikimedia Commons, looked at one by one. Tiers: top 500 by market cap, then 3,000, then each market's index constituents (Nifty 500, S&P 500, FTSE 350, DAX, CAC, Nikkei 225, KOSPI 200, TOPIX 100…). Track progress as a percentage per tier with `npm run tiers`.
 - [ ] **HD for the top 3,000** (now 740 companies). Finish the India batches in `work/`, then the US and Europe indices.
 - [ ] **Dark-mode variants.** Detect logos that vanish on a dark page (black or very dark marks) and add `logo.onDark` (an official light version, or a flag telling the site to put the logo on a light tile). Add it to `logo-tool.js check`.
 - [ ] **Consistent framing.** One padding and aspect rule for square icons, so a grid of 50 logos looks even. Add a visual regression sheet (contact sheet of 200 random logos per release, looked at before tagging).

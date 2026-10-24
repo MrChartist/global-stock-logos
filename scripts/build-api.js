@@ -35,6 +35,30 @@ const confidence = (source) => (source === 'wikidata' || source === 'wikidata-na
 const person = (name, source) => (name ? { name, source: source || 'unknown', confidence: confidence(source) } : null);
 const clean = (o) => (o && Object.keys(o).length ? o : null);
 
+/** Where a company's square icon (logos/<market>/<TICKER>.svg) comes from.
+ *  generated: initials badge we draw; official: curated/logo-provenance.json names the owner's site, press kit or an official document;
+ *  commons: Wikimedia Commons (logo-sources.json, or a curated entry of that type); crawled: TradingView's symbol-logo service, with no per-file check.
+ *  Only evidence moves a logo out of "crawled", so the label never claims more than we know. */
+export const PROVENANCE = ['official', 'commons', 'crawled', 'generated'];
+const PROVENANCE_TYPES = { 'official-site': 'official', 'press-kit': 'official', 'official-document': 'official', 'wikimedia-commons': 'commons' };
+const readJson = (rel) => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, rel), 'utf-8')); } catch { return {}; } };
+const CURATED_LOGOS = readJson('curated/logo-provenance.json');
+const COMMONS_LOGOS = readJson('logo-sources.json');
+for (const [key, v] of Object.entries(CURATED_LOGOS)) {
+    if (!PROVENANCE_TYPES[v?.type]) throw new Error(`curated/logo-provenance.json ${key}: type must be one of ${Object.keys(PROVENANCE_TYPES).join(', ')}`);
+    if (!/^https?:\/\//.test(v.source || '')) throw new Error(`curated/logo-provenance.json ${key}: source must be a URL`);
+}
+export function logoProvenance(marketKey, ticker, m) {
+    if (m.isProcedural) return { provenance: 'generated', provenanceSource: null };
+    for (const t of [ticker, m.logoOf].filter(Boolean)) {
+        const key = `${marketKey.toUpperCase()}:${t}`;
+        const c = CURATED_LOGOS[key];
+        if (c) return { provenance: PROVENANCE_TYPES[c.type], provenanceSource: href(c.source) };
+        if (COMMONS_LOGOS[key]?.commonsFile) return { provenance: 'commons', provenanceSource: href(COMMONS_LOGOS[key].commonsFile) };
+    }
+    return { provenance: 'crawled', provenanceSource: null };
+}
+
 const BRANDS = loadBrands();
 const brandsOf = new Map();
 for (const b of BRANDS) for (const owner of [b.parent, ...(b.otherListedOwners || [])]) {
@@ -162,6 +186,7 @@ export function toCompany(marketKey, ticker, m) {
             brandColor: m.brandColor ?? null,
             brandColorSource: m.brandColorSource ?? null,
             isPlaceholder: !!m.isProcedural,
+            ...logoProvenance(marketKey, ticker, m),
             hd: m.hdPath ? `${CDN}/${m.hdPath}` : null,
         },
         brands: (brandsOf.get(`${marketKey.toUpperCase()}:${ticker}`) || [])
@@ -226,13 +251,15 @@ export const COMPANY_SCHEMA = {
             additionalProperties: false,
         },
         logo: {
-            type: 'object', required: ['svg', 'file', 'png', 'brandColor', 'brandColorSource', 'isPlaceholder'],
+            type: 'object', required: ['svg', 'file', 'png', 'brandColor', 'brandColorSource', 'isPlaceholder', 'provenance', 'provenanceSource'],
             properties: {
                 svg: nullable('string', { format: 'uri', description: 'Vector logo; null for the 107 older companies that only have a PNG (use `file`)' }),
                 file: { type: 'object', required: ['url', 'format'], properties: { url: { type: 'string', format: 'uri' }, format: { enum: ['svg', 'png'] } }, additionalProperties: false, description: 'The logo file in the logos/ folder, always present' },
                 png: { type: ['object', 'null'], description: 'PNG URLs by pixel size (64, 128, 256, 512); present for the 3,000 largest companies', additionalProperties: { type: 'string', format: 'uri' } },
                 brandColor: nullable('string', { pattern: '^#[0-9A-F]{6}$', description: 'Taken from the logo file: an approximation, not an official brand colour' }),
                 brandColorSource: nullable('string'), isPlaceholder: { type: 'boolean', description: 'true = generated initials badge, not a real logo' },
+                provenance: { enum: PROVENANCE, description: 'Where the square icon comes from. official = the owner\'s site, press kit or an official document; commons = Wikimedia Commons; crawled = TradingView\'s symbol-logo service, not checked file by file; generated = initials badge. Show only official and commons when you need logos with a known source.' },
+                provenanceSource: nullable('string', { format: 'uri', description: 'The page or file the logo was taken from; null for crawled and generated' }),
                 hd: nullable('string', { format: 'uri', description: 'Official full logo (wordmark or lock-up, original aspect ratio): vector SVG, or an official PNG of at least 1,000 px when the company publishes no vector logo; `svg` is the square icon' }),
             },
             additionalProperties: false,
@@ -366,6 +393,7 @@ if (process.argv[1] && process.argv[1].endsWith('build-api.js')) {
 
     const markets = [];
     let total = 0;       // real companies
+    const provenanceTotals = {};
     let aliasCount = 0;  // renamed / special-character tickers that reuse another company's logo (see curated/aliases.json)
     for (const f of fs.readdirSync(path.join(ROOT, 'manifests')).sort()) {
         const key = f.replace('.json', '');
@@ -376,6 +404,7 @@ if (process.argv[1] && process.argv[1].endsWith('build-api.js')) {
             const c = toCompany(key, ticker, m);
             fs.writeFileSync(path.join(OUT, 'companies', key, `${ticker}.json`), JSON.stringify(c));
             if (m.logoOf) { aliasCount++; continue; }   // an alias has its own company file but is not listed or counted as another company
+            provenanceTotals[c.logo.provenance] = (provenanceTotals[c.logo.provenance] || 0) + 1;
             rows.push({ ticker, name: c.name, sector: c.classification.sector, marketCapUsd: c.marketCap?.usd ?? null, url: c.links.self });
             total++;
         }
@@ -398,10 +427,11 @@ if (process.argv[1] && process.argv[1].endsWith('build-api.js')) {
     write('schema/brand.schema.json', BRAND_SCHEMA);
     write('schema/institution.schema.json', INSTITUTION_SCHEMA);
     const counts = { companies: total, markets: markets.length };
+    const logoProvenanceCounts = Object.fromEntries(PROVENANCE.map((p) => [p, provenanceTotals[p] || 0]));
     write('openapi.json', openapi(counts));
     write('index.json', {
         api: 'Global Stock Logos API', version: API_VERSION, dataVersion: manifest.version,
-        dataRefreshedAt: manifest.dataRefreshedAt, companies: total, aliases: aliasCount, markets: markets.length, brands: brands.length, institutions: institutions.length, cdn: CDN,
+        dataRefreshedAt: manifest.dataRefreshedAt, companies: total, logoProvenance: logoProvenanceCounts, aliases: aliasCount, markets: markets.length, brands: brands.length, institutions: institutions.length, cdn: CDN,
         endpoints: {
             markets: `${API_BASE}/markets.json`,
             market: `${API_BASE}/markets/{market}.json`,

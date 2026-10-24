@@ -74,6 +74,8 @@ export type Company = {
         brandColor: string | null;
         brandColorSource: string | null;
         isPlaceholder: boolean;
+        provenance: 'official' | 'commons' | 'crawled' | 'generated';
+        provenanceSource: string | null;
         hd?: string | null;
     };
     brands?: BrandRef[];
@@ -265,7 +267,7 @@ export type ApiIndex = {
  *     headquarters: string | null, headquartersLocal: string | null, address: string | null, addressLocal: string | null,
  *     employees: number | null, ceo: Person | null, chairman: Person | null, slogan: string | null
  *   },
- *   logo: { svg: string | null, file: { url: string, format: 'svg' | 'png' }, png: Record<string, string> | null, brandColor: string | null, brandColorSource: string | null, isPlaceholder: boolean, hd?: string | null },
+ *   logo: { svg: string | null, file: { url: string, format: 'svg' | 'png' }, png: Record<string, string> | null, brandColor: string | null, brandColorSource: string | null, isPlaceholder: boolean, provenance: 'official' | 'commons' | 'crawled' | 'generated', provenanceSource: string | null, hd?: string | null },
  *   brands?: BrandRef[], institution?: { slug: string, name: string, url: string } | null,
  *   links: { self: string, yahoo: string | null, website: string | null },
  *   sources: Record<string, string> | null, checks: Record<string, unknown> | null,
