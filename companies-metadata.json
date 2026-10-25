@@ -957089,5 +957089,29 @@
     "logoid": "omoljica-ad-omolji",
     "yahooTicker": "OMOL",
     "yahooUrl": "https://finance.yahoo.com/quote/OMOL"
+  },
+  "GERMANY:A3C5G5": {
+    "symbol": "A3C5G5",
+    "company": "Loihde Oyj",
+    "country": "Germany",
+    "market": "GERMANY",
+    "sector": "Technology Services",
+    "industry": "Information Technology Services",
+    "marketCap": 88274326,
+    "logoid": "loihde-oyj",
+    "yahooTicker": "A3C5G5.DE",
+    "yahooUrl": "https://finance.yahoo.com/quote/A3C5G5.DE"
+  },
+  "GERMANY:A0MWRG": {
+    "symbol": "A0MWRG",
+    "company": "NuEnergy Gas Limited",
+    "country": "Germany",
+    "market": "GERMANY",
+    "sector": "Energy Minerals",
+    "industry": "Oil & Gas Production",
+    "marketCap": 22511942.402178854,
+    "logoid": "nuenergy-gas-limited",
+    "yahooTicker": "A0MWRG.DE",
+    "yahooUrl": "https://finance.yahoo.com/quote/A0MWRG.DE"
   }
 }
