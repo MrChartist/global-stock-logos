@@ -1,12 +1,12 @@
 {
   "name": "Global Stock Logos Catalog (World)",
   "version": "3.0.0",
-  "updatedAt": "2026-10-25T07:16:03.982Z",
-  "totalEquities": 80441,
+  "updatedAt": "2026-10-26T07:24:36.377Z",
+  "totalEquities": 80468,
   "stats": {
     "markets": {
       "ARGENTINA": 1492,
-      "AUSTRALIA": 1683,
+      "AUSTRALIA": 1684,
       "AUSTRIA": 1100,
       "BAHRAIN": 30,
       "BANGLADESH": 351,
@@ -23,19 +23,19 @@
       "ESTONIA": 28,
       "FINLAND": 190,
       "FRANCE": 627,
-      "GERMANY": 9229,
+      "GERMANY": 9246,
       "GREECE": 143,
       "HONGKONG": 2650,
       "HUNGARY": 77,
       "ICELAND": 30,
-      "IN": 6030,
+      "IN": 6031,
       "INDONESIA": 843,
       "IRELAND": 19,
       "ISRAEL": 535,
       "ITALY": 1790,
       "JAPAN": 3870,
       "KENYA": 57,
-      "KOREA": 2751,
+      "KOREA": 2752,
       "KSA": 392,
       "KUWAIT": 136,
       "LATVIA": 11,
@@ -48,7 +48,7 @@
       "NEWZEALAND": 115,
       "NIGERIA": 138,
       "NORWAY": 283,
-      "PAKISTAN": 472,
+      "PAKISTAN": 473,
       "PERU": 204,
       "PHILIPPINES": 267,
       "POLAND": 778,
@@ -57,7 +57,7 @@
       "ROMANIA": 259,
       "RUSSIA": 376,
       "SERBIA": 25,
-      "SINGAPORE": 577,
+      "SINGAPORE": 578,
       "SLOVENIA": 11,
       "SOUTHAFRICA": 249,
       "SPAIN": 297,
@@ -68,14 +68,14 @@
       "THAILAND": 2264,
       "TUNISIA": 72,
       "TURKEY": 605,
-      "UAE": 161,
+      "UAE": 162,
       "UK": 3939,
       "US": 14840,
       "VENEZUELA": 33,
-      "VIETNAM": 1322
+      "VIETNAM": 1326
     },
     "formats": {
-      "svg": 80422,
+      "svg": 80449,
       "png": 19
     }
   },
@@ -152,7 +152,7 @@
     "VENEZUELA": "Venezuela",
     "SLOVENIA": "Slovenia"
   },
-  "dataRefreshedAt": "2026-10-25",
+  "dataRefreshedAt": "2026-10-26",
   "pngSizes": [
     64,
     128,
