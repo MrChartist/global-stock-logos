@@ -1,21 +1,23 @@
 {
-  "finishedAt": "2026-10-04T01:29:01.983Z",
-  "complete": true,
+  "finishedAt": "2026-11-01T15:47:28.502Z",
+  "complete": false,
   "failed": false,
   "note": "",
-  "minutesUsed": 1,
+  "minutesUsed": 306,
   "remaining": {
     "marketData": 0,
     "wikidataProfile": 0,
     "registryGleif": 0,
+    "exchangeSources": 1469,
+    "nameMatch": 39770,
     "brandColour": 0,
-    "total": 75418
+    "total": 81660
   },
   "steps": [
     {
       "name": "New listings and logos",
       "ok": true,
-      "seconds": 38
+      "seconds": 50
     },
     {
       "name": "Logo quality repair",
@@ -25,32 +27,52 @@
     {
       "name": "Market data",
       "ok": true,
-      "seconds": 26
+      "seconds": 36
     },
     {
       "name": "Wikidata profiles",
       "ok": true,
-      "seconds": 4
+      "seconds": 345
     },
     {
       "name": "GLEIF / SEC registries",
       "ok": true,
-      "seconds": 1
+      "seconds": 233
+    },
+    {
+      "name": "Exchange and registry sources",
+      "ok": true,
+      "seconds": 379
+    },
+    {
+      "name": "Name-based matching",
+      "ok": true,
+      "seconds": 17233
     },
     {
       "name": "Brand colours",
       "ok": true,
-      "seconds": 2
+      "seconds": 1
     },
     {
       "name": "PNG sizes",
       "ok": true,
-      "seconds": 1
+      "seconds": 3
+    },
+    {
+      "name": "Brands",
+      "ok": true,
+      "seconds": 34
+    },
+    {
+      "name": "Institutions",
+      "ok": true,
+      "seconds": 29
     },
     {
       "name": "Manifests",
       "ok": true,
-      "seconds": 3
+      "seconds": 4
     },
     {
       "name": "Fix invalid values",
@@ -60,7 +82,12 @@
     {
       "name": "Manifests (after fixes)",
       "ok": true,
-      "seconds": 2
+      "seconds": 3
+    },
+    {
+      "name": "Static API",
+      "ok": true,
+      "seconds": 14
     },
     {
       "name": "Logo check",
@@ -71,7 +98,12 @@
       "name": "Data validation",
       "ok": true,
       "seconds": 1
+    },
+    {
+      "name": "API validation",
+      "ok": true,
+      "seconds": 2
     }
   ],
-  "next": "Nothing to do until the next monthly run."
+  "next": "Run again: the pipeline resumes where it stopped."
 }

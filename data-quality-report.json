@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-10-24",
-  "enrichmentRecords": 75418,
-  "manifestEntries": 80891,
+  "checkedAt": "2026-11-01",
+  "enrichmentRecords": 81660,
+  "manifestEntries": 81659,
   "errors": {},
   "warnings": {
     "staleMarketData": 0
