@@ -1,53 +1,53 @@
 {
-  "finishedAt": "2026-11-01T15:47:28.502Z",
+  "finishedAt": "2026-11-01T20:56:42.950Z",
   "complete": false,
   "failed": false,
   "note": "",
-  "minutesUsed": 306,
+  "minutesUsed": 307,
   "remaining": {
     "marketData": 0,
     "wikidataProfile": 0,
     "registryGleif": 0,
     "exchangeSources": 1469,
-    "nameMatch": 39770,
+    "nameMatch": 27421,
     "brandColour": 0,
-    "total": 81660
+    "total": 81661
   },
   "steps": [
     {
       "name": "New listings and logos",
       "ok": true,
-      "seconds": 50
+      "seconds": 42
     },
     {
       "name": "Logo quality repair",
       "ok": true,
-      "seconds": 3
+      "seconds": 2
     },
     {
       "name": "Market data",
       "ok": true,
-      "seconds": 36
+      "seconds": 34
     },
     {
       "name": "Wikidata profiles",
       "ok": true,
-      "seconds": 345
+      "seconds": 8
     },
     {
       "name": "GLEIF / SEC registries",
       "ok": true,
-      "seconds": 233
+      "seconds": 3
     },
     {
       "name": "Exchange and registry sources",
       "ok": true,
-      "seconds": 379
+      "seconds": 26
     },
     {
       "name": "Name-based matching",
       "ok": true,
-      "seconds": 17233
+      "seconds": 18182
     },
     {
       "name": "Brand colours",
@@ -57,22 +57,22 @@
     {
       "name": "PNG sizes",
       "ok": true,
-      "seconds": 3
+      "seconds": 1
     },
     {
       "name": "Brands",
       "ok": true,
-      "seconds": 34
+      "seconds": 39
     },
     {
       "name": "Institutions",
       "ok": true,
-      "seconds": 29
+      "seconds": 35
     },
     {
       "name": "Manifests",
       "ok": true,
-      "seconds": 4
+      "seconds": 3
     },
     {
       "name": "Fix invalid values",
@@ -87,12 +87,12 @@
     {
       "name": "Static API",
       "ok": true,
-      "seconds": 14
+      "seconds": 3
     },
     {
       "name": "Logo check",
       "ok": true,
-      "seconds": 3
+      "seconds": 2
     },
     {
       "name": "Data validation",

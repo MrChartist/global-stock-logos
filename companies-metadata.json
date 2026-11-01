@@ -193260,7 +193260,7 @@
     "market": "IN",
     "sector": "Retail Trade",
     "industry": "Specialty Stores",
-    "marketCap": 44782055406.9,
+    "marketCap": 44772106050,
     "logoid": "wakefit-innovations-limited",
     "yahooTicker": "WAKEFIT.NS",
     "yahooUrl": "https://finance.yahoo.com/quote/WAKEFIT.NS"
@@ -200088,7 +200088,7 @@
     "market": "IN",
     "sector": "Technology Services",
     "industry": "Information Technology Services",
-    "marketCap": 10782090727.2,
+    "marketCap": 10783733337,
     "logoid": "ivalue-infosolutions-limited",
     "yahooTicker": "IVALUE.NS",
     "yahooUrl": "https://finance.yahoo.com/quote/IVALUE.NS"
@@ -540600,7 +540600,7 @@
     "market": "TAIWAN",
     "sector": "Retail Trade",
     "industry": "Electronics/Appliance Stores",
-    "marketCap": 8307725399.999999,
+    "marketCap": 8211867029.999999,
     "logoid": "asrock-industrial-computer",
     "yahooTicker": "7710.TW",
     "yahooUrl": "https://finance.yahoo.com/quote/7710.TW"
@@ -753996,7 +753996,7 @@
     "market": "KSA",
     "sector": "Finance",
     "industry": "Financial Conglomerates",
-    "marketCap": 2071578905.8999999,
+    "marketCap": 2119707531,
     "logoid": "almasar-alshamil-education-co",
     "yahooTicker": "6019.SR",
     "yahooUrl": "https://finance.yahoo.com/quote/6019.SR"
@@ -754032,7 +754032,7 @@
     "market": "KSA",
     "sector": "Finance",
     "industry": "Real Estate Development",
-    "marketCap": 2277857150.4500003,
+    "marketCap": 2282142864.75,
     "logoid": "alramz-real-estate-co",
     "yahooTicker": "4327.SR",
     "yahooUrl": "https://finance.yahoo.com/quote/4327.SR"
@@ -754260,7 +754260,7 @@
     "market": "KSA",
     "sector": "Consumer Durables",
     "industry": "Homebuilding",
-    "marketCap": 1509000000,
+    "marketCap": 1548000000,
     "logoid": "dar-al-majed-real-estate-co",
     "yahooTicker": "4326.SR",
     "yahooUrl": "https://finance.yahoo.com/quote/4326.SR"
@@ -755028,7 +755028,7 @@
     "market": "KSA",
     "sector": "Technology Services",
     "industry": "Information Technology Services",
-    "marketCap": 677778500,
+    "marketCap": 692258000,
     "logoid": "dar-albalad-for-business-solutions-co",
     "yahooTicker": "7205.SR",
     "yahooUrl": "https://finance.yahoo.com/quote/7205.SR"
@@ -755064,7 +755064,7 @@
     "market": "KSA",
     "sector": "Distribution Services",
     "industry": "Wholesale Distributors",
-    "marketCap": 617148000,
+    "marketCap": 634260000,
     "logoid": "saleh-abdulaziz-al-rashed-and-sons-co",
     "yahooTicker": "1324.SR",
     "yahooUrl": "https://finance.yahoo.com/quote/1324.SR"
@@ -755148,7 +755148,7 @@
     "market": "KSA",
     "sector": "Finance",
     "industry": "Finance/Rental/Leasing",
-    "marketCap": 589200000,
+    "marketCap": 599100000,
     "logoid": "cherry-trading-co",
     "yahooTicker": "4265.SR",
     "yahooUrl": "https://finance.yahoo.com/quote/4265.SR"
@@ -755232,7 +755232,7 @@
     "market": "KSA",
     "sector": "Producer Manufacturing",
     "industry": "Industrial Machinery",
-    "marketCap": 626000000,
+    "marketCap": 635000000,
     "logoid": "consolidated-grunenfelder-saady-co",
     "yahooTicker": "4147.SR",
     "yahooUrl": "https://finance.yahoo.com/quote/4147.SR"
@@ -755280,7 +755280,7 @@
     "market": "KSA",
     "sector": "Retail Trade",
     "industry": "Home Improvement Chains",
-    "marketCap": 512320000.00000006,
+    "marketCap": 517120000,
     "logoid": "marketing-home-for-trading-co",
     "yahooTicker": "4194.SR",
     "yahooUrl": "https://finance.yahoo.com/quote/4194.SR"
@@ -759660,7 +759660,7 @@
     "market": "QATAR",
     "sector": "Commercial Services",
     "industry": "Miscellaneous Commercial Services",
-    "marketCap": 496580000,
+    "marketCap": 498050000,
     "logoid": "mosanada-facilities-management-services-qpsc",
     "yahooTicker": "MFMS.QA",
     "yahooUrl": "https://finance.yahoo.com/quote/MFMS.QA"
@@ -760176,7 +760176,7 @@
     "market": "KUWAIT",
     "sector": "Retail Trade",
     "industry": "Food Retail",
-    "marketCap": 234575000,
+    "marketCap": 240350000,
     "logoid": "trolley-general-trading-company-kscc",
     "yahooTicker": "TROLLEY.KW",
     "yahooUrl": "https://finance.yahoo.com/quote/TROLLEY.KW"
@@ -797688,7 +797688,7 @@
     "market": "THAILAND",
     "sector": "Finance",
     "industry": "Investment Banks/Brokers",
-    "marketCap": 1047056400000,
+    "marketCap": 1141023000000,
     "logoid": "coinbase",
     "yahooTicker": "COIN80.BK",
     "yahooUrl": "https://finance.yahoo.com/quote/COIN80.BK"
@@ -966863,5 +966863,17 @@
     "logoid": "cintac-sa",
     "yahooTicker": "CINTAC0.SN",
     "yahooUrl": "https://finance.yahoo.com/quote/CINTAC0.SN"
+  },
+  "ISRAEL:UNVO-M": {
+    "symbol": "UNVO-M",
+    "company": "Univo Pharmaceuticals Ltd.",
+    "country": "Israel",
+    "market": "ISRAEL",
+    "sector": "Process Industries",
+    "industry": "Agricultural Commodities/Milling",
+    "marketCap": 3293,
+    "logoid": "univo",
+    "yahooTicker": "UNVO-M.TA",
+    "yahooUrl": "https://finance.yahoo.com/quote/UNVO-M.TA"
   }
 }
