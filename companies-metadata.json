@@ -966269,5 +966269,41 @@
     "logoid": "cintac-sa",
     "yahooTicker": "CINTAC1.SN",
     "yahooUrl": "https://finance.yahoo.com/quote/CINTAC1.SN"
+  },
+  "US:VBAMF": {
+    "symbol": "VBAMF",
+    "company": "Aventis Energy Inc",
+    "country": "United States",
+    "market": "US",
+    "sector": "Non-Energy Minerals",
+    "industry": "Other Metals/Minerals",
+    "marketCap": 2638957.621621622,
+    "logoid": "aventis-energy",
+    "yahooTicker": "VBAMF",
+    "yahooUrl": "https://finance.yahoo.com/quote/VBAMF"
+  },
+  "CHILE:CTC0": {
+    "symbol": "CTC0",
+    "company": "Telefonica Chile S.A.",
+    "country": "Chile",
+    "market": "CHILE",
+    "sector": "Communications",
+    "industry": "Major Telecommunications",
+    "marketCap": 479334279551.56415,
+    "logoid": "telefonica-chile-s",
+    "yahooTicker": "CTC0.SN",
+    "yahooUrl": "https://finance.yahoo.com/quote/CTC0.SN"
+  },
+  "CHILE:CINTAC0": {
+    "symbol": "CINTAC0",
+    "company": "Cintac S.A.",
+    "country": "Chile",
+    "market": "CHILE",
+    "sector": "Non-Energy Minerals",
+    "industry": "Steel",
+    "marketCap": 52026777817.662964,
+    "logoid": "cintac-sa",
+    "yahooTicker": "CINTAC0.SN",
+    "yahooUrl": "https://finance.yahoo.com/quote/CINTAC0.SN"
   }
 }
