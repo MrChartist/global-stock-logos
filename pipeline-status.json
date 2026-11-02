@@ -1,5 +1,5 @@
 {
-  "finishedAt": "2026-11-01T20:56:42.950Z",
+  "finishedAt": "2026-11-02T02:05:42.738Z",
   "complete": false,
   "failed": false,
   "note": "",
@@ -9,7 +9,7 @@
     "wikidataProfile": 0,
     "registryGleif": 0,
     "exchangeSources": 1469,
-    "nameMatch": 27421,
+    "nameMatch": 20367,
     "brandColour": 0,
     "total": 81661
   },
@@ -17,92 +17,92 @@
     {
       "name": "New listings and logos",
       "ok": true,
-      "seconds": 42
+      "seconds": 39
     },
     {
       "name": "Logo quality repair",
       "ok": true,
-      "seconds": 2
+      "seconds": 4
     },
     {
       "name": "Market data",
       "ok": true,
-      "seconds": 34
+      "seconds": 29
     },
     {
       "name": "Wikidata profiles",
       "ok": true,
-      "seconds": 8
+      "seconds": 1
     },
     {
       "name": "GLEIF / SEC registries",
       "ok": true,
-      "seconds": 3
+      "seconds": 1
     },
     {
       "name": "Exchange and registry sources",
       "ok": true,
-      "seconds": 26
+      "seconds": 21
     },
     {
       "name": "Name-based matching",
       "ok": true,
-      "seconds": 18182
+      "seconds": 18185
     },
     {
       "name": "Brand colours",
       "ok": true,
-      "seconds": 1
+      "seconds": 2
     },
     {
       "name": "PNG sizes",
       "ok": true,
-      "seconds": 1
+      "seconds": 2
     },
     {
       "name": "Brands",
       "ok": true,
-      "seconds": 39
+      "seconds": 52
     },
     {
       "name": "Institutions",
       "ok": true,
-      "seconds": 35
+      "seconds": 45
     },
     {
       "name": "Manifests",
       "ok": true,
-      "seconds": 3
+      "seconds": 5
     },
     {
       "name": "Fix invalid values",
       "ok": true,
-      "seconds": 1
+      "seconds": 2
     },
     {
       "name": "Manifests (after fixes)",
       "ok": true,
-      "seconds": 3
+      "seconds": 5
     },
     {
       "name": "Static API",
       "ok": true,
-      "seconds": 3
+      "seconds": 13
     },
     {
       "name": "Logo check",
       "ok": true,
-      "seconds": 2
+      "seconds": 4
     },
     {
       "name": "Data validation",
       "ok": true,
-      "seconds": 1
+      "seconds": 2
     },
     {
       "name": "API validation",
       "ok": true,
-      "seconds": 2
+      "seconds": 3
     }
   ],
   "next": "Run again: the pipeline resumes where it stopped."
