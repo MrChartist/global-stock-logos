@@ -1,12 +1,12 @@
 {
   "name": "Global Stock Logos Catalog (World)",
   "version": "3.0.0",
-  "updatedAt": "2026-11-02T07:14:14.067Z",
-  "totalEquities": 81208,
+  "updatedAt": "2026-11-02T08:51:43.856Z",
+  "totalEquities": 81225,
   "stats": {
     "markets": {
       "ARGENTINA": 1511,
-      "AUSTRALIA": 1688,
+      "AUSTRALIA": 1689,
       "AUSTRIA": 1101,
       "BAHRAIN": 30,
       "BANGLADESH": 351,
@@ -23,12 +23,12 @@
       "ESTONIA": 28,
       "FINLAND": 190,
       "FRANCE": 632,
-      "GERMANY": 9402,
+      "GERMANY": 9412,
       "GREECE": 143,
       "HONGKONG": 2652,
       "HUNGARY": 77,
       "ICELAND": 31,
-      "IN": 6034,
+      "IN": 6037,
       "INDONESIA": 843,
       "IRELAND": 19,
       "ISRAEL": 537,
@@ -63,7 +63,7 @@
       "SPAIN": 304,
       "SRILANKA": 291,
       "SWEDEN": 1106,
-      "SWITZERLAND": 1306,
+      "SWITZERLAND": 1307,
       "TAIWAN": 2310,
       "THAILAND": 2266,
       "TUNISIA": 72,
@@ -72,10 +72,10 @@
       "UK": 3954,
       "US": 15162,
       "VENEZUELA": 34,
-      "VIETNAM": 1337
+      "VIETNAM": 1339
     },
     "formats": {
-      "svg": 81189,
+      "svg": 81206,
       "png": 19
     }
   },
