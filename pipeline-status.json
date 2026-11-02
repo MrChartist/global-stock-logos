@@ -1,5 +1,5 @@
 {
-  "finishedAt": "2026-11-02T02:05:42.738Z",
+  "finishedAt": "2026-11-02T07:14:36.675Z",
   "complete": false,
   "failed": false,
   "note": "",
@@ -9,7 +9,7 @@
     "wikidataProfile": 0,
     "registryGleif": 0,
     "exchangeSources": 1469,
-    "nameMatch": 20367,
+    "nameMatch": 11680,
     "brandColour": 0,
     "total": 81661
   },
@@ -17,7 +17,7 @@
     {
       "name": "New listings and logos",
       "ok": true,
-      "seconds": 39
+      "seconds": 36
     },
     {
       "name": "Logo quality repair",
@@ -27,27 +27,27 @@
     {
       "name": "Market data",
       "ok": true,
-      "seconds": 29
+      "seconds": 27
     },
     {
       "name": "Wikidata profiles",
       "ok": true,
-      "seconds": 1
+      "seconds": 2498
     },
     {
       "name": "GLEIF / SEC registries",
       "ok": true,
-      "seconds": 1
+      "seconds": 1640
     },
     {
       "name": "Exchange and registry sources",
       "ok": true,
-      "seconds": 21
+      "seconds": 79
     },
     {
       "name": "Name-based matching",
       "ok": true,
-      "seconds": 18185
+      "seconds": 13982
     },
     {
       "name": "Brand colours",

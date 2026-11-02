@@ -33408,7 +33408,7 @@
     "market": "KOREA",
     "sector": "Technology Services",
     "industry": "Packaged Software",
-    "marketCap": 97797015442,
+    "marketCap": 93204337921,
     "logoid": "exem-co-ltd",
     "yahooTicker": "205100.KS",
     "yahooUrl": "https://finance.yahoo.com/quote/205100.KS"
@@ -429883,7 +429883,7 @@
   },
   "JAPAN:4574": {
     "symbol": "4574",
-    "company": "Taiko Pharmaceutical Co., Ltd.",
+    "company": "TAIKO PHARMACEUTICAL CO LTD",
     "country": "Japan",
     "market": "JAPAN",
     "sector": "Health Technology",
@@ -433675,7 +433675,7 @@
   },
   "JAPAN:441A": {
     "symbol": "441A",
-    "company": "NE, Inc.",
+    "company": "NE Inc.",
     "country": "Japan",
     "market": "JAPAN",
     "sector": "Technology Services",
@@ -496723,7 +496723,7 @@
   },
   "AUSTRALIA:BNL": {
     "symbol": "BNL",
-    "company": "Blue Star Helium Ltd",
+    "company": "Blue Star Helium Limited",
     "country": "Australia",
     "market": "AUSTRALIA",
     "sector": "Energy Minerals",
@@ -497191,7 +497191,7 @@
   },
   "AUSTRALIA:GCM": {
     "symbol": "GCM",
-    "company": "GCM Corp., Ltd.",
+    "company": "GCM Corporation Limited",
     "country": "Australia",
     "market": "AUSTRALIA",
     "sector": "Non-Energy Minerals",
@@ -501180,7 +501180,7 @@
     "market": "AUSTRALIA",
     "sector": "Energy Minerals",
     "industry": "Oil & Gas Production",
-    "marketCap": 5325497,
+    "marketCap": 6687833,
     "logoid": "taiton-resources-limited",
     "yahooTicker": "T88.AX",
     "yahooUrl": "https://finance.yahoo.com/quote/T88.AX"
@@ -505032,7 +505032,7 @@
     "market": "HONGKONG",
     "sector": "Technology Services",
     "industry": "Packaged Software",
-    "marketCap": 63158041000,
+    "marketCap": 43689226698,
     "logoid": "beijing-deepzero-technology-co-ltd",
     "yahooTicker": "2723.HK",
     "yahooUrl": "https://finance.yahoo.com/quote/2723.HK"
@@ -566179,7 +566179,7 @@
   },
   "CHINA:301716": {
     "symbol": "301716",
-    "company": "SHENZHEN HFC CO LTD",
+    "company": "Shenzhen HFC Co., Ltd. Class A",
     "country": "China",
     "market": "CHINA",
     "sector": "Producer Manufacturing",
@@ -825715,7 +825715,7 @@
   },
   "SINGAPORE:1R6": {
     "symbol": "1R6",
-    "company": "Avi-Tech Holdings Pte. Ltd.",
+    "company": "DX-Tech Holdings Limited",
     "country": "Singapore",
     "market": "SINGAPORE",
     "sector": "Commercial Services",
@@ -825775,7 +825775,7 @@
   },
   "SINGAPORE:594": {
     "symbol": "594",
-    "company": "CapAllianz Holdings Limited",
+    "company": "Happiness World Holdings Limited",
     "country": "Singapore",
     "market": "SINGAPORE",
     "sector": "Energy Minerals",
@@ -839395,7 +839395,7 @@
   },
   "VIETNAM:ONE": {
     "symbol": "ONE",
-    "company": "One Communication Technology Corporation",
+    "company": "One Technologies Corporation",
     "country": "Vietnam",
     "market": "VIETNAM",
     "sector": "Distribution Services",
@@ -840451,7 +840451,7 @@
   },
   "VIETNAM:CET": {
     "symbol": "CET",
-    "company": "HTC Holding JSC",
+    "company": "HTC Holding Joint Stock Company",
     "country": "Vietnam",
     "market": "VIETNAM",
     "sector": "Consumer Non-Durables",
@@ -841020,7 +841020,7 @@
     "market": "VIETNAM",
     "sector": "Industrial Services",
     "industry": "Engineering & Construction",
-    "marketCap": 6254000000,
+    "marketCap": 6148000000,
     "logoid": "hud101-construction-jsc",
     "yahooTicker": "H11",
     "yahooUrl": "https://finance.yahoo.com/quote/H11"
@@ -841771,7 +841771,7 @@
   },
   "VIETNAM:TDF": {
     "symbol": "TDF",
-    "company": "Trung Do JSC",
+    "company": "Trung Do Joint Stock Company",
     "country": "Vietnam",
     "market": "VIETNAM",
     "sector": "Industrial Services",
@@ -925555,7 +925555,7 @@
     "market": "AUSTRALIA",
     "sector": "Retail Trade",
     "industry": "Home Improvement Chains",
-    "marketCap": 2061635,
+    "marketCap": 2436478,
     "logoid": "baumart-limited",
     "yahooTicker": "BMH.AX",
     "yahooUrl": "https://finance.yahoo.com/quote/BMH.AX"
