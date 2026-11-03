@@ -1,0 +1,15 @@
+<!-- by TradingView --><svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="56" height="56" fill="#F0F3FA"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.0001 16H46.0001V18H10.0001V16ZM10 19H46V20.3244H10V19ZM46 21H10V22H46V21Z" fill="url(#paint0_linear_229_5154-99ebc6)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 24H10V39L11 39H16V37H12V24Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.0039 24H17V36C17 37.6569 18.3431 39 20 39C21.6569 39 23 37.6569 23 36V24H21.0039V36C21.0039 36.5523 20.5562 37 20.0039 37C19.4516 37 19.0039 36.5523 19.0039 36V24Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M24 27C24 25.3431 25.3431 24 27 24C28.6569 24 30 25.3431 30 27V29H28V27C28 26.4477 27.5523 26 27 26C26.4477 26 26 26.4477 26 27V36C26 36.5523 26.4477 37 27 37C27.5523 37 28 36.5523 28 36V34H30V36C30 37.6569 28.6569 39 27 39C25.3431 39 24 37.6569 24 36V27Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M31 24H33V30.5908L35.6907 24H38.0001L35.442 29.5262L38 39H35.682L33.9942 32.6539L33 34.8017V39H31V24Z" fill="black"/>
+<path d="M41.2496 24H38.9966L41.4999 32.5851V39H43.4999V32.5851L45.9999 24H43.9369L42.5525 29.3617L41.2496 24Z" fill="black"/>
+<defs>
+<linearGradient id="paint0_linear_229_5154-99ebc6" x1="10" y1="19" x2="46" y2="19" gradientUnits="userSpaceOnUse">
+<stop stop-color="#145BA3"/>
+<stop offset="1" stop-color="#76AEDD"/>
+</linearGradient>
+</defs>
+</svg>
