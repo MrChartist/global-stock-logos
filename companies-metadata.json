@@ -975095,5 +975095,17 @@
     "logoid": "home-depot",
     "yahooTicker": "HDUS",
     "yahooUrl": "https://finance.yahoo.com/quote/HDUS"
+  },
+  "US:CYYHF": {
+    "symbol": "CYYHF",
+    "company": "China Yongda Automobile Svcs Hldgs Ltd.",
+    "country": "United States",
+    "market": "US",
+    "sector": "Retail Trade",
+    "industry": "Specialty Stores",
+    "marketCap": null,
+    "logoid": "china-yongda-automobile-svcs-hldgs-ltd",
+    "yahooTicker": "CYYHF",
+    "yahooUrl": "https://finance.yahoo.com/quote/CYYHF"
   }
 }
